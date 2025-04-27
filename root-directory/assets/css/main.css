@@ -1,0 +1,87 @@
+
+@font-face {
+    /* font-family: "GothamNarrowBook", "Helvetica Neue", Helvetica, Arial, sans-serif; */
+    font-family: "GothamNarrowBook";
+    src: url('/pen-oil/root-directory/public/fonts/gotham-narrow-book.otf');
+    font-weight: normal;
+    font-style: normal;
+    font-display: normal;
+}
+    
+    /* body {
+        padding: 0;
+        font-style: normal;
+        background: none;
+        font-family: var(--font-gotham-narrow-book);
+        font-size: 1.8rem;
+        line-height: 3.2rem;
+    }
+    body {
+        padding: 0;
+        font-family: "GothamNarrowBook", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 18px;
+        line-height: 32px;
+        background: none;
+        color: #000; */
+        /* -ms-overflow-style: scrollbar; */
+    /* } */
+    /* body {
+        margin: 0;
+        font-family: var(--bs-body-font-family);
+        font-size: var(--bs-body-font-size);
+        font-weight: var(--bs-body-font-weight);
+        line-height: var(--bs-body-line-height);
+        color: var(--bs-body-color);
+        text-align: var(--bs-body-text-align);
+        background-color: var(--bs-body-bg);
+        -webkit-text-size-adjust: 100%;
+        -webkit-tap-highlight-color: transparent;
+    } */
+    
+@import "tailwindcss";
+
+:root {
+    --font-gotham-book: "GothamBook", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --font-gotham-bold: "GothamBold", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --font-gotham-black: "GothamBlack", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --font-gotham-narrow-book: "GothamNarrowBook", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --font-gotham-narrow-bold: "GothamNarrowBold", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+    --black: #000000;
+    --white: #FFFFFF;
+
+    --light-blue: #009dd9;
+    --medium-blue: #0066b2;
+    --dark-blue: #0d6efd;
+
+
+    --color-light-gray: #dbdcdd;
+    --color-medium-gray: #8c8f93;
+    --color-dark-gray: #6b6d6f;
+
+    --color-light-blue-rgb: 0, 157, 217;
+    --color-medium-blue-rgb: 0, 102, 178;
+    --color-dark-blue-rgb: 11, 45, 113;
+
+    --primary-bg: #0b2d71;
+    --secondary-bg: #6c757d;
+
+    --button-color: var(--color-medium-blue-rgb);
+    --button-text-color: var(--color-black-rgb);
+    --button-text-hover-color: var(--color-white-rgb);
+    --button-color-opacity: 1;
+    --color-theme-child: var(--color-black-rgb);
+    --bs-body-font-family: var(--font-gotham-narrow-book);
+    --bs-body-font-size: 1.8rem;
+    --bs-body-font-weight: 400;
+    --bs-body-line-height: 2.6rem;
+    --bs-body-color: var(--color-black);
+
+    --section-padding-y: 3rem;
+    --section-padding-y-md: 5rem;
+}
+
+
+
