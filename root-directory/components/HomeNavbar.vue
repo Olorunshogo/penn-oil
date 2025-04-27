@@ -34,7 +34,7 @@
                     <div class="flex items-center justify-between gap-2">
                         <!-- Logo -->
                         <div>
-                            <LoGo />
+                            <!-- <LoGo /> -->
                         </div>
 
                         <!-- Hamburger Menu -->
@@ -129,7 +129,7 @@
 
                     <!-- Logo -->
                     <div class="flex items-center justify-center">
-                        <LoGo />
+                        <!-- <LoGo /> -->
                     </div>
 
                     <!-- Page Links -->

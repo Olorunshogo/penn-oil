@@ -2,11 +2,11 @@
 
 <script lang="ts" setup>
   import { useHead } from 'nuxt/app';
-
   useHead({
-    title: 'Olorunshogo (Moses) BAMTEFA',
-    titleTemplate: '%s | Frontend Developer'
+    title: 'PenOil: Sustainable Energy Solutions',
+    titleTemplate: '%s | Global Energy Company'
   });
+
 </script>
 
 

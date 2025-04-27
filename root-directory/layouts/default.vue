@@ -1,6 +1,8 @@
 
 <script lang="ts" setup>
   import { useSeoMeta, useHead } from 'nuxt/app';
+  import { showButton, scrollToTop } from '../stores/homepage';
+
   
   useHead({
     htmlAttrs: {
@@ -10,7 +12,7 @@
       {
         rel: 'icon',
         type: 'image/png',
-        href: '/favicon.ico'
+        href: '/images/Chevron/Chevron-logo.png'
       }
     ]
   });
@@ -20,7 +22,7 @@
     ogTitle: 'Chevron Corporation - Leading Energy Solutions',
     description: 'Chevron is one of the world’s leading integrated energy companies. Explore how we safely and responsibly develop energy that improves lives and powers the world forward.',
     ogDescription: 'Chevron develops and delivers affordable, reliable, and ever-cleaner energy. Learn about our commitment to innovation, sustainability, and global energy leadership.',
-    // ogImage: '/images/chevron-og-image.jpg',
+    ogImage: '/images/Chevron/Full_Chevron_Logo.png',
     ogImageAlt: 'Chevron oil refinery and clean energy infrastructure.',
     ogUrl: 'https://vercel.com/bom-projects/pen-oil',
     
@@ -44,6 +46,16 @@
       <div>
         <slot></slot>
       </div>
+
+      <!-- Scroll To Top Button -->
+      <button 
+        v-if="showButton"
+        class="fixed flex items-center justify-center bottom-8 right-8 py-2.5 px-5 bg-slate-300 w-12 h-12 text-(--white) rounded-lg cursor-pointer text-base"
+        @click="scrollToTop"
+      >
+        <Icon name="mdi:arrow-up" />
+        arrow
+      </button>
       
     <HomeFooter/>
   </div>

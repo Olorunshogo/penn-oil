@@ -1,7 +1,17 @@
 
 <script lang="ts" setup>
     import { ref } from 'vue';
-    import { developmentYear, currentYear, displayYear, openModal, openOneTrustModal, closeOneTrustModal } from '../stores/footer';
+    import { 
+        developmentYear, currentYear, displayYear,
+        enter, beforeEnter, leave,
+        oneTrustModal,
+        get, toggleGet, rotateGet,
+        latest, toggleLatest, rotateLatest,
+        future, toggleFuture, rotateFuture,
+        popular, togglePopular, rotatePopular
+    } from '../stores/footer';
+
+    
 
 </script>
 
@@ -13,40 +23,26 @@
     <div class="max-w-7xl mx-auto">
 
       <div class="grid grid-cols-1 gap-8 md:gap-12 font-normal">
-        <!-- Footer 1 -->
-        <div class="grid grid-cols-3 gap-8 w-full h-full">
+        <!-- Footer 1: Desktop -->
+        <!-- <div class="flex flex-col items-center w-full h-full sm:*:w-1/2 sm:flex-row lg:grid lg:grid-cols-3 gap-8"> -->
+        <div class="flex flex-col w-full h-full gap-6 sm:flex-row sm:*:w-1/2 lg:*:w-1/3 lg:*:items-baseline">
 
             <!-- Footer Logo -->
-            <div class="grid gap-12 md:gap-20">
+            <div class="flex flex-col items-center justify-center">
                 
-                <div class="flex items-center justify-center"> 
-
-                    <div class="flex flex-col items-center h-12 w-32 float-right">
-                        <span class="text-base font-bold">Chevron</span>
-                        <span class="text-2xl text-blue-700">
-                            <Icon name="fa:chevron-down" />
-                        </span>
-                        <span class="text-2xl text-red-700">
-                            <Icon name="fa:chevron-down" />
-                        </span>
-
-                        <!-- <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1200" viewBox="0 0 1200 1200"><path fill="currentColor" d="m0 125.407l600 949.186l600-949.186z"/></svg> -->
- 
-                    </div>                   
-
-                    <!-- <NuxtImg 
-                        src="/images/chevron-logo.png"
-                        alt="Chevron logo"
-                        class="w-35 h-25 text-white float-right"
-                    /> -->
-
-                    <h2 class="flex items-center flex-wrap text-3xl font-extrabold font-gotham-book-narrow">
-                        the human energy company <span class="text-xs flex items-center">&reg;</span>
+                <div class="relative flex items-center justify-center w-1/2"> 
+                    <h2 class="flex items-center text-3xl font-extrabold font-gotham-book-narrow">
+                        <!-- the human energy company  -->
+                        <!-- <span class="text-xs flex">&reg;</span> -->
                     </h2>
+
+                    <div class="flex items-center justify-center w-60 h-60">
+                        <LoGo />
+                   </div>
                 </div>
 
-                <div class="grid gap-4 md:gap-8 clear-both">
-                    <p class="font-normal text-lg">
+                <div class="grid gap-4 md:gap-8">
+                    <p class="font-normal text-base lg:text-lg">
                         Chevron has always put people at the center of the energy conversation. 
                         Because we understand that the well-being of people everywhere depends on energy. 
                         Energy that is affordable, reliable and ever-cleaner.
@@ -66,68 +62,352 @@
 
             </div>
 
-            <!-- Get to know us & Latest at chevron -->
-            <div class="grid gap-4 md:gap-6">
+            <!-- md: Get to know us, latest at Chevron, Future of energy, Popular links -->
+            <div class="grid lg:hidden grid-cols-1 gap-4 w-full h-full">
+                <!-- Get to know us -->
+                <div class="flex flex-col justify-center gap-3 md:gap-6 pb-4 border-y-1 border-(--white)">
+
+                    <h3 class="flex items-center justify-between my-auto py-4 *:flex *:items-center font-bold text-base">
+                        <span>Get to know us</span>
+                        <span 
+                            @click="toggleGet"
+                            class="font-bold text-lg cursor-pointer duration-300 ease-in-out transition-all"
+                            :class="{'rotate-180': rotateGet}"
+                        >
+                            <Icon name="uiw:down" />
+                        </span>
+                    </h3>
+
+                    <Transition 
+                        name="slide-down"
+                        @before="beforeEnter" 
+                        @enter="enter" 
+                        @leave="leave"
+                    >
+                        <div 
+                            v-if="get"
+                            class="grid gap-4 *:font-normal *:text-base lg:*:text-sm ease-in-out duration-500 transition-all"
+                        >                       
+                                
+                            <NuxtLink
+                                to="/"
+                                class="group relative flex duration-500 ease-in transition-all"
+                            >
+                                <span class="group-hover:underline-text">Who we are</span>
+                            </NuxtLink>
+
+                            <NuxtLink
+                                to="/"
+                                class="group relative flex duration-500 ease-in transition-all"
+                            >                            
+                                <span class="group-hover:underline-text">Our leadership</span>
+                            </NuxtLink>
+
+                            <NuxtLink
+                                to="/"
+                                class="group relative flex duration-500 ease-in transition-all"
+                            >                            
+                                <span class="group-hover:underline-text">What we do</span>
+                            </NuxtLink>
+
+                            <NuxtLink
+                                to="/"
+                                class="group relative flex duration-500 ease-in transition-all"
+                            >                            
+                                <span class="group-hover:underline-text">Our brands</span>
+                            </NuxtLink>
+
+                            <NuxtLink
+                                to="/"
+                                class="group relative flex duration-500 ease-in transition-all"
+                            >                            
+                                <span class="group-hover:underline-text">Technology and innovation</span>
+                            </NuxtLink>
+
+                            <NuxtLink
+                                to="/"
+                                class="group relative flex duration-500 ease-in transition-all"
+                            >                            
+                                <span class="group-hover:underline-text">Sustainability</span>
+                            </NuxtLink>
+
+                            <NuxtLink
+                                to="/"
+                                class="group relative flex duration-500 ease-in transition-all"
+                            >                            
+                                <span class="group-hover:underline-text">Chevron around the world</span>
+                            </NuxtLink>
+
+                            <NuxtLink
+                                to="/"
+                                class="group relative flex duration-500 ease-in transition-all"
+                            >                            
+                                <span class="group-hover:underline-text">Investor relations</span>
+                            </NuxtLink>
+        
+                        </div>
+                    </Transition>
+                </div>
+
+                <!-- Latest at Chevron -->
+                <div class="flex flex-col justify-center gap-3 md:gap-6 pb-4 border-b-1 border-(--white)">
+
+                    <h3 class="flex items-center justify-between my-auto py-4 *:flex *:items-center font-bold text-base">
+                        <span>Latest at Chevron</span>
+                        <span 
+                            @click="toggleLatest"
+                            class="font-bold text-lg cursor-pointer duration-300 ease-in-out transition-all"
+                            :class="{'rotate-180': rotateLatest}"
+                        >
+                            <Icon name="uiw:down" />
+                        </span>
+                    </h3>
+                    
+                    <Transition 
+                        name="slide-down"
+                        @before="beforeEnter" 
+                        @enter="enter" 
+                        @leave="leave"
+                    >
+                        <div 
+                            v-if="latest"
+                            class="grid gap-4 *:font-normal *:text-base lg:*:text-sm"
+                        >                       
+                                
+                            <NuxtLink
+                                to="/"
+                                class="group relative flex duration-500 ease-in transition-all"
+                            >
+                                <span class="group-hover:underline-text">Newsroom</span>
+                            </NuxtLink>
+
+                            <NuxtLink
+                                to="/"
+                                class="group relative flex duration-500 ease-in transition-all"
+                            >                            
+                                <span class="group-hover:underline-text">Investors events and presentations</span>
+                            </NuxtLink>
+
+                            <NuxtLink
+                                to="/"
+                                class="group relative flex duration-500 ease-in transition-all"
+                            >                            
+                                <span class="group-hover:underline-text">Financial Information</span>
+                            </NuxtLink>
+
+                            <NuxtLink
+                                to="/"
+                                class="group relative flex duration-500 ease-in transition-all"
+                            >                            
+                                <span class="group-hover:underline-text">Stock information</span>
+                            </NuxtLink>
+
+                            <NuxtLink
+                                to="/"
+                                class="group relative flex duration-500 ease-in transition-all"
+                            >                            
+                                <span class="group-hover:underline-text">Technology ventures</span>
+                            </NuxtLink>
+                            
+                        </div>
+                    </Transition>
+
+                </div>
+
+                <!-- Future of energy -->
+                <div class="flex flex-col justify-center gap-3 md:gap-6 pb-4 border-b-1 border-(--white)">
+
+                    <h3 class="flex items-center justify-between my-auto py-4 *:flex *:items-center font-bold text-base">
+                        <span>Future of energy</span>
+                        <span 
+                            @click="toggleFuture"
+                            class="font-bold text-lg cursor-pointer duration-300 ease-in-out transition-all"
+                            :class="{'rotate-180': rotateFuture}"
+                        >
+                            <Icon name="uiw:down" />
+                        </span>
+                    </h3>
+
+                    <Transition 
+                        name="slide-down"
+                        @before="beforeEnter" 
+                        @enter="enter" 
+                        @leave="leave"
+                    >
+                        <div 
+                            v-if="future"
+                            class="grid gap-2 *:font-normal *:text-sm"
+                        >                       
+                                
+                            <NuxtLink
+                                to="/"
+                                class="group relative flex text-base duration-500 ease-in transition-all"
+                            >
+                                <span class="group-hover:underline-text">Carbon capture and storage</span>
+                            </NuxtLink>
+
+                            <NuxtLink
+                                to="/"
+                                class="group relative flex text-base duration-500 ease-in transition-all"
+                            >                            
+                                <span class="group-hover:underline-text">Energy in progress</span>
+                            </NuxtLink>
+
+                            <NuxtLink
+                                to="/"
+                                class="group relative flex text-base duration-500 ease-in transition-all"
+                            >                            
+                                <span class="group-hover:underline-text">New energies</span>
+                            </NuxtLink>
+
+                            <NuxtLink
+                                to="/"
+                                class="group relative flex text-base duration-500 ease-in transition-all"
+                            >                            
+                                <span class="group-hover:underline-text">Renewable fuels in transportation</span>
+                            </NuxtLink>
+
+                            <NuxtLink
+                                to="/"
+                                class="group relative flex text-base duration-500 ease-in transition-all"
+                            >                            
+                                <span class="group-hover:underline-text">Methane management</span>
+                            </NuxtLink>
+                            
+                        </div>
+                    </Transition>
+
+                </div>
+
+                <!-- Popular links -->
+                <div class="flex flex-col justify-center gap-3 md:gap-6 pb-4 border-b-1 border-(--white)">
+
+                    <h3 class="flex items-center justify-between my-auto py-4 *:flex *:items-center font-bold text-base">
+                        <span>Popular links</span>
+                        <span 
+                            @click="togglePopular"
+                            class="font-bold text-lg cursor-pointer duration-300 ease-in-out transition-all"
+                            :class="{'rotate-180': rotatePopular}"
+                        >
+                            <Icon name="uiw:down" />
+                        </span>
+                    </h3>
+
+                    <Transition 
+                        name="slide-down"
+                        @before="beforeEnter" 
+                        @enter="enter" 
+                        @leave="leave"
+                    >
+                        <div 
+                            v-if="popular"
+                            class="grid gap-2 *:font-normal *:text-sm"
+                        >                       
+                                
+                            <NuxtLink
+                                to="/"
+                                class="group relative flex text-base duration-500 ease-in transition-all"
+                            >
+                                <span class="group-hover:underline-text">Credit and gift cards</span>
+                            </NuxtLink>
+
+                            <NuxtLink
+                                to="/"
+                                class="group relative flex text-base duration-500 ease-in transition-all"
+                            >                            
+                                <span class="group-hover:underline-text">Chevron texaco rewards</span>
+                            </NuxtLink>
+
+                            <NuxtLink
+                                to="/"
+                                class="group relative flex text-base duration-500 ease-in transition-all"
+                            >                            
+                                <span class="group-hover:underline-text">Careers</span>
+                            </NuxtLink>
+
+                            <NuxtLink
+                                to="/"
+                                class="group relative flex text-base duration-500 ease-in transition-all"
+                            >                            
+                                <span class="group-hover:underline-text">Contact us</span>
+                            </NuxtLink>
+
+                            <NuxtLink
+                                to="/"
+                                class="group relative flex text-base duration-500 ease-in transition-all"
+                            >                            
+                                <span class="group-hover:underline-text">Find a service station</span>
+                            </NuxtLink>
+                            
+                        </div>
+                    </Transition>
+                </div>
+
+                
+            </div>
+
+            <!-- lg: Get to know us & Latest at chevron -->
+            <div class="hidden lg:grid gap-8 md:gap-6">
                 
                 <!-- Get to know us -->
                 <div class="flex flex-col gap-3 md:gap-6">
 
                     <h3 class="font-bold text-sm">Get to know us</h3>
 
-                    <div class="grid gap-2 *:font-normal *:text-sm">                       
+                    <div class="grid gap-2 *:font-normal *:text-base lg:*:text-sm">                       
                             
                         <NuxtLink
                             to="/"
-                            class="group relative flex text-base duration-500 ease-in transition-all"
+                            class="group relative flex duration-500 ease-in transition-all"
                         >
                             <span class="group-hover:underline-text">Who we are</span>
                         </NuxtLink>
 
                         <NuxtLink
                             to="/"
-                            class="group relative flex text-base duration-500 ease-in transition-all"
+                            class="group relative flex duration-500 ease-in transition-all"
                         >                            
                             <span class="group-hover:underline-text">Our leadership</span>
                         </NuxtLink>
 
                         <NuxtLink
                             to="/"
-                            class="group relative flex text-base duration-500 ease-in transition-all"
+                            class="group relative flex duration-500 ease-in transition-all"
                         >                            
                             <span class="group-hover:underline-text">What we do</span>
                         </NuxtLink>
 
                         <NuxtLink
                             to="/"
-                            class="group relative flex text-base duration-500 ease-in transition-all"
+                            class="group relative flex duration-500 ease-in transition-all"
                         >                            
                             <span class="group-hover:underline-text">Our brands</span>
                         </NuxtLink>
 
                         <NuxtLink
                             to="/"
-                            class="group relative flex text-base duration-500 ease-in transition-all"
+                            class="group relative flex duration-500 ease-in transition-all"
                         >                            
                             <span class="group-hover:underline-text">Technology and innovation</span>
                         </NuxtLink>
 
                         <NuxtLink
                             to="/"
-                            class="group relative flex text-base duration-500 ease-in transition-all"
+                            class="group relative flex duration-500 ease-in transition-all"
                         >                            
                             <span class="group-hover:underline-text">Sustainability</span>
                         </NuxtLink>
 
                         <NuxtLink
                             to="/"
-                            class="group relative flex text-base duration-500 ease-in transition-all"
+                            class="group relative flex duration-500 ease-in transition-all"
                         >                            
                             <span class="group-hover:underline-text">Chevron around the world</span>
                         </NuxtLink>
 
                         <NuxtLink
                             to="/"
-                            class="group relative flex text-base duration-500 ease-in transition-all"
+                            class="group relative flex duration-500 ease-in transition-all"
                         >                            
                             <span class="group-hover:underline-text">Investor relations</span>
                         </NuxtLink>
@@ -139,41 +419,44 @@
                 <!-- Latest at Chevron -->
                 <div class="flex flex-col gap-3 md:gap-6">
 
-                    <h3 class="font-bold text-sm">Latest at chevron</h3>
+                    <h3 class="font-bold text-base lg:text-sm *:flex *:items-center">
+                        <span>Latest at chevron</span>
+                        <span><Icon name="mdi:down" /></span>
+                    </h3>
 
-                    <div class="grid gap-2 *:font-normal *:text-sm">                       
+                    <div class="grid gap-2 *:font-normal *:text-base lg:*:text-sm">                       
                             
                         <NuxtLink
                             to="/"
-                            class="group relative flex text-base duration-500 ease-in transition-all"
+                            class="group relative flex duration-500 ease-in transition-all"
                         >
                             <span class="group-hover:underline-text">Newsroom</span>
                         </NuxtLink>
 
                         <NuxtLink
                             to="/"
-                            class="group relative flex text-base duration-500 ease-in transition-all"
+                            class="group relative flex duration-500 ease-in transition-all"
                         >                            
                             <span class="group-hover:underline-text">Investors events and presentations</span>
                         </NuxtLink>
 
                         <NuxtLink
                             to="/"
-                            class="group relative flex text-base duration-500 ease-in transition-all"
+                            class="group relative flex duration-500 ease-in transition-all"
                         >                            
                             <span class="group-hover:underline-text">Financial Information</span>
                         </NuxtLink>
 
                         <NuxtLink
                             to="/"
-                            class="group relative flex text-base duration-500 ease-in transition-all"
+                            class="group relative flex duration-500 ease-in transition-all"
                         >                            
                             <span class="group-hover:underline-text">Stock information</span>
                         </NuxtLink>
 
                         <NuxtLink
                             to="/"
-                            class="group relative flex text-base duration-500 ease-in transition-all"
+                            class="group relative flex duration-500 ease-in transition-all"
                         >                            
                             <span class="group-hover:underline-text">Technology ventures</span>
                         </NuxtLink>
@@ -184,9 +467,8 @@
 
             </div>
 
-
-            <!-- Future of energy & Popular links -->
-            <div class="grid gap-4 md:gap-6">
+            <!-- lg: Future of energy & Popular links -->
+            <div class="hidden lg:grid gap-4 md:gap-6">
                 
                 <!-- Future of energy -->
                 <div class="flex flex-col gap-3 md:gap-6">
@@ -282,163 +564,63 @@
 
             </div>
 
-
-
-          <!-- Home Link and Personal Links -->
-          <!-- <div class="grid grid-cols-1 gap-2 md:gap-4">
-            <Transition name="fade">
-              <NuxtLink to="/" aria-label="Logo" class="text-(--theme-green) flex gap-2 *:flex *:items-center">
-                <span class="text-xl font-bold">OMB</span>
-                <span class="text-sm p-1 rounded-lg bg-(--theme-green)/20">dev</span>
-              </NuxtLink>
-            </Transition>
-
-            <p class="text-sm md:text-base">Frontend Developer with {{ yearsExperience }}+ years of expertise in building enterprise SaaS platforms. Proven track record of scaling ap...</p>
-            
-            <div class="flex items-center gap-2">
-              <span class="flex cursor-text items-center text-xs rounded-lg w-fit font-semibold px-3 py-1 border-1 shadow-sm hover:bg-green-50 border-(--theme-green) text-(--theme-green)">
-                <span class="flex text-base"><Icon name="mdi:dot" class="icon"/></span>
-                <span>Available</span>
-              </span>
-              <span class="flex">Flexible</span>
-            </div> -->
-
-            <!-- Social Links -->
-            <!-- <div class="flex items-center gap-8 *:hover:text-(--theme-green) *:text-2xl *:cursor-pointer duration-300 ease-in-out transition-all">
-              <!-- GitHub -->
-              <!-- <a 
-                href="https://github.com/Olorunshogo" 
-                target="_blank" 
-                rel="noopener noreferrer"
-              >
-                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
-                  <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-                    <path stroke-dasharray="32" stroke-dashoffset="32" d="M12 4c1.67 0 2.61 0.4 3 0.5c0.53 -0.43 1.94 -1.5 3.5 -1.5c0.34 1 0.29 2.22 0 3c0.75 1 1 2 1 3.5c0 2.19 -0.48 3.58 -1.5 4.5c-1.02 0.92 -2.11 1.37 -3.5 1.5c0.65 0.54 0.5 1.87 0.5 2.5c0 0.73 0 3 0 3M12 4c-1.67 0 -2.61 0.4 -3 0.5c-0.53 -0.43 -1.94 -1.5 -3.5 -1.5c-0.34 1 -0.29 2.22 0 3c-0.75 1 -1 2 -1 3.5c0 2.19 0.48 3.58 1.5 4.5c1.02 0.92 2.11 1.37 3.5 1.5c-0.65 0.54 -0.5 1.87 -0.5 2.5c0 0.73 0 3 0 3">
-                      <animate fill="freeze" attributeName="stroke-dashoffset" dur="0.7s" values="32;0" />
-                    </path>
-                    <path stroke-dasharray="10" stroke-dashoffset="10" d="M9 19c-1.41 0 -2.84 -0.56 -3.69 -1.19c-0.84 -0.63 -1.09 -1.66 -2.31 -2.31">
-                      <animate fill="freeze" attributeName="stroke-dashoffset" begin="0.8s" dur="0.2s" values="10;0" />
-                    </path>
-                  </g>
-                </svg>
-              </a> -->
-
-              <!-- LinkedIn -->
-              <!-- <a 
-                href="https://x.com/Shownzy_Baba?t=RmNQSj0JMBIZm5fExNTZ2w&s=08" 
-                target="_blank" 
-                rel="noopener noreferrer"
-              >
-                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 15 15">
-                  <path fill="none" stroke="currentColor" d="M4.5 6v5m6 0V8.5a2 2 0 1 0-4 0V11V6M4 4.5h1M1.5.5h12a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1h-12a1 1 0 0 1-1-1v-12a1 1 0 0 1 1-1Z" stroke-width="1" />
-                </svg>
-              </a> -->
-
-              <!-- X -->
-              <!-- <a 
-                href="https://x.com/Shownzy_Baba?t=RmNQSj0JMBIZm5fExNTZ2w&s=08" 
-                target="_blank" 
-                rel="noopener noreferrer"
-              >
-                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
-                  <g fill="currentColor">
-                    <path d="M1 2h2.5L3.5 2h-2.5zM5.5 2h2.5L7.2 2h-2.5z">
-                      <animate fill="freeze" attributeName="d" dur="0.4s" values="M1 2h2.5L3.5 2h-2.5zM5.5 2h2.5L7.2 2h-2.5z;M1 2h2.5L18.5 22h-2.5zM5.5 2h2.5L23 22h-2.5z" />
-                    </path>
-                    <path d="M3 2h5v0h-5zM16 22h5v0h-5z">
-                      <animate fill="freeze" attributeName="d" begin="0.4s" dur="0.4s" values="M3 2h5v0h-5zM16 22h5v0h-5z;M3 2h5v2h-5zM16 22h5v-2h-5z" />
-                    </path>
-                    <path d="M18.5 2h3.5L22 2h-3.5z">
-                      <animate fill="freeze" attributeName="d" begin="0.5s" dur="0.4s" values="M18.5 2h3.5L22 2h-3.5z;M18.5 2h3.5L5 22h-3.5z" />
-                    </path>
-                  </g>
-                </svg>
-              </a>             
-              
-            </div>
-          </div> -->
-
-          <!-- Quick Links -->
-          <!-- <div class="grid grid-cols-1 gap-2 md:gap-4">
-            <h4 class="text-xl font-semibold text-black">Quick Links</h4>
-
-            <div class="grid grid-cols-1 gap-2 *:hover:text-(--theme-green) *:text-sm *:md:text-base">
-               -->
-
-              
-
-              <!-- Hire Me -->
-              <!-- <NuxtLink to="/hire" class="flex items-center gap-2 cursor-pointer">
-                <span class="flex text-xl"><Icon name="mdi:flash-outline" /></span>
-                <span class="flex">Hire Me</span>
-              </NuxtLink>
-              
-
-            </div>
-          </div> -->
-
         </div>
 
         <!-- Footer 2 -->
-        <div class="flex flex-col *:font-semibold *:text-base m-auto">
+        <div class="flex flex-col gap-8 lg:gap-12 *:font-semibold m-auto">
 
-            <div class="flex items-center justify-between flex-wrap gap-4 md:gap-8">
-                
-                <div class="flex items-center flex-wrap gap-4 md:gap-6">                       
-                            
-                    <NuxtLink
-                        to="/"
-                        class="group relative flex text-base duration-500 ease-in transition-all"
-                    >
-                        <span class="group-hover:underline-text">Site map</span>
-                    </NuxtLink>
+            <div class="flex items-center justify-center *:text-base lg:*:text-lg *:font-normal lg:*:font-medium flex-wrap gap-4">               
+                                                  
+                <NuxtLink
+                    to="/"
+                    class="group relative flex duration-500 ease-in transition-all"
+                >
+                    <span class="group-hover:underline-text">Site map</span>
+                </NuxtLink>
 
-                    <NuxtLink
-                        to="/"
-                        class="group relative flex text-base duration-500 ease-in transition-all"
-                    >                            
-                        <span class="group-hover:underline-text">Accessibility</span>
-                    </NuxtLink>
+                <NuxtLink
+                    to="/"
+                    class="group relative flex duration-500 ease-in transition-all"
+                >                            
+                    <span class="group-hover:underline-text">Accessibility</span>
+                </NuxtLink>
 
-                    <NuxtLink
-                        to="/"
-                        class="group relative flex text-base duration-500 ease-in transition-all"
-                    >                            
-                        <span class="group-hover:underline-text">Terms of use</span>
-                    </NuxtLink>
-    
-                    <NuxtLink
-                        to="/"
-                        class="group relative flex text-base duration-500 ease-in transition-all"
-                    >                            
-                        <span class="group-hover:underline-text">Privacy</span>
-                    </NuxtLink>
+                <NuxtLink
+                    to="/"
+                    class="group relative flex duration-500 ease-in transition-all"
+                >                            
+                    <span class="group-hover:underline-text">Terms of use</span>
+                </NuxtLink>
 
-                    <button
-                        @click="openOneTrustModal"
-                        class="group relative flex text-base duration-500 ease-in transition-all"
-                    >                            
-                        <span class="group-hover:underline-text">Cookie settings</span>
-                    </button>
-    
-                            
-    
-                    <NuxtLink
-                        to="/"
-                        class="group relative flex text-base duration-500 ease-in transition-all"
-                    >                            
-                        <span class="group-hover:underline-text">Cookie statement</span>
-                    </NuxtLink>
+                <NuxtLink
+                    to="/"
+                    class="group relative flex duration-500 ease-in transition-all"
+                >                            
+                    <span class="group-hover:underline-text">Privacy</span>
+                </NuxtLink>
+
+                <button
+                    @click="oneTrustModal = true"
+                    class="group relative flex cursor-pointer duration-500 ease-in transition-all"
+                >                            
+                    <span class="group-hover:underline-text">Cookie settings</span>
+                </button>   
                               
-                </div>
-            
-                <div class="flex items-center gap-2 *:flex *:items-center">                
+                <NuxtLink
+                    to="/"
+                    class="group relative flex duration-500 ease-in transition-all"
+                >                            
+                    <span class="group-hover:underline-text">Cookie statement</span>
+                </NuxtLink>                           
+                
+                <!-- United States -->
+                <div class="flex items-center gap-2 *:flex *:items-center *:font-semibold">                
                     <span><Icon name="mdi:web" /></span>
                     <span>United States</span>
                 </div>
 
                 <!-- Social links -->
-                <div class="flex items-center flex-wrap gap-4 md:gap-6 *:flex *:items-center *:text-2xl *:ease-in-out *:duration-500 *:transition-all *:hover:text-(--light-blue)">
+                <div class="flex items-center flex-wrap gap-4 *:flex *:items-center *:text-xl lg:*:text-2xl *:ease-in-out *:duration-500 *:transition-all *:hover:text-(--light-blue)">
 
                     <!-- Facebook -->
                     <span>
@@ -536,21 +718,57 @@
                     </span>
                 
 
-                </div>
-            
+                </div>            
             
             </div>
           
-          <div class="flex items-center gap-1">
-            <span>&copy;</span>
-            <span>{{ portfolioYear }}</span>
-            <span v-if="displayYear" class="">- {{ currentYear }}</span>
-            <span>Olorunshogo Moses BAMTEFA. All rights reserved.</span>
-          </div>
-
-          
+            <div class="flex items-center justify-center flex-wrap *:text-base lg:*:text-xl *:text-wrap *:font-normal lg:*:font-medium mx-auto gap-2">
+                <span>&copy;</span>
+                <span>{{ developmentYear }}</span>
+                <span v-if="displayYear" class="">-{{ currentYear }}</span>
+                <span>Chevron Corporation. All rights reserved.</span>
+            </div>          
 
         </div>
+
+        <!-- Open One Trust Sample Modal Template -->
+        <div 
+            v-if="oneTrustModal"
+            class="fixed z-99 inset-0 bg-black/70 flex flex-col gap-2 text-black items-center justify-center w-full h-full"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="modal-title"
+        >   <Transition name="fade" :duration="500">
+                <div
+                    class="relative w-9/10 lg:w-3/5 flex flex-col p-4 lg:p-8 items-center justify-center rounded-lg shadow-lg bg-white"
+                >
+                    <!-- Close button -->
+                    <button
+                        @click="oneTrustModal = false"
+                        class="absolute top-2 right-4 flex items-center justify-center p-3 m-auto border-1 rounded-lg shadow-sm w-4 h-4 border-gray-500 text-lg hover:text-gray-700"
+                        aria-label="Close modal"
+                    >
+                        &times;
+                    </button>
+
+                    <!-- Modal header -->
+                    <h2 
+                        id="modal-title"
+                        class="text-xl font-semibold text-center mb-4"
+                    >
+                        Open Trust Modal Title
+                    </h2>
+
+                    <!-- Modal content -->
+                    <p 
+                        class="mb-6"
+                    >
+                        This is a basic functional modal. Clicking on the Cookies settings button should show this as I saw it when I was at Kubwa but for some weird reasons, it's not showing over here. Well, whichever one we decide, this is functional for now and we can always edit it any way we like.
+                    </p>
+                </div>
+            </Transition>
+        </div>
+
 
         
       </div>
@@ -613,6 +831,26 @@
         100% {
             transform: translateX(0);
         }
+    }
+
+    /* Slide-down transition */
+    .slide-down-enter-active,
+    .slide-down-leave-active {
+        transition: transform 0.5s ease, max-height 0.5s ease;
+    }
+
+    .slide-down-enter, 
+    .slide-down-leave-to /* .slide-down-leave-active in <2.1.8 */ {
+        transform: translateY(-20px);
+        opacity: 0;
+        max-height: 0;
+    }
+
+    .slide-down-enter-to,
+    .slide-down-leave {
+        transform: translateY(0);
+        opacity: 1;
+        max-height: 500px; /* Or adjust depending on the expected content size */
     }
     
 </style>
