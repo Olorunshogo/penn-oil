@@ -3,8 +3,8 @@
 <script lang="ts" setup>
   import { useHead } from 'nuxt/app';
   useHead({
-    title: 'PenOil: Sustainable Energy Solutions',
-    titleTemplate: '%s | Global Energy Company'
+    title: 'Chevron Corporation - Human Energy',
+    titleTemplate: '%s | Energy'
   });
 
 </script>

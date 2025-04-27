@@ -18,7 +18,7 @@
 
 <template>
   <!-- <div class="w-full hidden md:w-full md:flex md:flex-col font-base text-(--text-gray) border-t-1 border-t-(--border-gray)"> -->
-  <div class="w-full h-full px-4 md:px-6 py-(--section-padding-y) md:py-(--section-padding-y-md) text-white overflow-hidden bg-(--primary-bg)">
+  <div class="w-full h-full px-4 md:px-6 py-(--section-padding-y) lg:py-(--section-padding-y-lg) text-white overflow-hidden bg-(--primary-bg)">
 
     <div class="max-w-7xl mx-auto">
 

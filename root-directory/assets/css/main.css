@@ -68,6 +68,9 @@
     --primary-bg: #0b2d71;
     --secondary-bg: #6c757d;
 
+    --navbar-h: 5rem;
+    --border-gray: #dbdcdd;
+
     --button-color: var(--color-medium-blue-rgb);
     --button-text-color: var(--color-black-rgb);
     --button-text-hover-color: var(--color-white-rgb);
@@ -79,8 +82,11 @@
     --bs-body-line-height: 2.6rem;
     --bs-body-color: var(--color-black);
 
+    --section-padding-x: 3rem;
+    --section-padding-x-lg: 5rem;
+
     --section-padding-y: 3rem;
-    --section-padding-y-md: 5rem;
+    --section-padding-y-lg: 5rem;
 }
 
 

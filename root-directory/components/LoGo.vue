@@ -1,7 +1,7 @@
 
 <template>
     <div>
-        <!-- Mobile Logo -->
+        <!-- Desktop Logo -->
         <NuxtLink 
             to="/"
             class="relative flex flex-col items-center justify-center"
