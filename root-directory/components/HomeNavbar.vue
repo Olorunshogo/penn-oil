@@ -37,9 +37,7 @@ import {
   isInvestorsOpen,
   isInvestorsHovered,
   openDesktopInvestors,
-  closeDesktopInvestors,
-  isNewsroomOpen,
-  isCareersOpen,
+  closeDesktopInvestors
 } from "../stores/navbar";
 </script>
 
@@ -523,14 +521,14 @@ import {
 
             <!-- Desktop Panels -->
             <div
-                class="text-3xl"
+              class="text-3xl"
             >
 
                 <!-- Who panel -->
                 <aside
                 id="who-desktop-mobile-menu"
-                class="fixed top-0 left-0 w-1/2 h-full z-80 flex flex-col font-normal text-3xl bg-(--primary-bg) pt-32 px-(--section-px-lg) text-(--white) transition-transform duration-300 ease-in-out *:ease-in-out *:duration-300 *:transition-all"
-                :class="isWhoHovered ? 'translate-x-0' : '-translate-x-full'"
+                class="fixed top-0 -left-18 w-1/2 h-full z-80 flex flex-col font-normal text-3xl bg-(--primary-bg) pt-32 px-(--section-px-lg) text-(--white) transition-transform duration-300 ease-in-out *:ease-in-out *:duration-300 *:transition-all"
+                :class="isWhoHovered ? 'translate-x-18' : '-translate-x-full'"
                 role="dialog"
                 aria-modal="true"
                 @mouseenter="openDesktopWho"
@@ -585,8 +583,8 @@ import {
                 <!-- What we do panel -->
                 <aside
                 id="what-desktop-mobile-menu"
-                class="fixed top-0 left-0 w-1/2 h-full z-80 flex flex-col gap-8 font-normal bg-(--primary-bg) pt-32 px-(--section-px-lg) text-(--white) transition-transform duration-300 ease-in-out *:ease-in-out *:duration-300 *:transition-all"
-                :class="isWhatHovered ? 'translate-x-0' : '-translate-x-full'"
+                class="fixed top-0 -left-18 w-1/2 h-full z-80 flex flex-col gap-8 font-normal bg-(--primary-bg) pt-32 px-(--section-px-lg) text-(--white) transition-transform duration-300 ease-in-out *:ease-in-out *:duration-300 *:transition-all"
+                :class="isWhatHovered ? 'translate-x-18' : '-translate-x-full'"
                 role="dialog"
                 aria-modal="true"
                 @mouseenter="openDesktopWhat"
@@ -623,8 +621,8 @@ import {
                 <!-- Sustainability panel -->
                 <aside
                 id="sustainability-desktop-mobile-menu"
-                class="fixed top-0 left-0 w-1/2 h-full z-80 flex flex-col gap-8 font-normal bg-(--primary-bg) pt-32 px-(--section-px-lg) text-(--white) transition-transform duration-300 ease-in-out *:ease-in-out *:duration-300 *:transition-all"
-                :class="isSustainabilityHovered ? 'translate-x-0' : '-translate-x-full'"
+                class="fixed top-0 -left-18 w-1/2 h-full z-80 flex flex-col gap-8 font-normal bg-(--primary-bg) pt-32 px-(--section-px-lg) text-(--white) transition-transform duration-300 ease-in-out *:ease-in-out *:duration-300 *:transition-all"
+                :class="isSustainabilityHovered ? 'translate-x-18' : '-translate-x-full'"
                 role="dialog"
                 aria-modal="true"
                 @mouseenter="openDesktopSustainability"
@@ -661,8 +659,8 @@ import {
                 <!-- Investors panel -->
                 <aside
                 id="investors-desktop-mobile-menu"
-                class="fixed top-0 left-0 w-1/2 h-full z-80 flex flex-col gap-8 font-normal bg-(--primary-bg) pt-32 px-(--section-px-lg) text-(--white) transition-transform duration-300 ease-in-out *:ease-in-out *:duration-300 *:transition-all"
-                :class="isInvestorsHovered ? 'translate-x-0' : '-translate-x-full'"
+                class="fixed top-0 -left-18 w-1/2 h-full z-80 flex flex-col gap-8 font-normal bg-(--primary-bg) pt-32 px-(--section-px-lg) text-(--white) transition-transform duration-300 ease-in-out *:ease-in-out *:duration-300 *:transition-all"
+                :class="isInvestorsHovered ? 'translate-x-18' : '-translate-x-full'"
                 role="dialog"
                 aria-modal="true"
                 @mouseenter="openDesktopInvestors"

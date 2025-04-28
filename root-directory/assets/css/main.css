@@ -54,12 +54,14 @@
 
     --light-blue: #009dd9;
     --medium-blue: #0066b2;
-    --dark-blue: #0d6efd;
+    --dark-blue: #0b2d71;
+    /* --dark-blue: #0d6efd; */
 
 
-    --color-light-gray: #dbdcdd;
-    --color-medium-gray: #8c8f93;
-    --color-dark-gray: #6b6d6f;
+    --light-gray: #dbdcdd;
+    --medium-gray: #8c8f93;
+    --dark-gray: #6b6d6f;
+    --border-gray: #dbdcdd;
 
     --color-light-blue-rgb: 0, 157, 217;
     --color-medium-blue-rgb: 0, 102, 178;
@@ -69,7 +71,11 @@
     --secondary-bg: #6c757d;
 
     --navbar-h: 5rem;
-    --border-gray: #dbdcdd;
+    --section-px: 1rem;
+    --section-px-lg: 5rem;
+
+    --section-py: 4rem;
+    --section-py-lg: 6rem;
 
     --button-color: var(--color-medium-blue-rgb);
     --button-text-color: var(--color-black-rgb);
@@ -82,11 +88,7 @@
     --bs-body-line-height: 2.6rem;
     --bs-body-color: var(--color-black);
 
-    --section-px: 3rem;
-    --section-px-lg: 5rem;
-
-    --section-padding-y: 3rem;
-    --section-padding-y-lg: 5rem;
+    
 }
 
 

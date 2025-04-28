@@ -1,6 +1,6 @@
 
 <script lang="ts" setup>
-    import { ref } from 'vue';
+
     import { 
         developmentYear, currentYear, displayYear,
         enter, beforeEnter, leave,
@@ -9,16 +9,14 @@
         latest, toggleLatest, rotateLatest,
         future, toggleFuture, rotateFuture,
         popular, togglePopular, rotatePopular
-    } from '../stores/footer';
-
-    
+    } from '../stores/footer';    
 
 </script>
 
 
 <template>
   <!-- <div class="w-full hidden md:w-full md:flex md:flex-col font-base text-(--text-gray) border-t-1 border-t-(--border-gray)"> -->
-  <div class="w-full h-full px-4 md:px-6 py-(--section-padding-y) lg:py-(--section-padding-y-lg) text-white overflow-hidden bg-(--primary-bg)">
+  <div class="w-full h-full px-4 md:px-6 py-(--section-py) lg:py-(--section-py-lg) text-white overflow-hidden bg-(--primary-bg)">
 
     <div class="max-w-7xl mx-auto">
 
@@ -36,7 +34,7 @@
                         <!-- <span class="text-xs flex">&reg;</span> -->
                     </h2>
 
-                    <div class="flex items-center justify-center w-60 h-60">
+                    <div class="flex items-center justify-center w-80 h-50">
                         <LoGo />
                    </div>
                 </div>
@@ -52,7 +50,16 @@
                         to="/"
                         class="group relative flex items-center gap-2 font-bold text-base duration-500 ease-in transition-all"
                     >
-                        <Icon name="ep:right" class="arrow-icon group-hover:arrow-move" />
+                        <div class="group relative flex items-center justify-center text-xl w-12 h-full overflow-hidden">
+                            <div class="absolute flex items-center left-4 h-full w-12 transition-all duration-500 ease-in-out group-hover:translate-x-full">
+                                <Icon name="mdi:arrow-right"/>
+                            </div>
+                            
+                            <div class="absolute flex items-center left-4 h-full w-12 -translate-x-full transition-all duration-500 ease-in-out group-hover:translate-x-0">
+                                <Icon name="mdi:arrow-right" />
+                            </div>
+                        </div>
+                        <!-- <Icon name="ep:right" class="group-hover:arrow-icon group-hover:arrow-move" /> -->
                         
                         <span class="relative overflow-hidden">
                             <span class="group-hover:underline-text">subscribe to our newsletter</span>
@@ -840,7 +847,7 @@
     }
 
     .slide-down-enter, 
-    .slide-down-leave-to /* .slide-down-leave-active in <2.1.8 */ {
+    .slide-down-leave-to  {
         transform: translateY(-20px);
         opacity: 0;
         max-height: 0;
@@ -850,7 +857,7 @@
     .slide-down-leave {
         transform: translateY(0);
         opacity: 1;
-        max-height: 500px; /* Or adjust depending on the expected content size */
+        max-height: 500px; 
     }
     
 </style>

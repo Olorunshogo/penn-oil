@@ -13,9 +13,13 @@
 <template>
   <div>
 
-<!-- Section Hero Page -->
+    <!-- Section Hero Page -->
     <div>      
       <!-- <SectionHero /> -->
+    </div>  
+
+    <div>
+      <HomeWhat />
     </div>
 
 
