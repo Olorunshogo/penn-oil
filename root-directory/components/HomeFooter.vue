@@ -354,7 +354,7 @@
 
                     <h3 class="font-bold text-sm">Get to know us</h3>
 
-                    <div class="grid gap-2 *:font-normal *:text-base lg:*:text-sm">                       
+                    <div class="grid gap-2 *:font-normal *:text-base">                       
                             
                         <NuxtLink
                             to="/"
@@ -419,12 +419,12 @@
                 <!-- Latest at Chevron -->
                 <div class="flex flex-col gap-3 md:gap-6">
 
-                    <h3 class="font-bold text-base lg:text-sm *:flex *:items-center">
+                    <h3 class="font-bold text-sm *:flex *:items-center">
                         <span>Latest at chevron</span>
                         <span><Icon name="mdi:down" /></span>
                     </h3>
 
-                    <div class="grid gap-2 *:font-normal *:text-base lg:*:text-sm">                       
+                    <div class="grid gap-2 *:font-normal *:text-base">                       
                             
                         <NuxtLink
                             to="/"
@@ -475,7 +475,7 @@
 
                     <h3 class="font-bold text-sm">Future of energy</h3>
 
-                    <div class="grid gap-2 *:font-normal *:text-sm">                       
+                    <div class="grid gap-2 *:font-normal *:text-base">                       
                             
                         <NuxtLink
                             to="/"
@@ -521,7 +521,7 @@
 
                     <h3 class="font-bold text-sm">Popular links</h3>
 
-                    <div class="grid gap-2 *:font-normal *:text-sm">                       
+                    <div class="grid gap-2 *:font-normal *:text-base">                       
                             
                         <NuxtLink
                             to="/"

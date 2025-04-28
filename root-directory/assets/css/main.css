@@ -82,8 +82,8 @@
     --bs-body-line-height: 2.6rem;
     --bs-body-color: var(--color-black);
 
-    --section-padding-x: 3rem;
-    --section-padding-x-lg: 5rem;
+    --section-px: 3rem;
+    --section-px-lg: 5rem;
 
     --section-padding-y: 3rem;
     --section-padding-y-lg: 5rem;

@@ -1,205 +1,542 @@
-
 <script lang="ts" setup>
-    import { watch, onMounted, onBeforeUnmount } from 'vue';
-    
+import { watch, onMounted, onBeforeUnmount } from "vue";
 
-    // Close Menu on ESC key
-    const handleEscape = (e: KeyboardEvent) => {
-        if (e.key === 'Escape') isMenuOpen.value = false;
-    };
+// Close Menu on ESC key
+const handleEscape = (e: KeyboardEvent) => {
+  if (e.key === "Escape") isMenuOpen.value = false;
+};
 
-    // Scroll will be locked when menu is open
-    watch(isMenuOpen, (open) => {
-        document.body.style.overflow = open ? 'hidden': '';
-    });
+// Scroll will be locked when menu is open
+watch(isMenuOpen, (open) => {
+  document.body.style.overflow = open ? "hidden" : "";
+});
 
-    onMounted(() => {
-        document.addEventListener('keydown', handleEscape);
-    });
+onMounted(() => {
+  document.addEventListener("keydown", handleEscape);
+});
 
-    onBeforeUnmount(() => {
-        document.removeEventListener('keydown', handleEscape);
-    });
+onBeforeUnmount(() => {
+  document.removeEventListener("keydown", handleEscape);
+});
 
-    import { 
-        isMenuOpen, isSearchOpen, isWhoOpen, isWhatOpen,
-        isNewsroomOpen, isCareersOpen, isInvestorsOpen, isSustainabilityOpen
-     } from '../stores/navbar'
-
+import {
+  isMenuOpen,
+  isSearchOpen,
+  isWhoOpen,
+  isWhoHovered,
+  openDesktopWho,
+  closeDesktopWho,
+  isWhatOpen,
+  isWhatHovered,
+  openDesktopWhat,
+  closeDesktopWhat,
+  isSustainabilityOpen,
+  isSustainabilityHovered,
+  openDesktopSustainability,
+  closeDesktopSustainability,
+  isInvestorsOpen,
+  isInvestorsHovered,
+  openDesktopInvestors,
+  closeDesktopInvestors,
+  isNewsroomOpen,
+  isCareersOpen,
+} from "../stores/navbar";
 </script>
 
-
 <template>
-    <div>
-        <header>
-            <nav 
-                aria-label="Main navigation"
-                class="w-full h-40 relative"
+  <div>
+    <header>
+      <nav aria-label="Main navigation" class="w-full h-40 relative z">
+        <!-- Navigation -->
+        <div class="max-w-7xl mx-auto h-(--navabr-h)">
+          <!-- Mobile Nav  -->
+          <div
+            class="flex lg:hidden items-center justify-between gap-2 h-(--navbar-h) px-(--section-px)"
+          >
+            <!-- Hamburger Menu -->
+            <button
+              @click="isMenuOpen = true"
+              class="flex items-center justify-center bg-transparent p-2 text-3xl cursor-pointer duration-300 ease-in-out transition-all"
+              aria-label="Open menu"
+              aria-expanded="false"
+              aria-controls="mobile-menu"
             >
-                
-                <!-- Mobile Navigation -->
-                <div class="max-w-7xl mx-auto grid lg:hidden px-(--section-padding-x) h-(--navabr-h)">
+              <Icon name="mdi:menu" />
+            </button>
 
-                    <!-- Top Nav  -->
-                    <div class="flex items-center justify-between gap-2 h-(--navbar-h)">
-                        
-                        <!-- Hamburger Menu -->
-                        <button 
-                            @click="isMenuOpen = true"
-                            class="flex items-center justify-center bg-transparent p-2 text-3xl cursor-pointer duration-300 ease-in-out transition-all"
-                            aria-label="Open menu"
-                            aria-expanded="false"
-                            aria-controls="mobile-menu"
-                        >
-                            <Icon name="mdi:menu" />
-                        </button>
+            <!-- Mobile Logo -->
+            <NuxtLink to="/" class="relative flex items-center justify-center">
+              <NuxtImg
+                src="/images/Chevron/Chevron-logo.png"
+                alt="Chevron Logo"
+                class="object-cover w-18 h-16"
+              />
+            </NuxtLink>
 
-                        <!-- Mobile Logo -->
-                        <NuxtLink 
-                            to="/"
-                            class="relative flex items-center justify-center"
-                        >
-                            <NuxtImg
-                                src="/images/Chevron/Chevron-logo.png"
-                                alt="Chevron Logo"
-                                class="object-cover w-18 h-16"
-                            />
-                        </NuxtLink>
+            <button
+              @click="isSearchOpen = !isSearchOpen"
+              class="flex items-center justify-center cursor-pointer duration-300 ease-in-out transition-all bg-transparent text-(--black) text-3xl"
+            >
+              <Icon name="mdi:search" />
+            </button>
+          </div>
 
-                        <button 
-                            @click="isSearchOpen = !isSearchOpen"
-                            class="flex items-center justify-center cursor-pointer duration-300 ease-in-out transition-all bg-transparent text-(--black) text-3xl"
-                        >
-                            <Icon name="mdi:search" />
-                        </button>
+          <!-- Mobile Slide-in Menu Panel: Left -->
+          <aside
+            id="mobile-menu"
+            class="fixed top-0 left-0 w-full h-full z-99 flex flex-col gap-12 font-normal text-2xl bg-(--primary-bg) p-8 text-(--white) transition-transform duration-300 ease-in-out *:duration-300 *:ease-in-out *:transition-all"
+            :class="isMenuOpen ? 'translate-x-0' : '-translate-x-full'"
+            role="dialog"
+            aria-modal="true"
+          >
+            <button
+              class="flex items-center justify-end cursor-pointer hover:text-(--light-blue)"
+              @click="isMenuOpen = false"
+              aria-label="Close menu"
+            >
+              <Icon name="mdi:close" />
+            </button>
 
-                    </div>                    
+            <!-- Who we are -->
+            <button
+              @click="isWhoOpen = true"
+              class="flex *:flex items-center *:items-center justify-between cursor-pointer hover:text-(--light-blue) transition-transform duration-300 ease-in-out"
+            >
+              <span>Who we are</span>
+              <span>
+                <Icon name="mdi:chevron-right" />
+              </span>
+            </button>
 
-                    <!-- Slide-in Menu Panel: Left -->
-                    <aside 
-                        id="mobile-menu"
-                        class="fixed top-0 left-0 w-full h-full z-20 flex flex-col gap-12 font-normal text-2xl bg-(--primary-bg) p-8 text-(--white) transition-transform duration-300 ease-in-out *:duration-300 *:ease-in-out *:transition-all"
-                        :class="isMenuOpen ? 'translate-x-0': '-translate-x-full'"
-                        role="dialog"
-                        aria-modal="true"
-                    >                    
-                        <button 
-                            class="flex items-center justify-end cursor-pointer hover:text-(--light-blue)"
-                            @click="isMenuOpen = false"
-                            aria-label="Close menu"
-                        >
-                            <Icon name="mdi:close" />
-                        </button>
-                           
-                        <!-- Who we are -->
-                        <button 
-                            @click="isWhoOpen = true"
-                            class="flex *:flex items-center *:items-center justify-between cursor-pointer hover:text-(--light-blue) transition-transform duration-300 ease-in-out"
-                        >
-                            <span>Who we are</span>
-                            <span>
-                                <Icon name="mdi:chevron-right" />
-                            </span>
-                        </button>
+            <!-- What we do -->
+            <button
+              @click="isWhatOpen = true"
+              class="flex *:flex items-center *:items-center justify-between cursor-pointer hover:text-(--light-blue) transition-transform duration-300 ease-in-out"
+            >
+              <span>What we do</span>
+              <span>
+                <Icon name="mdi:chevron-right" />
+              </span>
+            </button>
 
-                        <!-- What we do -->
-                        <button 
-                            @click="isWhatOpen = true"
-                            class="flex *:flex items-center *:items-center justify-between cursor-pointer hover:text-(--light-blue) transition-transform duration-300 ease-in-out"
-                        >
-                            <span>What we do</span>
-                            <span>
-                                <Icon name="mdi:chevron-right" />
-                            </span>
-                        </button>
+            <!-- Sustainability -->
+            <button
+              @click="isSustainabilityOpen = true"
+              class="flex *:flex items-center *:items-center justify-between cursor-pointer hover:text-(--light-blue) transition-transform duration-300 ease-in-out"
+            >
+              <span>Sustainability</span>
+              <span>
+                <Icon name="mdi:chevron-right" />
+              </span>
+            </button>
 
-                        <!-- Sustainability -->
-                        <button 
-                            @click="isSustainabilityOpen = true"
-                            class="flex *:flex items-center *:items-center justify-between cursor-pointer hover:text-(--light-blue) transition-transform duration-300 ease-in-out"
-                        >
-                            <span>Sustainability</span>
-                            <span>
-                                <Icon name="mdi:chevron-right" />
-                            </span>
-                        </button>
+            <!-- Investors -->
+            <button
+              @click="isInvestorsOpen = true"
+              class="flex *:flex items-center *:items-center justify-between cursor-pointer hover:text-(--light-blue) transition-transform duration-300 ease-in-out"
+            >
+              <span>Investors</span>
+              <span>
+                <Icon name="mdi:chevron-right" />
+              </span>
+            </button>
 
-                        <!-- Investors -->
-                        <button 
-                            @click="isInvestorsOpen = true"
-                            class="flex *:flex items-center *:items-center justify-between cursor-pointer hover:text-(--light-blue) transition-transform duration-300 ease-in-out"
-                        >
-                            <span>Investors</span>
-                            <span>
-                                <Icon name="mdi:chevron-right" />
-                            </span>
-                        </button>
+            <!-- Newsroom -->
+            <NuxtLink
+              to="/"
+              class="flex *:flex items-center *:items-center justify-between hover:text-(--light-blue) duration-300 ease-in-out transition-all"
+            >
+              Newsroom
+            </NuxtLink>
 
-                        <!-- Newsroom -->
-                        <NuxtLink
-                            to="/"
-                            class="flex *:flex items-center *:items-center justify-between hover:text-(--light-blue) duration-300 ease-in-out transition-all"
-                        >
-                            Newsroom
-                        </NuxtLink>
+            <!-- Careers -->
+            <NuxtLink
+              to="/"
+              class="flex *:flex items-center *:items-center justify-between hover:text-(--light-blue) duration-300 ease-in-out transition-all"
+            >
+              Careers
+            </NuxtLink>
+          </aside>
 
-                        <!-- Careers -->
-                        <NuxtLink
-                            to="/"
-                            class="flex *:flex items-center *:items-center justify-between hover:text-(--light-blue) duration-300 ease-in-out transition-all"
-                        >
-                            Careers
-                        </NuxtLink>
+          <!-- Mobile Panels -->
+          <div>
+            <!-- Who we are panel -->
+            <aside
+              id="mobile-menu"
+              class="fixed top-0 left-0 w-full h-full z-20 flex flex-col gap-8 font-normal text-2xl bg-(--primary-bg) p-8 text-(--white) transition-transform duration-300 ease-in-out *:ease-in-out *:duration-300 *:transition-all"
+              :class="isWhoOpen ? 'translate-x-0' : '-translate-x-full'"
+              role="dialog"
+              aria-modal="true"
+            >
+              <div
+                class="flex items-center justify-between *:ease-in-out *:duration-300 *:transition-all"
+              >
+                <button
+                  class="flex items-center justify-end hover:text-(--light-blue)"
+                  @click="isWhoOpen = false"
+                  aria-label="Back Button"
+                >
+                  <Icon name="mdi:arrow-left" />
+                </button>
+                <span>Who we are</span>
+                <button
+                  class="flex items-center justify-end hover:text-(--light-blue)"
+                  @click="isWhoOpen = false"
+                  aria-label="Close menu"
+                >
+                  <Icon name="mdi:close" />
+                </button>
+              </div>
 
-                               
+              <!-- Overview -->
+              <NuxtLink
+                to="/"
+                class="flex *:flex items-center *:items-center justify-between hover:text-(--light-blue) duration-300 ease-in-out transition-all"
+              >
+                Overview
+              </NuxtLink>
 
-                                
+              <!-- Our culture -->
+              <NuxtLink
+                to="/"
+                class="flex *:flex items-center *:items-center justify-between hover:text-(--light-blue) duration-300 ease-in-out transition-all"
+              >
+                Our culture
+              </NuxtLink>
 
-                    
-                           
-                        
-                    </aside>                
-                    
-                </div>
+              <!-- Our brands -->
+              <NuxtLink
+                to="/"
+                class="flex *:flex items-center *:items-center justify-between hover:text-(--light-blue) duration-300 ease-in-out transition-all"
+              >
+                Our brands
+              </NuxtLink>
 
-                <!-- Panels -->
-                <div>
-                    <!-- Who we are panel -->
-                    <aside 
-                        id="mobile-menu"
-                        class="fixed top-0 left-0 w-full h-full z-20 flex flex-col gap-8 font-normal text-2xl bg-(--primary-bg) p-8 text-(--white) transition-transform duration-300 ease-in-out *:ease-in-out *:duration-300 *:transition-all"
-                        :class="isWhoOpen ? 'translate-x-0': '-translate-x-full'"
-                        role="dialog"
-                        aria-modal="true"
-                    >   
-                        
-                        <div class="flex items-center justify-between *:ease-in-out *:duration-300 *:transition-all">  
+              <!-- Our leadership -->
+              <NuxtLink
+                to="/"
+                class="flex *:flex items-center *:items-center justify-between hover:text-(--light-blue) duration-300 ease-in-out transition-all"
+              >
+                Our leadership
+              </NuxtLink>
 
-                            <button 
-                                class="flex items-center justify-end hover:text-(--light-blue)"
-                                @click="isWhoOpen = false"
-                                aria-label="Back Button"
-                            >
-                                <Icon name="mdi:arrow-left" />
-                            </button>
-                            <span>Who we are</span>
-                            <button 
-                                class="flex items-center justify-end hover:text-(--light-blue)"
-                                @click="isWhoOpen = false"
-                                aria-label="Close menu"
-                            >
-                                <Icon name="mdi:close" />
-                            </button>
+              <!-- Our history -->
+              <NuxtLink
+                to="/"
+                class="flex *:flex items-center *:items-center justify-between hover:text-(--light-blue) duration-300 ease-in-out transition-all"
+              >
+                Our history
+              </NuxtLink>
 
-                        </div>
+              <!-- Contact us -->
+              <NuxtLink
+                to="/"
+                class="flex *:flex items-center *:items-center justify-between hover:text-(--light-blue) duration-300 ease-in-out transition-all"
+              >
+                Contact us
+              </NuxtLink>
+            </aside>
 
-                        <!-- Overview -->
-                        <NuxtLink
-                            to="/"
-                            class="flex *:flex items-center *:items-center justify-between hover:text-(--light-blue) duration-300 ease-in-out transition-all"
-                        >
-                            Overview
-                        </NuxtLink>
+            <!-- What we do panel -->
+            <aside
+              id="mobile-menu"
+              class="fixed top-0 left-0 w-full h-full z-20 flex flex-col gap-8 font-normal text-2xl bg-(--primary-bg) p-8 text-(--white) transition-transform duration-300 ease-in-out *:ease-in-out *:duration-300 *:transition-all"
+              :class="isWhatOpen ? 'translate-x-0' : '-translate-x-full'"
+              role="dialog"
+              aria-modal="true"
+            >
+              <div
+                class="flex items-center justify-between *:ease-in-out *:duration-300 *:transition-all"
+              >
+                <button
+                  class="flex items-center justify-end hover:text-(--light-blue)"
+                  @click="isWhatOpen = false"
+                  aria-label="Back Button"
+                >
+                  <Icon name="mdi:arrow-left" />
+                </button>
+                <span>What we do</span>
+                <button
+                  class="flex items-center justify-end hover:text-(--light-blue)"
+                  @click="isWhatOpen = false"
+                  aria-label="Close menu"
+                >
+                  <Icon name="mdi:close" />
+                </button>
+              </div>
+
+              <!-- Overview -->
+              <NuxtLink
+                to="/"
+                class="flex *:flex items-center *:items-center justify-between hover:text-(--light-blue) duration-300 ease-in-out transition-all"
+              >
+                Overview
+              </NuxtLink>
+
+              <!-- Energy -->
+              <NuxtLink
+                to="/"
+                class="flex *:flex items-center *:items-center justify-between hover:text-(--light-blue) duration-300 ease-in-out transition-all"
+              >
+                Energy
+              </NuxtLink>
+
+              <!--   Technology and innovation -->
+              <NuxtLink
+                to="/"
+                class="flex *:flex items-center *:items-center justify-between hover:text-(--light-blue) duration-300 ease-in-out transition-all"
+              >
+                Technology and innovation
+              </NuxtLink>
+
+              <!-- Chevron around the world -->
+              <NuxtLink
+                to="/"
+                class="flex *:flex items-center *:items-center justify-between hover:text-(--light-blue) duration-300 ease-in-out transition-all"
+              >
+                Chevron around the world
+              </NuxtLink>
+            </aside>
+
+            <!-- Sustainability panel -->
+            <aside
+              id="mobile-menu"
+              class="fixed top-0 left-0 w-full h-full z-20 flex flex-col gap-8 font-normal text-2xl bg-(--primary-bg) p-8 text-(--white) transition-transform duration-300 ease-in-out *:ease-in-out *:duration-300 *:transition-all"
+              :class="isSustainabilityOpen ? 'translate-x-0' : '-translate-x-full'"
+              role="dialog"
+              aria-modal="true"
+            >
+              <div
+                class="flex items-center justify-between *:ease-in-out *:duration-300 *:transition-all"
+              >
+                <button
+                  class="flex items-center justify-end hover:text-(--light-blue)"
+                  @click="isSustainabilityOpen = false"
+                  aria-label="Back Button"
+                >
+                  <Icon name="mdi:arrow-left" />
+                </button>
+                <span>What we do</span>
+                <button
+                  class="flex items-center justify-end hover:text-(--light-blue)"
+                  @click="isSustainabilityOpen = false"
+                  aria-label="Close menu"
+                >
+                  <Icon name="mdi:close" />
+                </button>
+              </div>
+
+              <!-- Overview -->
+              <NuxtLink
+                to="/"
+                class="flex *:flex items-center *:items-center justify-between hover:text-(--light-blue) duration-300 ease-in-out transition-all"
+              >
+                Overview
+              </NuxtLink>
+
+              <!-- Climate -->
+              <NuxtLink
+                to="/"
+                class="flex *:flex items-center *:items-center justify-between hover:text-(--light-blue) duration-300 ease-in-out transition-all"
+              >
+                Climate
+              </NuxtLink>
+
+              <!--   Environment -->
+              <NuxtLink
+                to="/"
+                class="flex *:flex items-center *:items-center justify-between hover:text-(--light-blue) duration-300 ease-in-out transition-all"
+              >
+                Environment
+              </NuxtLink>
+
+              <!-- Social investment -->
+              <NuxtLink
+                to="/"
+                class="flex *:flex items-center *:items-center justify-between hover:text-(--light-blue) duration-300 ease-in-out transition-all"
+              >
+                Social investment
+              </NuxtLink>
+            </aside>
+
+            <!-- Investors panel -->
+            <aside
+              id="mobile-menu"
+              class="fixed top-0 left-0 w-full h-full z-20 flex flex-col gap-8 font-normal text-2xl bg-(--primary-bg) p-8 text-(--white) transition-transform duration-300 ease-in-out *:ease-in-out *:duration-300 *:transition-all"
+              :class="isInvestorsOpen ? 'translate-x-0' : '-translate-x-full'"
+              role="dialog"
+              aria-modal="true"
+            >
+              <div
+                class="flex items-center justify-between *:ease-in-out *:duration-300 *:transition-all"
+              >
+                <button
+                  class="flex items-center justify-end hover:text-(--light-blue)"
+                  @click="isInvestorsOpen = false"
+                  aria-label="Back Button"
+                >
+                  <Icon name="mdi:arrow-left" />
+                </button>
+                <span>Investors</span>
+                <button
+                  class="flex items-center justify-end hover:text-(--light-blue)"
+                  @click="isInvestorsOpen = false"
+                  aria-label="Close menu"
+                >
+                  <Icon name="mdi:close" />
+                </button>
+              </div>
+
+              <!-- Overview -->
+              <NuxtLink
+                to="/"
+                class="flex *:flex items-center *:items-center justify-between hover:text-(--light-blue) duration-300 ease-in-out transition-all"
+              >
+                Overview
+              </NuxtLink>
+
+              <!-- Events and presentations -->
+              <NuxtLink
+                to="/"
+                class="flex *:flex items-center *:items-center justify-between hover:text-(--light-blue) duration-300 ease-in-out transition-all"
+              >
+                Events and presentations
+              </NuxtLink>
+
+              <!--  Corporate governance -->
+              <NuxtLink
+                to="/"
+                class="flex *:flex items-center *:items-center justify-between hover:text-(--light-blue) duration-300 ease-in-out transition-all"
+              >
+                Corporate governance
+              </NuxtLink>
+
+              <!-- esg a-z index -->
+              <NuxtLink
+                to="/"
+                class="flex *:flex items-center *:items-center justify-between hover:text-(--light-blue) duration-300 ease-in-out transition-all"
+              >
+                esg a-z index
+              </NuxtLink>
+
+              <!-- Reports and fillings -->
+              <NuxtLink
+                to="/"
+                class="flex *:flex items-center *:items-center justify-between hover:text-(--light-blue) duration-300 ease-in-out transition-all"
+              >
+                Reports and fillings
+              </NuxtLink>
+
+              <!--  Stock and dividend -->
+              <NuxtLink
+                to="/"
+                class="flex *:flex items-center *:items-center justify-between hover:text-(--light-blue) duration-300 ease-in-out transition-all"
+              >
+                Stock and dividend
+              </NuxtLink>
+
+              <!-- Contact us -->
+              <NuxtLink
+                to="/"
+                class="flex *:flex items-center *:items-center justify-between hover:text-(--light-blue) duration-300 ease-in-out transition-all"
+              >
+                Contact us
+              </NuxtLink>
+            </aside>
+          </div>
+
+          <!-- Desktop Nav -->
+          <div
+            class="relative hidden lg:flex items-center z-90 justify-between text-base text-(--black) font-normal px-(--section-px-lg)"
+          >
+            <div class="flex items-center gap-8 *:hover:text-(--white) *:duration-300 *:ease-in-out *:transition-all">
+              <NuxtLink
+                to="/"
+                class="group relative flex duration-500 ease-in transition-all"
+                @mouseenter="openDesktopWho"
+                @mouseleave="closeDesktopWho"
+              >
+                <span class="group-hover:underline-text">Who we are</span>
+              </NuxtLink>
+
+              <NuxtLink
+                to="/"
+                class="group relative flex duration-500 ease-in transition-all"
+                @mouseenter="openDesktopWhat"
+                @mouseleave="closeDesktopWhat"
+              >
+                <span class="group-hover:underline-text">What we do</span>
+              </NuxtLink>
+
+              <NuxtLink
+                to="/"
+                class="group relative flex duration-500 ease-in transition-all"
+                @mouseenter="openDesktopSustainability"
+                @mouseleave="closeDesktopSustainability"
+              >
+                <span class="group-hover:underline-text">Sustainability</span>
+              </NuxtLink>
+
+              <NuxtLink
+                to="/"
+                class="group relative flex duration-500 ease-in transition-all"
+                @mouseenter="openDesktopInvestors"
+                @mouseleave="closeDesktopInvestors"
+              >
+                <span class="group-hover:underline-text">Investors</span>
+              </NuxtLink>
+            </div>
+
+            <!-- Mobile Logo -->
+            <NuxtLink to="/" class="relative flex items-center justify-center">
+              <NuxtImg
+                src="/images/Chevron/Chevron-logo.png"
+                alt="Chevron Logo"
+                class="object-cover w-18 h-16"
+              />
+            </NuxtLink>
+
+            <!-- Desktop Right Links -->
+            <div class="hidden lg:flex items-center gap-8 *:flex *:hover:text-(--light-blue) *:duration-300 *:ease-in-out *:transition-all">
+              <NuxtLink
+                to="/"
+                class="group text-base"
+              >
+                <span class="group-hover:underline-text">Sustainability</span>
+              </NuxtLink>
+
+              <NuxtLink
+                to="/"
+                class="group text-base"
+              >
+                <span class="group-hover:underline-text">Investors</span>
+              </NuxtLink>
+
+              <button
+                @click="isSearchOpen = !isSearchOpen"
+                class="flex items-center justify-center cursor-pointer duration-300 ease-in-out transition-all bg-transparent text-(--white) text-3xl"
+              >
+                <Icon name="mdi:search" />
+              </button>
+            </div>
+          </div>
+
+            <!-- Desktop Panels -->
+            <div
+                class="text-3xl"
+            >
+
+                <!-- Who panel -->
+                <aside
+                id="who-desktop-mobile-menu"
+                class="fixed top-0 left-0 w-1/2 h-full z-80 flex flex-col font-normal text-3xl bg-(--primary-bg) pt-32 px-(--section-px-lg) text-(--white) transition-transform duration-300 ease-in-out *:ease-in-out *:duration-300 *:transition-all"
+                :class="isWhoHovered ? 'translate-x-0' : '-translate-x-full'"
+                role="dialog"
+                aria-modal="true"
+                @mouseenter="openDesktopWho"
+                @mouseleave="closeDesktopWho"
+                >
+                    <div class="flex flex-col gap-8 max-w-7xl mx-auto">
 
                         <!-- Our culture -->
                         <NuxtLink
@@ -241,51 +578,21 @@
                             Contact us
                         </NuxtLink>
 
-                            
-                            
-                        
-                           
+                    </div>
 
-                            
-                        
-                    </aside>
+                </aside>
 
-                    <!-- What we do panel -->
-                    <aside 
-                        id="mobile-menu"
-                        class="fixed top-0 left-0 w-full h-full z-20 flex flex-col gap-8 font-normal text-2xl bg-(--primary-bg) p-8 text-(--white) transition-transform duration-300 ease-in-out *:ease-in-out *:duration-300 *:transition-all"
-                        :class="isWhatOpen ? 'translate-x-0': '-translate-x-full'"
-                        role="dialog"
-                        aria-modal="true"
-                    >   
-                        
-                        <div class="flex items-center justify-between *:ease-in-out *:duration-300 *:transition-all">  
-
-                            <button 
-                                class="flex items-center justify-end hover:text-(--light-blue)"
-                                @click="isWhatOpen = false"
-                                aria-label="Back Button"
-                            >
-                                <Icon name="mdi:arrow-left" />
-                            </button>
-                            <span>What we do</span>
-                            <button 
-                                class="flex items-center justify-end hover:text-(--light-blue)"
-                                @click="isWhatOpen = false"
-                                aria-label="Close menu"
-                            >
-                                <Icon name="mdi:close" />
-                            </button>
-
-                        </div>
-
-                        <!-- Overview -->
-                        <NuxtLink
-                            to="/"
-                            class="flex *:flex items-center *:items-center justify-between hover:text-(--light-blue) duration-300 ease-in-out transition-all"
-                        >
-                            Overview
-                        </NuxtLink>
+                <!-- What we do panel -->
+                <aside
+                id="what-desktop-mobile-menu"
+                class="fixed top-0 left-0 w-1/2 h-full z-80 flex flex-col gap-8 font-normal bg-(--primary-bg) pt-32 px-(--section-px-lg) text-(--white) transition-transform duration-300 ease-in-out *:ease-in-out *:duration-300 *:transition-all"
+                :class="isWhatHovered ? 'translate-x-0' : '-translate-x-full'"
+                role="dialog"
+                aria-modal="true"
+                @mouseenter="openDesktopWhat"
+                @mouseleave="closeDesktopWhat"
+                >
+                    <div class="flex flex-col gap-8 max-w-7xl mx-auto">
 
                         <!-- Energy -->
                         <NuxtLink
@@ -303,51 +610,27 @@
                             Technology and innovation
                         </NuxtLink>
 
-                        <!-- Chevron around the world -->
+                        <!-- Social investment -->
                         <NuxtLink
                             to="/"
                             class="flex *:flex items-center *:items-center justify-between hover:text-(--light-blue) duration-300 ease-in-out transition-all"
                         >
                             Chevron around the world
                         </NuxtLink>
-                    </aside>
+                    </div>
+                </aside>
 
-                    <!-- Sustainability panel -->
-                    <aside 
-                        id="mobile-menu"
-                        class="fixed top-0 left-0 w-full h-full z-20 flex flex-col gap-8 font-normal text-2xl bg-(--primary-bg) p-8 text-(--white) transition-transform duration-300 ease-in-out *:ease-in-out *:duration-300 *:transition-all"
-                        :class="isSustainabilityOpen ? 'translate-x-0': '-translate-x-full'"
-                        role="dialog"
-                        aria-modal="true"
-                    >   
-                        
-                        <div class="flex items-center justify-between *:ease-in-out *:duration-300 *:transition-all">  
-
-                            <button 
-                                class="flex items-center justify-end hover:text-(--light-blue)"
-                                @click="isSustainabilityOpen = false"
-                                aria-label="Back Button"
-                            >
-                                <Icon name="mdi:arrow-left" />
-                            </button>
-                            <span>What we do</span>
-                            <button 
-                                class="flex items-center justify-end hover:text-(--light-blue)"
-                                @click="isSustainabilityOpen = false"
-                                aria-label="Close menu"
-                            >
-                                <Icon name="mdi:close" />
-                            </button>
-
-                        </div>
-
-                        <!-- Overview -->
-                        <NuxtLink
-                            to="/"
-                            class="flex *:flex items-center *:items-center justify-between hover:text-(--light-blue) duration-300 ease-in-out transition-all"
-                        >
-                            Overview
-                        </NuxtLink>
+                <!-- Sustainability panel -->
+                <aside
+                id="sustainability-desktop-mobile-menu"
+                class="fixed top-0 left-0 w-1/2 h-full z-80 flex flex-col gap-8 font-normal bg-(--primary-bg) pt-32 px-(--section-px-lg) text-(--white) transition-transform duration-300 ease-in-out *:ease-in-out *:duration-300 *:transition-all"
+                :class="isSustainabilityHovered ? 'translate-x-0' : '-translate-x-full'"
+                role="dialog"
+                aria-modal="true"
+                @mouseenter="openDesktopSustainability"
+                @mouseleave="closeDesktopSustainability"
+                >
+                    <div class="flex flex-col gap-8 max-w-7xl mx-auto">
 
                         <!-- Climate -->
                         <NuxtLink
@@ -372,45 +655,20 @@
                         >
                             Social investment
                         </NuxtLink>
-                    </aside>
+                    </div>
+                </aside>
 
-                    <!-- Investors panel -->
-                    <aside 
-                        id="mobile-menu"
-                        class="fixed top-0 left-0 w-full h-full z-20 flex flex-col gap-8 font-normal text-2xl bg-(--primary-bg) p-8 text-(--white) transition-transform duration-300 ease-in-out *:ease-in-out *:duration-300 *:transition-all"
-                        :class="isInvestorsOpen ? 'translate-x-0': '-translate-x-full'"
-                        role="dialog"
-                        aria-modal="true"
-                    >   
-                        
-                        <div class="flex items-center justify-between *:ease-in-out *:duration-300 *:transition-all">  
-
-                            <button 
-                                class="flex items-center justify-end hover:text-(--light-blue)"
-                                @click="isInvestorsOpen = false"
-                                aria-label="Back Button"
-                            >
-                                <Icon name="mdi:arrow-left" />
-                            </button>
-                            <span>Investors</span>
-                            <button 
-                                class="flex items-center justify-end hover:text-(--light-blue)"
-                                @click="isInvestorsOpen = false"
-                                aria-label="Close menu"
-                            >
-                                <Icon name="mdi:close" />
-                            </button>
-
-                        </div>
-
-                        <!-- Overview -->
-                        <NuxtLink
-                            to="/"
-                            class="flex *:flex items-center *:items-center justify-between hover:text-(--light-blue) duration-300 ease-in-out transition-all"
-                        >
-                            Overview
-                        </NuxtLink>
-
+                <!-- Investors panel -->
+                <aside
+                id="investors-desktop-mobile-menu"
+                class="fixed top-0 left-0 w-1/2 h-full z-80 flex flex-col gap-8 font-normal bg-(--primary-bg) pt-32 px-(--section-px-lg) text-(--white) transition-transform duration-300 ease-in-out *:ease-in-out *:duration-300 *:transition-all"
+                :class="isInvestorsHovered ? 'translate-x-0' : '-translate-x-full'"
+                role="dialog"
+                aria-modal="true"
+                @mouseenter="openDesktopInvestors"
+                @mouseleave="closeDesktopInvestors"
+                >
+                    <div class="flex flex-col gap-8 max-w-7xl mx-auto">
                         <!-- Events and presentations -->
                         <NuxtLink
                             to="/"
@@ -458,98 +716,90 @@
                         >
                             Contact us
                         </NuxtLink>
-                    </aside>
-
-                </div>
-                
-
-                <!-- Desktop Navigation -->
-                <div class="max-w-7xl mx-auto hidden sm:flex align-items justify-between px-(--padding-x) md:px-(--padding-x-md) border-b-2 border-(--theme-peach) gap-4 h-(--navbar-h) bg-gradient-to-r from-(--color-peach-100) to-(--nav-bg)">
-
-                    <!-- Logo -->
-                    <div class="flex items-center justify-center">
-                        <!-- <LoGo /> -->
                     </div>
 
-                    <!-- Page Links -->
-                    <!-- <div class="flex items-center justify-center gap-1 *:p-2">
-                        <NuxtLink
-                            to="/"
-                            class="flex items-center justify-center p-2 font-semibold text-sm rounded-lg text-(--primary-heading) hover:bg-(--secondary-btn-hover) duration-300 ease-in-out transition-all"
-                        >
-                        About Me
-                        </NuxtLink>
+                </aside>
 
-                        <NuxtLink
-                            to="/"
-                            class="flex items-center justify-center p-2 font-semibold text-sm rounded-lg text-(--primary-heading) hover:bg-(--secondary-btn-hover) duration-300 ease-in-out transition-all"
-                        >
-                        Contact
-                        </NuxtLink>
-                    </div> -->
+            </div>
 
-                    <!-- CTA Buttons -->
-                    <!-- <div class="flex items-center justify-center gap-1 *:p-2">
+          <!-- Search Bar -->
+          <Transition name="slide-down">
+            <div
+              v-if="isSearchOpen"
+              class="relative flex flex-col justify-center px-8 lg:px-12 text-base text-(--black) w-full h-28 top-0 bg-(--white)"
+            >
+              <div
+                class="flex items-center gap-4 text-base h-12 text-(--black) border-b-2 border-(--border-gray) w-5/5 lg:w-4/5 *:flex *:items-center"
+              >
+                <Icon name="mdi:search" class="flex-none text-2xl" />
 
-                        <button 
-                            class="secondary-btn"
-                        >
-                            Book a call
-                        </button>
+                <input
+                  type="search"
+                  name="search"
+                  id="search"
+                  placeholder="What can we help you find"
+                  class="flex-1 placeholder-shown:text-lg h-full ease-in-out duration-300 focus:outline-none focus:border-1 focus:border-dotted transition-all"
+                />
 
-                        <button 
-                            class="primary-btn"
-                        >
-                            Work With Me
-                        </button>
+                <Icon name="mdi:arrow-right" class="flex-none text-2xl" />
+              </div>
+            </div>
+          </Transition>
 
-                    </div> -->
-
-                </div>  
-
-                <!-- Search Bar -->
-                <Transition name="slide-down">
-                    <div 
-                        v-if="isSearchOpen"
-                        class="relative flex flex-col justify-center px-8 lg:px-12 text-base text-(--black) w-full h-28 -top-(--navbar-h) bg-(--white)"
-                    >
-                        <div class="flex items-center gap-4 text-base h-12 text-(--black) border-b-2 border-(--border-gray) w-5/5 lg:w-4/5 *:flex *:items-center">
-                            <Icon name="mdi:search" class="flex-none text-2xl"/>
-                            
-                            <input 
-                                type="search" name="search" id="search" 
-                                placeholder="What can we help you find" 
-                                class="flex-1 placeholder-shown:text-lg h-full ease-in-out duration-300 focus:outline-none focus:border-1 focus:border-dotted  transition-all"
-                            />
-
-                            <Icon name="mdi:arrow-right" class="flex-none text-2xl"/>
-                        </div>                       
-                    
-                    </div>   
-                </Transition>   
-
-            </nav>
-        </header>
-
-    </div>
+        </div>
+      </nav>
+    </header>
+  </div>
 </template>
 
-
-
 <style lang="css" scoped>
-    .slide-down-enter-active, 
-    .slide-down-leave-active {
-        transition: max-height 0.4s ease, opacity 0.4s ease;
-        overflow: hidden;
-    }
+.slide-down-enter-active,
+.slide-down-leave-active {
+  transition: max-height 0.4s ease, opacity 0.4s ease;
+  overflow: hidden;
+}
 
-    .slide-down-enter-from, .slide-down-leave-to {
-        max-height: 0;
-        opacity: 0;
-    }
+.slide-down-enter-from,
+.slide-down-leave-to {
+  max-height: 0;
+  opacity: 0;
+}
 
-    .slide-down-enter-to, .slide-down-leave-from {
-        max-height: 112px;
-        opacity: 1;
-    }
+.slide-down-enter-to,
+.slide-down-leave-from {
+  max-height: 112px;
+  opacity: 1;
+}
+
+.group-hover\:underline-text {
+  position: relative;
+  display: inline-block;
+}
+
+.group-hover\:underline-text::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 1px;
+  background-color: white;
+  transition: width 0.5s ease-in-out;
+}
+
+.group:hover .group-hover\:underline-text::after {
+  width: 100%;
+}
+
+.arrow-icon {
+  transition: transform 1s ease-in-out;
+}
+
+.group:hover .arrow-icon {
+  transform: translateX(12px);
+}
+
+.group-hover\:arrow-move {
+  animation: moveArrow 3s infinite alternate ease-in-out;
+}
 </style>
