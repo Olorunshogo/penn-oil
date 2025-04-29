@@ -22,7 +22,6 @@
 
       <div class="grid grid-cols-1 gap-8 md:gap-12 font-normal">
         <!-- Footer 1: Desktop -->
-        <!-- <div class="flex flex-col items-center w-full h-full sm:*:w-1/2 sm:flex-row lg:grid lg:grid-cols-3 gap-8"> -->
         <div class="flex flex-col w-full h-full gap-6 sm:flex-row sm:*:w-1/2 lg:*:w-1/3 lg:*:items-baseline">
 
             <!-- Footer Logo -->
@@ -34,7 +33,7 @@
 
                 <div class="grid gap-4 md:gap-8">
                     <p class="font-normal text-base lg:text-lg">
-                        Chevron has always put people at the center of the energy conversation. 
+                        Penn Petro Energy has always put people at the center of the energy conversation. 
                         Because we understand that the well-being of people everywhere depends on energy. 
                         Energy that is affordable, reliable and ever-cleaner.
                     </p>
@@ -62,7 +61,7 @@
 
             </div>
 
-            <!-- md: Get to know us, latest at Chevron, Future of energy, Popular links -->
+            <!-- md: Get to know us, latest at Penn Petro Energy, Future of energy, Popular links -->
             <div class="grid lg:hidden grid-cols-1 gap-4 w-full h-full">
                 <!-- Get to know us -->
                 <div class="flex flex-col justify-center gap-3 md:gap-6 pb-4 border-y-1 border-(--white)">
@@ -135,7 +134,7 @@
                                 to="/"
                                 class="group relative flex duration-500 ease-in transition-all"
                             >                            
-                                <span class="group-hover:underline-text">Chevron around the world</span>
+                                <span class="group-hover:underline-text">Penn Petro Energy around the world</span>
                             </NuxtLink>
 
                             <NuxtLink
@@ -149,11 +148,11 @@
                     </Transition>
                 </div>
 
-                <!-- Latest at Chevron -->
+                <!-- Latest at Penn Petro Energy -->
                 <div class="flex flex-col justify-center gap-3 md:gap-6 pb-4 border-b-1 border-(--white)">
 
                     <h3 class="flex items-center justify-between my-auto py-4 *:flex *:items-center font-bold text-base">
-                        <span>Latest at Chevron</span>
+                        <span>Latest at Penn Petro Energy</span>
                         <span 
                             @click="toggleLatest"
                             class="font-bold text-lg cursor-pointer duration-300 ease-in-out transition-all"
@@ -236,7 +235,7 @@
                     >
                         <div 
                             v-if="future"
-                            class="grid gap-2 *:font-normal *:text-sm"
+                            class="grid gap-2 *:font-normal *:text-base"
                         >                       
                                 
                             <NuxtLink
@@ -301,7 +300,7 @@
                     >
                         <div 
                             v-if="popular"
-                            class="grid gap-2 *:font-normal *:text-sm"
+                            class="grid gap-2 *:font-normal *:text-base"
                         >                       
                                 
                             <NuxtLink
@@ -315,7 +314,7 @@
                                 to="/"
                                 class="group relative flex text-base duration-500 ease-in transition-all"
                             >                            
-                                <span class="group-hover:underline-text">Chevron texaco rewards</span>
+                                <span class="group-hover:underline-text">Penn Petro Energy texaco rewards</span>
                             </NuxtLink>
 
                             <NuxtLink
@@ -346,7 +345,7 @@
                 
             </div>
 
-            <!-- lg: Get to know us & Latest at chevron -->
+            <!-- lg: Get to know us & Latest at Penn Petro Energy -->
             <div class="hidden lg:grid gap-8 md:gap-6">
                 
                 <!-- Get to know us -->
@@ -402,7 +401,7 @@
                             to="/"
                             class="group relative flex duration-500 ease-in transition-all"
                         >                            
-                            <span class="group-hover:underline-text">Chevron around the world</span>
+                            <span class="group-hover:underline-text">Penn Petro Energy around the world</span>
                         </NuxtLink>
 
                         <NuxtLink
@@ -416,11 +415,11 @@
 
                 </div>
 
-                <!-- Latest at Chevron -->
+                <!-- Latest at Penn Petro Energy -->
                 <div class="flex flex-col gap-3 md:gap-6">
 
                     <h3 class="font-bold text-sm *:flex *:items-center">
-                        <span>Latest at chevron</span>
+                        <span>Latest at Penn Petro Energy</span>
                         <span><Icon name="mdi:down" /></span>
                     </h3>
 
@@ -534,7 +533,7 @@
                             to="/"
                             class="group relative flex text-base duration-500 ease-in transition-all"
                         >                            
-                            <span class="group-hover:underline-text">Chevron texaco rewards</span>
+                            <span class="group-hover:underline-text">Penn Petro Energy texaco rewards</span>
                         </NuxtLink>
 
                         <NuxtLink
@@ -722,11 +721,11 @@
             
             </div>
           
-            <div class="flex items-center justify-center flex-wrap *:text-base lg:*:text-xl *:text-wrap *:font-normal lg:*:font-medium mx-auto gap-2">
+            <div class="flex items-center justify-center flex-wrap *:text-sm lg:*:text-xl *:text-wrap *:font-normal lg:*:font-medium mx-auto gap-2">
                 <span>&copy;</span>
                 <span>{{ developmentYear }}</span>
                 <span v-if="displayYear" class="">-{{ currentYear }}</span>
-                <span>Chevron Corporation. All rights reserved.</span>
+                <span>Penn Petro Energy Corporation. All rights reserved.</span>
             </div>          
 
         </div>

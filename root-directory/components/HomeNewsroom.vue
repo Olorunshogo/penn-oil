@@ -8,15 +8,19 @@
         <div class="px-(--section-px) lg:px-(--section-px-lg) py-(--section-py) lg:py-(--section-py-lg) bg-(--light-gray) w-full h-full">
             
             <div class="grid gap-32 w-full max-w-6xl mx-auto">
+
+                <p class="text-(--dark-blue) text-center font-bold text-2xl cursor-text">newsroom</p>
+
+                <h2 class="text-(--dark-blue) text-center font-extrabold text-5xl lg:text-8xl text-wrap cursor-text">
+                    Latest at Penn Petro Energy
+                </h2>
+
             
                 <div class="grid grid-cols-1 gap-16">
                     <div class="flex flex-col items-center justify-center gap-6 lg:gap-12 max-w-3xl mx-auto">
                     
-                        <p class="text-(--dark-blue) text-center font-bold text-2xl cursor-text">what we do</p>
-
-                        <h2 class="text-(--dark-blue) text-center font-extrabold text-5xl lg:text-8xl text-wrap cursor-text">
-                            Energy that fuels the world
-                        </h2>
+                        
+                        
 
                         <p class="text-(--black) text-center text-lg lg:text-xl text-wrap">
                             We’re working to deliver the energy needed today. 
@@ -126,6 +130,11 @@
                 </div>
 
                 <div class="relative grid gap-16">
+                    <!-- <HomeWhatLower 
+                        ref="lowerCarbonH2"
+                        :is-fixed="isFixed"
+                        class="flex items-center justify-center"
+                    /> -->
                     <HomeWhatLower class="z-10" />
 
                     <div class="flex flex-col lg:flex-row-reverse gap-8 w-full py-16 md:py-24 px-4 md:px-8 bg-(--dark-green) rounded-lg shadow-lg z-0"> 

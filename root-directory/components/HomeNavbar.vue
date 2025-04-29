@@ -66,7 +66,7 @@ import {
             <NuxtLink to="/" class="relative flex items-center justify-center">
               <NuxtImg
                 src="/images/Logo/Logo_transparent_bg.png"
-                alt="Chevron Logo"
+                alt="Penn Petro Energy Logo"
                 class="object-cover w-18 h-16"
               />
             </NuxtLink>
@@ -287,12 +287,12 @@ import {
                 Technology and innovation
               </NuxtLink>
 
-              <!-- Chevron around the world -->
+              <!-- Penn Petro Energy around the world -->
               <NuxtLink
                 to="/"
                 class="flex *:flex items-center *:items-center justify-between hover:text-(--light-blue) duration-300 ease-in-out transition-all"
               >
-                Chevron around the world
+              Penn Petro Energy around the world
               </NuxtLink>
             </aside>
 
@@ -489,7 +489,7 @@ import {
             <NuxtLink to="/" class="relative flex items-center justify-center">
               <NuxtImg
                 src="/images/Logo/Logo_transparent_bg.png"
-                alt="Chevron Logo"
+                alt="Penn Petro Energy Logo"
                 class="object-cover w-18 h-16"
               />
             </NuxtLink>
@@ -613,7 +613,7 @@ import {
                             to="/"
                             class="flex *:flex items-center *:items-center justify-between hover:text-(--light-blue) duration-300 ease-in-out transition-all"
                         >
-                            Chevron around the world
+                        Penn Petro Energy around the world
                         </NuxtLink>
                     </div>
                 </aside>
