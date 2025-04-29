@@ -5,7 +5,7 @@
 
 <template>
     <section>
-        <div class="px-(--section-px) lg:px-(--section-px-lg) py-(--section-py) lg:py-(--section-py-lg) bg-(--light-gray) w-full h-full oveflow-hidden">
+        <div class="px-(--section-px) lg:px-(--section-px-lg) py-(--section-py) lg:py-(--section-py-lg) bg-(--light-gray) w-full h-full">
             
             <div class="grid gap-32 w-full max-w-6xl mx-auto">
             
@@ -126,14 +126,14 @@
                 </div>
 
                 <div class="relative grid gap-16">
-                    <HomeWhatLower 
+                    <!-- <HomeWhatLower 
                         ref="lowerCarbonH2"
                         :is-fixed="isFixed"
                         class="flex items-center justify-center"
-                    />
+                    /> -->
+                    <HomeWhatLower class="z-10" />
 
-                    <!-- Subsequent content/image that will scroll under -->
-                    <div class="flex flex-col lg:flex-row-reverse gap-8 x-98 w-full py-16 md:py-24 px-4 md:px-8 h-full bg-(--dark-green) rounded-lg shadow-lg"> 
+                    <div class="flex flex-col lg:flex-row-reverse gap-8 w-full py-16 md:py-24 px-4 md:px-8 bg-(--dark-green) rounded-lg shadow-lg z-0"> 
                         
                         <div class="lg:w-1/2">
                             <NuxtImg
@@ -161,11 +161,11 @@
                             >
                                 <div class="group relative flex items-center text-xl w-8 h-full overflow-hidden">
                                     <div class="absolute flex items-center left-2 h-full w-12 transition-all duration-500 ease-in-out group-hover:translate-x-full">
-                                        <Icon name="mdi:chevron-left"/>
+                                        <Icon name="mdi:arrow-right"/>
                                     </div>
                                     
                                     <div class="absolute flex items-center left-2 h-full w-12 -translate-x-full transition-all duration-500 ease-in-out group-hover:translate-x-0">
-                                        <Icon name="mdi:chevron-left" />
+                                        <Icon name="mdi:arrow-right" />
                                     </div>
                                 </div>
 

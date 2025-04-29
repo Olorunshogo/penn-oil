@@ -44,12 +44,12 @@ import {
 <template>
   <div>
     <header>
-      <nav aria-label="Main navigation" class="w-full h-40 relative z">
+      <nav aria-label="Main navigation" class="w-full h-40 relative z-99">
         <!-- Navigation -->
         <div class="max-w-7xl mx-auto h-(--navabr-h)">
           <!-- Mobile Nav  -->
           <div
-            class="flex lg:hidden items-center justify-between gap-2 h-(--navbar-h) px-(--section-px)"
+            class="flex lg:hidden *:text-(--white) items-center justify-between gap-2 h-(--navbar-h) px-(--section-px)"
           >
             <!-- Hamburger Menu -->
             <button
@@ -82,7 +82,7 @@ import {
           <!-- Mobile Slide-in Menu Panel: Left -->
           <aside
             id="mobile-menu"
-            class="fixed top-0 left-0 w-full h-full z-99 flex flex-col gap-12 font-normal text-2xl bg-(--primary-bg) p-8 text-(--white) transition-transform duration-300 ease-in-out *:duration-300 *:ease-in-out *:transition-all"
+            class="fixed top-0 left-0 w-full h-full z-90 flex flex-col gap-12 font-normal text-2xl bg-(--primary-bg) p-8 text-(--white) transition-transform duration-300 ease-in-out *:duration-300 *:ease-in-out *:transition-all"
             :class="isMenuOpen ? 'translate-x-0' : '-translate-x-full'"
             role="dialog"
             aria-modal="true"
