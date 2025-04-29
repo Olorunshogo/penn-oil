@@ -26,17 +26,10 @@
         <div class="flex flex-col w-full h-full gap-6 sm:flex-row sm:*:w-1/2 lg:*:w-1/3 lg:*:items-baseline">
 
             <!-- Footer Logo -->
-            <div class="flex flex-col items-center justify-center">
+            <div class="flex flex-col gap-4 items-center justify-center">
                 
-                <div class="relative flex items-center justify-center w-1/2"> 
-                    <h2 class="flex items-center text-3xl font-extrabold font-gotham-book-narrow">
-                        <!-- the human energy company  -->
-                        <!-- <span class="text-xs flex">&reg;</span> -->
-                    </h2>
-
-                    <div class="flex items-center justify-center w-80 h-50">
-                        <LoGo />
-                   </div>
+                <div class="relative flex items-cente justify-center w-1/2 mx-auto">                    
+                    <LoGo />                   
                 </div>
 
                 <div class="grid gap-4 md:gap-8">

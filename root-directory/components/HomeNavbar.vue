@@ -65,7 +65,7 @@ import {
             <!-- Mobile Logo -->
             <NuxtLink to="/" class="relative flex items-center justify-center">
               <NuxtImg
-                src="/images/Chevron/Chevron-logo.png"
+                src="/images/Logo/Logo_transparent_bg.png"
                 alt="Chevron Logo"
                 class="object-cover w-18 h-16"
               />
@@ -488,7 +488,7 @@ import {
             <!-- Mobile Logo -->
             <NuxtLink to="/" class="relative flex items-center justify-center">
               <NuxtImg
-                src="/images/Chevron/Chevron-logo.png"
+                src="/images/Logo/Logo_transparent_bg.png"
                 alt="Chevron Logo"
                 class="object-cover w-18 h-16"
               />

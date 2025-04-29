@@ -4,11 +4,11 @@
         <!-- Desktop Logo -->
         <NuxtLink 
             to="/"
-            class="relative flex flex-col items-center justify-center"
+            class="relative flex flex-col items-center justify-center mx-auto"
         >
             <NuxtImg
-                src="/images/Chevron/Full_Chevron_Logo.png"
-                alt="Full Chevron Logo"
+                src="/images/Logo/Full_Pennpetro_Energy_Logo.jpg"
+                alt="Full Pennpetro Energy Logo"
                 class="object-cover w-full h-full"
             />
         </NuxtLink>

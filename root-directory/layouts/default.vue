@@ -12,7 +12,7 @@
       {
         rel: 'icon',
         type: 'image/png',
-        href: '/images/Chevron/Chevron-logo.png'
+        href: '/images/Logo/Logo_transparent_bg.png'
       }
     ]
   });
@@ -70,7 +70,7 @@
     min-height: 100vh;
     min-height: 100dvh;
     width: 100vw;
-    /* background-color: var(--primary-bg);
-    color: black; */
+    background-color: none;
+    color: black;
   }
 </style>
