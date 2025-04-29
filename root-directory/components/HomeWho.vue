@@ -19,6 +19,21 @@
             originalTex: 'We believe that humanity can solve any challenge.'
         }
     ]);
+
+    import AOS from 'aos';
+    import 'aos/dist/aos.css';
+
+    onMounted(() => {
+        AOS.init({
+            offset: 100,
+            duration:800,
+            delay: 100,
+            easing: 'ease-in-out',
+            once: true,
+            mirror: false,
+            anchorPlacement: 'top-center'
+        })
+    });
     
 </script>
 
@@ -37,7 +52,10 @@
                 </p>
 
                 
-                <h2 class="flex flex-col items-center space-y-6 font-extrabold text-4xl sm:text-6xl lg:text-9xl whitespace-nowrap cursor-text w-full h-full overflow-hidden">
+                <h2 
+                    data-aos="fade-up" data-aos-delay="200"
+                    class="flex flex-col items-center space-y-6 font-extrabold text-4xl sm:text-6xl lg:text-9xl whitespace-nowrap cursor-text w-full h-full overflow-hidden"
+                >
                     <span 
                         ref="criticalThinkers" 
                         class="inline-block text-(--light-blue) duration-500 ease-out transition-transform"
@@ -93,14 +111,17 @@
                     </div>      
                 </div>                   
             
-
-                <TypingEffect 
-                    v-for="typingProp in typingProps"
-                    :key="typingProp.id"
-                    :originalText="typingProp.originalText"
-                    :originalTex="typingProp.originalTex"
-                    :newText="typingProp.newText"
-                />                
+                <div 
+                    data-aos="fade-left" data-aos-delay="200"
+                >
+                    <TypingEffect 
+                        v-for="typingProp in typingProps"
+                        :key="typingProp.id"
+                        :originalText="typingProp.originalText"
+                        :originalTex="typingProp.originalTex"
+                        :newText="typingProp.newText"
+                    />   
+                </div>             
 
                 <!-- See our solutions link -->
                 <NuxtLink 
