@@ -23,6 +23,11 @@
       <HomeWhat />
     </div>
 
+    <!-- HomeNewsroom -->
+    <div>
+      <HomeNewsroom />
+    </div>
+
 
   </div>
 </template>

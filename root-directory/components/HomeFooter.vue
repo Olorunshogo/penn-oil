@@ -21,7 +21,7 @@
     <div class="max-w-7xl mx-auto">
 
       <div class="grid grid-cols-1 gap-8 md:gap-12 font-normal">
-        <!-- Footer 1: Desktop -->
+        <!-- Footer 1 -->
         <div class="flex flex-col w-full h-full gap-6 sm:flex-row sm:*:w-1/2 lg:*:w-1/3 lg:*:items-baseline">
 
             <!-- Footer Logo -->
