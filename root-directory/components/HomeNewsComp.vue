@@ -36,16 +36,16 @@
     <div class="relative w-full h-fit max-w-md mx-auto">
         <a 
             :href="link"
-            class="grid shadow-lg rounded-2xl cursor-pointer w-full h-full"
+            class="grid cursor-pointer rouned-lg w-full h-full"
         >
 
             <NuxtImg
                 :src="imgSrc"
                 :alt="alt"
-                class="w-full h-50 object-cover rounded-t-lg"
+                class="w-full h-50 object-cover"
             />
 
-            <div class="flex flex-col gap-4 h-60 rounded-b-lg text-(--white) bg-(--medium-blue) p-4">
+            <div class="flex flex-col gap-4 h-60 text-(--white) bg-(--medium-blue) p-4">
                 <p class="text-lg">{{ date }}</p>
                 <p class="text-xl">{{ description }}</p>
             
