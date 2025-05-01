@@ -6,11 +6,6 @@
         handleScroll
     } from '../stores/homeWho';
 
-    onMounted(() => {
-        // Add scroll event listener when component is mounted
-        window.addEventListener('scroll', handleScroll);
-    });
-
     const typingProps = ref([
         { 
             id: 1, 
@@ -33,6 +28,9 @@
             mirror: false,
             anchorPlacement: 'top-center'
         })
+
+        // Add scroll event listener when component is mounted
+        window.addEventListener('scroll', handleScroll);
     });
     
 </script>
@@ -54,7 +52,7 @@
                 
                 <h2 
                     data-aos="fade-up" data-aos-delay="200"
-                    class="flex flex-col items-center space-y-6 font-extrabold text-4xl sm:text-6xl lg:text-9xl whitespace-nowrap cursor-text w-full h-full overflow-hidden"
+                    class="flex flex-col items-center space-y-6 font-extrabold text-4xl sm:text-5xl lg:text-7xl whitespace-nowrap cursor-text w-full h-full overflow-hidden"
                 >
                     <span 
                         ref="criticalThinkers" 

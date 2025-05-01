@@ -16,12 +16,17 @@ export default defineNuxtConfig({
         lang: 'en'
       },
       link: [
-        { rel: 'icon', type: 'image/x-icon', href: '/images/Logo/Logo_transparent_bg.png' }
-        // { rel: 'icon', type: 'image/x-icon', href: '/favicons/apple-touch-icon.png' },
-        // { rel: 'apple-touch-icon', sizes: '180x180', href: '/favicons/apple-touch-icon.png' },
-        // { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/favicons/favicon-32x32.png' },
-        // { rel: 'icon', type: 'image/png', sizes: '16x16', href: '/favicons/favicon-16x16.png' },
-        // { rel: 'manifest', href: '/favicons/site.webmanifest' },
+        { rel: 'icon', type: 'image/x-icon', href: '/images/Logo/Logo_transparent_bg.png' },
+        
+        { rel: 'icon', sizes: '192x192', href: '/favicons/android-chrome-192x192.png' },
+        { rel: 'icon', sizes: '512x512', href: '/favicons/android-chrome-512x512.png' },
+        
+        { rel: 'apple-touch-icon', sizes: '180x180', href: '/favicons/apple-touch-icon.png' },
+        
+        { rel: 'icon', type: 'image/x-icon', href: '/favicons/favicon.ico.png' },
+        { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/favicons/favicon-32x32.png' },
+        { rel: 'icon', type: 'image/png', sizes: '16x16', href: '/favicons/favicon-16x16.png' },
+        { rel: 'manifest', href: '/favicons/site.webmanifest' },
 
       ]
     },

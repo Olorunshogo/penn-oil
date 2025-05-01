@@ -7,33 +7,7 @@
     font-style: normal;
     font-display: normal;
 }
-    
-    /* body {
-        padding: 0;
-        font-style: normal;
-        background: none;
-        font-family: var(--font-gotham-narrow-book);
-        font-size: 1.8rem;
-        line-height: 3.2rem;
-    }
-    body {
-        padding: 0;
-        font-family: "GothamNarrowBook", "Helvetica Neue", Helvetica, Arial, sans-serif;
 
-        /* -ms-overflow-style: scrollbar; */
-    /* } */
-    /* body {
-        margin: 0;
-        font-family: var(--bs-body-font-family);
-        font-size: var(--bs-body-font-size);
-        font-weight: var(--bs-body-font-weight);
-        line-height: var(--bs-body-line-height);
-        color: var(--bs-body-color);
-        text-align: var(--bs-body-text-align);
-        background-color: var(--bs-body-bg);
-        -webkit-text-size-adjust: 100%;
-        -webkit-tap-highlight-color: transparent;
-    } */
     
 @import "tailwindcss";
 
@@ -67,7 +41,7 @@
     --primary-bg: #0b2d71;
     --secondary-bg: #6c757d;
 
-    --navbar-h: 5rem;
+    --navbar-h: 5.5rem;
     --section-px: 1rem;
     --section-px-lg: 3rem;
 

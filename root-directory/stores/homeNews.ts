@@ -3,29 +3,6 @@ import { ref, onMounted, watch } from "vue";
 import { newsComps } from "~/models/newsComps";
 import gsap from 'gsap';
 
-// import Swiper core and required modules
-// import { Navigation, Pagination, Scrollbar, A11y, EffectCoverflow, EffectFade } from 'swiper/modules';
-
-// // Import Swiper Vue.js components
-// import { Swiper, SwiperSlide, useSwiper, useSwiperSlide } from 'swiper/vue';
-
-// // Import Swiper Styles
-// import 'swiper/css';
-// import 'swiper/css/effect-fade';
-// // import 'swiper/css/pagination';
-// // import 'swiper/css/navigation';
-
-// const onSwiper = (swiper) => {
-//     console.log(swiper);
-// };
-
-// const onSlideChange = () => {
-//     console.log('slide change');
-// };
-
-// const swiper = useSwiper();
-// const swiperSlide = useSwiperSlide();
-
 export const carousel = ref<HTMLElement | null>(null);
 export const activeIndex = ref(0);
 let autoplayTimer: ReturnType<typeof setInterval> | null = null
@@ -44,11 +21,12 @@ export function updateCarousel() {
 
         gsap.to(item, {
             scale: isActive ? 1.1 : 0.85,
-            opacity: isActive ? 1 : 0.5,
+            opacity: isActive ? 1 : 0.7,
             xPercent: offset * 110,
             zIndex: isActive ? 10 : 1,
             duration: 0.5,
-            ease: 'power3.out'
+            // ease: 'power3.out'
+            ease: 'power1.in'
         });
     })
 }
@@ -66,19 +44,19 @@ export function goTo(index: number) {
 };
 
 // Autoplay
-// export function startAutoplay() {
-//     stopAutoplay()
-//     autoplayTimer = setInterval(() => {
-//         nextSlide()
-//     }, 5000)
-// }
+export function startAutoplay() {
+    stopAutoplay()
+    autoplayTimer = setInterval(() => {
+        nextSlide()
+    }, 5000)
+}
 
-// export function stopAutoplay() {
-//     if (autoplayTimer) {
-//         clearInterval(autoplayTimer)
-//         autoplayTimer = null
-//     }
-// }
+export function stopAutoplay() {
+    if (autoplayTimer) {
+        clearInterval(autoplayTimer)
+        autoplayTimer = null
+    }
+}
 
 // Touch/Swipe Support
 let startX = 0

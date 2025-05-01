@@ -3,7 +3,7 @@
 <script lang="ts" setup>
   import { useHead } from 'nuxt/app';
   useHead({
-    title: 'Pennpetro Energy PLC - Human Energy',
+    title: 'Penn Petro Energy PLC - Human Energy',
     titleTemplate: '%s | HomePagey'
   });
 
@@ -12,6 +12,8 @@
 
 <template>
   <div>
+    <!-- HomeHero -->
+    <HomeHero />
 
     <!--HomeWho  -->
     <div>

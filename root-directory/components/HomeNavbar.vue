@@ -22,20 +22,32 @@ onBeforeUnmount(() => {
 import {
   isMenuOpen,
   isSearchOpen,
+  backMobile,
+  closeAside,
+
   isWhoOpen,
   isWhoHovered,
+  openMobileWho, 
   openDesktopWho,
   closeDesktopWho,
+  
+
   isWhatOpen,
   isWhatHovered,
   openDesktopWhat,
+  openMobileWhat,
   closeDesktopWhat,
+
+
   isSustainabilityOpen,
   isSustainabilityHovered,
+  openMobileSustainability,
   openDesktopSustainability,
   closeDesktopSustainability,
+
   isInvestorsOpen,
   isInvestorsHovered,
+  openMobileInvestors,
   openDesktopInvestors,
   closeDesktopInvestors
 } from "../stores/navbar";
@@ -44,7 +56,7 @@ import {
 <template>
   <div>
     <header>
-      <nav aria-label="Main navigation" class="w-full h-40 relative z-99">
+      <nav aria-label="Main navigation" class="w-full h-full relative z-99 bg-opacity-50">
         <!-- Navigation -->
         <div class="max-w-7xl mx-auto h-(--navabr-h)">
           <!-- Mobile Nav  -->
@@ -63,12 +75,15 @@ import {
             </button>
 
             <!-- Mobile Logo -->
-            <NuxtLink to="/" class="relative flex items-center justify-center">
+            <NuxtLink to="/" class="relative flex flex-col items-center justify-center">
               <NuxtImg
                 src="/images/Logo/Logo_transparent_bg.png"
                 alt="Penn Petro Energy Logo"
                 class="object-cover w-18 h-16"
               />
+              <div class="hidden sm:flex items-center justify-center font-bold text-base bg-clip-text text-transparent bg-gradient-to-r from-(--light-blue) to-red-500">
+                Penn Petro Energy
+              </div>
             </NuxtLink>
 
             <button
@@ -88,7 +103,7 @@ import {
             aria-modal="true"
           >
             <button
-              class="flex items-center justify-end cursor-pointer hover:text-(--light-blue)"
+              class="flex items-center ml-auto w-12 h-12 cursor-pointer hover:text-(--light-blue)"
               @click="isMenuOpen = false"
               aria-label="Close menu"
             >
@@ -97,7 +112,7 @@ import {
 
             <!-- Who we are -->
             <button
-              @click="isWhoOpen = true"
+              @click="openMobileWho"
               class="flex *:flex items-center *:items-center justify-between cursor-pointer hover:text-(--light-blue) transition-transform duration-300 ease-in-out"
             >
               <span>Who we are</span>
@@ -108,7 +123,7 @@ import {
 
             <!-- What we do -->
             <button
-              @click="isWhatOpen = true"
+              @click="openMobileWhat"
               class="flex *:flex items-center *:items-center justify-between cursor-pointer hover:text-(--light-blue) transition-transform duration-300 ease-in-out"
             >
               <span>What we do</span>
@@ -119,7 +134,7 @@ import {
 
             <!-- Sustainability -->
             <button
-              @click="isSustainabilityOpen = true"
+              @click="openMobileSustainability"
               class="flex *:flex items-center *:items-center justify-between cursor-pointer hover:text-(--light-blue) transition-transform duration-300 ease-in-out"
             >
               <span>Sustainability</span>
@@ -130,7 +145,7 @@ import {
 
             <!-- Investors -->
             <button
-              @click="isInvestorsOpen = true"
+              @click="openMobileInvestors"
               class="flex *:flex items-center *:items-center justify-between cursor-pointer hover:text-(--light-blue) transition-transform duration-300 ease-in-out"
             >
               <span>Investors</span>
@@ -171,7 +186,7 @@ import {
               >
                 <button
                   class="flex items-center justify-end hover:text-(--light-blue)"
-                  @click="isWhoOpen = false"
+                  @click="backMobile"
                   aria-label="Back Button"
                 >
                   <Icon name="mdi:arrow-left" />
@@ -179,7 +194,7 @@ import {
                 <span>Who we are</span>
                 <button
                   class="flex items-center justify-end hover:text-(--light-blue)"
-                  @click="isWhoOpen = false"
+                  @click="closeAside"
                   aria-label="Close menu"
                 >
                   <Icon name="mdi:close" />
@@ -247,16 +262,16 @@ import {
                 class="flex items-center justify-between *:ease-in-out *:duration-300 *:transition-all"
               >
                 <button
-                  class="flex items-center justify-end hover:text-(--light-blue)"
-                  @click="isWhatOpen = false"
+                  class="flex items-center justify-end hover:text-(--light-blue) cursor-pointer"
+                  @click="backMobile"
                   aria-label="Back Button"
                 >
                   <Icon name="mdi:arrow-left" />
                 </button>
                 <span>What we do</span>
                 <button
-                  class="flex items-center justify-end hover:text-(--light-blue)"
-                  @click="isWhatOpen = false"
+                  class="flex items-center justify-end hover:text-(--light-blue) cursor-pointer"
+                  @click="closeAside"
                   aria-label="Close menu"
                 >
                   <Icon name="mdi:close" />
@@ -308,16 +323,16 @@ import {
                 class="flex items-center justify-between *:ease-in-out *:duration-300 *:transition-all"
               >
                 <button
-                  class="flex items-center justify-end hover:text-(--light-blue)"
-                  @click="isSustainabilityOpen = false"
+                  class="flex items-center justify-end hover:text-(--light-blue) cursor-pointer"
+                  @click="backMobile"
                   aria-label="Back Button"
                 >
                   <Icon name="mdi:arrow-left" />
                 </button>
-                <span>What we do</span>
+                <span>Sustainability</span>
                 <button
-                  class="flex items-center justify-end hover:text-(--light-blue)"
-                  @click="isSustainabilityOpen = false"
+                  class="flex items-center justify-end hover:text-(--light-blue) cursor-pointer"
+                  @click="closeAside"
                   aria-label="Close menu"
                 >
                   <Icon name="mdi:close" />
@@ -369,16 +384,16 @@ import {
                 class="flex items-center justify-between *:ease-in-out *:duration-300 *:transition-all"
               >
                 <button
-                  class="flex items-center justify-end hover:text-(--light-blue)"
-                  @click="isInvestorsOpen = false"
+                  class="flex items-center justify-end hover:text-(--light-blue) cursor-pointer"
+                  @click="backMobile"
                   aria-label="Back Button"
                 >
                   <Icon name="mdi:arrow-left" />
                 </button>
                 <span>Investors</span>
                 <button
-                  class="flex items-center justify-end hover:text-(--light-blue)"
-                  @click="isInvestorsOpen = false"
+                  class="flex items-center justify-end hover:text-(--light-blue) cursor-pointer"
+                  @click="closeAside"
                   aria-label="Close menu"
                 >
                   <Icon name="mdi:close" />
@@ -445,7 +460,7 @@ import {
 
           <!-- Desktop Nav -->
           <div
-            class="relative hidden lg:flex items-center z-90 justify-between text-base text-(--black) font-normal px-(--section-px-lg)"
+            class="relative hidden lg:flex items-center z-90 justify-between text-base text-(--black) font-normal px-(--section-px-lg) h-(--navbar-h)"
           >
             <div class="flex items-center gap-8 *:hover:text-(--white) *:duration-300 *:ease-in-out *:transition-all">
               <NuxtLink
@@ -486,12 +501,15 @@ import {
             </div>
 
             <!-- Mobile Logo -->
-            <NuxtLink to="/" class="relative flex items-center justify-center">
+            <NuxtLink to="/" class="relative flex flex-col items-center justify-center">
               <NuxtImg
                 src="/images/Logo/Logo_transparent_bg.png"
                 alt="Penn Petro Energy Logo"
                 class="object-cover w-18 h-16"
               />
+              <div class="hidden sm:flex items-center justify-center font-bold text-base bg-clip-text text-transparent bg-gradient-to-r from-(--light-blue) to-red-600">
+                Penn Petro Energy
+              </div>
             </NuxtLink>
 
             <!-- Desktop Right Links -->
