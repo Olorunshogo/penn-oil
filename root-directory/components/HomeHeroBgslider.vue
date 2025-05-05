@@ -4,71 +4,18 @@
     import { gsap } from 'gsap';
 
     const props = defineProps<{
-        images: string[]
-
-    }>()
-
-    const currentIndex = ref(0)
-    const isPlaying = ref(true)
-    const progress = ref(0)
-    const intervalDuration = 6 // seconds
-
-    let intervalId: number
-    let progressIntervalId: number
-
-    function updateProgress() {
-        progress.value = (progress.value + 1) % intervalDuration
-    }
-
-    function startInterval() {
-        intervalId = window.setInterval(() => {
-            currentIndex.value = (currentIndex.value + 1) % props.images.length
-        }, intervalDuration * 1000)
-    }
-
-    function startProgressInterval() {
-        progressIntervalId = window.setInterval(updateProgress, 1000)
-    }
-
-    function stopIntervals() {
-        clearInterval(intervalId)
-        clearInterval(progressIntervalId)
-    }
-
-    function togglePlayPause() {
-        if (isPlaying.value) {
-            stopIntervals()
-        } else {
-            startInterval()
-            startProgressInterval()
-        }
-        isPlaying.value = !isPlaying.value
-    }
-
-    function goToSlide(index: number) {
-        currentIndex.value = index
-        progress.value = 0
-        gsap.to('image-container', {
-            x: `-${index * 100}%`,
-            duration: 1,
-            ease: 'power2.inOut'
-        })
-    }
-
-    watch(currentIndex, () => {
-        progress.value = 0
-    })
-
-    onMounted(() => {
-        startInterval()
-        startProgressInterval()
-    })
-
-    onUnmounted(() => {
-        stopIntervals()
-    })
+        // images: string[],
+        imgSrc: string,
+        imgAlt: string,
+        contentBg: string,
+        heading: string,
+        description: string,
+        ctaLink: string,
+        cta: string,
+    }>();
 
 
+    const opacity = ref(0.3);
 
 </script>
 
@@ -76,50 +23,30 @@
 
     <div class="relative w-full h-screen overflow-hidden">
 
-        <div class="image-container">
-            <div
-                v-for="(image, index) in props.images"
-                :key="index"
-                class="bg-image"
-                :style="{ backgroundImage: `url(${image})` }"
-            ></div>
+        <!-- Image Container -->
+        <div class="absolute top-0 left-0 w-full h-full z-0">
+            <NuxtImg
+                :src="imgSrc"
+                :alt="imgAlt"
+                loading="lazy"
+                class="h-dvh w-full object-cover"
+            />
         </div>
 
-
-
-        <div class="controls flex items-center gap-4 w-1/2 mx-auto">
-
-            <div class="pagination items-center justify-center mx-auto">
-                <span
-                    v-for="(image, index) in props.images"
-                    :key="index"
-                    class="w-16 h-2 rounded-full duration-300 ease-in-out cursor-pointer transition-colors"
-                    :class="{ 
-                        'bg-(--white)': currentIndex === index,
-                        'bg-(--white)/50': currentIndex !== index,
-                        'opacity-60-[calc((progress/intervalDuration) * 100)]': currentIndex !== index,
-                    }"
-                    @click="goToSlide(index)"
-                >
-                </span>
+        <!-- Content -->
+        <div 
+            class="content slideLeft absolute bottom-0 md:left-1/10 md:right-1/0 w-full h-1/2 max-h-[500px] md:max-w-[90rem] gap-8 rounded-lg flex flex-col items-center justify-center text-white pb-12 z-10 transform"
+            :style="{ backgroundColor: contentBg, opacity: opacity }"
+        >
+            <div class="grid gap-4">
+                <h1 class="text-3xl md:text-5xl font-extrabold text-center">{{ heading }}</h1>
+                <p class="text-lg md:text-2xl text-center">{{ description }}</p>
             </div>
 
-            <!-- <div class="flex-1 h-2 bg-white/50">
-                <div
-                    class="h-full bg-white ease-in-out duration-300 transition-all"
-                    :style="{ width: `${(progress / intervalDuration) * 100}%` }"
-                ></div>
-            </div> -->
-
-            <button
-                @click="togglePlayPause"
-                class="flex items-center justify-center bg-(--black)/20 hover:bg-black/50 w-10 h-10 rounded-full hover:cursor-pointer ease-in-out duration-300 transition-all"
-            >
-                <Icon 
-                    :name="isPlaying ? 'mdi:pause' : 'mdi:play'"
-                    class="text-(--white) font-extrabold text-3xl"
-                />
-            </button>
+            <NuxtLink :to="ctaLink" class="flex *:flex items-center *:items-center justify-center *:justify-center gap-2 md:gap-4 rounded-lg p-2 md:p-4 border-1 font-bold mt-4 cursor-pointer duration-300 ease-in-out transition-all">
+                <span class="text-xl"><Icon name="mdi:arrow-right" /></span>
+                <span>{{ cta }}</span>
+            </NuxtLink>
         </div>
 
     </div>
@@ -130,62 +57,28 @@
 
 <style lang="css" scoped>
 
-    .image-container {
-        display: flex;
-        width: 100%;
-        height: 100%;
-        transition: transform 1s ease-in-out;
+    .content {
+        transform: translateY(100px);
+        animation: slideLeft 6s ease-in-out infinite;
     }
 
-    .bg-image {
-        flex-shrink: 0;
-        width: 100%;
-        height: 100%;
-        background-size: cover;
-        background-position: center;
-    }
-
-    .controls {
-        position: absolute;
-        bottom: 20px;
-        left: 50%;
-        transform: translateX(-50%);
-        color: white;
-        text-align: center;
-    }
-
-    .pagination {
-        margin: 10px 0;
-    }
-
-    .pagination span {
-        margin: 0 5px;
-        cursor: pointer;
-        display: inline-block;
-    }
-
-    .pagination .active {
-        font-weight: bold;
-    }
-
-    .progress-bar {
-        width: 100%;
-        height: 5px;
-        background-color: rgba(255, 255, 255, 0.5);
-    }
-
-    .progress {
-        height: 100%;
-        background-color: white;
-    }
-
-
-    .ease-in-out {
-        transition-timing-function: ease-in-out;
-    }
-
-    .transition-width {
-        transition: width 1s ease-in-out;
+    @keyframes slideLeft {
+        0% {
+            transform: translateX(100%);
+            opacity: 0;
+        }
+        10% {
+            transform: translateX(0);
+            opacity: 1;
+        }
+        90% {
+            transform: translateX(0);
+            opacity: 1;
+        }
+        100% {
+            transform: translateX(-100%);
+            opacity: 0;
+        }
     }
 
 </style>

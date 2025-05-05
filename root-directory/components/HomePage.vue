@@ -4,7 +4,7 @@
   import { useHead } from 'nuxt/app';
   useHead({
     title: 'Penn Petro Energy PLC - Human Energy',
-    titleTemplate: '%s | HomePagey'
+    titleTemplate: '%s | HomePage'
   });
 
 </script>

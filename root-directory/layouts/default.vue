@@ -41,7 +41,8 @@
 
 <template>
   <div class="default-layout scroll-smooth">
-    <HomeNavbar class="sticky z-[99] inset-0 bottom-[unset] cursor-default" />
+    <HomeNavbar class="sticky z-[99] inset-0 bottom-[unset] cursor-default bg-transparent" />
+
       <div>
         <slot></slot>
       </div>

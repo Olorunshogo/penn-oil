@@ -51,7 +51,7 @@
 
                 
                 <h2 
-                    data-aos="fade-up" data-aos-delay="200"
+                    data-aos="fade-up"
                     class="flex flex-col items-center space-y-6 font-extrabold text-4xl sm:text-5xl lg:text-7xl whitespace-nowrap cursor-text w-full h-full overflow-hidden"
                 >
                     <span 
