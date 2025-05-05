@@ -18,7 +18,7 @@ export const newsComps: Ref<NewsItem[]> = ref([
     {
         id: 1,
         link: "/",
-        imgSrc: "https://images.pexels.com/photos/9889058/pexels-photo-9889058.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        imgSrc: "https://images.pexels.com/photos/2183113/pexels-photo-2183113.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
         alt: "Dets",
         date: "April 21, 2025",
         description: "Delivering first oil while lowering development costs"

@@ -1,96 +1,159 @@
 
-import { ref, onMounted, watch } from "vue";
-import { newsComps } from "~/models/newsComps";
-import gsap from 'gsap';
+import { ref, computed } from "vue";
+import { newsComps } from '../models/newsComps';
+// Refs for elements
+export const prevRef = ref<HTMLElement | null>(null);
+export const activeRef = ref<HTMLElement | null>(null);
+export const nextRef = ref<HTMLElement | null>(null);
 
-export const carousel = ref<HTMLElement | null>(null);
+// Reactive states for the carousel
 export const activeIndex = ref(0);
-let autoplayTimer: ReturnType<typeof setInterval> | null = null
+export const direction = ref<'next' | 'prev'>('next');
 
-// Core GSAP Layout update
-export function updateCarousel() {
-    const items = carousel.value?.children
-    if (!items) return
+// Compute previous and next indices
+export const prevIndex = computed(() => {
+    return (activeIndex.value - 1 + newsComps.value.length) % newsComps.value.length;
+});
+export const nextIndex = computed(() => {
+    return (activeIndex.value + 1) % newsComps.value.length;
+});
 
-    // Convert HTMLCollection to array
-    const itemArray = [...items] as HTMLElement[]
+// GSAP Transition Animation Function
+export const animateTransition = (dir: 'next' | 'prev') => {
+    direction.value = dir;
+    const offset = dir === 'next' ? -100 : 100;
 
-    itemArray.forEach((item, i) => {
-        const isActive = i === activeIndex.value
-        const offset = i - activeIndex.value 
+    if (activeRef.value) {
+        gsap.fromTo(
+        activeRef.value,
+        { x: offset, opacity: 0 },
+        { x: 0, opacity: 1, duration: 0.5, ease: 'power2.out' }
+        );
+    }
 
-        gsap.to(item, {
-            scale: isActive ? 1.1 : 0.85,
-            opacity: isActive ? 1 : 0.7,
-            xPercent: offset * 110,
-            zIndex: isActive ? 10 : 1,
-            duration: 0.5,
-            // ease: 'power3.out'
-            ease: 'power1.in'
+    if (prevRef.value) {
+        gsap.fromTo(
+        prevRef.value,
+        { x: offset - 100, opacity: 0 },
+        { x: 0, opacity: 0.7, duration: 0.5, ease: 'power2.out' }
+        );
+    }
+
+    if (nextRef.value) {
+        gsap.fromTo(
+        nextRef.value,
+        { x: offset + 100, opacity: 0 },
+        { x: 0, opacity: 0.7, duration: 0.5, ease: 'power2.out' }
+        );
+    }
+};
+
+// GSAP Slide Animation Function
+export const animateSlide = async (dir: 'next' | 'prev') => {
+    if (!prevRef.value || !activeRef.value || !nextRef.value) return;
+
+    const timeline = gsap.timeline();
+    const distance = 100;
+    const duration = 0.5;
+    const ease = 'power2.inOut';
+
+    if (dir === 'next') {
+        timeline.to(activeRef.value, { xPercent: -distance, opacity: 0, duration, ease }, 0);
+        timeline.to(prevRef.value, { xPercent: -distance, opacity: 0, duration, ease }, 0);
+        timeline.to(nextRef.value, { xPercent: -distance, opacity: 0, duration, ease }, 0);
+
+        timeline.add(() => {
+            baseNext();
+            nextTick();
+            gsap.set(prevRef.value, { xPercent: distance, opacity: 0.7 });
+            gsap.set(activeRef.value, { xPercent: distance, opacity: 1 });
+            gsap.set(nextRef.value, { xPercent: distance, opacity: 0.7 });
+
+            gsap.to([prevRef.value, activeRef.value, nextRef.value], {
+                xPercent: 0,
+                opacity: (i, target) => target === activeRef.value ? 1 : 0.7,
+                duration,
+                ease,
+                stagger: 0.1,
+            });
         });
-    })
+
+    } else {
+        timeline.to(activeRef.value, { xPercent: distance, opacity: 0, duration, ease }, 0);
+        timeline.to(prevRef.value, { xPercent: distance, opacity: 0, duration, ease }, 0);
+        timeline.to(nextRef.value, { xPercent: distance, opacity: 0, duration, ease }, 0);
+
+        timeline.add(() => {
+            basePrev();
+            nextTick();
+            gsap.set(prevRef.value, { xPercent: -distance, opacity: 0.7 });
+            gsap.set(activeRef.value, { xPercent: -distance, opacity: 1 });
+            gsap.set(nextRef.value, { xPercent: -distance, opacity: 0.7 });
+
+            gsap.to([prevRef.value, activeRef.value, nextRef.value], {
+                xPercent: 0,
+                opacity: (i, target) => target === activeRef.value ? 1 : 0.7,
+                duration,
+                ease,
+                stagger: 0.1,
+            });
+        });
+    }
 }
 
-export function nextSlide() {
-    activeIndex.value = (activeIndex.value + 1) % newsComps.value.length
+// Carousel Navigation Functions
+const baseNext = () => { activeIndex.value = (activeIndex.value + 1) % newsComps.value.length; };
+const basePrev = () => { activeIndex.value = (activeIndex.value - 1 + newsComps.value.length) % newsComps.value.length; };
+const baseGoTo = (index: number) => { activeIndex.value = index; };
+
+export const prevSlide = async () => {
+    direction.value = 'prev';
+    basePrev();
+    await nextTick();
+    animateSlide('prev');
+};
+export const nextSlide = async () => {
+    direction.value = 'next';
+    baseNext();
+    await nextTick();
+    animateSlide('next');
 };
 
-export function prevSlide() {
-    activeIndex.value = (activeIndex.value - 1 + newsComps.value.length) % newsComps.value.length
-}
-  
-export function goTo(index: number) {
-    activeIndex.value = index
+// Function to go to a specific slide by index
+export const goTo = async (index: number) => {
+    direction.value = index > activeIndex.value ? 'next' : 'prev';
+    baseGoTo(index);
+    await nextTick();
+    animateTransition(direction.value);
+
+    const dir = index > activeIndex.value ? 'next' : 'prev';
+
+    if (!prevRef.value || !activeRef.value || !nextRef.value) return;
+
+    const timeline = gsap.timeline();
+    const distance = dir === 'next' ? -100 : 100;
+    const duration = 0.5;
+    const ease = 'power2.inOut';
+
+    timeline.to(activeRef.value, { xPercent: distance, opacity: 0, duration, ease }, 0);
+    timeline.to(prevRef.value, { xPercent: distance, opacity: 0, duration, ease }, 0);
+    timeline.to(nextRef.value, { xPercent: distance, opacity: 0, duration, ease }, 0);
+
+    timeline.add(() => {
+        baseGoTo(index);
+        nextTick();
+
+        const startPos = dir === 'next' ? 100 : -100;
+        gsap.set(prevRef.value, { xPercent: startPos, opacity: 0.7 });
+        gsap.set(activeRef.value, { xPercent: startPos, opacity: 1 });
+        gsap.set(nextRef.value, { xPercent: startPos, opacity: 0.7 });
+
+        gsap.to([prevRef.value, activeRef.value, nextRef.value], {
+        xPercent: 0,
+        opacity: (i, target) => target === activeRef.value ? 1 : 0.7,
+        duration,
+        ease,
+        stagger: 0.1,
+        });
+    });
 };
-
-// Autoplay
-export function startAutoplay() {
-    stopAutoplay()
-    autoplayTimer = setInterval(() => {
-        nextSlide()
-    }, 5000)
-}
-
-export function stopAutoplay() {
-    if (autoplayTimer) {
-        clearInterval(autoplayTimer)
-        autoplayTimer = null
-    }
-}
-
-// Touch/Swipe Support
-let startX = 0
-let endX = 0
-
-export function handleTouchStart(e: TouchEvent) {
-    startX = e.touches[0].clientX
-} 
-
-export function handleTouchMove(e: TouchEvent) {
-    endX = e.touches[0].clientX
-} 
-
-export function handleTouchEnd() {
-    const diff = endX - startX
-    if (Math.abs(diff) > 50) {
-        if (diff > 0) prevSlide()
-        else nextSlide()
-    }
-} 
-
-onMounted(() => {
-    updateCarousel()
-    // startAutoplay()
-
-    if (carousel.value) {
-        carousel.value.addEventListener('touchstart', handleTouchStart)
-        carousel.value.addEventListener('touchmove', handleTouchMove)
-        carousel.value.addEventListener('touchend', handleTouchEnd)
-    }
-})
-
-watch(activeIndex, () => {
-    updateCarousel()
-    // startAutoplay()
-})
-

@@ -36,7 +36,7 @@
     <div class="relative w-full h-fit max-w-md mx-auto">
         <a 
             :href="link"
-            class="grid cursor-pointer w-full h-full"
+            class="block cursor-pointer w-full h-full"
         >
 
             <NuxtImg

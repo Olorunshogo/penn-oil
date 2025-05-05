@@ -1,13 +1,23 @@
 
-<script setup>
-    
+<script setup lang="ts">
+    import { ref, computed, nextTick } from 'vue';
     import { newsComps } from '../models/newsComps';
+    import gsap from 'gsap';
 
-    import { 
-        carousel, activeIndex ,nextSlide, prevSlide, goTo
-     } from '../stores/homeNews'
+    import {
+        prevRef, prevIndex, prevSlide,
+        activeRef, activeIndex,        
+        nextRef, nextIndex, nextSlide,
+        direction,
+        animateTransition,
+        animateSlide,
+        goTo
+    } from '../stores/homeNews'
 
 </script>
+
+
+
 
 <template>
     <section>
@@ -25,34 +35,38 @@
 
                 </div>
 
-
-                <div 
-                    class="relative w-full flex flex-col items-center gap-16 overflow-hidden"
-                >
-                    <div 
-                        class="relative flex items-center justify-center w-full overflow-hidden"
-                    >
-                        <div 
-                            ref="carousel"
-                            class="flex items-center justify-center w-full gap-6"
-                        >
-                            <div
-                                v-for="(newsComp, index) in newsComps"
-                                :key="newsComp.id"
-                                class="newsComp"
-                                :class="{ active: index == activeIndex }"
-                                @click="goTo(index)"
-                            >
-                                <HomeNewsComp
-                                    :link="newsComp.link"
-                                    :imgSrc="newsComp.imgSrc"
-                                    :alt="newsComp.alt"
-                                    :date="newsComp.date"
-                                    :description="newsComp.description"
-                                />
-                            </div>
+                <div class="flex flex-col items-center gap-12 w-full">
+                    <div class="grid grid-cols-1 sm:flex items-center justify-center gap-4 w-full *:hover:scale-102 *:duration-300 *:ease-in-out *:transition-all">
+                        <!-- Prev item -->
+                        <div ref="prevRef">
+                            <HomeNewsComp
+                                v-if="newsComps.length > 1"
+                                :key="newsComps[prevIndex].id"
+                                v-bind="newsComps[prevIndex]"
+                                class="hidden md:block scale-95 opacity-85 cursor-pointer"
+                                @click="goTo(prevIndex)"
+                            />
                         </div>
 
+                        <!-- Active item -->
+                        <div ref="activeRef">
+                            <HomeNewsComp
+                                :key="newsComps[activeIndex].id"
+                                v-bind="newsComps[activeIndex]"  
+                                class="scale-100 z-10"
+                            />
+                        </div>
+
+                        <!-- Next item -->
+                        <div ref="nextRef">
+                            <HomeNewsComp
+                                v-if="newsComps.length > 2"
+                                :key="newsComps[nextIndex].id"
+                                v-bind="newsComps[nextIndex]"
+                                class="hidden md:block scale-95 opacity-85 cursor-pointer"
+                                @click="goTo(nextIndex)"
+                            />
+                        </div>
                     </div>
 
                     <!-- Navigation -->
@@ -82,13 +96,7 @@
                             <Icon name="mdi:arrow-right" />
                         </button>
                     </div>
-
-
                 </div>
-
-                   
-
-                
             
             </div>
 
@@ -99,12 +107,18 @@
 
 <style lang="css" scoped>
 
-    .newsComp {
-        transition: all 0.5s ease;
-        cursor: pointer;
-        flex-shrink: 0;
-        width: 320px;
+    /* .newsComp {        
+        /* width: 320px; 
+        flex-shrink: 0; 
         touch-action: pan-y;
+        cursor: pointer;       
+        /* position: absolute;  Needed for proper centering using xPercent 
+        left: 50%;
+        transform: translateX(-50%);
+        transition: all 0.5s ease;
+    } */
+    .newsComp {
+        transition: transform 0.5s ease, opacity 0.5s ease;
     }
     .newsComp.active {
         transform-origin: center;
