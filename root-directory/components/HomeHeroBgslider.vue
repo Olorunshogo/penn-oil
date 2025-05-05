@@ -43,7 +43,7 @@
                 <p class="text-lg md:text-2xl text-center">{{ description }}</p>
             </div>
 
-            <NuxtLink :to="ctaLink" class="flex *:flex items-center *:items-center justify-center *:justify-center gap-2 md:gap-4 rounded-lg p-2 md:p-4 border-1 font-bold mt-4 cursor-pointer duration-300 ease-in-out transition-all">
+            <NuxtLink :to="ctaLink" class="flex *:flex items-center *:items-center justify-center *:justify-center gap-2 md:gap-4 rounded-lg p-2 md:p-4 font-bold mt-4 cursor-pointer duration-300 ease-in-out transition-all">
                 <span class="text-xl"><Icon name="mdi:arrow-right" /></span>
                 <span>{{ cta }}</span>
             </NuxtLink>

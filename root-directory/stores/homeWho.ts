@@ -9,7 +9,7 @@ export const innovators = ref(null);
 
 export function handleScroll() {
     const scrollPosition = window.scrollY;
-    const scrollSpeed = 0.2;
+    const scrollSpeed = 0.15;
 
     // Animate 'Critical Thinkers' and 'Innovators' when scrolling up/down
     gsap.to(criticalThinkers.value, {

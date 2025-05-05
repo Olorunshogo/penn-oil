@@ -80,7 +80,7 @@
                 <!-- Images -->
                 <div 
                     data-aos="fade-left" data-aos-delay="200"
-                    class="flex *:flex flex-col items-center gap-30 *:items-center justify-center *:justify-center w-full h-full"
+                    class="flex *:flex flex-col items-center gap-12 *:items-center justify-center *:justify-center w-full h-full"
                 >
                 
                     <NuxtImg

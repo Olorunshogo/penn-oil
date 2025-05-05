@@ -26,7 +26,7 @@ export const newsComps: Ref<NewsItem[]> = ref([
     {
         id: 2,
         link: "/",
-        imgSrc: "",
+        imgSrc: "https://images.pexels.com/photos/2183113/pexels-photo-2183113.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
         alt: "Dosts",
         date: "April 17, 2025",
         description: "Empowering young athletes: Penn Petro Energy drives girls' golf forward"

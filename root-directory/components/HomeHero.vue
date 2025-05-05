@@ -103,15 +103,29 @@
             clearInterval(autoplayInterval);
         }
     });
+
+    defineProps({
+        isSearchOpen: {
+            type: Boolean,
+            default: false
+        }
+    });
+
+    // defineEmit<{
+    //     (event: 'updateSearchOpen', false)
+    // }>();
+
+    function closeSearch() {
+        emit('updateSearchOpen', false)
+    }
     
 </script>
 
 
 <template>
-    <section>
+    <section>        
         
-        
-        <div class="relative w-full h-full overflow-hidden -mt-(--navbar-h)">
+        <div class="relative w-full h-full overflow-hidden -mt-[11rem]">
         
             <!-- <div
                 v-for="(item, index) in videoSlider" 
@@ -122,7 +136,7 @@
                     transform: currentIndex === index ? 'translateX(0)' : 'translateX(100%)'
                 }"
             > -->
-            <div class="flex w-full h-full overflow-hidden">   
+            <div class="flex w-full h-dvh overflow-hidden">   
                 <HomeHeroBgslider
                     v-for="(item, index) in videoSlider"
                     :key="item.id" 
@@ -134,7 +148,7 @@
                     :ctaLink="item.ctaLink"
                     :cta="item.cta"  
 
-                    class="w-full min-w-full"              
+                    class="w-full min-w-full h-full"              
                 />
             </div> 
 
