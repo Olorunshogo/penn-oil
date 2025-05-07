@@ -24,6 +24,7 @@
     isSearchOpen,
     backMobile,
     closeAside,
+    closeAllMenu,
 
     isWhoOpen,
     isWhoHovered,
@@ -192,7 +193,13 @@
                 >
                   <Icon name="mdi:arrow-left" />
                 </button>
-                <span>Who we are</span>
+                <NuxtLink
+                  to="/who"
+                  @click="closeAllMenu"
+                  class="flex *:flex items-center *:items-center justify-between hover:text-(--light-blue) duration-300 ease-in-out transition-all"
+                >
+                  Who we are
+                </NuxtLink>
                 <button
                   class="flex items-center justify-end hover:text-(--light-blue)"
                   @click="closeAside"
@@ -205,6 +212,7 @@
               <!-- Overview -->
               <NuxtLink
                 to="/who/overview"
+                @click="closeAllMenu"
                 class="flex *:flex items-center *:items-center justify-between hover:text-(--light-blue) duration-300 ease-in-out transition-all"
               >
                 Overview
@@ -213,6 +221,7 @@
               <!-- Our culture -->
               <NuxtLink
                 to="/who/culture"
+                @click="closeAllMenu"
                 class="flex *:flex items-center *:items-center justify-between hover:text-(--light-blue) duration-300 ease-in-out transition-all"
               >
                 Our culture
@@ -221,6 +230,7 @@
               <!-- Our brands -->
               <NuxtLink
                 to="/who/brands"
+                @click="closeAllMenu"
                 class="flex *:flex items-center *:items-center justify-between hover:text-(--light-blue) duration-300 ease-in-out transition-all"
               >
                 Our brands
@@ -229,6 +239,7 @@
               <!-- Our leadership -->
               <NuxtLink
                 to="/who/leadership"
+                @click="closeAllMenu"
                 class="flex *:flex items-center *:items-center justify-between hover:text-(--light-blue) duration-300 ease-in-out transition-all"
               >
                 Our leadership
@@ -237,6 +248,7 @@
               <!-- Our history -->
               <NuxtLink
                 to="/who/history"
+                @click="closeAllMenu"
                 class="flex *:flex items-center *:items-center justify-between hover:text-(--light-blue) duration-300 ease-in-out transition-all"
               >
                 Our history
@@ -245,6 +257,7 @@
               <!-- Contact us -->
               <NuxtLink
                 to="/contact"
+                @click="closeAllMenu"
                 class="flex *:flex items-center *:items-center justify-between hover:text-(--light-blue) duration-300 ease-in-out transition-all"
               >
                 Contact us
@@ -269,7 +282,13 @@
                 >
                   <Icon name="mdi:arrow-left" />
                 </button>
-                <span>What we do</span>
+                <NuxtLink
+                  to="/what"
+                  @click="closeAllMenu"
+                  class="flex *:flex items-center *:items-center justify-between hover:text-(--light-blue) duration-300 ease-in-out transition-all"
+                >
+                  What we do
+                </NuxtLink>
                 <button
                   class="flex items-center justify-end hover:text-(--light-blue) cursor-pointer"
                   @click="closeAside"
@@ -282,6 +301,7 @@
               <!-- Overview -->
               <NuxtLink
                 to="/what/overview"
+                @click="closeAllMenu"
                 class="flex *:flex items-center *:items-center justify-between hover:text-(--light-blue) duration-300 ease-in-out transition-all"
               >
                 Overview
@@ -290,6 +310,7 @@
               <!-- Energy -->
               <NuxtLink
                 to="/what/energy"
+                @click="closeAllMenu"
                 class="flex *:flex items-center *:items-center justify-between hover:text-(--light-blue) duration-300 ease-in-out transition-all"
               >
                 Energy
@@ -298,6 +319,7 @@
               <!--   Technology and innovation -->
               <NuxtLink
                 to="/what/technology"
+                @click="closeAllMenu"
                 class="flex *:flex items-center *:items-center justify-between hover:text-(--light-blue) duration-300 ease-in-out transition-all"
               >
                 Technology and innovation
@@ -306,6 +328,7 @@
               <!-- Penn Petro Energy around the world -->
               <NuxtLink
                 to="/what/penn"
+                @click="closeAllMenu"
                 class="flex *:flex items-center *:items-center justify-between hover:text-(--light-blue) duration-300 ease-in-out transition-all"
               >
               Penn Petro Energy around the world
@@ -330,7 +353,13 @@
                 >
                   <Icon name="mdi:arrow-left" />
                 </button>
-                <span>Sustainability</span>
+                <NuxtLink
+                  to="/sustainability"
+                  @click="closeAllMenu"
+                  class="flex *:flex items-center *:items-center justify-between hover:text-(--light-blue) duration-300 ease-in-out transition-all"
+                >
+                  Sustainability
+                </NuxtLink>
                 <button
                   class="flex items-center justify-end hover:text-(--light-blue) cursor-pointer"
                   @click="closeAside"
@@ -343,6 +372,7 @@
               <!-- Overview -->
               <NuxtLink
                 to="/sustainability/overview"
+                @click="closeAllMenu"
                 class="flex *:flex items-center *:items-center justify-between hover:text-(--light-blue) duration-300 ease-in-out transition-all"
               >
                 Overview
@@ -351,6 +381,7 @@
               <!-- Climate -->
               <NuxtLink
                 to="/sustainability/climate"
+                @click="closeAllMenu"
                 class="flex *:flex items-center *:items-center justify-between hover:text-(--light-blue) duration-300 ease-in-out transition-all"
               >
                 Climate
@@ -359,6 +390,7 @@
               <!--   Environment -->
               <NuxtLink
                 to="/sustainability/environment"
+                @click="closeAllMenu"
                 class="flex *:flex items-center *:items-center justify-between hover:text-(--light-blue) duration-300 ease-in-out transition-all"
               >
                 Environment
@@ -367,6 +399,7 @@
               <!-- Social investment -->
               <NuxtLink
                 to="/sustainability/investment"
+                @click="closeAllMenu"
                 class="flex *:flex items-center *:items-center justify-between hover:text-(--light-blue) duration-300 ease-in-out transition-all"
               >
                 Social investment
@@ -391,7 +424,13 @@
                 >
                   <Icon name="mdi:arrow-left" />
                 </button>
-                <span>Investors</span>
+                <NuxtLink
+                  to="/investors"
+                  @click="closeAllMenu"
+                  class="flex *:flex items-center *:items-center justify-between hover:text-(--light-blue) duration-300 ease-in-out transition-all"
+                >
+                  Investors
+                </NuxtLink>
                 <button
                   class="flex items-center justify-end hover:text-(--light-blue) cursor-pointer"
                   @click="closeAside"
@@ -404,6 +443,7 @@
               <!-- Overview -->
               <NuxtLink
                 to="/investors/overview"
+                @click="closeAllMenu"
                 class="flex *:flex items-center *:items-center justify-between hover:text-(--light-blue) duration-300 ease-in-out transition-all"
               >
                 Overview
@@ -412,6 +452,7 @@
               <!-- Events and presentations -->
               <NuxtLink
                 to="//investors/events"
+                @click="closeAllMenu"
                 class="flex *:flex items-center *:items-center justify-between hover:text-(--light-blue) duration-300 ease-in-out transition-all"
               >
                 Events and presentations
@@ -420,6 +461,7 @@
               <!--  Corporate governance -->
               <NuxtLink
                 to="//investors/corporate"
+                @click="closeAllMenu"
                 class="flex *:flex items-center *:items-center justify-between hover:text-(--light-blue) duration-300 ease-in-out transition-all"
               >
                 Corporate governance
@@ -428,6 +470,7 @@
               <!-- esg a-z index -->
               <NuxtLink
                 to="//investors/esg"
+                @click="closeAllMenu"
                 class="flex *:flex items-center *:items-center justify-between hover:text-(--light-blue) duration-300 ease-in-out transition-all"
               >
                 esg a-z index
@@ -436,6 +479,7 @@
               <!-- Reports and fillings -->
               <NuxtLink
                 to="//investors/reports"
+                @click="closeAllMenu"
                 class="flex *:flex items-center *:items-center justify-between hover:text-(--light-blue) duration-300 ease-in-out transition-all"
               >
                 Reports and fillings
@@ -444,6 +488,7 @@
               <!--  Stock and dividend -->
               <NuxtLink
                 to="//investors/stock"
+                @click="closeAllMenu"
                 class="flex *:flex items-center *:items-center justify-between hover:text-(--light-blue) duration-300 ease-in-out transition-all"
               >
                 Stock and dividend
@@ -452,6 +497,7 @@
               <!-- Contact us -->
               <NuxtLink
                 to="/contact"
+                @click="closeAllMenu"
                 class="flex *:flex items-center *:items-center justify-between hover:text-(--light-blue) duration-300 ease-in-out transition-all"
               >
                 Contact us

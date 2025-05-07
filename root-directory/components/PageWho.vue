@@ -7,17 +7,6 @@
         titleTemplate: '%s | Penn Petro Energy PLC'
     });
 
-    defineProps({
-        isSearchOpen: {
-            type: Boolean,
-            default: false
-        }
-    });
-
-    function closeSearch() {
-        emit('updateSearchOpen', false)
-    }
-
 </script>
 
 
@@ -88,7 +77,7 @@
                                 </div>
                             </div>
 
-                            <span class="font-semibold text-lg">Discover the Penn Petro Energy way</span>
+                            <span class="font-semibold text-lg">Discover the Penn Petro way</span>
                         </NuxtLink>
                     </div>
 
@@ -290,7 +279,7 @@
                                         <Icon name="mdi:arrow-right" />
                                     </div>
                                 </div>
-                                <span class="group-hover:underline-text">Learn about our technology and innovation</span>
+                                <span class="group-hover:underline-text">Learn about our technology</span>
                             </NuxtLink>
                         </div>
                     </div>
@@ -329,7 +318,7 @@
                         </div>
                     </div>
 
-                    <span class="font-semibold text-lg">Learn about our history</span>
+                    <span class="font-semibold text-lg">Learn our history</span>
                 </NuxtLink>
             </div>                           
         </section>

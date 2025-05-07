@@ -32,7 +32,7 @@
                             class="text-5xl md:text-6xl lg:text-8xl text-center font-extrabold bg-clip-text text-transparent" 
                             style="background-image: url('https://images.pexels.com/photos/1181438/pexels-photo-1181438.jpeg'); background-size: cover;"
                         >
-                            Who we are
+                            Careers
                         </h1>
                         
                         <p class="text-xl lg:text-2xl text-center text-(--black)">
@@ -58,7 +58,7 @@
 
                     
 
-                    <div class="flex flex-col justify-center bg-(--dark-blue) w-full lg:w-1/2 h-80 lg:h-120 rounded-b-2xl lg:rounded-r-2xl">                        
+                    <div class="flex flex-col justify-center bg-(--dark-blue) w-full lg:w-1/2 h-120 rounded-b-2xl lg:rounded-r-2xl">                        
                         
                         <div class="flex flex-col px-8 gap-4 lg:gap-8 max-w-2xl">
                             <h2 
@@ -103,7 +103,7 @@
                 
                 <div class="flex flex-col lg:flex-row w-full lg:w-full max-w-[1400px] mx-auto lg:mb-16 h-full px-(--section-px) py-(--section-py)">
 
-                    <div class="flex flex-col justify-center bg-(--dark-red) h-80 lg:h-120 w-full lg:w-1/2 rounded-t-2xl lg:rounded-l-2xl">                        
+                    <div class="flex flex-col justify-center bg-(--dark-red) h-120 w-full lg:w-1/2 rounded-t-2xl lg:rounded-l-2xl">                        
                         
                         <div class="flex flex-col px-8 gap-4 lg:gap-8 max-w-2xl">
                             <h2 
@@ -163,7 +163,7 @@
 
                     
 
-                    <div class="flex flex-col justify-center bg-(--dark-teal) h-80 lg:h-120 w-full lg:w-1/2 rounded-b-2xl lg:rounded-r-2xl">                        
+                    <div class="flex flex-col justify-center bg-(--dark-teal) h-120 w-full lg:w-1/2 rounded-b-2xl lg:rounded-r-2xl">                        
                         
                         <div class="flex flex-col px-8 gap-4 lg:gap-8 max-w-2xl">
                             <h2 
@@ -207,7 +207,7 @@
                 
                 <div class="flex flex-col lg:flex-row w-full lg:w-full max-w-[1400px] mx-auto lg:mb-16 h-full px-(--section-px) py-(--section-py)">
 
-                    <div class="flex flex-col justify-center bg-(--dark-purple) h-80 lg:h-120 w-full lg:w-1/2 rounded-t-2xl lg:rounded-l-2xl">                        
+                    <div class="flex flex-col justify-center bg-(--dark-purple) h-120 w-full lg:w-1/2 rounded-t-2xl lg:rounded-l-2xl">                        
                         
                         <div class="flex flex-col px-8 gap-4 lg:gap-8 max-w-2xl">
                             <h2 

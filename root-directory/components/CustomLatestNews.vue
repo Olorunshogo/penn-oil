@@ -36,18 +36,18 @@
 <template>
 
     <div class="relative w-full h-full">
-        <div class="flex items-center gap-4">
+        <div class="flex items-center gap-2 lg:gap-4">
             <NuxtImg
                 :src="imgSrc"
                 :alt="imgAlt"
                 loading="lazy"
-                class="h-24 w-24 object-cover border-1 border-(--light-gray)"
+                class="h-16 lg:h-20 w-16 lg:w-20 object-cover border-1 border-(--light-gray)"
             />
 
-            <div class="grid gap-2">
+            <div class="grid gap-1">
                 <NuxtLink
                     :to="link"
-                    class="group relative text-(--dark-blue) font-bold text-lg hover:underline decoration-(--medium-blue) underline-offset-2 flex duration-500 ease-in-out transition-all"
+                    class="group relative text-(--dark-blue) font-bold text-sm lg:text-lg hover:underline decoration-(--medium-blue) underline-offset-2 flex duration-500 ease-in-out transition-all"
                 >                            
                     <span class="group-hover:underline-text">{{ heading }}</span>
                 </NuxtLink>

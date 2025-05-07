@@ -6,6 +6,10 @@
         title: 'who Page',
     });
 
+    definePageMeta({
+        layout:'custom'
+    })
+
 </script>
 
 

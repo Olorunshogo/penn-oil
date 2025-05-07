@@ -53,7 +53,7 @@
 
         <!-- Section: Latest news from chevron -->
         <section>        
-            <div class="relative flex flex-col gap-12 w-full h-full overflow-hidden bg-(--white) px-(--section-px) lg:px-(--section-px-lg) py-(--section-py) lg:py-(--section-py-lg)">
+            <div class="relative flex flex-col gap-12 w-full h-full overflow-hidden bg-(--white) py-(--section-py) lg:py-(--section-py-lg)">
                 
                 <h3 class="text-2xl text-(--dark-blue) font-bold text-center">
                     Latest news from Penn Petro Energy
@@ -74,6 +74,7 @@
 
                 </div>
 
+                <!-- Archived News -->
                 <div class="grid gap-8 w-full h-full">
                     <button 
                         @click="isArchiveOpen = !isArchiveOpen"
@@ -85,8 +86,8 @@
                         </span>
                         <span class="flex items-center">
                             <Icon name="mdi:chevron-up" 
-                                class="text-lg font-semibold ease-in-out duration-300 transition-all"
-                                :class="{ 'rotate-180': isArchiveOpen }"
+                                class="text-lg font-semibold ease-in-out duration-500 transition-all"
+                                :class="{ '-rotate-180': isArchiveOpen }"
                             />
                         </span>
                     </button>
@@ -96,7 +97,7 @@
                     <Transition name="slide-down">
                         <div 
                             v-if="isArchiveOpen"
-                            class="grid grid-cols-1 lg:grid-cols-2 gap-4 w-full h-full px-8 py-12 bg-(--white)"
+                            class="grid grid-cols-1 lg:grid-cols-2 gap-4 w-full h-full py-12 bg-(--white)"
                         >
                             <CustomLatestNews
                                 v-for="item in archivedNews"
@@ -122,10 +123,6 @@
 
 
         </section>
-
-
-
-        
 
     </div>
 </template>
@@ -167,7 +164,7 @@
     /* Slide-down transition */
     .slide-down-enter-active,
     .slide-down-leave-active {
-        transition: transform 0.5s ease, max-height 0.5s ease;
+        transition: transform 0.5s ease-in-out, max-height 0.5s ease-in-out;
     }
 
     .slide-down-enter, 

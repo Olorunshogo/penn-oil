@@ -4,6 +4,15 @@ import { ref } from 'vue';
 export const isMenuOpen = ref<boolean>(false);
 export const isSearchOpen = ref<boolean>(false);
 
+export function closeAllMenu() {
+    isMenuOpen.value = false;
+
+    isWhoOpen.value = false;
+    isWhatOpen.value = false;
+    isSustainabilityOpen.value = false;
+    isInvestorsOpen.value = false;
+}
+
 export function backMobile() {
     isMenuOpen.value = true;
     isWhoOpen.value = false;
@@ -87,9 +96,3 @@ export function openDesktopInvestors() {
 export function closeDesktopInvestors() {
     isInvestorsHovered.value = false;
 };
-
-// Newsroom
-export const isNewsroomOpen = ref<boolean>(false);
-
-// Careers
-export const isCareersOpen = ref<boolean>(false);
