@@ -122,7 +122,6 @@
     <section>        
         
         <div class="relative w-full h-full overflow-hidden -mt-[11rem]">
-
             <div class="flex w-full h-dvh overflow-hidden">   
                 <HomeHeroBgslider
                     v-for="(item, index) in videoSlider"

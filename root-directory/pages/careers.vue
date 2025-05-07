@@ -3,7 +3,7 @@
     import { useHead } from 'nuxt/app';
 
     useHead({
-        title: 'who Page',
+        title: 'Careers Page',
     });
 
 </script>
@@ -12,7 +12,7 @@
 <template>
     <div>
         <div class="w-full h-full">
-            <PageWho />
+            <PageCareers />
         </div>
     </div>
 </template>

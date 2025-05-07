@@ -1,59 +1,56 @@
 <script lang="ts" setup>
-import { watch, onMounted, onBeforeUnmount } from "vue";
+  import { watch, onMounted, onBeforeUnmount } from "vue";
 
-// Close Menu on ESC key
-const handleEscape = (e: KeyboardEvent) => {
-  if (e.key === "Escape") isMenuOpen.value = false;
-};
+  // Close Menu on ESC key
+  const handleEscape = (e: KeyboardEvent) => {
+    if (e.key === "Escape") isMenuOpen.value = false;
+  };
 
-// Scroll will be locked when menu is open
-watch(isMenuOpen, (open) => {
-  document.body.style.overflow = open ? "hidden" : "";
-});
+  // Scroll will be locked when menu is open
+  watch(isMenuOpen, (open) => {
+    document.body.style.overflow = open ? "hidden" : "";
+  });
 
-onMounted(() => {
-  document.addEventListener("keydown", handleEscape);
-});
+  onMounted(() => {
+    document.addEventListener("keydown", handleEscape);
+  });
 
-onBeforeUnmount(() => {
-  document.removeEventListener("keydown", handleEscape);
-});
+  onBeforeUnmount(() => {
+    document.removeEventListener("keydown", handleEscape);
+  });
 
-import {
-  isMenuOpen,
-  isSearchOpen,
-  backMobile,
-  closeAside,
+  import {
+    isMenuOpen,
+    isSearchOpen,
+    backMobile,
+    closeAside,
 
-  isWhoOpen,
-  isWhoHovered,
-  openMobileWho, 
-  openDesktopWho,
-  closeDesktopWho,
+    isWhoOpen,
+    isWhoHovered,
+    openMobileWho, 
+    openDesktopWho,
+    closeDesktopWho,
   
 
-  isWhatOpen,
-  isWhatHovered,
-  openDesktopWhat,
-  openMobileWhat,
-  closeDesktopWhat,
+    isWhatOpen,
+    isWhatHovered,
+    openDesktopWhat,
+    openMobileWhat,
+    closeDesktopWhat,
 
 
-  isSustainabilityOpen,
-  isSustainabilityHovered,
-  openMobileSustainability,
-  openDesktopSustainability,
-  closeDesktopSustainability,
+    isSustainabilityOpen,
+    isSustainabilityHovered,
+    openMobileSustainability,
+    openDesktopSustainability,
+    closeDesktopSustainability,
 
-  isInvestorsOpen,
-  isInvestorsHovered,
-  openMobileInvestors,
-  openDesktopInvestors,
-  closeDesktopInvestors
-} from "../stores/navbar";
-
-
-
+    isInvestorsOpen,
+    isInvestorsHovered,
+    openMobileInvestors,
+    openDesktopInvestors,
+    closeDesktopInvestors
+  } from "../stores/navbar";
 
 </script>
 
@@ -160,7 +157,7 @@ import {
 
             <!-- Newsroom -->
             <NuxtLink
-              to="/"
+              to="/newsroom"
               class="flex *:flex items-center *:items-center justify-between hover:text-(--light-blue) duration-300 ease-in-out transition-all"
             >
               Newsroom
@@ -168,7 +165,7 @@ import {
 
             <!-- Careers -->
             <NuxtLink
-              to="/"
+              to="/careers"
               class="flex *:flex items-center *:items-center justify-between hover:text-(--light-blue) duration-300 ease-in-out transition-all"
             >
               Careers
@@ -207,7 +204,7 @@ import {
 
               <!-- Overview -->
               <NuxtLink
-                to="/"
+                to="/who/overview"
                 class="flex *:flex items-center *:items-center justify-between hover:text-(--light-blue) duration-300 ease-in-out transition-all"
               >
                 Overview
@@ -215,7 +212,7 @@ import {
 
               <!-- Our culture -->
               <NuxtLink
-                to="/"
+                to="/who/culture"
                 class="flex *:flex items-center *:items-center justify-between hover:text-(--light-blue) duration-300 ease-in-out transition-all"
               >
                 Our culture
@@ -223,7 +220,7 @@ import {
 
               <!-- Our brands -->
               <NuxtLink
-                to="/"
+                to="/who/brands"
                 class="flex *:flex items-center *:items-center justify-between hover:text-(--light-blue) duration-300 ease-in-out transition-all"
               >
                 Our brands
@@ -231,7 +228,7 @@ import {
 
               <!-- Our leadership -->
               <NuxtLink
-                to="/"
+                to="/who/leadership"
                 class="flex *:flex items-center *:items-center justify-between hover:text-(--light-blue) duration-300 ease-in-out transition-all"
               >
                 Our leadership
@@ -239,7 +236,7 @@ import {
 
               <!-- Our history -->
               <NuxtLink
-                to="/"
+                to="/who/history"
                 class="flex *:flex items-center *:items-center justify-between hover:text-(--light-blue) duration-300 ease-in-out transition-all"
               >
                 Our history
@@ -247,7 +244,7 @@ import {
 
               <!-- Contact us -->
               <NuxtLink
-                to="/"
+                to="/contact"
                 class="flex *:flex items-center *:items-center justify-between hover:text-(--light-blue) duration-300 ease-in-out transition-all"
               >
                 Contact us
@@ -284,7 +281,7 @@ import {
 
               <!-- Overview -->
               <NuxtLink
-                to="/"
+                to="/what/overview"
                 class="flex *:flex items-center *:items-center justify-between hover:text-(--light-blue) duration-300 ease-in-out transition-all"
               >
                 Overview
@@ -292,7 +289,7 @@ import {
 
               <!-- Energy -->
               <NuxtLink
-                to="/"
+                to="/what/energy"
                 class="flex *:flex items-center *:items-center justify-between hover:text-(--light-blue) duration-300 ease-in-out transition-all"
               >
                 Energy
@@ -300,7 +297,7 @@ import {
 
               <!--   Technology and innovation -->
               <NuxtLink
-                to="/"
+                to="/what/technology"
                 class="flex *:flex items-center *:items-center justify-between hover:text-(--light-blue) duration-300 ease-in-out transition-all"
               >
                 Technology and innovation
@@ -308,7 +305,7 @@ import {
 
               <!-- Penn Petro Energy around the world -->
               <NuxtLink
-                to="/"
+                to="/what/penn"
                 class="flex *:flex items-center *:items-center justify-between hover:text-(--light-blue) duration-300 ease-in-out transition-all"
               >
               Penn Petro Energy around the world
@@ -345,7 +342,7 @@ import {
 
               <!-- Overview -->
               <NuxtLink
-                to="/"
+                to="/sustainability/overview"
                 class="flex *:flex items-center *:items-center justify-between hover:text-(--light-blue) duration-300 ease-in-out transition-all"
               >
                 Overview
@@ -353,7 +350,7 @@ import {
 
               <!-- Climate -->
               <NuxtLink
-                to="/"
+                to="/sustainability/climate"
                 class="flex *:flex items-center *:items-center justify-between hover:text-(--light-blue) duration-300 ease-in-out transition-all"
               >
                 Climate
@@ -361,7 +358,7 @@ import {
 
               <!--   Environment -->
               <NuxtLink
-                to="/"
+                to="/sustainability/environment"
                 class="flex *:flex items-center *:items-center justify-between hover:text-(--light-blue) duration-300 ease-in-out transition-all"
               >
                 Environment
@@ -369,7 +366,7 @@ import {
 
               <!-- Social investment -->
               <NuxtLink
-                to="/"
+                to="/sustainability/investment"
                 class="flex *:flex items-center *:items-center justify-between hover:text-(--light-blue) duration-300 ease-in-out transition-all"
               >
                 Social investment
@@ -406,7 +403,7 @@ import {
 
               <!-- Overview -->
               <NuxtLink
-                to="/"
+                to="/investors/overview"
                 class="flex *:flex items-center *:items-center justify-between hover:text-(--light-blue) duration-300 ease-in-out transition-all"
               >
                 Overview
@@ -414,7 +411,7 @@ import {
 
               <!-- Events and presentations -->
               <NuxtLink
-                to="/"
+                to="//investors/events"
                 class="flex *:flex items-center *:items-center justify-between hover:text-(--light-blue) duration-300 ease-in-out transition-all"
               >
                 Events and presentations
@@ -422,7 +419,7 @@ import {
 
               <!--  Corporate governance -->
               <NuxtLink
-                to="/"
+                to="//investors/corporate"
                 class="flex *:flex items-center *:items-center justify-between hover:text-(--light-blue) duration-300 ease-in-out transition-all"
               >
                 Corporate governance
@@ -430,7 +427,7 @@ import {
 
               <!-- esg a-z index -->
               <NuxtLink
-                to="/"
+                to="//investors/esg"
                 class="flex *:flex items-center *:items-center justify-between hover:text-(--light-blue) duration-300 ease-in-out transition-all"
               >
                 esg a-z index
@@ -438,7 +435,7 @@ import {
 
               <!-- Reports and fillings -->
               <NuxtLink
-                to="/"
+                to="//investors/reports"
                 class="flex *:flex items-center *:items-center justify-between hover:text-(--light-blue) duration-300 ease-in-out transition-all"
               >
                 Reports and fillings
@@ -446,7 +443,7 @@ import {
 
               <!--  Stock and dividend -->
               <NuxtLink
-                to="/"
+                to="//investors/stock"
                 class="flex *:flex items-center *:items-center justify-between hover:text-(--light-blue) duration-300 ease-in-out transition-all"
               >
                 Stock and dividend
@@ -454,7 +451,7 @@ import {
 
               <!-- Contact us -->
               <NuxtLink
-                to="/"
+                to="/contact"
                 class="flex *:flex items-center *:items-center justify-between hover:text-(--light-blue) duration-300 ease-in-out transition-all"
               >
                 Contact us
@@ -468,7 +465,7 @@ import {
           >
             <div class="flex items-center gap-8 *:hover:text-(--white) *:duration-300 *:ease-in-out *:transition-all">
               <NuxtLink
-                to="/"
+                to="/who"
                 class="group relative flex duration-500 ease-in transition-all"
                 @mouseenter="openDesktopWho"
                 @mouseleave="closeDesktopWho"
@@ -477,7 +474,7 @@ import {
               </NuxtLink>
 
               <NuxtLink
-                to="/"
+                to="/what"
                 class="group relative flex duration-500 ease-in transition-all"
                 @mouseenter="openDesktopWhat"
                 @mouseleave="closeDesktopWhat"
@@ -486,7 +483,7 @@ import {
               </NuxtLink>
 
               <NuxtLink
-                to="/"
+                to="/sustainability"
                 class="group relative flex duration-500 ease-in transition-all"
                 @mouseenter="openDesktopSustainability"
                 @mouseleave="closeDesktopSustainability"
@@ -495,7 +492,7 @@ import {
               </NuxtLink>
 
               <NuxtLink
-                to="/"
+                to="/investors"
                 class="group relative flex duration-500 ease-in transition-all"
                 @mouseenter="openDesktopInvestors"
                 @mouseleave="closeDesktopInvestors"
@@ -519,17 +516,17 @@ import {
             <!-- Desktop Right Links -->
             <div class="hidden lg:flex items-center gap-8 *:flex *:hover:text-(--light-blue) *:duration-300 *:ease-in-out *:transition-all">
               <NuxtLink
-                to="/"
+                to="/newsroom"
                 class="group text-base"
               >
-                <span class="group-hover:underline-text">Sustainability</span>
+                <span class="group-hover:underline-text">Newsroom</span>
               </NuxtLink>
 
               <NuxtLink
-                to="/"
+                to="/careers"
                 class="group text-base"
               >
-                <span class="group-hover:underline-text">Investors</span>
+                <span class="group-hover:underline-text">Careers</span>
               </NuxtLink>
 
               <button
@@ -541,230 +538,201 @@ import {
             </div>
           </div>
 
-            <!-- Desktop Panels -->
-            <div
-              class="text-3xl"
+          <!-- Desktop Panels -->
+          <div class="text-3xl">
+            <!-- Who panel -->
+            <aside
+              id="who-desktop-mobile-menu"
+              class="fixed top-0 -left-18 w-1/2 h-full z-80 flex flex-col font-normal text-3xl bg-(--primary-bg) pt-32 px-(--section-px-lg) text-(--white) transition-transform duration-300 ease-in-out *:ease-in-out *:duration-300 *:transition-all"
+              :class="isWhoHovered ? 'translate-x-18' : '-translate-x-full'"
+              role="dialog"
+              aria-modal="true"
+              @mouseenter="openDesktopWho"
+              @mouseleave="closeDesktopWho"
             >
+              <div class="flex flex-col gap-8 max-w-7xl mx-auto">
 
-                <!-- Who panel -->
-                <aside
-                id="who-desktop-mobile-menu"
-                class="fixed top-0 -left-18 w-1/2 h-full z-80 flex flex-col font-normal text-3xl bg-(--primary-bg) pt-32 px-(--section-px-lg) text-(--white) transition-transform duration-300 ease-in-out *:ease-in-out *:duration-300 *:transition-all"
-                :class="isWhoHovered ? 'translate-x-18' : '-translate-x-full'"
-                role="dialog"
-                aria-modal="true"
-                @mouseenter="openDesktopWho"
-                @mouseleave="closeDesktopWho"
+                <!-- Our culture -->
+                <NuxtLink
+                  to="/who/culture"
+                  class="flex *:flex items-center *:items-center justify-between hover:text-(--light-blue) duration-300 ease-in-out transition-all"
                 >
-                    <div class="flex flex-col gap-8 max-w-7xl mx-auto">
+                  Our culture
+                </NuxtLink>
 
-                        <!-- Our culture -->
-                        <NuxtLink
-                            to="/"
-                            class="flex *:flex items-center *:items-center justify-between hover:text-(--light-blue) duration-300 ease-in-out transition-all"
-                        >
-                            Our culture
-                        </NuxtLink>
-
-                        <!-- Our brands -->
-                        <NuxtLink
-                            to="/"
-                            class="flex *:flex items-center *:items-center justify-between hover:text-(--light-blue) duration-300 ease-in-out transition-all"
-                        >
-                            Our brands
-                        </NuxtLink>
-
-                        <!-- Our leadership -->
-                        <NuxtLink
-                            to="/"
-                            class="flex *:flex items-center *:items-center justify-between hover:text-(--light-blue) duration-300 ease-in-out transition-all"
-                        >
-                            Our leadership
-                        </NuxtLink>
-
-                        <!-- Our history -->
-                        <NuxtLink
-                            to="/"
-                            class="flex *:flex items-center *:items-center justify-between hover:text-(--light-blue) duration-300 ease-in-out transition-all"
-                        >
-                            Our history
-                        </NuxtLink>
-
-                        <!-- Contact us -->
-                        <NuxtLink
-                            to="/"
-                            class="flex *:flex items-center *:items-center justify-between hover:text-(--light-blue) duration-300 ease-in-out transition-all"
-                        >
-                            Contact us
-                        </NuxtLink>
-
-                    </div>
-
-                </aside>
-
-                <!-- What we do panel -->
-                <aside
-                id="what-desktop-mobile-menu"
-                class="fixed top-0 -left-18 w-1/2 h-full z-80 flex flex-col gap-8 font-normal bg-(--primary-bg) pt-32 px-(--section-px-lg) text-(--white) transition-transform duration-300 ease-in-out *:ease-in-out *:duration-300 *:transition-all"
-                :class="isWhatHovered ? 'translate-x-18' : '-translate-x-full'"
-                role="dialog"
-                aria-modal="true"
-                @mouseenter="openDesktopWhat"
-                @mouseleave="closeDesktopWhat"
+                <!-- Our brands -->
+                <NuxtLink
+                  to="/who/brands"
+                  class="flex *:flex items-center *:items-center justify-between hover:text-(--light-blue) duration-300 ease-in-out transition-all"
                 >
-                    <div class="flex flex-col gap-8 max-w-7xl mx-auto">
+                  Our brands
+                </NuxtLink>
 
-                        <!-- Energy -->
-                        <NuxtLink
-                            to="/"
-                            class="flex *:flex items-center *:items-center justify-between hover:text-(--light-blue) duration-300 ease-in-out transition-all"
-                        >
-                            Energy
-                        </NuxtLink>
-
-                        <!--   Technology and innovation -->
-                        <NuxtLink
-                            to="/"
-                            class="flex *:flex items-center *:items-center justify-between hover:text-(--light-blue) duration-300 ease-in-out transition-all"
-                        >
-                            Technology and innovation
-                        </NuxtLink>
-
-                        <!-- Social investment -->
-                        <NuxtLink
-                            to="/"
-                            class="flex *:flex items-center *:items-center justify-between hover:text-(--light-blue) duration-300 ease-in-out transition-all"
-                        >
-                        Penn Petro Energy around the world
-                        </NuxtLink>
-                    </div>
-                </aside>
-
-                <!-- Sustainability panel -->
-                <aside
-                id="sustainability-desktop-mobile-menu"
-                class="fixed top-0 -left-18 w-1/2 h-full z-80 flex flex-col gap-8 font-normal bg-(--primary-bg) pt-32 px-(--section-px-lg) text-(--white) transition-transform duration-300 ease-in-out *:ease-in-out *:duration-300 *:transition-all"
-                :class="isSustainabilityHovered ? 'translate-x-18' : '-translate-x-full'"
-                role="dialog"
-                aria-modal="true"
-                @mouseenter="openDesktopSustainability"
-                @mouseleave="closeDesktopSustainability"
+                <!-- Our leadership -->
+                <NuxtLink
+                  to="/who/leadership"
+                  class="flex *:flex items-center *:items-center justify-between hover:text-(--light-blue) duration-300 ease-in-out transition-all"
                 >
-                    <div class="flex flex-col gap-8 max-w-7xl mx-auto">
+                  Our leadership
+                </NuxtLink>
 
-                        <!-- Climate -->
-                        <NuxtLink
-                            to="/"
-                            class="flex *:flex items-center *:items-center justify-between hover:text-(--light-blue) duration-300 ease-in-out transition-all"
-                        >
-                            Climate
-                        </NuxtLink>
-
-                        <!--   Environment -->
-                        <NuxtLink
-                            to="/"
-                            class="flex *:flex items-center *:items-center justify-between hover:text-(--light-blue) duration-300 ease-in-out transition-all"
-                        >
-                            Environment
-                        </NuxtLink>
-
-                        <!-- Social investment -->
-                        <NuxtLink
-                            to="/"
-                            class="flex *:flex items-center *:items-center justify-between hover:text-(--light-blue) duration-300 ease-in-out transition-all"
-                        >
-                            Social investment
-                        </NuxtLink>
-                    </div>
-                </aside>
-
-                <!-- Investors panel -->
-                <aside
-                id="investors-desktop-mobile-menu"
-                class="fixed top-0 -left-18 w-1/2 h-full z-80 flex flex-col gap-8 font-normal bg-(--primary-bg) pt-32 px-(--section-px-lg) text-(--white) transition-transform duration-300 ease-in-out *:ease-in-out *:duration-300 *:transition-all"
-                :class="isInvestorsHovered ? 'translate-x-18' : '-translate-x-full'"
-                role="dialog"
-                aria-modal="true"
-                @mouseenter="openDesktopInvestors"
-                @mouseleave="closeDesktopInvestors"
+                <!-- Our history -->
+                <NuxtLink
+                  to="/who/history"
+                  class="flex *:flex items-center *:items-center justify-between hover:text-(--light-blue) duration-300 ease-in-out transition-all"
                 >
-                    <div class="flex flex-col gap-8 max-w-7xl mx-auto">
-                        <!-- Events and presentations -->
-                        <NuxtLink
-                            to="/"
-                            class="flex *:flex items-center *:items-center justify-between hover:text-(--light-blue) duration-300 ease-in-out transition-all"
-                        >
-                            Events and presentations
-                        </NuxtLink>
+                  Our history
+                </NuxtLink>
 
-                        <!--  Corporate governance -->
-                        <NuxtLink
-                            to="/"
-                            class="flex *:flex items-center *:items-center justify-between hover:text-(--light-blue) duration-300 ease-in-out transition-all"
-                        >
-                            Corporate governance
-                        </NuxtLink>
+                <!-- Contact us -->
+                <NuxtLink
+                  to="/contact"
+                  class="flex *:flex items-center *:items-center justify-between hover:text-(--light-blue) duration-300 ease-in-out transition-all"
+                >
+                  Contact us
+                </NuxtLink>
 
-                        <!-- esg a-z index -->
-                        <NuxtLink
-                            to="/"
-                            class="flex *:flex items-center *:items-center justify-between hover:text-(--light-blue) duration-300 ease-in-out transition-all"
-                        >
-                            esg a-z index
-                        </NuxtLink>
-
-                        <!-- Reports and fillings -->
-                        <NuxtLink
-                            to="/"
-                            class="flex *:flex items-center *:items-center justify-between hover:text-(--light-blue) duration-300 ease-in-out transition-all"
-                        >
-                            Reports and fillings
-                        </NuxtLink>
-
-                        <!--  Stock and dividend -->
-                        <NuxtLink
-                            to="/"
-                            class="flex *:flex items-center *:items-center justify-between hover:text-(--light-blue) duration-300 ease-in-out transition-all"
-                        >
-                            Stock and dividend
-                        </NuxtLink>
-
-                        <!-- Contact us -->
-                        <NuxtLink
-                            to="/"
-                            class="flex *:flex items-center *:items-center justify-between hover:text-(--light-blue) duration-300 ease-in-out transition-all"
-                        >
-                            Contact us
-                        </NuxtLink>
-                    </div>
-
-                </aside>
-
-            </div>
-
-          <!-- Search Bar -->
-          <!-- <Transition name="slide-down">
-            <div
-              v-if="isSearchOpen"
-              class="relative flex flex-col justify-center px-8 lg:px-12 text-base text-(--black) w-full h-28 top-0 bg-(--black)/40"
-            >
-              <div
-                class="flex items-center gap-4 text-base h-12 text-(--black) border-b-2 border-(--border-gray) w-5/5 lg:w-4/5 *:flex *:items-center"
-              >
-              <Icon name="mdi:search" class="flex-none text-2xl" />
-
-                <input
-                  type="search"
-                  name="search"
-                  id="search"
-                  placeholder="What can we help you find"
-                  class="flex-1 placeholder-shown:text-lg h-full ease-in-out duration-300 focus:outline-none focus:border-1 focus:border-dotted transition-all"
-                />
-
-              <Icon name="mdi:arrow-right" class="flex-none text-2xl" />
               </div>
+            </aside>
+
+            <!-- What we do panel -->
+            <aside
+              id="what-desktop-mobile-menu"
+              class="fixed top-0 -left-18 w-1/2 h-full z-80 flex flex-col gap-8 font-normal bg-(--primary-bg) pt-32 px-(--section-px-lg) text-(--white) transition-transform duration-300 ease-in-out *:ease-in-out *:duration-300 *:transition-all"
+              :class="isWhatHovered ? 'translate-x-18' : '-translate-x-full'"
+              role="dialog"
+              aria-modal="true"
+              @mouseenter="openDesktopWhat"
+              @mouseleave="closeDesktopWhat"
+            >
+              <div class="flex flex-col gap-8 max-w-7xl mx-auto">
+                <!-- Energy -->
+                <NuxtLink
+                  to="/what/energy"
+                  class="flex *:flex items-center *:items-center justify-between hover:text-(--light-blue) duration-300 ease-in-out transition-all"
+                >
+                  Energy
+                </NuxtLink>
+
+                <!-- Technology and innovation -->
+                <NuxtLink
+                  to="/what/technology"
+                  class="flex *:flex items-center *:items-center justify-between hover:text-(--light-blue) duration-300 ease-in-out transition-all"
+                >
+                  Technology and innovation
+                </NuxtLink>
+
+                <!-- Penn Petro Energy around the world -->
+                <NuxtLink
+                  to="/what/penn"
+                  class="flex *:flex items-center *:items-center justify-between hover:text-(--light-blue) duration-300 ease-in-out transition-all"
+                >
+                  Penn Petro Energy around the world
+                </NuxtLink>
+              </div>
+            </aside>
+
+            <!-- Sustainability panel -->
+            <aside
+              id="sustainability-desktop-mobile-menu"
+              class="fixed top-0 -left-18 w-1/2 h-full z-80 flex flex-col gap-8 font-normal bg-(--primary-bg) pt-32 px-(--section-px-lg) text-(--white) transition-transform duration-300 ease-in-out *:ease-in-out *:duration-300 *:transition-all"
+              :class="isSustainabilityHovered ? 'translate-x-18' : '-translate-x-full'"
+              role="dialog"
+              aria-modal="true"
+              @mouseenter="openDesktopSustainability"
+              @mouseleave="closeDesktopSustainability"
+            >
+              <div class="flex flex-col gap-8 max-w-7xl mx-auto">
+
+                <!-- Climate -->
+                <NuxtLink
+                  to="/sustainability/climate"
+                  class="flex *:flex items-center *:items-center justify-between hover:text-(--light-blue) duration-300 ease-in-out transition-all"
+                >
+                  Climate
+                </NuxtLink>
+
+                <!-- Environment -->
+                <NuxtLink
+                  to="/sustainability/environment"
+                  class="flex *:flex items-center *:items-center justify-between hover:text-(--light-blue) duration-300 ease-in-out transition-all"
+                >
+                  Environment
+                </NuxtLink>
+
+                <!-- Social investment -->
+                <NuxtLink
+                  to="/sustainability/social"
+                  class="flex *:flex items-center *:items-center justify-between hover:text-(--light-blue) duration-300 ease-in-out transition-all"
+                >
+                  Social investment
+                </NuxtLink>
+              </div>
+            </aside>
+
+            <!-- Investors panel -->
+            <aside
+              id="investors-desktop-mobile-menu"
+              class="fixed top-0 -left-18 w-1/2 h-full z-80 flex flex-col gap-8 font-normal bg-(--primary-bg) pt-32 px-(--section-px-lg) text-(--white) transition-transform duration-300 ease-in-out *:ease-in-out *:duration-300 *:transition-all"
+              :class="isInvestorsHovered ? 'translate-x-18' : '-translate-x-full'"
+              role="dialog"
+              aria-modal="true"
+              @mouseenter="openDesktopInvestors"
+              @mouseleave="closeDesktopInvestors"
+            >
+              <div class="flex flex-col gap-8 max-w-7xl mx-auto">
+                <!-- Events and presentations -->
+                <NuxtLink
+                  to="/investors/events"
+                  class="flex *:flex items-center *:items-center justify-between hover:text-(--light-blue) duration-300 ease-in-out transition-all"
+                >
+                  Events and presentations
+                </NuxtLink>
+
+                <!--  Corporate governance -->
+                <NuxtLink
+                  to="/investors/corporate"
+                  class="flex *:flex items-center *:items-center justify-between hover:text-(--light-blue) duration-300 ease-in-out transition-all"
+                >
+                  Corporate governance
+                </NuxtLink>
+
+                <!-- esg a-z index -->
+                <NuxtLink
+                  to="/investors/esg"
+                  class="flex *:flex items-center *:items-center justify-between hover:text-(--light-blue) duration-300 ease-in-out transition-all"
+                >
+                  esg a-z index
+                </NuxtLink>
+
+                <!-- Reports and fillings -->
+                <NuxtLink
+                  to="/investors/reports"
+                  class="flex *:flex items-center *:items-center justify-between hover:text-(--light-blue) duration-300 ease-in-out transition-all"
+                >
+                  Reports and fillings
+                </NuxtLink>
+
+                <!--  Stock and dividend -->
+                <NuxtLink
+                  to="/investors/stock"
+                  class="flex *:flex items-center *:items-center justify-between hover:text-(--light-blue) duration-300 ease-in-out transition-all"
+                >
+                  Stock and dividend
+                </NuxtLink>
+
+                <!-- Contact us -->
+                <NuxtLink
+                  to="/contact"
+                  class="flex *:flex items-center *:items-center justify-between hover:text-(--light-blue) duration-300 ease-in-out transition-all"
+                >
+                  Contact us
+                </NuxtLink>
+              </div>
+
+            </aside>
+
           </div>
-          </Transition> -->
 
         </div>
 
@@ -790,8 +758,7 @@ import {
             <Icon name="mdi:arrow-right" class="flex-none text-2xl" />
             </div>
           </div>
-        </Transition>
-        
+        </Transition>        
         
       </nav>
     </header>

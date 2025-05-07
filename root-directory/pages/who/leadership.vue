@@ -3,7 +3,11 @@
     import { useHead } from 'nuxt/app';
 
     useHead({
-        title: 'who Page',
+        title: 'Who Leadership Page',
+    });
+
+    definePageMeta({
+        layout: 'custom'
     });
 
 </script>
@@ -12,7 +16,7 @@
 <template>
     <div>
         <div class="w-full h-full">
-            <PageWho />
+            <PageWhoLeadership />
         </div>
     </div>
 </template>
