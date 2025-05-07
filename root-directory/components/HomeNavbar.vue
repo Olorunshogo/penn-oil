@@ -159,6 +159,7 @@
             <!-- Newsroom -->
             <NuxtLink
               to="/newsroom"
+              @click="closeAllMenu"
               class="flex *:flex items-center *:items-center justify-between hover:text-(--light-blue) duration-300 ease-in-out transition-all"
             >
               Newsroom
@@ -167,6 +168,7 @@
             <!-- Careers -->
             <NuxtLink
               to="/careers"
+              @click="closeAllMenu"
               class="flex *:flex items-center *:items-center justify-between hover:text-(--light-blue) duration-300 ease-in-out transition-all"
             >
               Careers
