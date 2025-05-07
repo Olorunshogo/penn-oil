@@ -3,7 +3,9 @@ export const videoSlider = [
     // 1. Penn Petro Energy reports first-quarter 2025 result
     {
         id: 1,
-        imgSrc: 'https://images.pexels.com/photos/16830015/pexels-photo-16830015/free-photo-of-picture-of-an-oil-rig.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+        // imgSrc: 'https://images.pexels.com/photos/16830015/pexels-photo-16830015/free-photo-of-picture-of-an-oil-rig.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+        // imgSrc: '../public/images/heroBg.jpeg',
+        imgSrc: 'https://images.pexels.com/photos/14154603/pexels-photo-14154603.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
         imgAlt: 'Picture of An Oil Rig',
         contentBg: 'transparent',
         heading: 'Penn Petro Energy reports first-quarter 2025 results',

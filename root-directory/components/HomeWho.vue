@@ -123,7 +123,7 @@
 
                 <!-- See our solutions link -->
                 <NuxtLink 
-                    to="/"
+                    to="/who"
                     class="group flex *:flex items-center *:items-center justify-center px-8 py-3 gap-4 w-fit h-16 mx-auto text-(--white) hover:text-(--black) bg-transparent hover:bg-(--light-blue) shadow-lg rounded-lg border-3 border-(--light-blue) duration-300 ease-in-out transition-all"
                 >
                     <div class="group relative flex items-center justify-center text-xl w-8 h-full overflow-hidden">
@@ -142,8 +142,6 @@
                 
                 
             </div>
-
-
 
         </div>
 

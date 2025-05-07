@@ -110,11 +110,7 @@
             default: false
         }
     });
-
-    // defineEmit<{
-    //     (event: 'updateSearchOpen', false)
-    // }>();
-
+    
     function closeSearch() {
         emit('updateSearchOpen', false)
     }
@@ -126,16 +122,7 @@
     <section>        
         
         <div class="relative w-full h-full overflow-hidden -mt-[11rem]">
-        
-            <!-- <div
-                v-for="(item, index) in videoSlider" 
-                :key="item.id"
-                :class="`home-hero-slide absolute w-full h-full transition-all`"
-                :style="{
-                    opacity: currentIndex === index ? 1 : 0,
-                    transform: currentIndex === index ? 'translateX(0)' : 'translateX(100%)'
-                }"
-            > -->
+
             <div class="flex w-full h-dvh overflow-hidden">   
                 <HomeHeroBgslider
                     v-for="(item, index) in videoSlider"
