@@ -48,19 +48,17 @@
         <section>
             <div class="bg-(--light-gray) w-full h-full overflow-hidden">
                 
-                <div class="flex flex-col lg:flex-row w-full lg:w-full max-w-[1400px] mx-auto lg:mb-16 h-full rounded-2xl px-(--section-px) py-(--section-py)">
+                <div class="flex flex-col lg:flex-row w-full lg:w-full max-w-[1400px] mx-auto lg:mb-16 h-full px-(--section-px) py-(--section-py)">
+                    <NuxtImg
+                        src="https://images.pexels.com/photos/1181354/pexels-photo-1181354.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        alt="Engineer Holding Laptop"
+                        loading="lazy"
+                        class="w-full lg:w-1/2 h-80 lg:h-120 object-center lg:object-cover rounded-t-lg lg:rounded-l-lg"
+                    /> 
 
-                    <div class="grid w-full lg:w-1/2 h-100 lg:h-140">
-                        <NuxtImg
-                            src="https://images.pexels.com/photos/1181354/pexels-photo-1181354.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                            alt="Engineer Holding Laptop"
-                            loading="lazy"
-                            class="w-full h-120 lg:h-full object-center lg:object-cover rounded-t-lg lg:rounded-l-lg"
-                        /> 
+                    
 
-                    </div>
-
-                    <div class="flex flex-col justify-center bg-(--dark-teal) h-100 w-full lg:w-1/2 lg:h-140 rounded-b-2xl lg:rounded-r-2xl">                        
+                    <div class="flex flex-col justify-center bg-(--dark-blue) w-full lg:w-1/2 h-80 lg:h-120 rounded-b-2xl lg:rounded-r-2xl">                        
                         
                         <div class="flex flex-col px-8 gap-4 lg:gap-8 max-w-2xl">
                             <h2 
@@ -103,13 +101,13 @@
         <section>
             <div class="bg-(--light-gray) w-full h-full overflow-hidden">
                 
-                <div class="flex flex-col lg:flex-row w-full lg:w-full max-w-[1400px] mx-auto lg:mb-16 h-full rounded-2xl px-(--section-px) py-(--section-py)">
+                <div class="flex flex-col lg:flex-row w-full lg:w-full max-w-[1400px] mx-auto lg:mb-16 h-full px-(--section-px) py-(--section-py)">
 
-                    <div class="flex flex-col justify-center bg-(--dark-teal) h-100 w-full lg:w-1/2 lg:h-140 rounded-b-2xl lg:rounded-r-2xl">                        
+                    <div class="flex flex-col justify-center bg-(--dark-red) h-80 lg:h-120 w-full lg:w-1/2 rounded-t-2xl lg:rounded-l-2xl">                        
                         
                         <div class="flex flex-col px-8 gap-4 lg:gap-8 max-w-2xl">
                             <h2 
-                                class="text-4xl lg:text-6xl text-(--light-blue) text-wrap font-extrabold cursor-text w-full h-full overflow-hidden"
+                                class="text-4xl lg:text-6xl text-(--light-red) text-wrap font-extrabold cursor-text w-full h-full overflow-hidden"
                             >
                                 Service station employment
                             </h2>
@@ -122,7 +120,7 @@
                         <!-- View service station jobs -->
                         <NuxtLink 
                             to="/who/culture"
-                            class="group flex *:flex items-center *:items-center justify-center px-2 lg:px-8 py-2 gap-2 lg:gap-4 w-fit mx-auto mt-8 text-(--white) bg-transparent hover:bg-(--light-blue) shadow-lg rounded-lg duration-300 ease-in-out transition-all"
+                            class="group flex *:flex items-center *:items-center justify-center px-2 lg:px-8 py-2 gap-2 lg:gap-4 w-fit mx-auto mt-8 text-(--white) bg-transparent hover:bg-(--light-red) shadow-lg rounded-lg duration-300 ease-in-out transition-all"
                         >
                             <div class="group relative flex items-center justify-center text-xl w-8 h-full overflow-hidden">
                                 <div class="absolute flex items-center left-2 h-full w-12 transition-all duration-500 ease-in-out group-hover:translate-x-full">
@@ -138,16 +136,12 @@
                         </NuxtLink>
                     </div>
 
-                    <div class="grid w-full lg:w-1/2 h-100 lg:h-140">
-                        <NuxtImg
-                            src="https://images.pexels.com/photos/1181354/pexels-photo-1181354.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                            alt="Engineer Holding Laptop"
-                            loading="lazy"
-                            class="w-full h-120 lg:h-full object-center lg:object-cover rounded-t-lg lg:rounded-l-lg"
-                        /> 
-
-                    </div>
-
+                    <NuxtImg
+                        src="https://images.pexels.com/photos/1181354/pexels-photo-1181354.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        alt="Engineer Holding Laptop"
+                        loading="lazy"
+                        class="w-full lg:w-1/2 h-80 lg:h-120 object-center lg:object-cover rounded-b-2xl lg:rounded-r-2xl"
+                    /> 
                 </div>
 
             </div>
@@ -157,23 +151,23 @@
         <section>
             <div class="bg-(--light-gray) w-full h-full overflow-hidden">
                 
-                <div class="flex flex-col lg:flex-row w-full lg:w-full max-w-[1400px] mx-auto lg:mb-16 h-full rounded-2xl px-(--section-px) py-(--section-py)">
+                <div class="flex flex-col lg:flex-row w-full lg:w-full max-w-[1400px] mx-auto lg:mb-16 h-full px-(--section-px) py-(--section-py)">
 
-                    <div class="grid w-full lg:w-1/2 h-100 lg:h-140">
-                        <NuxtImg
-                            src="https://images.pexels.com/photos/1181354/pexels-photo-1181354.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                            alt="Engineer Holding Laptop"
-                            loading="lazy"
-                            class="w-full h-120 lg:h-full object-center lg:object-cover rounded-t-lg lg:rounded-l-lg"
-                        /> 
+                    
+                    <NuxtImg
+                        src="https://images.pexels.com/photos/1181354/pexels-photo-1181354.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        alt="Engineer Holding Laptop"
+                        loading="lazy"
+                        class="w-full lg:w-1/2 h-80 lg:h-120 object-center lg:object-cover rounded-t-2xl lg:rounded-l-2xl"
+                    /> 
 
-                    </div>
+                    
 
-                    <div class="flex flex-col justify-center bg-(--dark-teal) h-100 w-full lg:w-1/2 lg:h-140 rounded-b-2xl lg:rounded-r-2xl">                        
+                    <div class="flex flex-col justify-center bg-(--dark-teal) h-80 lg:h-120 w-full lg:w-1/2 rounded-b-2xl lg:rounded-r-2xl">                        
                         
                         <div class="flex flex-col px-8 gap-4 lg:gap-8 max-w-2xl">
                             <h2 
-                                class="text-4xl lg:text-6xl text-(--light-blue) text-wrap font-extrabold cursor-text w-full h-full overflow-hidden"
+                                class="text-4xl lg:text-6xl text-(--light-teal) text-wrap font-extrabold cursor-text w-full h-full overflow-hidden"
                             >
                                 Students and recent grads
                             </h2>
@@ -186,7 +180,7 @@
                         <!-- View Careers -->
                         <NuxtLink 
                             to="/who/culture"
-                            class="group flex *:flex items-center *:items-center justify-center px-2 lg:px-8 py-2 gap-2 lg:gap-4 w-fit mx-auto mt-8 text-(--white) bg-transparent hover:bg-(--light-blue) shadow-lg rounded-lg duration-300 ease-in-out transition-all"
+                            class="group flex *:flex items-center *:items-center justify-center px-2 lg:px-8 py-2 gap-2 lg:gap-4 w-fit mx-auto mt-8 text-(--white) bg-transparent hover:bg-(--light-teal) shadow-lg rounded-lg duration-300 ease-in-out transition-all"
                         >
                             <div class="group relative flex items-center justify-center text-xl w-8 h-full overflow-hidden">
                                 <div class="absolute flex items-center left-2 h-full w-12 transition-all duration-500 ease-in-out group-hover:translate-x-full">
@@ -209,15 +203,15 @@
 
         <!-- Section: Recruiting fraud -->
         <section>
-            <div class="bg-(--light-gray) w-full h-full overflow-hidden">
+            <div class="bg-(--light-gray) mb-16 w-full h-full overflow-hidden">
                 
-                <div class="flex flex-col lg:flex-row w-full lg:w-full max-w-[1400px] mx-auto lg:mb-16 h-full rounded-2xl px-(--section-px) py-(--section-py)">
+                <div class="flex flex-col lg:flex-row w-full lg:w-full max-w-[1400px] mx-auto lg:mb-16 h-full px-(--section-px) py-(--section-py)">
 
-                    <div class="flex flex-col justify-center bg-(--dark-teal) h-100 w-full lg:w-1/2 lg:h-140 rounded-b-2xl lg:rounded-r-2xl">                        
+                    <div class="flex flex-col justify-center bg-(--dark-purple) h-80 lg:h-120 w-full lg:w-1/2 rounded-t-2xl lg:rounded-l-2xl">                        
                         
                         <div class="flex flex-col px-8 gap-4 lg:gap-8 max-w-2xl">
                             <h2 
-                                class="text-4xl lg:text-6xl text-(--light-blue) text-wrap font-extrabold cursor-text w-full h-full overflow-hidden"
+                                class="text-4xl lg:text-6xl text-(--light-purple) text-wrap font-extrabold cursor-text w-full h-full overflow-hidden"
                             >
                                 Recruiting fraud
                             </h2>
@@ -231,7 +225,7 @@
                         <!-- View service station jobs -->
                         <NuxtLink 
                             to="/who/culture"
-                            class="group flex *:flex items-center *:items-center justify-center px-2 lg:px-8 py-2 gap-2 lg:gap-4 w-fit mx-auto mt-8 text-(--white) bg-transparent hover:bg-(--light-blue) shadow-lg rounded-lg duration-300 ease-in-out transition-all"
+                            class="group flex *:flex items-center *:items-center justify-center px-2 lg:px-8 py-2 gap-2 lg:gap-4 w-fit mx-auto mt-8 text-(--white) bg-transparent hover:bg-(--light-purple) shadow-lg rounded-lg duration-300 ease-in-out transition-all"
                         >
                             <div class="group relative flex items-center justify-center text-xl w-8 h-full overflow-hidden">
                                 <div class="absolute flex items-center left-2 h-full w-12 transition-all duration-500 ease-in-out group-hover:translate-x-full">
@@ -243,20 +237,16 @@
                                 </div>
                             </div>
 
-                            <span class="font-semibold text-lg">Contact our fraus department</span>
+                            <span class="font-semibold text-lg">Contact our fraud department</span>
                         </NuxtLink>
                     </div>
 
-                    <div class="grid w-full lg:w-1/2 h-100 lg:h-140">
-                        <NuxtImg
-                            src="https://images.pexels.com/photos/1181354/pexels-photo-1181354.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                            alt="Engineer Holding Laptop"
-                            loading="lazy"
-                            class="w-full h-120 lg:h-full object-center lg:object-cover rounded-t-lg lg:rounded-l-lg"
-                        /> 
-
-                    </div>
-
+                    <NuxtImg
+                        src="https://images.pexels.com/photos/1181354/pexels-photo-1181354.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        alt="Engineer Holding Laptop"
+                        loading="lazy"
+                        class="w-full h-90 lg:h-120 lg:w-1/2 object-cover lg:object-cover rounded-b-2xl lg:rounded-r-2xl"
+                    /> 
                 </div>
 
             </div>

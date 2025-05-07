@@ -89,42 +89,42 @@
                         >                       
                                 
                             <NuxtLink
-                                to="/"
+                                to="/who"
                                 class="group relative flex duration-500 ease-in transition-all"
                             >
                                 <span class="group-hover:underline-text">Who we are</span>
                             </NuxtLink>
 
                             <NuxtLink
-                                to="/"
+                                to="/who/leadership"
                                 class="group relative flex duration-500 ease-in transition-all"
                             >                            
                                 <span class="group-hover:underline-text">Our leadership</span>
                             </NuxtLink>
 
                             <NuxtLink
-                                to="/"
+                                to="/what"
                                 class="group relative flex duration-500 ease-in transition-all"
                             >                            
                                 <span class="group-hover:underline-text">What we do</span>
                             </NuxtLink>
 
                             <NuxtLink
-                                to="/"
+                                to="/who/brands"
                                 class="group relative flex duration-500 ease-in transition-all"
                             >                            
                                 <span class="group-hover:underline-text">Our brands</span>
                             </NuxtLink>
 
                             <NuxtLink
-                                to="/"
+                                to="/what/technology"
                                 class="group relative flex duration-500 ease-in transition-all"
                             >                            
                                 <span class="group-hover:underline-text">Technology and innovation</span>
                             </NuxtLink>
 
                             <NuxtLink
-                                to="/"
+                                to="/sustainability"
                                 class="group relative flex duration-500 ease-in transition-all"
                             >                            
                                 <span class="group-hover:underline-text">Sustainability</span>
@@ -138,7 +138,7 @@
                             </NuxtLink>
 
                             <NuxtLink
-                                to="/"
+                                to="/investors"
                                 class="group relative flex duration-500 ease-in transition-all"
                             >                            
                                 <span class="group-hover:underline-text">Investor relations</span>
@@ -174,35 +174,35 @@
                         >                       
                                 
                             <NuxtLink
-                                to="/"
+                                to="/newsroom"
                                 class="group relative flex duration-500 ease-in transition-all"
                             >
                                 <span class="group-hover:underline-text">Newsroom</span>
                             </NuxtLink>
 
                             <NuxtLink
-                                to="/"
+                                to="/investors/events"
                                 class="group relative flex duration-500 ease-in transition-all"
                             >                            
                                 <span class="group-hover:underline-text">Investors events and presentations</span>
                             </NuxtLink>
 
                             <NuxtLink
-                                to="/"
+                                to="/investors/reports"
                                 class="group relative flex duration-500 ease-in transition-all"
                             >                            
                                 <span class="group-hover:underline-text">Financial Information</span>
                             </NuxtLink>
 
                             <NuxtLink
-                                to="/"
+                                to="/investors/stock"
                                 class="group relative flex duration-500 ease-in transition-all"
                             >                            
                                 <span class="group-hover:underline-text">Stock information</span>
                             </NuxtLink>
 
                             <NuxtLink
-                                to="/"
+                                to="/what/technology"
                                 class="group relative flex duration-500 ease-in transition-all"
                             >                            
                                 <span class="group-hover:underline-text">Technology ventures</span>
@@ -239,35 +239,35 @@
                         >                       
                                 
                             <NuxtLink
-                                to="/"
+                                to="/what/technology"
                                 class="group relative flex text-base duration-500 ease-in transition-all"
                             >
                                 <span class="group-hover:underline-text">Carbon capture and storage</span>
                             </NuxtLink>
 
                             <NuxtLink
-                                to="/"
+                                to="/what/energy"
                                 class="group relative flex text-base duration-500 ease-in transition-all"
                             >                            
                                 <span class="group-hover:underline-text">Energy in progress</span>
                             </NuxtLink>
 
                             <NuxtLink
-                                to="/"
+                                to="/what/energy"
                                 class="group relative flex text-base duration-500 ease-in transition-all"
                             >                            
                                 <span class="group-hover:underline-text">New energies</span>
                             </NuxtLink>
 
                             <NuxtLink
-                                to="/"
+                                to="/what/energy"
                                 class="group relative flex text-base duration-500 ease-in transition-all"
                             >                            
                                 <span class="group-hover:underline-text">Renewable fuels in transportation</span>
                             </NuxtLink>
 
                             <NuxtLink
-                                to="/"
+                                to="/what/energy"
                                 class="group relative flex text-base duration-500 ease-in transition-all"
                             >                            
                                 <span class="group-hover:underline-text">Methane management</span>
@@ -304,35 +304,35 @@
                         >                       
                                 
                             <NuxtLink
-                                to="/"
+                                to="/newsroom"
                                 class="group relative flex text-base duration-500 ease-in transition-all"
                             >
                                 <span class="group-hover:underline-text">Credit and gift cards</span>
                             </NuxtLink>
 
                             <NuxtLink
-                                to="/"
+                                to="/newsroom"
                                 class="group relative flex text-base duration-500 ease-in transition-all"
                             >                            
                                 <span class="group-hover:underline-text">Penn Petro Energy texaco rewards</span>
                             </NuxtLink>
 
                             <NuxtLink
-                                to="/"
+                                to="/careers"
                                 class="group relative flex text-base duration-500 ease-in transition-all"
                             >                            
                                 <span class="group-hover:underline-text">Careers</span>
                             </NuxtLink>
 
                             <NuxtLink
-                                to="/"
+                                to="/contact"
                                 class="group relative flex text-base duration-500 ease-in transition-all"
                             >                            
                                 <span class="group-hover:underline-text">Contact us</span>
                             </NuxtLink>
 
                             <NuxtLink
-                                to="/"
+                                to="/who/brands"
                                 class="group relative flex text-base duration-500 ease-in transition-all"
                             >                            
                                 <span class="group-hover:underline-text">Find a service station</span>
@@ -356,56 +356,56 @@
                     <div class="grid gap-2 *:font-normal *:text-base">                       
                             
                         <NuxtLink
-                            to="/"
+                            to="/who"
                             class="group relative flex duration-500 ease-in transition-all"
                         >
                             <span class="group-hover:underline-text">Who we are</span>
                         </NuxtLink>
 
                         <NuxtLink
-                            to="/"
+                            to="/who/leadership"
                             class="group relative flex duration-500 ease-in transition-all"
                         >                            
                             <span class="group-hover:underline-text">Our leadership</span>
                         </NuxtLink>
 
                         <NuxtLink
-                            to="/"
+                            to="/what"
                             class="group relative flex duration-500 ease-in transition-all"
                         >                            
                             <span class="group-hover:underline-text">What we do</span>
                         </NuxtLink>
 
                         <NuxtLink
-                            to="/"
+                            to="/who/brands"
                             class="group relative flex duration-500 ease-in transition-all"
                         >                            
                             <span class="group-hover:underline-text">Our brands</span>
                         </NuxtLink>
 
                         <NuxtLink
-                            to="/"
+                            to="/what/technology"
                             class="group relative flex duration-500 ease-in transition-all"
                         >                            
                             <span class="group-hover:underline-text">Technology and innovation</span>
                         </NuxtLink>
 
                         <NuxtLink
-                            to="/"
+                            to="/sustainability"
                             class="group relative flex duration-500 ease-in transition-all"
                         >                            
                             <span class="group-hover:underline-text">Sustainability</span>
                         </NuxtLink>
 
                         <NuxtLink
-                            to="/"
+                            to="/what/penn"
                             class="group relative flex duration-500 ease-in transition-all"
                         >                            
                             <span class="group-hover:underline-text">Penn Petro Energy around the world</span>
                         </NuxtLink>
 
                         <NuxtLink
-                            to="/"
+                            to="/investors"
                             class="group relative flex duration-500 ease-in transition-all"
                         >                            
                             <span class="group-hover:underline-text">Investor relations</span>
