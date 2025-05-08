@@ -196,7 +196,7 @@
                   <Icon name="mdi:arrow-left" />
                 </button>
                 <NuxtLink
-                  to="/who"
+                  to="/who/overview"
                   @click="closeAllMenu"
                   class="flex *:flex items-center *:items-center justify-between hover:text-(--light-blue) duration-300 ease-in-out transition-all"
                 >
@@ -285,7 +285,7 @@
                   <Icon name="mdi:arrow-left" />
                 </button>
                 <NuxtLink
-                  to="/what"
+                  to="/what/overview"
                   @click="closeAllMenu"
                   class="flex *:flex items-center *:items-center justify-between hover:text-(--light-blue) duration-300 ease-in-out transition-all"
                 >
@@ -427,7 +427,7 @@
                   <Icon name="mdi:arrow-left" />
                 </button>
                 <NuxtLink
-                  to="/investors"
+                  to="/investors/overview"
                   @click="closeAllMenu"
                   class="flex *:flex items-center *:items-center justify-between hover:text-(--light-blue) duration-300 ease-in-out transition-all"
                 >
@@ -513,7 +513,7 @@
           >
             <div class="flex items-center gap-8 *:hover:text-(--white) *:duration-300 *:ease-in-out *:transition-all">
               <NuxtLink
-                to="/who"
+                to="/who/overview"
                 class="group relative flex duration-500 ease-in transition-all"
                 @mouseenter="openDesktopWho"
                 @mouseleave="closeDesktopWho"
@@ -522,7 +522,7 @@
               </NuxtLink>
 
               <NuxtLink
-                to="/what"
+                to="/what/overview"
                 class="group relative flex duration-500 ease-in transition-all"
                 @mouseenter="openDesktopWhat"
                 @mouseleave="closeDesktopWhat"
@@ -531,7 +531,7 @@
               </NuxtLink>
 
               <NuxtLink
-                to="/sustainability"
+                to="/sustainability/overview"
                 class="group relative flex duration-500 ease-in transition-all"
                 @mouseenter="openDesktopSustainability"
                 @mouseleave="closeDesktopSustainability"
@@ -540,7 +540,7 @@
               </NuxtLink>
 
               <NuxtLink
-                to="/investors"
+                to="/investors/overview"
                 class="group relative flex duration-500 ease-in transition-all"
                 @mouseenter="openDesktopInvestors"
                 @mouseleave="closeDesktopInvestors"

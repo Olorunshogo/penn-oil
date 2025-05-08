@@ -196,7 +196,7 @@
                   <Icon name="mdi:arrow-left" />
                 </button>
                 <NuxtLink
-                  to="/who"
+                  to="/who/overview"
                   @click="closeAllMenu"
                   class="flex *:flex items-center *:items-center justify-between hover:text-(--light-blue) duration-300 ease-in-out transition-all"
                 >
@@ -285,7 +285,7 @@
                   <Icon name="mdi:arrow-left" />
                 </button>
                 <NuxtLink
-                  to="/what"
+                  to="/what/overview"
                   @click="closeAllMenu"
                   class="flex *:flex items-center *:items-center justify-between hover:text-(--light-blue) duration-300 ease-in-out transition-all"
                 >
@@ -427,7 +427,7 @@
                   <Icon name="mdi:arrow-left" />
                 </button>
                 <NuxtLink
-                  to="/investors"
+                  to="/investors/overview"
                   @click="closeAllMenu"
                   class="flex *:flex items-center *:items-center justify-between hover:text-(--light-blue) duration-300 ease-in-out transition-all"
                 >
@@ -513,7 +513,7 @@
           >
             <div class="flex items-center gap-8 *:hover:text-(--black) *:duration-300 *:ease-in-out *:transition-all">
               <NuxtLink
-                to="/who"
+                to="/who/overview"
                 class="group relative flex duration-500 ease-in transition-all"
                 @mouseenter="openDesktopWho"
                 @mouseleave="closeDesktopWho"
@@ -522,7 +522,7 @@
               </NuxtLink>
 
               <NuxtLink
-                to="/what"
+                to="/what/overview"
                 class="group relative flex duration-500 ease-in transition-all"
                 @mouseenter="openDesktopWhat"
                 @mouseleave="closeDesktopWhat"
@@ -531,7 +531,7 @@
               </NuxtLink>
 
               <NuxtLink
-                to="/sustainability"
+                to="/sustainability/overview"
                 class="group relative flex duration-500 ease-in transition-all"
                 @mouseenter="openDesktopSustainability"
                 @mouseleave="closeDesktopSustainability"
@@ -540,7 +540,7 @@
               </NuxtLink>
 
               <NuxtLink
-                to="/investors"
+                to="/investors/overview"
                 class="group relative flex duration-500 ease-in transition-all"
                 @mouseenter="openDesktopInvestors"
                 @mouseleave="closeDesktopInvestors"
@@ -579,7 +579,7 @@
 
               <button
                 @click="isSearchOpen = !isSearchOpen"
-                class="flex items-center justify-center cursor-pointer duration-300 ease-in-out transition-all bg-transparent text-(--black) hover:text-(--light-blue) text-3xl"
+                class="flex items-center justify-center cursor-pointer duration-300 ease-in-out transition-all bg-transparent text-(--white) text-3xl"
               >
                 <Icon name="mdi:search" />
               </button>
@@ -834,35 +834,35 @@
   }
 
 
-.group-hover\:underline-text {
-  position: relative;
-  display: inline-block;
-}
+  .group-hover\:underline-text {
+    position: relative;
+    display: inline-block;
+  }
 
-.group-hover\:underline-text::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 0%;
-  height: 1px;
-  background-color: white;
-  transition: width 0.5s ease-in-out;
-}
+  .group-hover\:underline-text::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 1px;
+    background-color: white;
+    transition: width 0.5s ease-in-out;
+  }
 
-.group:hover .group-hover\:underline-text::after {
-  width: 100%;
-}
+  .group:hover .group-hover\:underline-text::after {
+    width: 100%;
+  }
 
-.arrow-icon {
-  transition: transform 1s ease-in-out;
-}
+  .arrow-icon {
+    transition: transform 1s ease-in-out;
+  }
 
-.group:hover .arrow-icon {
-  transform: translateX(12px);
-}
+  .group:hover .arrow-icon {
+    transform: translateX(12px);
+  }
 
-.group-hover\:arrow-move {
-  animation: moveArrow 3s infinite alternate ease-in-out;
-}
+  .group-hover\:arrow-move {
+    animation: moveArrow 3s infinite alternate ease-in-out;
+  }
 </style>
