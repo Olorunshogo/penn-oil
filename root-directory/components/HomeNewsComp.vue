@@ -12,7 +12,7 @@
             default: '',
             required: true
         },
-        alt: {
+        imgAlt: {
             type: String,
             default: 'Delivering first oil while lowering development costs',
             required: true
@@ -41,7 +41,7 @@
 
             <NuxtImg
                 :src="imgSrc"
-                :alt="alt"
+                :alt="imgAlt"
                 class="w-full h-50 object-cover rounded-t-2xl"
             />
 

@@ -29,9 +29,12 @@
                 
 
                 <!-- Content -->
-                <div class="grid gap-4 bg-(--white) w-full absolute bottom-0 h-1/3 md:h-1/2 max-h-[500px]">
+                <div class="grid gap-4 bg-(--white) w-full absolute bottom-0 h-1/2 lg:h-2/5 max-h-[500px]">
                     <div class="flex flex-col items-center justify-center w-full max-w-4xl mx-auto h-full gap-2">
-                        <h1 class="text-5xl md:text-6xl lg:text-8xl text-center font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-gray-500 to-gray-500">
+                        <h1 
+                            class="text-5xl md:text-6xl xl:text-9xl text-center font-extrabold bg-clip-text text-transparent" 
+                            style="background-image: url('https://images.pexels.com/photos/13100561/pexels-photo-13100561.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); background-size: cover;"
+                        >
                             Who we are
                         </h1>
                         

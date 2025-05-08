@@ -5,411 +5,73 @@
         title: 'What We Are',
         titleTemplate: '%s | Penn Petro Energy PLC'
     });
+    definePageMeta({
+        layout: 'custom'
+    })
 
 </script>
 
 
 <template>
-<div>
-    <!-- Section: Hero -->
-    <section>        
-        
-        <div class="relative w-full h-full overflow-hidden -mt-[11rem]">
-
-            <!-- Image Container -->
-            <NuxtImg
-                src="https://images.pexels.com/photos/13100561/pexels-photo-13100561.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                alt="Industrial Metal pipes"
-                loading="lazy"
-                class="relative h-dvh w-full object-cover z-0"
-            />
+    <div>
+        <!-- Section: Hero -->
+        <section>        
             
+            <div class="relative w-full h-full overflow-hidden -mt-[11rem]">
 
-            <!-- Content -->
-            <div class="grid gap-4 bg-(--white) w-full absolute bottom-0 h-1/3 md:h-1/2 max-h-[500px]">
-                <div class="flex flex-col items-center justify-center w-full max-w-4xl mx-auto h-full gap-2">
-                    <h1 class="text-5xl md:text-6xl lg:text-8xl text-center font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-gray-500 to-gray-500">
-                        What we are
-                    </h1>
-                    
-                    <p class="text-xl lg:text-2xl text-center text-(--black)">
-                        Energy drives human progress and creates positive change for modern society.
-                        We work hard to deliver energy that can improve the lives of millions of people around the world.
-                    </p>
-                </div>
-            </div> 
-
-        </div>
-    </section>
-
-    <!-- Section: What are we -->
-    <section>
-        <div class="px-(--section-px) lg:px-(--section-px-lg) py-(--section-py) lg:py-(--section-py-lg) bg-(--dark-blue)/90 w-full h-full overflow-hidden">
-            
-            <div class="flex flex-col gap-20 lg:gap-24 w-full max-w-6xl mx-auto">
-
-                <div class="flex flex-col items-center justify-center gap-4 lg:gap-12">
-                    <h2 
-                        class="text-5xl lg:text-9xl text-(--white) text-wrap text-center font-extrabold cursor-text w-full h-full overflow-hidden"
-                    >
-                        What we believe drives how we work
-                    </h2>
-
-                    <p class="text-(--white) text-center text-lg lg:text-2xl font-semibold cursor-text">
-                        Our north star is The Penn Petro Energy Way. 
-                        A set of values that inspires our culture. 
-                        And guides us to get results the right way.
-                    </p>
-
-                    <!-- Discover the Penn Petro way -->
-                    <NuxtLink 
-                        to="/who/culture"
-                        class="group flex *:flex items-center *:items-center justify-center px-2 lg:px-8 py-2 gap-2 lg:gap-4 w-fit mx-auto mt-8 text-(--white) hover:text-(--black) bg-transparent hover:bg-(--light-blue) shadow-lg rounded-lg border-2 border-(--light-blue) duration-300 ease-in-out transition-all"
-                    >
-                        <div class="group relative flex items-center justify-center text-xl w-8 h-full overflow-hidden">
-                            <div class="absolute flex items-center left-2 h-full w-12 transition-all duration-500 ease-in-out group-hover:translate-x-full">
-                                <Icon name="mdi:arrow-right"/>
-                            </div>
-                            
-                            <div class="absolute flex items-center left-2 h-full w-12 -translate-x-full transition-all duration-500 ease-in-out group-hover:translate-x-0">
-                                <Icon name="mdi:arrow-right" />
-                            </div>
-                        </div>
-
-                        <span class="font-semibold text-lg">Discover the Penn Petro way</span>
-                    </NuxtLink>
-                </div>
-
-                <!-- Images -->
-                <div 
-                    class="flex flex-col items-center gap-8 lg:grid lg:grid-cols-3 w-full h-full"
-                >
-                
-                    <NuxtImg
-                        src="https://images.pexels.com/photos/257700/pexels-photo-257700.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                        alt="Low Angle Shot of Manufacturing Plant under Blue Sky"
-                        loading="lazy"
-                        class="w-1/2 lg:w-full h-40 md:h-60 lg:h-70 object-cover rounded-lg mr-auto lg:mr-0"
-                    />                        
-
-                    <NuxtImg
-                        src="https://images.pexels.com/photos/8487337/pexels-photo-8487337.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                        alt="Handywoman Pointing up"
-                        loading="lazy"
-                        class="w-1/2 lg:w-full h-40 md:h-60 lg:h-70 object-cover rounded-lg"
-                    />
-
-                    <NuxtImg
-                        src="https://images.pexels.com/photos/6060192/pexels-photo-6060192.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                        alt="Industrial containers and warehouse premises of plant"
-                        loading="lazy"
-                        class="w-1/2 lg:w-full h-40 md:h-60 lg:h-70 object-cover rounded-lg ml-auto lg:ml-0"
-                    />
-                         
-                </div>  
-
-            </div>
-
-        </div>
-
-    </section>
-
-    <!-- Section: Our purpose -->
-    <!-- <section>
-        <div class="bg-(--white) w-full h-full overflow-hidden">
-            
-            <div class="grid grid-cols-1 lg:grid-cols-2 w-full max-w-[1400px] mx-auto lg:py-16 h-full">
-
-                <div class="flex flex-col justify-center bg-(--dark-purple) h-full w-full lg:h-210 xl:rounded-l-2xl">                        
-                    <div class="flex flex-col px-8 py-32 gap-8 max-w-2xl">
-                        <h2 
-                            class="text-4xl md:text-7xl xl:text-8xl text-(--white) text-wrap font-extrabold cursor-text w-full h-full overflow-hidden"
-                        >
-                            Our purpose
-                        </h2>
-
-                        <p class="text-(--white) text-lg xl:text-2xl cursor-text">
-                            Penn Petro Energy’s purpose is to provide affordable, reliable, ever-cleaner energy. 
-                            To enable human progress. 
-                            That is at the heart of who we are.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="grid md:grid-cols-2 lg:grid-cols-1 lg:grid-rows-2 gap-4 lg:gap-8 bg-(--medium-purple) h-full lg:h-210 lg:rounded-r-2xl p-8">
-                    <NuxtImg
-                        src="https://images.pexels.com/photos/13963338/pexels-photo-13963338.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                        alt="Handy Woman Pointing up"
-                        loading="lazy"
-                        class="w-full h-90 object-cover rounded-lg ml-auto lg:ml-0"
-                    /> 
-                    
-
-                    <div class="flex flex-col gap-12 py-20 justify-between rounded-lg hover:bg-(--dark-purple) w-full h-full duration-300 ease-in-out transition-all">
-                        <p class="text-(--white) text-2xl xl:text-4xl">
-                            We're working to increase production to meet global energy demand.
-                        </p>
-                        <NuxtLink
-                            to="/what/energy"
-                            class="group flex items-center text-(--white) text-lg font-semibold"
-                        >
-                            <div class="group relative flex items-center justify-center text-xl w-8 h-full overflow-hidden">
-                                <div class="absolute flex items-center left-2 h-full w-12 transition-all duration-500 ease-in-out group-hover:translate-x-full">
-                                    <Icon name="mdi:arrow-right"/>
-                                </div>
-                                
-                                <div class="absolute flex items-center left-2 h-full w-12 -translate-x-full transition-all duration-500 ease-in-out group-hover:translate-x-0">
-                                    <Icon name="mdi:arrow-right" />
-                                </div>
-                            </div>
-                            <span class="group-hover:underline-text">Learn more</span>
-                        </NuxtLink>
-                    </div>
-                </div>
-
-            </div>
-
-        </div>
-
-    </section> -->
-
-    <!-- Section: Our culture -->
-    <section>
-        <div class="bg-(--white) w-full h-full overflow-hidden">
-            
-            <div class="grid grid-cols-1 lg:grid-cols-2 w-full max-w-[1400px] mx-auto lg:mb-16 h-full">
-
-                <div class="grid md:grid-cols-2 lg:grid-cols-1 lg:grid-rows-2 gap-4 lg:gap-8 bg-(--medium-teal) h-full lg:h-210 lg:rounded-l-2xl p-8">
-                    <NuxtImg
-                        src="https://images.pexels.com/photos/13963338/pexels-photo-13963338.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                        alt="Handy Woman Pointing up"
-                        loading="lazy"
-                        class="w-full h-90 object-cover rounded-lg ml-auto lg:ml-0"
-                    /> 
-                    
-                    <div class="flex flex-col gap-12 py-20 justify-between rounded-lg hover:bg-(--dark-teal) w-full h-full duration-300 ease-in-out transition-all">
-                        <p class="text-(--white) text-2xl xl:text-4xl">
-                            Supporting diversity and inclusion is embedded in how we work.
-                            We welcome different points of view to help us drive innovation and grow our business.
-                        </p>
-                        <NuxtLink
-                            to="/who/culture"
-                            class="group flex items-center text-(--white) text-lg font-semibold"
-                        >
-                            <div class="group relative flex items-center justify-center text-xl w-8 h-full overflow-hidden">
-                                <div class="absolute flex items-center left-2 h-full w-12 transition-all duration-500 ease-in-out group-hover:translate-x-full">
-                                    <Icon name="mdi:arrow-right"/>
-                                </div>
-                                
-                                <div class="absolute flex items-center left-2 h-full w-12 -translate-x-full transition-all duration-500 ease-in-out group-hover:translate-x-0">
-                                    <Icon name="mdi:arrow-right" />
-                                </div>
-                            </div>
-                            <span class="group-hover:underline-text">Learn more</span>
-                        </NuxtLink>
-                    </div>
-                </div>
-
-                <div class="flex flex-col justify-center bg-(--dark-teal) h-full w-full lg:h-210 xl:rounded-r-2xl">                        
-                    <div class="flex flex-col px-8 py-32 gap-8 max-w-2xl">
-                        <h2 
-                            class="text-4xl md:text-7xl xl:text-8xl text-(--white) text-wrap font-extrabold cursor-text w-full h-full overflow-hidden"
-                        >
-                            Our culture
-                        </h2>
-
-                        <p class="text-(--white) text-lg xl:text-2xl cursor-text">
-                            We're a global team dedicated to working with people from all walks of life. 
-                            We believe human ingenuity has the power to solve any challenge.
-                            And we work towards living this belief every day
-                        </p>
-                    </div>
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-    <!-- Section: Industry innovation through technology -->
-    <section>
-        <div class="bg-(--white) w-full h-full overflow-hidden">
-            
-            <div class="grid grid-cols-1 lg:grid-cols-2 w-full max-w-[1400px] mx-auto lg:py-16 h-full">
-
-                <div class="flex flex-col justify-center bg-(--dark-blue) h-full w-full lg:h-210 xl:rounded-l-2xl">                        
-                    <div class="flex flex-col px-8 py-32 gap-8 max-w-2xl">
-                        <h2 
-                            class="text-4xl md:text-7xl xl:text-8xl text-(--white) text-wrap font-extrabold cursor-text w-full h-full overflow-hidden"
-                        >
-                            Industry innovation through technology
-                        </h2>
-
-                        <p class="text-(--white) text-lg xl:text-2xl cursor-text">
-                            We aim to accelerate progress through technology that fuels our world today and builds lower carbon energy solutions for the future.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="grid md:grid-cols-2 lg:grid-cols-1 lg:grid-rows-2 gap-4 lg:gap-8 bg-(--medium-blue) h-full lg:h-210 lg:rounded-r-2xl p-8">
-                    <NuxtImg
-                        src="https://images.pexels.com/photos/13963338/pexels-photo-13963338.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                        alt="Handy Woman Pointing up"
-                        loading="lazy"
-                        class="w-full h-90 object-cover rounded-lg ml-auto lg:ml-0"
-                    /> 
-                    
-
-                    <div class="flex flex-col gap-12 py-20 justify-between rounded-lg hover:bg-(--dark-blue) w-full h-full duration-300 ease-in-out transition-all">
-                        <p class="text-(--white) text-2xl xl:text-4xl">
-                            Digital technologies are helping us integrate data, reduce costs and enhance safety.
-                        </p>
-                        <NuxtLink
-                            to="/what"
-                            class="group flex items-center text-(--white) text-lg font-semibold"
-                        >
-                            <div class="group relative flex items-center justify-center text-xl w-8 h-full overflow-hidden">
-                                <div class="absolute flex items-center left-2 h-full w-12 transition-all duration-500 ease-in-out group-hover:translate-x-full">
-                                    <Icon name="mdi:arrow-right"/>
-                                </div>
-                                
-                                <div class="absolute flex items-center left-2 h-full w-12 -translate-x-full transition-all duration-500 ease-in-out group-hover:translate-x-0">
-                                    <Icon name="mdi:arrow-right" />
-                                </div>
-                            </div>
-                            <span class="group-hover:underline-text">Learn about our technology</span>
-                        </NuxtLink>
-                    </div>
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-    <!-- Section: Human ingenuity from the beginning -->
-    <section>                
-        <div class="flex flex-col mx-auto gap-8 pt-16 lg:gap-8 w-full py-12 px-8 bg-(--dark-green) shadow-lg z-0">
-
-            <h3 class="text-5xl sm:text-6xl lg:text-7xl text-wrap text-center text-(--medium-green) font-extrabold">
-                Human ingenuity from the beginning 
-            </h3>
-
-            <p class="text-(--white) text-lg lg:text-xl text-wrap text-center">
-                We have been a leader in energy for over 140 years. 
-                Our history is filled with moments that shaped human progress and transformed the world.
-            </p>
-
-            <!-- Learn about our history -->
-            <NuxtLink 
-                to="/who/history"
-                class="group flex *:flex items-center *:items-center px-8 py-3 gap-4 w-fit h-14 text-(--white) hover:text-(--black) bg-transparent mx-auto hover:bg-(--medium-green) shadow-lg rounded-lg border-3 border-(--light-green) duration-300 ease-in-out transition-all"
-            >
-                <div class="group relative flex items-center text-xl w-8 h-full overflow-hidden">
-                    <div class="absolute flex items-center left-2 h-full w-12 transition-all duration-500 ease-in-out group-hover:translate-x-full">
-                        <Icon name="mdi:arrow-right"/>
-                    </div>
-                    
-                    <div class="absolute flex items-center left-2 h-full w-12 -translate-x-full transition-all duration-500 ease-in-out group-hover:translate-x-0">
-                        <Icon name="mdi:arrow-right" />
-                    </div>
-                </div>
-
-                <span class="font-semibold text-lg">Learn our history</span>
-            </NuxtLink>
-        </div>                           
-    </section>
-
-    <!-- Section: Industry innovation through technology -->
-    <section>
-        <div class="grid bg-(--white) gap-12 w-full h-full overflow-hidden py-(--section-py) lg:py-(--section-py-lg)">
-            
-            <div class="flex flex-col gap-4 items-center justify-center py-12 max-w-4xl mx-auto">
-                <h2 class="text-(--dark-blue) text-center font-bold text-4xl lg:text-7xl">
-                    Focus on quality
-                </h2>
-                <p class="text-(--black) text-xl text-center">
-                    We’re driven to create a quality experience. From our leadership team, who are guided by their vision and values. To each of our brands and the employees who bring them to life.
-                </p>
-            </div>
-
-            <!-- Our brands -->
-            <div class="grid grid-cols-1 lg:grid-cols-2 w-full max-w-[1400px] mx-auto h-130">
-
-                <div class="flex flex-col justify-center bg-(--dark-red) h-full w-full lg:rounded-l-2xl">                        
-                    <div class="flex flex-col px-8 py-12 gap-4 lg:gap-8 max-w-2xl">
-                        <h3 
-                            class="text-5xl lg:text-6xl text-(--light-red) text-wrap font-extrabold cursor-text w-full h-full overflow-hidden"
-                        >
-                            Our brands
-                        </h3>
-
-                        <p class="text-(--white) text-lg xl:text-2xl cursor-text">
-                            We strive for excellence and maintaining high standards.
-                            With a rich history dating back over a century, Penn Petro Energy's family of brands has built trust and recognition worldwide.
-                        </p>
-
-                        <!-- Learn about our history -->
-                        <NuxtLink 
-                            to="/who/brands"
-                            class="group flex *:flex items-center *:items-center py-3 gap-4 w-fit h-14 font-semibold text-(--white) duration-300 ease-in-out transition-all"
-                        >
-                            <div class="group relative flex items-center text-xl w-8 h-full overflow-hidden">
-                                <div class="absolute flex items-center left-2 h-full w-12 transition-all duration-500 ease-in-out group-hover:translate-x-full">
-                                    <Icon name="mdi:arrow-right"/>
-                                </div>
-                                
-                                <div class="absolute flex items-center left-2 h-full w-12 -translate-x-full transition-all duration-500 ease-in-out group-hover:translate-x-0">
-                                    <Icon name="mdi:arrow-right" />
-                                </div>
-                            </div>
-
-                            <span class="text-lg">Discover our brands</span>
-                        </NuxtLink>
-                    </div>
-                </div>
-
+                <!-- Image Container -->
                 <NuxtImg
-                    src="https://images.pexels.com/photos/13963338/pexels-photo-13963338.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                    alt="Handy Woman Pointing up"
+                    src="https://images.pexels.com/photos/31959461/pexels-photo-31959461/free-photo-of-modern-city-skyline-with-bridge-reflection.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    alt="Modern City Skyline with Bridge Reflection"
                     loading="lazy"
-                    class="hidden lg:block w-full h-full object-cover rounded-r-lg"
-                />    
-
-            </div>
-
-            <!-- Leadership -->
-            <div class="grid grid-cols-1 lg:grid-cols-2 w-full max-w-[1400px] mx-auto h-130">
-
-                <NuxtImg
-                    src="https://images.pexels.com/photos/13963338/pexels-photo-13963338.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                    alt="Handy Woman Pointing up"
-                    loading="lazy"
-                    class="hidden lg:block w-full h-full object-cover rounded-l-lg"
+                    class="relative h-dvh w-full object-cover z-0"
                 />
+                
 
-                <div class="flex flex-col justify-center bg-(--dark-teal) h-full w-full lg:rounded-r-2xl">                        
-                    <div class="flex flex-col px-8 py-12 gap-4 lg:gap-8 max-w-2xl">
-                        <h3 
-                            class="text-5xl lg:text-6xl text-(--light-teal) text-wrap font-extrabold cursor-text w-full h-full overflow-hidden"
+                <!-- Content -->
+                <div class="grid gap-4 bg-(--white) w-full absolute bottom-0 h-1/2 lg:h-2/5 max-h-[500px]">
+                    <div class="flex flex-col items-center justify-center w-full max-w-4xl mx-auto h-full gap-2">
+                        <h1 
+                            class="text-5xl md:text-6xl xl:text-9xl text-center font-extrabold bg-clip-text text-transparent" 
+                            style="background-image: url('https://images.pexels.com/photos/31959461/pexels-photo-31959461/free-photo-of-modern-city-skyline-with-bridge-reflection.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); background-size: cover;"
                         >
-                            Leadership
-                        </h3>
+                            What we do
+                        </h1>
+                        
+                        <p class="text-xl lg:text-2xl text-center text-(--black)">
+                            The world’s energy demands are greater than ever before. 
+                            We’re working to deliver the lower carbon energy needed today while building the energy system of tomorrow..
+                        </p>
+                    </div>
+                </div> 
 
-                        <p class="text-(--white) text-lg xl:text-2xl cursor-text">
-                            Our culture is built upon the principles of responsibility, trust and integrity.
-                            Our leadership is a profound source of pride as we aim to lead in the future of energy.
-                            With a rich history dating back over a century, Penn Petro Energy's family of brands has built trust and recognition worldwide.
+            </div>
+        </section>
+
+        <!-- Section: Affordable, reliable, ever-cleaner energy -->
+        <section>
+            <div class="px-(--section-px) lg:px-(--section-px-lg) py-(--section-py) lg:py-(--section-py-lg) bg-(--dark-blue)/90 w-full h-full overflow-hidden">
+                
+                <div class="flex flex-col gap-20 lg:gap-24 w-full max-w-6xl mx-auto">
+
+                    <div class="flex flex-col items-center justify-center gap-4 lg:gap-12">
+                        <h2 
+                            class="text-5xl lg:text-7xl text-(--white) text-wrap text-center font-extrabold cursor-text w-full h-full overflow-hidden"
+                        >
+                            Affordable, reliable, ever-cleaner energy
+                        </h2>
+
+                        <p class="text-(--white) text-center text-lg lg:text-2xl font-semibold cursor-text">
+                            We work every day to provide energy that helps billions of people achieve the benefits of modern life. 
+                            And to create solutions that will help advance a lower carbon future.
                         </p>
 
-                        <!-- Learn about our history -->
+                        <!-- Discover the Penn Petro way -->
                         <NuxtLink 
-                            to="/who/leadership"
-                            class="group flex *:flex items-center *:items-center py-3 gap-4 w-fit h-14 text-(--white) duration-300 ease-in-out transition-all"
+                            to="/what/energy"
+                            class="group flex *:flex items-center *:items-center justify-center px-2 lg:px-8 py-2 gap-2 lg:gap-4 w-fit mx-auto mt-8 text-(--white) hover:text-(--black) bg-transparent hover:bg-(--light-blue) shadow-lg rounded-lg border-2 border-(--light-blue) duration-300 ease-in-out transition-all"
                         >
-                            <div class="group relative flex items-center text-xl w-8 h-full overflow-hidden">
+                            <div class="group relative flex items-center justify-center text-lg w-8 h-full overflow-hidden">
                                 <div class="absolute flex items-center left-2 h-full w-12 transition-all duration-500 ease-in-out group-hover:translate-x-full">
                                     <Icon name="mdi:arrow-right"/>
                                 </div>
@@ -419,33 +81,80 @@
                                 </div>
                             </div>
 
-                            <span class="font-semibold text-lg">Learn about our leaders</span>
+                            <span class="font-semibold">Explore energy solutions</span>
                         </NuxtLink>
                     </div>
+
+                    <!-- Images -->
+                    <div 
+                        class="flex flex-col items-center justify-between gap-6 py-8 lg:flex-row w-full h-full lg:h-160"
+                    >
+                        <div class="flex flex-col gap-8 items-center justify-center lg:flex-row w-4/5 lg:w-3/5 mx-auto h-full">
+
+                            <div class="flex flex-col items-center justify-center gap-6 w-full lg:w-3/5">
+                                <NuxtImg
+                                    src="https://images.pexels.com/photos/87236/pexels-photo-87236.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                    alt="Offshore Drilling Rig on Body of Water"
+                                    loading="lazy"
+                                    class="w-full h-60 object-cover rounded-lg"
+                                />
+
+                                <NuxtImg
+                                    src="https://images.pexels.com/photos/8487337/pexels-photo-8487337.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                    alt="Handywoman Pointing up"
+                                    loading="lazy"
+                                    class="w-full h-60 object-cover rounded-lg"
+                                />
+                            </div>
+
+                            <NuxtImg
+                                src="https://images.pexels.com/photos/236722/pexels-photo-236722.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                alt="Construction Site at Nighttime"
+                                loading="lazy"
+                                class="w-full lg:w-2/5 h-60 object-cover rounded-lg"
+                            />
+                        </div>                                       
+
+                        <NuxtImg
+                            src="https://images.pexels.com/photos/16169309/pexels-photo-16169309/free-photo-of-offshore-platform-on-the-sea.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                            alt="Offshore Platform on the Sea"
+                            loading="lazy"
+                            class="w-4/5 lg:w-2/5 h-90 object-cover rounded-lg"
+                        />
+                            
+                    </div>  
+
                 </div>
+
             </div>
 
-            <!-- Careers -->
-            <div class="grid grid-cols-1 lg:grid-cols-2 w-full max-w-[1400px] mx-auto h-130">
+        </section>
 
-                <div class="flex flex-col justify-center bg-(--dark-orange) h-full w-full lg:rounded-l-2xl">                        
-                    <div class="flex flex-col px-8 py-12 gap-4 lg:gap-8 max-w-2xl">
-                        <h3 
-                            class="text-5xl lg:text-6xl text-(--light-orange) text-wrap font-extrabold cursor-text w-full h-full overflow-hidden"
+        <!-- Section: Innovative technology. Scalable solutions -->
+        <section>
+            <div class="px-(--section-px) lg:px-(--section-px-lg) py-(--section-py) lg:py-(--section-py-lg) bg-(--medium-blue) w-full h-full overflow-hidden">
+                
+                <div class="flex flex-col gap-20 lg:gap-24 w-full max-w-6xl mx-auto">
+
+                    <div class="flex flex-col items-center justify-center py-12 gap-4 lg:gap-12">
+                        <h2 
+                            class="text-5xl lg:text-7xl text-(--white) text-wrap text-center font-extrabold cursor-text w-full h-full overflow-hidden"
                         >
-                            Careers
-                        </h3>
+                            Innovative technology. <br> 
+                            Scalable solutions.
+                        </h2>
 
-                        <p class="text-(--white) text-lg xl:text-2xl cursor-text">
-                            Penn Petro Energy is a place where people come to be part of innovative solutions that help address the world's energy challenges.
+                        <p class="text-(--white) text-center text-lg lg:text-2xl font-semibold cursor-text">
+                            Advancing technology helps us safely deliver the lower carbon energy the world needs. 
+                            While new innovations help us build the lower carbon energy system for the future.
                         </p>
 
-                        <!-- Careers -->
+                        <!-- Discover tech and innovation -->
                         <NuxtLink 
-                            to="/who/brands"
-                            class="group flex *:flex items-center *:items-center py-3 gap-4 w-fit h-14 font-semibold text-(--white) duration-300 ease-in-out transition-all"
+                            to="/what/technology"
+                            class="group flex *:flex items-center *:items-center justify-center px-2 lg:px-8 py-2 gap-2 lg:gap-4 w-fit mx-auto mt-8 text-(--white) hover:text-(--black) bg-transparent hover:bg-(--light-blue) shadow-lg rounded-lg border-2 border-(--light-blue) duration-300 ease-in-out transition-all"
                         >
-                            <div class="group relative flex items-center text-xl w-8 h-full overflow-hidden">
+                            <div class="group relative flex items-center justify-center text-lg w-8 h-full overflow-hidden">
                                 <div class="absolute flex items-center left-2 h-full w-12 transition-all duration-500 ease-in-out group-hover:translate-x-full">
                                     <Icon name="mdi:arrow-right"/>
                                 </div>
@@ -455,28 +164,97 @@
                                 </div>
                             </div>
 
-                            <span class="text-lg">Join our journey</span>
+                            <span class="font-semibold">Discover tech innovation</span>
                         </NuxtLink>
-                    </div>
-                </div>
 
-                <NuxtImg
-                    src="https://images.pexels.com/photos/13963338/pexels-photo-13963338.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                    alt="Handy Woman Pointing up"
-                    loading="lazy"
-                    class="hidden lg:block w-full h-full object-cover rounded-r-lg"
-                />    
+                    </div>            
+                                     
+                    <NuxtImg
+                        src="https://images.pexels.com/photos/8721318/pexels-photo-8721318.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        alt="A Woman in a Tank Top Using a VR Headset"
+                        loading="lazy"
+                        class="w-full h-110 object-cover rounded-lg"
+                    />                       
+                    
+                </div>
+            </div>
+
+        </section>
+
+    
+
+        <!-- Section: Industry innovation through technology -->
+        <!-- <section>
+            <div class="bg-(--white) w-full h-full overflow-hidden">
+                
+                <div class="grid grid-cols-1 lg:grid-cols-2 w-full max-w-[1400px] mx-auto lg:py-16 h-full">
+
+                    <div class="flex flex-col justify-center bg-(--dark-blue) h-full w-full lg:h-210 xl:rounded-l-2xl">                        
+                        <div class="flex flex-col px-8 py-32 gap-8 max-w-2xl">
+                            <h2 
+                                class="text-4xl md:text-7xl xl:text-8xl text-(--white) text-wrap font-extrabold cursor-text w-full h-full overflow-hidden"
+                            >
+                                Industry innovation through technology
+                            </h2>
+
+                            <p class="text-(--white) text-lg xl:text-2xl cursor-text">
+                                We aim to accelerate progress through technology that fuels our world today and builds lower carbon energy solutions for the future.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="grid md:grid-cols-2 lg:grid-cols-1 lg:grid-rows-2 gap-4 lg:gap-8 bg-(--medium-blue) h-full lg:h-210 lg:rounded-r-2xl p-8">
+                        <NuxtImg
+                            src="https://images.pexels.com/photos/13963338/pexels-photo-13963338.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                            alt="Handy Woman Pointing up"
+                            loading="lazy"
+                            class="w-full h-90 object-cover rounded-lg ml-auto lg:ml-0"
+                        /> 
+                        
+
+                        <div class="flex flex-col gap-12 py-20 justify-between rounded-lg hover:bg-(--dark-blue) w-full h-full duration-300 ease-in-out transition-all">
+                            <p class="text-(--white) text-2xl xl:text-4xl">
+                                Digital technologies are helping us integrate data, reduce costs and enhance safety.
+                            </p>
+                            <NuxtLink
+                                to="/what"
+                                class="group flex items-center text-(--white) text-lg font-semibold"
+                            >
+                                <div class="group relative flex items-center justify-center text-xl w-8 h-full overflow-hidden">
+                                    <div class="absolute flex items-center left-2 h-full w-12 transition-all duration-500 ease-in-out group-hover:translate-x-full">
+                                        <Icon name="mdi:arrow-right"/>
+                                    </div>
+                                    
+                                    <div class="absolute flex items-center left-2 h-full w-12 -translate-x-full transition-all duration-500 ease-in-out group-hover:translate-x-0">
+                                        <Icon name="mdi:arrow-right" />
+                                    </div>
+                                </div>
+                                <span class="group-hover:underline-text">Learn about our technology</span>
+                            </NuxtLink>
+                        </div>
+                    </div>
+
+                </div>
 
             </div>
 
-            <HomeNewsroom />
+        </section> -->
 
 
-        </div>
 
-    </section>
 
-</div>
+        <!-- Section: Home Newsroom -->
+        <section>
+
+            <div class="w-full h-full">           
+                <HomeNewsroom />
+            </div>
+
+        </section>
+
+
+
+    </div>
 </template>
 
 <style lang="css" scoped>
