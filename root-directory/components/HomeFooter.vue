@@ -73,7 +73,7 @@
                             class="font-bold text-lg cursor-pointer duration-300 ease-in-out transition-all"
                             :class="{'rotate-180': rotateGet}"
                         >
-                            <Icon name="uiw:down" />
+                            <Icon name="mdi:chevron-down" />
                         </span>
                     </h3>
 

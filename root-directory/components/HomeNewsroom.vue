@@ -107,16 +107,6 @@
 
 <style lang="css" scoped>
 
-    /* .newsComp {        
-        /* width: 320px; 
-        flex-shrink: 0; 
-        touch-action: pan-y;
-        cursor: pointer;       
-        /* position: absolute;  Needed for proper centering using xPercent 
-        left: 50%;
-        transform: translateX(-50%);
-        transition: all 0.5s ease;
-    } */
     .newsComp {
         transition: transform 0.5s ease, opacity 0.5s ease;
     }
