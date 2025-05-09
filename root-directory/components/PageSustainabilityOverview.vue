@@ -163,8 +163,8 @@
                             <!-- Social Investment -->
                             <div class="grid p-6 gap-8 rounded-2xl bg-(--medium-teal)">
                                 <NuxtImg
-                                    src="https://images.pexels.com/photos/2163098/pexels-photo-2163098.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                                    alt="Photo of a Woman Holding a Drone"
+                                    src="https://images.pexels.com/photos/8370328/pexels-photo-8370328.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                    alt="Female Vlogger doing a Video Recording"
                                     loading="lazy"
                                     class="w-full h-60 object-cover rounded-2xl"
                                 />
@@ -210,8 +210,8 @@
                             <!-- Environment-->
                             <div class="grid p-6 gap-8 rounded-2xl bg-(--dark-green)">
                                 <NuxtImg
-                                    src="https://images.pexels.com/photos/2163098/pexels-photo-2163098.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                                    alt="Photo of a Woman Holding a Drone"
+                                    src="https://images.pexels.com/photos/1108572/pexels-photo-1108572.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                    alt="Clear Light Bulb Planter on Gray Rock"
                                     loading="lazy"
                                     class="w-full h-60 object-cover rounded-2xl"
                                 />
@@ -251,8 +251,8 @@
                             <!-- Diversity and Inclusion -->
                             <div class="grid p-6 gap-8 rounded-2xl bg-(--dark-orange)">
                                 <NuxtImg
-                                    src="https://images.pexels.com/photos/2163098/pexels-photo-2163098.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                                    alt="Photo of a Woman Holding a Drone"
+                                    src="https://images.pexels.com/photos/6146703/pexels-photo-6146703.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                    alt="Close-Up Shot of Hands"
                                     loading="lazy"
                                     class="w-full h-60 object-cover rounded-2xl"
                                 />
@@ -299,12 +299,6 @@
             </div>
 
         </section>
-
-    
-
-    
-
-    
 
         <!-- Section: Home Newsroom -->
         <section>
