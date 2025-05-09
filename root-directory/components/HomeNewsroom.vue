@@ -123,7 +123,7 @@
         border: 3px solid var(--black);
         border-radius: 50%;
         color: var(--black);
-        background-color: var(--white);
+        background-color: transparent;
         transition: all 0.5s ease-in-out;
     }
 

@@ -32,7 +32,7 @@
                 <div class="grid gap-4 bg-(--white) w-full absolute bottom-0 h-1/2 lg:h-2/5 max-h-[500px]">
                     <div class="flex flex-col items-center justify-center w-full max-w-4xl mx-auto h-full gap-2">
                         <h1 
-                            class="text-5xl md:text-6xl xl:text-9xl text-center font-extrabold bg-clip-text text-transparent" 
+                            class="text-5xl md:text-8xl xl:text-9xl text-center font-extrabold bg-clip-text text-transparent" 
                             style="background-image: url('https://images.pexels.com/photos/31959461/pexels-photo-31959461/free-photo-of-modern-city-skyline-with-bridge-reflection.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); background-size: cover;"
                         >
                             What we do
@@ -96,14 +96,14 @@
                                     src="https://images.pexels.com/photos/87236/pexels-photo-87236.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                                     alt="Offshore Drilling Rig on Body of Water"
                                     loading="lazy"
-                                    class="w-full h-60 object-cover rounded-lg"
+                                    class="w-full h-40 sm:h-60 object-cover rounded-lg"
                                 />
 
                                 <NuxtImg
                                     src="https://images.pexels.com/photos/8487337/pexels-photo-8487337.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                                     alt="Handywoman Pointing up"
                                     loading="lazy"
-                                    class="w-full h-60 object-cover rounded-lg"
+                                    class="w-full h-40 sm:h-60 object-cover rounded-lg"
                                 />
                             </div>
 
@@ -111,7 +111,7 @@
                                 src="https://images.pexels.com/photos/236722/pexels-photo-236722.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                                 alt="Construction Site at Nighttime"
                                 loading="lazy"
-                                class="w-full lg:w-2/5 h-60 object-cover rounded-lg"
+                                class="w-full lg:w-2/5 h-40 sm:h-60 object-cover rounded-lg"
                             />
                         </div>                                       
 
@@ -119,7 +119,7 @@
                             src="https://images.pexels.com/photos/16169309/pexels-photo-16169309/free-photo-of-offshore-platform-on-the-sea.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                             alt="Offshore Platform on the Sea"
                             loading="lazy"
-                            class="w-4/5 lg:w-2/5 h-90 object-cover rounded-lg"
+                            class="w-4/5 h-40 lg:w-2/5 sm:h-90 object-cover rounded-lg"
                         />
                             
                     </div>  
@@ -219,13 +219,6 @@
             </div>
 
         </section>
-
-    
-
-        
-
-
-
 
         <!-- Section: Home Newsroom -->
         <section>
