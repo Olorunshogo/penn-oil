@@ -181,64 +181,48 @@
 
         </section>
 
-    
-
-        <!-- Section: Industry innovation through technology -->
-        <!-- <section>
-            <div class="bg-(--white) w-full h-full overflow-hidden">
+        <!-- Section: Delivering energy across the globe -->
+        <section>
+            <div class="relative px-(--section-px) lg:px-(--section-px-lg) py-(--section-py) lg:py-(--section-py-lg) bg-(--dark-purple) w-full h-full overflow-hidden">
                 
-                <div class="grid grid-cols-1 lg:grid-cols-2 w-full max-w-[1400px] mx-auto lg:py-16 h-full">
+                <div class="flex flex-col items-center justify-center gap-8 py-16 lg:py-24 w-full max-w-6xl h-full mx-auto">
+                    <h2 
+                        class="text-5xl lg:text-9xl text-(--light-purple) text-wrap text-center font-extrabold cursor-text w-full h-full overflow-hidden"
+                    >
+                        Delivering energy across the globe
+                    </h2>
 
-                    <div class="flex flex-col justify-center bg-(--dark-blue) h-full w-full lg:h-210 xl:rounded-l-2xl">                        
-                        <div class="flex flex-col px-8 py-32 gap-8 max-w-2xl">
-                            <h2 
-                                class="text-4xl md:text-7xl xl:text-8xl text-(--white) text-wrap font-extrabold cursor-text w-full h-full overflow-hidden"
-                            >
-                                Industry innovation through technology
-                            </h2>
+                    <p class="text-(--white) text-center text-lg lg:text-2xl font-semibold cursor-text">
+                        No one company, industry, or country alone can build a lower carbon future. 
+                        With our diverse assets, investments, and people around the world, we are working to make meaningful progress while helping local communities thrive.
+                    </p>
 
-                            <p class="text-(--white) text-lg xl:text-2xl cursor-text">
-                                We aim to accelerate progress through technology that fuels our world today and builds lower carbon energy solutions for the future.
-                            </p>
+                    <!-- Discover tech and innovation -->
+                    <NuxtLink 
+                        to="/what/technology"
+                        class="group flex *:flex items-center *:items-center justify-center px-2 lg:px-8 py-2 gap-2 lg:gap-4 w-fit mx-auto mt-8 text-(--white) hover:text-(--black) bg-transparent hover:bg-(--light-blue) shadow-lg rounded-lg border-2 border-(--light-blue) duration-300 ease-in-out transition-all"
+                    >
+                        <div class="group relative flex items-center justify-center text-lg w-8 h-full overflow-hidden">
+                            <div class="absolute flex items-center left-2 h-full w-12 transition-all duration-500 ease-in-out group-hover:translate-x-full">
+                                <Icon name="mdi:arrow-right"/>
+                            </div>
+                            
+                            <div class="absolute flex items-center left-2 h-full w-12 -translate-x-full transition-all duration-500 ease-in-out group-hover:translate-x-0">
+                                <Icon name="mdi:arrow-right" />
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="grid md:grid-cols-2 lg:grid-cols-1 lg:grid-rows-2 gap-4 lg:gap-8 bg-(--medium-blue) h-full lg:h-210 lg:rounded-r-2xl p-8">
-                        <NuxtImg
-                            src="https://images.pexels.com/photos/13963338/pexels-photo-13963338.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                            alt="Handy Woman Pointing up"
-                            loading="lazy"
-                            class="w-full h-90 object-cover rounded-lg ml-auto lg:ml-0"
-                        /> 
-                        
-
-                        <div class="flex flex-col gap-12 py-20 justify-between rounded-lg hover:bg-(--dark-blue) w-full h-full duration-300 ease-in-out transition-all">
-                            <p class="text-(--white) text-2xl xl:text-4xl">
-                                Digital technologies are helping us integrate data, reduce costs and enhance safety.
-                            </p>
-                            <NuxtLink
-                                to="/what"
-                                class="group flex items-center text-(--white) text-lg font-semibold"
-                            >
-                                <div class="group relative flex items-center justify-center text-xl w-8 h-full overflow-hidden">
-                                    <div class="absolute flex items-center left-2 h-full w-12 transition-all duration-500 ease-in-out group-hover:translate-x-full">
-                                        <Icon name="mdi:arrow-right"/>
-                                    </div>
-                                    
-                                    <div class="absolute flex items-center left-2 h-full w-12 -translate-x-full transition-all duration-500 ease-in-out group-hover:translate-x-0">
-                                        <Icon name="mdi:arrow-right" />
-                                    </div>
-                                </div>
-                                <span class="group-hover:underline-text">Learn about our technology</span>
-                            </NuxtLink>
-                        </div>
-                    </div>
-
+                        <span class="font-semibold">Discover tech innovation</span>
+                    </NuxtLink>
+                    
                 </div>
-
             </div>
 
-        </section> -->
+        </section>
+
+    
+
+        
 
 
 
