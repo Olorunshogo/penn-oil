@@ -21,10 +21,10 @@
     <div>        
         <!-- Section: Hero -->
         <section>     
-            <div class="relative w-full h-full overflow-hidden -mt-[11rem] py-(--section-pyx) lg:py-(--section-py-lg)">
+            <div class="relative w-full h-full overflow-hidden -mt-[11rem] pt-(--section-py-lg)">
 
                 <!-- Hero Image Container -->
-                <div class="grid w-full h-full max-h-140 max-w-7xl mx-auto">
+                <div class="grid w-full h-80 lg:h-4/5 max-w-7xl mx-auto">
                     <NuxtImg
                         src="https://images.pexels.com/photos/8428092/pexels-photo-8428092.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                         alt="A Man in White Long Sleeves Having a Deal with the Man in Black Suit"
@@ -39,9 +39,9 @@
         <section>
             <div class="relative w-full h-full px-(--section-px) lg:px-(--section-px-lg) py-(--section-py) lg:py-(--section-py-lg)">
 
-                <div class="grid gap-32 w-full h-full max-w-7xl mx-auto">
+                <div class="grid gap-8 w-full h-full max-w-7xl mx-auto">
                     <!-- Penn Petro Energy leadership -->
-                    <div class="grid gap-8">
+                    <div class="grid gap-6">
                         <h2 class="text-center text-3xl font-bold text-(--dark-blue)">Penn Petro Energy leadership</h2>
                         <p class="text-(--black) text-xl">
                             Our culture is built upon the principles of responsibility, trust and integrity. 
@@ -50,7 +50,7 @@
                     </div>
 
                     <!-- Penn Petro Energy leadership -->
-                    <div class="grid gap-8">
+                    <div class="grid gap-6">
                         <h3 class="text-center text-lg text-(--black)">
                             <span class="text-lg font-bold">
                                 <NuxtLink
@@ -82,9 +82,9 @@
         <section>
             <div class="relative w-full h-full px-(--section-px) lg:px-(--section-px-lg) py-(--section-py) lg:py-(--section-py-lg)">
 
-                <div class="grid gap-32 w-full h-full max-w-7xl mx-auto">
+                <div class="grid gap-16 w-full h-full max-w-7xl mx-auto">
                     <!-- Penn Petro Energy leadership -->
-                    <div class="grid gap-8">
+                    <div class="grid gap-6">
                         <h2 class="text-center text-3xl font-bold text-(--dark-blue)">Board of directors</h2>
                         <p class="text-(--black) text-xl text-center">
                             The Board of Directors of Penn Petro Energy directs the affairs of the corporation and is committed to sound principles of corporate governance.
@@ -93,7 +93,7 @@
                     </div>
 
                     <!-- Penn Petro Energy Board of Directors -->
-                    <div class="grid md:grid-cols-3 xl:grid-cols-4 gap-8 place-content-center">
+                    <div class="grid md:grid-cols-3 xl:grid-cols-4 gap-6 place-content-center">
                         <CustomLeadership
                             v-for="item in corporateOfficers"
                             :key="item.id"
@@ -125,7 +125,7 @@
                     </NuxtLink>
 
                     <!-- Penn Petro Energy Corporate officers -->
-                    <div class="grid gap-8">
+                    <div class="grid gap-6">
                         <h2 class="text-center text-3xl font-bold text-(--dark-blue)">Corporate officers</h2>
                         <p class="text-(--black) text-xl text-center">
                             *executive committee members
@@ -133,7 +133,7 @@
                     </div>
 
                     <!-- Penn Petro Energy Board of Directors -->
-                    <div class="grid md:grid-cols-3 xl:grid-cols-4 gap-8 place-content-center">
+                    <div class="grid md:grid-cols-3 xl:grid-cols-4 gap-6 place-content-center">
                         <CustomLeadership
                             v-for="item in boardOfDir"
                             :key="item.id"
