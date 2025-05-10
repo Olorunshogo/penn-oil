@@ -10,6 +10,14 @@
         layout: 'custom'
     });
 
+    import { 
+        jobOpenings, pipelines, scams, serviceStation,
+        toggleJobOpenings,
+        togglePipelines,
+        toggleScams,
+        toggleServiceStation,
+    } from '~/stores/whoVariables';
+
 </script>
 
 
@@ -20,12 +28,343 @@
         <div class="grid bg-(--white) gap-12 w-full h-full overflow-hidden py-(--section-py) lg:py-(--section-py-lg)">
             
             <div class="flex flex-col gap-12 items-center justify-center max-w-4xl mx-auto">
+
                 <div class="flex flex-col gap-4 items-center justify-center py-12 w-full mx-auto">
-                    <h2 class="text-(--dark-blue) text-center font-bold text-4xl lg:text-7xl">
-                        Contact Us
+                    <h2 class="text-(--dark-blue) text-center font-extrabold text-4xl lg:text-7xl">
+                        Contact Penn Petro Energy
                     </h2>
-                    <p class="text-(--black) text-lg">Thank you for reaching out to us...</p>                
-                </div>  
+                    <p class="text-(--black) text-lg text-center">
+                        Find answers to your questions and useful contacts.
+                    </p>                
+                </div> 
+
+                <div class="flex flex-col gap-4 items-center justify-center w-full mx-auto max-w-lg">
+                    <h2 class="text-(--dark-blue) text-center font-extrabold text-3xl">
+                        Important Information
+                    </h2>
+
+                    <div class="flex flex-col gap-0 w-full h-full">
+
+                        <div class="flex flex-col gap-0 w-full h-full">
+
+                            <!-- Job Openings -->
+                            <div class="flex flex-col gap-6 text-(--black) py-6 border-3 border-transparent border-b-(--border-gray)">                                                                 
+                                <div class="flex items-center justify-between text-(--black)">                                
+                                    <span class="flex text-xl">Job Openings</span>
+                                    <button 
+                                        @click="toggleJobOpenings"
+                                        class="flex items-center cursor-pointer ease-in-out duration-300 transition-all"
+                                    >
+                                        <Icon 
+                                            name="mdi:chevron-down"
+                                            class="flex text-xl font-bold ease-in-out duration-300 transition-all"
+                                            :class="{ 'rotate-180' : jobOpenings }"
+                                        />
+                                    </button>
+                                </div> 
+                                <Transition name="slideDown">
+                                    <div 
+                                        v-if="jobOpenings"
+                                        class="grid gap-0 w-full h-full"
+                                    >
+                                        <div class="grid gap-4 w-full h-full">
+                                            <div class="grid gap-4 text-(--black)">
+                                                <p>Open jobs at Chevron are available for review and application at our Chevron careers page.</p>
+                                                <p>Resumes sent to the general mailbox will not be considered and requests for status updates to applications will not be provided.</p>
+                                            </div>
+
+                                            <!-- Visit Penn career -->
+                                            <NuxtLink
+                                                to="/careers"
+                                                class="group relative flex items-center text-sm font-extrabold text-(--black) duration-500 ease-in transition-all"
+                                            >
+                                                <div class="group relative flex items-center justify-center text-xl w-12 h-full overflow-hidden">
+                                                    <div class="absolute flex items-center left-4 h-full w-12 transition-all duration-500 ease-in-out group-hover:translate-x-full">
+                                                        <Icon name="mdi:arrow-right"/>
+                                                    </div>
+                                                    
+                                                    <div class="absolute flex items-center left-4 h-full w-12 -translate-x-full transition-all duration-500 ease-in-out group-hover:translate-x-0">
+                                                        <Icon name="mdi:arrow-right" />
+                                                    </div>
+                                                </div>
+                                                <span class="relative overflow-hidden">
+                                                    <span class="group-hover:underline-text">Visit Penn careers</span>
+                                                </span>
+                                            </NuxtLink>
+                                        </div>
+                                    </div>
+                                </Transition>
+                            </div>
+
+                            <!-- Service Station Inquiries -->
+                            <div class="flex flex-col gap-6 text-(--black) py-6 border-3 border-transparent border-b-(--border-gray)">                                                                 
+                                <div class="flex items-center justify-between text-(--black)">                                
+                                    <span class="flex text-xl">Service Station inquiries</span>
+                                    <button 
+                                        @click="toggleServiceStation"
+                                        class="flex items-center cursor-pointer ease-in-out duration-300 transition-all"
+                                    >
+                                        <Icon 
+                                            name="mdi:chevron-down"
+                                            class="flex text-xl font-bold ease-in-out duration-300 transition-all"
+                                            :class="{ 'rotate-180' : serviceStation }"
+                                        />
+                                    </button>
+                                </div> 
+                                <Transition name="slideDown">
+                                    <div 
+                                        v-if="serviceStation"
+                                        class="grid gap-0 w-full h-full"
+                                    >
+                                        <div class="grid gap-4 w-full h-full">
+                                            <div class="grid gap-4 text-(--black)">
+                                                <p>We welcome your feedback and inquiries about any of our service stations. Customer service representatives are available between the hours of 7 a.m. to 7 p.m. CT, Monday through Friday.</p>
+                                                <address>
+                                                    Consumer connection center <br>
+                                                    9401 Williamsburg Plaza, Suite 201 <br>
+                                                    Louisville, KY 40222
+                                                </address>
+                                                <span class="flex items-center gap-2">
+                                                    <span class="flex">Toll-free:</span>
+                                                    <NuxtLink
+                                                        to="tel:+18552859595"
+                                                        target="_blank"
+                                                        class="decoration-1 underline-offset-2 underline decoration-(--light-gray) hover:decoration-(--dark-gray) duration-300 ease-in-out transition-all"
+                                                    >
+                                                        +1 855-285-9595
+                                                    </NuxtLink>
+                                                </span>
+                                            </div>
+
+                                            <!-- Submit an inquiry online -->
+                                            <NuxtLink
+                                                to="/careers"
+                                                class="group relative flex items-center text-sm font-extrabold text-(--black) duration-500 ease-in transition-all"
+                                            >
+                                                <div class="group relative flex items-center justify-center text-xl w-12 h-full overflow-hidden">
+                                                    <div class="absolute flex items-center left-4 h-full w-12 transition-all duration-500 ease-in-out group-hover:translate-x-full">
+                                                        <Icon name="mdi:arrow-right"/>
+                                                    </div>
+                                                    
+                                                    <div class="absolute flex items-center left-4 h-full w-12 -translate-x-full transition-all duration-500 ease-in-out group-hover:translate-x-0">
+                                                        <Icon name="mdi:arrow-right" />
+                                                    </div>
+                                                </div>
+                                                <span class="relative overflow-hidden">
+                                                    <span class="group-hover:underline-text">Submit an inquiry online</span>
+                                                </span>
+                                            </NuxtLink>
+                                        </div>
+                                    </div>
+                                </Transition>
+                            </div>
+
+                            <!-- Scams -->
+                            <div class="flex flex-col gap-6 text-(--black) py-6 border-3 border-transparent border-b-(--border-gray)">      
+
+                                <div class="flex items-center justify-between text-(--black)">                                
+                                    <span class="flex text-xl">Scams</span>
+                                    <button 
+                                        @click="toggleScams"
+                                        class="flex items-center cursor-pointer ease-in-out duration-300 transition-all"
+                                    >
+                                        <Icon 
+                                            name="mdi:chevron-down"
+                                            class="flex text-xl font-bold ease-in-out duration-300 transition-all"
+                                            :class="{ 'rotate-180' : scams }"
+                                        />
+                                    </button>
+                                </div> 
+
+                                <Transition name="slideDown">
+                                    <div 
+                                        v-if="scams"
+                                        class="grid gap-0 w-full h-full"
+                                    >
+                                        <div class="grid gap-4 w-full h-full">
+                                            <div class="grid gap-4 text-(--black)">
+                                                <p>
+                                                    Individuals claiming to represent Penn Petro Evergy have engaged in fraudulent transactions. 
+                                                    Penn Petro Energy informs law enforcement when these activities occur, but perpetrators are hard to locate and prosecute. 
+                                                    Report any such offers to the appropriate authorities. We regret any inconvenience caused. 
+                                                    Below are examples of common frauds; new ones are frequently reported.
+                                                </p>
+
+                                                <div class="grid gap-4 tex-(--black) w-full h-full">
+                                                    <h4 class="font-bold">Penn Petro Energy and texaco promotion scam</h4>
+                                                    <p>
+                                                        Individuals may falsely claim Penn Petro Energy will offer promotional winnings or proceeds after first receiving “insurance payments.” 
+                                                        This is called Advance Fee Fraud or 419 Fraud. 
+                                                        Penn Petro Energy and its subsidiaries are not associated with these promotions or individuals. 
+                                                        These offers are not valid.
+                                                    </p>                                                    
+                                                </div>
+
+                                                <div class="grid gap-4 tex-(--black) w-full h-full">
+                                                    <h4 class="font-bold">Penn Petro Energy online endowment fund award scam</h4>
+                                                    <p>
+                                                        Individuals claiming to represent the Penn Petro Energy Online Endowment Award Fund (COEFA) will offer fraudulent cash prizes, asking victims to first fill out forms and send “insurance payments” via check or money order. 
+                                                        This is Advance Fee Fraud or 419 Fraud. Penn Petro Energy and its subsidiaries do not offer donations or grants in exchange for insurance payments. 
+                                                        These offers are not valid.
+                                                    </p>                                                    
+                                                </div>
+
+                                                <div class="grid gap-4 tex-(--black) w-full h-full">
+                                                    <h4 class="font-bold">Deceased employee inquiry scam</h4>
+                                                    <p>
+                                                        Individuals falsely claiming to represent the estate of a deceased Penn Petro Energy employee approach victims, claiming there are no heirs. 
+                                                        The fraudsters offer to transfer an inheritance for a fee.
+                                                    </p>                                                    
+                                                </div>
+
+                                                <div class="grid gap-4 tex-(--black) w-full h-full">
+                                                    <h4 class="font-bold">Fictitious job offer scam</h4>
+                                                    <p>
+                                                        Fraudsters claiming to be contracted by Penn Petro Energy may claim they are seeking prospective employees for projects, typically via email. 
+                                                        They may also claim to manage a Penn Petro Energy promotion, asking for a simple entry form or “insurance payment.”
+                                                    </p>  
+                                                    <p>
+                                                        Victims are told they've been hired or can get a job with Penn Petro Energy for a fee, which covers employment papers, offers, applications and work permits. 
+                                                        Fees are sent via check or money order to a post office box. 
+                                                        Promised checks for relocation expenses are fake. 
+                                                        This is Advance Fee Fraud or 419 Fraud. Penn petro Energy does not charge fees for job positions. 
+                                                        Report any fraudulent offers to the U.S. Secret Service.
+                                                    </p>                                                   
+                                                </div>
+
+                                                <div class="grid gap-4 tex-(--black) w-full h-full">
+                                                    <h4 class="font-bold">Grant and donation scam</h4>
+                                                    <p>
+                                                        Fraudsters claiming to represent Penn Petro Energy or Penn Petro Energy/Texaco Exploration and Production may offer fake cash grants or donations and asking victims to fill out an entry form. 
+                                                        Victims may be asked to send an insurance payment via check or money order. 
+                                                        This is Advance Fee Fraud or 419 Fraud. 
+                                                        Penn Petro Energy and its subsidiaries do not offer donations or grants in exchange for insurance payments. 
+                                                        These offers are not valid.
+                                                    </p>                                                    
+                                                </div>
+
+                                                <div class="grid gap-4 tex-(--black) w-full h-full">
+                                                    <h4 class="font-bold">Lottery winner scam</h4>
+                                                    <p>
+                                                        Individuals may claim to manage a Penn Petro Energy-sponsored lottery, asking participants to fill out an entry form or send an “insurance payment” via check or money order. 
+                                                        This is Advance Fee Fraud or 419 Fraud. 
+                                                        Penn Petro Energy and its subsidiaries do not offer lottery proceeds in exchange for insurance payments. 
+                                                        These offers are not valid.
+                                                    </p>                                                    
+                                                </div>
+
+                                                <div class="grid gap-4 tex-(--black) w-full h-full">
+                                                    <h4 class="font-bold">Procurement scam</h4>
+                                                    <p>
+                                                        Individuals claiming to represent Penn Petro Energy or a subsidiary may approach vendors, often by email, inviting them to bid on large orders and requesting a qualification fee. 
+                                                        This is Advance Fee Fraud or 419 Fraud. Penn Petro Energy does not charge fees for doing business. 
+                                                        These offers are not valid. 
+                                                        Report such offers to the U.S. Secret Service or your local law enforcement.
+                                                    </p>                                                    
+                                                </div>
+                                                
+                                            </div>
+
+                                            <!-- Contact us information about Scams-->
+                                            <NuxtLink
+                                                to="mailto:pennpetrolenergy@gmail.com"
+                                                class="group relative flex items-center text-sm font-extrabold text-(--black) duration-500 ease-in transition-all"
+                                            >
+                                                <div class="group relative flex items-center justify-center text-xl w-12 h-full overflow-hidden">
+                                                    <div class="absolute flex items-center left-4 h-full w-12 transition-all duration-500 ease-in-out group-hover:translate-x-full">
+                                                        <Icon name="mdi:arrow-right"/>
+                                                    </div>
+                                                    
+                                                    <div class="absolute flex items-center left-4 h-full w-12 -translate-x-full transition-all duration-500 ease-in-out group-hover:translate-x-0">
+                                                        <Icon name="mdi:arrow-right" />
+                                                    </div>
+                                                </div>
+                                                <span class="relative overflow-hidden">
+                                                    <span class="group-hover:underline-text">Contact us information about scams</span>
+                                                </span>
+                                            </NuxtLink>
+                                        </div>
+                                    </div>
+                                </Transition>
+                            </div>
+
+                            <!-- Pipelines -->
+                            <div class="flex flex-col gap-6 text-(--black) py-6 border-3 border-transparent border-b-(--border-gray)">      
+
+                                <div class="flex items-center justify-between text-(--black)">                                
+                                    <span class="flex text-xl">Pipelines</span>
+                                    <button 
+                                        @click="togglePipelines"
+                                        class="flex items-center cursor-pointer ease-in-out duration-300 transition-all"
+                                    >
+                                        <Icon 
+                                            name="mdi:chevron-down"
+                                            class="flex text-xl font-bold ease-in-out duration-300 transition-all"
+                                            :class="{ 'rotate-180' : pipelines }"
+                                        />
+                                    </button>
+                                </div> 
+
+                                <Transition name="slideDown">
+                                    <div 
+                                        v-if="pipelines"
+                                        class="grid gap-0 w-full h-full"
+                                    >
+                                        <div class="grid gap-4 w-full h-full">
+                                            <div class="grid gap-4 text-(--black)">
+                                                <p>
+                                                    Penn Petro Energy Pipe Line Company operates pipelines that transport crude oil, refined petroleum products, liquefied petroleum gas, natural gas and chemicals within the U.S.
+                                                </p>
+
+                                                <div class="grid gap-4 tex-(--black) w-full h-full">
+                                                    <h4 class="font-bold">Call before you dig</h4>
+                                                    <p>
+                                                        The primary cause of pipeline accidents is damage from excavation-related activities, particularly from equipment digging into pipelines. 
+                                                        If you are planning to dig on your property or perform excavation work, please call your local One Call center.
+                                                    </p>                                                    
+                                                </div>
+                                            
+                                            </div>
+
+                                            <!-- Contact us information about Scams-->
+                                            <NuxtLink
+                                                to="/"
+                                                class="group relative flex items-center text-sm font-extrabold text-(--black) duration-500 ease-in transition-all"
+                                            >
+                                                <div class="group relative flex items-center justify-center text-xl w-12 h-full overflow-hidden">
+                                                    <div class="absolute flex items-center left-4 h-full w-12 transition-all duration-500 ease-in-out group-hover:translate-x-full">
+                                                        <Icon name="mdi:arrow-right"/>
+                                                    </div>
+                                                    
+                                                    <div class="absolute flex items-center left-4 h-full w-12 -translate-x-full transition-all duration-500 ease-in-out group-hover:translate-x-0">
+                                                        <Icon name="mdi:arrow-right" />
+                                                    </div>
+                                                </div>
+                                                <span class="relative overflow-hidden">
+                                                    <span class="group-hover:underline-text">Go To Homepage</span>
+                                                </span>
+                                            </NuxtLink>   
+                                        </div>
+
+                                                                             
+                                    
+                                    </div>
+                                </Transition>
+                            </div>
+
+                            
+
+                        </div>
+                        
+                    </div>
+
+
+
+
+
+
+
+                </div> 
 
                 <div class="flex flex-col gap-4 items-center justify-center w-full mx-auto">
                     <h3 class="text-(--dark-blue) text-centern text-wrap font-bold text-xl">
@@ -176,36 +515,36 @@
 
 <style lang="css" scoped>
 
-.group-hover\:underline-text {
-position: relative;
-display: inline-block;
-}
+    .group-hover\:underline-text {
+        position: relative;
+        display: inline-block;
+    }
 
-.group-hover\:underline-text::after {
-content: "";
-position: absolute;
-bottom: 0;
-left: 0;
-width: 0%;
-height: 1px;
-background-color: white;
-transition: width 0.5s ease-in-out;
-}
+    .group-hover\:underline-text::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0%;
+        height: 1px;
+        background-color: var(--dark-gray);
+        transition: width 0.5s ease-in-out;
+    }
 
-.group:hover .group-hover\:underline-text::after {
-width: 100%;
-}
+    .group:hover .group-hover\:underline-text::after {
+        width: 100%;
+    }
 
-.arrow-icon {
-transition: transform 1s ease-in-out;
-}
+    .arrow-icon {
+        transition: transform 1s ease-in-out;
+    }
 
-.group:hover .arrow-icon {
-transform: translateX(12px);
-}
+    .group:hover .arrow-icon {
+        transform: translateX(12px);
+    }
 
-.group-hover\:arrow-move {
-animation: moveArrow 3s infinite alternate ease-in-out;
-}  
+    .group-hover\:arrow-move {
+        animation: moveArrow 3s infinite alternate ease-in-out;
+    }  
 
 </style>

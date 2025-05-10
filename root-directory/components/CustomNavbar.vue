@@ -248,13 +248,13 @@
               </NuxtLink>
 
               <!-- Our history -->
-              <NuxtLink
+              <!-- <NuxtLink
                 to="/who/history"
                 @click="closeAllMenu"
                 class="flex *:flex items-center *:items-center justify-between hover:text-(--light-blue) duration-300 ease-in-out transition-all"
               >
                 Our history
-              </NuxtLink>
+              </NuxtLink> -->
 
               <!-- Contact us -->
               <NuxtLink
@@ -625,12 +625,12 @@
                 </NuxtLink>
 
                 <!-- Our history -->
-                <NuxtLink
+                <!-- <NuxtLink
                   to="/who/history"
                   class="flex *:flex items-center *:items-center justify-between hover:text-(--light-blue) duration-300 ease-in-out transition-all"
                 >
                   Our history
-                </NuxtLink>
+                </NuxtLink> -->
 
                 <!-- Contact us -->
                 <NuxtLink

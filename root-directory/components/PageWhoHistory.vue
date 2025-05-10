@@ -21,18 +21,18 @@
     <div>        
         <!-- Section: What are we -->
         <section>
-            <div class="px-(--section-px) lg:px-(--section-px-lg) py-(--section-py) lg:py-(--section-py-lg) -mt-[11rem] bg-(--dark-blue) w-full h-dvh">
+            <div class="px-(--section-px) lg:px-(--section-px-lg) py-(--section-py) lg:py-(--section-py-lg) -mt-[11rem] bg-(--dark-blue) w-full h-full">
                 
-                <div class="flex flex-col gap-20 lg:gap-24 py-40 w-full max-w-6xl mx-auto">
+                <div class="flex flex-col gap-20 lg:gap-24  w-full pt-50 py-12 max-w-6xl m-auto h-full">
 
-                    <div class="flex flex-col items-center justify-center gap-4 lg:gap-12">
+                    <div class="flex flex-col items-center justify-center gap-12">
                         <h2 
                             class="text-5xl lg:text-8xl text-(--white) text-wrap text-center font-extrabold cursor-text w-full h-full overflow-hidden"
                         >
                             A history of enabling human progress
                         </h2>
 
-                        <p class="text-(--white) text-center text-lg lg:text-2xl font-semibold cursor-text">
+                        <p class="text-(--white) text-center text-xl font-semibold cursor-text">
                             We’ve always believed in the power of human ingenuity. 
                             A group of explorers successfully struck oil in California in 1876. 
                             Three years later our company entered the industry in 1879. 
@@ -42,16 +42,16 @@
 
                         <!-- Discover the Penn Petro way -->
                         <NuxtLink 
-                            to="/who/culture"
+                            to="/who/history"
                             class="group flex *:flex items-center *:items-center justify-center px-2 lg:px-8 py-2 gap-2 lg:gap-4 w-fit mx-auto mt-8 text-(--white) hover:text-(--black) bg-transparent hover:bg-(--light-blue) shadow-lg rounded-lg border-2 border-(--light-blue) duration-300 ease-in-out transition-all"
                         >
                             <div class="group relative flex items-center justify-center text-xl w-8 h-full overflow-hidden">
-                                <div class="absolute flex items-center left-2 h-full w-12 transition-all duration-500 ease-in-out group-hover:translate-x-full">
-                                    <Icon name="mdi:arrow-right"/>
+                                <div class="absolute flex items-center left-2 h-full w-12 transition-all duration-500 ease-in-out group-hover:translate-y-full">
+                                    <Icon name="mdi:arrow-down"/>
                                 </div>
                                 
-                                <div class="absolute flex items-center left-2 h-full w-12 -translate-x-full transition-all duration-500 ease-in-out group-hover:translate-x-0">
-                                    <Icon name="mdi:arrow-right" />
+                                <div class="absolute flex items-center left-2 h-full w-12 -translate-y-full transition-all duration-500 ease-in-out group-hover:translate-x-0">
+                                    <Icon name="mdi:arrow-down" />
                                 </div>
                             </div>
 
