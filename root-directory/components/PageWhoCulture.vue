@@ -272,21 +272,34 @@
 
         </section>
 
+        <!-- Latest on our culture -->
         <section>
             <div class="px-(--section-px) lg:px-(--section-px-lg) py-(--section-py) lg:py-(--section-py-lg) bg-(--white) w-full max-w-7xl mx-auto h-full">
                 
                 <div class="grid gap-32 w-full mx-auto">
 
-                    <div class="flex flex-col gap-12">
+                    <div class="flex flex-col gap-8">
             
-                        <p class="text-(--dark-blue) text-center font-bold text-2xl cursor-text">newsroom</p>
+                        <h2 class="text-(--dark-blue) text-5xl md:text-7xl text-center text-wrap font-extrabold">
+                            Latest on our culture
+                        </h2>
 
-                        <h2 class="text-(--dark-blue) text-center font-extrabold text-3xl lg:text-5xl text-wrap cursor-text">
+                        <p class="text-(--black) text-center text-xl">
+                            Read how our employees are making an impact around the world.
+                        </p>
+
+                    </div>
+
+                    <div class="flex flex-col gap-8">
+            
+                        <p class="text-(--dark-blue) text-center font-bold text-2xl">newsroom</p>
+
+                        <h2 class="text-(--dark-blue) text-center font-extrabold text-3xl lg:text-5xl">
                             People and community
                         </h2>
 
                         <div class="flex flex-col items-center gap-12 w-full">
-                            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 w-full *:hover:scale-102 *:duration-300 *:ease-in-out *:transition-all">
+                            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 w-full *:hover:scale-102 *:duration-300 *:ease-in-out *:transition-all">
                                 <!-- Prev item -->
                                 <div ref="prevRef">
                                     <HomeNewsComp
@@ -303,7 +316,7 @@
                                     <HomeNewsComp
                                         :key="whoNewsroom[activeIndex].id"
                                         v-bind="whoNewsroom[activeIndex]"  
-                                        class="scale-100 z-10"
+                                        class="w-full scale-100 z-10"
                                     />
                                 </div>
 
@@ -350,8 +363,6 @@
 
                     </div>
 
-                    
-                
                 </div>
 
             </div>
