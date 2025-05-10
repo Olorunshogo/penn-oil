@@ -187,7 +187,7 @@
                 
                 <div class="flex flex-col items-center justify-center gap-8 py-16 lg:py-24 w-full max-w-6xl h-full mx-auto">
                     <h2 
-                        class="text-5xl lg:text-9xl text-(--light-purple) text-wrap text-center font-extrabold cursor-text w-full h-full overflow-hidden"
+                        class="text-5xl lg:text-8xl text-(--light-purple) text-wrap text-center font-extrabold cursor-text w-full h-full overflow-hidden"
                     >
                         Delivering energy across the globe
                     </h2>
@@ -200,7 +200,7 @@
                     <!-- Discover tech and innovation -->
                     <NuxtLink 
                         to="/what/technology"
-                        class="group flex *:flex items-center *:items-center justify-center px-2 lg:px-8 py-2 gap-2 lg:gap-4 w-fit mx-auto mt-8 text-(--white) hover:text-(--black) bg-transparent hover:bg-(--light-blue) shadow-lg rounded-lg border-2 border-(--light-blue) duration-300 ease-in-out transition-all"
+                        class="group flex *:flex items-center *:items-center justify-center px-2 lg:px-8 py-2 gap-2 lg:gap-4 w-fit mx-auto mt-8 text-(--white) hover:text-(--black) bg-transparent hover:bg-(--light-purple) shadow-lg rounded-lg border-2 border-(--light-purple) duration-300 ease-in-out transition-all"
                     >
                         <div class="group relative flex items-center justify-center text-lg w-8 h-full overflow-hidden">
                             <div class="absolute flex items-center left-2 h-full w-12 transition-all duration-500 ease-in-out group-hover:translate-x-full">

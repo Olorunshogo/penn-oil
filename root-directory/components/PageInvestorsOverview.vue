@@ -10,16 +10,6 @@
         layout: 'custom'
     });
 
-    import { investorsEvent } from '../models/newsComps';
-
-    import {
-        prevRef, prevIndex, prevSlide,
-        activeRef, activeIndex,        
-        nextRef, nextIndex, nextSlide,
-        goTo
-    } from '../stores/homeNews'
-import NewsroomCarousel from './NewsroomCarousel.vue';
-
 </script>
 
 
@@ -30,17 +20,51 @@ import NewsroomCarousel from './NewsroomCarousel.vue';
         
         <div class="relative w-full h-full overflow-hidden -mt-[11rem]">
 
+            <!-- Image Slider Container -->
+            <div class="image-slider h-dvh lg:h-[1240px]">          
+
+                <!-- Content -->
+                <div class="grid w-full h-fit bg-(--white) absolute bottom-0">
+                    <div class="flex flex-col py-8 lg:py-12 items-center justify-center w-full max-w-6xl mx-auto h-fit">
+                        
+                        <div class="text-(--dark-blue) font-bold text-2xl">Who we are</div>
+
+                        <h1 
+                            class="text-5xl md:text-8xl xl:text-9xl py-8 bg-clip-text text-center text-transparent font-extrabold bg-gradient-to-r from-(--light-blue) to-(--dark-blue)" 
+                        >
+                            Investor relations
+                        </h1>
+
+                        <p class="text-xl lg:text-2xl text-center text-[color:var(--black)]">
+                            At Penn Petro Energy, we are committed to delivering strong financial performance and creating long-term value for our shareholders. 
+                            We focus on sustainable growth, disciplined capital allocation, and effective risk management to drive profitability and maximize returns.
+                        </p>
+                        
+                        
+                    </div>
+                </div> 
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Section: Hero -->
+    <!-- <section>        
+        
+        <div class="relative w-full h-full overflow-hidden -mt-[11rem]"> -->
+
             <!-- Image Container -->
-            <NuxtImg
+            <!-- <NuxtImg
                 src="https://images.pexels.com/photos/7414274/pexels-photo-7414274.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                 alt="An investor with her team"
                 loading="lazy"
                 class="relative h-dvh w-full object-cover z-0"
-            />
+            /> -->
             
 
             <!-- Content -->
-            <div class="grid gap-4 bg-(--white) w-full absolute bottom-0 h-1/2 md:h-2/5 max-h-[500px]">
+            <!-- <div class="grid gap-4 bg-(--white) w-full absolute bottom-0 h-1/2 md:h-2/5 max-h-[500px]">
                 <div class="flex flex-col items-center justify-center w-full max-w-4xl mx-auto h-full gap-2">
                     <h1 
                         class="text-5xl md:text-8xl xl:text-9xl text-center font-extrabold bg-clip-text text-transparent" 
@@ -50,16 +74,16 @@ import NewsroomCarousel from './NewsroomCarousel.vue';
                     </h1>
 
                     <p class="text-xl lg:text-2xl text-center text-[color:var(--black)]">
-                        At Penn Petro Energy,, we are committed to delivering strong financial performance and creating long-term value for our shareholders. 
+                        At Penn Petro Energy, we are committed to delivering strong financial performance and creating long-term value for our shareholders. 
                         We focus on sustainable growth, disciplined capital allocation, and effective risk management to drive profitability and maximize returns.
                     </p>
                     
                     
                 </div>
-            </div> 
+            </div>  -->
 
-        </div>
-    </section>
+        <!-- </div>
+    </section> -->
 
     <!-- Section: Latest News -->
     <section>
@@ -67,9 +91,9 @@ import NewsroomCarousel from './NewsroomCarousel.vue';
             
             <div class="flex flex-col gap-20 lg:gap-24 w-full max-w-6xl mx-auto">
 
-                <div class="flex flex-col items-center justify-center gap-4">
+                <div class="flex flex-col items-center justify-center gap-8">
                     <h2 
-                        class="text-5xl md:text-8xl text-(--dark-blue) text-wrap text-center font-extrabold cursor-text w-full h-full overflow-hidden"
+                        class="text-5xl lg:text-8xl text-(--dark-blue) text-wrap text-center font-extrabold cursor-text w-full h-full overflow-hidden"
                     >
                         Latest news
                     </h2>
@@ -98,7 +122,7 @@ import NewsroomCarousel from './NewsroomCarousel.vue';
 
                     <div class="grid gmd:grid-cols-2 gap-4 lg:gap-6">
                         <!-- Delivering first oil while lowering development costs -->
-                        <div class="grid p-6 gap-8 rounded-2xl bg-(--dark-blue)/90">
+                        <div class="grid p-6 gap-8 rounded-2xl bg-(--dark-blue)/90 shadow-lg">
                             <NuxtImg
                                 src="https://images.pexels.com/photos/8370328/pexels-photo-8370328.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                                 alt="Female Vlogger doing a Video Recording"
@@ -139,7 +163,7 @@ import NewsroomCarousel from './NewsroomCarousel.vue';
                         </div> 
 
                         <!-- Engine No. 1 Chevron and GE Vernova to power U.S. data centers -->
-                        <div class="flex flex-col gap-4 bg-(--dark-green) p-6 rounded-2xl">
+                        <div class="flex flex-col gap-4 bg-(--dark-green) p-6 rounded-2xl shadow-lg">
                             <p class="text-(--white) text-xl font-semibold cursor-text">
                                 March 10, 2025
                             </p>
@@ -168,7 +192,7 @@ import NewsroomCarousel from './NewsroomCarousel.vue';
                         </div> 
 
                         <!-- Penn Petro Energy CEO talks growing production, efficient spending -->
-                        <div class="grid p-6 gap-8 rounded-2xl bg-(--dark-teal)/90">
+                        <div class="grid p-6 gap-8 rounded-2xl bg-(--dark-teal)/90 shadow-lg">
                             <NuxtImg
                                 src="https://images.pexels.com/photos/8370328/pexels-photo-8370328.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                                 alt="Female Vlogger doing a Video Recording"
@@ -213,7 +237,7 @@ import NewsroomCarousel from './NewsroomCarousel.vue';
                     <div class="grid gap-4 lg:gap-6">
 
                         <!-- Penn Petro Energy-hess merger clears FTC antitrust review -->
-                        <div class="flex flex-col gap-4 bg-(--medium-red) p-6 rounded-2xl">
+                        <div class="flex flex-col gap-4 bg-(--medium-red) p-6 rounded-2xl shadow-lg">
                             <p class="text-(--white) text-xl font-semibold cursor-text">
                                 September 30, 2024
                             </p>
@@ -242,7 +266,7 @@ import NewsroomCarousel from './NewsroomCarousel.vue';
                         </div>  
 
                         <!-- Penn Petro Energy leaders share their vision for the future of CERAWeek 2025 -->
-                        <div class="flex flex-col gap-4 bg-(--dark-green) p-6 rounded-2xl">
+                        <div class="flex flex-col gap-4 bg-(--dark-green) p-6 rounded-2xl shadow-lg">
                             <p class="text-(--white) text-xl font-semibold cursor-text">
                                 March 10, 2025
                             </p>
@@ -272,7 +296,7 @@ import NewsroomCarousel from './NewsroomCarousel.vue';
                         </div> 
 
                         <!-- Delivering first oil while lowering development costs -->
-                        <div class="grid p-6 gap-8 rounded-2xl bg-(--dark-blue)/90">
+                        <div class="grid p-6 gap-8 rounded-2xl bg-(--dark-blue)/90 shadow-lg">
                             <NuxtImg
                                 src="https://images.pexels.com/photos/8370328/pexels-photo-8370328.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                                 alt="Female Vlogger doing a Video Recording"
@@ -313,7 +337,7 @@ import NewsroomCarousel from './NewsroomCarousel.vue';
                         </div> 
 
                         <!-- Penn Petro Energy achieves first oil future growth project in Kazakhstan -->
-                        <div class="flex flex-col gap-4 bg-(--medium-teal) p-6 rounded-2xl">
+                        <div class="flex flex-col gap-4 bg-(--medium-teal) p-6 rounded-2xl shadow-lg">
                             <p class="text-(--white) text-xl font-semibold cursor-text">
                                 January 23, 2025
                             </p>
@@ -363,7 +387,7 @@ import NewsroomCarousel from './NewsroomCarousel.vue';
                 <div class="flex flex-col gap-8">
 
                     <h2 
-                        class="text-5xl md:text-8xl text-(--dark-blue) text-wrap text-center font-extrabold cursor-text w-full h-full overflow-hidden"
+                        class="text-5xl lg:text-8xl text-(--dark-blue) text-wrap text-center font-extrabold cursor-text w-full h-full overflow-hidden"
                     >
                         Events and presentations
                     </h2>
@@ -404,6 +428,29 @@ import NewsroomCarousel from './NewsroomCarousel.vue';
 </template>
 
 <style lang="css" scoped>
+    .image-slider {
+        position: relative;
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+        animation: slideAnimation 12s infinite;
+    }
+
+    /* Define the keyframes for the animation */
+    @keyframes slideAnimation {
+        0% {
+            background-image: url('https://images.pexels.com/photos/7414274/pexels-photo-7414274.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+        }
+        33% {
+            background-image: url('https://images.pexels.com/photos/7414049/pexels-photo-7414049.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+        }
+        66% {
+            background-image: url('https://images.pexels.com/photos/7414273/pexels-photo-7414273.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+        }
+        100% {
+            background-image: url('https://images.pexels.com/photos/7414274/pexels-photo-7414274.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+        }
+    }
 
     .group-hover\:underline-text {
         position: relative;
@@ -436,47 +483,6 @@ import NewsroomCarousel from './NewsroomCarousel.vue';
     .group-hover\:arrow-move {
         animation: moveArrow 3s infinite alternate ease-in-out;
     } 
-     
-    .newsComp {
-        transition: transform 0.5s ease, opacity 0.5s ease;
-    }
-    .newsComp.active {
-        transform-origin: center;
-    }
 
-    .nav-btn {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 3rem;
-        height: 3rem;
-        border: 3px solid var(--black);
-        border-radius: 50%;
-        color: var(--black);
-        background-color: transparent;
-        transition: all 0.5s ease-in-out;
-    }
-
-    .nav-btn:hover {
-        color: var(--white);
-        background-color: var(--black);
-        opacity: 0.8;
-        cursor: pointer;
-    }
-
-    .pagination-dot {
-        width: 0.75rem;
-        height: 0.75rem;
-        border-radius: 50%;
-        background-color: gray;
-        transition: all 0.5s ease-in-out;
-    }
-    .pagination-dot:hover {
-        cursor: pointer;
-        opacity: 0.8;
-    }
-    .pagination-dot.active-dot {
-        background-color: blue;
-    }
 
 </style>

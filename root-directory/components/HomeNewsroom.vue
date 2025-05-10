@@ -1,13 +1,5 @@
 
 <script setup lang="ts">
-    import { newsComps } from '../models/newsComps';
-
-    import {
-        prevRef, prevIndex, prevSlide,
-        activeRef, activeIndex,        
-        nextRef, nextIndex, nextSlide,
-        goTo
-    } from '../stores/homeNews'
 
 </script>
 

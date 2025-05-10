@@ -55,7 +55,7 @@
 
                     <div class="flex flex-col items-center justify-center gap-4">
                         <h2 
-                            class="text-5xl md:text-8xl text-(--dark-blue) text-wrap text-center font-extrabold cursor-text w-full h-full overflow-hidden"
+                            class="text-5xl lg:text-8xl text-(--dark-blue) text-wrap text-center font-extrabold cursor-text w-full h-full overflow-hidden"
                         >
                             Around the world
                         </h2>
@@ -119,7 +119,7 @@
                         <div class="grid gap-6 *:h-150">
 
                             <!-- Climate -->
-                            <div class="grid p-6 gap-8 rounded-2xl bg-(--medium-blue)">
+                            <div class="grid p-6 gap-8 rounded-2xl bg-(--medium-blue) shadow-lg">
                                 <NuxtImg
                                     src="https://images.pexels.com/photos/2163098/pexels-photo-2163098.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                                     alt="Photo of a Woman Holding a Drone"
@@ -161,7 +161,7 @@
                             </div>
 
                             <!-- Social Investment -->
-                            <div class="grid p-6 gap-8 rounded-2xl bg-(--medium-teal)">
+                            <div class="grid p-6 gap-8 rounded-2xl bg-(--medium-teal) shadow-lg">
                                 <NuxtImg
                                     src="https://images.pexels.com/photos/8370328/pexels-photo-8370328.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                                     alt="Female Vlogger doing a Video Recording"
@@ -208,7 +208,7 @@
                         <div class="grid gap-6 *:h-150">
 
                             <!-- Environment-->
-                            <div class="grid p-6 gap-8 rounded-2xl bg-(--dark-green)">
+                            <div class="grid p-6 gap-8 rounded-2xl bg-(--dark-green) shadow-lg">
                                 <NuxtImg
                                     src="https://images.pexels.com/photos/1108572/pexels-photo-1108572.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                                     alt="Clear Light Bulb Planter on Gray Rock"
@@ -249,7 +249,7 @@
                             </div>
 
                             <!-- Diversity and Inclusion -->
-                            <div class="grid p-6 gap-8 rounded-2xl bg-(--dark-orange)">
+                            <div class="grid p-6 gap-8 rounded-2xl bg-(--dark-orange) shadow-lg">
                                 <NuxtImg
                                     src="https://images.pexels.com/photos/6146703/pexels-photo-6146703.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                                     alt="Close-Up Shot of Hands"

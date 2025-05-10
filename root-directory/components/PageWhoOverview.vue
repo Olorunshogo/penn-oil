@@ -56,7 +56,7 @@
 
                     <div class="flex flex-col items-center justify-center gap-4 lg:gap-12">
                         <h2 
-                            class="text-5xl lg:text-9xl text-(--white) text-wrap text-center font-extrabold cursor-text w-full h-full overflow-hidden"
+                            class="text-5xl lg:text-8xl text-(--white) text-wrap text-center font-extrabold cursor-text w-full h-full overflow-hidden"
                         >
                             What we believe drives how we work
                         </h2>
@@ -122,7 +122,7 @@
 
         <!-- Section: Our purpose -->
         <section>
-            <div class="bg-(--white) w-full h-full overflow-hidden">
+            <div class="bg-(--white) w-full h-full shadow-lg overflow-hidden">
                 
                 <div class="grid grid-cols-1 lg:grid-cols-2 w-full max-w-[1400px] mx-auto lg:py-16 h-full">
 
@@ -181,7 +181,7 @@
 
         <!-- Section: Our culture -->
         <section>
-            <div class="bg-(--white) w-full h-full overflow-hidden">
+            <div class="bg-(--white) w-full h-full shadow-lg overflow-hidden">
                 
                 <div class="grid grid-cols-1 lg:grid-cols-2 w-full max-w-[1400px] mx-auto lg:mb-16 h-full">
 
@@ -240,7 +240,7 @@
 
         <!-- Section: Industry innovation through technology -->
         <section>
-            <div class="bg-(--white) w-full h-full overflow-hidden">
+            <div class="bg-(--white) w-full h-full shadow-lg overflow-hidden">
                 
                 <div class="grid grid-cols-1 lg:grid-cols-2 w-full max-w-[1400px] mx-auto lg:py-16 h-full">
 
@@ -260,7 +260,7 @@
 
                     <div class="grid md:grid-cols-2 lg:grid-cols-1 lg:grid-rows-2 gap-4 lg:gap-8 bg-(--medium-blue) h-full lg:h-210 lg:rounded-r-2xl p-8">
                         <NuxtImg
-                            src="https://www.pexels.com/photo/close-up-of-disassembled-electronic-circuit-boards-31945005/"
+                            src="https://images.pexels.com/photos/31945005/pexels-photo-31945005/free-photo-of-close-up-of-disassembled-electronic-circuit-boards.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                             alt="Close-up of Disassembled Electronic Circuit Boards"
                             loading="lazy"
                             class="w-full h-90 object-cover rounded-lg ml-auto lg:ml-0"
@@ -342,7 +342,7 @@
                 </div>
 
                 <!-- Our brands -->
-                <div class="grid grid-cols-1 lg:grid-cols-2 w-full max-w-[1400px] mx-auto h-130">
+                <div class="grid grid-cols-1 lg:grid-cols-2 w-full max-w-[1400px] mx-auto shadow-lg h-130">
 
                     <div class="flex flex-col justify-center bg-(--dark-red) h-full w-full lg:rounded-l-2xl">                        
                         <div class="flex flex-col px-8 py-12 gap-4 lg:gap-8 max-w-2xl">
@@ -387,7 +387,7 @@
                 </div>
 
                 <!-- Leadership -->
-                <div class="grid grid-cols-1 lg:grid-cols-2 w-full max-w-[1400px] mx-auto h-130">
+                <div class="grid grid-cols-1 lg:grid-cols-2 w-full max-w-[1400px] mx-auto shadow-lg h-130">
 
                     <NuxtImg
                         src="https://images.pexels.com/photos/1367276/pexels-photo-1367276.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
@@ -432,7 +432,7 @@
                 </div>
 
                 <!-- Careers -->
-                <div class="grid grid-cols-1 lg:grid-cols-2 w-full max-w-[1400px] mx-auto h-130">
+                <div class="grid grid-cols-1 lg:grid-cols-2 w-full max-w-[1400px] mx-auto shadow-lg h-130">
 
                     <div class="flex flex-col justify-center bg-(--dark-orange) h-full w-full lg:rounded-l-2xl">                        
                         <div class="flex flex-col px-8 py-12 gap-4 lg:gap-8 max-w-2xl">
