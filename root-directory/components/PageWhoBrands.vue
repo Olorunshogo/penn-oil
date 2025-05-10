@@ -26,21 +26,20 @@
 
 <template>
     <div>
-
         <!-- Section: Hero -->
         <section>        
             
             <div class="relative w-full h-full overflow-hidden -mt-[11rem] py-(--section-pyx) lg:py-(--section-py-lg)">
 
                 <!-- Image Slider Container -->
-                <div class="image-slider h-[950px] lg:h-[1250px]"> </div>         
+                <div class="image-slider h-[950px]"></div>         
 
                 <!-- Content -->
-                <div class="grid w-full h-fit -mt-60 pb-12 bg-(--white) relative px-4">
-                    <div class="flex flex-col py-8 lg:py-12 items-center justify-center w-full max-w-5xl mx-auto h-fit">
+                <div class="grid w-full h-fit pb-4 bg-(--white) absolute bottom-0 px-4">
+                    <div class="flex flex-col py-8 gap-8 items-center justify-center w-full max-w-5xl mx-auto h-fit">
 
                         <h1 
-                            class="text-5xl md:text-8xl xl:text-9xl py-8 bg-clip-text text-center text-transparent font-extrabold bg-gradient-to-r from-(--light-blue) to-(--dark-blue)" 
+                            class="text-5xl md:text-8xl xl:text-9xl bg-clip-text text-center text-transparent font-extrabold bg-gradient-to-r from-(--light-blue) to-(--dark-blue)" 
                         >
                             Our brands
                         </h1>
@@ -59,22 +58,22 @@
                                 src="../public/images/Logo/Texaco_logo.png"
                                 alt="Texaco Logo's Logo"
                                 loading="lazy"
-                                class="object-cover w-full h-24 lg:h-40"
+                                class="object-cover w-full h-16 lg:h-24"
                             />
                             <NuxtImg
                                 src="../public/images/Logo/Full_Penn_Petro_Energy_Logo_transparent_bg.png"
                                 alt="Full Penn Petro Energy's Logo"
                                 loading="lazy"
-                                class="object-cover w-full h-24 lg:h-40"
+                                class="object-cover w-full h-16 lg:h-24"
                             />
                             <NuxtImg
                                 src="../public/images/Logo/Caltext_logo.png"
                                 alt="Caltext Logo"
                                 loading="lazy"
-                                class="object-cover w-full h-24 lg:h-40"
+                                class="object-cover w-full h-16 lg:h-24"
                             />
                         </div>
-                        <p class="text-extrabold text-3xl text-(--dark-gray)">Penn Petro Energy's Family of Brands</p>
+                        <p class="text-bold text-xl text-center text-(--dark-gray)">Penn Petro Energy's Family of Brands</p>
                     </div>
 
                 </div> 

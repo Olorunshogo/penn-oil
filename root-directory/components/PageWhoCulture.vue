@@ -24,39 +24,35 @@
 
 <template>
     <div>
-
         <!-- Section: Hero -->
         <section>        
             
-            <div class="relative w-full h-full overflow-hidden -mt-[11rem]">
+            <div class="relative w-full h-full overflow-hidden -mt-[11rem] py-(--section-pyx) lg:py-(--section-py-lg)">
 
                 <!-- Image Slider Container -->
-                <div class="image-slider h-[950px] lg:h-[1250px]">          
+                <div class="image-slider h-[1000px]"></div>         
 
-                    <!-- Content -->
-                    <div class="grid w-full h-fit bg-(--white) absolute bottom-0 px-4">
-                        <div class="flex flex-col py-8 lg:py-12 items-center justify-center w-full max-w-5xl mx-auto h-fit">
-                            
-                            <div class="text-(--dark-blue) font-bold text-2xl">Who we are</div>
+                <!-- Content -->
+                <div class="grid w-full h-fit bg-(--white) absolute bottom-0 px-4">
 
-                            <h1 
-                                class="text-5xl md:text-8xl xl:text-9xl py-8 bg-clip-text text-center text-transparent font-extrabold bg-gradient-to-r from-(--light-blue) to-(--dark-blue)" 
-                            >
-                                Our culture
-                            </h1>
+                    <div class="flex flex-col py-12 gap-8 lg:gap-16 items-center justify-center w-full max-w-5xl mx-auto h-fit">
 
-                            <p class="text-xl lg:text-2xl text-center text-[color:var(--black)]">
-                                We work hard to provide energy that helps improve the lives of people around the world. 
-                                The Operational Excellence Management System is a core part of how we do it. 
-                                We promote a culture that values a diversity of perspectives, productive dialogue and teaming that help us deliver the future of energy.
-                            </p>
-                            
-                            
-                        </div>
-                    </div> 
+                        <h1 
+                            class="text-5xl md:text-8xl xl:text-9xl bg-clip-text text-center text-transparent font-extrabold bg-gradient-to-r from-(--light-blue) to-(--dark-blue)" 
+                        >
+                            Our culture
+                        </h1>
 
-                </div>
+                        <p class="text-xl text-center text-(--black)">
+                            We work hard to provide energy that helps improve the lives of people around the world. 
+                            The Operational Excellence Management System is a core part of how we do it. 
+                            We promote a culture that values a diversity of perspectives, productive dialogue and teaming that help us deliver the future of energy.
+                        </p>
+                        
+                        
+                    </div>
 
+                </div> 
             </div>
         </section>
 
@@ -379,11 +375,13 @@
         width: 100%;
         background-size: cover;
         background-position: center;
+        background-image: url('https://images.pexels.com/photos/7414049/pexels-photo-7414049.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+        background-repeat: no-repeat;
         animation: slideAnimation 12s infinite;
     }
 
     /* Define the keyframes for the animation */
-    @keyframes slideAnimation {
+    /* @keyframes slideAnimation {
         0% {
             background-image: url('https://images.pexels.com/photos/7414274/pexels-photo-7414274.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
         }
@@ -396,7 +394,7 @@
         100% {
             background-image: url('https://images.pexels.com/photos/7414274/pexels-photo-7414274.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
         }
-    }
+    } */
 
     .group-hover\:underline-text {
         position: relative;

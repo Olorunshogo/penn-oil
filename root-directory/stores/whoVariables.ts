@@ -18,7 +18,6 @@ interface NewsItem {
     description: string;
 }
 
-
 export const whoNewsroom: Ref<NewsItem[]> = ref([
 
     // 1. Penn Petro Energy and new orleans score big at the big game
@@ -83,5 +82,271 @@ export const whoNewsroom: Ref<NewsItem[]> = ref([
 
     
 
+]);
+
+export const boardOfDir = ref([
+
+    // 1. Michael K. (Mike) Wirth
+    {
+        id: 1,
+        imgSrc: 'https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+        imgAlt: 'Michael K. (Mike) Wirth wearing White Dress Shirt and Black Blazer',
+        linkName: 'Michael K. (Mike) Wirth',
+        link: '/',
+        description: "Chairman of the Board and Chief Executive Officer"
+    },
+
+    // 2. Wanda M. Austin
+    {
+        id: 2,
+        imgSrc: 'https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+        imgAlt: 'Wanda M. Austin in Collared Shirt',
+        linkName: 'Wanda M. Austin',
+        link: '/',
+        description: "Lead Director; Retired President and Chief Executive Officer, The Aerospace Corporation"
+    },
+
+    // 3. John B. Frank
+    {
+        id: 3,
+        imgSrc: 'https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+        imgAlt: 'John B. Frank wearing White Dress Shirt and Black Blazer',
+        linkName: 'John B. Frank',
+        link: '/',
+        description: "Vice Chairman, Oaktree Capital Group, LLC"
+    },
+
+    // 4. Alice P. Gast
+    {
+        id: 4,
+        imgSrc: 'https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+        imgAlt: 'Alice P. Gast in Collared Shirt',
+        linkName: 'Alice P. Gast',
+        link: '/',
+        description: "Retired President and Professor Emeritus of Chemical Engineering, Imperial College London"
+    },
+
+    // 5. Enrique Hernandez, Jr. 
+    {
+        id: 5,
+        imgSrc: 'https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+        imgAlt: 'Enrique Hernandez, Jr.  wearing White Dress Shirt and Black Blazer',
+        linkName: 'Enrique Hernandez, Jr. ',
+        link: '/',
+        description: "Executive Chairman, Inter-Con Security Systems, Inc."
+    },
+
+    // 6. Marillyn A. Hewson
+    {
+        id: 6,
+        imgSrc: 'https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+        imgAlt: 'Marillyn A. Hewson in Collared Shirt',
+        linkName: 'Marillyn A. Hewson',
+        link: '/',
+        description: "Retired Chairman, President and Chief Executive Officer, Lockheed Martin Corporation"
+    },
+
+    // 7. Jon M. Huntsman, Jr. 
+    {
+        id: 7,
+        imgSrc: 'https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+        imgAlt: 'Jon M. Huntsman, Jr.  wearing White Dress Shirt and Black Blazer',
+        linkName: 'Jon M. Huntsman, Jr. ',
+        link: '/',
+        description: "Vice Chairman and President, Strategic Growth, Mastercard Incorporated"
+    },
+
+    // 8. Charles W. Moorman 
+    {
+        id: 8,
+        imgSrc: 'https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+        imgAlt: 'Charles W. Moorman wearing White Dress Shirt and Black Blazer',
+        linkName: 'Charles W. Moorman',
+        link: '/',
+        description: "Former Senior Advisor to Amtrak and Retired Chairman and Chief Executive Officer, Norfolk Southern Corporation"
+    },
+
+    // 9. Damisa F. Moyo
+    {
+        id: 9,
+        imgSrc: 'https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+        imgAlt: 'Damisa F. Moyo in Collared Shirt',
+        linkName: 'Damisa F. Moyo',
+        link: '/',
+        description: "Co-principal, Versaca Investments"
+    },
+
+    // 10. Debra Reed-Klages
+    {
+        id: 10,
+        imgSrc: 'https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+        imgAlt: 'Debra Reed-Klages in Collared Shirt',
+        linkName: 'Debra Reed-Klages',
+        link: '/',
+        description: "Retired Chairman, President and Chief Executive Officer, Lockheed Martin Corporation"
+    },
+
+    // 11. D. James Umpleby III
+    {
+        id: 11,
+        imgSrc: 'https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+        imgAlt: 'D. James Umpleby III wearing White Dress Shirt and Black Blazer',
+        linkName: 'D. James Umpleby III',
+        link: '/',
+        description: "Executive Chairman, Caterpillar Inc."
+    },
+
+    // 12. Cynthia J. Warner
+    {
+        id: 12,
+        imgSrc: 'https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+        imgAlt: 'Cynthia J. Warner in Collared Shirt',
+        linkName: 'Cynthia J. Warner',
+        link: '/',
+        description: "Former President and Chief Executive Officer, Renewable Energy Group, Inc"
+    },
+]);
+
+export const corporateOfficers = ref([
+
+    // 1. Michael K. (Mike) Wirth
+    {
+        id: 1,
+        imgSrc: 'https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+        imgAlt: 'Michael K. (Mike) Wirth wearing White Dress Shirt and Black Blazer',
+        linkName: 'Michael K. (Mike) Wirth',
+        link: '/',
+        description: "Chairman of the Board and Chief Executive Officer"
+    },
+
+    // 2. Paul R. Antebi
+    {
+        id: 2,
+        imgSrc: 'https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+        imgAlt: 'Paul R. Antebi wearing White Dress Shirt and Black Blazer',
+        linkName: 'Paul R. Antebi',
+        link: '/',
+        description: "Vice President and General Tax Counsel"
+    },
+
+    // 3. Marissa Badenhorst
+    {
+        id: 3,
+        imgSrc: 'https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+        imgAlt: 'Marissa Badenhorst in Collared Shirt',
+        linkName: 'Marissa Badenhorst',
+        link: '/',
+        description: "Vice President, Health, Safety and Environment"
+    },
+
+    // 4. Elmear P. Bonner
+    {
+        id: 4,
+        imgSrc: 'https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+        imgAlt: 'Elmear P. Bonner in Collared Shirt',
+        linkName: 'Elmear P. Bonner',
+        link: '/',
+        description: "Vice President and Chief Financial Officer"
+    },
+
+    // 5. Mary A. Francis
+    {
+        id: 5,
+        imgSrc: 'https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+        imgAlt: 'Mary A. Francis in Collared Shirt',
+        linkName: 'Mary A. Francis',
+        link: '/',
+        description: "Corporate Secretary and Chief Governance Office"
+    },
+
+    // 6. Michelle R. Green
+    {
+        id: 6,
+        imgSrc: 'https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+        imgAlt: 'Michelle R. Green in Collared Shirt',
+        linkName: 'Michelle R. Green',
+        link: '/',
+        description: "Vice President and Chief Human Resources Officer"
+    },
+
+    // 7. Jeff B. Gustavson
+    {
+        id: 7,
+        imgSrc: 'https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+        imgAlt: 'Jeff B. Gustavson wearing White Dress Shirt and Black Blazer',
+        linkName: 'Jeff B. Gustavson',
+        link: '/',
+        description: "Vice President, Lower Carbon Energies"
+    },
+
+    // 8. Alana K. Knowles
+    {
+        id: 8,
+        imgSrc: 'https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+        imgAlt: 'Alana K. Knowles in Collared Shirt',
+        linkName: 'Alana K. Knowles',
+        link: '/',
+        description: "Vice President and Controller"
+    },
+
+    // 9. Molly T. Laegeler
+    {
+        id: 9,
+        imgSrc: 'https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+        imgAlt: 'Molly T. Laegeler in Collared Shirt',
+        linkName: 'Molly T. Laegeler',
+        link: '/',
+        description: "Vice President, Strategy & Sustainability"
+    },
+
+    // 10. Laura J. Lane
+    {
+        id: 10,
+        imgSrc: 'https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+        imgAlt: 'Laura J. Lane in Collared Shirt',
+        linkName: 'Laura J. Lane',
+        link: '/',
+        description: "Vice President and Chief Corporate Affairs Officer"
+    },
+
+    // 11. Navin K. Mahajan
+    {
+        id: 11,
+        imgSrc: 'https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+        imgAlt: 'Navin K. Mahajan wearing White Dress Shirt and Black Blazer',
+        linkName: 'Navin K. Mahajan',
+        link: '/',
+        description: "Vice President and Treasurer"
+    },
+
+    // 12. Frank W. Mount
+    {
+        id: 12,
+        imgSrc: 'https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+        imgAlt: 'Frank W. Mount wearing White Dress Shirt and Black Blazer',
+        linkName: 'Frank W. Mount',
+        link: '/',
+        description: "Vice President, Corporate Business Development"
+    },
+
+    // 13. Mark A. Nelson
+    {
+        id: 13,
+        imgSrc: 'https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+        imgAlt: 'Mark A. Nelson wearing White Dress Shirt and Black Blazer',
+        linkName: 'Mark A. Nelson',
+        link: '/',
+        description: "Vice Chairman"
+    },
+
+    // 14. R. Hewitt Page
+    {
+        id: 14,
+        imgSrc: 'https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+        imgAlt: 'R. Hewitt Page wearing White Dress Shirt and Black Blazer',
+        linkName: 'R. Hewitt Page',
+        link: '/',
+        description: "Vice President and General Counsel"
+    },
 ]);
 
