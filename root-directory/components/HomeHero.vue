@@ -103,17 +103,6 @@
             clearInterval(autoplayInterval);
         }
     });
-
-    defineProps({
-        isSearchOpen: {
-            type: Boolean,
-            default: false
-        }
-    });
-    
-    function closeSearch() {
-        emit('updateSearchOpen', false)
-    }
     
 </script>
 
@@ -138,7 +127,7 @@
                 />
             </div> 
 
-            <div class="controls bg-transparent absolute -mt-12 bottom-4 left-1/2 transform -translate-x-1/2 flex items-center justify-center gap-4 w-4/5 md:w-1/2 mx-auto z-30">
+            <div class="controls flex items-center justify-center gap-4 w-4/5 md:w-1/2 mx-auto z-30 bg-transparent absolute bottom-0 left-1/2 transform -translate-x-1/2 ">
 
                 <div class="pagination flex flex-wrap items-center justify-center gap-2 bg-(--black)/40 rounded-full py-2 px-4">
                     <span

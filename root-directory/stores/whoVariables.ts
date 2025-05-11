@@ -350,6 +350,8 @@ export const corporateOfficers = ref([
     },
 ]);
 
+
+//          Contact Page Important Information
 // Job Openings
 export const jobOpenings = ref<boolean>(false);
 export function toggleJobOpenings() {
@@ -365,7 +367,7 @@ export function toggleJobOpenings() {
     lubricantsTechnical.value = false;
     lubricantsWhere.value = false;
     mobileApp.value = false;
-    supportRelations.value = false;
+    supplierRelations.value = false;
 }
 
 // Service Station
@@ -383,7 +385,7 @@ export function toggleServiceStation() {
     lubricantsTechnical.value = false;
     lubricantsWhere.value = false;
     mobileApp.value = false;
-    supportRelations.value = false;
+    supplierRelations.value = false;
 }
 
 // Scams
@@ -401,7 +403,7 @@ export function toggleScams() {
     lubricantsTechnical.value = false;
     lubricantsWhere.value = false;
     mobileApp.value = false;
-    supportRelations.value = false;
+    supplierRelations.value = false;
 }
 
 // Pipelines
@@ -419,7 +421,7 @@ export function togglePipelines() {
     lubricantsTechnical.value = false;
     lubricantsWhere.value = false;
     mobileApp.value = false;
-    supportRelations.value = false;
+    supplierRelations.value = false;
 }
 
 // Credit card
@@ -437,7 +439,7 @@ export function toggleCreditCard() {
     lubricantsTechnical.value = false;
     lubricantsWhere.value = false;
     mobileApp.value = false;
-    supportRelations.value = false;
+    supplierRelations.value = false;
 }
 
 // Request Database
@@ -455,7 +457,7 @@ export function toggleRequestDb() {
     lubricantsTechnical.value = false;
     lubricantsWhere.value = false;
     mobileApp.value = false;
-    supportRelations.value = false;
+    supplierRelations.value = false;
 }
 
 // Donation Request
@@ -473,7 +475,7 @@ export function toggleDonationRequest() {
     lubricantsTechnical.value = false;
     lubricantsWhere.value = false;
     mobileApp.value = false;
-    supportRelations.value = false;
+    supplierRelations.value = false;
 }
 
 // Fuels Technical
@@ -491,7 +493,7 @@ export function toggleFuelsTechnical() {
     lubricantsTechnical.value = false;
     lubricantsWhere.value = false;
     mobileApp.value = false;
-    supportRelations.value = false;
+    supplierRelations.value = false;
 }
 
 // Financial Publication
@@ -509,7 +511,7 @@ export function toggleFinancialPublication() {
     lubricantsTechnical.value = false;
     lubricantsWhere.value = false;
     mobileApp.value = false;
-    supportRelations.value = false;
+    supplierRelations.value = false;
 }
 
 // Lubricants Technical
@@ -527,7 +529,7 @@ export function toggleLubricantsTechnical() {
     lubricantsTechnical.value = !lubricantsTechnical.value;
     lubricantsWhere.value = false;
     mobileApp.value = false;
-    supportRelations.value = false;
+    supplierRelations.value = false;
 }
 
 // Lubricants Where
@@ -545,7 +547,7 @@ export function toggleLubricantsWhere() {
     lubricantsTechnical.value = false;
     lubricantsWhere.value = !lubricantsWhere.value;
     mobileApp.value = false;
-    supportRelations.value = false;
+    supplierRelations.value = false;
 }
 
 // Mobile App
@@ -563,12 +565,12 @@ export function toggleMobileApp() {
     lubricantsTechnical.value = false;
     lubricantsWhere.value = false;
     mobileApp.value = !mobileApp.value;
-    supportRelations.value = false;
+    supplierRelations.value = false;
 }
 
-// Support Relations
-export const supportRelations = ref<boolean>(false);
-export function toggleSupportRelation() {
+// Supplier Relations
+export const supplierRelations = ref<boolean>(false);
+export function toggleSupplierRelation() {
     jobOpenings.value = false;
     serviceStation.value = false;
     scams.value = false;
@@ -581,6 +583,6 @@ export function toggleSupportRelation() {
     lubricantsTechnical.value = false;
     lubricantsWhere.value = false;
     mobileApp.value = false;
-    supportRelations.value = !supportRelations.value;
+    supplierRelations.value = !supplierRelations.value;
 }
 
