@@ -12,8 +12,8 @@
         goTo
     } from '../stores/homeNews';
     useHead({
-        title: 'Who We Are Culture',
-        titleTemplate: '%s | Penn Petro Energy PLC'
+        title: 'Penn Petro Energy Culture',
+        titleTemplate: '%s | Penn Petro Energy'
     });
 
     definePageMeta({
@@ -287,75 +287,8 @@
                     </div>
 
                     <div class="flex flex-col gap-8">
-            
-                        <p class="text-(--dark-blue) text-center font-bold text-2xl">newsroom</p>
 
-                        <h2 class="text-(--dark-blue) text-center font-extrabold text-3xl lg:text-5xl">
-                            People and community
-                        </h2>
-
-                        <div class="flex flex-col items-center gap-12 w-full">
-                            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 w-full *:hover:scale-102 *:duration-300 *:ease-in-out *:transition-all">
-                                <!-- Prev item -->
-                                <div ref="prevRef">
-                                    <HomeNewsComp
-                                        v-if="whoNewsroom.length > 1"
-                                        :key="whoNewsroom[prevIndex].id"
-                                        v-bind="whoNewsroom[prevIndex]"
-                                        class="hidden md:block scale-95 opacity-85 cursor-pointer"
-                                        @click="goTo(prevIndex)"
-                                    />
-                                </div>
-
-                                <!-- Active item -->
-                                <div ref="activeRef">
-                                    <HomeNewsComp
-                                        :key="whoNewsroom[activeIndex].id"
-                                        v-bind="whoNewsroom[activeIndex]"  
-                                        class="w-full scale-100 z-10"
-                                    />
-                                </div>
-
-                                <!-- Next item -->
-                                <div ref="nextRef">
-                                    <HomeNewsComp
-                                        v-if="whoNewsroom.length > 2"
-                                        :key="whoNewsroom[nextIndex].id"
-                                        v-bind="whoNewsroom[nextIndex]"
-                                        class="hidden md:block scale-95 opacity-85 cursor-pointer"
-                                        @click="goTo(nextIndex)"
-                                    />
-                                </div>
-                            </div>
-
-                            <!-- Navigation -->
-                            <div class="flex items-center justify-center gap-4">
-                                <button 
-                                    @click="prevSlide"
-                                    class="nav-btn"
-                                >
-                                    <Icon name="mdi:arrow-left" />
-                                </button>
-
-                                <!-- Pagination -->
-                                <div class="flex gap-2">
-                                    <button
-                                        v-for="(item, i) in whoNewsroom"
-                                        :key="item.id"
-                                        class="pagination-dot"
-                                        :class="{ 'active-dot': i === activeIndex }"
-                                        @click="goTo(i)"
-                                    />
-                                </div>
-
-                                <button 
-                                    @click="nextSlide" 
-                                    class="nav-btn"
-                                >
-                                    <Icon name="mdi:arrow-right" />
-                                </button>
-                            </div>
-                        </div>
+                        <HomeNewsroom title="People and community" />
 
                     </div>
 

@@ -21,7 +21,7 @@
                     v-if="newsComps.length > 1"
                     :key="newsComps[prevIndex].id"
                     v-bind="newsComps[prevIndex]"
-                    class="hidden md:block scale-95 opacity-85 cursor-pointer"
+                    class="hidden md:block scale-95 opacity-90 cursor-pointer"
                     @click="goTo(prevIndex)"
                 />
             </div>
@@ -41,7 +41,7 @@
                     v-if="newsComps.length > 2"
                     :key="newsComps[nextIndex].id"
                     v-bind="newsComps[nextIndex]"
-                    class="hidden md:block scale-95 opacity-85 cursor-pointer"
+                    class="hidden md:block scale-95 opacity-90 cursor-pointer"
                     @click="goTo(nextIndex)"
                 />
             </div>

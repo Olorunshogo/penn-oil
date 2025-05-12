@@ -2,8 +2,8 @@
 <script setup lang='ts'>
     import { useHead } from 'nuxt/app';
     useHead({
-        title: 'What We Are',
-        titleTemplate: '%s | Penn Petro Energy PLC'
+        title: 'What We Do',
+        titleTemplate: '%s | Penn Petro Energy'
     });
     definePageMeta({
         layout: 'custom'
@@ -40,7 +40,7 @@
                         
                         <p class="text-xl lg:text-2xl text-center text-(--black)">
                             The world’s energy demands are greater than ever before. 
-                            We’re working to deliver the lower carbon energy needed today while building the energy system of tomorrow..
+                            We’re working to deliver the lower carbon energy needed today while building the energy system of tomorrow.
                         </p>
                     </div>
                 </div> 
@@ -224,7 +224,7 @@
         <section>
 
             <div class="w-full h-full">           
-                <HomeNewsroom />
+                <HomeNewsroom title="Latest at Penn Petro Energy" />
             </div>
 
         </section>

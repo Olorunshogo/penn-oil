@@ -17,7 +17,7 @@
     });
 
     useHead({
-        title: 'Who We Are Brands',
+        title: 'Our Brands',
         titleTemplate: '%s | Penn Petro Energy PLC'
     });
 

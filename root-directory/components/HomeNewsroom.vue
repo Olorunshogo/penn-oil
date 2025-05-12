@@ -1,6 +1,12 @@
 
 <script setup lang="ts">
-
+    defineProps({
+        title: {
+            type: String,
+            default: 'Latest at Penn Petro Energy',
+            required: true
+        }
+    });
 </script>
 
 
@@ -15,7 +21,7 @@
                     <p class="text-(--dark-blue) text-center font-bold text-2xl cursor-text">newsroom</p>
 
                     <h2 class="text-(--dark-blue) text-center font-extrabold text-3xl lg:text-5xl text-wrap cursor-text">
-                        Latest at Penn Petro Energy
+                        {{ title }}
                     </h2>
 
                     <NewsroomCarousel />

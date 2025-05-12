@@ -2,8 +2,8 @@
 <script setup lang='ts'>
     import { useHead } from 'nuxt/app';
     useHead({
-        title: 'Contact Us',
-        titleTemplate: '%s | Penn Petro Energy PLC'
+        title: 'Contact Information',
+        titleTemplate: '%s | Penn Petro Energy'
     });
 
     definePageMeta({

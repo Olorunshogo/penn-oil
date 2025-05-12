@@ -3,8 +3,8 @@
 <script lang="ts" setup>
   import { useHead } from 'nuxt/app';
   useHead({
-    title: 'Penn Petro Energy PLC - Human Energy',
-    titleTemplate: '%s | HomePage'
+    title: 'Penn Petro Energy Corporation - Human Energy',
+    titleTemplate: '%s | Penn Petro Energy'
   });
 
 </script>
@@ -27,7 +27,7 @@
 
     <!-- HomeNewsroom -->
     <div>
-      <HomeNewsroom />
+      <HomeNewsroom title="Latest at Penn Petro Energy"/>
     </div>
 
 

@@ -2,7 +2,7 @@
 <script setup lang='ts'>
     import { useHead } from 'nuxt/app';
     useHead({
-        title: 'Who We Are Overview',
+        title: 'Who We Are',
         titleTemplate: '%s | Penn Petro Energy PLC'
     });
     definePageMeta({
