@@ -475,7 +475,10 @@
 
                 </div>
 
-                <HomeNewsroom />
+                <HomeNewsroom
+                    category="newsroom"
+                    title="Latest in Penn Petro Energy" 
+                />
 
 
             </div>

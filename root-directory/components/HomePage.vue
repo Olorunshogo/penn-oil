@@ -27,7 +27,10 @@
 
     <!-- HomeNewsroom -->
     <div>
-      <HomeNewsroom title="Latest at Penn Petro Energy"/>
+      <HomeNewsroom 
+        category="newsroom"
+        title="Latest at Penn Petro Energy"
+      />
     </div>
 
 

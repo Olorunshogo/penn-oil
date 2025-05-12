@@ -224,7 +224,10 @@
         <section>
 
             <div class="w-full h-full">           
-                <HomeNewsroom title="Latest at Penn Petro Energy" />
+                <HomeNewsroom 
+                    category="newsroom"
+                    title="Latest at Penn Petro Energy" 
+            />
             </div>
 
         </section>

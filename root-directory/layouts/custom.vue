@@ -29,7 +29,7 @@
     twitterCard: 'summary_large_image',
     twitterTitle: 'Penn Petro Energy PLC - Energy for a Better Tomorrow',
     twitterDescription: 'At Penn Petro Energy PLC, we believe the future of energy is lower carbon. Discover our efforts in innovation, energy transition, and sustainability.',
-    twitterImage: '/images/Penn Petro Energy-twitter-card.jpg',
+    twitterImage: '/images/Logo/Full_Penn_Petro_Energy_Logo.jpg',
     
     keywords: 'Penn Petro Energy PLC, energy company, oil and gas, renewable energy, sustainability, clean energy, global energy solutions, carbon reduction, innovation, energy technology',
   

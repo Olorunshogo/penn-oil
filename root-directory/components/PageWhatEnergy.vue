@@ -224,7 +224,10 @@
         <section>
 
             <div class="w-full h-full">           
-                <HomeNewsroom title="Energy in action"/>
+                <HomeNewsroom 
+                    category="newsroom"
+                    title="Energy in action"
+                />
             </div>
 
         </section>

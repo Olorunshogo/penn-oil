@@ -288,7 +288,10 @@
 
                     <div class="flex flex-col gap-8">
 
-                        <HomeNewsroom title="People and community" />
+                        <HomeNewsroom 
+                            category="newsroom"
+                            title="People and community" 
+                        />
 
                     </div>
 
