@@ -272,7 +272,8 @@
                         </div>
 
                         <!-- Oil Carbon Intensity -->
-                        <div class="flex flex-col items-center justify-center rounded-2xl *:text-center shadow-lg gap-8 bg-(--medium-blue) p-4 w-full mx-auto h-50 md:h-70">
+                        <div class="flex flex-col items-center justify-center rounded-2xl shadow-lg gap-8 bg-(--medium-blue) p-4 w-full mx-auto h-50 md:h-70">
+                            
                             <div class="flex flex-col items-center justify-center text-(--white)">
                                 <p class="text-lg font-bold ">
                                     Oil carbon intensity CO<sub>2</sub>e/boe

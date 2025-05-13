@@ -389,7 +389,7 @@
                 Climate
               </NuxtLink>
 
-              <!--   Environment -->
+              <!-- Environment -->
               <NuxtLink
                 to="/sustainability/environment"
                 @click="closeAllMenu"
@@ -400,7 +400,7 @@
 
               <!-- Social investment -->
               <NuxtLink
-                to="/sustainability/investment"
+                to="/sustainability/social"
                 @click="closeAllMenu"
                 class="flex *:flex items-center *:items-center justify-between hover:text-(--light-blue) duration-300 ease-in-out transition-all"
               >

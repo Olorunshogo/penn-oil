@@ -27,6 +27,12 @@
         keywords: 'Penn Petro Energy social responsibility, community engagement, workforce development, diversity and inclusion, employee wellbeing, social impact in energy sector, supporting local communities',
     });
 
+    import { 
+        contributedUs,
+        volunteerHours,
+        charitableOrganization
+    } from '~/stores/sustainabilityVariables';
+
     
 
 </script>
@@ -37,288 +43,237 @@
         <!-- Section: Hero -->
         <section>        
             
-            <div class="relative w-full h-full overflow-hidden -mt-[11rem]">
+            <div class="relative w-screen h-full overflow-hidden -mt-[11rem]">
 
-                <!-- Image Container -->
-                <NuxtImg
-                    src="https://images.pexels.com/photos/31985272/pexels-photo-31985272/free-photo-of-modern-gaming-setup-with-dual-monitors.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                    alt="Modern Gaming Setup with Dual Monitors"
-                    loading="lazy"
-                    class="relative h-dvh w-full object-cover z-0"
-                />
-                
+                <div class="bg-container">
+                    <NuxtImg
+                        src="https://images.pexels.com/photos/6646778/pexels-photo-6646778.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        alt="@ ladies and a man sharing aids"
+                        loading="lazy"
+                        class="bg"
+                    />
+                </div>
 
-                <!-- Content -->
-                <div class="grid gap-4 bg-(--white) w-full absolute bottom-0 h-1/2 md:h-2/5 max-h-[500px]">
-                    <div class="flex flex-col items-center justify-center w-full max-w-4xl mx-auto h-full gap-2">
+                <!-- Content Layer -->
+                <div class="absolute bottom-0 w-full h-1/3 lg:h-2/5 max-h-[600px] bg-(--white) flex items-center justify-center px-4">
+                    <div class="flex flex-col items-center justify-center text-center gap-4 w-full max-w-5xl mx-auto">
+                        
+                        <span class="text-2xl text-center font-bold text-(--dark-blue)">
+                            sustainability
+                        </span>
+
                         <h1 
                             class="text-5xl md:text-8xl xl:text-9xl text-center font-extrabold bg-clip-text text-transparent" 
-                            style="background-image: url('https://images.pexels.com/photos/31985272/pexels-photo-31985272/free-photo-of-modern-gaming-setup-with-dual-monitors.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); background-size: cover;"
+                            style="background-image: url('https://images.pexels.com/photos/6646778/pexels-photo-6646778.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); background-size: cover;"
                         >
-                            Social Investment
+                            Social investment
                         </h1>
                         
-                        <p class="text-xl lg:text-2xl text-center text-(--black)">
-                            We strive to protect the environment, empower people and get results the right way. This approach is integrated throughout our business.
+                        <p class="text-xl text-center text-(--black)">
+                            We believe our business succeeds when our people and communities succeed. 
+                            Our social investments seek to respond to needs in the communities where we operate around the world. We seek to work with communities and partners to promote job growth and economic development.
                         </p>
                     </div>
-                </div> 
+                </div>
 
             </div>
         </section>
 
-        <!-- Section: Around the world -->
+        <!-- Section: Our approach -->
         <section>
-            <div class="px-(--section-px) lg:px-(--section-px-lg) py-(--section-py) lg:py-(--section-py-lg) bg-(--white) w-full h-full overflow-hidden">
-                
-                <div class="flex flex-col gap-20 lg:gap-24 py-16 lg:py-24 w-full max-w-6xl mx-auto">
-
-                    <div class="flex flex-col items-center justify-center gap-4">
-                        <h2 
-                            class="text-5xl lg:text-8xl text-(--dark-blue) text-wrap text-center font-extrabold cursor-text w-full h-full overflow-hidden"
-                        >
-                            Around the world
-                        </h2>
-
-                        <p class="text-(--black) text-center text-lg lg:text-2xl font-semibold cursor-text">
-                            Learn about our sustainability efforts in the regions where we operate.
-                        </p>
-                    </div> 
-
-                    <div class="flex flex-col gap-4 bg-(--medium-blue) rounded-lg px-4 py-12 lg:px-8 lg:py-20" >
-                        <h3 
-                            class="text-3xl lg:text-5xl text-(--white) text-wrap text-center font-extrabold cursor-text w-full"
-                        >
-                            Find our environment, social and governance topics in one place
+            <div class="px-(--section-px) lg:px-(--section-px-lg) py-(--section-py) lg:py-(--section-py-lg) bg-(--dark-teal) w-full h-full">
+                <div class="flex flex-col gap-16 py-20 w-full max-w-7xl mx-auto h-full">
+                    
+                    <div class="flex flex-col gap-8 *:text-center">
+                        <h3 class="text-4xl lg:text-6xl font-extrabold text-(--light-teal)">
+                            Our approach
                         </h3>
-
-                        <!-- Explore ESG topics from a-z -->
-                        <NuxtLink
-                            to="/investors/esg"
-                            class="group flex *:flex items-center *:items-center justify-center px-2 lg:px-8 py-2 gap-2 lg:gap-4 w-fit mx-auto text-(--white) hover:text-(--black) duration-300 ease-in-out transition-all"
-                        >
-                            <div class="group relative flex items-center justify-center text-xl w-8 h-full overflow-hidden">
-                                <div class="absolute flex items-center left-2 h-full w-12 transition-all duration-500 ease-in-out group-hover:translate-x-full">
-                                    <Icon name="mdi:arrow-right"/>
-                                </div>
-                                
-                                <div class="absolute flex items-center left-2 h-full w-12 -translate-x-full transition-all duration-500 ease-in-out group-hover:translate-x-0">
-                                    <Icon name="mdi:arrow-right" />
-                                </div>
-                            </div>
-                            <span class="group-hover:underline-text font-semibold">Explore ESG topics from a-z</span>
-                        </NuxtLink>
-                    </div> 
-
-                </div>
-
-            </div>
-
-        </section>
-
-        <!-- Section: Energy is essential to modern life -->
-        <section>
-            <div class="px-(--section-px) lg:px-(--section-px-lg) py-(--section-py) lg:py-(--section-py-lg) bg-(--white) w-full h-full overflow-hidden">
-                
-                <div class="flex flex-col gap-20 lg:gap-24 w-full max-w-6xl mx-auto">
-
-                    <div class="flex flex-col items-center justify-center gap-4">
-                        <h2 
-                            class="text-5xl md:text-8xl text-(--dark-blue) text-wrap text-center font-extrabold cursor-text w-full h-full overflow-hidden"
-                        >
-                            Energy is essential to modern life
-                        </h2>
-
-                        <p class="text-(--black) text-center text-lg lg:text-2xl font-semibold cursor-text">
-                            As we've done for more than 140 years, we will continue to evolve and help meet the energy demand of a growing world.
+                        <p class="text-lg text-(--white) font-medium">
+                            We strive to empower people around the world to improve their lives, achieve their ambitions and meet their full potential. We work to build trusting, mutually beneficial relationships. 
+                            Our social investments support themes relevant to the communities where we operate: people, environment and prosperity.
                         </p>
-                    </div> 
+                    </div>
 
-                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 w-full h-full">
-                        <!-- Climate and Social Investment -->
-                        <div class="grid gap-6 *:h-150">
+                    <div class="grid md:grid-cols-3 gap-12 place-content-center">
+                        <!-- People -->
+                        <div class="flex flex-row lg:flex-col items-center gap-4 w-full h-full">
+                            <NuxtImg
+                                src="/images/sustainability/social_people.png"
+                                alt="Image similar to an icon of 3 people"
+                                loading="lazy"
+                                class="w-16 lg:w-50 h-16 lg:h-50 rounded-full"
+                            />
 
-                            <!-- Climate -->
-                            <div class="grid p-6 gap-8 rounded-2xl bg-(--medium-blue) shadow-lg">
-                                <NuxtImg
-                                    src="https://images.pexels.com/photos/2163098/pexels-photo-2163098.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                                    alt="Photo of a Woman Holding a Drone"
-                                    loading="lazy"
-                                    class="w-full h-60 object-cover rounded-2xl"
-                                />
-
-                                <div class="flex flex-col gap-4">
-                                    <h2 
-                                        class="text-4xl font-bold text-(--white)"
-                                    >
-                                        Climate
-                                    </h2>
-
-                                    <p class="text-(--white) text-xl font-semibold cursor-text">
-                                        We’re working to lower the carbon intensity of our operations. 
-                                        At the same time, we’re investing to grow our capabilities in various ways, including renewable fuels and emerging technologies.
-                                    </p>
-
-                                    <!-- Explore ESG topics from a-z -->
-                                        <NuxtLink
-                                            to="/sustainability/climate"
-                                            class="group flex *:flex items-center *:items-center justify-center px-2 lg:px-8 py-2 gap-2 lg:gap-4 w-fit text-(--white) hover:text-(--black) duration-300 ease-in-out transition-all"
-                                        >
-                                            <div class="group relative flex items-center justify-center text-xl w-8 h-full overflow-hidden">
-                                                <div class="absolute flex items-center left-2 h-full w-12 transition-all duration-500 ease-in-out group-hover:translate-x-full">
-                                                    <Icon name="mdi:arrow-right"/>
-                                                </div>
-                                                
-                                                <div class="absolute flex items-center left-2 h-full w-12 -translate-x-full transition-all duration-500 ease-in-out group-hover:translate-x-0">
-                                                    <Icon name="mdi:arrow-right" />
-                                                </div>
-                                            </div>
-                                            <span class="group-hover:underline-text font-semibold">Learn more</span>
-                                        </NuxtLink>
-                                </div> 
-
-
+                            <div class="grid gap-2 text-(--white) *:lg:text-center">
+                                <h4 class="font-bold text-lg">People</h4>
+                                <p class="text-base font-medium">
+                                    We believe working together with governments, nonprofits, and stakeholders in the communities where we operate across the globe help advance progress and strengthen communities.
+                                </p>
                             </div>
-
-                            <!-- Social Investment -->
-                            <div class="grid p-6 gap-8 rounded-2xl bg-(--medium-teal) shadow-lg">
-                                <NuxtImg
-                                    src="https://images.pexels.com/photos/8370328/pexels-photo-8370328.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                                    alt="Female Vlogger doing a Video Recording"
-                                    loading="lazy"
-                                    class="w-full h-60 object-cover rounded-2xl"
-                                />
-
-                                <div class="flex flex-col gap-4">
-                                    <h2 
-                                        class="text-4xl font-bold text-(--white)"
-                                    >
-                                        Social Investment
-                                    </h2>
-
-                                    <p class="text-(--white) text-xl font-semibold cursor-text">
-                                        We believe our business succeeds when our people and communities do. 
-                                        We’re striving to empower people worldwide to help improve their lives and achieve their ambitions.
-                                    </p>
-
-                                    <!-- Explore ESG topics from a-z -->
-                                        <NuxtLink
-                                            to="/sustainability/social"
-                                            class="group flex *:flex items-center *:items-center justify-center px-2 lg:px-8 py-2 gap-2 lg:gap-4 w-fit text-(--white) hover:text-(--black) duration-300 ease-in-out transition-all"
-                                        >
-                                            <div class="group relative flex items-center justify-center text-xl w-8 h-full overflow-hidden">
-                                                <div class="absolute flex items-center left-2 h-full w-12 transition-all duration-500 ease-in-out group-hover:translate-x-full">
-                                                    <Icon name="mdi:arrow-right"/>
-                                                </div>
-                                                
-                                                <div class="absolute flex items-center left-2 h-full w-12 -translate-x-full transition-all duration-500 ease-in-out group-hover:translate-x-0">
-                                                    <Icon name="mdi:arrow-right" />
-                                                </div>
-                                            </div>
-                                            <span class="group-hover:underline-text font-semibold">Learn more</span>
-                                        </NuxtLink>
-                                </div> 
-
-
-                            </div>
-
                         </div>
 
-                        <!-- Environment and Diversity and Inclusion -->
-                        <div class="grid gap-6 *:h-150">
+                        <!-- Environment -->
+                        <div class="flex flex-row lg:flex-col items-center gap-4 w-full h-full">
+                            <NuxtImg
+                                src="/images/sustainability/social_environment.png"
+                                alt="Image similar to an icon of 3 a tree"
+                                loading="lazy"
+                                class="w-16 lg:w-50 h-16 lg:h-50 rounded-full"
+                            />
 
-                            <!-- Environment-->
-                            <div class="grid p-6 gap-8 rounded-2xl bg-(--dark-green) shadow-lg">
-                                <NuxtImg
-                                    src="https://images.pexels.com/photos/1108572/pexels-photo-1108572.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                                    alt="Clear Light Bulb Planter on Gray Rock"
-                                    loading="lazy"
-                                    class="w-full h-60 object-cover rounded-2xl"
-                                />
-
-                                <div class="flex flex-col gap-4">
-                                    <h2 
-                                        class="text-4xl font-bold text-(--white)"
-                                    >
-                                        Environment
-                                    </h2>
-
-                                    <p class="text-(--white) text-xl font-semibold cursor-text">
-                                        One of our priorities is to help protect the environment. 
-                                        We do this through responsible design, development, operations and retirement of assets.
-                                    </p>
-
-                                    <!-- Explore ESG topics from a-z -->
-                                        <NuxtLink
-                                            to="/sustainability/climate"
-                                            class="group flex *:flex items-center *:items-center justify-center px-2 lg:px-8 py-2 gap-2 lg:gap-4 w-fit text-(--white) hover:text-(--black) duration-300 ease-in-out transition-all"
-                                        >
-                                            <div class="group relative flex items-center justify-center text-xl w-8 h-full overflow-hidden">
-                                                <div class="absolute flex items-center left-2 h-full w-12 transition-all duration-500 ease-in-out group-hover:translate-x-full">
-                                                    <Icon name="mdi:arrow-right"/>
-                                                </div>
-                                                
-                                                <div class="absolute flex items-center left-2 h-full w-12 -translate-x-full transition-all duration-500 ease-in-out group-hover:translate-x-0">
-                                                    <Icon name="mdi:arrow-right" />
-                                                </div>
-                                            </div>
-                                            <span class="group-hover:underline-text font-semibold">Learn more</span>
-                                        </NuxtLink>
-                                </div> 
-
+                            <div class="grid gap-2 text-(--white) *:lg:text-center">
+                                <h4 class="font-bold text-lg">Environment</h4>
+                                <p class="text-base font-medium">
+                                    We work to support conservation efforts for the communities where we operate.
+                                </p>
                             </div>
+                        </div>
 
-                            <!-- Diversity and Inclusion -->
-                            <div class="grid p-6 gap-8 rounded-2xl bg-(--dark-orange) shadow-lg">
-                                <NuxtImg
-                                    src="https://images.pexels.com/photos/6146703/pexels-photo-6146703.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                                    alt="Close-Up Shot of Hands"
-                                    loading="lazy"
-                                    class="w-full h-60 object-cover rounded-2xl"
-                                />
+                        <!-- Prosperity -->
+                        <div class="flex flex-row lg:flex-col items-center gap-4 w-full h-full">
+                            <NuxtImg
+                                src="/images/sustainability/social_prosperity.png"
+                                alt="Image similar to an icon of 3 a tree"
+                                loading="lazy"
+                                class="w-16 lg:w-50 h-16 lg:h-50 rounded-full"
+                            />
 
-                                <div class="flex flex-col gap-4">
-                                    <h2 
-                                        class="text-4xl font-bold text-(--white) text-wrap"
-                                    >
-                                        Diversity and Inclusion
-                                    </h2>
-
-                                    <p class="text-(--white) text-xl font-semibold cursor-text">
-                                        Our success is driven by a dedicated, diverse and highly skilled global workforce united by The Chevron Way. 
-                                        We treat our employees and our partners with respect and dignity.
-                                    </p>
-
-                                    <!-- Explore ESG topics from a-z -->
-                                        <NuxtLink
-                                            to="/sustainability/social"
-                                            class="group flex *:flex items-center *:items-center justify-center px-2 lg:px-8 py-2 gap-2 lg:gap-4 w-fit text-(--white) hover:text-(--black) duration-300 ease-in-out transition-all"
-                                        >
-                                            <div class="group relative flex items-center justify-center text-xl w-8 h-full overflow-hidden">
-                                                <div class="absolute flex items-center left-2 h-full w-12 transition-all duration-500 ease-in-out group-hover:translate-x-full">
-                                                    <Icon name="mdi:arrow-right"/>
-                                                </div>
-                                                
-                                                <div class="absolute flex items-center left-2 h-full w-12 -translate-x-full transition-all duration-500 ease-in-out group-hover:translate-x-0">
-                                                    <Icon name="mdi:arrow-right" />
-                                                </div>
-                                            </div>
-                                            <span class="group-hover:underline-text font-bold">Learn more</span>
-                                        </NuxtLink>
-                                </div> 
-
-
+                            <div class="grid gap-2 text-(--white) *:lg:text-center">
+                                <h4 class="font-bold text-lg">Prosperity</h4>
+                                <p class="text-base font-medium">
+                                    We seek to work with communities and partners to promote education and economic development.
+                                </p>
                             </div>
-
                         </div>
                     </div>
 
 
                 </div>
+            </div>
+        </section>
+
+        <!-- Section: Video -->
+        <section>
+            <div class="w-full h-full">
+                <video 
+                    autoplay 
+                    loop muted playsinline
+                    class="bg"
+                >
+                    <source src="/videos/sustainability/Sustainability_Social_Investment_Slideshow-Final.mp4" type="video/mp4" >
+                </video>
+            </div>
+        </section>
+
+        <!-- 2023 volunteer highlights -->
+        <section>                  
+            <div class="relative bg-(--dark-purple) px-(--section-px) lg:px-(--section-px-lg) py-(--section-py) lg:py-(--section-py-lg) w-full h-full">
+
+                <div class="flex flex-col gap-16 py-20 w-full max-w-7xl mx-auto h-full">
+
+                    <!-- Fueling a lower carbon future -->
+                    <div class="flex flex-col items-center justify-center gap-8 *:text-center text-(--white) w-full h-full">
+                        <span class="text-2xl text-center font-bold">
+                            people
+                        </span>
+                        <h2 class="text-5xl lg:text-8xl text-center font-extrabold">
+                            2023 volunteer highlights
+                        </h2>
+                        
+                        <p class="text-lg text-center">
+                            The Penn Petro Energy Humankind is a program in the United States that aligns personal purpose with company purpose to support Penn Petro Energy’s People Strategy, enrich the employee experience and encourage community involvement.
+                        </p>
+                    </div>
+
+
+                    <div class="grid md:grid-cols-3 px-4 gap-6 text-(--white) py-12 w-full max-w-7xl mx-auto h-full">
+
+                        <!-- Contributed to US non-profits -->
+                        <div class="flex flex-col items-center justify-center rounded-2xl  shadow-lg gap-8 bg-(--medium-purple) p-4 w-full mx-auto h-50 md:h-70">                            
+                            <div class="flex flex-col items-center justify-center *:text-center">
+                                <p class="text-lg font-bold">
+                                    Contributed to US non-profits
+                                </p>                            
+
+                                <h3 class="text-5xl md:text-7xl text-center font-extrabold text-(--white)">
+                                    ${{ contributedUs }}M
+                                </h3>
+                            </div>
+                        </div>
+
+                        <!-- Volunteer hours -->
+                        <div class="flex flex-col items-center justify-center rounded-2xl  shadow-lg gap-8 bg-(--medium-purple) p-4 w-full mx-auto h-50 md:h-70">                            
+                            <div class="flex flex-col items-center justify-center *:text-center">
+                                <p class="text-lg font-bold">
+                                    Volunteer hours
+                                </p>                            
+
+                                <h3 class="text-5xl md:text-7xl text-center font-extrabold text-(--white)">
+                                    {{ volunteerHours }}
+                                </h3>
+                            </div>
+                        </div>
+
+                        <!-- Charitable organizations -->
+                        <div class="flex flex-col items-center justify-center rounded-2xl shadow-lg gap-8 bg-(--medium-purple) p-4 w-full mx-auto h-50 md:h-70">                            
+                            <div class="flex flex-col items-center justify-center *:text-center">
+                                <p class="text-lg font-bold">
+                                    Charitable organizations
+                                </p>                            
+
+                                <h3 class="text-5xl md:text-7xl text-center font-extrabold text-(--white)">
+                                    {{ charitableOrganization }}
+                                </h3>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                </div>
 
             </div>
-
         </section>
+
+        <!-- building on a sound legacy -->
+        <section>                  
+            <div class="relative bg-(--dark-teal) px-(--section-px) lg:px-(--section-px-lg) py-(--section-py) lg:py-(--section-py-lg) w-full h-full">
+
+                <div class="flex flex-col gap-16 py-20 w-full max-w-7xl mx-auto h-full">
+
+                    <!-- Building on a sound legacy -->
+                    <div class="flex flex-col items-center justify-center gap-8 *:text-center text-(--white) w-full h-full">
+
+                        <h2 class="text-5xl lg:text-8xl text-center font-extrabold">
+                            Building on a sound legacy
+                        </h2>
+                        
+                        <p class="text-lg text-center">
+                            Penn Petro Energy Australia and TSH (Teach Speak Hear) have collaborated to deliver ear health care in the northwest region of Western Australia. Working together to prevent middle ear disease and improving child health outcomes.
+                        </p>
+                    </div>
+
+
+                    <div class="flex flex-col px-4 gap-6 text-(--white) py-12 w-full max-w-7xl mx-auto h-full">
+
+                        <div class="flex items-center justify-center w-full mx-auto h-full">
+                            <iframe
+                                width="800" height="400"
+                                src="https://youtube.com/embed/Pqjd2QE6xyg"
+                                frameborder="0"
+                                allowfullscreen
+                                class="rounded-2xl"
+                            ></iframe>
+                        </div>
+                        
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+
+
 
         <!-- Section: Home Newsroom -->
         <section>
@@ -326,7 +281,7 @@
             <div class="w-full h-full">           
                 <HomeNewsroom
                     category="newsroom" 
-                    title="Latest at Penn Petro Energy"
+                    title="Social investment in the news"
                 />
             </div>
 

@@ -33,38 +33,52 @@
 
 <template>
     <div>
-        <!-- Section: Hero -->
         <section>        
             
-            <div class="relative w-full h-full overflow-hidden -mt-[11rem]">
+            <div class="relative w-screen h-full overflow-hidden -mt-[11rem]">
 
-                <!-- Image Container -->
-                <NuxtImg
-                    src="https://images.pexels.com/photos/31985272/pexels-photo-31985272/free-photo-of-modern-gaming-setup-with-dual-monitors.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                    alt="Modern Gaming Setup with Dual Monitors"
-                    loading="lazy"
-                    class="relative h-dvh w-full object-cover z-0"
-                />
-                
+                <div class="bg-container">
+                    <!-- <video 
+                        autoplay 
+                        loop muted playsinline
+                        class="bg"
+                    >
+                        <source src="/videos/who/who-we-are-hero-video-compressed.mp4" type="video/mp4" >
+                    </video> -->
 
-                <!-- Content -->
-                <div class="grid gap-4 bg-(--white) w-full absolute bottom-0 h-1/2 md:h-2/5 max-h-[500px]">
-                    <div class="flex flex-col items-center justify-center w-full max-w-4xl mx-auto h-full gap-2">
+                    <NuxtImg
+                        src="https://images.pexels.com/photos/461789/pexels-photo-461789.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        alt="Front-end loader"
+                        loading="lazy"
+                        class="bg"
+                    />
+                </div>
+
+
+                <!-- Content Layer -->
+                <div class="absolute bottom-0 w-full h-1/3 lg:h-2/5 max-h-[600px] bg-(--white) flex items-center justify-center px-4">
+                    <div class="flex flex-col items-center justify-center text-center gap-4 w-full max-w-5xl mx-auto">
+                        
+                        <span class="text-2xl text-center font-bold text-(--dark-blue)">
+                            sustainability
+                        </span>
                         <h1 
                             class="text-5xl md:text-8xl xl:text-9xl text-center font-extrabold bg-clip-text text-transparent" 
-                            style="background-image: url('https://images.pexels.com/photos/31985272/pexels-photo-31985272/free-photo-of-modern-gaming-setup-with-dual-monitors.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); background-size: cover;"
+                            style="background-image: url('https://images.pexels.com/photos/461789/pexels-photo-461789.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); background-size: cover;"
                         >
                             Environment
                         </h1>
                         
-                        <p class="text-xl lg:text-2xl text-center text-(--black)">
-                            We strive to protect the environment, empower people and get results the right way. This approach is integrated throughout our business.
+                        <p class="text-xl text-center text-(--black)">
+                            Penn Petro Energy is taking steps to help protect the environment where we operate. 
+                            We do this by stewarding our water usage, integrating biodiversity into our decision making, reducing waste and managing air emissions from our operations.
                         </p>
                     </div>
-                </div> 
+                </div>
 
             </div>
         </section>
+
 
         <!-- Section: Around the world -->
         <section>

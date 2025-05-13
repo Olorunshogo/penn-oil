@@ -39,11 +39,11 @@
             
             <div class="relative w-screen h-full overflow-hidden -mt-[11rem]">
 
-                <div class="video-container">
+                <div class="bg-container">
                     <video 
                         autoplay 
                         loop muted playsinline
-                        class="video-bg"
+                        class="bg"
                     >
                         <source src="/videos/who/who-we-are-hero-video-compressed.mp4" type="video/mp4" >
                     </video>
