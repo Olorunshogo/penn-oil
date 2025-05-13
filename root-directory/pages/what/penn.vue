@@ -3,7 +3,8 @@
     import { useHead } from 'nuxt/app';
 
     useHead({
-        title: 'What Overview Page',
+        title: 'Penn Petro Energy Worldwide',
+        titleTemplate: '%s | Penn Petro Energy'
     });
 
     definePageMeta({
