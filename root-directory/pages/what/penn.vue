@@ -27,14 +27,46 @@
         keywords: 'Penn Petro Energy global operations, international energy company, energy projects worldwide, global energy solutions, Penn Petro presence, international oil and gas, sustainable global energy',
     });
 
+    import { 
+        pennCountries 
+    } from '~/models/pennCountries';
+
 </script>
 
 
 <template>
-    <div>
-        <div class="w-full h-full">            
-            <PageWhatPenn />
-        </div>
+    <div class="flex flex-col w-full h-full">   
+        <!-- Section: Hero -->
+        <section class="grid gap-16 px-(--section-px) lg:px-(--section-py-lx) py-(--section-py) lg:py-(--section-py-lg) -mt-[11rem] w-full h-full bg-(--dark-blue)">
+            
+            <div class="flex flex-col items-center justify-center gap-12 text-(--white) w-full max-w-7xl mx-auto h-full pt-60 pb-8">
+                <h1 class="text-center text-5xl lg:text-9xl font-extrabold">
+                    Penn Petro Energy Worldwide
+                </h1>
+                <p class="font-medium text-xl text-center">
+                    Chevron conducts business all around the globe. The links below will provide you with detailed information for the countries where Penn Petro Energy’s work is most extensive.
+                </p>
+            </div>
+            
+        </section>
+
+        <!-- Countries -->
+        <section>
+            <div class="bg-(--light-gray)/30 px-(--section-px) lg:px-(--section-px-lg) py-(--section-py) lg:py-(--section-py-lg)">
+                <div class="flex flex-col max-w-7xl mx-auto">
+                    <CustomPennWorldwide
+                        v-for="item in pennCountries"
+                        :key="item.id"
+                        :id="item.id"
+                        :flagImgSrc="item.flagImgSrc"
+                        :flagImgAlt="item.flagImgAlt"
+                        :flagName="item.flagName"
+                        :ctaLink="item.ctaLink"
+                        :ctaName="item.ctaName"
+                    />
+                </div>
+            </div>
+        </section>
     </div>
 </template>
 
