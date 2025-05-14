@@ -33,7 +33,7 @@
         charitableOrganization
     } from '~/stores/sustainabilityVariables';
 
-    
+    import { sustainabilitySocialHeroImageBg } from '~/models/heroBgModels';    
 
 </script>
 
@@ -41,43 +41,19 @@
 <template>
     <div>
         <!-- Section: Hero -->
-        <section>      
-            
-            <div class="relative w-screen h-full overflow-hidden -mt-[11rem]">
-
-                <div class="bg-container">
-                    <NuxtImg
-                        src="https://images.pexels.com/photos/6646778/pexels-photo-6646778.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                        alt="Two ladies and a man sharing aids"
-                        loading="lazy"
-                        class="bg"
-                    />
-                </div>
-
-                <!-- Content Layer -->
-                <div class="absolute bottom-0 w-full h-1/3 lg:h-2/5 max-h-[600px] bg-(--white) flex items-center justify-center px-4">
-                    <div class="flex flex-col items-center justify-center text-center gap-4 w-full max-w-5xl mx-auto">
-                        
-                        <span class="text-2xl text-center font-bold text-(--dark-blue)">
-                            sustainability
-                        </span>
-
-                        <h1 
-                            class="text-5xl md:text-8xl xl:text-9xl text-center font-extrabold bg-clip-text text-transparent" 
-                            style="background-image: url('https://images.pexels.com/photos/6646778/pexels-photo-6646778.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); background-size: cover;"
-                        >
-                            Social investment
-                        </h1>
-                        
-                        <p class="text-xl text-center text-(--black)">
-                            We believe our business succeeds when our people and communities succeed. 
-                            Our social investments seek to respond to needs in the communities where we operate around the world. We seek to work with communities and partners to promote job growth and economic development.
-                        </p>
-                    </div>
-                </div>
-
-            </div>
-        </section>
+        <div>
+            <HeroSectionImageBg
+                :imgSrc="sustainabilitySocialHeroImageBg.imgSrc"
+                :imgAlt="sustainabilitySocialHeroImageBg.imgAlt"
+                :category="sustainabilitySocialHeroImageBg.category"
+                :title="sustainabilitySocialHeroImageBg.title"
+                :titleBgImageSrc="sustainabilitySocialHeroImageBg.titleBgImageSrc"
+                :displayLink="sustainabilitySocialHeroImageBg.displayLink"
+                :paragraph="sustainabilitySocialHeroImageBg.paragraph"
+                :link="sustainabilitySocialHeroImageBg.link"
+                :linkName="sustainabilitySocialHeroImageBg.linkName"
+            />
+        </div>
 
         <!-- Section: Our approach -->
         <section>
@@ -86,11 +62,10 @@
                     
                     <div class="flex flex-col gap-8 *:text-center">
                         <h3 class="text-4xl lg:text-6xl font-extrabold text-(--light-teal)">
-                            Our approach
+                            
                         </h3>
                         <p class="text-lg text-(--white) font-medium">
-                            We strive to empower people around the world to improve their lives, achieve their ambitions and meet their full potential. We work to build trusting, mutually beneficial relationships. 
-                            Our social investments support themes relevant to the communities where we operate: people, environment and prosperity.
+                            
                         </p>
                     </div>
 
@@ -98,7 +73,7 @@
                         <!-- People -->
                         <div class="flex flex-row lg:flex-col items-center gap-4 w-full h-full">
                             <NuxtImg
-                                src="/images/sustainability/social_people.png"
+                                src="/sustainability/social_people.png"
                                 alt="Image similar to an icon of 3 people"
                                 loading="lazy"
                                 class="w-16 lg:w-50 h-16 lg:h-50 rounded-full"
@@ -115,7 +90,7 @@
                         <!-- Environment -->
                         <div class="flex flex-row lg:flex-col items-center gap-4 w-full h-full">
                             <NuxtImg
-                                src="/images/sustainability/social_tree.png"
+                                src="/sustainability/social_tree.png"
                                 alt="Image similar to an icon of 3 a tree"
                                 loading="lazy"
                                 class="w-16 lg:w-50 h-16 lg:h-50 rounded-full"
@@ -132,7 +107,7 @@
                         <!-- Prosperity -->
                         <div class="flex flex-row lg:flex-col items-center gap-4 w-full h-full">
                             <NuxtImg
-                                src="/images/sustainability/social_prosperity.png"
+                                src="sustainability/social_prosperity.png"
                                 alt="Image similar to an icon of 3 a tree"
                                 loading="lazy"
                                 class="w-16 lg:w-50 h-16 lg:h-50 rounded-full"
@@ -160,7 +135,7 @@
                     loop muted playsinline
                     class="bg"
                 >
-                    <source src="/videos/sustainability/Sustainability_Social_Investment_Slideshow-Final.mp4" type="video/mp4" >
+                    <source src="/sustainability/Sustainability_Social_Investment_Slideshow-Final.mp4" type="video/mp4" >
                 </video>
             </div>
         </section>

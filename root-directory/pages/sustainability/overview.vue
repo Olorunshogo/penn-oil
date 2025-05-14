@@ -28,43 +28,26 @@
         keywords: 'Penn Petro Energy sustainability, sustainable energy solutions, environmental responsibility, corporate social responsibility, clean energy initiatives, energy transition, sustainable oil and gas practices',
     });
 
+    import { sustainabilityOverviewHeroVideoBg } from '~/models/heroBgModels';
+
 </script>
 
 
 <template>
     <div>
+        
         <!-- Section: Hero -->
-        <section>        
-            
-            <div class="relative w-full h-full overflow-hidden -mt-[11rem]">
-
-                <!-- Image Container -->
-                <NuxtImg
-                    src="https://images.pexels.com/photos/31985272/pexels-photo-31985272/free-photo-of-modern-gaming-setup-with-dual-monitors.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                    alt="Modern Gaming Setup with Dual Monitors"
-                    loading="lazy"
-                    class="relative h-dvh w-full object-cover z-0"
-                />
-                
-
-                <!-- Content -->
-                <div class="grid gap-4 bg-(--white) w-full absolute bottom-0 h-1/2 md:h-2/5 max-h-[500px]">
-                    <div class="flex flex-col items-center justify-center w-full max-w-4xl mx-auto h-full gap-2">
-                        <h1 
-                            class="text-5xl md:text-8xl xl:text-9xl text-center font-extrabold bg-clip-text text-transparent" 
-                            style="background-image: url('https://images.pexels.com/photos/31985272/pexels-photo-31985272/free-photo-of-modern-gaming-setup-with-dual-monitors.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); background-size: cover;"
-                        >
-                            Sustainability
-                        </h1>
-                        
-                        <p class="text-xl lg:text-2xl text-center text-(--black)">
-                            We strive to protect the environment, empower people and get results the right way. This approach is integrated throughout our business.
-                        </p>
-                    </div>
-                </div> 
-
-            </div>
-        </section>
+        <div>
+            <HeroSectionVideoBg
+                :videoSrc="sustainabilityOverviewHeroVideoBg.videoSrc"
+                :title="sustainabilityOverviewHeroVideoBg.title"
+                :titleBgVideoSrc="sustainabilityOverviewHeroVideoBg.titleBgVideoSrc"
+                :paragraph="sustainabilityOverviewHeroVideoBg.paragraph"
+                :displayLink="sustainabilityOverviewHeroVideoBg.displayLink"
+                :link="sustainabilityOverviewHeroVideoBg.link"
+                :linkName="sustainabilityOverviewHeroVideoBg.linkName"
+            />
+        </div>
 
         <!-- Section: Around the world -->
         <section>
@@ -133,183 +116,175 @@
                         </p>
                     </div> 
 
-                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 w-full h-full">
-                        <!-- Climate and Social Investment -->
-                        <div class="grid gap-6 *:h-150">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 w-4/5 mx-auto md:w-full h-full">
 
-                            <!-- Climate -->
-                            <div class="grid p-6 gap-8 rounded-2xl bg-(--medium-blue) shadow-lg">
-                                <NuxtImg
-                                    src="https://images.pexels.com/photos/2163098/pexels-photo-2163098.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                                    alt="Photo of a Woman Holding a Drone"
-                                    loading="lazy"
-                                    class="w-full h-60 object-cover rounded-2xl"
-                                />
+                        <!-- Climate -->
+                        <div class="grid p-6 gap-8 rounded-2xl bg-(--medium-blue) shadow-lg">
+                            <NuxtImg
+                                src="/sustainability/Sustainability_ClimateThumbnail.jpg"
+                                alt="Photo of a Woman Holding a Drone"
+                                loading="lazy"
+                                class="w-full h-60 object-cover rounded-2xl"
+                            />
 
-                                <div class="flex flex-col gap-4">
-                                    <h2 
-                                        class="text-4xl font-bold text-(--white)"
+                            <div class="flex flex-col gap-4">
+                                <h2 
+                                    class="text-4xl font-bold text-(--white)"
+                                >
+                                    Climate
+                                </h2>
+
+                                <p class="text-(--white) text-xl font-semibold cursor-text">
+                                    We’re working to lower the carbon intensity of our operations. 
+                                    At the same time, we’re investing to grow our capabilities in various ways, including renewable fuels and emerging technologies.
+                                </p>
+
+                                <!-- Explore ESG topics from a-z -->
+                                    <NuxtLink
+                                        to="/sustainability/climate"
+                                        class="group flex *:flex items-center *:items-center justify-center px-2 lg:px-8 py-2 gap-2 lg:gap-4 w-fit text-(--white) hover:text-(--black) duration-300 ease-in-out transition-all"
                                     >
-                                        Climate
-                                    </h2>
-
-                                    <p class="text-(--white) text-xl font-semibold cursor-text">
-                                        We’re working to lower the carbon intensity of our operations. 
-                                        At the same time, we’re investing to grow our capabilities in various ways, including renewable fuels and emerging technologies.
-                                    </p>
-
-                                    <!-- Explore ESG topics from a-z -->
-                                        <NuxtLink
-                                            to="/sustainability/climate"
-                                            class="group flex *:flex items-center *:items-center justify-center px-2 lg:px-8 py-2 gap-2 lg:gap-4 w-fit text-(--white) hover:text-(--black) duration-300 ease-in-out transition-all"
-                                        >
-                                            <div class="group relative flex items-center justify-center text-xl w-8 h-full overflow-hidden">
-                                                <div class="absolute flex items-center left-2 h-full w-12 transition-all duration-500 ease-in-out group-hover:translate-x-full">
-                                                    <Icon name="mdi:arrow-right"/>
-                                                </div>
-                                                
-                                                <div class="absolute flex items-center left-2 h-full w-12 -translate-x-full transition-all duration-500 ease-in-out group-hover:translate-x-0">
-                                                    <Icon name="mdi:arrow-right" />
-                                                </div>
+                                        <div class="group relative flex items-center justify-center text-xl w-8 h-full overflow-hidden">
+                                            <div class="absolute flex items-center left-2 h-full w-12 transition-all duration-500 ease-in-out group-hover:translate-x-full">
+                                                <Icon name="mdi:arrow-right"/>
                                             </div>
-                                            <span class="group-hover:underline-text font-semibold">Learn more</span>
-                                        </NuxtLink>
-                                </div> 
-
-
-                            </div>
-
-                            <!-- Social Investment -->
-                            <div class="grid p-6 gap-8 rounded-2xl bg-(--medium-teal) shadow-lg">
-                                <NuxtImg
-                                    src="https://images.pexels.com/photos/8370328/pexels-photo-8370328.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                                    alt="Female Vlogger doing a Video Recording"
-                                    loading="lazy"
-                                    class="w-full h-60 object-cover rounded-2xl"
-                                />
-
-                                <div class="flex flex-col gap-4">
-                                    <h2 
-                                        class="text-4xl font-bold text-(--white)"
-                                    >
-                                        Social Investment
-                                    </h2>
-
-                                    <p class="text-(--white) text-xl font-semibold cursor-text">
-                                        We believe our business succeeds when our people and communities do. 
-                                        We’re striving to empower people worldwide to help improve their lives and achieve their ambitions.
-                                    </p>
-
-                                    <!-- Explore ESG topics from a-z -->
-                                        <NuxtLink
-                                            to="/sustainability/social"
-                                            class="group flex *:flex items-center *:items-center justify-center px-2 lg:px-8 py-2 gap-2 lg:gap-4 w-fit text-(--white) hover:text-(--black) duration-300 ease-in-out transition-all"
-                                        >
-                                            <div class="group relative flex items-center justify-center text-xl w-8 h-full overflow-hidden">
-                                                <div class="absolute flex items-center left-2 h-full w-12 transition-all duration-500 ease-in-out group-hover:translate-x-full">
-                                                    <Icon name="mdi:arrow-right"/>
-                                                </div>
-                                                
-                                                <div class="absolute flex items-center left-2 h-full w-12 -translate-x-full transition-all duration-500 ease-in-out group-hover:translate-x-0">
-                                                    <Icon name="mdi:arrow-right" />
-                                                </div>
+                                            
+                                            <div class="absolute flex items-center left-2 h-full w-12 -translate-x-full transition-all duration-500 ease-in-out group-hover:translate-x-0">
+                                                <Icon name="mdi:arrow-right" />
                                             </div>
-                                            <span class="group-hover:underline-text font-semibold">Learn more</span>
-                                        </NuxtLink>
-                                </div> 
+                                        </div>
+                                        <span class="group-hover:underline-text font-semibold">Learn more</span>
+                                    </NuxtLink>
+                            </div> 
 
-
-                            </div>
 
                         </div>
 
-                        <!-- Environment and Diversity and Inclusion -->
-                        <div class="grid gap-6 *:h-150">
+                        <!-- Environment-->
+                        <div class="grid p-6 gap-8 rounded-2xl bg-(--dark-green) shadow-lg">
+                            <NuxtImg
+                                src="/sustainability/Sustainability_EnvironmentThumbnail.jpg"
+                                alt="Three people eating outside"
+                                loading="lazy"
+                                class="w-full h-60 object-cover rounded-2xl"
+                            />
 
-                            <!-- Environment-->
-                            <div class="grid p-6 gap-8 rounded-2xl bg-(--dark-green) shadow-lg">
-                                <NuxtImg
-                                    src="https://images.pexels.com/photos/1108572/pexels-photo-1108572.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                                    alt="Clear Light Bulb Planter on Gray Rock"
-                                    loading="lazy"
-                                    class="w-full h-60 object-cover rounded-2xl"
-                                />
+                            <div class="flex flex-col gap-4">
+                                <h2 
+                                    class="text-4xl font-bold text-(--white)"
+                                >
+                                    Environment
+                                </h2>
 
-                                <div class="flex flex-col gap-4">
-                                    <h2 
-                                        class="text-4xl font-bold text-(--white)"
+                                <p class="text-(--white) text-xl font-semibold cursor-text">
+                                    One of our priorities is to help protect the environment. 
+                                    We do this through responsible design, development, operations and retirement of assets.
+                                </p>
+
+                                <!-- Explore ESG topics from a-z -->
+                                    <NuxtLink
+                                        to="/sustainability/climate"
+                                        class="group flex *:flex items-center *:items-center justify-center px-2 lg:px-8 py-2 gap-2 lg:gap-4 w-fit text-(--white) hover:text-(--black) duration-300 ease-in-out transition-all"
                                     >
-                                        Environment
-                                    </h2>
-
-                                    <p class="text-(--white) text-xl font-semibold cursor-text">
-                                        One of our priorities is to help protect the environment. 
-                                        We do this through responsible design, development, operations and retirement of assets.
-                                    </p>
-
-                                    <!-- Explore ESG topics from a-z -->
-                                        <NuxtLink
-                                            to="/sustainability/climate"
-                                            class="group flex *:flex items-center *:items-center justify-center px-2 lg:px-8 py-2 gap-2 lg:gap-4 w-fit text-(--white) hover:text-(--black) duration-300 ease-in-out transition-all"
-                                        >
-                                            <div class="group relative flex items-center justify-center text-xl w-8 h-full overflow-hidden">
-                                                <div class="absolute flex items-center left-2 h-full w-12 transition-all duration-500 ease-in-out group-hover:translate-x-full">
-                                                    <Icon name="mdi:arrow-right"/>
-                                                </div>
-                                                
-                                                <div class="absolute flex items-center left-2 h-full w-12 -translate-x-full transition-all duration-500 ease-in-out group-hover:translate-x-0">
-                                                    <Icon name="mdi:arrow-right" />
-                                                </div>
+                                        <div class="group relative flex items-center justify-center text-xl w-8 h-full overflow-hidden">
+                                            <div class="absolute flex items-center left-2 h-full w-12 transition-all duration-500 ease-in-out group-hover:translate-x-full">
+                                                <Icon name="mdi:arrow-right"/>
                                             </div>
-                                            <span class="group-hover:underline-text font-semibold">Learn more</span>
-                                        </NuxtLink>
-                                </div> 
-
-                            </div>
-
-                            <!-- Diversity and Inclusion -->
-                            <div class="grid p-6 gap-8 rounded-2xl bg-(--dark-orange) shadow-lg">
-                                <NuxtImg
-                                    src="https://images.pexels.com/photos/6146703/pexels-photo-6146703.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                                    alt="Close-Up Shot of Hands"
-                                    loading="lazy"
-                                    class="w-full h-60 object-cover rounded-2xl"
-                                />
-
-                                <div class="flex flex-col gap-4">
-                                    <h2 
-                                        class="text-4xl font-bold text-(--white) text-wrap"
-                                    >
-                                        Diversity and Inclusion
-                                    </h2>
-
-                                    <p class="text-(--white) text-xl font-semibold cursor-text">
-                                        Our success is driven by a dedicated, diverse and highly skilled global workforce united by The Chevron Way. 
-                                        We treat our employees and our partners with respect and dignity.
-                                    </p>
-
-                                    <!-- Explore ESG topics from a-z -->
-                                        <NuxtLink
-                                            to="/sustainability/social"
-                                            class="group flex *:flex items-center *:items-center justify-center px-2 lg:px-8 py-2 gap-2 lg:gap-4 w-fit text-(--white) hover:text-(--black) duration-300 ease-in-out transition-all"
-                                        >
-                                            <div class="group relative flex items-center justify-center text-xl w-8 h-full overflow-hidden">
-                                                <div class="absolute flex items-center left-2 h-full w-12 transition-all duration-500 ease-in-out group-hover:translate-x-full">
-                                                    <Icon name="mdi:arrow-right"/>
-                                                </div>
-                                                
-                                                <div class="absolute flex items-center left-2 h-full w-12 -translate-x-full transition-all duration-500 ease-in-out group-hover:translate-x-0">
-                                                    <Icon name="mdi:arrow-right" />
-                                                </div>
+                                            
+                                            <div class="absolute flex items-center left-2 h-full w-12 -translate-x-full transition-all duration-500 ease-in-out group-hover:translate-x-0">
+                                                <Icon name="mdi:arrow-right" />
                                             </div>
-                                            <span class="group-hover:underline-text font-bold">Learn more</span>
-                                        </NuxtLink>
-                                </div> 
-
-
-                            </div>
+                                        </div>
+                                        <span class="group-hover:underline-text font-semibold">Learn more</span>
+                                    </NuxtLink>
+                            </div> 
 
                         </div>
+
+                        <!-- Social Investment -->
+                        <div class="grid p-6 gap-8 rounded-2xl bg-(--medium-teal) shadow-lg">
+                            <NuxtImg
+                                src="/sustainability/Sustainability_SocialinvestmentThumbnail.jpg"
+                                alt="Children playing with their toys"
+                                loading="lazy"
+                                class="w-full h-60 object-cover rounded-2xl"
+                            />
+
+                            <div class="flex flex-col gap-4">
+                                <h2 
+                                    class="text-4xl font-bold text-(--white)"
+                                >
+                                    Social Investment
+                                </h2>
+
+                                <p class="text-(--white) text-xl font-semibold cursor-text">
+                                    We believe our business succeeds when our people and communities do. 
+                                    We’re striving to empower people worldwide to help improve their lives and achieve their ambitions.
+                                </p>
+
+                                <!-- Explore ESG topics from a-z -->
+                                    <NuxtLink
+                                        to="/sustainability/social"
+                                        class="group flex *:flex items-center *:items-center justify-center px-2 lg:px-8 py-2 gap-2 lg:gap-4 w-fit text-(--white) hover:text-(--black) duration-300 ease-in-out transition-all"
+                                    >
+                                        <div class="group relative flex items-center justify-center text-xl w-8 h-full overflow-hidden">
+                                            <div class="absolute flex items-center left-2 h-full w-12 transition-all duration-500 ease-in-out group-hover:translate-x-full">
+                                                <Icon name="mdi:arrow-right"/>
+                                            </div>
+                                            
+                                            <div class="absolute flex items-center left-2 h-full w-12 -translate-x-full transition-all duration-500 ease-in-out group-hover:translate-x-0">
+                                                <Icon name="mdi:arrow-right" />
+                                            </div>
+                                        </div>
+                                        <span class="group-hover:underline-text font-semibold">Learn more</span>
+                                    </NuxtLink>
+                            </div> 
+
+
+                        </div>
+
+                        <!-- Diversity and Inclusion -->
+                        <div class="grid p-6 gap-8 rounded-2xl bg-(--dark-orange) shadow-lg">
+                            <NuxtImg
+                                src="/sustainability/Sustainability_DiversityInclusionThumbnail.jpg"
+                                alt="Close-Up Shot of Hands"
+                                loading="lazy"
+                                class="w-full h-60 object-cover rounded-2xl"
+                            />
+
+                            <div class="flex flex-col gap-4">
+                                <h2 
+                                    class="text-4xl font-bold text-(--white) text-wrap"
+                                >
+                                    Diversity and Inclusion
+                                </h2>
+
+                                <p class="text-(--white) text-xl font-semibold cursor-text">
+                                    Our success is driven by a dedicated, diverse and highly skilled global workforce united by The Chevron Way. 
+                                    We treat our employees and our partners with respect and dignity.
+                                </p>
+
+                                <!-- Explore ESG topics from a-z -->
+                                    <NuxtLink
+                                        to="/sustainability/social"
+                                        class="group flex *:flex items-center *:items-center justify-center px-2 lg:px-8 py-2 gap-2 lg:gap-4 w-fit text-(--white) hover:text-(--black) duration-300 ease-in-out transition-all"
+                                    >
+                                        <div class="group relative flex items-center justify-center text-xl w-8 h-full overflow-hidden">
+                                            <div class="absolute flex items-center left-2 h-full w-12 transition-all duration-500 ease-in-out group-hover:translate-x-full">
+                                                <Icon name="mdi:arrow-right"/>
+                                            </div>
+                                            
+                                            <div class="absolute flex items-center left-2 h-full w-12 -translate-x-full transition-all duration-500 ease-in-out group-hover:translate-x-0">
+                                                <Icon name="mdi:arrow-right" />
+                                            </div>
+                                        </div>
+                                        <span class="group-hover:underline-text font-bold">Learn more</span>
+                                    </NuxtLink>
+                            </div> 
+
+
+                        </div>
+
                     </div>
 
 

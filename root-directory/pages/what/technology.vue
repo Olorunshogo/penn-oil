@@ -26,6 +26,8 @@
         keywords: 'Penn Petro Energy technology, energy innovation, clean energy technology, sustainable energy solutions, advanced energy systems, oil and gas technology, energy sector innovation, energy tech advancements',
     });
 
+    import { whatTechnologyHeroImageBg } from '~/models/heroBgModels';
+
 </script>
 
 
@@ -34,37 +36,19 @@
     <div>
 
         <!-- Section: Hero -->
-        <section>     
-            <div class="relative w-full h-full overflow-hidden -mt-[11rem]">
-
-                <!-- Image Container -->
-                <NuxtImg
-                    src="https://images.pexels.com/photos/6153740/pexels-photo-6153740.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                    alt="Black Prosthetic Arm"
-                    loading="lazy"
-                    class="relative h-dvh w-full object-cover z-0"
-                />
-                
-
-                <!-- Content -->
-                <div class="grid gap-4 bg-(--white) w-full absolute bottom-0 h-1/3 lg:h-2/5 max-h-[500px]">
-                    <div class="flex flex-col items-center justify-center w-full max-w-7xl mx-auto h-full gap-2">
-                        <span class="text-xl font-extrabold text-(--dark-blue) mx-auto">What we do</span>
-                        <h1 
-                            class="text-5xl md:text-8xl xl:text-9xl text-center font-extrabold bg-clip-text text-transparent" 
-                            style="background-image: url('https://images.pexels.com/photos/6153740/pexels-photo-6153740.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); background-size: cover;"
-                        >
-                            Technology and innovation
-                        </h1>
-                        
-                        <p class="text-xl lg:text-2xl text-center text-(--black)">
-                            Accelerating progress to power our world today and build the lower carbon energy system of the future.
-                        </p>
-                    </div>
-                </div> 
-
-            </div>
-        </section>
+        <div>
+            <HeroSectionImageBg
+                :imgSrc="whatTechnologyHeroImageBg.imgSrc"
+                :imgAlt="whatTechnologyHeroImageBg.imgAlt"
+                :category="whatTechnologyHeroImageBg.category"
+                :title="whatTechnologyHeroImageBg.title"
+                :titleBgImageSrc="whatTechnologyHeroImageBg.titleBgImageSrc"
+                :displayLink="whatTechnologyHeroImageBg.displayLink"
+                :paragraph="whatTechnologyHeroImageBg.paragraph"
+                :link="whatTechnologyHeroImageBg.link"
+                :linkName="whatTechnologyHeroImageBg.linkName"
+            />
+        </div>
 
         <!-- Images  -->
         <section>

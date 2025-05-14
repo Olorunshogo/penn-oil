@@ -26,45 +26,25 @@
         keywords: 'Penn Petro Energy operations, oil and gas solutions, global energy production, energy infrastructure, upstream and downstream energy, energy innovation, responsible energy company',
     });
 
+    import { whatEnergyHeroVideoBg } from '~/models/heroBgModels';
+
 </script>
 
 
 <template>
     <div>
         <!-- Section: Hero -->
-        <section>        
-            
-            <div class="relative w-full h-full overflow-hidden -mt-[11rem]">
-
-                <!-- Image Container -->
-                <NuxtImg
-                    src="https://images.pexels.com/photos/31959461/pexels-photo-31959461/free-photo-of-modern-city-skyline-with-bridge-reflection.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                    alt="Modern City Skyline with Bridge Reflection"
-                    loading="lazy"
-                    class="relative h-dvh w-full object-cover z-0"
-                />
-                
-
-                <!-- Content -->
-                <div class="grid gap-4 bg-(--white) w-full absolute bottom-0 h-1/3 lg:h-2/5 max-h-[500px]">
-                    <div class="flex flex-col items-center justify-center w-full max-w-4xl mx-auto h-full gap-2">
-                        <span class="text-xl font-extrabold text-(--dark-blue) mx-auto">What we do</span>
-                        <h1 
-                            class="text-5xl md:text-8xl xl:text-9xl text-center font-extrabold bg-clip-text text-transparent" 
-                            style="background-image: url('https://images.pexels.com/photos/31959461/pexels-photo-31959461/free-photo-of-modern-city-skyline-with-bridge-reflection.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); background-size: cover;"
-                        >
-                            What we do
-                        </h1>
-                        
-                        <p class="text-xl lg:text-2xl text-center text-(--black)">
-                            Affordable, reliable and ever-cleaner energy for today and tomorrow. 
-                            That’s what we’re working towards, every day.
-                        </p>
-                    </div>
-                </div> 
-
-            </div>
-        </section>
+        <div>
+            <HeroSectionVideoBg
+                :videoSrc="whatEnergyHeroVideoBg.videoSrc"
+                :title="whatEnergyHeroVideoBg.title"
+                :titleBgVideoSrc="whatEnergyHeroVideoBg.titleBgVideoSrc"
+                :paragraph="whatEnergyHeroVideoBg.paragraph"
+                :displayLink="whatEnergyHeroVideoBg.displayLink"
+                :link="whatEnergyHeroVideoBg.link"
+                :linkName="whatEnergyHeroVideoBg.linkName"
+            />
+        </div>
 
         <!-- Section: Oil and natural gas, Fuels, Lubricants and Chemicals and additives  -->
         <section>

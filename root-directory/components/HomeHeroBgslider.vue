@@ -1,63 +1,98 @@
 
 <script setup lang="ts">
-    import { ref, onMounted, onUnmounted, defineProps } from 'vue';
-    import { gsap } from 'gsap';
-
-    const props = defineProps<{
-        // images: string[],
-        imgSrc: string,
-        imgAlt: string,
-        contentBg: string,
-        heading: string,
-        description: string,
-        ctaLink: string,
-        cta: string,
-    }>();
-
-
-    const opacity = ref(0.3);
-
+    defineProps({
+        videoSrc: {
+            type: String,
+            required: true
+        },
+        bgColor: {
+            type: String,
+            default: 'transparent',
+            required: true
+        },
+        heading: {
+            type: String,
+            required: true
+        },
+        paragraph: {
+            type: String,
+            required: true
+        },
+        link: {
+            type: String,
+            required: false
+        },
+        linkName: {
+            type: String,
+            required: false
+        },
+    });
 </script>
 
+
+
+
 <template>
+    <div>
+        <!-- Section: Hero -->
+        <section>        
+            
+            <div class="relative w-screen h-full overflow-hidden -mt-44"
+            >
 
-    <div class="relative w-full h-screen overflow-hidden">
-
-        <!-- Image Container -->
-        <div class="absolute top-0 left-0 w-full h-full z-0">
-            <NuxtImg
-                :src="imgSrc"
-                :alt="imgAlt"
-                loading="lazy"
-                class="h-dvh w-full object-cover"
-            />
-        </div>
-
-        <!-- Content -->
-        <div 
-            class="content slideLeft absolute bottom-0 h-1/2 max-h-[600px] w-full pb-12 z-10 transform"
-            :style="{ backgroundColor: contentBg, opacity: opacity }"
-        >
-            <div class="flex flex-col items-center justify-center gap-8 w-full h-full md:max-w-[100rem] bg-(--white)/70 mx-auto">
-                <div class="grid gap-4 lg:gap-6">
-                    <h1 class="text-3xl lg:text-5xl font-extrabold text-center text-transparent bg-clip-text bg-gradient-to-r from-(--medium-blue) to-(--dark-blue)">{{ heading }}</h1>
-                    <p class="text-lg md:text-2xl text-center text-(--black)">{{ description }}</p>
+                <div 
+                    class="bg-container"
+                    :style="{ backgroundColor: bgColor }"
+                >
+                    <video 
+                        autoplay 
+                        loop muted playsinline
+                        class="bg"
+                    >
+                        <source :src="videoSrc" type="video/mp4" >
+                    </video>
                 </div>
 
-                <NuxtLink :to="ctaLink" class="flex *:flex items-center *:items-center justify-center *:justify-center gap-2 md:gap-4 rounded-lg p-2 md:p-4 font-bold mt-4 cursor-pointer duration-300 ease-in-out transition-all">
-                    <span class="text-xl"><Icon name="mdi:arrow-right" /></span>
-                    <span>{{ cta }}</span>
-                </NuxtLink>
-            </div>
-        </div>
 
+                <!-- Content Layer -->
+                <div class="absolute bottom-0 w-full h-2/5 max-h-[400px] bg-(--deep-blue) backdrop-blur-md rounded-t-2xl shadow-lg flex items-center justify-center">
+                    <div class="content flex flex-col gap-12 items-center justify-center *:text-(--white) *:text-center w-full max-w-7xl mx-auto">
+                        
+                        <div class="flex flex-col items-center justify-center gap-4">
+                            <h1 class="text-4xl lg:text-5xl font-extrabold">
+                                {{ heading }}
+                            </h1>
+                            
+                            <p class="text-lg">
+                                {{ paragraph }}
+                            </p>
+                        </div>
+
+                        <NuxtLink
+                            :to="link"
+                            class="group flex *:flex items-center *:items-center justify-center gap-2 lg:gap-4 w-fit text-(--white) rounded-lg duration-300 ease-in-out transition-all"
+                        >
+                            <div class="group relative flex items-center justify-center text-xl w-8 h-full overflow-hidden">
+                                <div class="absolute flex items-center left-2 h-full w-12 transition-all duration-500 ease-in-out group-hover:translate-x-full">
+                                    <Icon name="mdi:arrow-right"/>
+                                </div>
+                                
+                                <div class="absolute flex items-center left-2 h-full w-12 -translate-x-full transition-all duration-500 ease-in-out group-hover:translate-x-0">
+                                    <Icon name="mdi:arrow-right" />
+                                </div>
+                            </div>
+                            <span class="group-hover:underline-text font-extrabold text-lg">{{ linkName }}</span>
+                        </NuxtLink>
+                    </div>
+                </div>
+
+            </div>
+        </section>
     </div>
 
 </template>
 
-
 <style lang="css" scoped>
-
     .content {
         transform: translateY(100px);
         animation: slideLeft 6s ease-in-out infinite;
@@ -81,5 +116,37 @@
             opacity: 0;
         }
     }
+
+    .group-hover\:underline-text {
+        position: relative;
+        display: inline-block;
+    }
+
+    .group-hover\:underline-text::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0%;
+        height: 1px;
+        background-color: white;
+        transition: width 0.5s ease-in-out;
+    }
+
+    .group:hover .group-hover\:underline-text::after {
+        width: 100%;
+    }
+
+    .arrow-icon {
+        transition: transform 1s ease-in-out;
+    }
+
+    .group:hover .arrow-icon {
+        transform: translateX(12px);
+    }
+
+    .group-hover\:arrow-move {
+        animation: moveArrow 3s infinite alternate ease-in-out;
+    }  
 
 </style>

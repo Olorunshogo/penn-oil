@@ -28,17 +28,7 @@
         keywords: 'Penn Petro Energy brands, energy portfolio, energy subsidiaries, oil and gas brands, clean energy brands, Penn Petro divisions, global energy companies, energy innovation network',
     });
 
-    import { 
-        dollarsContributed, employeeTotal, volunteerTotalHours,
-        whoNewsroom
-    } from '~/stores/whoVariables';
-
-    import {
-        prevRef, prevIndex, prevSlide,
-        activeRef, activeIndex,        
-        nextRef, nextIndex, nextSlide,
-        goTo
-    } from '~/stores/homeNews';
+    import { whoBrandsHeroImageBg } from '~/models/heroBgModels';    
     
 
 </script>
@@ -47,58 +37,21 @@
 <template>
     <div>
         <!-- Section: Hero -->
-        <section>        
-            
-            <div class="relative w-full h-full overflow-hidden -mt-[11rem] py-(--section-pyx) lg:py-(--section-py-lg)">
+        <div>
+            <HeroSectionImageBg
+                :imgSrc="whoBrandsHeroImageBg.imgSrc"
+                :imgAlt="whoBrandsHeroImageBg.imgAlt"
+                :category="whoBrandsHeroImageBg.category"
+                :title="whoBrandsHeroImageBg.title"
+                :titleBgImageSrc="whoBrandsHeroImageBg.titleBgImageSrc"
+                :displayLink="whoBrandsHeroImageBg.displayLink"
+                :paragraph="whoBrandsHeroImageBg.paragraph"
+                :link="whoBrandsHeroImageBg.link"
+                :linkName="whoBrandsHeroImageBg.linkName"
+            />
+        </div>
+             
 
-                <!-- Image Slider Container -->
-                <div class="image-slider h-[950px]"></div>         
-
-                <!-- Content -->
-                <div class="grid w-full h-fit pb-4 bg-(--white) absolute bottom-0 px-4">
-                    <div class="flex flex-col py-8 gap-8 items-center justify-center w-full max-w-5xl mx-auto h-fit">
-
-                        <h1 
-                            class="text-5xl md:text-8xl xl:text-9xl bg-clip-text text-center text-transparent font-extrabold bg-gradient-to-r from-(--light-blue) to-(--dark-blue)" 
-                        >
-                            Our brands
-                        </h1>
-
-                        <p class="text-xl lg:text-2xl text-center text-[color:var(--black)]">
-                            Whether we’re fueling cars or advancing the energy system of tomorrow, Penn Petro Energy’s brands set the standard for excellence. 
-                            With a rich history dating back over a century, Penn Petro Energy’s family of brands has built trust and recognition worldwide.
-                        </p>
-                        
-                        
-                    </div>
-                    
-                    <div class="grid gap-4 max-w-lg w-full mx-auto h-full">
-                        <div class="grid grid-cols-3 gap-4">
-                            <NuxtImg
-                                src="../public/images/Logo/Texaco_logo.png"
-                                alt="Texaco Logo's Logo"
-                                loading="lazy"
-                                class="object-cover w-full h-16 lg:h-24"
-                            />
-                            <NuxtImg
-                                src="../public/images/Logo/Full_Penn_Petro_Energy_Logo_transparent_bg.png"
-                                alt="Full Penn Petro Energy's Logo"
-                                loading="lazy"
-                                class="object-cover w-full h-16 lg:h-24"
-                            />
-                            <NuxtImg
-                                src="../public/images/Logo/Caltext_logo.png"
-                                alt="Caltext Logo"
-                                loading="lazy"
-                                class="object-cover w-full h-16 lg:h-24"
-                            />
-                        </div>
-                        <p class="text-bold text-xl text-center text-(--dark-gray)">Penn Petro Energy's Family of Brands</p>
-                    </div>
-
-                </div> 
-            </div>
-        </section>
 
         <!-- Section: Penn Petro Energy, Texaco, Caltex -->
         <section>

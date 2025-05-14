@@ -34,47 +34,29 @@
         refiningCarbon, gasCarbonIntensity
     } from '~/stores/sustainabilityVariables';
 
+    import { sustainabilityClimateHeroImageBg } from '~/models/heroBgModels';
+
 </script>
 
 
 <template>
     <div>
+
         <!-- Section: Hero -->
-        <section>        
-            
-            <div class="relative overflow-hidden -mt-[11rem] py-(--section-py) lg:py-(--section-py-lg) w-full h-[800px] lg:h-[1050px]">
-
-                <!-- Image Container -->
-                <NuxtImg
-                    src="/images/sustainability/Sustainability_ClimateThumbnail.jpg"
-                    alt="Sustainability_ClimateThumbnail"
-                    loading="lazy"
-                    class="relative h-dvh w-full object-cover"
-                />
-                
-
-                <!-- Content -->
-                <div class="grid bg-(--white) w-full absolute bottom-0 h-1/3 py-12">
-                    <div class="flex flex-col items-center justify-center w-full max-w-4xl mx-auto h-full gap-2">
-                        <span class="text-2xl text-center font-bold text-(--dark-blue)">
-                            sustainability
-                        </span>
-                        <h1 
-                            class="text-5xl md:text-8xl xl:text-9xl text-center font-extrabold bg-clip-text text-transparent" 
-                            style="background-image: url('/images/sustainability/Sustainability_ClimateThumbnail.jpg'); background-size: cover;"
-                        >
-                            Climate
-                        </h1>
-                        
-                        <p class="text-xl text-center text-(--black)">
-                            We all have a stake in a reliable, affordable energy system. 
-                            Our belief that the future is lower carbon drives Penn Petro Energy's lower carbon ambitions and the actions we take to advance them.
-                        </p>
-                    </div>
-                </div> 
-
-            </div>
-        </section>
+        <div>
+            <HeroSectionImageBg
+                :imgSrc="sustainabilityClimateHeroImageBg.imgSrc"
+                :imgAlt="sustainabilityClimateHeroImageBg.imgAlt"
+                :category="sustainabilityClimateHeroImageBg.category"
+                :title="sustainabilityClimateHeroImageBg.title"
+                :titleBgImageSrc="sustainabilityClimateHeroImageBg.titleBgImageSrc"
+                :displayLink="sustainabilityClimateHeroImageBg.displayLink"
+                :paragraph="sustainabilityClimateHeroImageBg.paragraph"
+                :link="sustainabilityClimateHeroImageBg.link"
+                :linkName="sustainabilityClimateHeroImageBg.linkName"
+            />
+        </div>
+ 
 
         <!-- Fueling a lower carbon future -->
         <section>                  
@@ -113,7 +95,7 @@
                     <div class="flex flex-col items-center justify-center gap-8 *:text-center text-(--white) w-full h-full">
                         
                         <video width="640" height="360" controls autoplay loop>
-                            <source src="/videos/sustainability/Climate_Page_global_population_final.mp4" type="video/mp4" >
+                            <source src="/sustainability/Climate_Page_global_population_final.mp4" type="video/mp4" >
                         </video>
                     </div>
 
@@ -130,9 +112,8 @@
                     <div class="flex flex-col items-center justify-center gap-8 *:text-center text-(--white) w-full h-full">
                         
                         <video width="640" height="360" controls autoplay loop>
-                            <source src="/videos/sustainability/Climate_higher_standard_video.mp4" type="video/mp4" >
+                            <source src="/sustainability/Climate_higher_standard_video.mp4" type="video/mp4" >
                         </video>
-
                         
                     </div>
 

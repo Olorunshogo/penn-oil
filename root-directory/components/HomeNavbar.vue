@@ -1,3 +1,4 @@
+
 <script lang="ts" setup>
   import { watch, onMounted, onBeforeUnmount } from "vue";
 
@@ -55,6 +56,7 @@
 
 </script>
 
+
 <template>
   <div>
     <header>
@@ -79,7 +81,7 @@
             <!-- Mobile Logo -->
             <NuxtLink to="/" class="relative flex flex-col items-center justify-center">
               <NuxtImg
-                src="/images/Logo/Logo_transparent_bg.png"
+                src="/Logo/Logo_transparent_bg.png"
                 alt="Penn Petro Energy Logo"
                 class="object-cover w-18 h-16"
               />
@@ -552,7 +554,7 @@
             <!-- Mobile Logo -->
             <NuxtLink to="/" class="relative flex flex-col items-center justify-center">
               <NuxtImg
-                src="/images/Logo/Logo_transparent_bg.png"
+                src="/Logo/Logo_transparent_bg.png"
                 alt="Penn Petro Energy Logo"
                 class="object-cover w-18 h-16"
               />

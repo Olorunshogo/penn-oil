@@ -33,26 +33,27 @@
         corporateOfficers 
     } from '~/stores/whoVariables';
 
+    import { whoLeadershipHeroImageBg } from '~/models/heroBgModels';  
+
 </script>
 
 
 <template>
     <div>        
         <!-- Section: Hero -->
-        <section>     
-            <div class="relative w-full h-full overflow-hidden -mt-[11rem] pt-(--section-py-lg)">
-
-                <!-- Hero Image Container -->
-                <div class="grid w-full h-80 lg:h-4/5 max-w-7xl mx-auto">
-                    <NuxtImg
-                        src="https://images.pexels.com/photos/8428092/pexels-photo-8428092.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                        alt="A Man in White Long Sleeves Having a Deal with the Man in Black Suit"
-                        loading="lazy"
-                        class="w-full h-full"
-                    />  
-                </div>
-            </div>
-        </section>
+        <div>
+            <HeroSectionImageBg
+                :imgSrc="whoLeadershipHeroImageBg.imgSrc"
+                :imgAlt="whoLeadershipHeroImageBg.imgAlt"
+                :category="whoLeadershipHeroImageBg.category"
+                :title="whoLeadershipHeroImageBg.title"
+                :titleBgImageSrc="whoLeadershipHeroImageBg.titleBgImageSrc"
+                :displayLink="whoLeadershipHeroImageBg.displayLink"
+                :paragraph="whoLeadershipHeroImageBg.paragraph"
+                :link="whoLeadershipHeroImageBg.link"
+                :linkName="whoLeadershipHeroImageBg.linkName"
+            />
+        </div>
 
         <!-- Section: Leadership -->
         <section>

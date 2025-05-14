@@ -28,14 +28,8 @@
         keywords: 'Penn Petro Energy environmental responsibility, environmental stewardship, biodiversity protection, water conservation, sustainable resource management, eco-friendly energy practices, environmental sustainability in oil and gas',
     });
 
-    // const heroBg = ref([
-    //     {
-    //         category: "Sustainability",
-    //         title: "Environment",
-    //         paragraph: "Penn Petro Energy is taking steps to help protect the environment where we operate. We do this by stewarding our water usage, integrating biodiversity into our decision making, reducing waste and managing air emissions from our operations."
-    //         displayLink: "false"
-    //     }
-    // ]);
+
+    import { sustainabilityEnvironmentHeroImageBg } from '~/models/heroBgModels';
 
 </script>
 
@@ -43,59 +37,19 @@
 <template>
     <div>
         <!-- Section: Hero -->
-        <section>        
-            
-            <div class="relative w-screen h-full overflow-hidden -mt-[11rem]">
-
-                <div class="bg-container">
-
-                    <NuxtImg
-                        src="https://images.pexels.com/photos/3580281/pexels-photo-3580281.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                        alt="Shallow Focus Photo of Man in White Safety Hat"
-                        loading="lazy"
-                        class="bg"
-                    />
-                </div>
-
-                <!-- Content Layer -->
-                <div class="absolute bottom-0 w-full h-fit py-8 lg:h-2/5 lg:max-h-[600px] bg-(--white) flex items-center justify-center px-4">
-                    <div class="flex flex-col items-center justify-center text-center gap-4 w-full max-w-7xl mx-auto">
-                        
-                        <span class="text-xl lg:text-2xl text-center font-bold text-(--dark-blue)">
-                            sustainability
-                        </span>
-                        <h1 
-                            class="text-5xl md:text-8xl xl:text-9xl text-center font-extrabold bg-clip-text text-transparent" 
-                            style="background-image: url('https://images.pexels.com/photos/3580281/pexels-photo-3580281.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); background-size: contain;"
-                        >
-                            Environment
-                        </h1>
-                        
-                        <p class="text-base lg:text-xl text-center text-(--black)">
-                            Penn Petro Energy is taking steps to help protect the environment where we operate. 
-                            We do this by stewarding our water usage, integrating biodiversity into our decision making, reducing waste and managing air emissions from our operations.
-                        </p>
-
-                        <NuxtLink
-                            to="/newsroom"
-                            class="group flex *:flex items-center *:items-center justify-center px-2 lg:px-8 py-2 gap-2 lg:gap-4 w-fit text-(--black) hover:text-(--white) rounded-lg shadow-lg mt-8 border-2 border-(--medium-blue) hover:bg-(--medium-blue) duration-300 ease-in-out transition-all"
-                        >
-                            <div class="group relative flex items-center justify-center text-xl w-8 h-full overflow-hidden">
-                                <div class="absolute flex items-center left-2 h-full w-12 transition-all duration-500 ease-in-out group-hover:translate-x-full">
-                                    <Icon name="mdi:arrow-right"/>
-                                </div>
-                                
-                                <div class="absolute flex items-center left-2 h-full w-12 -translate-x-full transition-all duration-500 ease-in-out group-hover:translate-x-0">
-                                    <Icon name="mdi:arrow-right" />
-                                </div>
-                            </div>
-                            <span class="font-semibold text-sm lg:text-lg">Read more about our environmental efforts</span>
-                        </NuxtLink>
-                    </div>
-                </div>
-
-            </div>
-        </section>
+        <div>
+            <HeroSectionImageBg
+                :imgSrc="sustainabilityEnvironmentHeroImageBg.imgSrc"
+                :imgAlt="sustainabilityEnvironmentHeroImageBg.imgAlt"
+                :category="sustainabilityEnvironmentHeroImageBg.category"
+                :title="sustainabilityEnvironmentHeroImageBg.title"
+                :titleBgImageSrc="sustainabilityEnvironmentHeroImageBg.titleBgImageSrc"
+                :displayLink="sustainabilityEnvironmentHeroImageBg.displayLink"
+                :paragraph="sustainabilityEnvironmentHeroImageBg.paragraph"
+                :link="sustainabilityEnvironmentHeroImageBg.link"
+                :linkName="sustainabilityEnvironmentHeroImageBg.linkName"
+            />
+        </div>
 
         <!-- Section: Stewarding water management -->
         <section>
@@ -105,15 +59,15 @@
 
                     <div class="flex flex-col items-center justify-center gap-16 w-full h-full">
                         <NuxtImg
-                            src="/images/sustainability/social_tree.png"
+                            src="/sustainability/social_tree.png"
                             alt="Image similar to an icon of a tree"
                             loading="lazy"
-                            class="w-4/5 mx-auto lg:w-90 h-auto rounded-full"
+                            class="w-3/5 mx-auto lg:w-90 h-auto rounded-full"
                         />
 
                         <div class="grid gap-4 text-center">
                             <h2 class="font-extrabold text-(--light-blue) text-3xl lg:text-5xl">Stewarding water management </h2>
-                            <p class="text-lg text-(--white)">
+                            <p class="text-base lg:text-lg text-(--white)">
                                 Water is vital to our operations and the communities where we operate. 
                                 That’s why we’re focused on efficient and responsible water use, reuse, recycling and conservation. 
                                 But we can’t do it alone. 
@@ -133,10 +87,10 @@
                                         <Icon name="mdi:arrow-right" />
                                     </div>
                                 </div>
-                                <span class="font-bold text-lg">Learn more about our approach</span>
+                                <span class="font-bold text-base lg:text-lg">Learn more about our approach</span>
                             </NuxtLink>
                         </div>
-                    </div>                   
+                    </div>                 
 
 
                 </div>
@@ -154,15 +108,15 @@
                     <!-- Building up biodiversity -->
                     <div class="flex flex-col items-center justify-center gap-16 w-full h-full">
                         <NuxtImg
-                            src="/images/sustainability/social_tree.png"
+                            src="/sustainability/social_tree.png"
                             alt="Image similar to an icon of a tree"
                             loading="lazy"
-                            class="w-4/5 mx-auto lg:w-90 h-auto rounded-full"
+                            class="w-3/5 mx-auto lg:w-90 h-auto rounded-full"
                         />
 
                         <div class="grid gap-4 text-center">
                             <h2 class="font-extrabold text-(--dark-blue) text-3xl lg:text-5xl">Building up biodiversity</h2>
-                            <p class="text-lg text-(--black)">
+                            <p class="text-base lg:text-lg  text-(--black)">
                                 Penn Petro Energy recognizes the importance of biodiversity. 
                                 We work with communities, regulatory agencies, industry groups and conservation organizations to support efforts to protect ecosystems where we operate. 
                                 Our aim is to develop an understanding of potential risks and use mitigation to avoid, reduce, restore or offset potential impacts on biodiversity.
@@ -181,7 +135,7 @@
                                         <Icon name="mdi:arrow-right" />
                                     </div>
                                 </div>
-                                <span class="font-bold text-lg">Learn more about our approach</span>
+                                <span class="font-bold text-base lg:text-lg">Learn more about our approach</span>
                             </NuxtLink>
                         </div>
                     </div>                   
@@ -201,7 +155,7 @@
 
                     <div class="flex flex-col items-center justify-center gap-16 w-full h-full">
                         <NuxtImg
-                            src="/images/sustainability/social_tree.png"
+                            src="/sustainability/social_tree.png"
                             alt="Image similar to an icon of a tree"
                             loading="lazy"
                             class="w-4/5 mx-auto lg:w-90 h-auto rounded-full"
@@ -209,7 +163,7 @@
 
                         <div class="grid gap-4 text-center">
                             <h2 class="font-extrabold text-(--light-blue) text-3xl lg:text-5xl">Reducing waste material</h2>
-                            <p class="text-lg text-(--white)">
+                            <p class="text-base lg:text-lg text-(--white)">
                                 We are working to improve waste management and reduce associated potential environmental, health and safety impacts..
                             </p>
 
@@ -226,7 +180,7 @@
                                         <Icon name="mdi:arrow-right" />
                                     </div>
                                 </div>
-                                <span class="font-bold text-lg">Learn more about our approach</span>
+                                <span class="font-bold text-base lg:text-lg">Learn more about our approach</span>
                             </NuxtLink>
                         </div>
                     </div>                  
@@ -245,7 +199,7 @@
 
                     <div class="flex flex-col items-center justify-center gap-16 w-full h-full">
                         <NuxtImg
-                            src="/images/sustainability/social_tree.png"
+                            src="/sustainability/social_tree.png"
                             alt="Image similar to an icon of a tree"
                             loading="lazy"
                             class="w-4/5 mx-auto lg:w-90 h-auto rounded-full"
@@ -253,7 +207,7 @@
 
                         <div class="grid gap-4 text-center">
                             <h2 class="font-extrabold text-(--dark-blue) text-3xl lg:text-5xl">Managing air emissions</h2>
-                            <p class="text-lg text-(--black)">
+                            <p class="text-base lg:text-lg text-(--black)">
                                 We seek to find and use technologies that help reduce emissions of sulfur oxides, nitrogen oxides and volatile organic compounds. 
                                 We monitor air dispersion to help better understand emission sources. 
                                 And we share best practices across our operations.
@@ -272,7 +226,7 @@
                                         <Icon name="mdi:arrow-right" />
                                     </div>
                                 </div>
-                                <span class="font-bold text-lg">Learn more about our approach</span>
+                                <span class="font-bold text-base lg:text-lg">Learn more about our approach</span>
                             </NuxtLink>
                         </div>
                     </div>                   
@@ -284,115 +238,116 @@
 
         </section>
 
+        <!-- Climate, Social Investment and Diversity and Inclusion -->
         <section>
-        <div class="px-(--section-px) lg:px-(--section-px-lg) py-(--section-py) lg:py-(--section-py-lg) bg-(--light-gray) w-full h-full">
-            
-            <div class="grid w-full max-w-7xl mx-auto">
+            <div class="px-(--section-px) lg:px-(--section-px-lg) py-(--section-py) lg:py-(--section-py-lg) bg-(--light-gray) w-full h-full">
+                
+                <div class="grid w-full max-w-7xl mx-auto">
 
-                <div class="flex flex-col py-20 gap-20">
+                    <div class="flex flex-col py-20 gap-20">
 
-                    <h2 class="text-(--dark-blue) text-center font-extrabold text-3xl lg:text-5xl text-wrap cursor-text">
-                        Our other sustainability efforts
-                    </h2>
+                        <h2 class="text-(--dark-blue) text-center font-extrabold text-3xl lg:text-5xl text-wrap cursor-text">
+                            Our other sustainability efforts
+                        </h2>
 
-                    <div class="grid w-full h-full">
+                        <div class="grid w-full h-full">
 
-                        <div class="grid md:grid-cols-3 gap-6 md:gap-8">
-                            <!-- Climate -->
-                            <div class="flex flex-col items-center justify-center w-full max-w-4/5 md:max-w-full mx-auto h-full">
-                                <NuxtImg
-                                    src="images/Sustainability/Sustainability_ClimateThumbnail.jpg"
-                                    loading="lazy"
-                                    class="block w-full h-full rounded-t-2xl object-center"
-                                />
+                            <div class="grid md:grid-cols-3 gap-6 md:gap-8">
+                                <!-- Climate -->
+                                <div class="flex flex-col items-center justify-center w-full max-w-4/5 md:max-w-full mx-auto h-full">
+                                    <NuxtImg
+                                        src="/sustainability/Sustainability_ClimateThumbnail.jpg"
+                                        loading="lazy"
+                                        class="block w-full h-full rounded-t-2xl object-center"
+                                    />
 
-                                <div class="flex flex-col justify-between p-8 gap-12 w-full h-full bg-(--dark-teal) rounded-b-2xl">
-                                    <h3 class="text-(--white) text-3xl md:text-4xl font-extrabold">Climate</h3>
-                                    <NuxtLink
-                                        to="/sustainability/climate"
-                                        class="group flex *:flex items-center *:items-center justify-end ml-auto gap-2 w-fit text-(--black) hover:text-(--white) duration-300 ease-in-out transition-all"
-                                    >
-                                        <div class="group relative flex items-center justify-center text-xl w-8 h-full overflow-hidden">
-                                            <div class="absolute flex items-center left-2 h-full w-12 transition-all duration-500 ease-in-out group-hover:translate-x-full">
-                                                <Icon name="mdi:arrow-right"/>
+                                    <div class="flex flex-col justify-between p-8 gap-12 w-full h-full bg-(--dark-teal) rounded-b-2xl">
+                                        <h3 class="text-(--white) text-2xl lg:text-3xl font-extrabold">Climate</h3>
+                                        <NuxtLink
+                                            to="/sustainability/climate"
+                                            class="group flex *:flex items-center *:items-center justify-end ml-auto gap-2 w-fit text-(--black) hover:text-(--white) duration-300 ease-in-out transition-all"
+                                        >
+                                            <div class="group relative flex items-center justify-center text-xl w-8 h-full overflow-hidden">
+                                                <div class="absolute flex items-center left-2 h-full w-12 transition-all duration-500 ease-in-out group-hover:translate-x-full">
+                                                    <Icon name="mdi:arrow-right"/>
+                                                </div>
+                                                
+                                                <div class="absolute flex items-center left-2 h-full w-12 -translate-x-full transition-all duration-500 ease-in-out group-hover:translate-x-0">
+                                                    <Icon name="mdi:arrow-right" />
+                                                </div>
                                             </div>
-                                            
-                                            <div class="absolute flex items-center left-2 h-full w-12 -translate-x-full transition-all duration-500 ease-in-out group-hover:translate-x-0">
-                                                <Icon name="mdi:arrow-right" />
-                                            </div>
-                                        </div>
-                                        <span class="font-bold">Learn more</span>
-                                    </NuxtLink>
+                                            <span class="font-bold">Learn more</span>
+                                        </NuxtLink>
+                                    </div>
                                 </div>
-                            </div>
 
-                            <!-- Social Investment -->
-                            <div class="flex flex-col items-center justify-center w-full max-w-4/5 md:max-w-full mx-auto h-full">
-                                <NuxtImg
-                                    src="images/Sustainability/Sustainability_SocialInvestmentThumbnail.jpg"
-                                    loading="lazy"
-                                    class="block w-full h-full rounded-t-2xl object-center"
-                                />
+                                <!-- Social Investment -->
+                                <div class="flex flex-col items-center justify-center w-full max-w-4/5 md:max-w-full mx-auto h-full">
+                                    <NuxtImg
+                                        src="/sustainability/Sustainability_SocialInvestmentThumbnail.jpg"
+                                        loading="lazy"
+                                        class="block w-full h-full rounded-t-2xl object-center"
+                                    />
 
-                                <div class="flex flex-col justify-between p-8 gap-12 w-full h-full bg-(--dark-teal) rounded-b-2xl">
-                                    <h3 class="text-(--white) text-3xl md:text-4xl font-extrabold">Social investment</h3>
-                                    <NuxtLink
-                                        to="/sustainability/social"
-                                        class="group flex *:flex items-center *:items-center justify-end ml-auto gap-2 w-fit text-(--black) hover:text-(--white) duration-300 ease-in-out transition-all"
-                                    >
-                                        <div class="group relative flex items-center justify-center text-xl w-8 h-full overflow-hidden">
-                                            <div class="absolute flex items-center left-2 h-full w-12 transition-all duration-500 ease-in-out group-hover:translate-x-full">
-                                                <Icon name="mdi:arrow-right"/>
+                                    <div class="flex flex-col justify-between p-8 gap-12 w-full h-full bg-(--dark-teal) rounded-b-2xl">
+                                        <h3 class="text-(--white) text-2xl lg:text-3xl font-extrabold">Social investment</h3>
+                                        <NuxtLink
+                                            to="/sustainability/social"
+                                            class="group flex *:flex items-center *:items-center justify-end ml-auto gap-2 w-fit text-(--black) hover:text-(--white) duration-300 ease-in-out transition-all"
+                                        >
+                                            <div class="group relative flex items-center justify-center text-xl w-8 h-full overflow-hidden">
+                                                <div class="absolute flex items-center left-2 h-full w-12 transition-all duration-500 ease-in-out group-hover:translate-x-full">
+                                                    <Icon name="mdi:arrow-right"/>
+                                                </div>
+                                                
+                                                <div class="absolute flex items-center left-2 h-full w-12 -translate-x-full transition-all duration-500 ease-in-out group-hover:translate-x-0">
+                                                    <Icon name="mdi:arrow-right" />
+                                                </div>
                                             </div>
-                                            
-                                            <div class="absolute flex items-center left-2 h-full w-12 -translate-x-full transition-all duration-500 ease-in-out group-hover:translate-x-0">
-                                                <Icon name="mdi:arrow-right" />
-                                            </div>
-                                        </div>
-                                        <span class="font-bold">Learn more</span>
-                                    </NuxtLink>
+                                            <span class="font-bold">Learn more</span>
+                                        </NuxtLink>
+                                    </div>
                                 </div>
-                            </div>
 
-                            <!-- Diversity and Inclusion -->
-                            <div class="flex flex-col items-center justify-center w-full max-w-4/5 md:max-w-full mx-auto h-full">
-                                <NuxtImg
-                                    src="images/Sustainability/Sustainability_DiversityInclusionThumbnail.jpg"
-                                    loading="lazy"
-                                    class="block w-full h-full rounded-t-2xl object-center"
-                                />
+                                <!-- Diversity and Inclusion -->
+                                <div class="flex flex-col items-center justify-center w-full max-w-4/5 md:max-w-full mx-auto h-full">
+                                    <NuxtImg
+                                        src="/sustainability/Sustainability_DiversityInclusionThumbnail.jpg"
+                                        loading="lazy"
+                                        class="block w-full h-full rounded-t-2xl object-center"
+                                    />
 
-                                <div class="flex flex-col justify-between p-8 gap-12 w-full h-full bg-(--dark-orange) rounded-b-2xl">
-                                    <h3 class="text-(--white) text-3xl md:text-4xl font-extrabold">Diversity and inclusion</h3>
-                                    <NuxtLink
-                                        to="/sustainability/social"
-                                        class="group flex *:flex items-center *:items-center justify-end ml-auto gap-2 w-fit text-(--black) hover:text-(--white) duration-300 ease-in-out transition-all"
-                                    >
-                                        <div class="group relative flex items-center justify-center text-xl w-8 h-full overflow-hidden">
-                                            <div class="absolute flex items-center left-2 h-full w-12 transition-all duration-500 ease-in-out group-hover:translate-x-full">
-                                                <Icon name="mdi:arrow-right"/>
+                                    <div class="flex flex-col justify-between p-8 gap-12 w-full h-full bg-(--dark-orange) rounded-b-2xl">
+                                        <h3 class="text-(--white) text-2xl lg:text-3xl font-extrabold">Diversity and inclusion</h3>
+                                        <NuxtLink
+                                            to="/sustainability/social"
+                                            class="group flex *:flex items-center *:items-center justify-end ml-auto gap-2 w-fit text-(--black) hover:text-(--white) duration-300 ease-in-out transition-all"
+                                        >
+                                            <div class="group relative flex items-center justify-center text-xl w-8 h-full overflow-hidden">
+                                                <div class="absolute flex items-center left-2 h-full w-12 transition-all duration-500 ease-in-out group-hover:translate-x-full">
+                                                    <Icon name="mdi:arrow-right"/>
+                                                </div>
+                                                
+                                                <div class="absolute flex items-center left-2 h-full w-12 -translate-x-full transition-all duration-500 ease-in-out group-hover:translate-x-0">
+                                                    <Icon name="mdi:arrow-right" />
+                                                </div>
                                             </div>
-                                            
-                                            <div class="absolute flex items-center left-2 h-full w-12 -translate-x-full transition-all duration-500 ease-in-out group-hover:translate-x-0">
-                                                <Icon name="mdi:arrow-right" />
-                                            </div>
-                                        </div>
-                                        <span class="font-bold">Learn more</span>
-                                    </NuxtLink>
+                                            <span class="font-bold">Learn more</span>
+                                        </NuxtLink>
+                                    </div>
                                 </div>
-                            </div>
 
-                            
+                                
+                            </div>
                         </div>
+
                     </div>
 
                 </div>
 
             </div>
 
-        </div>
-
-    </section>
+        </section>
 
 
     </div>

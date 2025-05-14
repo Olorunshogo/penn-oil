@@ -29,15 +29,11 @@
     });
 
     import { 
-        dollarsContributed, employeeTotal, volunteerTotalHours,
-        whoNewsroom
+        dollarsContributed, employeeTotal, 
+        volunteerTotalHours, whoNewsroom
     } from '~/stores/whoVariables';
-    import {
-        prevRef, prevIndex, prevSlide,
-        activeRef, activeIndex,        
-        nextRef, nextIndex, nextSlide,
-        goTo
-    } from '~/stores/homeNews';
+
+    import { whoCultureHeroVideoBg } from '~/models/heroBgModels';
 
 </script>
 
@@ -45,36 +41,17 @@
 <template>
     <div>
         <!-- Section: Hero -->
-        <section>        
-            
-            <div class="relative w-full h-full overflow-hidden -mt-[11rem] py-(--section-pyx) lg:py-(--section-py-lg)">
-
-                <!-- Image Slider Container -->
-                <div class="image-slider h-[1000px]"></div>         
-
-                <!-- Content -->
-                <div class="grid w-full h-fit bg-(--white) absolute bottom-0 px-4">
-
-                    <div class="flex flex-col py-12 gap-8 lg:gap-16 items-center justify-center w-full max-w-5xl mx-auto h-fit">
-
-                        <h1 
-                            class="text-5xl md:text-8xl xl:text-9xl bg-clip-text text-center text-transparent font-extrabold bg-gradient-to-r from-(--light-blue) to-(--dark-blue)" 
-                        >
-                            Our culture
-                        </h1>
-
-                        <p class="text-xl text-center text-(--black)">
-                            We work hard to provide energy that helps improve the lives of people around the world. 
-                            The Operational Excellence Management System is a core part of how we do it. 
-                            We promote a culture that values a diversity of perspectives, productive dialogue and teaming that help us deliver the future of energy.
-                        </p>
-                        
-                        
-                    </div>
-
-                </div> 
-            </div>
-        </section>
+        <div>
+            <HeroSectionVideoBg
+                :videoSrc="whoCultureHeroVideoBg.videoSrc"
+                :title="whoCultureHeroVideoBg.title"
+                :titleBgVideoSrc="whoCultureHeroVideoBg.titleBgVideoSrc"
+                :paragraph="whoCultureHeroVideoBg.paragraph"
+                :displayLink="whoCultureHeroVideoBg.displayLink"
+                :link="whoCultureHeroVideoBg.link"
+                :linkName="whoCultureHeroVideoBg.linkName"
+            />
+        </div>
 
         <!-- Section: Our way is the Penn Petro Energy way, We strive for excellence in everything we do and Diversity and inclusion make us stronger  -->
         <section>

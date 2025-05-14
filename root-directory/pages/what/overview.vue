@@ -26,44 +26,25 @@
         keywords: 'Penn Petro Energy services, energy solutions, global energy company, oil and gas services, clean energy technologies, energy production, energy innovation, sustainability in energy',
     });
 
+    import { whatOverviewHeroVideoBg } from '~/models/heroBgModels'; 
+
 </script>
 
 
 <template>
     <div>
         <!-- Section: Hero -->
-        <section>        
-            
-            <div class="relative w-full h-full overflow-hidden -mt-[11rem]">
-
-                <!-- Image Container -->
-                <NuxtImg
-                    src="https://images.pexels.com/photos/31959461/pexels-photo-31959461/free-photo-of-modern-city-skyline-with-bridge-reflection.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                    alt="Modern City Skyline with Bridge Reflection"
-                    loading="lazy"
-                    class="relative h-dvh w-full object-cover z-0"
-                />
-                
-
-                <!-- Content -->
-                <div class="grid gap-4 bg-(--white) w-full absolute bottom-0 h-1/2 lg:h-2/5 max-h-[500px]">
-                    <div class="flex flex-col items-center justify-center w-full max-w-4xl mx-auto h-full gap-2">
-                        <h1 
-                            class="text-5xl md:text-8xl xl:text-9xl text-center font-extrabold bg-clip-text text-transparent" 
-                            style="background-image: url('https://images.pexels.com/photos/31959461/pexels-photo-31959461/free-photo-of-modern-city-skyline-with-bridge-reflection.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); background-size: cover;"
-                        >
-                            What we do
-                        </h1>
-                        
-                        <p class="text-xl lg:text-2xl text-center text-(--black)">
-                            The world’s energy demands are greater than ever before. 
-                            We’re working to deliver the lower carbon energy needed today while building the energy system of tomorrow.
-                        </p>
-                    </div>
-                </div> 
-
-            </div>
-        </section>
+        <div>
+            <HeroSectionVideoBg
+                :videoSrc="whatOverviewHeroVideoBg.videoSrc"
+                :title="whatOverviewHeroVideoBg.title"
+                :titleBgVideoSrc="whatOverviewHeroVideoBg.titleBgVideoSrc"
+                :paragraph="whatOverviewHeroVideoBg.paragraph"
+                :displayLink="whatOverviewHeroVideoBg.displayLink"
+                :link="whatOverviewHeroVideoBg.link"
+                :linkName="whatOverviewHeroVideoBg.linkName"
+            />
+        </div>
 
         <!-- Section: Affordable, reliable, ever-cleaner energy -->
         <section>

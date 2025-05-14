@@ -28,6 +28,8 @@
         keywords: 'about Penn Petro Energy, energy company overview, Penn Petro mission, energy leadership, global energy company, sustainability values, responsible energy innovation',
     });
 
+    import { whoOverviewHeroVideoBg } from '~/models/heroBgModels';
+
 </script>
 
 
@@ -35,42 +37,17 @@
 <template>
     <div>
         <!-- Section: Hero -->
-        <section>        
-            
-            <div class="relative w-screen h-full overflow-hidden -mt-[11rem]">
-
-                <div class="bg-container">
-                    <video 
-                        autoplay 
-                        loop muted playsinline
-                        class="bg"
-                    >
-                        <source src="/videos/who/who-we-are-hero-video-compressed.mp4" type="video/mp4" >
-                    </video>
-                </div>
-
-
-                <!-- Content Layer -->
-                <div class="absolute bottom-0 w-full h-1/2 lg:h-2/5 max-h-[500px] flex items-center justify-center px-4">
-                    <div class="flex flex-col items-center justify-center text-center gap-4 w-full max-w-4xl mx-auto">
-                        
-                        <!-- H1 with video reflected -->
-                        <h1 
-                            class="text-5xl md:text-8xl xl:text-9xl text-transparent font-extrabold bg-clip-text bg-gradient-to-r from-(--dark-red) to-(--dark-blue)"
-                        >
-                            Who we are
-                        </h1>
-
-                        <!-- Supporting text -->
-                        <p class="text-xl lg:text-2xl text-(--black) font-medium">
-                            Energy drives human progress and creates positive change for modern society.
-                            We work hard to deliver energy that can improve the lives of millions of people around the world.
-                        </p>
-                    </div>
-                </div>
-
-            </div>
-        </section>
+        <div>
+            <HeroSectionVideoBg
+                :videoSrc="whoOverviewHeroVideoBg.videoSrc"
+                :title="whoOverviewHeroVideoBg.title"
+                :titleBgVideoSrc="whoOverviewHeroVideoBg.titleBgVideoSrc"
+                :paragraph="whoOverviewHeroVideoBg.paragraph"
+                :displayLink="whoOverviewHeroVideoBg.displayLink"
+                :link="whoOverviewHeroVideoBg.link"
+                :linkName="whoOverviewHeroVideoBg.linkName"
+            />
+        </div>
 
         <!-- Section: What are we -->
         <section>
