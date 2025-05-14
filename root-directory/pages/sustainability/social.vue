@@ -41,14 +41,14 @@
 <template>
     <div>
         <!-- Section: Hero -->
-        <section>        
+        <section>      
             
             <div class="relative w-screen h-full overflow-hidden -mt-[11rem]">
 
                 <div class="bg-container">
                     <NuxtImg
                         src="https://images.pexels.com/photos/6646778/pexels-photo-6646778.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                        alt="@ ladies and a man sharing aids"
+                        alt="Two ladies and a man sharing aids"
                         loading="lazy"
                         class="bg"
                     />
@@ -115,7 +115,7 @@
                         <!-- Environment -->
                         <div class="flex flex-row lg:flex-col items-center gap-4 w-full h-full">
                             <NuxtImg
-                                src="/images/sustainability/social_environment.png"
+                                src="/images/sustainability/social_tree.png"
                                 alt="Image similar to an icon of 3 a tree"
                                 loading="lazy"
                                 class="w-16 lg:w-50 h-16 lg:h-50 rounded-full"
@@ -234,7 +234,7 @@
             </div>
         </section>
 
-        <!-- building on a sound legacy -->
+        <!-- Building on a sound legacy -->
         <section>                  
             <div class="relative bg-(--dark-teal) px-(--section-px) lg:px-(--section-px-lg) py-(--section-py) lg:py-(--section-py-lg) w-full h-full">
 

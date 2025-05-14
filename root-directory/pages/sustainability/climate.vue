@@ -46,8 +46,8 @@
 
                 <!-- Image Container -->
                 <NuxtImg
-                    src="https://images.pexels.com/photos/461789/pexels-photo-461789.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                    alt="Front-end loader"
+                    src="/images/sustainability/Sustainability_ClimateThumbnail.jpg"
+                    alt="Sustainability_ClimateThumbnail"
                     loading="lazy"
                     class="relative h-dvh w-full object-cover"
                 />
@@ -61,7 +61,7 @@
                         </span>
                         <h1 
                             class="text-5xl md:text-8xl xl:text-9xl text-center font-extrabold bg-clip-text text-transparent" 
-                            style="background-image: url('https://images.pexels.com/photos/461789/pexels-photo-461789.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); background-size: cover;"
+                            style="background-image: url('/images/sustainability/Sustainability_ClimateThumbnail.jpg'); background-size: cover;"
                         >
                             Climate
                         </h1>

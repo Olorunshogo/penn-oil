@@ -74,14 +74,14 @@
     top: 0;
     left: 0;
     width: 100vw;
-    height: 1100px;
+    height: 1000px;
     overflow: hidden;
     z-index: -1; 
 }
 
 .bg {
     width: 100vw;
-    height: 1100px;
+    height: 900px;
     object-fit: cover;
 }
 
