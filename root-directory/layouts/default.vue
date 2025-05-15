@@ -41,21 +41,11 @@
 
 <template>
   <div class="default-layout scroll-smooth">
-    <HomeNavbar class="sticky z-[99] inset-0 bottom-[unset] cursor-default bg-transparent" />
+    <NavBar class="sticky z-[99] inset-0 bottom-[unset] cursor-default bg-transparent" />
 
       <div>
         <slot></slot>
       </div>
-
-      <!-- Scroll To Top Button -->
-      <button 
-        v-if="showButton"
-        class="fixed flex items-center justify-center bottom-8 right-8 py-2.5 px-5 bg-slate-300 w-12 h-12 text-(--white) rounded-lg cursor-pointer text-base"
-        @click="scrollToTop"
-      >
-        <Icon name="mdi:arrow-up" />
-        arrow
-      </button>
       
     <HomeFooter/>
   </div>

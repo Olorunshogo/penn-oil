@@ -1,118 +1,83 @@
 
 <script setup lang='ts'>
 
-    import { homeHeroVideo5Bg } from '~/models/heroBgModels';    
+    import { onMounted, watch, nextTick } from 'vue';
+    import { homeHeroBgs } from '~/models/heroBgModels';   
+    
+    const {
+        currentIndex,
+        isPlaying,
+        goToSlide,
+        togglePlayPause,
+        animateSlide,
+    } = useHomeHeroSlider(homeHeroBgs.value.length)
+
+    watch(currentIndex, async (newIndex, oldIndex) => {
+        await nextTick()
+        const oldSlide = document.querySelector(`#slide-${oldIndex}`) as HTMLElement
+        const newSlide = document.querySelector(`#slide-${newIndex}`) as HTMLElement
+
+        if (oldSlide && newSlide) {
+            animateSlide(oldSlide, 'out')
+            animateSlide(newSlide, 'in')
+        }
+    })
     
 </script>
 
 
 <template>
     <div> 
-        <!-- Section: Hero -->
-        <div>
-            <HomeHeroBgSlider
-                :videoSrc="homeHeroVideo5Bg.videoSrc"
-                :bgColor="homeHeroVideo5Bg.bgColor"
-                :heading="homeHeroVideo5Bg.heading"
-                :paragraph="homeHeroVideo5Bg.paragraph"
-                :link="homeHeroVideo5Bg.link"
-                :linkName="homeHeroVideo5Bg.linkName"
-            />
-        </div>
-
-
-
-        <!-- <section>        
+        <div class="relative">
+            <div class="relative overflow-hidden h-dvh w-screen">
             
-            <div class="relative w-full h-full overflow-hidden -mt-[11rem]">
-                <div class="flex w-full h-dvh overflow-hidden">    -->
-                    <!-- <HomeHeroBgslider
-                        v-for="(item, index) in videoSlider"
-                        :key="item.id" 
-                        :imgSrc="item.imgSrc"
-                        :imgAlt="item.imgSrc"
-                        :contentBg="item.contentBg"
-                        :heading="item.heading"
-                        :description="item.description"
-                        :ctaLink="item.ctaLink"
-                        :cta="item.cta"  
-
-                        class="w-full min-w-full h-full"              
-                    />
-                </div> 
-
-                <div class="controls flex items-center justify-center gap-4 w-4/5 md:w-1/2 mx-auto z-30 bg-transparent absolute bottom-0 left-1/2 transform -translate-x-1/2 ">
-
-                    <div class="pagination flex flex-wrap items-center justify-center gap-2 bg-(--black)/40 rounded-full py-2 px-4">
-                        <span
-                            v-for="(item, index) in videoSlider"
-                            :key="index"
-                            class="flex w-12 md:w-16 h-2 rounded-full duration-300 ease-in-out cursor-pointer transition-colors"
-                            :class="{ 
-                                'bg-(--white)': currentIndex === index,
-                                'bg-(--white)/50': currentIndex !== index,
-                            }"
-                            :style="{ opacity: currentIndex === index ? 1 : 0.5, width: `${(progress / intervalDuration) * 100}%` }"
-                            @click="goToSlide(index)"
-                        >
-                        </span>
+                <div class="absolute inset-0 w-full h-full">
+                    <div 
+                        v-for="(item, index) in homeHeroBgs" :key="item.id" :id="'slide-' + index">
+                        <Transition name="fade" mode="out-in">
+                            <HomeHeroBgSlider
+                                v-if="currentIndex === index"
+                                v-bind="item"
+                            />
+                        </Transition>
                     </div>
+                </div>
 
-                    <button
-                        @click="togglePlayPause"
-                        class="flex items-center justify-center bg-(--black)/40 hover:bg-(--black)/50 w-10 h-10 rounded-full hover:cursor-pointer ease-in-out duration-500 transition-all"
+                <!-- Controls -->
+                <div class="controls absolute bottom-8 left-1/2 transform -translate-x-1/2 z-50 flex items-center gap-4">
+                    <div class="pagination flex gap-2">
+                        <span
+                            v-for="(_, idx) in homeHeroBgs"
+                            :key="idx"
+                            class="w-4 h-4 rounded-full bg-white/50 cursor-pointer transition-all"
+                            :class="{ 'bg-white': currentIndex === idx }"
+                            @click="goToSlide(idx)"
+                        ></span>
+                    </div>
+                    <button @click="togglePlayPause" 
+                        class="ml-4 text-white bg-black/50 px-3 py-1 rounded-full"
                     >
-                        <Icon 
-                            :name="isPlaying ? 'mdi:pause' : 'mdi:play'"
-                            class="text-(--white) font-extrabold text-3xl"
+                        <Icon :name="isPlaying ? 'mdi:pause' : 'mdi:play'" 
+                            class="text-(--white) font-extrabold text-3xl w-16 h-16 rounded-full"
                         />
                     </button>
-                </div> 
+                </div>
 
             </div>
+        </div>
 
-        </section> -->
     </div>
 </template>
 
 <style lang="css" scoped>
 
-    .home-hero-slide {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        transition: opacity 1s ease-in-out;
+    .fade-enter-active,
+    .fade-leave-active {
+        transition: opacity 1s;
+    }
+    .fade-enter-from,
+    .fade-leave-to {
         opacity: 0;
-    }
-
-    .home-hero-slide.opacity-100 {
-        opacity: 1 !important;
-    }
-
-
-    /* .controls {
-        position: absolute;
-        bottom: 20px;
-        left: 50%;
-        transform: translateX(-50%);
-        color: white;
-        text-align: center;
-    } */
-
-    .pagination {
-        margin: 10px 0;
-    }
-
-    .pagination span {
-        margin: 0 5px;
-        cursor: pointer;
-        display: inline-block;
-    }
-
-    .pagination .active {
-        font-weight: bold;
     }
 
 </style>

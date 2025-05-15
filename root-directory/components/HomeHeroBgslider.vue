@@ -37,8 +37,8 @@
         <!-- Section: Hero -->
         <section>        
             
-            <div class="relative w-screen h-full overflow-hidden -mt-44"
-            >
+            <div class="relative w-screen h-full overflow-hidden">
+            <!-- <div class="relative w-screen h-full overflow-hidden -mt-44"> -->
 
                 <div 
                     class="bg-container"

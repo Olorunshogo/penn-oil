@@ -1,99 +1,83 @@
 
-export const videoSlider = [
-    // 1. Penn Petro Energy reports first-quarter 2025 result
+export const homeHeroBgs = ref([  
+
+    // 1. Penn Petro Energy reports first-quarter 2025 results
     {
-        id: 1,
-        // imgSrc: 'https://images.pexels.com/photos/16830015/pexels-photo-16830015/free-photo-of-picture-of-an-oil-rig.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-        // imgSrc: '../public/images/heroBg.jpeg',
-        imgSrc: 'https://images.pexels.com/photos/14154603/pexels-photo-14154603.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-        imgAlt: 'Picture of An Oil Rig',
-        contentBg: 'transparent',
-        heading: 'Penn Petro Energy reports first-quarter 2025 results',
-        description: 'Our latest quarterly insights are now available.',
-        ctaLink: '/',
-        cta: 'Visit our investors page to learn more'
+        id: 1,  
+        videoSrc: "/homepage/Homepage-hero2-video.mp4",
+        bgColor: "var(--medium-blue)",
+        heading: "Penn Petro Energy reports first-quarter 2025 results",
+        paragraph: "Our latest quarterly insights are now available.",
+        link: "/investors",
+        linkName: "Visit our investors page to learn more"  
     },
 
     // 2. More with less
     {
-        id: 2,
-        imgSrc: 'https://images.pexels.com/photos/14154603/pexels-photo-14154603.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-        imgAlt: 'Illuminated Factory at Sunset',
-        contentBg: '#000',
-        heading: 'More with less',
-        description: "We've reached first oil at our Ballymore subsea tieback in the Gulf of America showcasing how we're leveraging technology and driving efficiencies to deliver affordable, reliable energy production.",
-        ctaLink: '/',
-        cta: 'read the press conference'
+        id: 2,  
+        videoSrc: "/homepage/Homepage-hero2-video.mp4",
+        bgColor: "var(--medium-blue)",
+        heading: "More with less",
+        paragraph: "We've reached first oil at our Ballymore subsea tieback in the Gulf of America showcasing how we're leveraging technology and driving efficiencies to deliver affordable, reliable energy production.",
+        link: "/investors",
+        linkName: "Visit our investors page to learn more"  
     },
 
     // 3. Unlocking the growth in the gulf
     {
-        id: 3,
-        imgSrc: 'https://images.pexels.com/photos/13247379/pexels-photo-13247379.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-        imgAlt: 'Gas Chimneys Producing a Ball of Fire',
-        contentBg: '#000',
-        heading: 'Unlocking the growth in the gulf',
-        description: "We're expanding operations in the Gulf of America, with a goal to produce 300,000 net barrels of oil-equivalent per day in 2026.",
-        ctaLink: '/',
-        cta: 'Learn more'
+        id: 3,  
+        videoSrc: "/homepage/Homepage-hero3-video.mp4",
+        bgColor: "var(--medium-blue)",
+        heading: "Unlocking the growth in the gulf",
+        paragraph: "We're expanding operations in the Gulf of America, with a goal to produce 300,000 net barrels of oil-equivalent per day in 2026.",
+        link: "/sustainability",
+        linkName: "Learn more"  
     },
 
-    // 4. Unlocking the growth in the gulf
+    // 4. Powering the future
     {
-        id: 4,
-        imgSrc: 'https://images.pexels.com/photos/16830015/pexels-photo-16830015/free-photo-of-picture-of-an-oil-rig.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-        imgAlt: 'Picture of An Oil Rig',
-        contentBg: '#000',
-        heading: 'Powering the future',
-        description: "Penn Petro Energy's 2024 annual report highlights our continued commitment to building a resilient energy system that powers human progress.",
-        ctaLink: '/',
-        cta: 'Download the report'
+        id: 4,  
+        videoSrc: "/homepage/Homepage-hero2-video.mp4",
+        bgColor: "var(--medium-blue)",
+        heading: "Powering the future",
+        paragraph: "Penn Petro Energy's 2024 annual report highlights our continued commitment to building a resilient energy system that powers human progress.",
+        link: "/investors",
+        linkName: "Download the report"  
     },
-
-    // 5. Unlocking the growth in the gulf
-    {
-        id: 5,
-        imgSrc: 'https://images.pexels.com/photos/14154603/pexels-photo-14154603.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-        imgAlt: 'Illuminated Factory at Sunset',
-        heading: 'Powering AI with natural gas',
-        description: "Penn Petro Energy, Engine No. 1 and GE Vernova join forces to develop scalable, reliable power solutions for U.S. data centers.",
-        ctaLink: '/',
-        cta: 'Learn more'
+    
+    // 5. Powering AI with natural gas
+    {   
+        id: 5,  
+        videoSrc: "/homepage/Homepage-hero5-video.mp4",
+        bgColor: "var(--medium-blue)",
+        heading: "Powering AI with natural gas",
+        paragraph: "Penn Petro Energy, Engine No. 1 and GE Vernova join forces to develop scalable, reliable power solutions for U.S. data centers.",
+        link: "/newsroom",
+        linkName: "Learn more"  
     },
-
+    
     // 6. Expansion in Kazakhstan hits first oil
     {
-        id: 6,
-        imgSrc: 'https://images.pexels.com/photos/13247379/pexels-photo-13247379.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-        imgAlt: 'Gas Chimneys Producing a Ball of Fire',
-        contentBg: '#000',
-        heading: 'Expansion in Kazakhstan hits first oil',
-        description: "Tengizchevroil's Future Growth Project aims to increase oil productivity by 260,000 barrels per day..",
-        ctaLink: '/',
-        cta: 'Read the news release'
-    }
-]
+        id: 6,  
+        videoSrc: "/homepage/Homepage-hero2-video.mp4",
+        bgColor: "var(--medium-blue)",
+        heading: "Expansion in Kazakhstan hits first oil",
+        paragraph: "Tengizchevroil's Future Growth Project aims to increase oil productivity by 260,000 barrels per day.",
+        link: "/newsroom",
+        linkName: "Read the news release"  
+    },
+]);
 
 
-// Who Overview
+// Homepage Overview
 export const homeHeroVideo5Bg = ref({    
-    videoSrc: "/Homepage-hero5-video.mp4",
+    videoSrc: "/homepage/Homepage-hero5-video.mp4",
     bgColor: "var(--medium-blue)",
     heading: "Powering AI with natural gas",
     paragraph: "Penn Petro Energy, Engine No. 1 and GE Vernova join forces to develop scalable, reliable power solutions for U.S. data centers.",
     link: "/newsroom",
     linkName: "Learn more"        
 });
-
-
-
-
-
-
-
-
-
-
 
 
 

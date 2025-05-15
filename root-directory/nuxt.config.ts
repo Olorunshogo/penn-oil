@@ -1,4 +1,5 @@
 import tailwindcss from "@tailwindcss/vite";
+import { gsap } from 'gsap';
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
@@ -34,6 +35,10 @@ export default defineNuxtConfig({
       name: 'page',
       mode: 'out-in'
     }
+  },
+
+  build: {
+    transpile: ['gsap'],
   },
 
   plugins: [

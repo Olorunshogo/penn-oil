@@ -5,6 +5,11 @@
             type: String,
             required: true
         },
+        bgColor: {
+            type: String,
+            default: 'transparent',
+            required: true
+        },
         displayLink: {
             type: Boolean,
             default: false,
@@ -38,16 +43,17 @@
 </script>
 
 
-
-
 <template>
     <div>
         <!-- Section: Hero -->
         <section>        
             
-            <div class="relative w-screen h-full overflow-hidden -mt-[11rem]">
+            <div class="relative w-screen h-dvh overflow-hidden">
 
-                <div class="bg-container">
+                <div 
+                    class="bg-container"
+                    :style="{ backgroundColor: bgColor }"
+                >
                     <video 
                         autoplay 
                         loop muted playsinline
@@ -59,24 +65,20 @@
 
 
                 <!-- Content Layer -->
-                <div class="absolute bottom-0 w-full h-fit py-8 lg:h-2/5 lg:max-h-[600px] bg-(--white) flex items-center justify-center px-4">
+                <div class="absolute bottom-0 w-full h-2/5 max-h-100 backdrop-blur-md rounded-t-2xl shadow-lg flex items-center justify-center">
                     <div class="flex flex-col items-center justify-center text-center gap-4 w-full max-w-7xl mx-auto">
                         
                         <span class="text-xl lg:text-2xl text-center font-bold text-(--dark-blue)">
                             {{ category }}
                         </span>
-                        <!-- <h1 
-                            class="text-5xl md:text-8xl xl:text-9xl text-center font-extrabold bg-clip-text text-transparent" 
-                            :style="`background-image: url('${titleBgVideoSrc}'); background-size: contain;`"
-                        >
-                            {{ title }}
-                        </h1> -->
 
-                        <h1 class="text-6xl md:text-8xl xl:text-9xl text-center font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-(--dark-blue) to-(--dark-red)">
+                        <h1 class="text-6xl md:text-8xl xl:text-9xl text-center font-extrabold text-(--white)"
+                            :style="{ backgroundColor: titleBgVideoSrc }"
+                        >
                             {{ title }}
                         </h1>
                         
-                        <p class="text-lg lg:text-xl text-center text-(--black) font-medium">
+                        <p class="text-xl text-center text-(--white)">
                             {{ paragraph }}
                         </p>
 
