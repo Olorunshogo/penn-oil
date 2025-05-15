@@ -41,7 +41,7 @@ export const latestNews: Ref<LatestNewsItem[]> = ref([
     // 3. The Penn Petro Energy championship
     {
         id: 3,
-        imgSrc: '../public/images/Logo/Logo_transparent_bg.png',
+        imgSrc: '/Logo/Logo_transparent_bg.png',
         imgAlt: "Penn Petro Energy's Logo with a transparent background",
         heading: 'The Penn Petro Energy championship',
         link: '/newsroom',
@@ -52,7 +52,7 @@ export const latestNews: Ref<LatestNewsItem[]> = ref([
     // 4. Penn Petro Energy starts oil production from ballymore project in gulf of america
     {
         id: 4,
-        imgSrc: '../public/images/Logo/Logo_transparent_bg.png',
+        imgSrc: '/Logo/Logo_transparent_bg.png',
         imgAlt: "Penn Petro Energy's Logo with a transparent background",
         heading: 'Penn Petro Energy starts oil production from ballymore project in gulf of america',
         link: '/newsroom',

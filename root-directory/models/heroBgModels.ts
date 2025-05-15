@@ -5,8 +5,7 @@ export const homeHeroBgs = ref([
     // 1. Penn Petro Energy reports first-quarter 2025 results
     {
         id: 1,  
-        // videoSrc: "/homepage/Homepage-hero5-video.mp4",
-        videoSrc: "https://www.chevron.com/-/media/chevron/homepage/videos/CVXHP_838089087.mp4",
+        videoSrc: "/what/what-we-do-energy-hero-video.mp4",
         bgColor: "var(--medium-blue)",
         heading: "Penn Petro Energy reports first-quarter 2025 results",
         paragraph: "Our latest quarterly insights are now available.",
@@ -17,8 +16,7 @@ export const homeHeroBgs = ref([
     // 2. More with less
     {
         id: 2,  
-        // videoSrc: "/homepage/Homepage-hero2-video.mp4",
-        videoSrc: "https://www.chevron.com/-/media/chevron/homepage/videos/DotCom-Homepage_Ballymore_First_Oil_Ambient_Hero_V1-D3.mp4",
+        videoSrc: "/what/what-we-do-overview-hero-video.mp4",
         bgColor: "var(--medium-blue)",
         heading: "More with less",
         paragraph: "We've reached first oil at our Ballymore subsea tieback in the Gulf of America showcasing how we're leveraging technology and driving efficiencies to deliver affordable, reliable energy production.",
@@ -29,8 +27,7 @@ export const homeHeroBgs = ref([
     // 3. Unlocking the growth in the gulf
     {
         id: 3,  
-        // videoSrc: "/homepage/Homepage-hero3-video.mp4",
-        videoSrc: "https://www.chevron.com/-/media/chevron/homepage/videos/GOA_Homepage_4sec_Anchor_Nospd.mp4",
+        videoSrc: "/who/who-we-are-overview-hero-video.mp4",
         bgColor: "var(--medium-blue)",
         heading: "Unlocking the growth in the gulf",
         paragraph: "We're expanding operations in the Gulf of America, with a goal to produce 300,000 net barrels of oil-equivalent per day in 2026.",
@@ -41,8 +38,7 @@ export const homeHeroBgs = ref([
     // 4. Powering the future
     {
         id: 4,  
-        // videoSrc: "/homepage/Homepage-hero2-video.mp4",
-        videoSrc: "https://www.chevron.com/-/media/chevron/homepage/videos/DotCom-Homepage_Ballymore_First_Oil_Ambient_Hero_V1-D3.mp4",
+        videoSrc: "/who/what-we-do-overview-hero-video.mp4",
         bgColor: "var(--medium-blue)",
         heading: "Powering the future",
         paragraph: "Penn Petro Energy's 2024 annual report highlights our continued commitment to building a resilient energy system that powers human progress.",
@@ -133,7 +129,7 @@ export const whoLeadershipHeroImageBg = ref({
 export const whatOverviewHeroVideoBg = ref({    
     videoSrc: "/what/what-we-do-overview-hero-video.mp4",
     title: "What we do",
-    titleBgVideoSrc: "/videos/what/what-we-do-overview-hero-video.mp4",
+    titleBgVideoSrc: "/what/what-we-do-overview-hero-video.mp4",
     paragraph: "The world’s energy demands are greater than ever before. We’re working to deliver the lower carbon energy needed today while building the energy system of tomorrow.",
     displayLink: false,
     link: "/newsroom",
@@ -145,7 +141,7 @@ export const whatEnergyHeroVideoBg = ref({
     videoSrc: "/what/what-we-do-energy-hero-video.mp4",
     category: "what we do",
     title: "Energy solutions",
-    titleBgVideoSrc: "/videos/what/what-we-do-energy-hero-video.mp4",
+    titleBgVideoSrc: "/what/what-we-do-energy-hero-video.mp4",
     paragraph: "Affordable, reliable and ever-cleaner energy for today and tomorrow. That’s what we’re working towards, every day.",
     displayLink: false,
     link: "/newsroom",
