@@ -6,10 +6,6 @@
         title: 'Sustainability Overview Page',
     });
 
-    definePageMeta({
-        layout: 'custom'
-    });
-
     useSeoMeta({
         title: 'Penn Petro Energy Social Impact | Empowering People and Communities',
         ogTitle: 'Penn Petro Energy | Social Responsibility and Community Engagement',

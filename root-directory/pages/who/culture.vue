@@ -7,10 +7,6 @@
         titleTemplate: '%s | Penn Petro Energy'
     });
 
-    definePageMeta({
-        layout: 'custom'
-    });
-
     useSeoMeta({
         title: 'Our Culture | Life at Penn Petro Energy',
         ogTitle: 'Inside Penn Petro Energy | Culture & People',

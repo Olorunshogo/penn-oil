@@ -5,9 +5,7 @@
         title: 'Investors Overview',
         titleTemplate: '%s | Penn Petro Energy PLC'
     });
-    definePageMeta({
-        layout: 'custom'
-    });
+
 
 </script>
 

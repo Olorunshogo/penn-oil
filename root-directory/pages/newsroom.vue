@@ -6,10 +6,6 @@
         titleTemplate: '%s | Penn Petro Energy PLC'
     });
 
-    definePageMeta({
-        layout: 'custom'
-    });
-
     useSeoMeta({
         title: 'Penn Petro Energy Newsroom | Latest News & Media Releases',
         ogTitle: 'Stay Updated with Penn Petro Energy News',

@@ -5,9 +5,6 @@
         title: 'What We Do',
         titleTemplate: '%s | Penn Petro Energy'
     });
-    definePageMeta({
-        layout: 'custom'
-    })
 
     useSeoMeta({
         title: 'Technology and Innovation | Penn Petro Energy',

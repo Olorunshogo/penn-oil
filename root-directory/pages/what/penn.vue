@@ -7,10 +7,6 @@
         titleTemplate: '%s | Penn Petro Energy'
     });
 
-    definePageMeta({
-        layout: 'custom'
-    });
-
     useSeoMeta({
         title: 'Penn Petro Energy Around the World | Global Energy Impact',
         ogTitle: 'Penn Petro Energy | Global Presence and Energy Impact',

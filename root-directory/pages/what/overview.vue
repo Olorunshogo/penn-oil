@@ -5,9 +5,6 @@
         title: 'What We Do',
         titleTemplate: '%s | Penn Petro Energy'
     });
-    definePageMeta({
-        layout: 'custom'
-    })
 
     useSeoMeta({
         title: 'Overview of Penn Petro Energy’s Services | What We Do',

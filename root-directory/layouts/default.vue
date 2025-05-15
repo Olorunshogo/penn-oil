@@ -1,8 +1,7 @@
 
 <script lang="ts" setup>
+  import { ref, onMounted, onBeforeMount } from 'vue';
   import { useSeoMeta, useHead } from 'nuxt/app';
-  import { showButton, scrollToTop } from '../stores/homepage';
-
   
   useHead({
     htmlAttrs: {
@@ -35,6 +34,32 @@
   
   }); 
 
+  const topButton = ref<boolean>(false);
+
+  // Show and hide Button based on it's viewHeight
+  function handleScroll() {
+    const scrollY = window.scrollY;
+    const totalHeight = document.body.scrollHeight - window.innerHeight;
+    const scrollPercentage = scrollY / totalHeight;
+
+    topButton.value = scrollPercentage > 0.4;
+  };
+
+  // Scroll to the Top
+  function scrollToTop() {
+    window.scrollTo({ top: 24, behavior: 'smooth' });
+  };
+
+  // Set up scroll event listener
+  onMounted(() => {
+    window.addEventListener('scroll', handleScroll);
+  });
+
+  // Clean up the scroll event listener when the component is unmounted
+  onBeforeMount(() => {
+    window.removeEventListener('scroll', handleScroll);
+  });
+
 
 </script>
 
@@ -42,10 +67,28 @@
 <template>
   <div class="default-layout scroll-smooth">
     <NavBar class="sticky z-[99] inset-0 bottom-[unset] cursor-default bg-transparent" />
+      <!--SearchBar  -->
+      <div>
+        <SearchBar />
+      </div>
 
       <div>
         <slot></slot>
       </div>
+
+      <!-- Scroll To Top Button -->
+      <button
+        v-if="topButton"
+        @click="scrollToTop"
+        class="fixed flex items-center justify-center bottom-20 right-8 bg-gradient-to-br from-(--dark-red) to-(--dark-orange) hover:scale-102 w-12 h-20 text-(--white) rounded-lg shadow-lg z-99 cursor-pointer opacity-100 hover:opacity-85 ease-in-out duration-300 transition-all"
+      >
+        <Icon 
+          name="line-md:arrow-up" 
+          class="font-bold text-2xl text-(--white)" 
+        />
+
+        
+      </button>
       
     <HomeFooter/>
   </div>

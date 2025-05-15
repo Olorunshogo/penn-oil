@@ -47,8 +47,6 @@
 </script>
 
 
-
-
 <template>
     <!-- Section: Hero -->
         <section>      
@@ -78,8 +76,8 @@
                         </span>
 
                         <h1 
-                            class="text-6xl md:text-8xl xl:text-9xl text-center font-extrabold text-(--white)"
-                            :style="{ backgroundColor: titleBgImageSrc }"
+                            class="text-5xl md:text-6xl xl:text-9xl text-center font-extrabold bg-clip-text text-transparent" 
+                            :style="{ backgroundImage: `url(${titleBgImageSrc})`, backgroundSize: 'cover' }"
                         >
                             {{ title }}
                         </h1>

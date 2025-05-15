@@ -7,10 +7,6 @@
         titleTemplate: '%s - Penn Petro Energy'
     });
 
-    definePageMeta({
-        layout: 'custom'
-    });
-
     useSeoMeta({
         title: 'Our History | Penn Petro Energy’s Journey',
         ogTitle: 'Penn Petro Energy | A Legacy of Energy Innovation',

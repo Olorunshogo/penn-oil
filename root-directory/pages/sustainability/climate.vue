@@ -7,10 +7,6 @@
         titleTemplate: '%s | Penn Petro Energy'
     });
 
-    definePageMeta({
-        layout: 'custom'
-    });
-
     useSeoMeta({
         title: 'Penn Petro Energy Climate Strategy | Tackling Climate Change Responsibly',
         ogTitle: 'Penn Petro Energy | Climate Action and Carbon Reduction Goals',

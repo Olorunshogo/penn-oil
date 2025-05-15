@@ -23,8 +23,6 @@
         keywords: 'Penn Petro Energy, global energy company, oil and gas innovation, sustainable energy, clean energy solutions, energy technology, energy leadership, Penn Petro services',
     });
 
-
-
 </script>
 
 

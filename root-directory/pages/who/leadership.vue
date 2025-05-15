@@ -7,10 +7,6 @@
         titleTemplate: '%s | Penn Petro Energy'
     });
 
-    definePageMeta({
-        layout: 'custom'
-    });
-
     useSeoMeta({
         title: 'Leadership Team | Penn Petro Energy',
         ogTitle: 'Meet the Leaders of Penn Petro Energy',

@@ -1,13 +1,10 @@
 
 <script lang="ts" setup>
     import { useHead } from 'nuxt/app';
+    
     useHead({
         title: 'Careers',
         titleTemplate: '%s | Penn Petro Energy PLC'
-    });
-
-    definePageMeta({
-        layout: 'custom'
     });
 
     useSeoMeta({
@@ -27,23 +24,31 @@
         keywords: 'Penn Petro Energy careers, energy jobs, oil and gas careers, sustainability jobs, engineering jobs, energy innovation, clean energy careers, global energy company, Penn Petro hiring',
     });
 
+    import { careersHeroImageBg } from '~/models/heroBgModels';
+
 </script>
 
 
 <template>
     <div>
         <!-- Section: Hero -->
+        <div>
+            <HeroSectionImageBg
+                :imgSrc="careersHeroImageBg.imgSrc"
+                :imgAlt="careersHeroImageBg.imgAlt"
+                :title="careersHeroImageBg.title"
+                :titleBgImageSrc="careersHeroImageBg.titleBgImageSrc"
+                :displayLink="careersHeroImageBg.displayLink"
+                :paragraph="careersHeroImageBg.paragraph"
+                :link="careersHeroImageBg.link"
+                :linkName="careersHeroImageBg.linkName"
+            />
+        </div>
+
+        <!-- Section: Hero -->
         <section>        
             
-            <div class="relative w-full h-full overflow-hidden -mt-[11rem]">
-
-                <!-- Image Container -->
-                <NuxtImg
-                    src="https://images.pexels.com/photos/1181438/pexels-photo-1181438.jpeg"
-                    alt="Group of Women Standing Near Desk"
-                    loading="lazy"
-                    class="relative h-dvh w-full object-cover z-0"
-                />
+            <div class="relative w-full h-full overflow-hidden">
                 
 
                 <!-- Content -->

@@ -7,10 +7,6 @@
         titleTemplate: '%s | Penn Petro Energy'
     });
 
-    definePageMeta({
-        layout: 'custom'
-    });
-
     useSeoMeta({
         title: 'Contact Penn Petro Energy | Get in Touch Today',
         ogTitle: 'Reach Out to Penn Petro Energy',

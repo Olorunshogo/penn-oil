@@ -7,10 +7,6 @@
         titleTemplate: '%s | Penn Petro Energy PLC'
     });
 
-    definePageMeta({
-        layout: 'custom'
-    });
-
     useSeoMeta({
         title: 'Our Brands | Penn Petro Energy Portfolio',
         ogTitle: 'Penn Petro Energy Brands | Global Energy Solutions',

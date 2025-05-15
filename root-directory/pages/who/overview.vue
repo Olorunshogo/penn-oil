@@ -7,10 +7,6 @@
         titleTemplate: '%s | Penn Petro Energy PLC'
     });
 
-    definePageMeta({
-        layout: 'custom'
-    });
-
     useSeoMeta({
         title: 'Who We Are | Penn Petro Energy Company Overview',
         ogTitle: 'Penn Petro Energy | Our Mission, Values & Vision',

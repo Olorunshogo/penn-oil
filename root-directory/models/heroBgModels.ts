@@ -1,10 +1,11 @@
 
+// Homepage Video SLider
 export const homeHeroBgs = ref([  
 
     // 1. Penn Petro Energy reports first-quarter 2025 results
     {
         id: 1,  
-        videoSrc: "/homepage/Homepage-hero2-video.mp4",
+        videoSrc: "/homepage/Homepage-hero5-video.mp4",
         bgColor: "var(--medium-blue)",
         heading: "Penn Petro Energy reports first-quarter 2025 results",
         paragraph: "Our latest quarterly insights are now available.",
@@ -59,7 +60,7 @@ export const homeHeroBgs = ref([
     // 6. Expansion in Kazakhstan hits first oil
     {
         id: 6,  
-        videoSrc: "/homepage/Homepage-hero2-video.mp4",
+        videoSrc: "/homepage/Homepage-hero3-video.mp4",
         bgColor: "var(--medium-blue)",
         heading: "Expansion in Kazakhstan hits first oil",
         paragraph: "Tengizchevroil's Future Growth Project aims to increase oil productivity by 260,000 barrels per day.",
@@ -67,18 +68,6 @@ export const homeHeroBgs = ref([
         linkName: "Read the news release"  
     },
 ]);
-
-
-// Homepage Overview
-export const homeHeroVideo5Bg = ref({    
-    videoSrc: "/homepage/Homepage-hero5-video.mp4",
-    bgColor: "var(--medium-blue)",
-    heading: "Powering AI with natural gas",
-    paragraph: "Penn Petro Energy, Engine No. 1 and GE Vernova join forces to develop scalable, reliable power solutions for U.S. data centers.",
-    link: "/newsroom",
-    linkName: "Learn more"        
-});
-
 
 
 
@@ -229,6 +218,18 @@ export const InvestorOverviewHeroImageBg = ref({
     category: "sustainability",
     title: "Investor relations",
     titleBgImageSrc: "https://images.pexels.com/photos/6150527/pexels-photo-6150527.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    paragraph: "We believe our business succeeds when our people and communities succeed. Our social investments seek to respond to needs in the communities where we operate around the world. We seek to work with communities and partners to promote job growth and economic development.",
+    displayLink: false,
+    link: "/sustainability",
+    linkName: "Read more about our environmental efforts"        
+});
+
+// Sustainability Social
+export const careersHeroImageBg = ref({    
+    imgSrc: "https://images.pexels.com/photos/1181438/pexels-photo-1181438.jpeg",
+    imgAlt: "Group of Women Standing Near Desk",
+    title: "Careers",
+    titleBgImageSrc: "https://images.pexels.com/photos/1181438/pexels-photo-1181438.jpeg",
     paragraph: "We believe our business succeeds when our people and communities succeed. Our social investments seek to respond to needs in the communities where we operate around the world. We seek to work with communities and partners to promote job growth and economic development.",
     displayLink: false,
     link: "/sustainability",

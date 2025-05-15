@@ -7,10 +7,6 @@
         titleTemplate: '%s | Penn Petro Energy'
     });
 
-    definePageMeta({
-        layout: 'custom'
-    });
-
     useSeoMeta({
         title: 'Penn Petro Energy Environmental Commitment | Protecting Natural Resources',
         ogTitle: 'Penn Petro Energy | Environmental Responsibility in Energy Operations',

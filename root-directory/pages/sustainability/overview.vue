@@ -7,10 +7,6 @@
         titleTemplate: '%s | Penn Petro Energy'
     });
 
-    definePageMeta({
-        layout: 'custom'
-    });
-
     useSeoMeta({
         title: 'Penn Petro Energy Sustainability | Environmental & Social Commitment',
         ogTitle: 'Penn Petro Energy | Our Sustainability Vision and Impact',
