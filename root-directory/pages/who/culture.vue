@@ -197,7 +197,7 @@
                         </h2>
 
                         <p class="text-(--white) text-center text-xl font-semibold cursor-text">
-                            Our Chevron Humankind initiative is a program in the United States that offers support from our employees to their communities.
+                            Our Penn Petro Energy humankind initiative is a program in the United States that offers support from our employees to their communities.
                         </p>
                     </div>
 

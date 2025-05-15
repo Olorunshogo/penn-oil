@@ -292,7 +292,7 @@
                                     </h3>
 
                                     <p class="text-(--white) text-xl">
-                                        We're sourcing more electricity from renewables like wind and solar to power some of our Chevron operations.
+                                        We're sourcing more electricity from renewables like wind and solar to power some of our Penn Petro Energy operations.
                                     </p>
 
                                     <!-- See how we use renewable energy -->

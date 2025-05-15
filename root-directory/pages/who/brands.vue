@@ -45,8 +45,7 @@
                 :link="whoBrandsHeroImageBg.link"
                 :linkName="whoBrandsHeroImageBg.linkName"
             />
-        </div>
-             
+        </div>             
 
 
         <!-- Section: Penn Petro Energy, Texaco, Caltex -->

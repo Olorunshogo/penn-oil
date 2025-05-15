@@ -6,6 +6,8 @@
         titleTemplate: '%s | Penn Petro Energy PLC'
     });
 
+    import { investorOverviewHeroImageBg  } from '~/models/heroBgModels';
+
 
 </script>
 
@@ -13,14 +15,29 @@
 <template>
     <div>
         <!-- Section: Hero -->
-        <section>        
+        <div>
+            <HeroSectionImageBg
+                :imgSrc="investorOverviewHeroImageBg.imgSrc"
+                :imgAlt="investorOverviewHeroImageBg.imgAlt"
+                :category="investorOverviewHeroImageBg.category"
+                :title="investorOverviewHeroImageBg.title"
+                :titleBgImageSrc="investorOverviewHeroImageBg.titleBgImageSrc"
+                :displayLink="investorOverviewHeroImageBg.displayLink"
+                :paragraph="investorOverviewHeroImageBg.paragraph"
+                :link="investorOverviewHeroImageBg.link"
+                :linkName="investorOverviewHeroImageBg.linkName"
+            />
+        </div> 
+
+        <!-- Section: Hero -->
+        <!-- <section>        
             
             <div class="relative w-full h-full overflow-hidden -mt-[11rem]">
 
-                <!-- Image Slider Container -->
+                <!-- Image Slider Container --
                 <div class="image-slider h-dvh lg:h-[1240px]">          
 
-                    <!-- Content -->
+                    <!-- Content --
                     <div class="grid w-full h-fit bg-(--white) absolute bottom-0">
                         <div class="flex flex-col py-8 lg:py-12 items-center justify-center w-full max-w-6xl mx-auto h-fit">
                             
@@ -44,7 +61,7 @@
                 </div>
 
             </div>
-        </section>
+        </section> -->
 
 
         <!-- Section: Latest News -->
@@ -80,52 +97,59 @@
                         
                     </div> 
 
-                    <div class="grid md:grid-cols-2 gap-8">
+                    <div class="grid md:grid-cols-2 gap-6 *:w-full *:max-w-md *:mx-auto *:h-fit">
 
-                        <div class="grid gmd:grid-cols-2 gap-4 lg:gap-6">
-                            <!-- Delivering first oil while lowering development costs -->
-                            <div class="grid p-6 gap-8 rounded-2xl bg-(--dark-blue)/90 shadow-lg">
-                                <NuxtImg
-                                    src="https://images.pexels.com/photos/8370328/pexels-photo-8370328.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                                    alt="Female Vlogger doing a Video Recording"
-                                    loading="lazy"
-                                    class="w-full h-60 object-cover rounded-2xl"
-                                />
+                        <!-- Delivering first oil while lowering development costs -->
+                        <div class="flex flex-col gap-8 bg-(--dark-blue) p-6 rounded-2xl shadow-lg">
+                            <NuxtImg
+                                src="/investors/penn-ceo-talks-growing-production-efficient-spending-hero.jpg"
+                                alt="Penn Ceo Talks Growing Production Efficient Spending"
+                                loading="lazy"
+                                class="w-full h-60 object-cover rounded-2xl"
+                            />
 
-                                <div class="flex flex-col gap-4">
-                                    <p class="text-(--white) text-xl font-semibold cursor-text">
-                                        April 21, 2025
-                                    </p>
+                            <div class="flex flex-col gap-4">
+                                <p class="text-(--white) text-xl font-semibold cursor-text">
+                                    April 21, 2025
+                                </p>
 
-                                    <h2 
-                                        class="text-4xl font-semibold text-(--white)"
-                                    >
-                                        Delivering first oil while lowering development costs
-                                    </h2>
+                                <h2 
+                                    class="text-4xl font-semibold text-(--white)"
+                                >
+                                    Delivering first oil while lowering development costs
+                                </h2>
 
-                                    <!-- Delivering first oil while lowering development costs -->
-                                    <NuxtLink
-                                        to="/sustainability/social"
-                                        class="group flex *:flex items-center *:items-center justify-center px-2 lg:px-8 py-2 gap-2 lg:gap-4 w-fit text-(--white) hover:text-(--black) duration-300 ease-in-out transition-all"
-                                    >
-                                        <div class="group relative flex items-center justify-center text-xl w-8 h-full overflow-hidden">
-                                            <div class="absolute flex items-center left-2 h-full w-12 transition-all duration-500 ease-in-out group-hover:translate-x-full">
-                                                <Icon name="mdi:arrow-right"/>
-                                            </div>
-                                            
-                                            <div class="absolute flex items-center left-2 h-full w-12 -translate-x-full transition-all duration-500 ease-in-out group-hover:translate-x-0">
-                                                <Icon name="mdi:arrow-right" />
-                                            </div>
+                                <!-- Delivering first oil while lowering development costs -->
+                                <NuxtLink
+                                    to="/sustainability/social"
+                                    class="group flex *:flex items-center *:items-center justify-center px-2 lg:px-8 py-2 gap-2 lg:gap-4 w-fit text-(--white) hover:text-(--black) duration-300 ease-in-out transition-all"
+                                >
+                                    <div class="group relative flex items-center justify-center text-xl w-8 h-full overflow-hidden">
+                                        <div class="absolute flex items-center left-2 h-full w-12 transition-all duration-500 ease-in-out group-hover:translate-x-full">
+                                            <Icon name="mdi:arrow-right"/>
                                         </div>
-                                        <span class="group-hover:underline-text font-semibold">Read article</span>
-                                    </NuxtLink>
-                                </div> 
-
-
+                                        
+                                        <div class="absolute flex items-center left-2 h-full w-12 -translate-x-full transition-all duration-500 ease-in-out group-hover:translate-x-0">
+                                            <Icon name="mdi:arrow-right" />
+                                        </div>
+                                    </div>
+                                    <span class="group-hover:underline-text font-semibold">Read article</span>
+                                </NuxtLink>
                             </div> 
 
-                            <!-- Engine No. 1 Chevron and GE Vernova to power U.S. data centers -->
-                            <div class="flex flex-col gap-4 bg-(--dark-green) p-6 rounded-2xl shadow-lg">
+
+                        </div>  
+
+                        <!-- Penn Petro Energy leaders share their vision for the future of CERAWeek 2025 -->
+                        <div class="flex flex-col gap-8 bg-(--dark-green) p-6 rounded-2xl shadow-lg">
+                            <NuxtImg
+                                src="/investors/cnbc-joins-penn-ceo-in-gulf-of-mexico-to-discuss-deepwater-achievements-hero.jpg"
+                                alt="CNBC joins Penn Ceo in Gulf of Mexico to Discuss Deep Water Achievements"
+                                loading="lazy"
+                                class="w-full h-60 object-cover rounded-2xl"
+                            />
+
+                            <div class="flex flex-col gap-4">
                                 <p class="text-(--white) text-xl font-semibold cursor-text">
                                     March 10, 2025
                                 </p>
@@ -133,7 +157,7 @@
                                 <h2 
                                     class="text-4xl font-semibold text-(--white)"
                                 >
-                                    Engine No. 1 Chevron and GE Vernova to power U.S. data centers
+                                    Penn Petro Energy leaders share their vision for the future of CERAWeek 2025
                                 </h2>
 
                                 <NuxtLink
@@ -149,57 +173,103 @@
                                             <Icon name="mdi:arrow-right" />
                                         </div>
                                     </div>
-                                    <span class="group-hover:underline-text font-semibold">Read press release</span>
+                                    <span class="group-hover:underline-text font-semibold">Read article</span>
                                 </NuxtLink>
                             </div> 
 
-                            <!-- Penn Petro Energy CEO talks growing production, efficient spending -->
-                            <div class="grid p-6 gap-8 rounded-2xl bg-(--dark-teal)/90 shadow-lg">
-                                <NuxtImg
-                                    src="https://images.pexels.com/photos/8370328/pexels-photo-8370328.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                                    alt="Female Vlogger doing a Video Recording"
-                                    loading="lazy"
-                                    class="w-full h-60 object-cover rounded-2xl"
-                                />
 
-                                <div class="flex flex-col gap-4 h-full">
-                                    <p class="text-(--white) text-xl font-semibold cursor-text">
-                                        December 18, 2024
-                                    </p>
-
-                                    <h2 
-                                        class="text-4xl font-semibold text-(--white)"
-                                    >
-                                        Penn Petro Energy CEO talks growing production, efficient spending
-                                    </h2>
-
-                                    <NuxtLink
-                                        to="/sustainability/social"
-                                        class="group flex *:flex items-center *:items-center justify-center px-2 lg:px-8 py-2 gap-2 lg:gap-4 w-fit text-(--white) hover:text-(--black) duration-300 ease-in-out transition-all"
-                                    >
-                                        <div class="group relative flex items-center justify-center text-xl w-8 h-full overflow-hidden">
-                                            <div class="absolute flex items-center left-2 h-full w-12 transition-all duration-500 ease-in-out group-hover:translate-x-full">
-                                                <Icon name="mdi:arrow-right"/>
-                                            </div>
-                                            
-                                            <div class="absolute flex items-center left-2 h-full w-12 -translate-x-full transition-all duration-500 ease-in-out group-hover:translate-x-0">
-                                                <Icon name="mdi:arrow-right" />
-                                            </div>
-                                        </div>
-                                        <span class="group-hover:underline-text font-semibold">Read article</span>
-                                    </NuxtLink>
-                                </div> 
-
-
-                            </div> 
-
-                                                        
                         </div>
 
-                        <div class="grid gap-4 lg:gap-6">
+                        <!-- Engine No. 1 Penn Petro Energy and GE Vernova to power U.S. data centers -->
+                        <div class="flex flex-col gap-8 bg-(--dark-orange) p-6 rounded-2xl shadow-lg">
+                            <NuxtImg
+                                src="/investors/penn-ceo-talks-growing-production-efficient-spending-hero.jpg"
+                                alt="Penn Ceo Talks Growing Production Efficient Spending"
+                                loading="lazy"
+                                class="w-full h-60 object-cover rounded-2xl"
+                            />
 
-                            <!-- Penn Petro Energy-hess merger clears FTC antitrust review -->
-                            <div class="flex flex-col gap-4 bg-(--medium-red) p-6 rounded-2xl shadow-lg">
+                            <div class="flex flex-col gap-4">
+                                <p class="text-(--white) text-xl font-semibold cursor-text">
+                                    March 10, 2025
+                                </p>
+
+                                <h2 
+                                    class="text-4xl font-semibold text-(--white)"
+                                >
+                                    Engine No. 1 Penn Petro Energy and GE Vernova to power U.S. data centers
+                                </h2>
+
+                                <NuxtLink
+                                    to="/sustainability/social"
+                                    class="group flex *:flex items-center *:items-center justify-center px-2 lg:px-8 py-2 gap-2 lg:gap-4 w-fit text-(--white) hover:text-(--black) duration-300 ease-in-out transition-all"
+                                >
+                                    <div class="group relative flex items-center justify-center text-xl w-8 h-full overflow-hidden">
+                                        <div class="absolute flex items-center left-2 h-full w-12 transition-all duration-500 ease-in-out group-hover:translate-x-full">
+                                            <Icon name="mdi:arrow-right"/>
+                                        </div>
+                                        
+                                        <div class="absolute flex items-center left-2 h-full w-12 -translate-x-full transition-all duration-500 ease-in-out group-hover:translate-x-0">
+                                            <Icon name="mdi:arrow-right" />
+                                        </div>
+                                    </div>
+                                    <span class="group-hover:underline-text font-semibold">Read article</span>
+                                </NuxtLink>
+                            </div> 
+
+
+                        </div>
+
+                        <!-- Penn Petro Energy achieves first oil future growth project in Kazakhstan -->
+                        <div class="flex flex-col gap-8 bg-(--dark-teal) p-6 rounded-2xl shadow-lg">
+                            <NuxtImg
+                                src="/investors/cnbc-joins-penn-ceo-in-gulf-of-mexico-to-discuss-deepwater-achievements-hero.jpg"
+                                alt="CNBC joins Penn Ceo in Gulf of Mexico to Discuss Deep Water Achievements"
+                                loading="lazy"
+                                class="w-full h-60 object-cover rounded-2xl"
+                            />
+
+                            <div class="flex flex-col gap-4">
+                                <p class="text-(--white) text-xl font-semibold cursor-text">
+                                    January 23, 2025
+                                </p>
+
+                                <h2 
+                                    class="text-4xl font-semibold text-(--white)"
+                                >
+                                    Penn Petro Energy achieves first oil future growth project in Kazakhstan
+                                </h2>
+
+                                <NuxtLink
+                                    to="/sustainability/social"
+                                    class="group flex *:flex items-center *:items-center justify-center px-2 lg:px-8 py-2 gap-2 lg:gap-4 w-fit text-(--white) hover:text-(--black) duration-300 ease-in-out transition-all"
+                                >
+                                    <div class="group relative flex items-center justify-center text-xl w-8 h-full overflow-hidden">
+                                        <div class="absolute flex items-center left-2 h-full w-12 transition-all duration-500 ease-in-out group-hover:translate-x-full">
+                                            <Icon name="mdi:arrow-right"/>
+                                        </div>
+                                        
+                                        <div class="absolute flex items-center left-2 h-full w-12 -translate-x-full transition-all duration-500 ease-in-out group-hover:translate-x-0">
+                                            <Icon name="mdi:arrow-right" />
+                                        </div>
+                                    </div>
+                                    <span class="group-hover:underline-text font-semibold">Read article</span>
+                                </NuxtLink>
+                            </div> 
+
+
+                        </div>
+
+                        <!-- Penn Petro Energy-hess merger clears FTC antitrust review -->
+                        <div class="flex flex-col gap-8 bg-(--dark-teal) p-6 rounded-2xl shadow-lg">
+                            <NuxtImg
+                                src="/investors/penn-ceo-talks-growing-production-efficient-spending-hero.jpg"
+                                alt="Penn Ceo Talks Growing Production Efficient Spending"
+                                loading="lazy"
+                                class="w-full h-60 object-cover rounded-2xl"
+                            />
+
+                            <div class="flex flex-col gap-4">
                                 <p class="text-(--white) text-xl font-semibold cursor-text">
                                     September 30, 2024
                                 </p>
@@ -223,23 +293,34 @@
                                             <Icon name="mdi:arrow-right" />
                                         </div>
                                     </div>
-                                    <span class="group-hover:underline-text font-semibold">Read press release</span>
+                                    <span class="group-hover:underline-text font-semibold">Read article</span>
                                 </NuxtLink>
-                            </div>  
+                            </div> 
 
-                            <!-- Penn Petro Energy leaders share their vision for the future of CERAWeek 2025 -->
-                            <div class="flex flex-col gap-4 bg-(--dark-green) p-6 rounded-2xl shadow-lg">
+
+                        </div>
+
+                        <!-- CNBC joins Penn Petro Energy CEO in gulf of america to discuss deepwater achievement -->
+                        <div class="grid p-6 gap-8 rounded-2xl bg-(--dark-blue)/90 shadow-lg">
+                            <NuxtImg
+                                src="/investors/cnbc-joins-penn-ceo-in-gulf-of-mexico-to-discuss-deepwater-achievements-hero.jpg"
+                                alt="CNBC joins Penn Ceo in Gulf of Mexico to Discuss Deep Water Achievements"
+                                loading="lazy"
+                                class="w-full h-60 object-cover rounded-2xl"
+                            />
+
+                            <div class="flex flex-col gap-4 h-full">
                                 <p class="text-(--white) text-xl font-semibold cursor-text">
-                                    March 10, 2025
+                                    October 29, 2024
                                 </p>
 
                                 <h2 
                                     class="text-4xl font-semibold text-(--white)"
                                 >
-                                    Penn Petro Energy leaders share their vision for the future of CERAWeek 2025
+                                    CNBC joins Penn Petro Energy CEO in gulf of america to discuss deepwater achievement
                                 </h2>
 
-                                <!-- Delivering first oil while lowering development costs -->
+                                <!-- CNBC joins Penn Petro Energy CEO in gulf of america to discuss deepwater achievement -->
                                 <NuxtLink
                                     to="/sustainability/social"
                                     class="group flex *:flex items-center *:items-center justify-center px-2 lg:px-8 py-2 gap-2 lg:gap-4 w-fit text-(--white) hover:text-(--black) duration-300 ease-in-out transition-all"
@@ -257,60 +338,29 @@
                                 </NuxtLink>
                             </div> 
 
-                            <!-- Delivering first oil while lowering development costs -->
-                            <div class="grid p-6 gap-8 rounded-2xl bg-(--dark-blue)/90 shadow-lg">
-                                <NuxtImg
-                                    src="https://images.pexels.com/photos/8370328/pexels-photo-8370328.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                                    alt="Female Vlogger doing a Video Recording"
-                                    loading="lazy"
-                                    class="w-full h-60 object-cover rounded-2xl"
-                                />
 
-                                <div class="flex flex-col gap-4 h-full">
-                                    <p class="text-(--white) text-xl font-semibold cursor-text">
-                                        October 29, 2024
-                                    </p>
+                        </div> 
 
-                                    <h2 
-                                        class="text-4xl font-semibold text-(--white)"
-                                    >
-                                        CNBC joins Penn Petro Energy CEO in gulf of america to discuss deepwater achievement
-                                    </h2>
+                        <!-- Penn Petro Energy CEO talks growing production, efficient spending -->
+                        <div class="flex flex-col gap-8 bg-(--dark-teal) p-6 rounded-2xl shadow-lg">
+                            <NuxtImg
+                                src="https://images.pexels.com/photos/8370328/pexels-photo-8370328.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                alt="Female Vlogger doing a Video Recording"
+                                loading="lazy"
+                                class="w-full h-60 object-cover rounded-2xl"
+                            />
 
-                                    <!-- CNBC joins Penn Petro Energy CEO in gulf of america to discuss deepwater achievement -->
-                                    <NuxtLink
-                                        to="/sustainability/social"
-                                        class="group flex *:flex items-center *:items-center justify-center px-2 lg:px-8 py-2 gap-2 lg:gap-4 w-fit text-(--white) hover:text-(--black) duration-300 ease-in-out transition-all"
-                                    >
-                                        <div class="group relative flex items-center justify-center text-xl w-8 h-full overflow-hidden">
-                                            <div class="absolute flex items-center left-2 h-full w-12 transition-all duration-500 ease-in-out group-hover:translate-x-full">
-                                                <Icon name="mdi:arrow-right"/>
-                                            </div>
-                                            
-                                            <div class="absolute flex items-center left-2 h-full w-12 -translate-x-full transition-all duration-500 ease-in-out group-hover:translate-x-0">
-                                                <Icon name="mdi:arrow-right" />
-                                            </div>
-                                        </div>
-                                        <span class="group-hover:underline-text font-semibold">Read article</span>
-                                    </NuxtLink>
-                                </div> 
-
-
-                            </div> 
-
-                            <!-- Penn Petro Energy achieves first oil future growth project in Kazakhstan -->
-                            <div class="flex flex-col gap-4 bg-(--medium-teal) p-6 rounded-2xl shadow-lg">
+                            <div class="flex flex-col gap-4 h-full">
                                 <p class="text-(--white) text-xl font-semibold cursor-text">
-                                    January 23, 2025
+                                    December 18, 2024
                                 </p>
 
                                 <h2 
                                     class="text-4xl font-semibold text-(--white)"
                                 >
-                                    Penn Petro Energy achieves first oil future growth project in Kazakhstan
+                                    Penn Petro Energy CEO talks growing production, efficient spending
                                 </h2>
 
-                                <!-- Penn Petro Energy achieves first oil future growth project in Kazakhstan -->
                                 <NuxtLink
                                     to="/sustainability/social"
                                     class="group flex *:flex items-center *:items-center justify-center px-2 lg:px-8 py-2 gap-2 lg:gap-4 w-fit text-(--white) hover:text-(--black) duration-300 ease-in-out transition-all"
@@ -324,14 +374,15 @@
                                             <Icon name="mdi:arrow-right" />
                                         </div>
                                     </div>
-                                    <span class="group-hover:underline-text font-semibold">Read press release</span>
+                                    <span class="group-hover:underline-text font-semibold">Read article</span>
                                 </NuxtLink>
                             </div> 
 
-                        </div>
-                    </div>
-                    
 
+                        </div> 
+
+                        
+                    </div>
 
                 </div>
 
@@ -374,7 +425,11 @@
 
                     </div>
 
-                    <NewsroomCarousel />
+                    <!-- <NewsroomCarousel /> -->
+                    <HomeNewsroom 
+                        title=""
+                        category="" 
+                    />
 
                     
                 

@@ -178,10 +178,10 @@ export const investorsEvent: Ref<InvestorsEventItem[]> = ref([
         linkName: 'View event details'
     },
 
-    // 11. Chevron announces agreement to acquire hess
+    // 11. Penn Petro Energy announces agreement to acquire hess
     {
         id: 11,
-        heading: 'Chevron announces agreement to acquire hess',
+        heading: 'Penn Petro Energy announces agreement to acquire hess',
         date: 'October 23, 2023',
         link: '/investors/events',
         linkName: 'View event details'

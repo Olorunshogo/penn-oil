@@ -133,7 +133,7 @@
             </button>
 
             <!-- Investors -->
-            <button
+            <!-- <button
               @click="openMobileInvestors"
               class="flex *:flex items-center *:items-center justify-between cursor-pointer hover:text-(--light-blue) transition-transform duration-300 ease-in-out"
             >
@@ -141,7 +141,15 @@
               <span>
                 <Icon name="mdi:chevron-right" />
               </span>
-            </button>
+            </button> -->
+
+            <NuxtLink
+              to="/investors/overview"
+              @click="closeAllMenu"
+              class="flex *:flex items-center *:items-center justify-between hover:text-(--light-blue) duration-300 ease-in-out transition-all"
+            >
+              Investors
+            </NuxtLink>
 
             <!-- Newsroom -->
             <NuxtLink
@@ -526,14 +534,14 @@
                 <span class="group-hover:underline-text">Sustainability</span>
               </NuxtLink>
 
-              <NuxtLink
+              <!-- <NuxtLink
                 to="/investors/overview"
                 class="group relative flex duration-500 ease-in transition-all"
                 @mouseenter="openDesktopInvestors"
                 @mouseleave="closeDesktopInvestors"
               >
                 <span class="group-hover:underline-text">Investors</span>
-              </NuxtLink>
+              </NuxtLink> -->
             </div>
 
             <!-- Mobile Logo -->
@@ -550,6 +558,13 @@
 
             <!-- Desktop Right Links -->
             <div class="hidden lg:flex items-center gap-8 *:flex *:hover:text-(--light-blue) *:duration-300 *:ease-in-out *:transition-all">
+              <NuxtLink
+                to="/investors/overview"
+                class="group text-base"
+              >
+                <span class="group-hover:underline-text">Investors</span>
+              </NuxtLink>
+
               <NuxtLink
                 to="/newsroom"
                 class="group text-base"

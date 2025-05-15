@@ -116,7 +116,7 @@
                             </span>
                         </h3>
                         <p class="text-(--black) text-xl">
-                            Guided by our vision and values, The Chevron Way, our Board of Directors and Corporate Officers are committed to demonstrating the highest standard of ethics.
+                            Guided by our vision and values, The Penn Petro Energy Way, our Board of Directors and Corporate Officers are committed to demonstrating the highest standard of ethics.
                         </p>
                     </div>
                 </div>    

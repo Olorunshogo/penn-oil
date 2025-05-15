@@ -89,7 +89,7 @@
                         >                       
                                 
                             <NuxtLink
-                                to="/who"
+                                to="/who/overview"
                                 class="group relative flex duration-500 ease-in transition-all"
                             >
                                 <span class="group-hover:underline-text">Who we are</span>
@@ -103,7 +103,7 @@
                             </NuxtLink>
 
                             <NuxtLink
-                                to="/what"
+                                to="/what/overview"
                                 class="group relative flex duration-500 ease-in transition-all"
                             >                            
                                 <span class="group-hover:underline-text">What we do</span>
@@ -356,7 +356,7 @@
                     <div class="grid gap-2 *:font-normal *:text-base">                       
                             
                         <NuxtLink
-                            to="/who"
+                            to="/who/overview"
                             class="group relative flex duration-500 ease-in transition-all"
                         >
                             <span class="group-hover:underline-text">Who we are</span>
@@ -370,7 +370,7 @@
                         </NuxtLink>
 
                         <NuxtLink
-                            to="/what"
+                            to="/what/overview"
                             class="group relative flex duration-500 ease-in transition-all"
                         >                            
                             <span class="group-hover:underline-text">What we do</span>
@@ -420,7 +420,7 @@
 
                     <h3 class="font-bold text-sm *:flex *:items-center">
                         <span>Latest at Penn Petro Energy</span>
-                        <span><Icon name="mdi:down" /></span>
+                        <span><Icon name="mdi:chevron-down" /></span>
                     </h3>
 
                     <div class="grid gap-2 *:font-normal *:text-base">                       

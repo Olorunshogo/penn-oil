@@ -9,7 +9,7 @@ export const homeHeroBgs = ref([
         bgColor: "var(--medium-blue)",
         heading: "Penn Petro Energy reports first-quarter 2025 results",
         paragraph: "Our latest quarterly insights are now available.",
-        link: "/investors",
+        link: "/investors/overview",
         linkName: "Visit our investors page to learn more"  
     },
 
@@ -20,7 +20,7 @@ export const homeHeroBgs = ref([
         bgColor: "var(--medium-blue)",
         heading: "More with less",
         paragraph: "We've reached first oil at our Ballymore subsea tieback in the Gulf of America showcasing how we're leveraging technology and driving efficiencies to deliver affordable, reliable energy production.",
-        link: "/investors",
+        link: "/investors/overview",
         linkName: "Visit our investors page to learn more"  
     },
 
@@ -31,7 +31,7 @@ export const homeHeroBgs = ref([
         bgColor: "var(--medium-blue)",
         heading: "Unlocking the growth in the gulf",
         paragraph: "We're expanding operations in the Gulf of America, with a goal to produce 300,000 net barrels of oil-equivalent per day in 2026.",
-        link: "/sustainability",
+        link: "/sustainability/overview",
         linkName: "Learn more"  
     },
 
@@ -42,7 +42,7 @@ export const homeHeroBgs = ref([
         bgColor: "var(--medium-blue)",
         heading: "Powering the future",
         paragraph: "Penn Petro Energy's 2024 annual report highlights our continued commitment to building a resilient energy system that powers human progress.",
-        link: "/investors",
+        link: "/investors/overview",
         linkName: "Download the report"  
     },
     
@@ -69,6 +69,21 @@ export const homeHeroBgs = ref([
     },
 ]);
 
+export const homeHeroBg = ref( 
+
+    // 1. Penn Petro Energy reports first-quarter 2025 results
+    {
+        id: 1,  
+        videoSrc: "/homepage/Homepage-hero5-video.mp4",
+        bgColor: "var(--medium-blue)",
+        heading: "Penn Petro Energy reports first-quarter 2025 results",
+        paragraph: "Our latest quarterly insights are now available.",
+        link: "/investors/overview",
+        linkName: "Visit our investors page to learn more"  
+    }
+
+);
+
 
 
 // Who Overview
@@ -84,7 +99,8 @@ export const whoOverviewHeroVideoBg = ref({
 
 // Who Culture
 export const whoCultureHeroVideoBg = ref({    
-    videoSrc: "/who/who-we-are-culture-hero-video.mp4",
+    // videoSrc: "/who/who-we-are-culture-hero-video.mp4",
+    videoSrc: "/who/who-we-are-overview-hero-video.mp4",
     category: "who we are",
     title: "Our culture",
     titleBgVideoSrc: "/videos/who/who-we-are-hero-video-compressed.mp4",
@@ -212,19 +228,21 @@ export const sustainabilitySocialHeroImageBg = ref({
 
 
 // Investors Overview
-export const InvestorOverviewHeroImageBg = ref({    
+export const investorOverviewHeroImageBg = ref({    
     imgSrc: "https://images.pexels.com/photos/6150527/pexels-photo-6150527.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     imgAlt: "Man in Sweatshirt In Front of People",
-    category: "sustainability",
+    category: "",
     title: "Investor relations",
     titleBgImageSrc: "https://images.pexels.com/photos/6150527/pexels-photo-6150527.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    paragraph: "We believe our business succeeds when our people and communities succeed. Our social investments seek to respond to needs in the communities where we operate around the world. We seek to work with communities and partners to promote job growth and economic development.",
-    displayLink: false,
-    link: "/sustainability",
-    linkName: "Read more about our environmental efforts"        
+    paragraph: "We believe our business thrives when our investors and stakeholders succeed. Our investor relations efforts are focused on transparent communication and building long-term value. We strive to engage with our investors and partners to foster trust, promote sustainable growth, and create shared economic opportunities.",
+    displayLink: true,
+    link: "/investors/overview",
+    linkName: "Learn more"        
 });
 
-// Sustainability Social
+
+
+// Careers Page
 export const careersHeroImageBg = ref({    
     imgSrc: "https://images.pexels.com/photos/1181438/pexels-photo-1181438.jpeg",
     imgAlt: "Group of Women Standing Near Desk",

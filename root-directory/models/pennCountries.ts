@@ -20,7 +20,8 @@ export const pennCountries: Ref<CountryItem[]> = ref([
         flagImgSrc: '/what/Flags/Angola.jpeg',
         flagImgAlt: 'Flag of Angola',
         flagName: 'Angola',
-        ctaLink: 'https://angola.chevron.com/en/',
+        // ctaLink: 'https://angola.chevron.com/en/',
+        ctaLink: '/contact',
         ctaName: 'Visit the angola website',
     },
 
@@ -30,7 +31,8 @@ export const pennCountries: Ref<CountryItem[]> = ref([
         flagImgSrc: '/what/Flags/Argentina.jpeg',
         flagImgAlt: 'Flag of Argentina',
         flagName: 'Argentina',
-        ctaLink: 'https://www.chevron.com/worldwide/argentina',
+        // ctaLink: 'https://www.chevron.com/worldwide/argentina',
+        ctaLink: '/contact',
         ctaName: 'View our argentina summary',
     },
 
@@ -40,7 +42,8 @@ export const pennCountries: Ref<CountryItem[]> = ref([
         flagImgSrc: '/what/Flags/Bangladesh.jpg',
         flagImgAlt: 'Flag of Bangladesh',
         flagName: 'Bangladesh',
-        ctaLink: 'https://bangladesh.chevron.com/',
+        // ctaLink: 'https://bangladesh.chevron.com/',
+        ctaLink: '/contact',
         ctaName: 'Visit the bangladesh website',
     },
 
@@ -50,7 +53,8 @@ export const pennCountries: Ref<CountryItem[]> = ref([
         flagImgSrc: '/what/Flags/Brazil.jpeg',
         flagImgAlt: 'Flag of Brazil',
         flagName: 'Brazil',
-        ctaLink: 'https://bangladesh.chevron.com/',
+        // ctaLink: 'https://bangladesh.chevron.com/',
+        ctaLink: '/contact',
         ctaName: 'Visit the brazil website',
     },
 
@@ -60,7 +64,8 @@ export const pennCountries: Ref<CountryItem[]> = ref([
         flagImgSrc: '/what/Flags/Cambodia.png',
         flagImgAlt: 'Flag of Cambodia',
         flagName: 'Cambodia',
-        ctaLink: 'https://www.chevron.com/worldwide/cambodia',
+        // ctaLink: 'https://www.chevron.com/worldwide/cambodia',
+        ctaLink: '/contact',
         ctaName: 'Visit our cambodia summary',
     },
 
@@ -70,7 +75,8 @@ export const pennCountries: Ref<CountryItem[]> = ref([
         flagImgSrc: '/what/Flags/Canada.jpeg',
         flagImgAlt: 'Flag of Canada',
         flagName: 'Canada',
-        ctaLink: 'https://canada.chevron.com/',
+        // ctaLink: 'https://canada.chevron.com/',
+        ctaLink: '/contact',
         ctaName: 'Visit the canada website',
     },
 
@@ -80,7 +86,8 @@ export const pennCountries: Ref<CountryItem[]> = ref([
         flagImgSrc: '/what/Flags/China.jpg',
         flagImgAlt: 'Flag of China',
         flagName: 'China',
-        ctaLink: 'https://china.chevron.com/',
+        // ctaLink: 'https://china.chevron.com/',
+        ctaLink: '/contact',
         ctaName: 'Visit the china website',
     },
 
@@ -90,7 +97,8 @@ export const pennCountries: Ref<CountryItem[]> = ref([
         flagImgSrc: '/what/Flags/France.png',
         flagImgAlt: 'Flag of France',
         flagName: 'France',
-        ctaLink: 'https://www.oronite.com/france-fr.html',
+        // ctaLink: 'https://www.oronite.com/france-fr.html',
+        ctaLink: '/contact',
         ctaName: 'View our france summary',
     },
 
@@ -100,7 +108,8 @@ export const pennCountries: Ref<CountryItem[]> = ref([
         flagImgSrc: '/what/Flags/Colombia.png',
         flagImgAlt: 'Flag of Colombia',
         flagName: 'Colombia',
-        ctaLink: 'https://www.chevron.com/worldwide/colombia',
+        // ctaLink: 'https://www.chevron.com/worldwide/colombia',
+        ctaLink: '/contact',
         ctaName: 'View our colombia summary',
     },
 
@@ -110,7 +119,8 @@ export const pennCountries: Ref<CountryItem[]> = ref([
         flagImgSrc: '/what/Flags/India.png',
         flagImgAlt: 'Flag of India',
         flagName: 'India',
-        ctaLink: 'https://www.chevron.com/worldwide/india',
+        // ctaLink: 'https://www.chevron.com/worldwide/india',
+        ctaLink: '/contact',
         ctaName: 'View our india summary',
     },
 
@@ -120,7 +130,8 @@ export const pennCountries: Ref<CountryItem[]> = ref([
         flagImgSrc: '/what/Flags/Indonesia.png',
         flagImgAlt: 'Flag of Indonesia',
         flagName: 'Indonesia',
-        ctaLink: 'https://indonesia.chevron.com/en/',
+        // ctaLink: 'https://indonesia.chevron.com/en/',
+        ctaLink: '/contact',
         ctaName: 'Visit the Indonesia website',
     },
 
@@ -130,7 +141,8 @@ export const pennCountries: Ref<CountryItem[]> = ref([
         flagImgSrc: '/what/Flags/Israel.png',
         flagImgAlt: 'Flag of Israel',
         flagName: 'Israel',
-        ctaLink: 'https://israel.chevron.com/en',
+        // ctaLink: 'https://israel.chevron.com/en',
+        ctaLink: '/contact',
         ctaName: 'View the israel website',
     },
 
@@ -140,7 +152,8 @@ export const pennCountries: Ref<CountryItem[]> = ref([
         flagImgSrc: '/what/Flags/Kazakhstan.png',
         flagImgAlt: 'Flag of Kazakhstan',
         flagName: 'Kazakhstan',
-        ctaLink: 'https://www.chevron.com/worldwide/kazakhstan',
+        // ctaLink: 'https://www.chevron.com/worldwide/kazakhstan',
+        ctaLink: '/contact',
         ctaName: 'Visit our kazakhstan summary',
     },
 
@@ -150,7 +163,8 @@ export const pennCountries: Ref<CountryItem[]> = ref([
         flagImgSrc: '/what/Flags/Kuwait.png',
         flagImgAlt: 'Flag of Kuwait',
         flagName: 'Kuwait',
-        ctaLink: 'https://www.chevron.com/worldwide/kuwait',
+        // ctaLink: 'https://www.chevron.com/worldwide/kuwait',
+        ctaLink: '/contact',
         ctaName: 'View our kuwait summary',
     },
 
@@ -160,7 +174,8 @@ export const pennCountries: Ref<CountryItem[]> = ref([
         flagImgSrc: '/what/Flags/Malaysia.png',
         flagImgAlt: 'Flag of Malaysia',
         flagName: 'Malaysia',
-        ctaLink: 'https://www.chevron.com/worldwide/malaysia',
+        // ctaLink: 'https://www.chevron.com/worldwide/malaysia',
+        ctaLink: '/contact',
         ctaName: 'Visit our malaysia summary',
     },
 
@@ -170,7 +185,8 @@ export const pennCountries: Ref<CountryItem[]> = ref([
         flagImgSrc: '/what/Flags/Netherland.jpeg',
         flagImgAlt: 'Flag of Netherlands',
         flagName: 'Netherlands',
-        ctaLink: 'https://www.chevron.com/worldwide/netherlands',
+        // ctaLink: 'https://www.chevron.com/worldwide/netherlands',
+        ctaLink: '/contact',
         ctaName: 'View our netherlands summary',
     },
 
@@ -180,7 +196,8 @@ export const pennCountries: Ref<CountryItem[]> = ref([
         flagImgSrc: '/what/Flags/Nigeria.png',
         flagImgAlt: 'Flag of Nigeria',
         flagName: 'Nigeria',
-        ctaLink: 'https://www.chevron.com/worldwide/nigeria',
+        // ctaLink: 'https://www.chevron.com/worldwide/nigeria',
+        ctaLink: '/contact',
         ctaName: 'Visit our nigeria summary',
     },
 
@@ -190,7 +207,8 @@ export const pennCountries: Ref<CountryItem[]> = ref([
         flagImgSrc: '/what/Flags/Philippines.png',
         flagImgAlt: 'Flag of Philippines',
         flagName: 'Philippines',
-        ctaLink: 'https://www.chevron.com/worldwide/philippines',
+        // ctaLink: 'https://www.chevron.com/worldwide/philippines',
+        ctaLink: '/contact',
         ctaName: 'View our philippines summary',
     },
 
@@ -200,7 +218,8 @@ export const pennCountries: Ref<CountryItem[]> = ref([
         flagImgSrc: '/what/Flags/Saudi_Arabia.png',
         flagImgAlt: 'Flag of Saudi Arabia',
         flagName: 'Saudi Arabia',
-        ctaLink: 'https://www.chevron.com/worldwide/saudi-arabia',
+        // ctaLink: 'https://www.chevron.com/worldwide/saudi-arabia',
+        ctaLink: '/contact',
         ctaName: 'Visit our saudi arabia summary',
     },
 
@@ -210,7 +229,8 @@ export const pennCountries: Ref<CountryItem[]> = ref([
         flagImgSrc: '/what/Flags/Singapore.png',
         flagImgAlt: 'Flag of Singapore',
         flagName: 'Singapore',
-        ctaLink: 'https://www.chevron.com/worldwide/philippines',
+        // ctaLink: 'https://www.chevron.com/worldwide/philippines',
+        ctaLink: '/contact',
         ctaName: 'View our Singapore summary',
     },
 
@@ -220,7 +240,8 @@ export const pennCountries: Ref<CountryItem[]> = ref([
         flagImgSrc: '/what/Flags/South_Korea.png',
         flagImgAlt: 'Flag of South Korea',
         flagName: 'South Korea',
-        ctaLink: 'https://www.chevron.com/worldwide/south-korea',
+        // ctaLink: 'https://www.chevron.com/worldwide/south-korea',
+        ctaLink: '/contact',
         ctaName: 'Visit our south korea summary',
     },
 
@@ -230,7 +251,8 @@ export const pennCountries: Ref<CountryItem[]> = ref([
         flagImgSrc: '/what/Flags/Sri_lanka.png',
         flagImgAlt: 'Flag of Sri Lanka',
         flagName: 'Sri Lanka',
-        ctaLink: 'http://chevron.lk/',
+        // ctaLink: 'http://chevron.lk/',
+        ctaLink: '/contact',
         ctaName: 'Visit the sri lanka website',
     },
 
@@ -240,7 +262,8 @@ export const pennCountries: Ref<CountryItem[]> = ref([
         flagImgSrc: '/what/Flags/Argentina.jpeg',
         flagImgAlt: 'Flag of Thailand',
         flagName: 'Thailand',
-        ctaLink: 'https://thailand.chevron.com/en/',
+        // ctaLink: 'https://thailand.chevron.com/en/',
+        ctaLink: '/contact',
         ctaName: 'Visit the thailand website',
     },
 
@@ -250,7 +273,8 @@ export const pennCountries: Ref<CountryItem[]> = ref([
         flagImgSrc: '/what/Flags/United_Kingdom.png',
         flagImgAlt: 'Flag of United Kingdom',
         flagName: 'United Kingdom',
-        ctaLink: 'https://www.chevron.com/worldwide/united-kingdom',
+        // ctaLink: 'https://www.chevron.com/worldwide/united-kingdom',
+        ctaLink: '/contact',
         ctaName: 'View our united kingdom summary',
     },
 
@@ -260,7 +284,8 @@ export const pennCountries: Ref<CountryItem[]> = ref([
         flagImgSrc: '/what/Flags/United_States.png',
         flagImgAlt: 'Flag of United States',
         flagName: 'United States',
-        ctaLink: 'https://www.chevron.com/worldwide/united-states',
+        // ctaLink: 'https://www.chevron.com/worldwide/united-states',
+        ctaLink: '/contact',
         ctaName: 'View our united states summary',
     },
 
@@ -270,7 +295,8 @@ export const pennCountries: Ref<CountryItem[]> = ref([
         flagImgSrc: '/what/Flags/Venezuela.webp',
         flagImgAlt: 'Flag of Venezuela',
         flagName: 'Venezuela',
-        ctaLink: 'https://www.chevron.com/worldwide/venezuela',
+        // ctaLink: 'https://www.chevron.com/worldwide/venezuela',
+        ctaLink: '/contact',
         ctaName: 'View our venezuela summary',
     },
 

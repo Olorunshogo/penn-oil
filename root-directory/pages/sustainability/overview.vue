@@ -256,7 +256,7 @@
                                 </h2>
 
                                 <p class="text-(--white) text-xl font-semibold cursor-text">
-                                    Our success is driven by a dedicated, diverse and highly skilled global workforce united by The Chevron Way. 
+                                    Our success is driven by a dedicated, diverse and highly skilled global workforce united by The Penn Petro Energy Way. 
                                     We treat our employees and our partners with respect and dignity.
                                 </p>
 

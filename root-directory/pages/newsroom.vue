@@ -48,7 +48,7 @@
                             class="group relative text-(--white) font-semibold text-2xl lg:text-4xl duration-500 ease-in transition-all"
                         >                            
                             <span class="group-hover:underline-text text-center">
-                                Chevron uses AI to bring reliable energy to data centers
+                                Penn Petro Energy uses AI to bring reliable energy to data centers
                             </span>
                         </NuxtLink>
 
@@ -67,7 +67,7 @@
             </div>
         </section>
 
-        <!-- Section: Latest news from chevron -->
+        <!-- Section: Latest news from Penn Petro Energy -->
         <section>        
             <div class="relative flex flex-col gap-12 w-full h-full overflow-hidden bg-(--white) py-(--section-py) lg:py-(--section-py-lg)">
                 

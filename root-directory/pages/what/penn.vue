@@ -41,7 +41,7 @@
                     Penn Petro Energy Worldwide
                 </h1>
                 <p class="font-medium text-xl text-center">
-                    Chevron conducts business all around the globe. The links below will provide you with detailed information for the countries where Penn Petro Energy’s work is most extensive.
+                    Penn Petro Energy conducts business all around the globe. The links below will provide you with detailed information for the countries where Penn Petro Energy’s work is most extensive.
                 </p>
             </div>
             

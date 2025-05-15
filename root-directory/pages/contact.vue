@@ -89,7 +89,7 @@
                                     >
                                         <div class="grid gap-4 w-full h-full">
                                             <div class="grid gap-4 text-(--black)">
-                                                <p>Open jobs at Chevron are available for review and application at our Chevron careers page.</p>
+                                                <p>Open jobs at Penn Petro Energy are available for review and application at our Penn Petro Energy careers page.</p>
                                                 <p>Resumes sent to the general mailbox will not be considered and requests for status updates to applications will not be provided.</p>
                                             </div>
 
