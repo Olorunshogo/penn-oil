@@ -2,26 +2,26 @@
 <script setup lang='ts'>
 
     import { onMounted, watch, nextTick } from 'vue';
-    import { homeHeroBg } from '~/models/heroBgModels';   
+    import { homeHeroBgs } from '~/models/heroBgModels';   
     
-    // const {
-    //     currentIndex,
-    //     isPlaying,
-    //     goToSlide,
-    //     togglePlayPause,
-    //     animateSlide,
-    // } = useHomeHeroSlider(homeHeroBgs.value.length)
+    const {
+        currentIndex,
+        isPlaying,
+        goToSlide,
+        togglePlayPause,
+        animateSlide,
+    } = useHomeHeroSlider(homeHeroBgs.value.length)
 
-    // watch(currentIndex, async (newIndex, oldIndex) => {
-    //     await nextTick()
-    //     const oldSlide = document.querySelector(`#slide-${oldIndex}`) as HTMLElement
-    //     const newSlide = document.querySelector(`#slide-${newIndex}`) as HTMLElement
+    watch(currentIndex, async (newIndex, oldIndex) => {
+        await nextTick()
+        const oldSlide = document.querySelector(`#slide-${oldIndex}`) as HTMLElement
+        const newSlide = document.querySelector(`#slide-${newIndex}`) as HTMLElement
 
-    //     if (oldSlide && newSlide) {
-    //         animateSlide(oldSlide, 'out')
-    //         animateSlide(newSlide, 'in')
-    //     }
-    // })
+        if (oldSlide && newSlide) {
+            animateSlide(oldSlide, 'out')
+            animateSlide(newSlide, 'in')
+        }
+    })
     
 </script>
 
@@ -29,7 +29,7 @@
 <template>
     <div> 
         <!-- Section: Hero -->
-        <div>
+        <!-- <div>
             <HomeHeroBgSlider
                 :videoSrc="homeHeroBg.videoSrc"
                 :heading="homeHeroBg.heading"
@@ -37,12 +37,12 @@
                 :link="homeHeroBg.link"
                 :linkName="homeHeroBg.linkName"
             />
-        </div>
-        <!-- 
+        </div> -->
+         
         <div class="relative">
             <div class="relative overflow-hidden h-dvh w-screen">
 
-                <!-- <div class="absolute inset-0 w-full h-full">
+                <div class="absolute inset-0 w-full h-full">
                     <div 
                         v-for="(item, index) in homeHeroBgs" :key="item.id" :id="'slide-' + index">
                         <Transition name="fade" mode="out-in">
@@ -52,10 +52,10 @@
                             />
                         </Transition>
                     </div>
-                </div> -->
+                </div>
 
-                <!-- Controls
-                <!-- <div class="controls absolute bottom-8 left-1/2 transform -translate-x-1/2 z-50 flex items-center gap-4">
+                <!-- Controls -->
+                <div class="controls absolute bottom-8 left-1/2 transform -translate-x-1/2 z-50 flex items-center gap-4">
                     <div class="pagination flex gap-2">
                         <span
                             v-for="(_, idx) in homeHeroBgs"
@@ -75,7 +75,7 @@
                 </div>
 
             </div>
-        </div> -->
+        </div>
 
     </div>
 </template>

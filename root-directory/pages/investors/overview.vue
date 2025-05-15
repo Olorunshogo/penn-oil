@@ -425,13 +425,7 @@
 
                     </div>
 
-                    <!-- <NewsroomCarousel /> -->
-                    <HomeNewsroom 
-                        title=""
-                        category="" 
-                    />
-
-                    
+                    <NewsroomCarousel />                     
                 
                 </div>
 
