@@ -29,41 +29,6 @@
             />
         </div> 
 
-        <!-- Section: Hero -->
-        <!-- <section>        
-            
-            <div class="relative w-full h-full overflow-hidden -mt-[11rem]">
-
-                <!-- Image Slider Container --
-                <div class="image-slider h-dvh lg:h-[1240px]">          
-
-                    <!-- Content --
-                    <div class="grid w-full h-fit bg-(--white) absolute bottom-0">
-                        <div class="flex flex-col py-8 lg:py-12 items-center justify-center w-full max-w-6xl mx-auto h-fit">
-                            
-                            <div class="text-(--dark-blue) font-bold text-2xl">Who we are</div>
-
-                            <h1 
-                                class="text-5xl md:text-8xl xl:text-9xl py-8 bg-clip-text text-center text-transparent font-extrabold bg-gradient-to-r from-(--light-blue) to-(--dark-blue)" 
-                            >
-                                Investor relations
-                            </h1>
-
-                            <p class="text-xl lg:text-2xl text-center text-[color:var(--black)]">
-                                At Penn Petro Energy, we are committed to delivering strong financial performance and creating long-term value for our shareholders. 
-                                We focus on sustainable growth, disciplined capital allocation, and effective risk management to drive profitability and maximize returns.
-                            </p>
-                            
-                            
-                        </div>
-                    </div> 
-
-                </div>
-
-            </div>
-        </section> -->
-
-
         <!-- Section: Latest News -->
         <section>
             <div class="px-(--section-px) lg:px-(--section-px-lg) py-(--section-py) lg:py-(--section-py-lg) bg-(--white) w-full h-full overflow-hidden">
@@ -72,15 +37,15 @@
 
                     <div class="flex flex-col items-center justify-center gap-8">
                         <h2 
-                            class="text-5xl lg:text-8xl text-(--dark-blue) text-wrap text-center font-extrabold cursor-text w-full h-full overflow-hidden"
+                            class="text-4xl sm:text-5xl lg:text-8xl text-(--dark-blue) text-wrap text-center font-extrabold cursor-text w-full h-full overflow-hidden"
                         >
                             Latest news
                         </h2>
 
                         <!-- Read all news and press releases -->
-                        <NuxtLink 
+                        <!-- <NuxtLink 
                             to="/newsroom"
-                            class="group flex *:flex items-center *:items-center justify-center px-8 py-3 gap-4 w-fit h-16 mx-auto text-(--black) hover:text-(--white) bg-transparent hover:bg-(--medium-blue) shadow-lg rounded-lg border-3 border-(--medium-blue) duration-300 ease-in-out transition-all"
+                            class="group flex *:flex items-center *:items-center justify-center px-8 py-2 gap-4 w-fit mx-auto text-(--black) hover:text-(--white) bg-transparent hover:bg-(--light-blue) shadow-lg rounded-lg border-1 border-(--light-blue) duration-300 ease-in-out transition-all"
                         >
                             <div class="group relative flex items-center justify-center text-xl w-8 h-full overflow-hidden">
                                 <div class="absolute flex items-center left-2 h-full w-12 transition-all duration-500 ease-in-out group-hover:translate-x-full">
@@ -92,15 +57,15 @@
                                 </div>
                             </div>
 
-                            <span class="font-semibold text-lg">Read all news and press releases</span>
-                        </NuxtLink>
+                            <span class="flex lg:hidden font-semibold text-lg">Read all news</span>
+                        </NuxtLink> -->
                         
                     </div> 
 
                     <div class="grid md:grid-cols-2 gap-6 *:w-full *:max-w-md *:mx-auto *:h-fit">
 
                         <!-- Delivering first oil while lowering development costs -->
-                        <div class="flex flex-col gap-8 bg-(--dark-blue) p-6 rounded-2xl shadow-lg">
+                        <div class="flex flex-col gap-4 lg:gap-8 bg-(--dark-blue) p-4 lg:p-6 rounded-2xl shadow-lg">
                             <NuxtImg
                                 src="/investors/penn-ceo-talks-growing-production-efficient-spending-hero.jpg"
                                 alt="Penn Ceo Talks Growing Production Efficient Spending"
@@ -109,12 +74,12 @@
                             />
 
                             <div class="flex flex-col gap-4">
-                                <p class="text-(--white) text-xl font-semibold cursor-text">
+                                <p class="text-(--white) text-lg">
                                     April 21, 2025
                                 </p>
 
                                 <h2 
-                                    class="text-4xl font-semibold text-(--white)"
+                                    class="text-2xl md:text-4xl font-semibold text-(--white)"
                                 >
                                     Delivering first oil while lowering development costs
                                 </h2>
@@ -141,7 +106,7 @@
                         </div>  
 
                         <!-- Penn Petro Energy leaders share their vision for the future of CERAWeek 2025 -->
-                        <div class="flex flex-col gap-8 bg-(--dark-green) p-6 rounded-2xl shadow-lg">
+                        <div class="flex flex-col gap-4 lg:gap-8 bg-(--dark-green) p-4 lg:p-6 rounded-2xl shadow-lg">
                             <NuxtImg
                                 src="/investors/cnbc-joins-penn-ceo-in-gulf-of-mexico-to-discuss-deepwater-achievements-hero.jpg"
                                 alt="CNBC joins Penn Ceo in Gulf of Mexico to Discuss Deep Water Achievements"
@@ -150,12 +115,12 @@
                             />
 
                             <div class="flex flex-col gap-4">
-                                <p class="text-(--white) text-xl font-semibold cursor-text">
+                                <p class="text-(--white) text-lg">
                                     March 10, 2025
                                 </p>
 
                                 <h2 
-                                    class="text-4xl font-semibold text-(--white)"
+                                    class="text-2xl md:text-4xl font-semibold text-(--white)"
                                 >
                                     Penn Petro Energy leaders share their vision for the future of CERAWeek 2025
                                 </h2>
@@ -181,7 +146,7 @@
                         </div>
 
                         <!-- Engine No. 1 Penn Petro Energy and GE Vernova to power U.S. data centers -->
-                        <div class="flex flex-col gap-8 bg-(--dark-orange) p-6 rounded-2xl shadow-lg">
+                        <div class="flex flex-col gap-4 lg:gap-8 bg-(--dark-orange) p-4 lg:p-6 rounded-2xl shadow-lg">
                             <NuxtImg
                                 src="/investors/penn-ceo-talks-growing-production-efficient-spending-hero.jpg"
                                 alt="Penn Ceo Talks Growing Production Efficient Spending"
@@ -190,12 +155,12 @@
                             />
 
                             <div class="flex flex-col gap-4">
-                                <p class="text-(--white) text-xl font-semibold cursor-text">
+                                <p class="text-(--white) text-lg">
                                     March 10, 2025
                                 </p>
 
                                 <h2 
-                                    class="text-4xl font-semibold text-(--white)"
+                                    class="text-2xl md:text-4xl font-semibold text-(--white)"
                                 >
                                     Engine No. 1 Penn Petro Energy and GE Vernova to power U.S. data centers
                                 </h2>
@@ -221,7 +186,7 @@
                         </div>
 
                         <!-- Penn Petro Energy achieves first oil future growth project in Kazakhstan -->
-                        <div class="flex flex-col gap-8 bg-(--dark-teal) p-6 rounded-2xl shadow-lg">
+                        <div class="flex flex-col gap-4 lg:gap-8 bg-(--dark-teal) p-4 lg:p-6 rounded-2xl shadow-lg">
                             <NuxtImg
                                 src="/investors/cnbc-joins-penn-ceo-in-gulf-of-mexico-to-discuss-deepwater-achievements-hero.jpg"
                                 alt="CNBC joins Penn Ceo in Gulf of Mexico to Discuss Deep Water Achievements"
@@ -230,12 +195,12 @@
                             />
 
                             <div class="flex flex-col gap-4">
-                                <p class="text-(--white) text-xl font-semibold cursor-text">
+                                <p class="text-(--white) text-lg">
                                     January 23, 2025
                                 </p>
 
                                 <h2 
-                                    class="text-4xl font-semibold text-(--white)"
+                                    class="text-2xl md:text-4xl font-semibold text-(--white)"
                                 >
                                     Penn Petro Energy achieves first oil future growth project in Kazakhstan
                                 </h2>
@@ -261,7 +226,7 @@
                         </div>
 
                         <!-- Penn Petro Energy-hess merger clears FTC antitrust review -->
-                        <div class="flex flex-col gap-8 bg-(--dark-teal) p-6 rounded-2xl shadow-lg">
+                        <div class="flex flex-col gap-4 lg:gap-8 bg-(--dark-teal) p-4 lg:p-6 rounded-2xl shadow-lg">
                             <NuxtImg
                                 src="/investors/penn-ceo-talks-growing-production-efficient-spending-hero.jpg"
                                 alt="Penn Ceo Talks Growing Production Efficient Spending"
@@ -270,12 +235,12 @@
                             />
 
                             <div class="flex flex-col gap-4">
-                                <p class="text-(--white) text-xl font-semibold cursor-text">
+                                <p class="text-(--white) text-lgcursor-text">
                                     September 30, 2024
                                 </p>
 
                                 <h2 
-                                    class="text-4xl font-semibold text-(--white)"
+                                    class="text-2xl md:text-4xl font-semibold text-(--white)"
                                 >
                                     Penn Petro Energy-hess merger clears FTC antitrust review
                                 </h2>
@@ -301,7 +266,7 @@
                         </div>
 
                         <!-- CNBC joins Penn Petro Energy CEO in gulf of america to discuss deepwater achievement -->
-                        <div class="grid p-6 gap-8 rounded-2xl bg-(--dark-blue)/90 shadow-lg">
+                        <div class="grid p-6 gap-4 lg:gap-8 rounded-2xl bg-(--dark-blue)/90 shadow-lg">
                             <NuxtImg
                                 src="/investors/cnbc-joins-penn-ceo-in-gulf-of-mexico-to-discuss-deepwater-achievements-hero.jpg"
                                 alt="CNBC joins Penn Ceo in Gulf of Mexico to Discuss Deep Water Achievements"
@@ -310,12 +275,12 @@
                             />
 
                             <div class="flex flex-col gap-4 h-full">
-                                <p class="text-(--white) text-xl font-semibold cursor-text">
+                                <p class="text-(--white) text-lg">
                                     October 29, 2024
                                 </p>
 
                                 <h2 
-                                    class="text-4xl font-semibold text-(--white)"
+                                    class="text-2xl md:text-4xl font-semibold text-(--white)"
                                 >
                                     CNBC joins Penn Petro Energy CEO in gulf of america to discuss deepwater achievement
                                 </h2>
@@ -351,12 +316,12 @@
                             />
 
                             <div class="flex flex-col gap-4 h-full">
-                                <p class="text-(--white) text-xl font-semibold cursor-text">
+                                <p class="text-(--white) text-lg">
                                     December 18, 2024
                                 </p>
 
                                 <h2 
-                                    class="text-4xl font-semibold text-(--white)"
+                                    class="text-2xl md:text-4xl font-semibold text-(--white)"
                                 >
                                     Penn Petro Energy CEO talks growing production, efficient spending
                                 </h2>

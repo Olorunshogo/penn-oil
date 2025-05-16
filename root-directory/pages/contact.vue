@@ -12,16 +12,16 @@
         ogTitle: 'Reach Out to Penn Petro Energy',
         description: 'Have questions or inquiries? Contact Penn Petro Energy to learn more about our services, partnerships, or career opportunities.',
         ogDescription: 'Get in touch with Penn Petro Energy. Whether you’re a partner, job seeker, or investor, we’re here to connect with you.',
-        ogImage: '/images/contact-page-hero.jpg',
+        ogImage: '/Logo/Full_Penn_Petro_Energy_Logo.jpg',
         ogImageAlt: 'Penn Petro Energy headquarters and team members in a meeting.',
         ogUrl: 'https://vercel.com/bom-projects/pen-oil/contact',
 
         twitterCard: 'summary_large_image',
         twitterTitle: 'Contact Penn Petro Energy | We’re Here to Help',
         twitterDescription: 'Reach out to our team at Penn Petro Energy for inquiries about careers, investments, media, and more. Let’s connect.',
-        twitterImage: '/images/Logo/Full_Penn_Petro_Energy_Logo.jpg',
+        twitterImage: '/Logo/Full_Penn_Petro_Energy_Logo.jpg',
 
-        keywords: 'contact Penn Petro Energy, energy company contact, oil and gas inquiries, sustainability partnerships, investor contact, energy sector communication, Penn Petro support',
+        keywords: 'Contact Penn Petro Energy, energy company contact, oil and gas inquiries, sustainability partnerships, investor contact, energy sector communication, Penn Petro support',
     });
 
     import { 
@@ -65,7 +65,7 @@
                             Important Information
                         </h2>
 
-                        <div class="flex flex-col gap-0 w-full h-full bg-(--light-gray)/40">
+                        <div class="flex flex-col gap-0 *:px-4 w-full h-full bg-(--light-gray)/40">
 
                             <!-- Job Openings -->
                             <div class="flex flex-col gap-6 text-(--black) py-6 border-2 border-transparent border-b-(--border-gray)">                                                                 
@@ -993,11 +993,11 @@
                         </div>
                     </div>
 
-                    <div class="grid gap-8 w-full h-full bg-(--light-gray)/30 p-20">
-                        <!-- Email Penn -->
+                    <div class="grid gap-8 w-full h-full bg-(--light-gray)/30 py-8">
+                        <!-- Email Us -->
                         <NuxtLink
                             to="mailto:pennpetroenergy@gmail.com"
-                            class="group relative flex items-center text-lg w-fit px-6 py-2 font-bold text-(--black) hover:text-(--white) hover:bg-(--medium-blue) border-2 border-(--medium-blue) mx-auto shadow-lg rounded-lg duration-500 ease-in transition-all"
+                            class="group relative flex items-center text-lg w-fit px-6 py-2 font-bold text-(--black) hover:text-(--white) hover:bg-(--light-blue) border-1 border-(--light-blue) mx-auto shadow-lg rounded-lg duration-500 ease-in transition-all"
                         >
                             <div class="group relative flex items-center justify-center text-xl w-12 h-full overflow-hidden">
                                 <div class="absolute flex items-center left-4 h-full w-12 transition-all duration-500 ease-in-out group-hover:translate-x-full">
@@ -1008,8 +1008,8 @@
                                     <Icon name="mdi:arrow-right" />
                                 </div>
                             </div>
-                            <span>
-                                Email Penn
+                            <span class="font-semibold">
+                                Email Us
                             </span>
                         </NuxtLink>
 
@@ -1019,6 +1019,7 @@
                             <!-- Facebook -->
                             <NuxtLink
                                 to="/"
+                                target="_blank"
                                 class="hover:text-(--dark-blue)"
                             >
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
@@ -1036,6 +1037,7 @@
                             <!-- X -->
                             <NuxtLink
                                 to="/"
+                                target="_blank"
                                 class="hover:text-(--medium-blue)"
                             >
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
@@ -1052,6 +1054,7 @@
                             <!-- Instagram -->
                             <NuxtLink
                                 to="/"
+                                target="_blank"
                                 class="hover:text-(--medium-red)"
                             >
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
@@ -1072,6 +1075,7 @@
                             <!-- TikTok -->
                             <NuxtLink
                                 to="/"
+                                target="_blank"
                                 class="hover:text-(--light-red)"
                             >
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
@@ -1093,6 +1097,7 @@
                             <!-- YouTube -->
                             <NuxtLink
                                 to="/"
+                                target="_blank"
                                 class="hover:text-(--dark-red)"
                             >
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
@@ -1109,6 +1114,7 @@
                             <!-- LinkedIn -->
                             <NuxtLink
                                 to="/"
+                                target="_blank"
                                 class="hover:text-(--light-blue)"
                             >
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">

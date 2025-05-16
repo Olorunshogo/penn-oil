@@ -49,23 +49,23 @@
         <section>
             <div class="px-(--section-px) lg:px-(--section-px-lg) py-(--section-py) lg:py-(--section-py-lg) bg-(--white) w-full h-full overflow-hidden">
                 
-                <div class="flex flex-col gap-20 lg:gap-24 py-16 lg:py-24 w-full max-w-6xl mx-auto">
+                <div class="flex flex-col gap-12 lg:gap-16 py-8 lg:py-12 w-full max-w-6xl mx-auto">
 
                     <div class="flex flex-col items-center justify-center gap-4">
                         <h2 
-                            class="text-5xl lg:text-8xl text-(--dark-blue) text-wrap text-center font-extrabold cursor-text w-full h-full overflow-hidden"
+                            class="text-4xl sm:text-5xl lg:text-8xl text-(--dark-blue) text-wrap text-center font-extrabold"
                         >
                             Around the world
                         </h2>
 
-                        <p class="text-(--black) text-center text-lg lg:text-2xl font-semibold cursor-text">
+                        <p class="text-(--black) text-center text-lg lg:text-xl">
                             Learn about our sustainability efforts in the regions where we operate.
                         </p>
                     </div> 
 
-                    <div class="flex flex-col gap-4 bg-(--medium-blue) rounded-lg px-4 py-12 lg:px-8 lg:py-20" >
+                    <div class="flex flex-col gap-4 bg-(--medium-blue) rounded-lg px-4 py-12 lg:px-8 lg:py-12" >
                         <h3 
-                            class="text-3xl lg:text-5xl text-(--white) text-wrap text-center font-extrabold cursor-text w-full"
+                            class="text-2xl lg:text-5xl text-(--white) text-wrap text-center font-bold w-full"
                         >
                             Find our environment, social and governance topics in one place
                         </h3>
@@ -98,39 +98,39 @@
         <section>
             <div class="px-(--section-px) lg:px-(--section-px-lg) py-(--section-py) lg:py-(--section-py-lg) bg-(--white) w-full h-full overflow-hidden">
                 
-                <div class="flex flex-col gap-20 lg:gap-24 w-full max-w-6xl mx-auto">
+                <div class="flex flex-col gap-8 lg:gap-12 w-full max-w-7xl mx-auto">
 
                     <div class="flex flex-col items-center justify-center gap-4">
                         <h2 
-                            class="text-5xl md:text-8xl text-(--dark-blue) text-wrap text-center font-extrabold cursor-text w-full h-full overflow-hidden"
+                            class="text-4xl sm:text-5xl lg:text-8xl text-(--dark-blue) text-wrap text-center font-extrabold"
                         >
                             Energy is essential to modern life
                         </h2>
 
-                        <p class="text-(--black) text-center text-lg lg:text-2xl font-semibold cursor-text">
+                        <p class="text-(--black) text-center text-lg">
                             As we've done for more than 140 years, we will continue to evolve and help meet the energy demand of a growing world.
                         </p>
                     </div> 
 
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 w-4/5 mx-auto md:w-full h-full">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 w-full *:w-9/10 *:mx-auto h-full">
 
                         <!-- Climate -->
-                        <div class="grid p-6 gap-8 rounded-2xl bg-(--medium-blue) shadow-lg">
+                        <div class="grid p-4 md:p-6 gap-4 md:gap-8 rounded-2xl bg-(--medium-blue) shadow-lg">
                             <NuxtImg
                                 src="/sustainability/Sustainability_ClimateThumbnail.jpg"
                                 alt="Photo of a Woman Holding a Drone"
                                 loading="lazy"
-                                class="w-full h-60 object-cover rounded-2xl"
+                                class="w-full h-50 sm:h-60 object-cover rounded-2xl"
                             />
 
                             <div class="flex flex-col gap-4">
                                 <h2 
-                                    class="text-4xl font-bold text-(--white)"
+                                    class="text-3xl md:text-4xl font-bold text-(--white)"
                                 >
                                     Climate
                                 </h2>
 
-                                <p class="text-(--white) text-xl font-semibold cursor-text">
+                                <p class="text-(--white) text-base md:text-lg">
                                     We’re working to lower the carbon intensity of our operations. 
                                     At the same time, we’re investing to grow our capabilities in various ways, including renewable fuels and emerging technologies.
                                 </p>
@@ -157,29 +157,29 @@
                         </div>
 
                         <!-- Environment-->
-                        <div class="grid p-6 gap-8 rounded-2xl bg-(--dark-green) shadow-lg">
+                        <div class="grid p-4 md:p-6 gap-4 md:gap-8 rounded-2xl bg-(--dark-green) shadow-lg">
                             <NuxtImg
                                 src="/sustainability/Sustainability_EnvironmentThumbnail.jpg"
                                 alt="Three people eating outside"
                                 loading="lazy"
-                                class="w-full h-60 object-cover rounded-2xl"
+                                class="w-full h-50 sm:h-60 object-cover rounded-2xl"
                             />
 
                             <div class="flex flex-col gap-4">
                                 <h2 
-                                    class="text-4xl font-bold text-(--white)"
+                                    class="text-3xl md:text-4xl font-bold text-(--white)"
                                 >
                                     Environment
                                 </h2>
 
-                                <p class="text-(--white) text-xl font-semibold cursor-text">
+                                <p class="text-(--white) text-base md:text-lg">
                                     One of our priorities is to help protect the environment. 
                                     We do this through responsible design, development, operations and retirement of assets.
                                 </p>
 
                                 <!-- Explore ESG topics from a-z -->
                                     <NuxtLink
-                                        to="/sustainability/climate"
+                                        to="/sustainability/environment"
                                         class="group flex *:flex items-center *:items-center justify-center px-2 lg:px-8 py-2 gap-2 lg:gap-4 w-fit text-(--white) hover:text-(--black) duration-300 ease-in-out transition-all"
                                     >
                                         <div class="group relative flex items-center justify-center text-xl w-8 h-full overflow-hidden">
@@ -198,22 +198,22 @@
                         </div>
 
                         <!-- Social Investment -->
-                        <div class="grid p-6 gap-8 rounded-2xl bg-(--medium-teal) shadow-lg">
+                        <div class="grid p-4 md:p-6 gap-4 md:gap-8 rounded-2xl bg-(--medium-teal) shadow-lg">
                             <NuxtImg
                                 src="/sustainability/Sustainability_SocialinvestmentThumbnail.jpg"
                                 alt="Children playing with their toys"
                                 loading="lazy"
-                                class="w-full h-60 object-cover rounded-2xl"
+                                class="w-full h-50 sm:h-60 object-cover rounded-2xl"
                             />
 
                             <div class="flex flex-col gap-4">
                                 <h2 
-                                    class="text-4xl font-bold text-(--white)"
+                                    class="text-3xl md:text-4xl font-bold text-(--white)"
                                 >
                                     Social Investment
                                 </h2>
 
-                                <p class="text-(--white) text-xl font-semibold cursor-text">
+                                <p class="text-(--white) text-base md:text-lg">
                                     We believe our business succeeds when our people and communities do. 
                                     We’re striving to empower people worldwide to help improve their lives and achieve their ambitions.
                                 </p>
@@ -240,22 +240,22 @@
                         </div>
 
                         <!-- Diversity and Inclusion -->
-                        <div class="grid p-6 gap-8 rounded-2xl bg-(--dark-orange) shadow-lg">
+                        <div class="grid p-4 md:p-6 gap-4 md:gap-8 rounded-2xl bg-(--dark-orange) shadow-lg">
                             <NuxtImg
                                 src="/sustainability/Sustainability_DiversityInclusionThumbnail.jpg"
                                 alt="Close-Up Shot of Hands"
                                 loading="lazy"
-                                class="w-full h-60 object-cover rounded-2xl"
+                                class="w-full h-50 sm:h-60 object-cover rounded-2xl"
                             />
 
                             <div class="flex flex-col gap-4">
                                 <h2 
-                                    class="text-4xl font-bold text-(--white) text-wrap"
+                                    class="text-3xl md:text-4xl font-bold text-(--white) text-wrap"
                                 >
                                     Diversity and Inclusion
                                 </h2>
 
-                                <p class="text-(--white) text-xl font-semibold cursor-text">
+                                <p class="text-(--white) text-base md:text-lg">
                                     Our success is driven by a dedicated, diverse and highly skilled global workforce united by The Penn Petro Energy Way. 
                                     We treat our employees and our partners with respect and dignity.
                                 </p>

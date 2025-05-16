@@ -82,7 +82,7 @@
                             {{ title }}
                         </h1>
                         
-                        <p class="text-base md:text-xl text-center text-(--white)">
+                        <p class="text-base md:text-xl text-center text-(--black)">
                             {{ paragraph }}
                         </p>
 

@@ -619,10 +619,14 @@
                 </div>
 
                 <!-- Social links -->
-                <div class="flex items-center flex-wrap gap-4 *:flex *:items-center *:text-xl lg:*:text-2xl *:ease-in-out *:duration-500 *:transition-all *:hover:text-(--light-blue)">
+                <div class="flex items-center flex-wrap gap-4 *:flex *:items-center *:text-xl *:lg:text-3xl mx-auto *:ease-in-out *:duration-500 *:transition-all">
 
                     <!-- Facebook -->
-                    <span>
+                    <NuxtLink
+                        to="/"
+                        target="_blank"
+                        class="hover:text-(--dark-blue)"
+                    >
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                             <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="4">
                                 <path stroke-dasharray="24" stroke-dashoffset="24" d="M17 4l-2 0c-2.5 0 -4 1.5 -4 4v12">
@@ -633,10 +637,14 @@
                                 </path>
                             </g>
                         </svg>
-                    </span>
+                    </NuxtLink>
 
                     <!-- X -->
-                    <span>
+                    <NuxtLink
+                        to="/"
+                        target="_blank"
+                        class="hover:text-(--medium-blue)"
+                    >
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                             <g fill="currentColor"><path d="M1 2h2.5L3.5 2h-2.5zM5.5 2h2.5L7.2 2h-2.5z">
                                 <animate fill="freeze" attributeName="d" dur="0.4s" values="M1 2h2.5L3.5 2h-2.5zM5.5 2h2.5L7.2 2h-2.5z;M1 2h2.5L18.5 22h-2.5zM5.5 2h2.5L23 22h-2.5z"/></path>
@@ -646,10 +654,14 @@
                                 <path d="M18.5 2h3.5L22 2h-3.5z"><animate fill="freeze" attributeName="d" begin="0.5s" dur="0.4s" values="M18.5 2h3.5L22 2h-3.5z;M18.5 2h3.5L5 22h-3.5z"/></path>
                             </g>
                         </svg>
-                    </span>
+                    </NuxtLink>
 
                     <!-- Instagram -->
-                    <span>
+                    <NuxtLink
+                        to="/"
+                        target="_blank"
+                        class="hover:text-(--medium-red)"
+                    >
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                             <circle cx="17" cy="7" r="1.5" fill="currentColor" fill-opacity="0">
                                 <animate fill="freeze" attributeName="fill-opacity" begin="1.3s" dur="0.15s" values="0;1"/>
@@ -663,10 +675,14 @@
                                 </path>
                             </g>
                         </svg>
-                    </span>
+                    </NuxtLink>
 
                     <!-- TikTok -->
-                    <span>
+                    <NuxtLink
+                        to="/"
+                        target="_blank"
+                        class="hover:text-(--light-red)"
+                    >
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                             <mask id="lineMdTiktok0">
                                 <g fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
@@ -681,10 +697,14 @@
                             </mask>
                             <rect width="24" height="24" fill="currentColor" mask="url(#lineMdTiktok0)"/>
                         </svg>
-                    </span>
+                    </NuxtLink>
 
                     <!-- YouTube -->
-                    <span>
+                    <NuxtLink
+                        to="/"
+                        target="_blank"
+                        class="hover:text-(--dark-red)"
+                    >
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                             <path fill="currentColor" fill-opacity="0" d="M12 11L12 12L12 13z">
                                 <animate fill="freeze" attributeName="d" begin="0.6s" dur="0.2s" values="M12 11L12 12L12 13z;M10 8.5L16 12L10 15.5z"/>
@@ -694,10 +714,14 @@
                                 <animate fill="freeze" attributeName="stroke-dashoffset" dur="0.6s" values="64;0"/>
                             </path>
                         </svg>
-                    </span>
+                    </NuxtLink>
 
                     <!-- LinkedIn -->
-                    <span>
+                    <NuxtLink
+                        to="/"
+                        target="_blank"
+                        class="hover:text-(--light-blue)"
+                    >
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                             <circle cx="4" cy="4" r="2" fill="currentColor" fill-opacity="0">
                                 <animate fill="freeze" attributeName="fill-opacity" dur="0.15s" values="0;1"/>
@@ -714,10 +738,10 @@
                                 </path>
                             </g>
                         </svg>
-                    </span>
-                
+                    </NuxtLink>
 
-                </div>            
+
+                        </div>            
             
             </div>
           

@@ -12,14 +12,14 @@
         ogTitle: 'Penn Petro Energy | Environmental Responsibility in Energy Operations',
         description: 'Learn how Penn Petro Energy integrates environmental protection into its operations, prioritizing biodiversity, water conservation, and responsible resource management.',
         ogDescription: 'Explore Penn Petro Energy’s environmental initiatives, including reducing ecological impact, conserving resources, and supporting environmental resilience across all projects.',
-        ogImage: '/images/sustainability/environment-hero.jpg',
+        ogImage: '/Logo/Full_Penn_Petro_Energy_Logo.jpg',
         ogImageAlt: 'Image showing Penn Petro Energy’s environmental efforts—natural landscapes, clean water, and protected ecosystems.',
         ogUrl: 'https://vercel.com/bom-projects/pen-oil/sustainability/environment',
 
         twitterCard: 'summary_large_image',
         twitterTitle: 'Penn Petro Energy | Our Commitment to the Environment',
         twitterDescription: 'From reducing environmental impact to conserving biodiversity, Penn Petro Energy is committed to protecting the planet through responsible energy practices.',
-        twitterImage: '/images/Logo/Full_Penn_Petro_Energy_Logo.jpg',
+        twitterImage: '/Logo/Full_Penn_Petro_Energy_Logo.jpg',
 
         keywords: 'Penn Petro Energy environmental responsibility, environmental stewardship, biodiversity protection, water conservation, sustainable resource management, eco-friendly energy practices, environmental sustainability in oil and gas',
     });
@@ -72,7 +72,7 @@
 
                             <NuxtLink
                                 to="/investors/overview"
-                                class="group flex *:flex items-center *:items-center justify-end px-2 lg:px-8 py-2 gap-2 lg:gap-4 mx-auto w-fit text-(--white) hover:text-(--black) hover:bg-(--medium-blue) border-2 border-(--medium-blue) rounded-lg shadow-lg my-12 duration-300 ease-in-out transition-all"
+                                class="group flex *:flex items-center *:items-center justify-end px-2 lg:px-8 py-2 gap-2 lg:gap-4 mx-auto w-fit text-(--white) hover:text-(--black) hover:bg-(--light-blue) border-1 border-(--light-blue) rounded-lg shadow-lg my-12 duration-300 ease-in-out transition-all"
                             >
                                 <div class="group relative flex items-center justify-center text-xl w-8 h-full overflow-hidden">
                                     <div class="absolute flex items-center left-2 h-full w-12 transition-all duration-500 ease-in-out group-hover:translate-x-full">
@@ -83,10 +83,10 @@
                                         <Icon name="mdi:arrow-right" />
                                     </div>
                                 </div>
-                                <span class="font-bold text-base lg:text-lg">Learn more about our approach</span>
+                                <span class="font-semibold text-lg">Learn more about our approach</span>
                             </NuxtLink>
                         </div>
-                    </div>                 
+                    </div>               
 
 
                 </div>
@@ -120,7 +120,7 @@
 
                             <NuxtLink
                                 to="/investors/overview"
-                                class="group flex *:flex items-center *:items-center justify-end px-2 lg:px-8 py-2 gap-2 lg:gap-4 mx-auto w-fit text-(--black) hover:text-(--white) hover:bg-(--medium-blue) border-2 border-(--medium-blue) rounded-lg shadow-lg my-12 duration-300 ease-in-out transition-all"
+                                class="group flex *:flex items-center *:items-center justify-end px-2 lg:px-8 py-2 gap-2 lg:gap-4 mx-auto w-fit text-(--black) hover:text-(--white) hover:bg-(--light-blue) border-1 border-(--light-blue) rounded-lg shadow-lg my-12 duration-300 ease-in-out transition-all"
                             >
                                 <div class="group relative flex items-center justify-center text-xl w-8 h-full overflow-hidden">
                                     <div class="absolute flex items-center left-2 h-full w-12 transition-all duration-500 ease-in-out group-hover:translate-x-full">
@@ -131,7 +131,7 @@
                                         <Icon name="mdi:arrow-right" />
                                     </div>
                                 </div>
-                                <span class="font-bold text-base lg:text-lg">Learn more about our approach</span>
+                                <span class="font-semibold text-lg">Learn more about our approach</span>
                             </NuxtLink>
                         </div>
                     </div>                   
@@ -165,7 +165,7 @@
 
                             <NuxtLink
                                 to="/investors/overview"
-                                class="group flex *:flex items-center *:items-center justify-end px-2 lg:px-8 py-2 gap-2 lg:gap-4 mx-auto w-fit text-(--white) hover:text-(--black) hover:bg-(--medium-blue) border-2 border-(--medium-blue) rounded-lg shadow-lg my-12 duration-300 ease-in-out transition-all"
+                                class="group flex *:flex items-center *:items-center justify-end px-2 lg:px-8 py-2 gap-2 lg:gap-4 mx-auto w-fit text-(--white) hover:text-(--black) hover:bg-(--light-blue) border-1 border-(--light-blue) rounded-lg shadow-lg my-12 duration-300 ease-in-out transition-all"
                             >
                                 <div class="group relative flex items-center justify-center text-xl w-8 h-full overflow-hidden">
                                     <div class="absolute flex items-center left-2 h-full w-12 transition-all duration-500 ease-in-out group-hover:translate-x-full">
@@ -176,7 +176,7 @@
                                         <Icon name="mdi:arrow-right" />
                                     </div>
                                 </div>
-                                <span class="font-bold text-base lg:text-lg">Learn more about our approach</span>
+                                <span class="font-semibold text-lg">Learn more about our approach</span>
                             </NuxtLink>
                         </div>
                     </div>                  
@@ -211,7 +211,7 @@
 
                             <NuxtLink
                                 to="/investors/overview"
-                                class="group flex *:flex items-center *:items-center justify-end px-2 lg:px-8 py-2 gap-2 lg:gap-4 mx-auto w-fit text-(--black) hover:text-(--white) hover:bg-(--medium-blue) border-2 border-(--medium-blue) rounded-lg shadow-lg my-12 duration-300 ease-in-out transition-all"
+                                class="group flex *:flex items-center *:items-center justify-end px-2 lg:px-8 py-2 gap-2 lg:gap-4 mx-auto w-fit text-(--black) hover:text-(--white) hover:bg-(--light-blue) border-1 border-(--light-blue) rounded-lg shadow-lg my-12 duration-300 ease-in-out transition-all"
                             >
                                 <div class="group relative flex items-center justify-center text-xl w-8 h-full overflow-hidden">
                                     <div class="absolute flex items-center left-2 h-full w-12 transition-all duration-500 ease-in-out group-hover:translate-x-full">
@@ -222,7 +222,7 @@
                                         <Icon name="mdi:arrow-right" />
                                     </div>
                                 </div>
-                                <span class="font-bold text-base lg:text-lg">Learn more about our approach</span>
+                                <span class="font-semibold text-lg">Learn more about our approach</span>
                             </NuxtLink>
                         </div>
                     </div>                   
@@ -250,7 +250,7 @@
 
                             <div class="grid md:grid-cols-3 gap-6 md:gap-8">
                                 <!-- Climate -->
-                                <div class="flex flex-col items-center justify-center w-full max-w-4/5 md:max-w-full mx-auto h-full">
+                                <div class="flex flex-col items-center justify-center w-full max-w-9/10 md:max-w-full mx-auto h-full">
                                     <NuxtImg
                                         src="/sustainability/Sustainability_ClimateThumbnail.jpg"
                                         loading="lazy"
@@ -278,7 +278,7 @@
                                 </div>
 
                                 <!-- Social Investment -->
-                                <div class="flex flex-col items-center justify-center w-full max-w-4/5 md:max-w-full mx-auto h-full">
+                                <div class="flex flex-col items-center justify-center w-full max-w-9/10 md:max-w-full mx-auto h-full">
                                     <NuxtImg
                                         src="/sustainability/Sustainability_SocialInvestmentThumbnail.jpg"
                                         loading="lazy"
@@ -306,7 +306,7 @@
                                 </div>
 
                                 <!-- Diversity and Inclusion -->
-                                <div class="flex flex-col items-center justify-center w-full max-w-4/5 md:max-w-full mx-auto h-full">
+                                <div class="flex flex-col items-center justify-center w-full max-w-9/10 md:max-w-full mx-auto h-full">
                                     <NuxtImg
                                         src="/sustainability/Sustainability_DiversityInclusionThumbnail.jpg"
                                         loading="lazy"
@@ -335,6 +335,7 @@
 
                                 
                             </div>
+                            
                         </div>
 
                     </div>

@@ -45,55 +45,28 @@
             />
         </div>
 
-        <!-- Section: Hero -->
-        <section>        
-            
-            <div class="relative w-full h-full overflow-hidden">
-                
-
-                <!-- Content -->
-                <div class="grid gap-4 bg-(--white) w-full absolute bottom-0 h-1/2 lg:h-2/5 max-h-[500px]">
-                    <div class="flex flex-col items-center justify-center w-full max-w-4xl mx-auto h-full gap-2">
-                        <h1 
-                            class="text-5xl md:text-6xl xl:text-9xl text-center font-extrabold bg-clip-text text-transparent" 
-                            style="background-image: url('https://images.pexels.com/photos/1181438/pexels-photo-1181438.jpeg'); background-size: cover;"
-                        >
-                            Careers
-                        </h1>
-                        
-                        <p class="text-xl lg:text-2xl text-center text-(--black)">
-                            Team members of all experience levels tackle global, real world problems facing our business
-                        </p>
-                    </div>
-                </div> 
-
-            </div>
-        </section>
-
         <!-- Section: Careers at Penn Petro Energy -->
         <section>
-            <div class="bg-(--light-gray) w-full h-full overflow-hidden">
+            <div class="bg-(--light-gray) py-12 w-full h-full overflow-hidden">
                 
-                <div class="flex flex-col lg:flex-row w-full lg:w-full max-w-[1400px] mx-auto lg:mb-16 h-full px-(--section-px) py-(--section-py)">
+                <div class="flex flex-col lg:flex-row w-full sm:w-9/10 lg:w-full max-w-7xl mx-auto h-full px-(--section-px) py-(--section-py)">
                     <NuxtImg
-                        src="https://images.pexels.com/photos/1181354/pexels-photo-1181354.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                        alt="Engineer Holding Laptop"
+                        src="https://images.pexels.com/photos/8866765/pexels-photo-8866765.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        alt="Three People Working in the Office"
                         loading="lazy"
-                        class="w-full lg:w-1/2 h-80 lg:h-120 object-center lg:object-cover rounded-t-lg lg:rounded-l-lg"
-                    /> 
+                        class="w-full lg:w-1/2 h-60 sm:h-80 lg:h-120 object-center lg:object-cover rounded-t-lg lg:rounded-l-lg"
+                    />                     
 
-                    
-
-                    <div class="flex flex-col justify-center bg-(--dark-blue) w-full lg:w-1/2 h-120 rounded-b-2xl lg:rounded-r-2xl">                        
+                    <div class="flex flex-col justify-center bg-(--dark-blue) w-full lg:w-1/2 h-100 lg:h-120 rounded-b-2xl lg:rounded-r-2xl">                        
                         
-                        <div class="flex flex-col px-8 gap-4 lg:gap-8 max-w-2xl">
+                        <div class="flex flex-col px-4 lg:px-8 gap-4 lg:gap-8 max-w-2xl">
                             <h2 
-                                class="text-4xl lg:text-6xl text-(--light-blue) text-wrap font-extrabold cursor-text w-full h-full overflow-hidden"
+                                class="text-4xl sm:text-5xl lg:text-6xl text-(--light-blue) text-wrap font-extrabold cursor-text w-full h-full overflow-hidden"
                             >
                                 Careers at Penn Petro Energy
                             </h2>
 
-                            <p class="text-(--white) text-lg lg:text-2xl cursor-text">
+                            <p class="text-(--white) text-lg lg:text-xl">
                                 Penn Petro Energy only accepts job applications through our Careers website. 
                                 The site features information about careers at Penn Petro Energy and current job openings.
                             </p>
@@ -102,7 +75,7 @@
                         <!-- View Careers -->
                         <NuxtLink 
                             to="/who/culture"
-                            class="group flex *:flex items-center *:items-center justify-center px-2 lg:px-8 py-2 gap-2 lg:gap-4 w-fit mx-auto mt-8 text-(--white) bg-transparent hover:bg-(--light-blue) shadow-lg rounded-lg duration-300 ease-in-out transition-all"
+                            class="group flex *:flex items-center *:items-center justify-center px-2 lg:px-8 py-2 gap-2 lg:gap-4 w-fit mx-auto mt-8 text-(--white) bg-transparent hover:bg-(--light-blue) hover:shadow-lg rounded-lg duration-300 ease-in-out transition-all"
                         >
                             <div class="group relative flex items-center justify-center text-xl w-8 h-full overflow-hidden">
                                 <div class="absolute flex items-center left-2 h-full w-12 transition-all duration-500 ease-in-out group-hover:translate-x-full">
@@ -127,18 +100,18 @@
         <section>
             <div class="bg-(--light-gray) w-full h-full overflow-hidden">
                 
-                <div class="flex flex-col lg:flex-row w-full lg:w-full max-w-[1400px] mx-auto lg:mb-16 h-full px-(--section-px) py-(--section-py)">
+                <div class="flex flex-col lg:flex-row w-full sm:w-9/10 lg:w-full max-w-7xl mx-auto h-full px-(--section-px) py-(--section-py)">
 
-                    <div class="flex flex-col justify-center bg-(--dark-red) h-120 w-full lg:w-1/2 rounded-t-2xl lg:rounded-l-2xl">                        
+                    <div class="flex flex-col justify-center bg-(--dark-red) h-100 lg:h-120 w-full lg:w-1/2 rounded-t-2xl lg:rounded-l-2xl">                        
                         
-                        <div class="flex flex-col px-8 gap-4 lg:gap-8 max-w-2xl">
+                        <div class="flex flex-col px-4 lg:px-8 gap-4 lg:gap-8 max-w-2xl">
                             <h2 
-                                class="text-4xl lg:text-6xl text-(--light-red) text-wrap font-extrabold cursor-text w-full h-full overflow-hidden"
+                                class="text-4xl sm:text-5xl lg:text-6xl text-(--light-red) text-wrap font-extrabold cursor-text w-full h-full overflow-hidden"
                             >
                                 Service station employment
                             </h2>
 
-                            <p class="text-(--white) text-lg lg:text-2xl cursor-text">
+                            <p class="text-(--white) text-lg lg:text-xl">
                                 Penn Petro Energy Service Stations, Inc. is looking for Customer Service Representatives who are 18 years or older..
                             </p>
                         </div>
@@ -146,7 +119,7 @@
                         <!-- View service station jobs -->
                         <NuxtLink 
                             to="/who/culture"
-                            class="group flex *:flex items-center *:items-center justify-center px-2 lg:px-8 py-2 gap-2 lg:gap-4 w-fit mx-auto mt-8 text-(--white) bg-transparent hover:bg-(--light-red) shadow-lg rounded-lg duration-300 ease-in-out transition-all"
+                            class="group flex *:flex items-center *:items-center justify-center px-2 lg:px-8 py-2 gap-2 lg:gap-4 w-fit mx-auto mt-8 text-(--white) bg-transparent hover:bg-(--light-red) hover:shadow-lg rounded-lg duration-300 ease-in-out transition-all"
                         >
                             <div class="group relative flex items-center justify-center text-xl w-8 h-full overflow-hidden">
                                 <div class="absolute flex items-center left-2 h-full w-12 transition-all duration-500 ease-in-out group-hover:translate-x-full">
@@ -166,7 +139,7 @@
                         src="https://images.pexels.com/photos/1181354/pexels-photo-1181354.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                         alt="Engineer Holding Laptop"
                         loading="lazy"
-                        class="w-full lg:w-1/2 h-80 lg:h-120 object-center lg:object-cover rounded-b-2xl lg:rounded-r-2xl"
+                        class="w-full lg:w-1/2 h-60 sm:h-80 lg:h-120 object-center lg:object-cover rounded-b-2xl lg:rounded-r-2xl"
                     /> 
                 </div>
 
@@ -177,28 +150,28 @@
         <section>
             <div class="bg-(--light-gray) w-full h-full overflow-hidden">
                 
-                <div class="flex flex-col lg:flex-row w-full lg:w-full max-w-[1400px] mx-auto lg:mb-16 h-full px-(--section-px) py-(--section-py)">
+                <div class="flex flex-col lg:flex-row w-full sm:w-9/10 lg:w-full max-w-7xl mx-auto h-full px-(--section-px) py-(--section-py)">
 
                     
                     <NuxtImg
-                        src="https://images.pexels.com/photos/1181354/pexels-photo-1181354.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                        alt="Engineer Holding Laptop"
+                        src="https://images.pexels.com/photos/7972741/pexels-photo-7972741.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        alt="Portrait of Smiling Students with Diplomas"
                         loading="lazy"
-                        class="w-full lg:w-1/2 h-80 lg:h-120 object-center lg:object-cover rounded-t-2xl lg:rounded-l-2xl"
+                        class="w-full lg:w-1/2 h-60 sm:h-80 lg:h-120 object-center lg:object-cover rounded-t-2xl lg:rounded-l-2xl"
                     /> 
 
                     
 
-                    <div class="flex flex-col justify-center bg-(--dark-teal) h-120 w-full lg:w-1/2 rounded-b-2xl lg:rounded-r-2xl">                        
+                    <div class="flex flex-col justify-center bg-(--dark-teal) h-100 lg:h-120 w-full lg:w-1/2 rounded-b-2xl lg:rounded-r-2xl">                        
                         
                         <div class="flex flex-col px-8 gap-4 lg:gap-8 max-w-2xl">
                             <h2 
-                                class="text-4xl lg:text-6xl text-(--light-teal) text-wrap font-extrabold cursor-text w-full h-full overflow-hidden"
+                                class="text-4xl sm:text-5xl lg:text-6xl text-(--light-teal) text-wrap font-extrabold cursor-text w-full h-full overflow-hidden"
                             >
                                 Students and recent grads
                             </h2>
 
-                            <p class="text-(--white) text-lg lg:text-2xl cursor-text">
+                            <p class="text-(--white) text-lg lg:text-xl">
                                 Meet employees and recruiters on your college campus or at a special event.
                             </p>
                         </div>
@@ -231,18 +204,18 @@
         <section>
             <div class="bg-(--light-gray) mb-16 w-full h-full overflow-hidden">
                 
-                <div class="flex flex-col lg:flex-row w-full lg:w-full max-w-[1400px] mx-auto lg:mb-16 h-full px-(--section-px) py-(--section-py)">
+                <div class="flex flex-col lg:flex-row w-full lg:w-full max-w-7xl mx-auto h-full px-(--section-px) py-(--section-py)">
 
-                    <div class="flex flex-col justify-center bg-(--dark-purple) h-120 w-full lg:w-1/2 rounded-t-2xl lg:rounded-l-2xl">                        
+                    <div class="flex flex-col justify-center bg-(--dark-purple) h-100 lg:h-120 w-full lg:w-1/2 rounded-t-2xl lg:rounded-l-2xl">                        
                         
-                        <div class="flex flex-col px-8 gap-4 lg:gap-8 max-w-2xl">
+                        <div class="flex flex-col px-4 lg:px-8 gap-4 lg:gap-8 max-w-2xl">
                             <h2 
-                                class="text-4xl lg:text-6xl text-(--light-purple) text-wrap font-extrabold cursor-text w-full h-full overflow-hidden"
+                                class="text-4xl sm:text-5xl lg:text-6xl text-(--light-purple) text-wrap font-extrabold cursor-text w-full h-full overflow-hidden"
                             >
                                 Recruiting fraud
                             </h2>
 
-                            <p class="text-(--white) text-lg lg:text-2xl cursor-text">
+                            <p class="text-(--white) text-lg lg:text-xl">
                                 Penn Petro Energy never seeks fees from job applicants under any circumstances.
                                 If you receive a job offer that you believe is fraudulent, contact your local law enforcement agency.
                             </p>
@@ -251,7 +224,7 @@
                         <!-- View service station jobs -->
                         <NuxtLink 
                             to="/who/culture"
-                            class="group flex *:flex items-center *:items-center justify-center px-2 lg:px-8 py-2 gap-2 lg:gap-4 w-fit mx-auto mt-8 text-(--white) bg-transparent hover:bg-(--light-purple) shadow-lg rounded-lg duration-300 ease-in-out transition-all"
+                            class="group flex *:flex items-center *:items-center justify-center px-2 lg:px-8 py-2 gap-2 lg:gap-4 w-fit mx-auto mt-8 text-(--white) bg-transparent hover:bg-(--light-purple) rounded-lg duration-300 ease-in-out transition-all"
                         >
                             <div class="group relative flex items-center justify-center text-xl w-8 h-full overflow-hidden">
                                 <div class="absolute flex items-center left-2 h-full w-12 transition-all duration-500 ease-in-out group-hover:translate-x-full">

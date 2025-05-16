@@ -84,7 +84,6 @@ export const whoOverviewHeroVideoBg = ref({
 
 // Who Culture
 export const whoCultureHeroVideoBg = ref({    
-    // videoSrc: "/who/who-we-are-culture-hero-video.mp4",
     videoSrc: "/landing_videos/hero2.mp4",
     category: "who we are",
     title: "Our culture",
@@ -174,9 +173,9 @@ export const whatTechnologyHeroImageBg = ref({
 
 // Sustainability Overview
 export const sustainabilityOverviewHeroVideoBg = ref({    
-    videoSrc: "/sustainability/sustainability-overview-hero-video.mp4",
+    videoSrc: "/landing_videos/hero2.mp4",
     title: "Sustainability",
-    titleBgVideoSrc: "/sustainability/sustainability-overview-hero-video.mp4",
+    titleBgVideoSrc: "/landing_videos/hero2.mp4",
     paragraph: "We strive to protect the environment, empower people and get results the right way. This approach is integrated throughout our business.",
     displayLink: false,
     link: "/newsroom",
@@ -185,11 +184,11 @@ export const sustainabilityOverviewHeroVideoBg = ref({
 
 // Sustainability Climate
 export const sustainabilityClimateHeroImageBg = ref({    
-    imgSrc: "/sustainability/sustainability-hero-picture.jpeg",
-    imgAlt: "Solar panels on a mountain",
+    imgSrc: "https://images.pexels.com/photos/32077337/pexels-photo-32077337/free-photo-of-idyllic-rural-landscape-with-wind-turbines.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    imgAlt: "Idyllic Rural Landscape with Wind Turbines",
     category: "Sustainability",
     title: "Climate",
-    titleBgImageSrc: "/sustainability/sustainability-hero-picture.jpeg",
+    titleBgImageSrc: "https://images.pexels.com/photos/32077337/pexels-photo-32077337/free-photo-of-idyllic-rural-landscape-with-wind-turbines.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     paragraph: "We all have a stake in a reliable, affordable energy system. Our belief that the future is lower carbon drives Penn Petro Energy's lower carbon ambitions and the actions we take to advance them.",
     displayLink: false,
     link: "/newsroom",
@@ -216,7 +215,8 @@ export const sustainabilitySocialHeroImageBg = ref({
     category: "sustainability",
     title: "Social investment",
     titleBgImageSrc: "https://images.pexels.com/photos/6646778/pexels-photo-6646778.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    paragraph: "We believe our business succeeds when our people and communities succeed. Our social investments seek to respond to needs in the communities where we operate around the world. We seek to work with communities and partners to promote job growth and economic development.",
+    // paragraph: "We believe our business succeeds when our people and communities succeed. Our social investments seek to respond to needs in the communities where we operate around the world. We seek to work with communities and partners to promote job growth and economic development.",
+    paragraph: "We believe our business succeeds when our people and communities succeed. We seek to work with communities and partners to promote job growth and economic development.",
     displayLink: false,
     link: "/sustainability",
     linkName: "Read more about our environmental efforts"        

@@ -51,12 +51,12 @@
 
                     <div class="flex flex-col items-center justify-center gap-4 lg:gap-12">
                         <h2 
-                            class="text-4xl lg:text-7xl text-(--white) text-wrap text-center font-extrabold w-full h-full"
+                            class="text-5xl lg:text-7xl text-(--white) text-wrap text-center font-extrabold cursor-text w-full h-full overflow-hidden"
                         >
                             Affordable, reliable, ever-cleaner energy
                         </h2>
 
-                        <p class="text-(--white) text-center text-lg lg:text-xl">
+                        <p class="text-(--white) text-center text-lg lg:text-2xl font-semibold cursor-text">
                             We work every day to provide energy that helps billions of people achieve the benefits of modern life. 
                             And to create solutions that will help advance a lower carbon future.
                         </p>
@@ -133,13 +133,13 @@
 
                     <div class="flex flex-col items-center justify-center py-12 gap-4 lg:gap-12">
                         <h2 
-                            class="text-4xl lg:text-7xl text-(--white) text-wrap text-center font-extrabold w-full h-full"
+                            class="text-5xl lg:text-7xl text-(--white) text-wrap text-center font-extrabold cursor-text w-full h-full overflow-hidden"
                         >
                             Innovative technology. <br> 
                             Scalable solutions.
                         </h2>
 
-                        <p class="text-(--white) text-center text-lg lg:text-lg">
+                        <p class="text-(--white) text-center text-lg lg:text-2xl font-semibold cursor-text">
                             Advancing technology helps us safely deliver the lower carbon energy the world needs. 
                             While new innovations help us build the lower carbon energy system for the future.
                         </p>
@@ -182,12 +182,12 @@
                 
                 <div class="flex flex-col items-center justify-center gap-8 py-16 lg:py-24 w-full max-w-6xl h-full mx-auto">
                     <h2 
-                        class="text-4xl lg:text-7xl text-(--light-purple) text-wrap text-center font-extrabold cursor-text w-full h-full overflow-hidden"
+                        class="text-5xl lg:text-8xl text-(--light-purple) text-wrap text-center font-extrabold cursor-text w-full h-full overflow-hidden"
                     >
                         Delivering energy across the globe
                     </h2>
 
-                    <p class="text-(--white) text-center text-lg lg:text-xl">
+                    <p class="text-(--white) text-center text-lg lg:text-2xl font-semibold cursor-text">
                         No one company, industry, or country alone can build a lower carbon future. 
                         With our diverse assets, investments, and people around the world, we are working to make meaningful progress while helping local communities thrive.
                     </p>
