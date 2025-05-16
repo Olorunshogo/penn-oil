@@ -351,7 +351,7 @@
                   <Icon name="mdi:arrow-left" />
                 </button>
                 <NuxtLink
-                  to="/sustainability"
+                  to="/sustainability/overview"
                   @click="closeAllMenu"
                   class="flex *:flex items-center *:items-center justify-between hover:text-(--light-blue) duration-300 ease-in-out transition-all"
                 >
@@ -384,7 +384,7 @@
                 Climate
               </NuxtLink>
 
-              <!--   Environment -->
+              <!-- Environment -->
               <NuxtLink
                 to="/sustainability/environment"
                 @click="closeAllMenu"
@@ -448,7 +448,7 @@
 
               <!-- Events and presentations -->
               <NuxtLink
-                to="//investors/events"
+                to="/investors/overview"
                 @click="closeAllMenu"
                 class="flex *:flex items-center *:items-center justify-between hover:text-(--light-blue) duration-300 ease-in-out transition-all"
               >
@@ -457,7 +457,7 @@
 
               <!--  Corporate governance -->
               <NuxtLink
-                to="//investors/corporate"
+                to="/investors/overview"
                 @click="closeAllMenu"
                 class="flex *:flex items-center *:items-center justify-between hover:text-(--light-blue) duration-300 ease-in-out transition-all"
               >
@@ -466,7 +466,7 @@
 
               <!-- esg a-z index -->
               <NuxtLink
-                to="//investors/esg"
+                to="/investors/overview"
                 @click="closeAllMenu"
                 class="flex *:flex items-center *:items-center justify-between hover:text-(--light-blue) duration-300 ease-in-out transition-all"
               >
@@ -475,7 +475,7 @@
 
               <!-- Reports and fillings -->
               <NuxtLink
-                to="//investors/reports"
+                to="/investors/overview"
                 @click="closeAllMenu"
                 class="flex *:flex items-center *:items-center justify-between hover:text-(--light-blue) duration-300 ease-in-out transition-all"
               >
@@ -484,7 +484,7 @@
 
               <!--  Stock and dividend -->
               <NuxtLink
-                to="//investors/stock"
+                to="/investors/overview"
                 @click="closeAllMenu"
                 class="flex *:flex items-center *:items-center justify-between hover:text-(--light-blue) duration-300 ease-in-out transition-all"
               >
@@ -733,7 +733,7 @@
               <div class="flex flex-col gap-8 max-w-7xl mx-auto">
                 <!-- Events and presentations -->
                 <NuxtLink
-                  to="/investors/events"
+                  to="/investors/overview"
                   class="flex *:flex items-center *:items-center justify-between hover:text-(--light-blue) duration-300 ease-in-out transition-all"
                 >
                   Events and presentations
@@ -741,7 +741,7 @@
 
                 <!--  Corporate governance -->
                 <NuxtLink
-                  to="/investors/corporate"
+                  to="/investors/overview"
                   class="flex *:flex items-center *:items-center justify-between hover:text-(--light-blue) duration-300 ease-in-out transition-all"
                 >
                   Corporate governance
@@ -749,7 +749,7 @@
 
                 <!-- esg a-z index -->
                 <NuxtLink
-                  to="/investors/esg"
+                  to="/investors/overview"
                   class="flex *:flex items-center *:items-center justify-between hover:text-(--light-blue) duration-300 ease-in-out transition-all"
                 >
                   esg a-z index
@@ -757,7 +757,7 @@
 
                 <!-- Reports and fillings -->
                 <NuxtLink
-                  to="/investors/reports"
+                  to="/investors/overview"
                   class="flex *:flex items-center *:items-center justify-between hover:text-(--light-blue) duration-300 ease-in-out transition-all"
                 >
                   Reports and fillings
@@ -765,7 +765,7 @@
 
                 <!--  Stock and dividend -->
                 <NuxtLink
-                  to="/investors/stock"
+                  to="/investors/overview"
                   class="flex *:flex items-center *:items-center justify-between hover:text-(--light-blue) duration-300 ease-in-out transition-all"
                 >
                   Stock and dividend

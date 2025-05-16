@@ -1,7 +1,7 @@
 
 <script setup lang='ts'>
 
-    import { onMounted, watch, nextTick } from 'vue';
+    import { watch, nextTick } from 'vue';
     import { homeHeroBgs } from '~/models/heroBgModels';   
     
     const {
@@ -45,17 +45,17 @@
                 <div class="absolute inset-0 w-full h-full">
                     <div 
                         v-for="(item, index) in homeHeroBgs" :key="item.id" :id="'slide-' + index">
-                        <Transition name="fade" mode="out-in">
-                            <HomeHeroBgSlider
-                                v-if="currentIndex === index"
-                                v-bind="item"
-                            />
-                        </Transition>
+                        <!-- <Transition name="fade" mode="out-in"> -->
+                        <HomeHeroBgSlider
+                            v-if="currentIndex === index"
+                            v-bind="item"
+                        />
+                        <!-- </Transition> -->
                     </div>
                 </div>
 
                 <!-- Controls -->
-                <div class="controls absolute bottom-8 left-1/2 transform -translate-x-1/2 z-50 flex items-center gap-4">
+                <div class="controls absolute bottom-0 left-1/2 transform -translate-x-1/2 z-50 flex items-center gap-4">
                     <div class="pagination flex gap-2">
                         <span
                             v-for="(_, idx) in homeHeroBgs"

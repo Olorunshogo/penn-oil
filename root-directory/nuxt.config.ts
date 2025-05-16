@@ -17,7 +17,7 @@ export default defineNuxtConfig({
         lang: 'en'
       },
       link: [
-        { rel: 'icon', type: 'image/x-icon', href: '/images/Logo/Logo_transparent_bg.png' },
+        { rel: 'icon', type: 'image/x-icon', href: '/Logo/Logo_transparent_bg.png' },
         
         { rel: 'icon', sizes: '192x192', href: '/favicons/android-chrome-192x192.png' },
         { rel: 'icon', sizes: '512x512', href: '/favicons/android-chrome-512x512.png' },

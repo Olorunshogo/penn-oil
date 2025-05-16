@@ -107,19 +107,19 @@
                 <!-- <div class="grid gap-4 max-w-lg w-full mx-auto h-full">
                         <div class="grid grid-cols-3 gap-4">
                             <NuxtImg
-                                src="../public/images/Logo/Texaco_logo.png"
+                                src="/Logo/Texaco_logo.png"
                                 alt="Texaco Logo's Logo"
                                 loading="lazy"
                                 class="object-cover w-full h-16 lg:h-24"
                             />
                             <NuxtImg
-                                src="../public/images/Logo/Full_Penn_Petro_Energy_Logo_transparent_bg.png"
+                                src="/Logo/Full_Penn_Petro_Energy_Logo_transparent_bg.png"
                                 alt="Full Penn Petro Energy's Logo"
                                 loading="lazy"
                                 class="object-cover w-full h-16 lg:h-24"
                             />
                             <NuxtImg
-                                src="../public/images/Logo/Caltext_logo.png"
+                                src="/Logo/Caltext_logo.png"
                                 alt="Caltext Logo"
                                 loading="lazy"
                                 class="object-cover w-full h-16 lg:h-24"

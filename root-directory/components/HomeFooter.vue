@@ -39,7 +39,7 @@
                     </p>
 
                     <NuxtLink
-                        to="/"
+                        to="/contact"
                         class="group relative flex items-center gap-2 font-bold text-base duration-500 ease-in transition-all"
                     >
                         <div class="group relative flex items-center justify-center text-xl w-12 h-full overflow-hidden">
@@ -124,21 +124,21 @@
                             </NuxtLink>
 
                             <NuxtLink
-                                to="/sustainability"
+                                to="/sustainability/overview"
                                 class="group relative flex duration-500 ease-in transition-all"
                             >                            
                                 <span class="group-hover:underline-text">Sustainability</span>
                             </NuxtLink>
 
                             <NuxtLink
-                                to="/"
+                                to="/what/penn"
                                 class="group relative flex duration-500 ease-in transition-all"
                             >                            
                                 <span class="group-hover:underline-text">Penn Petro Energy around the world</span>
                             </NuxtLink>
 
                             <NuxtLink
-                                to="/investors"
+                                to="/investors/overview"
                                 class="group relative flex duration-500 ease-in transition-all"
                             >                            
                                 <span class="group-hover:underline-text">Investor relations</span>
@@ -181,21 +181,21 @@
                             </NuxtLink>
 
                             <NuxtLink
-                                to="/investors/events"
+                                to="/investors/overview"
                                 class="group relative flex duration-500 ease-in transition-all"
                             >                            
                                 <span class="group-hover:underline-text">Investors events and presentations</span>
                             </NuxtLink>
 
                             <NuxtLink
-                                to="/investors/reports"
+                                to="/investors/overview"
                                 class="group relative flex duration-500 ease-in transition-all"
                             >                            
                                 <span class="group-hover:underline-text">Financial Information</span>
                             </NuxtLink>
 
                             <NuxtLink
-                                to="/investors/stock"
+                                to="/investors/overview"
                                 class="group relative flex duration-500 ease-in transition-all"
                             >                            
                                 <span class="group-hover:underline-text">Stock information</span>
@@ -391,7 +391,7 @@
                         </NuxtLink>
 
                         <NuxtLink
-                            to="/sustainability"
+                            to="/sustainability/overview"
                             class="group relative flex duration-500 ease-in transition-all"
                         >                            
                             <span class="group-hover:underline-text">Sustainability</span>
@@ -405,7 +405,7 @@
                         </NuxtLink>
 
                         <NuxtLink
-                            to="/investors"
+                            to="/investors/overview"
                             class="group relative flex duration-500 ease-in transition-all"
                         >                            
                             <span class="group-hover:underline-text">Investor relations</span>
@@ -426,35 +426,35 @@
                     <div class="grid gap-2 *:font-normal *:text-base">                       
                             
                         <NuxtLink
-                            to="/"
+                            to="/newsroom"
                             class="group relative flex duration-500 ease-in transition-all"
                         >
                             <span class="group-hover:underline-text">Newsroom</span>
                         </NuxtLink>
 
                         <NuxtLink
-                            to="/"
+                            to="/investors/overview"
                             class="group relative flex duration-500 ease-in transition-all"
                         >                            
                             <span class="group-hover:underline-text">Investors events and presentations</span>
                         </NuxtLink>
 
                         <NuxtLink
-                            to="/"
+                            to="/investors/overview"
                             class="group relative flex duration-500 ease-in transition-all"
                         >                            
                             <span class="group-hover:underline-text">Financial Information</span>
                         </NuxtLink>
 
                         <NuxtLink
-                            to="/"
+                            to="/investors/overview"
                             class="group relative flex duration-500 ease-in transition-all"
                         >                            
                             <span class="group-hover:underline-text">Stock information</span>
                         </NuxtLink>
 
                         <NuxtLink
-                            to="/"
+                            to="/what/technology"
                             class="group relative flex duration-500 ease-in transition-all"
                         >                            
                             <span class="group-hover:underline-text">Technology ventures</span>
@@ -477,35 +477,35 @@
                     <div class="grid gap-2 *:font-normal *:text-base">                       
                             
                         <NuxtLink
-                            to="/"
+                            to="/what/energy"
                             class="group relative flex text-base duration-500 ease-in transition-all"
                         >
                             <span class="group-hover:underline-text">Carbon capture and storage</span>
                         </NuxtLink>
 
                         <NuxtLink
-                            to="/"
+                            to="/sustainability/overview"
                             class="group relative flex text-base duration-500 ease-in transition-all"
                         >                            
                             <span class="group-hover:underline-text">Energy in progress</span>
                         </NuxtLink>
 
                         <NuxtLink
-                            to="/"
+                            to="/what/energy"
                             class="group relative flex text-base duration-500 ease-in transition-all"
                         >                            
                             <span class="group-hover:underline-text">New energies</span>
                         </NuxtLink>
 
                         <NuxtLink
-                            to="/"
+                            to="/what/energy"
                             class="group relative flex text-base duration-500 ease-in transition-all"
                         >                            
                             <span class="group-hover:underline-text">Renewable fuels in transportation</span>
                         </NuxtLink>
 
                         <NuxtLink
-                            to="/"
+                            to="/what/energy"
                             class="group relative flex text-base duration-500 ease-in transition-all"
                         >                            
                             <span class="group-hover:underline-text">Methane management</span>

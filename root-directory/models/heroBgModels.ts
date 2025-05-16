@@ -38,7 +38,7 @@ export const homeHeroBgs = ref([
     // 4. Powering the future
     {
         id: 4,  
-        videoSrc: "/who/what-we-do-overview-hero-video.mp4",
+        videoSrc: "/what/what-we-do-overview-hero-video.mp4",
         bgColor: "var(--medium-blue)",
         heading: "Powering the future",
         paragraph: "Penn Petro Energy's 2024 annual report highlights our continued commitment to building a resilient energy system that powers human progress.",
@@ -49,8 +49,7 @@ export const homeHeroBgs = ref([
     // 5. Powering AI with natural gas
     {   
         id: 5,  
-        // videoSrc: "/homepage/Homepage-hero5-video.mp4",
-        videoSrc: "https://www.chevron.com/-/media/chevron/homepage/videos/CVXHP_838089087.mp4",
+        videoSrc: "/Homepage-hero5-video.mp4",
         bgColor: "var(--medium-blue)",
         heading: "Powering AI with natural gas",
         paragraph: "Penn Petro Energy, Engine No. 1 and GE Vernova join forces to develop scalable, reliable power solutions for U.S. data centers.",
@@ -61,8 +60,7 @@ export const homeHeroBgs = ref([
     // 6. Expansion in Kazakhstan hits first oil
     {
         id: 6,  
-        // videoSrc: "/homepage/Homepage-hero3-video.mp4",
-        videoSrc: "https://www.chevron.com/-/media/chevron/homepage/videos/GOA_Homepage_4sec_Anchor_Nospd.mp4",
+        videoSrc: "/who/who-we-are-overview-hero-video.mp4",
         bgColor: "var(--medium-blue)",
         heading: "Expansion in Kazakhstan hits first oil",
         paragraph: "Tengizchevroil's Future Growth Project aims to increase oil productivity by 260,000 barrels per day.",

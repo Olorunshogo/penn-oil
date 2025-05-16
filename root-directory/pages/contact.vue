@@ -522,14 +522,14 @@
                                                 Penn Petro Energy supports communities through strategic social investments and partnerships with governments, nongovernmental organizations (NGOs), and international organizations.
                                                 See our 
                                                     <NuxtLink
-                                                    to="/who/sustainability"
+                                                    to="/sustainability/social"
                                                     class="underline decoration-1 underline-offset-2 decoration-(--light-gray) hover:decoration-(--dark-gray) duration-500 ease-in transition-all"
                                                 >
                                                     corporate sustainability page                                                
                                                 </NuxtLink>.
                                                 Through
                                                     <NuxtLink
-                                                        to="/who/sustainability"
+                                                        to="/sustainability/social"
                                                         class="underline decoration-1 underline-offset-2 decoration-(--light-gray) hover:decoration-(--dark-gray) duration-500 ease-in transition-all"
                                                     >
                                                         Penn Petro Humankind                                               
@@ -543,7 +543,7 @@
 
                                             <!-- Learn about our sustainability efforts -->
                                             <NuxtLink
-                                                to="/who/sustainability"
+                                                to="/sustainability/social"
                                                 class="group relative flex items-center text-sm font-extrabold text-(--black) duration-500 ease-in transition-all"
                                             >
                                                 <div class="group relative flex items-center justify-center text-xl w-12 h-full overflow-hidden">

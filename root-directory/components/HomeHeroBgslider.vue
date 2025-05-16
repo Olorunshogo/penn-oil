@@ -37,9 +37,7 @@
         <!-- Section: Hero -->
         <section>        
             
-            <div class="relative w-screen h-full overflow-hidden">
-            <!-- <div class="relative w-screen h-full overflow-hidden -mt-44"> -->
-
+            <div class="relative w-screen h-dvh lg:h-full overflow-hidden">
                 <div 
                     class="bg-container"
                     :style="{ backgroundColor: bgColor }"
@@ -55,15 +53,16 @@
 
 
                 <!-- Content Layer -->
-                <div class="absolute bottom-0 w-full h-2/5 max-h-[400px] bg-(--deep-blue) backdrop-blur-md rounded-t-2xl shadow-lg flex items-center justify-center">
-                    <div class="content flex flex-col gap-12 items-center justify-center *:text-(--white) *:text-center w-full max-w-7xl mx-auto">
+                <div class="absolute bottom-0 flex items-center justify-center w-full h-2/5 max-h-[500px] backdrop-blur-md rounded-t-2xl shadow-lg">
+                    
+                    <div class="content flex flex-col gap-8 lg:gap-12 items-center justify-center *:text-(--white) *:text-center w-full max-w-7xl mx-auto">
                         
                         <div class="flex flex-col items-center justify-center gap-4">
-                            <h1 class="text-4xl lg:text-5xl font-extrabold">
+                            <h1 class="text-3xl lg:text-5xl font-extrabold">
                                 {{ heading }}
                             </h1>
                             
-                            <p class="text-lg">
+                            <p class="text-base lg:text-lg">
                                 {{ paragraph }}
                             </p>
                         </div>

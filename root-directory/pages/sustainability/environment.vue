@@ -71,7 +71,7 @@
                             </p>
 
                             <NuxtLink
-                                to="/investors/esg"
+                                to="/investors/overview"
                                 class="group flex *:flex items-center *:items-center justify-end px-2 lg:px-8 py-2 gap-2 lg:gap-4 mx-auto w-fit text-(--white) hover:text-(--black) hover:bg-(--medium-blue) border-2 border-(--medium-blue) rounded-lg shadow-lg my-12 duration-300 ease-in-out transition-all"
                             >
                                 <div class="group relative flex items-center justify-center text-xl w-8 h-full overflow-hidden">
@@ -119,7 +119,7 @@
                             </p>
 
                             <NuxtLink
-                                to="/investors/esg"
+                                to="/investors/overview"
                                 class="group flex *:flex items-center *:items-center justify-end px-2 lg:px-8 py-2 gap-2 lg:gap-4 mx-auto w-fit text-(--black) hover:text-(--white) hover:bg-(--medium-blue) border-2 border-(--medium-blue) rounded-lg shadow-lg my-12 duration-300 ease-in-out transition-all"
                             >
                                 <div class="group relative flex items-center justify-center text-xl w-8 h-full overflow-hidden">
@@ -164,7 +164,7 @@
                             </p>
 
                             <NuxtLink
-                                to="/investors/esg"
+                                to="/investors/overview"
                                 class="group flex *:flex items-center *:items-center justify-end px-2 lg:px-8 py-2 gap-2 lg:gap-4 mx-auto w-fit text-(--white) hover:text-(--black) hover:bg-(--medium-blue) border-2 border-(--medium-blue) rounded-lg shadow-lg my-12 duration-300 ease-in-out transition-all"
                             >
                                 <div class="group relative flex items-center justify-center text-xl w-8 h-full overflow-hidden">
@@ -210,7 +210,7 @@
                             </p>
 
                             <NuxtLink
-                                to="/investor/esg"
+                                to="/investors/overview"
                                 class="group flex *:flex items-center *:items-center justify-end px-2 lg:px-8 py-2 gap-2 lg:gap-4 mx-auto w-fit text-(--black) hover:text-(--white) hover:bg-(--medium-blue) border-2 border-(--medium-blue) rounded-lg shadow-lg my-12 duration-300 ease-in-out transition-all"
                             >
                                 <div class="group relative flex items-center justify-center text-xl w-8 h-full overflow-hidden">

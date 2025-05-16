@@ -123,7 +123,7 @@
 
                     <!-- Learn more about committee membership -->
                     <NuxtLink
-                        to="/investors/corporate-governance#committeemembership"
+                        to="/investors/overview"
                         class="group relative flex items-center font-bold mx-auto text-lg text-(--medium-blue) duration-500 ease-in transition-all"
                     >
                         <span class="relative overflow-hidden">

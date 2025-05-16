@@ -19,31 +19,31 @@ export const nextIndex = computed(() => {
 });
 
 // GSAP Transition Animation Function
-export const animateTransition = (dir: 'next' | 'prev') => {
+export function animateTransition (dir: 'next' | 'prev') {
     direction.value = dir;
     const offset = dir === 'next' ? -100 : 100;
 
     if (activeRef.value) {
         gsap.fromTo(
-        activeRef.value,
-        { x: offset, opacity: 0 },
-        { x: 0, opacity: 1, duration: 0.5, ease: 'power2.out' }
+            activeRef.value,
+            { x: offset, opacity: 0 },
+            { x: 0, opacity: 1, duration: 0.5, ease: 'power2.out' }
         );
     }
 
     if (prevRef.value) {
         gsap.fromTo(
-        prevRef.value,
-        { x: offset - 100, opacity: 0 },
-        { x: 0, opacity: 0.7, duration: 0.5, ease: 'power2.out' }
+            prevRef.value,
+            { x: offset - 100, opacity: 0 },
+            { x: 0, opacity: 0.7, duration: 0.5, ease: 'power2.out' }
         );
     }
 
     if (nextRef.value) {
         gsap.fromTo(
-        nextRef.value,
-        { x: offset + 100, opacity: 0 },
-        { x: 0, opacity: 0.7, duration: 0.5, ease: 'power2.out' }
+            nextRef.value,
+            { x: offset + 100, opacity: 0 },
+            { x: 0, opacity: 0.7, duration: 0.5, ease: 'power2.out' }
         );
     }
 };
