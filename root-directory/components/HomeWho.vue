@@ -52,7 +52,7 @@
                 
                 <h2 
                     data-aos="fade-up"
-                    class="flex flex-col items-center space-y-6 font-extrabold text-4xl sm:text-5xl lg:text-7xl whitespace-nowrap cursor-text w-full h-full overflow-hidden"
+                    class="flex flex-col space-y-6 font-extrabold text-3xl sm:text-4xl md:text-5xl lg:text-7xl whitespace-nowrap cursor-text w-full h-full overflow-hidden"
                 >
                     <span 
                         ref="criticalThinkers" 
@@ -63,7 +63,7 @@
 
                     <span 
                         ref="collaborators" 
-                        class="slide-text text-(--medium-blue) duration-500 ease-out transition-transform"
+                        class="slide-text ml-auto text-(--medium-blue) duration-500 ease-out transition-transform"
                     >
                         Collaborators
                     </span>
@@ -109,6 +109,7 @@
                     </div>      
                 </div>                   
             
+                <!-- Typing Texts -->
                 <div 
                     data-aos="fade-left" data-aos-delay="200"
                 >
@@ -124,7 +125,7 @@
                 <!-- Discover who we are -->
                 <NuxtLink 
                     to="/who/overview"
-                    class="group flex *:flex items-center *:items-center justify-center px-8 py-3 gap-4 w-fit h-16 mx-auto text-(--white) hover:text-(--black) bg-transparent hover:bg-(--light-blue) shadow-lg rounded-lg border-3 border-(--light-blue) duration-300 ease-in-out transition-all"
+                    class="group flex *:flex items-center *:items-center justify-center px-4 lg:px-8 py-2 gap-4 w-fit mx-auto text-(--white) hover:text-(--black) bg-transparent hover:bg-(--light-blue) shadow-lg rounded-lg border-1 border-(--light-blue) duration-300 ease-in-out transition-all"
                 >
                     <div class="group relative flex items-center justify-center text-xl w-8 h-full overflow-hidden">
                         <div class="absolute flex items-center left-2 h-full w-12 transition-all duration-500 ease-in-out group-hover:translate-x-full">
@@ -136,7 +137,7 @@
                         </div>
                     </div>
 
-                    <span class="font-semibold text-lg">Discover who we are</span>
+                    <span class="font-semibold text-base">Discover who we are</span>
                 </NuxtLink>
 
                 

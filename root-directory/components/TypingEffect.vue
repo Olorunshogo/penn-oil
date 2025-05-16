@@ -66,7 +66,7 @@
 </script>
 
 <template>
-    <div class="relative *:relative flex flex-col items-center justify-center *:justify-center *:text-4xl *:lg:text-6xl *:font-normal *:text-wrap *:ease-in-out *:duration-300 *:transition-all whitespace-nowrap overflow-hidden w-full">
+    <div class="relative *:relative flex flex-col items-center justify-center *:justify-center *:text-3xl *:sm:text-4xl *:lg:text-6xl *:font-normal *:text-wrap *:ease-in-out *:duration-300 *:transition-all whitespace-nowrap overflow-hidden w-full">
         <p class="text-(--light-blue)/40 z-1">{{ originalText }}</p>
 
         <p class="text-(--white) z-2" :style="typingStyle">{{ typedText }}</p>

@@ -34,13 +34,13 @@
 <template>
     <div class="flex flex-col w-full h-full">   
         <!-- Section: Hero -->
-        <section class="grid gap-16 px-(--section-px) lg:px-(--section-py-lx) py-(--section-py) lg:py-(--section-py-lg) -mt-[11rem] w-full h-full bg-(--dark-blue)">
+        <section class="grid gap-12 px-(--section-px) lg:px-(--section-py-lx) py-(--section-py) lg:py-(--section-py-lg) w-full h-full bg-(--dark-blue)">
             
-            <div class="flex flex-col items-center justify-center gap-12 text-(--white) w-full max-w-7xl mx-auto h-full pt-60 pb-8">
-                <h1 class="text-center text-5xl lg:text-9xl font-extrabold">
+            <div class="flex flex-col items-center justify-center md:px-4 py-8 md:py-16 gap-12 text-(--white) w-full max-w-7xl mx-auto">
+                <h1 class="text-center text-4xl md:text-5xl xl:text-8xl font-extrabold">
                     Penn Petro Energy Worldwide
                 </h1>
-                <p class="font-medium text-xl text-center">
+                <p class="text-lg text-center">
                     Penn Petro Energy conducts business all around the globe. The links below will provide you with detailed information for the countries where Penn Petro Energy’s work is most extensive.
                 </p>
             </div>

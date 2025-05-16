@@ -59,10 +59,10 @@
                             src="https://images.pexels.com/photos/30913847/pexels-photo-30913847/free-photo-of-indoor-artistic-scene-with-calligraphy-and-cat.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                             alt="Indoor Artistic Scene with Calligraphy and Cat"
                             loading="lazy"
-                            class="w-4/5 mx-auto lg:w-1/2 lg:mx-0 h-90 lg:h-120 object-cover rounded-lg"
+                            class="w-9/10 mx-auto lg:w-1/2 lg:mx-0 h-90 lg:h-120 object-cover rounded-lg"
                         />
 
-                        <div class="flex flex-col items-center justify-center gap-4 w-4/5 mx-auto lg:w-1/2 lg:mx-0 h-full">
+                        <div class="flex flex-col items-center justify-center gap-4 w-9/10 mx-auto lg:w-1/2 lg:mx-0 h-full">
                             <NuxtImg
                                 src="https://images.pexels.com/photos/1181319/pexels-photo-1181319.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                                 alt="Photography of Woman Using Ipad"
@@ -84,7 +84,7 @@
                         src="https://images.pexels.com/photos/256219/pexels-photo-256219.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                         alt="Software Engineers Working on Computers"
                         loading="lazy"
-                        class="w-4/5 lg:w-3/10 mx-auto lg:mx-0 h-90 lg:h-120 object-cover rounded-lg"
+                        class="w-9/10 lg:w-3/10 mx-auto lg:mx-0 h-70 lg:h-120 object-cover rounded-lg"
                     />
                 </div>                   
            
@@ -97,11 +97,11 @@
             <div class="px-(--section-px) lg:px-(--section-px-lg) py-(--section-py) lg:py-(--section-py-lg) bg-(--dark-teal) w-full h-full">
                 
                 <div class="flex flex-col gap-8 py-16 max-w-7xl mx-auto">
-                    <h2 class="font-extrabold text-center text-(--light-teal) text-5xl lg:text-8xl py-8 lg:py-12">
+                    <h2 class="text-4xl sm:text-5xl lg:text-8xl font-extrabold text-center text-(--light-teal)">
                         Energy for our growing world relies on technology
                     </h2>
 
-                    <p class="text-(--white) text-xl text-center font-medium">
+                    <p class="text-(--white) text-lg text-center">
                         We aim to scale affordable, innovative technology solutions to help support a resilient energy system. <br>
                         We believe multiple solutions are needed to meet growing energy demands in lower carbon ways. <br>
                         And that innovation, sparked by collaboration, can accelerate progress.
@@ -113,18 +113,18 @@
 
         <!-- Section: Working smarter and safer with robotics -->
         <section>
-            <div class="px-(--section-px) lg:px-(--section-px-lg) py-(--section-py) lg:py-(--section-py-lg) bg-(--medium-teal) w-full h-full">
+            <div class="px-(--section-px) lg:px-(--section-px-lg) py-(--section-py) lg:py-(--section-py-lg) bg-(--dark-red) w-full h-full">
                 
                 <div class="grid grid-cols-1 gap-20 max-w-7xl mx-auto">
 
                     <div class="flex flex-col items-center justify-center gap-6 lg:gap-12">
-                        <span class="text-(--white) text-center font-bold text-xl">Designing the facilities and operations of tomorrow</span>
+                        <span class="text-(--white) text-center font-bold">Designing the facilities and operations of tomorrow</span>
                     
-                        <h2 class="text-(--white) text-center font-extrabold text-4xl lg:text-8xl text-wrap cursor-text">
+                        <h2 class="text-4xl sm:text-5xl lg:text-8xl text-(--white) text-center font-extrabold">
                             Working smarter and safer with robotics
                         </h2>
 
-                        <p class="text-(--white) text-center text-xl">
+                        <p class="text-(--white) text-center text-lg">
                             Robots, drones, machine learning, artificial intelligence and beyond. 
                             Digital technologies are helping us integrate data, reduce costs and enhance safety.
                         </p>
@@ -132,7 +132,7 @@
                         <!-- Discover spot the dog-->
                         <NuxtLink 
                             to="/"
-                            class="group flex *:flex items-center *:items-center justify-center px-8 py-2 gap-4 w-fit h-12 mx-auto text-(--white) hover:text-(--black) bg-transparent hover:bg-(--light-teal) shadow-lg rounded-lg border-2 border-(--light-teal) duration-300 ease-in-out transition-all"
+                            class="group flex *:flex items-center *:items-center justify-center px-8 py-2 gap-4 w-fit mx-auto text-(--white) hover:text-(--black) bg-transparent hover:bg-(--light-teal) shadow-lg rounded-lg border-1 border-(--light-red) duration-300 ease-in-out transition-all"
                         >
                             <div class="group relative flex items-center justify-center text-xl w-8 h-full overflow-hidden">
                                 <div class="absolute flex items-center left-2 h-full w-12 transition-all duration-500 ease-in-out group-hover:translate-x-full">
@@ -169,13 +169,13 @@
                 <div class="grid grid-cols-1 gap-20 max-w-7xl mx-auto">
 
                     <div class="flex flex-col items-center justify-center gap-6 lg:gap-12">
-                        <span class="text-(--white) text-center font-bold text-xl">Scouting at the edge of innovation</span>
+                        <span class="text-(--white) text-center font-bold">Scouting at the edge of innovation</span>
                     
-                        <h2 class="text-(--white) text-center font-extrabold text-4xl lg:text-8xl text-wrap cursor-text">
+                        <h2 class="text-4xl md:text-5xl lg:text-8xl text-(--white) text-center font-extrabold">
                             Scaling next-generation carbon capture technology
                         </h2>
 
-                        <p class="text-(--white) text-center text-xl">
+                        <p class="text-(--white) text-center text-lg">
                             We seek out emerging technologies at the cutting edge of innovation. 
                             From ideas to pilot projects, we use our expertise, experience and partnerships to evaluate and scale new solutions.
                         </p>
@@ -183,7 +183,7 @@
                         <!-- Discover your journey with svante -->
                         <NuxtLink 
                             to="/"
-                            class="group flex *:flex items-center *:items-center justify-center px-8 py-2 gap-4 w-fit h-12 mx-auto text-(--white) hover:text-(--black) bg-transparent hover:bg-(--light-blue) shadow-lg rounded-lg border-2 border-(--light-blue) duration-300 ease-in-out transition-all"
+                            class="group flex *:flex items-center *:items-center justify-center px-8 py-2 gap-4 w-fit mx-auto text-(--white) hover:text-(--black) bg-transparent hover:bg-(--light-blue) shadow-lg rounded-lg border-1 border-(--light-blue) duration-300 ease-in-out transition-all"
                         >
                             <div class="group relative flex items-center justify-center text-xl w-8 h-full overflow-hidden">
                                 <div class="absolute flex items-center left-2 h-full w-12 transition-all duration-500 ease-in-out group-hover:translate-x-full">
@@ -195,7 +195,7 @@
                                 </div>
                             </div>
 
-                            <span class="font-semibold text-lg">Discover your journey with svante</span>
+                            <span class="font-semibold text-lg">Discover your journey</span>
                         </NuxtLink>
 
                     </div>
@@ -218,14 +218,14 @@
             <div class="grid gap-16 bg-(--dark-purple) px-(--section-px) lg:px-(--section-px-lg) py-(--section-py) lg:py-(--section-py-lg) w-full h-full">
                 
                 <div class="flex flex-col gap-16 py-20 w-full max-w-7xl mx-auto h-full">
-                    <div class="flex flex-col items-center justify-center gap-8">
-                        <span class="text-(--white) text-center font-bold text-xl">Building a resilient energy system</span>
+                    <div class="flex flex-col items-center justify-center gap-8 text-(--white)">
+                        <span class="text-center font-bold">Building a resilient energy system</span>
                     
-                        <h2 class="text-(--white) text-center font-extrabold text-4xl lg:text-8xl text-wrap cursor-text">
+                        <h2 class="text-4xl sm:text-5xl lg:text-8xl text-center font-extrabold">
                             Delivering more affordable, reliable, ever-cleaner energy
                         </h2>
 
-                        <p class="text-(--white) text-center text-xl">
+                        <p class="text-center text-lg">
                             The energy transition is happening at different speeds across the world. 
                             As we innovate toward tomorrow, technology helps us deliver the energy the world needs today. 
                             Safely, reliably and in lower carbon ways.
@@ -233,7 +233,7 @@
 
                     </div>
                     
-                    <div class="grid gap-8"> 
+                    <div class="grid gap-4 lg:gap-8"> 
 
                         <!-- Lowering our methane intensity -->
                         <div class="flex flex-col lg:flex-row *:w-full *:lg:w-1/2 gap-8 w-full max-w-xl lg:max-w-7xl mx-auto h-full">
@@ -241,17 +241,17 @@
                                 src="https://images.pexels.com/photos/236089/pexels-photo-236089.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                                 alt="Gray and Black Power Transmission Station"
                                 loading="lazy"
-                                class="block w-full obeject-cover rounded-2xl h-120"
+                                class="block w-full obeject-cover rounded-2xl h-90 md:h-120"
                             />
 
                             <div class="flex flex-col justify-center items-center h-full lg: w-full rounded-b-2xl lg:rounded-r-2xl">                        
                                 
-                                <div class="flex flex-col justify-center px-8 lg:p-8 gap-2 max-w-2xl h-full lg:h-fit">
+                                <div class="flex flex-col justify-center px-4 lg:px-8 lg:py-8 gap-2 max-w-2xl h-full lg:h-fit">
                                     <h3 class="text-2xl text-left text-(--white)">
                                         Lowering our methane intensity
                                     </h3>
 
-                                    <p class="text-(--white) text-xl">
+                                    <p class="text-(--white) text-lg">
                                         New technologies and facility design improvements are helping us to prevent, detect, and reduce methane emissions.
                                     </p>
 
@@ -281,17 +281,17 @@
                                 src="https://images.pexels.com/photos/9799766/pexels-photo-9799766.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                                 alt="Photo of solar panel array"
                                 loading="lazy"
-                                class="block w-full obeject-cover rounded-2xl h-120"
+                                class="block w-full obeject-cover rounded-2xl h-90 md:h-120"
                             />
 
                             <div class="flex flex-col justify-center items-center h-full lg: w-full rounded-b-2xl lg:rounded-r-2xl">                        
                                 
-                                <div class="flex flex-col justify-center px-8 lg:p-8 gap-2 max-w-2xl h-full lg:h-fit">
-                                    <h3 class="text-2xl text-left text-(--white)">
+                                <div class="flex flex-col justify-center text-(--white) px-8 lg:p-8 gap-2 max-w-2xl h-full lg:h-fit">
+                                    <h3 class="text-2xl text-left">
                                         Powering up renewables
                                     </h3>
 
-                                    <p class="text-(--white) text-xl">
+                                    <p class="text-lg">
                                         We're sourcing more electricity from renewables like wind and solar to power some of our Penn Petro Energy operations.
                                     </p>
 
@@ -321,17 +321,17 @@
                                 src="https://images.pexels.com/photos/906982/pexels-photo-906982.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                                 alt="Black Sail Ship on Body of Water"
                                 loading="lazy"
-                                class="block w-full obeject-cover rounded-2xl h-120"
+                                class="block w-full obeject-cover rounded-2xl h-90 md:h-120"
                             />
 
                             <div class="flex flex-col justify-center items-center h-full lg: w-full rounded-b-2xl lg:rounded-r-2xl">                        
                                 
-                                <div class="flex flex-col justify-center px-8 lg:p-8 gap-2 max-w-2xl h-full lg:h-fit">
-                                    <h3 class="text-2xl text-left text-(--white)">
+                                <div class="flex flex-col justify-center text-(--white) px-4 md:px-8 lg:py-8 gap-2 max-w-2xl h-full lg:h-fit">
+                                    <h3 class="text-2xl text-left">
                                         Measuring our carbon footprint
                                     </h3>
 
-                                    <p class="text-(--white) text-xl">
+                                    <p class="text-lg">
                                         Together with our partners, we've developed a standardized, data driven carbon footprinting methodology for delivered liquefied natural gas cargoes.
                                     </p>
 
@@ -370,11 +370,11 @@
 
                     <div class="px-(--section-px)  flex flex-col gap-8">
             
-                        <h2 class="text-(--dark-blue) text-5xl md:text-7xl text-center text-wrap font-extrabold">
+                        <h2 class="text-(--dark-blue) text-4xl md:text-7xl text-center text-wrap font-extrabold">
                             Powered by human ingenuity
                         </h2>
 
-                        <p class="text-(--black) text-center text-xl">
+                        <p class="text-(--black) text-center text-lg">
                             Penn Petro Energy has been innovating to help solve energy challenges for decades. 
                             And we believe in the power of human ingenuity to accelerate progress.
                         </p>

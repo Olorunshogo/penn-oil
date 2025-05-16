@@ -5,7 +5,7 @@ export const homeHeroBgs = ref([
     // 1. Penn Petro Energy reports first-quarter 2025 results
     {
         id: 1,  
-        videoSrc: "/what/what-we-do-energy-hero-video.mp4",
+        videoSrc: "/landing_videos/hero1.mp4",
         bgColor: "var(--medium-blue)",
         heading: "Penn Petro Energy reports first-quarter 2025 results",
         paragraph: "Our latest quarterly insights are now available.",
@@ -16,7 +16,7 @@ export const homeHeroBgs = ref([
     // 2. More with less
     {
         id: 2,  
-        videoSrc: "/what/what-we-do-overview-hero-video.mp4",
+        videoSrc: "/landing_videos/hero2.mp4",
         bgColor: "var(--medium-blue)",
         heading: "More with less",
         paragraph: "We've reached first oil at our Ballymore subsea tieback in the Gulf of America showcasing how we're leveraging technology and driving efficiencies to deliver affordable, reliable energy production.",
@@ -27,7 +27,7 @@ export const homeHeroBgs = ref([
     // 3. Unlocking the growth in the gulf
     {
         id: 3,  
-        videoSrc: "/who/who-we-are-overview-hero-video.mp4",
+        videoSrc: "/landing_videos/hero3.mp4",
         bgColor: "var(--medium-blue)",
         heading: "Unlocking the growth in the gulf",
         paragraph: "We're expanding operations in the Gulf of America, with a goal to produce 300,000 net barrels of oil-equivalent per day in 2026.",
@@ -38,7 +38,7 @@ export const homeHeroBgs = ref([
     // 4. Powering the future
     {
         id: 4,  
-        videoSrc: "/what/what-we-do-overview-hero-video.mp4",
+        videoSrc: "/landing_videos/hero1.mp4",
         bgColor: "var(--medium-blue)",
         heading: "Powering the future",
         paragraph: "Penn Petro Energy's 2024 annual report highlights our continued commitment to building a resilient energy system that powers human progress.",
@@ -49,7 +49,7 @@ export const homeHeroBgs = ref([
     // 5. Powering AI with natural gas
     {   
         id: 5,  
-        videoSrc: "/Homepage-hero5-video.mp4",
+        videoSrc: "/landing_videos/hero2.mp4",
         bgColor: "var(--medium-blue)",
         heading: "Powering AI with natural gas",
         paragraph: "Penn Petro Energy, Engine No. 1 and GE Vernova join forces to develop scalable, reliable power solutions for U.S. data centers.",
@@ -60,7 +60,7 @@ export const homeHeroBgs = ref([
     // 6. Expansion in Kazakhstan hits first oil
     {
         id: 6,  
-        videoSrc: "/who/who-we-are-overview-hero-video.mp4",
+        videoSrc: "/landing_videos/hero3.mp4",
         bgColor: "var(--medium-blue)",
         heading: "Expansion in Kazakhstan hits first oil",
         paragraph: "Tengizchevroil's Future Growth Project aims to increase oil productivity by 260,000 barrels per day.",
@@ -73,7 +73,7 @@ export const homeHeroBgs = ref([
 
 // Who Overview
 export const whoOverviewHeroVideoBg = ref({    
-    videoSrc: "/who/who-we-are-overview-hero-video.mp4",
+    videoSrc: "/landing_videos/hero2.mp4",
     title: "Who we are",
     titleBgVideoSrc: "/videos/who/who-we-are-overview-hero-video.mp4",
     paragraph: "Energy drives human progress and creates positive change for modern society. We work hard to deliver energy that can improve the lives of millions of people around the world.",
@@ -85,7 +85,7 @@ export const whoOverviewHeroVideoBg = ref({
 // Who Culture
 export const whoCultureHeroVideoBg = ref({    
     // videoSrc: "/who/who-we-are-culture-hero-video.mp4",
-    videoSrc: "/who/who-we-are-overview-hero-video.mp4",
+    videoSrc: "/landing_videos/hero2.mp4",
     category: "who we are",
     title: "Our culture",
     titleBgVideoSrc: "/videos/who/who-we-are-hero-video-compressed.mp4",
@@ -125,9 +125,9 @@ export const whoLeadershipHeroImageBg = ref({
 
 // What Overview
 export const whatOverviewHeroVideoBg = ref({    
-    videoSrc: "/what/what-we-do-overview-hero-video.mp4",
+    videoSrc: "/landing_videos/hero3.mp4",
     title: "What we do",
-    titleBgVideoSrc: "/what/what-we-do-overview-hero-video.mp4",
+    titleBgVideoSrc: "/landing_videos/hero1.mp4",
     paragraph: "The world’s energy demands are greater than ever before. We’re working to deliver the lower carbon energy needed today while building the energy system of tomorrow.",
     displayLink: false,
     link: "/newsroom",
@@ -136,10 +136,10 @@ export const whatOverviewHeroVideoBg = ref({
 
 // What Energy
 export const whatEnergyHeroVideoBg = ref({    
-    videoSrc: "/what/what-we-do-energy-hero-video.mp4",
+    videoSrc: "/landing_videos/hero1.mp4",
     category: "what we do",
     title: "Energy solutions",
-    titleBgVideoSrc: "/what/what-we-do-energy-hero-video.mp4",
+    titleBgVideoSrc: "/landing_videos/hero3.mp4",
     paragraph: "Affordable, reliable and ever-cleaner energy for today and tomorrow. That’s what we’re working towards, every day.",
     displayLink: false,
     link: "/newsroom",
@@ -147,12 +147,23 @@ export const whatEnergyHeroVideoBg = ref({
 });
 
 // What Technology
+// export const whatTechnologyHeroVideoBg = ref({    
+//     videoSrc: "https://videos.pexels.com/video-files/8467244/8467244-uhd_2560_1440_25fps.mp4",
+//     category: "what we do",
+//     title: "Energy solutions",
+//     titleBgVideoSrc: "/landing_videos/hero3.mp4",
+//     paragraph: "Affordable, reliable and ever-cleaner energy for today and tomorrow. That’s what we’re working towards, every day.",
+//     displayLink: false,
+//     link: "/newsroom",
+//     linkName: "Read more about our environmental efforts"        
+// });
+
 export const whatTechnologyHeroImageBg = ref({    
-    imgSrc: "https://images.pexels.com/photos/6153740/pexels-photo-6153740.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    imgAlt: "Black Prosthetic Arm",
+    imgSrc: "https://images.pexels.com/photos/2085831/pexels-photo-2085831.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    imgAlt: "Star Wars R2-d2",
     category: "Who we are",
     title: "Technology and innovation",
-    titleBgImageSrc: "https://images.pexels.com/photos/6153740/pexels-photo-6153740.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    titleBgImageSrc: "https://images.pexels.com/photos/2085831/pexels-photo-2085831.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     paragraph: "Accelerating progress to power our world today and build the lower carbon energy system of the future.",
     displayLink: false,
     link: "/newsroom",

@@ -21,7 +21,7 @@
             animateSlide(oldSlide, 'out')
             animateSlide(newSlide, 'in')
         }
-    })
+    });
     
 </script>
 

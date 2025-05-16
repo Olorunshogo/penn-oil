@@ -57,12 +57,12 @@
                     />
 
                     <div class="flex flex-col justify-center items-center bg-(--dark-blue) h-full lg: w-full rounded-b-lg lg:rounded-r-lg">                        
-                        <div class="flex flex-col items-center justify-center px-8 py-12 gap-4 lg:gap-8 max-w-2xl h-80 lg:h-fit">
-                            <h3 class="text-4xl text-center text-(--light-blue) font-extrabold w-full h-full">
+                        <div class="flex flex-col items-center justify-center px-4 lg:px-8 gap-8 max-w-2xl h-80 lg:h-fit">
+                            <h3 class="text-3xl md:text-4xl text-center text-(--light-blue) font-extrabold">
                                 Oil and natural gas
                             </h3>
 
-                            <p class="text-(--white) text-center text-xl">
+                            <p class="text-(--white) text-center text-lg">
                                 Oil and natural gas are essential to providing the energy we use every day. 
                                 Our diverse set of assets helps us find and produce energy the world needs.
                             </p>
@@ -70,7 +70,7 @@
                             <!-- See our portfolio -->
                             <NuxtLink 
                                 to="/what/energy"
-                                class="group flex *:flex items-center *:items-center px-6 py-2 gap-4 w-fit font-bold text-(--white) hover:text-(--black) rounded-lg border-2 border-(--light-blue) hover:bg-(--light-blue) duration-300 ease-in-out transition-all"
+                                class="group flex *:flex items-center *:items-center px-6 py-2 gap-4 w-fit font-bold text-(--white) hover:text-(--black) rounded-lg border-1 border-(--light-blue) hover:bg-(--light-blue) duration-300 ease-in-out transition-all"
                             >
                                 <div class="group relative flex items-center text-xl w-8 h-full overflow-hidden">
                                     <div class="absolute flex items-center left-2 h-full w-12 transition-all duration-500 ease-in-out group-hover:translate-x-full">
@@ -98,12 +98,12 @@
                     />
 
                     <div class="flex flex-col justify-center items-center bg-(--dark-teal) h-full lg: w-full rounded-b-lg lg:rounded-r-lg">                        
-                        <div class="flex flex-col items-center justify-center px-8 py-12 gap-4 lg:gap-8 max-w-2xl h-80 lg:h-fit">
-                            <h3 class="text-4xl text-center text-(--light-teal) font-extrabold w-full h-full">
+                        <div class="flex flex-col items-center justify-center px-4 lg:px-8 gap-8 max-w-2xl h-80 lg:h-fit">
+                            <h3 class="text-3xl md:text-4xl text-center text-(--light-teal) font-extrabold w-full h-full">
                                 Fuels
                             </h3>
 
-                            <p class="text-(--white) text-center text-xl">
+                            <p class="text-(--white) text-center text-lg">
                                 From drives across town to travel across countries, we’ve been providing quality transportation fuels for more than 140 years. 
                                 And we’ll continue to deliver affordable, reliable, lower carbon fuels into the future.
                             </p>
@@ -111,7 +111,7 @@
                             <!-- Learn about fuels -->
                             <NuxtLink 
                                 to="/what/energy"
-                                class="group flex *:flex items-center *:items-center px-6 py-2 gap-4 w-fit font-bold text-(--white) hover:text-(--black) rounded-lg border-2 border-(--light-teal) hover:bg-(--light-teal) duration-300 ease-in-out transition-all"
+                                class="group flex *:flex items-center *:items-center px-6 py-2 gap-4 w-fit font-bold text-(--white) hover:text-(--black) rounded-lg border-1 border-(--light-teal) hover:bg-(--light-teal) duration-300 ease-in-out transition-all"
                             >
                                 <div class="group relative flex items-center text-xl w-8 h-full overflow-hidden">
                                     <div class="absolute flex items-center left-2 h-full w-12 transition-all duration-500 ease-in-out group-hover:translate-x-full">
@@ -139,19 +139,19 @@
                     />
 
                     <div class="flex flex-col justify-center items-center bg-(--dark-red) h-full lg: w-full rounded-b-lg lg:rounded-r-lg">                        
-                        <div class="flex flex-col items-center justify-center px-8 py-12 gap-4 lg:gap-8 max-w-2xl h-80 lg:h-fit">
-                            <h3 class="text-4xl text-center text-(--light-red) font-extrabold w-full h-full">
+                        <div class="flex flex-col items-center justify-center px-4 lg:px-8 gap-8 max-w-2xl h-80 lg:h-fit">
+                            <h3 class="text-3xl md:text-4xl text-center text-(--light-red) font-extrabold w-full h-full">
                                 Lubricants
                             </h3>
 
-                            <p class="text-(--white) text-center text-xl">
+                            <p class="text-(--white) text-center text-lg">
                                 From motor oil for the family car to lubricants for heavy duty transportation and industrial equipment, we deliver premium products that help improve fuel economy and extend the period between oil changes.
                             </p>
 
                             <!-- Explore lubricants -->
                             <NuxtLink 
                                 to="/what/energy"
-                                class="group flex *:flex items-center *:items-center px-6 py-2 gap-4 w-fit font-bold text-(--white) hover:text-(--black) rounded-lg border-2 border-(--light-red) hover:bg-(--light-red) duration-300 ease-in-out transition-all"
+                                class="group flex *:flex items-center *:items-center px-6 py-2 gap-4 w-fit font-bold text-(--white) hover:text-(--black) rounded-lg border-1 border-(--light-red) hover:bg-(--light-red) duration-300 ease-in-out transition-all"
                             >
                                 <div class="group relative flex items-center text-xl w-8 h-full overflow-hidden">
                                     <div class="absolute flex items-center left-2 h-full w-12 transition-all duration-500 ease-in-out group-hover:translate-x-full">
@@ -179,19 +179,19 @@
                     />
 
                     <div class="flex flex-col justify-center items-center bg-(--dark-purple) h-full lg: w-full rounded-b-lg lg:rounded-r-lg">                        
-                        <div class="flex flex-col items-center justify-center px-8 py-12 gap-4 lg:gap-8 max-w-2xl h-80 lg:h-fit">
-                            <h3 class="text-4xl text-center text-(--light-purple) font-extrabold w-full h-full">
+                        <div class="flex flex-col items-center justify-center px-4 lg:px-8 gap-8 max-w-2xl h-80 lg:h-fit">
+                            <h3 class="text-3xl md:text-4xl text-center text-(--light-purple) font-extrabold w-full h-full">
                                 Chemicals and additives
                             </h3>
 
-                            <p class="text-(--white) text-center text-xl">
+                            <p class="text-(--white) text-center text-lg">
                                 Together with our partners, Penn Petro Energy is a leading manufacturer of petrochemicals and additives that are essential to creating everyday consumer and industrial products, as well as maximizing the reliability, efficiency and life of engines.
                             </p>
 
                             <!-- See chemicals and additives -->
                             <NuxtLink 
                                 to="/what/energy"
-                                class="group flex *:flex items-center *:items-center px-6 py-2 gap-4 w-fit font-bold text-(--white) hover:text-(--black) rounded-lg border-2 border-(--light-purple) hover:bg-(--light-purple) duration-300 ease-in-out transition-all"
+                                class="group flex *:flex items-center *:items-center px-6 py-2 gap-4 w-fit font-bold text-(--white) hover:text-(--black) rounded-lg border-1 border-(--light-purple) hover:bg-(--light-purple) duration-300 ease-in-out transition-all"
                             >
                                 <div class="group relative flex items-center text-xl w-8 h-full overflow-hidden">
                                     <div class="absolute flex items-center left-2 h-full w-12 transition-all duration-500 ease-in-out group-hover:translate-x-full">
@@ -203,7 +203,7 @@
                                     </div>
                                 </div>
 
-                                <span class="text-lg">See chemicals and additives</span>
+                                <span class="text-lg">Chemicals and additives</span>
                             </NuxtLink>
                         </div>
                     </div>

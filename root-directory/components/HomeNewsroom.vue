@@ -21,15 +21,18 @@
             
             <div class="grid gap-32 w-full mx-auto">
 
-                <div class="flex flex-col gap-12">
-           
-                    <p class="text-(--dark-blue) text-center font-bold text-2xl cursor-text">
-                        {{ category }}
-                    </p>
+                <div class="flex flex-col gap-12 lg:gap-16">
 
-                    <h2 class="text-(--dark-blue) text-center font-extrabold text-3xl lg:text-5xl text-wrap cursor-text">
-                        {{ title }}
-                    </h2>
+                    <div class="flex flex-col gap-4 lg:gap-8">                
+           
+                        <p class="text-(--dark-blue) text-center font-bold text-2xl cursor-text">
+                            {{ category }}
+                        </p>
+
+                        <h2 class="text-(--dark-blue) text-center font-extrabold text-3xl lg:text-5xl text-wrap cursor-text">
+                            {{ title }}
+                        </h2>
+                    </div>
 
                     <NewsroomCarousel />
 

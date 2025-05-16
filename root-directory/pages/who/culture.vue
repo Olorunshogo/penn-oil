@@ -12,21 +12,21 @@
         ogTitle: 'Inside Penn Petro Energy | Culture & People',
         description: 'Discover the values, collaboration, and purpose that shape Penn Petro Energy’s culture. Learn how we foster innovation, inclusion, and growth every day.',
         ogDescription: 'Explore the culture at Penn Petro Energy — where diverse talent, shared values, and a commitment to impact drive our success in the global energy sector.',
-        ogImage: '/images/culture-page-hero.jpg',
+        ogImage: '/Logo/Full_Penn_Petro_Energy_Logo.jpg',
         ogImageAlt: 'Penn Petro Energy employees collaborating in diverse work settings.',
         ogUrl: 'https://vercel.com/bom-projects/pen-oil/who/culture',
 
         twitterCard: 'summary_large_image',
         twitterTitle: 'Our Culture | People-First at Penn Petro Energy',
         twitterDescription: 'At Penn Petro Energy, our culture is built on respect, innovation, and impact. See how our people make energy work for a better tomorrow.',
-        twitterImage: '/images/Logo/Full_Penn_Petro_Energy_Logo.jpg',
+        twitterImage: '/Logo/Full_Penn_Petro_Energy_Logo.jpg',
 
         keywords: 'Penn Petro Energy culture, company values, employee experience, energy careers, workplace diversity, innovation culture, inclusive energy company, Penn Petro people',
     });
 
     import { 
         dollarsContributed, employeeTotal, 
-        volunteerTotalHours, whoNewsroom
+        volunteerTotalHours,
     } from '~/stores/whoVariables';
 
     import { whoCultureHeroVideoBg } from '~/models/heroBgModels';
@@ -63,13 +63,13 @@
                     />
 
                     <div class="flex flex-col justify-center items-center bg-(--dark-blue) h-full lg: w-full rounded-b-2xl lg:rounded-r-2xl">                        
-                        <div class="flex flex-col items-center justify-center p-8 lg:p-8 gap-4 lg:gap-8 max-w-2xl h-full lg:h-fit">
+                        <div class="flex flex-col items-center justify-center p-4 lg:p-8 gap-4 lg:gap-8 max-w-2xl h-full lg:h-fit">
                             <h3 class="text-4xl text-center text-(--light-blue) font-extrabold w-full h-full">
                                 <!-- Our way is the Penn Petro Energy way -->
                                 The Penn Petro Energy way
                             </h3>
 
-                            <p class="text-(--white) text-center text-xl">
+                            <p class="text-(--white) text-center text-lg">
                                 We’re a global team united by what we believe. 
                                 We believe human ingenuity has the power to solve any challenge and overcome any obstacle. 
                                 Our vision and purpose drives how we work. 
@@ -78,7 +78,7 @@
 
                             <!-- Learn about our history -->
                             <NuxtLink 
-                                to="/who/culture"
+                                to="/what/penn"
                                 class="group flex *:flex items-center *:items-center py-3 gap-4 w-fit h-14 font-bold text-(--white) duration-300 ease-in-out transition-all"
                             >
                                 <div class="group relative flex items-center text-xl w-8 h-full overflow-hidden">
@@ -107,19 +107,19 @@
                     />
 
                     <div class="flex flex-col justify-center items-center bg-(--dark-red) h-full lg: w-full rounded-b-2xl lg:rounded-r-2xl">                        
-                        <div class="flex flex-col items-center justify-center p-8 lg:p-8 gap-4 lg:gap-8 max-w-2xl h-full lg:h-fit">
+                        <div class="flex flex-col items-center justify-center p-4 lg:p-8 gap-4 lg:gap-8 max-w-2xl h-full lg:h-fit">
                             <h3 class="text-4xl text-center text-(--light-red) font-extrabold w-full h-full">
                                 <!-- We strive for excellence in everything we do -->
                                 We strive for excellence in everything we do
                             </h3>
 
-                            <p class="text-(--white) text-center text-xl">
+                            <p class="text-(--white) text-center text-lg">
                                 Operational Excellence (OE) aims to put into action our Penn Petro Energy's Way, a set of values that helps protect people and the environment and helps us achieve Penn Petro Energy’s vision to be the global energy company most admired for its people, partnership and performance.
                             </p>
 
                             <!-- Learn about our history -->
                             <NuxtLink 
-                                to="/who/culture"
+                                to="/what/technology"
                                 class="group flex *:flex items-center *:items-center py-3 gap-4 w-fit h-14 font-bold text-(--white) mx-auto duration-300 ease-in-out transition-all"
                             >
                                 <div class="group relative flex items-center text-xl w-8 h-full overflow-hidden">
@@ -148,12 +148,12 @@
                     />
 
                     <div class="flex flex-col justify-center items-center bg-(--dark-purple) h-full lg: w-full rounded-b-2xl lg:rounded-r-2xl">                        
-                        <div class="flex flex-col items-center justify-center p-8 lg:p-8 gap-4 lg:gap-8 max-w-2xl h-full lg:h-fit">
+                        <div class="flex flex-col items-center justify-center p-4 lg:p-8 gap-4 lg:gap-8 max-w-2xl h-full lg:h-fit">
                             <h3 class="text-4xl text-center text-(--light-purple) font-extrabold w-full h-full">
                                 Diversity and inclusion make us stronger
                             </h3>
 
-                            <p class="text-(--white) text-center text-xl">
+                            <p class="text-(--white) text-center text-lg">
                                 We promote a culture that values different perspectives, productive dialogue and teaming. 
                                 We also promote resources for good health, well-being and work-life balance. 
                                 We develop leaders to sustain and strengthen our culture for the future.
@@ -161,7 +161,7 @@
 
                             <!-- Learn about our history -->
                             <NuxtLink 
-                                to="/who/culture"
+                                to="/who/culture#humanKind"
                                 class="group flex *:flex items-center *:items-center py-3 gap-4 w-fit h-14 font-bold text-(--white) duration-300 ease-in-out transition-all"
                             >
                                 <div class="group relative flex items-center text-xl w-8 h-full overflow-hidden">
@@ -189,21 +189,22 @@
                 
                 <div class="flex flex-col gap-20 lg:gap-28 w-full max-w-7xl mx-auto">
 
-                    <div class="flex flex-col items-center justify-center gap-4 lg:gap-12">
+                    <div class="flex flex-col items-center justify-center gap-4">
                         <h2 
-                            class="text-5xl lg:text-7xl text-(--light-blue) text-wrap text-center font-extrabold cursor-text w-full h-full overflow-hidden"
+                            id="humanKind"
+                            class="text-4xl sm:text-5xl lg:text-7xl text-(--light-blue) text-wrap text-center font-extrabold cursor-text w-full h-full overflow-hidden"
                         >
                             Penn Petro Energy humankind
                         </h2>
 
-                        <p class="text-(--white) text-center text-xl font-semibold cursor-text">
+                        <p class="text-(--white) text-center text-lg">
                             Our Penn Petro Energy humankind initiative is a program in the United States that offers support from our employees to their communities.
                         </p>
                     </div>
 
-                    <div class="flex flex-col items-center justify-center gap-4 lg:gap-12">
+                    <div class="flex flex-col items-center justify-center gap-16 lg:gap-20">
                         <h2 
-                            class="text-5xl text-(--white) text-wrap text-center font-extrabold"
+                            class="text-4xl sm:text-5xl text-(--white) text-wrap text-center font-extrabold"
                         >
                             2023 Penn Petro Energy humankind at a glance
                         </h2>
@@ -212,40 +213,40 @@
 
                             <!-- Dollars contributed to U.S. nonprofits through a combination of employee and retiree giving and company matching funds -->
                             <div class="flex flex-col items-center justify-center gap-4 p-8 rounded-2xl bg-(--medium-blue) w-full mx-auto h-full">
-                                <p class="text-xl text-center">
+                                <p class="text-lg text-center">
                                     Dollars contributed to U.S. nonprofits through a combination of employee and retiree giving and company matching funds
                                 </p>
-                                <span class="text-6xl md:text-7xl xl:text-8xl font-extrabold">
+                                <span class="text-5xl sm:text-6xl md:text-7xl xl:text-8xl font-extrabold">
                                     ${{ dollarsContributed }}M
                                 </span>
                             </div>
 
                             <!-- Number of employees and retirees who volunteered through Penn Petro Energy Humankind -->
                             <div class="flex flex-col items-center justify-center gap-4 p-8 rounded-2xl bg-(--medium-blue) w-full mx-auto h-full">
-                                <p class="text-xl text-center">
+                                <p class="text-lg text-center">
                                     Number of employees and retirees who volunteered through Penn Petro Energy Humankind
                                 </p>
-                                <span class="text-6xl md:text-7xl xl:text-8xl font-extrabold">
+                                <span class="text-5xl sm:text-6xl md:text-7xl xl:text-8xl font-extrabold">
                                     {{ employeeTotal }}
                                 </span>
                             </div>
 
                             <!-- Number of volunteer hours logged in the U.S. by our employees and retirees -->
                             <div class="flex flex-col items-center justify-center gap-4 p-8 rounded-2xl bg-(--medium-blue) w-full mx-auto h-full">
-                                <p class="text-xl text-center">
+                                <p class="text-lg text-center">
                                     Number of volunteer hours logged in the U.S. by our employees and retirees
                                 </p>
-                                <span class="text-6xl md:text-7xl xl:text-8xl font-extrabold">
+                                <span class="text-5xl sm:text-6xl md:text-7xl xl:text-8xl font-extrabold">
                                     {{ volunteerTotalHours }}
                                 </span>
                             </div>
 
                             <!-- Number of charitable organizations in the U.S. who benefited from volunteer time as part of U.S. Penn Petro Energy Humankind -->
                             <div class="flex flex-col items-center justify-center gap-4 p-8 rounded-2xl bg-(--medium-blue) w-full mx-auto h-full">
-                                <p class="text-xl text-center">
+                                <p class="text-lg text-center">
                                     Number of charitable organizations in the U.S. who benefited from volunteer time as part of U.S. Penn Petro Energy Humankind
                                 </p>
-                                <span class="text-6xl md:text-7xl xl:text-8xl font-extrabold">
+                                <span class="text-5xl sm:text-6xl md:text-7xl xl:text-8xl font-extrabold">
                                     {{ volunteerTotalHours }}
                                 </span>
                             </div>
@@ -267,13 +268,13 @@
                 
                 <div class="grid gap-32 w-full mx-auto">
 
-                    <div class="flex flex-col gap-8">
+                    <div class="flex flex-col gap-4 lg:gap-8">
             
-                        <h2 class="text-(--dark-blue) text-5xl md:text-7xl text-center text-wrap font-extrabold">
+                        <h2 class="text-(--dark-blue) text-4xl sm:text-5xl lg:text-7xl text-center text-wrap font-extrabold">
                             Latest on our culture
                         </h2>
 
-                        <p class="text-(--black) text-center text-xl">
+                        <p class="text-(--black) text-center text-lg">
                             Read how our employees are making an impact around the world.
                         </p>
 

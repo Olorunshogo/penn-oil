@@ -45,7 +45,7 @@
             />
         </div>
 
-        <!-- Section: What are we -->
+        <!-- Section: What we believe drives how we work -->
         <section>
             <div class="px-(--section-px) lg:px-(--section-px-lg) py-(--section-py) lg:py-(--section-py-lg) bg-(--dark-blue)/90 w-full h-full overflow-hidden">
                 
@@ -53,13 +53,13 @@
 
                     <div class="flex flex-col items-center justify-center gap-4 lg:gap-12">
                         <h2 
-                            class="text-5xl lg:text-8xl text-(--white) text-wrap text-center font-extrabold cursor-text w-full h-full overflow-hidden"
+                            class="text-4xl sm:text-5xl lg:text-8xl text-(--white) text-wrap text-center font-extrabold cursor-text w-full h-full overflow-hidden"
                         >
                             What we believe drives how we work
                         </h2>
 
-                        <p class="text-(--white) text-center text-lg lg:text-2xl font-semibold cursor-text">
-                            Our north star is The Penn Petro Energy Way. 
+                        <p class="text-(--white) text-center text-lg lg:text-xl cursor-text">
+                            Our north star is the Penn Petro Energy Way. 
                             A set of values that inspires our culture. 
                             And guides us to get results the right way.
                         </p>
@@ -67,7 +67,7 @@
                         <!-- Discover the Penn Petro way -->
                         <NuxtLink 
                             to="/who/culture"
-                            class="group flex *:flex items-center *:items-center justify-center px-2 lg:px-8 py-2 gap-2 lg:gap-4 w-fit mx-auto mt-8 text-(--white) hover:text-(--black) bg-transparent hover:bg-(--light-blue) shadow-lg rounded-lg border-2 border-(--light-blue) duration-300 ease-in-out transition-all"
+                            class="group flex *:flex items-center *:items-center justify-center px-4 lg:px-8 py-2 gap-2 lg:gap-4 w-fit mx-auto mt-8 text-(--white) hover:text-(--black) bg-transparent hover:bg-(--light-blue) shadow-lg rounded-lg border-1 border-(--light-blue) duration-300 ease-in-out transition-all"
                         >
                             <div class="group relative flex items-center justify-center text-xl w-8 h-full overflow-hidden">
                                 <div class="absolute flex items-center left-2 h-full w-12 transition-all duration-500 ease-in-out group-hover:translate-x-full">
@@ -79,7 +79,7 @@
                                 </div>
                             </div>
 
-                            <span class="font-semibold text-lg">Discover the Penn Petro way</span>
+                            <span class="font-semibold text-base">Discover the Penn Petro way</span>
                         </NuxtLink>
                     </div>
 
@@ -124,7 +124,7 @@
                 <div class="grid grid-cols-1 lg:grid-cols-2 w-full max-w-7xl mx-auto h-full py-(--section-py) lg:py-(--section-py-lg)">
 
                     <div class="flex flex-col justify-center bg-(--dark-purple) h-full w-full lg:h-190 lg:rounded-l-2xl">                        
-                        <div class="flex flex-col px-8 py-32 gap-8 max-w-2xl">
+                        <div class="flex flex-col p-4 sm:p-8 py-32 gap-8 max-w-2xl">
                             <h2 
                                 class="text-4xl md:text-7xl xl:text-8xl text-(--white) text-wrap font-extrabold cursor-text w-full h-full overflow-hidden"
                             >
@@ -139,22 +139,22 @@
                         </div>
                     </div>
 
-                    <div class="grid md:grid-cols-2 lg:grid-cols-1 lg:grid-rows-2 gap-4 lg:gap-8 bg-(--medium-purple) h-full lg:h-190 lg:rounded-r-2xl p-8">
+                    <div class="grid md:grid-cols-2 lg:grid-cols-1 lg:grid-rows-2 p-4 sm:p-8 gap-4 lg:gap-8 bg-(--medium-purple) h-full lg:h-190 lg:rounded-r-2xl">
                         <NuxtImg
                             src="https://images.pexels.com/photos/19797275/pexels-photo-19797275/free-photo-of-2024.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                             alt="2024"
                             loading="lazy"
-                            class="w-full h-90 object-cover rounded-lg ml-auto lg:ml-0"
+                            class="w-full h-70 sm:h-90 object-cover rounded-lg ml-auto lg:ml-0"
                         /> 
                         
 
-                        <div class="flex flex-col gap-12 py-20 justify-between rounded-lg hover:bg-(--dark-purple) w-full h-full duration-300 ease-in-out transition-all">
+                        <div class="flex flex-col gap-12 py-8 justify-between rounded-lg hover:bg-(--dark-purple) w-full h-full duration-300 ease-in-out transition-all">
                             <p class="text-(--white) text-xl lg:text-xl">
                                 We're working to increase production to meet global energy demand.
                             </p>
                             <NuxtLink
                                 to="/what/energy"
-                                class="group flex items-center text-(--white) text-lg font-semibold"
+                                class="group flex items-center gap-2 text-(--white) text-lg font-semibold"
                             >
                                 <div class="group relative flex items-center justify-center text-xl w-8 h-full overflow-hidden">
                                     <div class="absolute flex items-center left-2 h-full w-12 transition-all duration-500 ease-in-out group-hover:translate-x-full">
@@ -178,26 +178,27 @@
 
         <!-- Section: Our culture -->
         <section>
-            <div class="bg-(--white) w-full h-full shadow-lg overflow-hidden py-(--section-py) lg:py-(--section-py-lg)">
+            <div class="bg-(--white) w-full h-full shadow-lg overflow-hidden">
                 
-                <div class="grid grid-cols-1 lg:grid-cols-2 w-full max-w-7xl mx-auto h-full">
+                <div class="grid grid-cols-1 lg:grid-cols-2 w-full max-w-7xl mx-auto h-full py-(--section-py) lg:py-(--section-py-lg)">
 
-                    <div class="grid md:grid-cols-2 lg:grid-cols-1 lg:grid-rows-2 gap-4 lg:gap-8 bg-(--medium-teal) h-full lg:h-190 lg:rounded-l-2xl p-8">
+                    <div class="grid md:grid-cols-2 lg:grid-cols-1 lg:grid-rows-2 p-4 sm:p-8 gap-4 lg:gap-8 bg-(--medium-teal) h-full lg:h-190 lg:rounded-l-2xl">
                         <NuxtImg
                             src="https://images.pexels.com/photos/13963338/pexels-photo-13963338.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                            alt="Enginners"
+                            alt="Diverse Engineers"
                             loading="lazy"
-                            class="w-full h-90 object-cover rounded-lg ml-auto lg:ml-0"
+                            class="w-full h-70 sm:h-90 object-cover rounded-lg ml-auto lg:ml-0"
                         /> 
                         
-                        <div class="flex flex-col gap-12 py-20 justify-between rounded-lg hover:bg-(--dark-teal) w-full h-full duration-300 ease-in-out transition-all">
+
+                        <div class="flex flex-col gap-12 py-8 justify-between rounded-lg hover:bg-(--dark-teal) w-full h-full duration-300 ease-in-out transition-all">
                             <p class="text-(--white) text-xl lg:text-2xl">
                                 Supporting diversity and inclusion is embedded in how we work.
                                 We welcome different points of view to help us drive innovation and grow our business.
                             </p>
                             <NuxtLink
                                 to="/who/culture"
-                                class="group flex items-center text-(--white) text-lg font-semibold"
+                                class="group flex items-center gap-2 text-(--white) text-lg font-semibold"
                             >
                                 <div class="group relative flex items-center justify-center text-xl w-8 h-full overflow-hidden">
                                     <div class="absolute flex items-center left-2 h-full w-12 transition-all duration-500 ease-in-out group-hover:translate-x-full">
@@ -214,7 +215,7 @@
                     </div>
 
                     <div class="flex flex-col justify-center bg-(--dark-teal) h-full w-full lg:h-190 lg:rounded-r-2xl">                        
-                        <div class="flex flex-col px-8 py-32 gap-8 max-w-2xl">
+                        <div class="flex flex-col p-4 sm:p-8 py-32 gap-8 max-w-2xl">
                             <h2 
                                 class="text-4xl md:text-7xl xl:text-8xl text-(--white) text-wrap font-extrabold cursor-text w-full h-full overflow-hidden"
                             >
@@ -237,12 +238,12 @@
 
         <!-- Section: Industry innovation through technology -->
         <section>
-            <div class="bg-(--white) w-full h-full shadow-lg overflow-hidden py-(--section-py) lg:py-(--section-py-lg)">
+            <div class="bg-(--white) w-full h-full shadow-lg overflow-hidden">
                 
-                <div class="grid grid-cols-1 lg:grid-cols-2 w-full max-w-7xl mx-auto h-full">
+                <div class="grid grid-cols-1 lg:grid-cols-2 w-full max-w-7xl mx-auto h-full py-(--section-py) lg:py-(--section-py-lg)">
 
                     <div class="flex flex-col justify-center bg-(--dark-blue) h-full w-full lg:h-190 lg:rounded-l-2xl">                        
-                        <div class="flex flex-col px-8 py-32 gap-8 max-w-2xl">
+                        <div class="flex flex-col p-4 sm:p-8 py-32 gap-8 max-w-2xl">
                             <h2 
                                 class="text-4xl md:text-7xl xl:text-8xl text-(--white) text-wrap font-extrabold cursor-text w-full h-full overflow-hidden"
                             >
@@ -255,22 +256,22 @@
                         </div>
                     </div>
 
-                    <div class="grid md:grid-cols-2 lg:grid-cols-1 lg:grid-rows-2 gap-4 lg:gap-8 bg-(--medium-blue) h-full lg:h-190 lg:rounded-r-2xl p-8">
+                    <div class="grid md:grid-cols-2 lg:grid-cols-1 lg:grid-rows-2 p-4 sm:p-8 gap-4 lg:gap-8 bg-(--medium-blue) h-full lg:h-190 lg:rounded-r-2xl">
                         <NuxtImg
                             src="https://images.pexels.com/photos/31945005/pexels-photo-31945005/free-photo-of-close-up-of-disassembled-electronic-circuit-boards.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                             alt="Close-up of Disassembled Electronic Circuit Boards"
                             loading="lazy"
-                            class="w-full h-90 object-cover rounded-lg ml-auto lg:ml-0"
+                            class="w-full h-70 sm:h-90 object-cover rounded-lg ml-auto lg:ml-0"
                         /> 
                         
 
-                        <div class="flex flex-col gap-12 py-20 justify-between rounded-lg hover:bg-(--dark-blue) w-full h-full duration-300 ease-in-out transition-all">
-                            <p class="text-(--white) text-2xl xl:text-4xl">
+                        <div class="flex flex-col gap-12 py-8 justify-between rounded-lg hover:bg-(--dark-blue) w-full h-full duration-300 ease-in-out transition-all">
+                            <p class="text-(--white) text-xl lg:text-xl">
                                 Digital technologies are helping us integrate data, reduce costs and enhance safety.
                             </p>
                             <NuxtLink
                                 to="/what/technology"
-                                class="group flex items-center text-(--white) text-lg font-semibold"
+                                class="group flex items-center gap-2 text-(--white) text-lg font-semibold"
                             >
                                 <div class="group relative flex items-center justify-center text-xl w-8 h-full overflow-hidden">
                                     <div class="absolute flex items-center left-2 h-full w-12 transition-all duration-500 ease-in-out group-hover:translate-x-full">
@@ -281,7 +282,7 @@
                                         <Icon name="mdi:arrow-right" />
                                     </div>
                                 </div>
-                                <span class="group-hover:underline-text">Learn about our technology</span>
+                                <span class="group-hover:underline-text">Learn more</span>
                             </NuxtLink>
                         </div>
                     </div>
@@ -294,9 +295,9 @@
 
         <!-- Section: Human ingenuity from the beginning -->
         <section>                
-            <div class="flex flex-col mx-auto gap-8 lg:gap-8 w-full py-(--section-py) lg:py-(--section-py-lg) bg-(--dark-green) shadow-lg z-0">
+            <div class="flex flex-col mx-auto gap-8 lg:gap-8 w-full px-(--section-px) lg:px-(--section-px-lg) py-(--section-py) lg:py-(--section-py-lg) bg-(--dark-green) shadow-lg z-0">
 
-                <h3 class="text-5xl sm:text-6xl lg:text-7xl text-wrap text-center text-(--medium-green) font-extrabold">
+                <h3 class="text-3xl sm:text-4xl lg:text-6xl text-wrap text-center text-(--medium-green) font-extrabold">
                     Human ingenuity from the beginning 
                 </h3>
 
@@ -308,7 +309,7 @@
                 <!-- Learn about our history -->
                 <NuxtLink 
                     to="/who/history"
-                    class="group flex *:flex items-center *:items-center px-8 py-3 gap-4 w-fit h-14 text-(--white) hover:text-(--black) bg-transparent mx-auto hover:bg-(--medium-green) shadow-lg rounded-lg border-3 border-(--light-green) duration-300 ease-in-out transition-all"
+                    class="group flex *:flex items-center *:items-center px-4 lg:px-8 py-1 gap-4 w-fit text-(--white) hover:text-(--black) bg-transparent mx-auto hover:bg-(--medium-green) shadow-lg rounded-lg border-1 border-(--light-green) duration-300 ease-in-out transition-all"
                 >
                     <div class="group relative flex items-center text-xl w-8 h-full overflow-hidden">
                         <div class="absolute flex items-center left-2 h-full w-12 transition-all duration-500 ease-in-out group-hover:translate-x-full">
@@ -325,15 +326,15 @@
             </div>                           
         </section>
 
-        <!-- Section: Industry innovation through technology -->
+        <!-- Section: Focus on quality -->
         <section>
-            <div class="grid bg-(--white) gap-12 w-full h-full overflow-hidden py-(--section-py) lg:py-(--section-py-lg)">
+            <div class="grid bg-(--white) gap-12 w-full h-full px-(--section-px) lg:px-(--section-px-lg) py-(--section-py) lg:py-(--section-py-lg) overflow-hidden">
                 
                 <div class="flex flex-col gap-4 items-center justify-center py-12 max-w-4xl mx-auto">
                     <h2 class="text-(--dark-blue) text-center font-bold text-4xl lg:text-7xl">
                         Focus on quality
                     </h2>
-                    <p class="text-(--black) text-xl text-center">
+                    <p class="text-(--black) text-lg text-center">
                         We’re driven to create a quality experience. From our leadership team, who are guided by their vision and values. To each of our brands and the employees who bring them to life.
                     </p>
                 </div>
@@ -342,14 +343,14 @@
                 <div class="grid grid-cols-1 lg:grid-cols-2 w-full max-w-[1400px] mx-auto shadow-lg h-130">
 
                     <div class="flex flex-col justify-center bg-(--dark-red) h-full w-full lg:rounded-l-2xl">                        
-                        <div class="flex flex-col px-8 py-12 gap-4 lg:gap-8 max-w-2xl">
+                        <div class="flex flex-col px-4 lg:px-8 gap-4 lg:gap-8 max-w-2xl">
                             <h3 
                                 class="text-5xl lg:text-6xl text-(--light-red) text-wrap font-extrabold cursor-text w-full h-full overflow-hidden"
                             >
                                 Our brands
                             </h3>
 
-                            <p class="text-(--white) text-lg xl:text-2xl cursor-text">
+                            <p class="text-(--white) text-lg lg:text-xl">
                                 We strive for excellence and maintaining high standards.
                                 With a rich history dating back over a century, Penn Petro Energy's family of brands has built trust and recognition worldwide.
                             </p>
@@ -394,14 +395,14 @@
                     />
 
                     <div class="flex flex-col justify-center bg-(--dark-teal) h-full w-full lg:rounded-r-2xl">                        
-                        <div class="flex flex-col px-8 py-12 gap-4 lg:gap-8 max-w-2xl">
+                        <div class="flex flex-col px-4 lg:px-8 py-12 gap-4 lg:gap-8 max-w-2xl">
                             <h3 
                                 class="text-5xl lg:text-6xl text-(--light-teal) text-wrap font-extrabold cursor-text w-full h-full overflow-hidden"
                             >
                                 Leadership
                             </h3>
 
-                            <p class="text-(--white) text-lg xl:text-2xl cursor-text">
+                            <p class="text-(--white) text-lg lg:text-xl">
                                 Our culture is built upon the principles of responsibility, trust and integrity.
                                 Our leadership is a profound source of pride as we aim to lead in the future of energy.
                                 With a rich history dating back over a century, Penn Petro Energy's family of brands has built trust and recognition worldwide.
@@ -432,14 +433,14 @@
                 <div class="grid grid-cols-1 lg:grid-cols-2 w-full max-w-[1400px] mx-auto shadow-lg h-130">
 
                     <div class="flex flex-col justify-center bg-(--dark-orange) h-full w-full lg:rounded-l-2xl">                        
-                        <div class="flex flex-col px-8 py-12 gap-4 lg:gap-8 max-w-2xl">
+                        <div class="flex flex-col px-4 lg:px-8 py-12 gap-4 lg:gap-8 max-w-2xl">
                             <h3 
                                 class="text-5xl lg:text-6xl text-(--light-orange) text-wrap font-extrabold cursor-text w-full h-full overflow-hidden"
                             >
                                 Careers
                             </h3>
 
-                            <p class="text-(--white) text-lg xl:text-2xl cursor-text">
+                            <p class="text-(--white) text-lg lgl:text-xl cursor-text">
                                 Penn Petro Energy is a place where people come to be part of innovative solutions that help address the world's energy challenges.
                             </p>
 

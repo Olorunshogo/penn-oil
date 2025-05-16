@@ -21,7 +21,7 @@
     ogTitle: 'Penn Petro Energy Corporation - Leading Energy Solutions',
     description: 'Penn Petro Energy is one of the world’s leading integrated energy companies. Explore how we safely and responsibly develop energy that improves lives and powers the world forward.',
     ogDescription: 'Penn Petro Energy develops and delivers affordable, reliable, and ever-cleaner energy. Learn about our commitment to innovation, sustainability, and global energy leadership.',
-    ogImage: '/Full_Penn_Petro_Energy_Logo.jpg',
+    ogImage: '/Logo/Full_Penn_Petro_Energy_Logo.jpg',
     ogImageAlt: 'Penn Petro Energy oil refinery and clean energy infrastructure.',
     ogUrl: 'https://vercel.com/bom-projects/pen-oil',
     
@@ -47,15 +47,15 @@
 
   // Scroll to the Top
   function scrollToTop() {
-    window.scrollTo({ top: 24, behavior: 'smooth' });
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
-  // Set up scroll event listener
+  // Start scroll event listener
   onMounted(() => {
     window.addEventListener('scroll', handleScroll);
   });
 
-  // Clean up the scroll event listener when the component is unmounted
+  // Remove event listener when the component is unmounted
   onBeforeMount(() => {
     window.removeEventListener('scroll', handleScroll);
   });
@@ -67,6 +67,7 @@
 <template>
   <div class="default-layout scroll-smooth">
     <NavBar class="sticky z-[99] inset-0 bottom-[unset] cursor-default bg-transparent" />
+      
       <!--SearchBar  -->
       <div>
         <SearchBar />

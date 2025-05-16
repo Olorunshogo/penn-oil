@@ -31,15 +31,15 @@
 
 <template>
     <div>
-        <div class="flex flex-col items-center justify-center gap-4 w-full h-full">
+        <div class="flex flex-col items-center justify-center gap-6 w-full h-full">
             <NuxtImg
                 :src="imgSrc"
                 :alt="imgAlt"
                 loading="lazy"
-                class="w-[120px] sm:w-[100px] lg:w-[80px] object-cover border-3 border-(--light-gray)"
+                class="w-32 sm:w-28 lg:w-24 object-cover border-3 border-(--light-gray)"
             />
 
-            <div class="flex flex-col items-center justify-center gap-2 w-full h-full">
+            <div class="flex flex-col items-center justify-center w-full h-full">
                 <NuxtLink
                     to="/"
                     class="group relative flex items-center font-bold text-lg text-(--medium-blue) duration-500 ease-in transition-all"
@@ -57,7 +57,7 @@
                         </div>
                     </div>
                 </NuxtLink>
-                <p class="text-lg text-(--black) text-center">{{ description }}</p>
+                <p class="text-base md:text-lg text-(--black) text-center">{{ description }}</p>
             </div>
         </div>
     </div>

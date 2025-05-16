@@ -71,18 +71,18 @@
                 >
                     <div class="flex flex-col items-center justify-center text-center gap-4 w-full max-w-7xl mx-auto">
                         
-                        <span class="text-xl lg:text-2xl text-center font-bold text-(--dark-blue)">
+                        <span class="text-lg lg:text-xl text-center font-bold text-(--dark-red)">
                             {{ category }}
                         </span>
 
                         <h1 
-                            class="text-5xl md:text-6xl xl:text-9xl text-center font-extrabold bg-clip-text text-transparent" 
+                            class="text-5xl sm:text-6xl lg:text-8xl xl:text-9xl text-center font-extrabold bg-clip-text text-transparent" 
                             :style="{ backgroundImage: `url(${titleBgImageSrc})`, backgroundSize: 'cover' }"
                         >
                             {{ title }}
                         </h1>
                         
-                        <p class="text-xl text-center text-(--white)">
+                        <p class="text-base md:text-xl text-center text-(--white)">
                             {{ paragraph }}
                         </p>
 

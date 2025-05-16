@@ -26,8 +26,8 @@
 
                         <!-- See our solutions link -->
                         <NuxtLink 
-                            to="/"
-                            class="group flex *:flex items-center *:items-center justify-center px-8 py-3 gap-4 w-fit h-16 mx-auto text-(--black) hover:text-(--white) bg-transparent hover:bg-(--medium-blue) shadow-lg rounded-lg border-3 border-(--medium-blue) duration-300 ease-in-out transition-all"
+                            to="/what/overview"
+                            class="group flex *:flex items-center *:items-center justify-center px-4 lg:px-8 py-2 gap-4 w-fit mx-auto text-(--black) hover:text-(--white) bg-transparent hover:bg-(--medium-blue) shadow-lg rounded-lg border-1 border-(--medium-blue) duration-300 ease-in-out transition-all"
                         >
                             <div class="group relative flex items-center justify-center text-xl w-8 h-full overflow-hidden">
                                 <div class="absolute flex items-center left-2 h-full w-12 transition-all duration-500 ease-in-out group-hover:translate-x-full">
@@ -39,7 +39,7 @@
                                 </div>
                             </div>
 
-                            <span class="font-semibold text-lg">see our solutions</span>
+                            <span class="font-semibold text-base">See our solutions</span>
                         </NuxtLink>
 
                     </div>
@@ -151,8 +151,8 @@
 
                             <!-- Learn about CCS -->
                             <NuxtLink 
-                                to="/"
-                                class="group flex *:flex items-center *:items-center px-8 py-3 gap-4 w-fit h-14 text-(--white) hover:text-(--black) bg-transparent hover:bg-(--medium-green) shadow-lg rounded-lg border-3 border-(--light-green) duration-300 ease-in-out transition-all"
+                                to="/what/energy"
+                                class="group flex *:flex items-center *:items-center px-4 lg:px-8 py-2 gap-4 w-fit text-(--white) hover:text-(--black) bg-transparent hover:bg-(--medium-green) shadow-lg rounded-lg border-1 border-(--light-green) duration-300 ease-in-out transition-all"
                             >
                                 <div class="group relative flex items-center text-xl w-8 h-full overflow-hidden">
                                     <div class="absolute flex items-center left-2 h-full w-12 transition-all duration-500 ease-in-out group-hover:translate-x-full">
@@ -164,7 +164,7 @@
                                     </div>
                                 </div>
 
-                                <span class="font-semibold text-lg">Learn about CCS</span>
+                                <span class="font-semibold text-base">Learn about CCS</span>
                             </NuxtLink>
                         </div>
 

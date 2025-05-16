@@ -68,17 +68,17 @@
                 <div class="absolute bottom-0 w-full h-2/5 max-h-100 backdrop-blur-md rounded-t-2xl shadow-lg flex items-center justify-center">
                     <div class="flex flex-col items-center justify-center text-center gap-4 w-full max-w-7xl mx-auto">
                         
-                        <span class="text-xl lg:text-2xl text-center font-bold text-(--dark-blue)">
+                        <span class="text-lg lg:text-xl text-center font-bold text-(--dark-red)">
                             {{ category }}
                         </span>
 
-                        <h1 class="text-6xl md:text-8xl xl:text-9xl text-center font-extrabold text-(--white)"
+                        <h1 class="text-5xl sm:text-6xl lg:text-8xl xl:text-9xl text-center font-extrabold text-(--white)"
                             :style="{ backgroundColor: titleBgVideoSrc }"
                         >
                             {{ title }}
                         </h1>
                         
-                        <p class="text-xl text-center text-(--white)">
+                        <p class="text-base md:text-xl text-center text-(--white)">
                             {{ paragraph }}
                         </p>
 

@@ -13,20 +13,20 @@ export function handleScroll() {
 
     // Animate 'Critical Thinkers' and 'Innovators' when scrolling up/down
     gsap.to(criticalThinkers.value, {
-        x: -scrollPosition * scrollSpeed,
+        x: scrollPosition * scrollSpeed,
         // ease: 'power2.out',
         ease: 'sine.out'
     });
 
     gsap.to(innovators.value, {
-        x: -scrollPosition * scrollSpeed,
+        x: scrollPosition * scrollSpeed,
         // ease: 'power2.out',
         ease: 'sine.out'
     });
 
     // Animate 'Collaborators' in the opposite direction
     gsap.to(collaborators.value, {
-        x: scrollPosition * scrollSpeed,
+        x: -scrollPosition * scrollSpeed,
         // ease: 'power2.out',
         ease: 'sine.out'
     });
