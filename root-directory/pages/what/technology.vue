@@ -37,6 +37,7 @@
             <HeroSectionImageBg
                 :imgSrc="whatTechnologyHeroImageBg.imgSrc"
                 :imgAlt="whatTechnologyHeroImageBg.imgAlt"
+                :displayInvestorsNavbar="whatTechnologyHeroImageBg.displayInvestorsNavbar"
                 :category="whatTechnologyHeroImageBg.category"
                 :title="whatTechnologyHeroImageBg.title"
                 :titleBgImageSrc="whatTechnologyHeroImageBg.titleBgImageSrc"

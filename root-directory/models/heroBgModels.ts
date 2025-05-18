@@ -98,6 +98,7 @@ export const whoCultureHeroVideoBg = ref({
 export const whoBrandsHeroImageBg = ref({    
     imgSrc: "https://images.pexels.com/photos/8960944/pexels-photo-8960944.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     imgAlt: "Woman in White Hardhat Holding Silver Touchscreen Device",
+    displayInvestorsNavbar: false,
     category: "Who we are",
     title: "Our brands",
     titleBgImageSrc: "https://images.pexels.com/photos/8960944/pexels-photo-8960944.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
@@ -111,6 +112,7 @@ export const whoBrandsHeroImageBg = ref({
 export const whoLeadershipHeroImageBg = ref({    
     imgSrc: "https://images.pexels.com/photos/8428092/pexels-photo-8428092.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     imgAlt: "A Man in White Long Sleeves Having a Deal with the Man in Black Suit",
+    displayInvestorsNavbar: false,
     category: "Who we are",
     title: "Penn Leadership",
     titleBgImageSrc: "https://images.pexels.com/photos/8428092/pexels-photo-8428092.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
@@ -160,6 +162,7 @@ export const whatEnergyHeroVideoBg = ref({
 export const whatTechnologyHeroImageBg = ref({    
     imgSrc: "https://images.pexels.com/photos/2085831/pexels-photo-2085831.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     imgAlt: "Star Wars R2-d2",
+    displayInvestorsNavbar: false,
     category: "Who we are",
     title: "Technology and innovation",
     titleBgImageSrc: "https://images.pexels.com/photos/2085831/pexels-photo-2085831.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
@@ -186,6 +189,7 @@ export const sustainabilityOverviewHeroVideoBg = ref({
 export const sustainabilityClimateHeroImageBg = ref({    
     imgSrc: "https://images.pexels.com/photos/32077337/pexels-photo-32077337/free-photo-of-idyllic-rural-landscape-with-wind-turbines.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     imgAlt: "Idyllic Rural Landscape with Wind Turbines",
+    displayInvestorsNavbar: false,
     category: "Sustainability",
     title: "Climate",
     titleBgImageSrc: "https://images.pexels.com/photos/32077337/pexels-photo-32077337/free-photo-of-idyllic-rural-landscape-with-wind-turbines.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
@@ -199,6 +203,7 @@ export const sustainabilityClimateHeroImageBg = ref({
 export const sustainabilityEnvironmentHeroImageBg = ref({    
     imgSrc: "/sustainability/sustainability-environment-hero-image.jpeg",
     imgAlt: "Wind Turbines Near Brown Mountains and Railway",
+    displayInvestorsNavbar: false,
     category: "Sustainability",
     title: "Environment",
     titleBgImageSrc: "/sustainability/sustainability-environment-hero-image.jpeg",
@@ -212,6 +217,7 @@ export const sustainabilityEnvironmentHeroImageBg = ref({
 export const sustainabilitySocialHeroImageBg = ref({    
     imgSrc: "https://images.pexels.com/photos/6646778/pexels-photo-6646778.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     imgAlt: "Two ladies and a man sharing aids",
+    displayInvestorsNavbar: false,
     category: "sustainability",
     title: "Social investment",
     titleBgImageSrc: "https://images.pexels.com/photos/6646778/pexels-photo-6646778.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
@@ -225,8 +231,16 @@ export const sustainabilitySocialHeroImageBg = ref({
 
 // Investors Overview
 export const investorOverviewHeroImageBg = ref({    
-    imgSrc: "https://images.pexels.com/photos/6150527/pexels-photo-6150527.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    imgAlt: "Man in Sweatshirt In Front of People",
+    imgSrc: "https://images.pexels.com/photos/7647920/pexels-photo-7647920.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    imgAlt: "Man Wearing Black Corporate Blazer",
+
+    // imgSrc: "https://images.pexels.com/photos/7648478/pexels-photo-7648478.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    // imgAlt: "A Speaker in a Formal Wear",
+
+    // imgSrc: "https://images.pexels.com/photos/6476783/pexels-photo-6476783.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    // imgAlt: "A Woman in Red Long Sleeve Shirt",
+    displayInvestorsNavbar: true,
+
     category: "",
     title: "Investor relations",
     titleBgImageSrc: "https://images.pexels.com/photos/6150527/pexels-photo-6150527.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",

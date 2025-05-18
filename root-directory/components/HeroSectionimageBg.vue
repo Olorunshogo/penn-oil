@@ -14,6 +14,11 @@
             type: String,
             required: true
         },
+        displayInvestorsNavbar: {
+            type: Boolean,
+            default: false,
+            required: true
+        },
         displayLink: {
             type: Boolean,
             default: false,
@@ -66,6 +71,18 @@
                     />
                 </div>
 
+                <!-- Investor Navbar -->
+                <div v-if="displayInvestorsNavbar"
+                    class="absolute left-0 top-0 flex flex-col w-full h-16 bg-(--white)"
+                >
+                    <div
+                        class="fixed flex flex-col w-9/10 text-yellow-600 max-w-xl mx-auto h-12 shadow-2xl rounded-lg bg-red-900 p-2"
+                    >
+                        kwhkbwkbkkwkw
+                    </div>
+
+                </div>
+
                 <!-- Content Layer -->
                 <div class="absolute bottom-0 w-full h-2/5 max-h-100 backdrop-blur-md rounded-t-2xl shadow-lg flex items-center justify-center"
                 >
@@ -82,13 +99,13 @@
                             {{ title }}
                         </h1>
                         
-                        <p class="text-base md:text-xl text-center text-(--black)">
+                        <p class="text-base md:text-lg lg:text-xl text-center text-(--white)">
                             {{ paragraph }}
                         </p>
 
                         <NuxtLink
                             v-if="displayLink" :to="link"
-                            class="group flex *:flex items-center *:items-center justify-center px-2 lg:px-8 py-2 gap-2 lg:gap-4 w-fit text-(--black) hover:text-(--white) rounded-lg shadow-lg mt-8 border-2 border-(--medium-blue) hover:bg-(--medium-blue) duration-300 ease-in-out transition-all"
+                            class="group flex *:flex items-center *:items-center justify-center px-2 lg:px-8 py-2 gap-2 lg:gap-4 w-fit text-(--white) hover:text-(--black) duration-300 ease-in-out transition-all"
                         >
                             <div class="group relative flex items-center justify-center text-xl w-8 h-full overflow-hidden">
                                 <div class="absolute flex items-center left-2 h-full w-12 transition-all duration-500 ease-in-out group-hover:translate-x-full">
@@ -99,36 +116,10 @@
                                     <Icon name="mdi:arrow-right" />
                                 </div>
                             </div>
-                            <span class="font-semibold text-sm lg:text-lg">{{ linkName }}</span>
+                            <span class="group-hover:underline-text font-semibold text-sm lg:text-lg">{{ linkName }}</span>
                         </NuxtLink>
                     </div>
                 </div>
-
-                <!-- <div class="grid gap-4 max-w-lg w-full mx-auto h-full">
-                        <div class="grid grid-cols-3 gap-4">
-                            <NuxtImg
-                                src="/Logo/Texaco_logo.png"
-                                alt="Texaco Logo's Logo"
-                                loading="lazy"
-                                class="object-cover w-full h-16 lg:h-24"
-                            />
-                            <NuxtImg
-                                src="/Logo/Full_Penn_Petro_Energy_Logo_transparent_bg.png"
-                                alt="Full Penn Petro Energy's Logo"
-                                loading="lazy"
-                                class="object-cover w-full h-16 lg:h-24"
-                            />
-                            <NuxtImg
-                                src="/Logo/Caltext_logo.png"
-                                alt="Caltext Logo"
-                                loading="lazy"
-                                class="object-cover w-full h-16 lg:h-24"
-                            />
-                        </div>
-                        <p class="text-bold text-xl text-center text-(--dark-gray)">Penn Petro Energy's Family of Brands</p>
-                    </div>
-
-            </div> -->
 
             </div>
         </section>

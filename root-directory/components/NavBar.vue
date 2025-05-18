@@ -55,7 +55,7 @@
             <!-- Hamburger Menu -->
             <button
               @click="isMenuOpen = true"
-              class="flex items-center justify-center bg-transparent p-2 text-3xl cursor-pointer duration-300 ease-in-out transition-all"
+              class="flex items-center justify-center bg-transparent p-2 text-2xl cursor-pointer duration-300 ease-in-out transition-all"
               aria-label="Open menu"
               aria-expanded="false"
               aria-controls="mobile-menu"
@@ -68,16 +68,16 @@
               <NuxtImg
                 src="/Logo/Logo_transparent_bg.png"
                 alt="Penn Petro Energy Logo"
-                class="object-cover w-18 h-16"
+                class="object-cover w-12 h-10"
               />
-              <div class="hidden sm:flex items-center justify-center font-bold text-base bg-clip-text text-transparent bg-gradient-to-r from-(--light-blue) to-red-500">
+              <div class="hidden sm:flex items-center justify-center font-bold text-xs bg-clip-text text-transparent bg-gradient-to-r from-(--light-blue) to-red-500">
                 Penn Petro Energy
               </div>
             </NuxtLink>
 
             <button
               @click="toggleSearchBar"
-              class="flex items-center justify-center cursor-pointer duration-300 ease-in-out transition-all bg-transparent text-(--black) text-3xl"
+              class="flex items-center justify-center cursor-pointer duration-300 ease-in-out transition-all bg-transparent text-(--black) text-2xl"
             >
               <Icon name="mdi:search" />
             </button>
@@ -133,7 +133,7 @@
             </button>
 
             <!-- Investors -->
-            <!-- <button
+            <button
               @click="openMobileInvestors"
               class="flex *:flex items-center *:items-center justify-between cursor-pointer hover:text-(--light-blue) transition-transform duration-300 ease-in-out"
             >
@@ -141,15 +141,7 @@
               <span>
                 <Icon name="mdi:chevron-right" />
               </span>
-            </button> -->
-
-            <NuxtLink
-              to="/investors/overview"
-              @click="closeAllMenu"
-              class="flex *:flex items-center *:items-center justify-between hover:text-(--light-blue) duration-300 ease-in-out transition-all"
-            >
-              Investors
-            </NuxtLink>
+            </button>
 
             <!-- Newsroom -->
             <NuxtLink
@@ -504,7 +496,7 @@
 
           <!-- Desktop Nav -->
           <div
-            class="relative hidden lg:flex items-center z-90 justify-between text-base text-(--white) font-normal px-(--section-px-lg) h-(--navbar-h)"
+            class="relative hidden lg:flex items-center z-90 justify-between text-sm text-(--white) font-normal px-(--section-px-lg) h-(--navbar-h)"
           >
             <div class="flex items-center gap-8 *:hover:text-(--white) *:duration-300 *:ease-in-out *:transition-all">
               <NuxtLink
@@ -534,14 +526,14 @@
                 <span class="group-hover:underline-text">Sustainability</span>
               </NuxtLink>
 
-              <!-- <NuxtLink
+              <NuxtLink
                 to="/investors/overview"
                 class="group relative flex duration-500 ease-in transition-all"
                 @mouseenter="openDesktopInvestors"
                 @mouseleave="closeDesktopInvestors"
               >
                 <span class="group-hover:underline-text">Investors</span>
-              </NuxtLink> -->
+              </NuxtLink>
             </div>
 
             <!-- Mobile Logo -->
@@ -549,39 +541,33 @@
               <NuxtImg
                 src="/Logo/Logo_transparent_bg.png"
                 alt="Penn Petro Energy Logo"
-                class="object-cover w-18 h-16"
+                class="object-cover w-12 h-10"
               />
-              <div class="hidden sm:flex items-center justify-center font-bold text-base bg-clip-text text-transparent bg-gradient-to-r from-(--light-blue) to-red-600">
+              <div class="hidden sm:flex items-center justify-center font-bold text-xs bg-clip-text text-transparent bg-gradient-to-r from-(--light-blue) to-red-600">
                 Penn Petro Energy
               </div>
             </NuxtLink>
 
             <!-- Desktop Right Links -->
-            <div class="hidden lg:flex items-center gap-8 *:flex *:hover:text-(--light-blue) *:duration-300 *:ease-in-out *:transition-all">
-              <NuxtLink
-                to="/investors/overview"
-                class="group text-base"
-              >
-                <span class="group-hover:underline-text">Investors</span>
-              </NuxtLink>
+            <div class="hidden lg:flex items-center text-sm gap-8 *:flex *:hover:text-(--light-blue) *:duration-300 *:ease-in-out *:transition-all">
 
               <NuxtLink
                 to="/newsroom"
-                class="group text-base"
+                class="group"
               >
                 <span class="group-hover:underline-text">Newsroom</span>
               </NuxtLink>
 
               <NuxtLink
                 to="/careers"
-                class="group text-base"
+                class="group"
               >
                 <span class="group-hover:underline-text">Careers</span>
               </NuxtLink>
 
               <button
                 @click="toggleSearchBar"
-                class="flex items-center justify-center cursor-pointer duration-300 ease-in-out transition-all bg-transparent text-(--white) text-3xl"
+                class="flex items-center justify-center cursor-pointer duration-300 ease-in-out transition-all bg-transparent text-(--white) text-xl"
               >
                 <Icon name="mdi:search" />
               </button>
