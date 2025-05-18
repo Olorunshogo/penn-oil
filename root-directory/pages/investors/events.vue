@@ -2,27 +2,28 @@
 <script lang="ts" setup>
     import { useHead } from 'nuxt/app';
     useHead({
-        title: 'Penn Petro Energy Investors: Delivering Strong Results',
+        title: 'Investor Events and : Delivering Strong Results',
         titleTemplate: '%s | Penn Petro Energy PLC'
     });
 
     useSeoMeta({
-        title: 'Invest in Penn Petro Energy | Powering the Future of Global Energy',
-        ogTitle: 'Join Penn Petro Energy as an Investor - Shaping the Future of Energy',
-        description: 'Discover investment opportunities with Penn Petro Energy, a global leader in energy innovation and sustainability. Explore our vision, performance, and commitment to a cleaner energy future.',
-        ogDescription: 'Invest in Penn Petro Energy and be part of a company that’s revolutionizing the energy sector with innovative solutions and sustainable practices. A great investment opportunity for a cleaner tomorrow.',
+        title: 'Penn Petro Energy Investor Events | Stay Updated on Our Progress',
+        ogTitle: 'Investor Events - Penn Petro Energy | Join Us at Key Investor Gatherings',
+        description: 'Stay informed about upcoming investor events at Penn Petro Energy. Participate in webinars, conferences, and earnings calls to learn more about our company’s performance and future strategies.',
+        ogDescription: 'Join Penn Petro Energy at upcoming investor events, where we discuss our growth, sustainability initiatives, and market outlook. Stay engaged with our latest developments and strategies for the future of energy.',
         ogImage: '/Logo/Full_Penn_Petro_Energy_Logo.jpg',
-        ogImageAlt: 'Overview of Penn Petro Energy’s global operations and leadership team.',
-        ogUrl: 'https://vercel.com/bom-projects/pen-oil/investor-overview',
+        ogImageAlt: 'An investor event hosted by Penn Petro Energy with key executives speaking to an audience.',
+        ogUrl: 'https://vercel.com/bom-projects/pen-oil/investors/events',
 
         twitterCard: 'summary_large_image',
-        twitterTitle: 'Invest in Penn Petro Energy | Leading the Future of Energy',
-        twitterDescription: 'Explore investment opportunities with Penn Petro Energy, a company committed to advancing sustainable energy solutions. Join us in shaping the future of global energy.',
+        twitterTitle: 'Join Penn Petro Energy Investor Events | Stay Engaged with Our Growth',
+        twitterDescription: 'Get the latest updates and insights at Penn Petro Energy’s investor events. Join us for discussions on our sustainability efforts, energy innovations, and financial outlook.',
         twitterImage: '/Logo/Full_Penn_Petro_Energy_Logo.jpg',
 
-        keywords: 'Penn Petro Energy investment, energy sector investment, clean energy stocks, sustainable energy investment, global energy companies, green energy investment, energy innovation, sustainable energy solutions',
+        keywords: 'Penn Petro Energy investor events, investor webinars, energy investor conferences, Penn Petro earnings calls, energy company updates, sustainable energy events, investor relations, clean energy events',
     });
 
+    // import { investorOverviewHeroImageBg  } from '~/models/heroBgModels';
     import { 
         adjustedEarnings,
         cashFlow,
@@ -56,7 +57,7 @@
                 />
 
                 <!-- Investor Navbar -->
-                <div class="absolute left-0 top-16 sm:top-12 flex flex-col w-full h-fit px-(--section-px) lg:px-(--section-px-lg) bg-transparent z-10">
+                <div class="absolute left-0 top-16 sm:top-12 flex flex-col w-full h-fit px-(--section-px) lg:px-(--section-px-lg) bg-transparent">
                     <div class="flex flex-col w-9/10 lg:w-4/5 max-w-7xl mx-auto h-fit shadow-2xl rounded-lg bg-(--white)">
 
                         <!-- Mobile Screen Investors Nav -->
@@ -1232,21 +1233,21 @@
                     <div class="flex flex-col gap-8 md:gap-12">
                         <h3 class="text-(--dark-blue) text-center text-2xl md:text-3xl font-extrabold">Contacts</h3>
 
-                        <div class="grid sm:grid-cols-2 place-content-center gap-8 w-full h-full p-8">
+                        <div class="grid md:grid-cols-2 gap-8 w-full h-full p-8">
                             
                             <!-- Transfer agent -->
                             <div class="flex flex-col gap-2">
                                 <h4 class="text-(--dark-blue) text-base md:text-lg">Transfer agent</h4>
 
-                                <p class="text-sm text-(--black)">For stockholder correspondence:</p>
+                                <p class="text-xs md:text-sm text-(--black)">For stockholder correspondence:</p>
 
-                                <div class="text-sm text-(--black)">
+                                <div class="text-xs md:text-sm text-(--black)">
                                     <span>Computershare</span> <br>
                                     <span>P.0. Box 43708</span> <br>
                                     <span>Providence, RI 02940-3078</span>
                                 </div>
 
-                                <div class="text-sm text-(--black)">
+                                <div class="text-xs md:text-sm text-(--black)">
                                     <span>Toll free number: +1 800.368.8357</span> <br>
                                     <span>Outside the U.S.: +1 201.680.6578</span>
                                 </div>
@@ -1274,7 +1275,7 @@
                                 <h4 class="text-(--dark-blue) text-base md:text-lg">Investor relations</h4>
 
                                 
-                                <div class="flex flex-col gap-1 text-sm text-(--black)">
+                                <div class="flex flex-col gap-1 text-xs md:text-sm text-(--black)">
                                     <span>Phone: +1 832.854.1000</span>
                                     <NuxtLink 
                                         to="/investors/overview"
@@ -1294,7 +1295,7 @@
                                     </NuxtLink>
                                 </div>
 
-                                <div class="text-sm text-(--black)">
+                                <div class="text-xs md:text-sm text-(--black)">
                                     <span>Jake Spiering, general manager</span> <br>
                                     <span>Serena Fendley, manager</span>
                                 </div>
@@ -1314,30 +1315,6 @@
 </template>
 
 <style lang="css" scoped>
-    /*.image-slider {
-        position: relative;
-        width: 100%;
-        background-size: cover;
-        background-position: center;
-        animation: slideAnimation 12s infinite;
-    }
-
-    /* Define the keyframes for the animation *
-    @keyframes slideAnimation {
-        0% {
-            background-image: url('https://images.pexels.com/photos/7414274/pexels-photo-7414274.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
-        }
-        33% {
-            background-image: url('https://images.pexels.com/photos/7414049/pexels-photo-7414049.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
-        }
-        66% {
-            background-image: url('https://images.pexels.com/photos/7414273/pexels-photo-7414273.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
-        }
-        100% {
-            background-image: url('https://images.pexels.com/photos/7414274/pexels-photo-7414274.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
-        }
-    }
-    */
 
     /* Underline Text */
     .group-hover\:underline-text {

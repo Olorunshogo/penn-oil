@@ -440,7 +440,7 @@
 
               <!-- Events and presentations -->
               <NuxtLink
-                to="/investors/overview"
+                to="/investors/events"
                 @click="closeAllMenu"
                 class="flex *:flex items-center *:items-center justify-between hover:text-(--light-blue) duration-300 ease-in-out transition-all"
               >
@@ -449,7 +449,7 @@
 
               <!--  Corporate governance -->
               <NuxtLink
-                to="/investors/overview"
+                to="/investors/corporate"
                 @click="closeAllMenu"
                 class="flex *:flex items-center *:items-center justify-between hover:text-(--light-blue) duration-300 ease-in-out transition-all"
               >
@@ -458,7 +458,7 @@
 
               <!-- esg a-z index -->
               <NuxtLink
-                to="/investors/overview"
+                to="/investors/esg"
                 @click="closeAllMenu"
                 class="flex *:flex items-center *:items-center justify-between hover:text-(--light-blue) duration-300 ease-in-out transition-all"
               >
@@ -467,7 +467,7 @@
 
               <!-- Reports and fillings -->
               <NuxtLink
-                to="/investors/overview"
+                to="/investors/reports"
                 @click="closeAllMenu"
                 class="flex *:flex items-center *:items-center justify-between hover:text-(--light-blue) duration-300 ease-in-out transition-all"
               >
@@ -476,7 +476,7 @@
 
               <!--  Stock and dividend -->
               <NuxtLink
-                to="/investors/overview"
+                to="/investors/stock"
                 @click="closeAllMenu"
                 class="flex *:flex items-center *:items-center justify-between hover:text-(--light-blue) duration-300 ease-in-out transition-all"
               >
@@ -719,7 +719,7 @@
               <div class="flex flex-col gap-8 max-w-7xl mx-auto">
                 <!-- Events and presentations -->
                 <NuxtLink
-                  to="/investors/overview"
+                  to="/investors/events"
                   class="flex *:flex items-center *:items-center justify-between hover:text-(--light-blue) duration-300 ease-in-out transition-all"
                 >
                   Events and presentations
@@ -727,7 +727,7 @@
 
                 <!--  Corporate governance -->
                 <NuxtLink
-                  to="/investors/overview"
+                  to="/investors/corporate"
                   class="flex *:flex items-center *:items-center justify-between hover:text-(--light-blue) duration-300 ease-in-out transition-all"
                 >
                   Corporate governance
@@ -735,7 +735,7 @@
 
                 <!-- esg a-z index -->
                 <NuxtLink
-                  to="/investors/overview"
+                  to="/investors/esg"
                   class="flex *:flex items-center *:items-center justify-between hover:text-(--light-blue) duration-300 ease-in-out transition-all"
                 >
                   esg a-z index
@@ -743,7 +743,7 @@
 
                 <!-- Reports and fillings -->
                 <NuxtLink
-                  to="/investors/overview"
+                  to="/investors/reports"
                   class="flex *:flex items-center *:items-center justify-between hover:text-(--light-blue) duration-300 ease-in-out transition-all"
                 >
                   Reports and fillings
@@ -751,7 +751,7 @@
 
                 <!--  Stock and dividend -->
                 <NuxtLink
-                  to="/investors/overview"
+                  to="/investors/stock"
                   class="flex *:flex items-center *:items-center justify-between hover:text-(--light-blue) duration-300 ease-in-out transition-all"
                 >
                   Stock and dividend
