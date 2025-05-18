@@ -1,16 +1,18 @@
 
 import { ref, computed } from "vue";
 import { newsComps } from '../models/newsComps';
-// Refs for elements
+// import gsap from "gsap";
+
+// Reactive references
 export const prevRef = ref<HTMLElement | null>(null);
 export const activeRef = ref<HTMLElement | null>(null);
 export const nextRef = ref<HTMLElement | null>(null);
 
-// Reactive states for the carousel
+// Reactive index
 export const activeIndex = ref(0);
 export const direction = ref<'next' | 'prev'>('next');
 
-// Compute previous and next indices
+// Computed previous and next indices
 export const prevIndex = computed(() => {
     return (activeIndex.value - 1 + newsComps.value.length) % newsComps.value.length;
 });
@@ -65,13 +67,13 @@ export const animateSlide = async (dir: 'next' | 'prev') => {
         timeline.add(() => {
             baseNext();
             nextTick();
-            gsap.set(prevRef.value, { xPercent: distance, opacity: 0.7 });
+            gsap.set(prevRef.value, { xPercent: distance, opacity: 0.8 });
             gsap.set(activeRef.value, { xPercent: distance, opacity: 1 });
-            gsap.set(nextRef.value, { xPercent: distance, opacity: 0.7 });
+            gsap.set(nextRef.value, { xPercent: distance, opacity: 0.8 });
 
             gsap.to([prevRef.value, activeRef.value, nextRef.value], {
                 xPercent: 0,
-                opacity: (i, target) => target === activeRef.value ? 1 : 0.7,
+                opacity: (i, target) => target === activeRef.value ? 1 : 0.8,
                 duration,
                 ease,
                 stagger: 0.1,
@@ -86,13 +88,13 @@ export const animateSlide = async (dir: 'next' | 'prev') => {
         timeline.add(() => {
             basePrev();
             nextTick();
-            gsap.set(prevRef.value, { xPercent: -distance, opacity: 0.7 });
+            gsap.set(prevRef.value, { xPercent: -distance, opacity: 0.8 });
             gsap.set(activeRef.value, { xPercent: -distance, opacity: 1 });
-            gsap.set(nextRef.value, { xPercent: -distance, opacity: 0.7 });
+            gsap.set(nextRef.value, { xPercent: -distance, opacity: 0.8 });
 
             gsap.to([prevRef.value, activeRef.value, nextRef.value], {
                 xPercent: 0,
-                opacity: (i, target) => target === activeRef.value ? 1 : 0.7,
+                opacity: (i, target) => target === activeRef.value ? 1 : 0.8,
                 duration,
                 ease,
                 stagger: 0.1,

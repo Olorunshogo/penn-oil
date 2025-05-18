@@ -1,13 +1,13 @@
 
 <script setup lang="ts">
 
-    import { newsComps } from '../models/newsComps';
+    import { investorsHeroSlides } from '~/models/investorsModels';
 
     import {
         prevRef, prevIndex, prevSlide,
         activeRef, activeIndex,        
         nextRef, nextIndex, nextSlide,
-        goTo, animateTransition, animateSlide
+        goTo, animateSlide, animateTransition
     } from '../stores/homeNews'
 
 </script>
@@ -15,35 +15,36 @@
 
 <template>
 
-    <div class="flex flex-col items-center gap-12 w-full">
-        <div class="grid grid-cols-1 sm:flex items-center justify-center gap-4 w-full *:hover:scale-102 *:duration-300 *:ease-in-out *:transition-all">
+    <div class="flex flex-col items-center gap-12 w-full h-full">
+        <!-- Slide container -->
+        <div class="grid grid-cols-1 sm:flex items-center justify-center gap-4 w-full overflow-hidden">
             <!-- Prev item -->
             <div ref="prevRef">
-                <HomeNewsComp
-                    v-if="newsComps.length > 1"
-                    :key="newsComps[prevIndex].id"
-                    v-bind="newsComps[prevIndex]"
-                    class="hidden md:block scale-95 opacity-90 cursor-pointer"
+                <InvestorsNewsComp
+                    v-if="investorsHeroSlides.length > 1"
+                    :key="investorsHeroSlides[prevIndex].id"
+                    v-bind="investorsHeroSlides[prevIndex]"
+                    class="hidden lg:block scale-95 opacity-90 cursor-pointer"
                     @click="goTo(prevIndex)"
                 />
             </div>
 
             <!-- Active item --> 
             <div ref="activeRef">
-                <HomeNewsComp
-                    :key="newsComps[activeIndex].id"
-                    v-bind="newsComps[activeIndex]"  
-                    class="scale-100 z-10"
+                <InvestorsNewsComp
+                :key="investorsHeroSlides[activeIndex].id"
+                v-bind="investorsHeroSlides[activeIndex]"  
+                class="scale-100 z-10"
                 />
             </div>
 
             <!-- Next item -->
             <div ref="nextRef">
-                <HomeNewsComp
-                    v-if="newsComps.length > 2"
-                    :key="newsComps[nextIndex].id"
-                    v-bind="newsComps[nextIndex]"
-                    class="hidden md:block scale-95 opacity-90 cursor-pointer"
+                <InvestorsNewsComp
+                    v-if="investorsHeroSlides.length > 2"
+                    :key="investorsHeroSlides[nextIndex].id"
+                    v-bind="investorsHeroSlides[nextIndex]"
+                    class="hidden sm:block scale-95 opacity-90 cursor-pointer"
                     @click="goTo(nextIndex)"
                 />
             </div>
@@ -61,7 +62,7 @@
             <!-- Pagination -->
             <div class="flex gap-2">
                 <button
-                    v-for="(item, i) in newsComps"
+                    v-for="(item, i) in investorsHeroSlides"
                     :key="item.id"
                     class="pagination-dot"
                     :class="{ 'active-dot': i === activeIndex }"

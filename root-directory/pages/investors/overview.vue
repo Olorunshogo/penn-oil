@@ -33,13 +33,13 @@
             <div class="flex flex-col">
                 <section>      
             
-                    <div class="relative w-screen h-dvh overflow-hidden">
+                    <div class="relative w-screen h-dvh">
 
                         <NuxtImg
-                            src="https://images.pexels.com/photos/7647920/pexels-photo-7647920.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                            src="https://images.pexels.com/photos/7648478/pexels-photo-7648478.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                             alt="Man Wearing Black Corporate Blazer"
                             loading="lazy"
-                            class="h-3/5 lg:hdvh w-full"
+                            class="h-4/5 sm:h-3/5 lg:h-dvh object-cover w-full"
                         />
 
                         <!-- Investor Navbar -->
@@ -163,14 +163,14 @@
                                 </div>
 
                                 <!-- Large Screen Investors Nav -->
-                                <div class="hidden lg:flex flex-col lg:flex-row items-center justify-between px-4 w-full h-10">
+                                <div class="hidden lg:flex flex-col lg:flex-row items-center justify-between px-1 w-full h-10">
                                 
-                                    <NuxtLink
+                                    <!-- <NuxtLink
                                         to="/investors/overview"
                                         class="group flex *:flex items-center *:items-center justify-center px-2 lg:px-8 py-2 gap-2 lg:gap-4 w-fit text-(--black) duration-300 ease-in-out transition-all"
                                     >
                                         <span class="group-hover:underline-text font-bold text-xs lg:text-sm">Investors</span>
-                                    </NuxtLink>
+                                    </NuxtLink> -->
 
                                     <NuxtLink
                                         to="/investors/events"
@@ -249,7 +249,7 @@
                                                 <Icon name="mdi:arrow-right" />
                                             </div>
                                         </div>
-                                        <span class="hidden lg:flex group-hover:underline-text text-sm">Stock info</span>
+                                        <span class="group-hover:underline-text font-semibold text-xs">Stock info</span>
                                     </NuxtLink>
 
                                 </div>
@@ -259,14 +259,21 @@
                         </div>
 
                         <!-- Title -->
-                        <div class="absolute top-2/5 w-full h-fit">
+                        <div class="absolute top-60 lg:top-2/5 w-full h-fit">
                             <div class="flex flex-col items-center justify-center text-center gap-4 w-full max-w-7xl mx-auto">                                
 
-                                <h1 class="text-5xl sm:text-6xl lg:text-8xl xl:text-9xl text-(--white) text-center font-extrabold">
-                                    Investor relations
+                                <h1 class="text-5xl sm:text-6xl lg:text-8xl text-(--white) text-center font-extrabold">
+                                    Investor <br> relations
                                 </h1>
                                 
                             </div>
+                        </div>
+
+                        <!-- Carousel -->
+                        <div class="-mt-30 w-full h-fit">
+                        
+                            <InvestorsLandingCarousel />
+
                         </div>
 
                     </div>
@@ -276,7 +283,7 @@
 
         <!-- Section: 1Q 2025 earnings highlights -->
         <section>
-            <div class="px-(--section-px) lg:px-(--section-px-lg) py-(--section-py) lg:py-(--section-py-lg) bg-(--light-gray)/30 w-full h-full overflow-hidden">
+            <div class="mt-90 px-(--section-px) lg:px-(--section-px-lg) py-(--section-py) lg:py-(--section-py-lg) bg-(--light-gray)/30 w-full h-full overflow-hidden">
                 
                 <div class="flex flex-col gap-20 lg:gap-24 w-full max-w-7xl mx-auto">
 
