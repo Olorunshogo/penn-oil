@@ -8,16 +8,16 @@
         activeRef, activeIndex,        
         nextRef, nextIndex, nextSlide,
         goTo, animateSlide, animateTransition
-    } from '../stores/homeNews'
+    } from '../stores/investorsLandingNews'
 
 </script>
 
 
 <template>
 
-    <div class="flex flex-col items-center gap-12 w-full h-full">
+    <div class="flex flex-col items-center gap-4 sm:gap-8 lg:gap-12 w-full h-full">
         <!-- Slide container -->
-        <div class="grid grid-cols-1 sm:flex items-center justify-center gap-4 w-full overflow-hidden">
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-4 w-full overflow-hidden">
             <!-- Prev item -->
             <div ref="prevRef">
                 <InvestorsNewsComp
@@ -51,7 +51,7 @@
         </div>
 
         <!-- Navigation -->
-        <div class="flex items-center justify-center gap-4">
+        <div class="relative flex items-center justify-center gap-4">
             <button 
                 @click="prevSlide"
                 class="nav-btn"
@@ -101,6 +101,13 @@
         color: var(--black);
         background-color: transparent;
         transition: all 0.5s ease-in-out;
+    }
+
+    @media (max-width: 420px) {
+        .nav-btn {
+            width: 2.5rem;
+            height: 2.5rem;
+        }
     }
 
     

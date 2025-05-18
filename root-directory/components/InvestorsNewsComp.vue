@@ -41,21 +41,21 @@
 
 
 <template>
-    <div class="relative shadow-lg rounded-2xl w-full h-fit max-w-[300px] md:max-w-lg"
+    <div class="relative shadow-lg rounded-2xl w-full h-fit max-w-[300px] lg:max-w-lg"
         :style="{ backgroundColor: bgColor }"
     >
 
-        <div class="flex flex-col md:flex-row p-2 w-full h-70 md:h-60">
+        <div class="flex flex-col lg:flex-row p-2 w-full h-70 lg:h-60">
             <NuxtImg
                 :src="imgSrc"
                 :alt="imgAlt"
-                class="w-full md:w-1/2 h-30 md:h-full object-cover rounded-t-2xl md:rounded-l-2xl"
+                class="w-full lg:w-1/2 h-30 lg:h-full object-cover rounded-t-2xl lg:rounded-l-2xl"
             />
 
             <div class="flex flex-col justify-between gap-4 h-1/2 md:h-full text-(--white) p-4 rounded-b-2xl md:rounded-r-2xl">
                 <div class="flex flex-col gap-2 w-full h-full">
-                    <p class="text-base md:text-lg line-clamp-2 md:line-clamp-3">{{ heading }}</p>
-                    <p class="text-xs md:text-sm">{{ date }}</p>
+                    <p class="text-base line-clamp-2 md:line-clamp-3">{{ heading }}</p>
+                    <p class="text-xs">{{ date }}</p>
                 </div>            
 
                 <NuxtLink

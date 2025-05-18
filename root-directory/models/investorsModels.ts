@@ -86,4 +86,127 @@ export const investorsHeroSlides = ref([
         link: "/newsroom",
         linkName: "View press release"
     },
+]);
+
+export const investorsEventsSlides = ref([
+    
+    // 1. 1Q 2025 Penn Petro Energy earnings conference call
+    {
+        id: 1,
+        bgColor: "var(--dark-blue)",
+        heading: "1Q 2025 Penn Petro Energy earnings conference call",
+        date: "May 02, 2025",
+        link: "/investors/events",
+        linkName: "View event details"
+    },
+
+    // 2. Consolidated previous guidance and company statements
+    {
+        id: 2,
+        bgColor: "var(--dark-orange)",
+        heading: "Consolidated previous guidance and company statements",
+        date: "March 28, 2025",
+        link: "/newsroom",
+        linkName: "Read the press release"
+    },
+
+    // 3. Current investigator presentation
+    {
+        id: 3,
+        bgColor: "var(--dark-teal)",
+        heading: "Current investigator presentation",
+        date: "February 26, 2025",
+        link: "/newsroom",
+        linkName: "Go to page"
+    },
+
+    // 4. 4Q 2024 Penn Petro Energy earnings conference call
+    {
+        id: 4,
+        bgColor: "var(--dark-red)",
+        heading: "4Q 2024 Penn Petro Energy earnings conference call",
+        date: "January 31, 2025",
+        link: "/newsroom",
+        linkName: "View details"
+    },
+
+    // 5. Goldman sachs energy, cleantech & utilities conference
+    {
+        id: 5,
+        bgColor: "var(--dark-purple)",
+        heading: "Goldman sachs energy, cleantech & utilities conference",
+        date: "January 08, 2025",
+        link: "/newsroom",
+        linkName: "View details"
+    },
+
+    // 6. 3Q 2024 Penn Petro Energy earnings conference call
+    {
+        id: 6,
+        bgColor: "var(--dark-green)",
+        heading: "3Q 2024 Penn Petro Energy earnings conference call",
+        date: "November 01, 2024",
+        link: "/newsroom",
+        linkName: "View event details"
+    },
+
+    // 7. 2Q 2024 Penn Petro Energy earnings conference call
+    {
+        id: 7,
+        bgColor: "var(--dark-blue)",
+        heading: "2Q 2024 Penn Petro Energy earnings conference call",
+        date: "August 02, 2023",
+        link: "/newsroom",
+        linkName: "View event details"
+    },
+
+    // 8. 1Q 2024 Penn Petro Energy earnings conference call
+    {
+        id: 8,
+        bgColor: "var(--dark-red)",
+        heading: "1Q 2024 Penn Petro Energy earnings conference call",
+        date: "April 26, 2023",
+        link: "/newsroom",
+        linkName: "View event details"
+    },
+
+    // 9. 4Q 2023 Penn Petro Energy earnings conference call
+    {
+        id: 9,
+        bgColor: "var(--dark-purple)",
+        heading: "4Q 2023 Penn Petro Energy earnings conference call",
+        date: "April 26, 2023",
+        link: "/newsroom",
+        linkName: "View event details"
+    },
+
+    // 10. 3Q 2023 Penn Petro Energy earnings conference call
+    {
+        id: 10,
+        bgColor: "var(--dark-orange)",
+        heading: "3Q 2023 Penn Petro Energy earnings conference call",
+        date: "October 27, 2023",
+        link: "/newsroom",
+        linkName: "View event details"
+    },
+
+    // 11. Penn Petro Energy announces agreement to acquire hess
+    {
+        id: 11,
+        bgColor: "var(--dark-teal)",
+        heading: "Penn Petro Energy announces agreement to acquire hess",
+        date: "October 23, 2023",
+        link: "/newsroom",
+        linkName: "View event details"
+    },
+
+    // 12. 2Q 2023 Penn Petro Energy earnings conference call
+    {
+        id: 12,
+        bgColor: "var(--dark-green)",
+        heading: "2Q 2023 Penn Petro Energy earnings conference call",
+        date: "September 01, 2023",
+        link: "/newsroom",
+        linkName: "View event details"
+    },
 ])

@@ -1,7 +1,7 @@
 
 import { ref, computed } from "vue";
-import { newsComps } from '../models/newsComps';
-// import gsap from "gsap";
+import { investorsHeroSlides } from '~/models/investorsModels';
+import gsap from "gsap";
 
 // Reactive references
 export const prevRef = ref<HTMLElement | null>(null);
@@ -14,10 +14,10 @@ export const direction = ref<'next' | 'prev'>('next');
 
 // Computed previous and next indices
 export const prevIndex = computed(() => {
-    return (activeIndex.value - 1 + newsComps.value.length) % newsComps.value.length;
+    return (activeIndex.value - 1 + investorsHeroSlides.value.length) % investorsHeroSlides.value.length;
 });
 export const nextIndex = computed(() => {
-    return (activeIndex.value + 1) % newsComps.value.length;
+    return (activeIndex.value + 1) % investorsHeroSlides.value.length;
 });
 
 // GSAP Transition Animation Function
@@ -104,8 +104,8 @@ export const animateSlide = async (dir: 'next' | 'prev') => {
 }
 
 // Carousel Navigation Functions
-const baseNext = () => { activeIndex.value = (activeIndex.value + 1) % newsComps.value.length; };
-const basePrev = () => { activeIndex.value = (activeIndex.value - 1 + newsComps.value.length) % newsComps.value.length; };
+const baseNext = () => { activeIndex.value = (activeIndex.value + 1) % investorsHeroSlides.value.length; };
+const basePrev = () => { activeIndex.value = (activeIndex.value - 1 + investorsHeroSlides.value.length) % investorsHeroSlides.value.length; };
 const baseGoTo = (index: number) => { activeIndex.value = index; };
 
 export const prevSlide = async () => {

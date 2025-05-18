@@ -46,8 +46,8 @@
             />
 
             <div class="flex flex-col gap-4 h-60 text-(--white) bg-(--medium-blue) p-4 rounded-b-2xl">
-                <p class="text-lg">{{ date }}</p>
-                <p class="text-xl">{{ description }}</p>
+                <p class="text-sm lg:text-base">{{ date }}</p>
+                <p class="text-lg lg:text-xl">{{ description }}</p>
             
 
                 <NuxtLink
@@ -77,6 +77,6 @@
     </div>
 </template>
 
-<style scoped lang="ts">
+<style scoped lang="css">
     
 </style>
