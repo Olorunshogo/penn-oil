@@ -225,8 +225,15 @@ export const sustainabilitySocialHeroImageBg = ref({
 
 // Investors Overview
 export const investorOverviewHeroImageBg = ref({    
-    imgSrc: "https://images.pexels.com/photos/6150527/pexels-photo-6150527.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    imgAlt: "Man in Sweatshirt In Front of People",
+    imgSrc: "https://images.pexels.com/photos/7647920/pexels-photo-7647920.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    imgAlt: "Man Wearing Black Corporate Blazer",
+
+    // imgSrc: "https://images.pexels.com/photos/7648478/pexels-photo-7648478.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    // imgAlt: "A Speaker in a Formal Wear",
+
+    // imgSrc: "https://images.pexels.com/photos/6476783/pexels-photo-6476783.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    // imgAlt: "A Woman in Red Long Sleeve Shirt",
+
     category: "",
     title: "Investor relations",
     titleBgImageSrc: "https://images.pexels.com/photos/6150527/pexels-photo-6150527.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
