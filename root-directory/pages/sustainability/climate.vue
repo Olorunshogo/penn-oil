@@ -43,6 +43,7 @@
             <HeroSectionImageBg
                 :imgSrc="sustainabilityClimateHeroImageBg.imgSrc"
                 :imgAlt="sustainabilityClimateHeroImageBg.imgAlt"
+                :displayInvestorsNavbar="sustainabilityClimateHeroImageBg.displayInvestorsNavbar"
                 :category="sustainabilityClimateHeroImageBg.category"
                 :title="sustainabilityClimateHeroImageBg.title"
                 :titleBgImageSrc="sustainabilityClimateHeroImageBg.titleBgImageSrc"

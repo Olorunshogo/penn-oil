@@ -41,6 +41,7 @@
             <HeroSectionImageBg
                 :imgSrc="sustainabilitySocialHeroImageBg.imgSrc"
                 :imgAlt="sustainabilitySocialHeroImageBg.imgAlt"
+                :displayInvestorsNavbar="sustainabilitySocialHeroImageBg.displayInvestorsNavbar"
                 :category="sustainabilitySocialHeroImageBg.category"
                 :title="sustainabilitySocialHeroImageBg.title"
                 :titleBgImageSrc="sustainabilitySocialHeroImageBg.titleBgImageSrc"

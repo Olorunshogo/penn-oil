@@ -37,6 +37,7 @@
             <HeroSectionImageBg
                 :imgSrc="whoBrandsHeroImageBg.imgSrc"
                 :imgAlt="whoBrandsHeroImageBg.imgAlt"
+                :displayInvestorsNavbar="whoBrandsHeroImageBg.displayInvestorsNavbar"
                 :category="whoBrandsHeroImageBg.category"
                 :title="whoBrandsHeroImageBg.title"
                 :titleBgImageSrc="whoBrandsHeroImageBg.titleBgImageSrc"
