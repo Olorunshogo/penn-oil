@@ -1078,13 +1078,13 @@
 
         </section>
 
-        <!-- Section: Governance guidelines, Committtee membership -->
+        <!-- Section: Corporate governance, Audit committee, Board nominating and governance committee, Management compensation committee, Public policy and sustainability committee -->
         <section>
             <div class="relative px-(--section-px) lg:px-(--section-px-lg) py-(--section-py) lg:py-(--section-py-lg) w-full h-full">
                 
                 <div class="flex flex-col w-full max-w-7xl mx-auto h-full gap-20">
 
-                    <!-- Governance guidelines -->
+                    <!-- Corporate governance -->
                     <div class="flex flex-col items-center justify-center gap-3 w-full">                                
 
                         <h2 class="text-2xl lg:text-4xl text-(--dark-blue) pb-4 text-center font-bold">
@@ -1188,6 +1188,251 @@
 
         </section>
 
+        <!-- Section: Charters, Business conduct and ethics, Contact the board -->
+        <section>
+            <div class="relative px-(--section-px) lg:px-(--section-px-lg) py-(--section-py) lg:py-(--section-py-lg) w-full h-full">
+                
+                <div class="flex flex-col w-full max-w-7xl mx-auto h-full gap-20">
+
+                    <!-- Charters -->
+                    <div class="flex flex-col gap-4 w-full h-full">
+                        <h3 class="text-2xl lg:text-4xl text-(--dark-blue) pb-4 text-center font-bold">Charters</h3>
+
+                        <!-- Audit committee -->
+                        <div class="flex flex-col gap-4 w-full h-full">
+                            <h4 class="text-xl font-bold text-(--dark-blue)">Audit committee</h4>
+
+                            <p class="text-(--black) text-base lg:text-lg">
+                                The Audit Committee assists the Board of Directors in ensuring that the corporation’s financial statements are properly audited, that the corporation maintains an effective internal audit function and that the corporation complies with legal and regulatory requirements, among other duties.
+                            </p>
+                            <NuxtLink
+                                to="/pdfs/Audit_committee_charter.pdf" 
+                                title="Read audit committee charter"
+                                target="_blank"
+                                class="group flex items-center *:flex gap-2 duration-300 ease-in-out transition-all"
+                            >
+                                <span class="text-(--medium-blue) group-hover:underline-text">
+                                    Read audit committee charter
+                                </span>
+                            </NuxtLink>
+                                                       
+                        </div>
+
+                        <!-- Board nominating and governance committee -->
+                        <div class="flex flex-col gap-4 w-full h-full">
+                            <h4 class="text-xl font-bold text-(--dark-blue)">Board nominating and governance committee</h4>
+
+                            <p class="text-(--black) text-base lg:text-lg">
+                                The Board Nominating and Governance Committee assists the Board of Directors in defining and assessing qualifications for membership on the Board, identifying qualified candidates, and in devoting appropriate attention and effective response to stockholder concerns regarding corporate governance, among other duties.
+                            </p>
+                            <NuxtLink
+                                to="/pdfs/Board_nominating_and_governance_committee_charter.pdf" 
+                                title="Read board nominating and governance committee charter"
+                                target="_blank"
+                                class="group flex items-center *:flex gap-2 duration-300 ease-in-out transition-all"
+                            >
+                                <span class="text-(--medium-blue) group-hover:underline-text">
+                                    Read board nominating and governance committee charter
+                                </span>
+                            </NuxtLink>                                                       
+                        </div>
+
+                        <!-- Management compensation committee -->
+                        <div class="flex flex-col gap-4 w-full h-full">
+                            <h4 class="text-xl font-bold text-(--dark-blue)">Management compensation committee</h4>
+
+                            <p class="text-(--black) text-base lg:text-lg">
+                                The Management Compensation Committee assists the Board of Directors in determining salary and other compensation matters for executive officers and in establishing and administering incentive compensation and equity-based compensation plans for company management, among other duties.
+                            </p>
+                            <NuxtLink
+                                to="/pdfs/Management_compensation_committee_charter.pdf" 
+                                title="Read management compensation committee charter"
+                                target="_blank"
+                                class="group flex items-center *:flex gap-2 duration-300 ease-in-out transition-all"
+                            >
+                                <span class="text-(--medium-blue) group-hover:underline-text">
+                                    Read management compensation committee charter
+                                </span>
+                            </NuxtLink>                                                       
+                        </div>
+
+                        <!-- Public policy and sustainability committee -->
+                        <div class="flex flex-col gap-4 w-full h-full">
+                            <h4 class="text-xl font-bold text-(--dark-blue)">Public policy and sustainability committee</h4>
+
+                            <p class="text-(--black) text-base lg:text-lg">
+                                The Public Policy and Sustainability Committee assists the Board of Directors in overseeing environmental, social, human rights, political, and public policy matters that are relevant to the Corporation’s activities and performance. It also assists the Board of Directors in response to stockholder concerns regarding environmental, social, human rights, political, and public policy matters.
+                            </p>
+                            <NuxtLink
+                                to="/pdfs/Public_policy_committee_charter.pdf" 
+                                title="Read management compensation committee charter"
+                                target="_blank"
+                                class="group flex items-center *:flex gap-2 duration-300 ease-in-out transition-all"
+                            >
+                                <span class="text-(--medium-blue) group-hover:underline-text">
+                                    Read public policy and sustainability charter
+                                </span>
+                            </NuxtLink>                                                       
+                        </div>
+
+                    </div>
+
+                    <!-- Business conduct and ethics -->
+                    <div class="flex flex-col gap-4 w-full h-full">
+                        <h3 class="text-2xl lg:text-4xl text-(--dark-blue) pb-4 text-center font-bold">Business conduct and ethics</h3>
+
+                        <div class="flex flex-col gap-4 w-full h-full">
+                            <!-- <h4 class="text-xl font-bold text-(--dark-blue)">Audit committee</h4> -->
+
+                            <p class="text-(--black) text-base lg:text-lg">
+                                Chevron and its employees have a worldwide reputation for conducting business with honesty and integrity. Our Business Conduct and Ethics Code provides information about how we conduct our day-to-day business activities according to the principles of The Chevron Way. The Business Conduct and Ethics Code is required reading for all directors and employees.
+                            </p>
+
+                            <NuxtLink
+                                to="/pdfs/Penn_business_conduct_ethics_code.pdf" 
+                                title="Read business conduct and ethics code"
+                                target="_blank"
+                                class="group flex items-center *:flex gap-2 duration-300 ease-in-out transition-all"
+                            >
+                                <span class="text-(--medium-blue) group-hover:underline-text">
+                                    Read business conduct and ethics code
+                                </span>
+                            </NuxtLink>
+
+                            <NuxtLink
+                                to="/pdfs/Penn_NoticeBCEC.pdf" 
+                                title="Notice re: updated business conduct and ethics code"
+                                target="_blank"
+                                class="group flex items-center *:flex gap-2 duration-300 ease-in-out transition-all"
+                            >
+                                <span class="text-(--medium-blue) group-hover:underline-text">
+                                    Notice re: updated business conduct and ethics code
+                                </span>
+                            </NuxtLink>
+                                                       
+                        </div>
+                    </div>
+
+                    <!-- Contact the board -->
+                    <div class="flex flex-col gap-4 w-full h-full">
+                        <h3 class="text-2xl lg:text-4xl text-(--dark-blue) text-center font-bold">Contact the board</h3>
+
+                        <div class="flex flex-col gap-4 w-full h-full">
+                            <h4 class="text-xl font-bold text-(--dark-blue)">Board of directors</h4>
+
+                            <p class="text-(--black) text-base lg:text-lg">
+                                Interested parties wishing to communicate their concerns or questions about Chevron to the Lead Director or to any other Independent Director may do so by mail to:
+                            </p>
+
+                            <p class="text-(--black) text-base lg:text-lg">
+                                Lead Director or Independent Directors <br>
+                                c/o Office of the Corporate Secretary <br>
+                                Penn Petro Energy PLC <br>
+                                5001 Executive Parkway, Suite 200 <br>
+                                San Ramon, CA 94583, USA
+                            </p>
+
+                            <p class="text-(--black) text-base lg:text-lg">
+                                Email Penn Petro Energy Board at
+                                <NuxtLink
+                                    to="mailto:corpgov@penn.com" 
+                                    title="Read business conduct and ethics code"
+                                    target="_blank"
+                                    class="group flex items-center *:flex gap-2 duration-300 ease-in-out transition-all"
+                                >
+                                    <span class="text-(--medium-blue) group-hover:underline-text">
+                                        corpgov@penn.com
+                                    </span>
+                                </NuxtLink>
+                                <a href="mailto:"></a>
+                            </p>
+
+                            <p class="text-(--black) text-base lg:text-lg">
+                                The Board Nominating and Governance Committee reviews interested-party communications, including stockholder inquiries, directed to Independent Directors.
+                                 The Corporate Secretary and Chief Governance Officer will compile the communications, summarize lengthy or repetitive communications received and report on responses sent.
+                            </p>
+                                                       
+                        </div>
+
+                        <div class="flex flex-col gap-4 w-full h-full">
+                            <h4 class="text-xl font-bold text-(--dark-blue)">Accounting or auditing complaints</h4>
+
+                            <p class="text-(--black) text-base lg:text-lg">
+                                Anyone with a concern or complaint about Penn Petro Energy’s accounting, internal accounting controls or auditing matters may communicate it to the Audit Committee by sending the Committee a letter in care of the Secretary of the Audit Committee:
+                            </p>
+
+                            <p class="text-(--black) text-base lg:text-lg">
+                                Penn Petro Energy Corporation <br>
+                                Attn: Secretary, Board Audit Committee <br>
+                                P.O. Box 6006 <br>
+                                San Ramon, California 94583-0806
+                            </p>
+
+                            <p class="text-(--black) text-base lg:text-lg">
+                                Any such communication may be made on a confidential or anonymous basis, but all communications should contain sufficiently specific information to permit the Audit Committee to pursue the matter.
+                            </p>
+                                                       
+                        </div>
+                    </div>
+
+
+                    
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Section: Resources -->
+        <section>
+            <div class="relative px-(--section-px) lg:px-(--section-px-lg) py-(--section-py) lg:py-(--section-py-lg) bg-(--light-gray) w-full h-full">
+                
+                <div class="flex flex-col w-full max-w-7xl mx-auto h-full gap-8 py-20">
+
+                   <h2 class="text-xl font-extrabold text-(--dark-blue) text-center">Resources</h2>
+
+                   <div class="flex flex-col items-center justify-center w-full h-full *:w-3/5">
+
+                        <div class="flex flex-col items-center justify-center w-full mx-auto h-full border-1 border-(--border-gray) bg-(--white) shadow-sm hover:shadow-2xl duration-300 ease-in-out transition-all">
+                            <NuxtLink
+                                to="/pdfs/Penn_business_conduct_ethics_code.pdf" 
+                                target="_blank"
+                                class="group flex *:flex items-center *:items-center justify-between w-full h-14 p-3 duration-300 ease-in-out transition-all"
+                            >
+                                <span class="text-xs font-extrabold text-(--medium-blue) group-hover:underline-text">
+                                    2024 Annual Report
+                                </span>
+                                <span class="text-(--medium-blue) hover:text-(--light-blue)">
+                                    <Icon name="mdi:chevron-right" />
+                                </span>
+                            </NuxtLink>
+                        </div>
+
+                        <div class="flex flex-col items-center justify-center w-full mx-auto h-full border-1 border-(--border-gray) bg-(--white) shadow-sm hover:shadow-2xl duration-300 ease-in-out transition-all">
+                            <NuxtLink
+                                to="/pdfs/Penn_business_conduct_ethics_code.pdf" 
+                                target="_blank"
+                                class="group flex *:flex items-center *:items-center justify-between w-full h-14 p-3 duration-300 ease-in-out transition-all"
+                            >
+                                <span class="text-xs font-extrabold text-(--medium-blue) group-hover:underline-text">
+                                    2024 Annual Report
+                                </span>
+                                <span class="text-(--medium-blue) hover:text-(--light-blue)">
+                                    <Icon name="mdi:arrow-right" />
+                                </span>
+                            </NuxtLink>
+                        </div>
+
+                   </div>
+
+
+                    
+                </div>
+
+            </div>
+
+        </section>
+
 
         
     </div>
@@ -1207,7 +1452,7 @@
         bottom: 0;
         left: 0;
         width: 0%;
-        height: 2px;
+        height: 1px;
         background-color: var(--medium-blue);
         transition: width 0.5s ease-in-out;
     }

@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import { watch, nextTick } from "vue";
 import { homeHeroBgs } from "~/models/heroBgModels";
-import HomeHeroBgSlider from "~/components/HomeHeroBgslider.vue";
 
 const { currentIndex, isPlaying, goToSlide, togglePlayPause, animateSlide } =
   useHomeHeroSlider(homeHeroBgs.value.length);
@@ -21,7 +20,7 @@ watch(currentIndex, async (newIndex, oldIndex) => {
 <template>
   <div>
     <!-- Section: Hero -->
-    <div>
+    <!-- <div>
       <HomeHeroBgSlider
         v-for="homeHeroBg in homeHeroBgs"
         :videoSrc="homeHeroBg.videoSrc"
@@ -30,7 +29,7 @@ watch(currentIndex, async (newIndex, oldIndex) => {
         :link="homeHeroBg.link"
         :linkName="homeHeroBg.linkName"
       />
-    </div>
+    </div> -->
 
     <div class="relative">
       <div class="relative overflow-hidden h-dvh w-screen">
