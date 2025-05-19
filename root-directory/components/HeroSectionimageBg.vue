@@ -14,11 +14,6 @@
             type: String,
             required: true
         },
-        displayInvestorsNavbar: {
-            type: Boolean,
-            default: false,
-            required: true
-        },
         displayLink: {
             type: Boolean,
             default: false,
@@ -69,18 +64,6 @@
                         loading="lazy"
                         class="bg"
                     />
-                </div>
-
-                <!-- Investor Navbar -->
-                <div v-if="displayInvestorsNavbar"
-                    class="absolute left-0 top-0 flex flex-col w-full h-16 bg-(--white)"
-                >
-                    <div
-                        class="fixed flex flex-col w-9/10 text-yellow-600 max-w-xl mx-auto h-12 shadow-2xl rounded-lg bg-red-900 p-2"
-                    >
-                        kwhkbwkbkkwkw
-                    </div>
-
                 </div>
 
                 <!-- Content Layer -->

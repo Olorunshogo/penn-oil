@@ -97,7 +97,7 @@ export const whoCultureHeroVideoBg = ref({
 // Who Brands
 export const whoBrandsHeroImageBg = ref({    
     imgSrc: "https://images.pexels.com/photos/8960944/pexels-photo-8960944.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    imgAlt: "Woman in White Hardhat Holding Silver Touchscreen Device",
+    imgAlt: "Woman in White Hat Holding Silver Touchscreen Device",
     category: "Who we are",
     title: "Our brands",
     titleBgImageSrc: "https://images.pexels.com/photos/8960944/pexels-photo-8960944.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",

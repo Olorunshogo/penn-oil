@@ -2,7 +2,7 @@
 <script lang="ts" setup>
     import { useHead } from 'nuxt/app';
     useHead({
-        title: 'Investor Events and : Delivering Strong Results',
+        title: 'Investor Events and Presentatios: Penn Petro Energy PLC',
         titleTemplate: '%s | Penn Petro Energy PLC'
     });
 
@@ -23,16 +23,6 @@
         keywords: 'Penn Petro Energy investor events, investor webinars, energy investor conferences, Penn Petro earnings calls, energy company updates, sustainable energy events, investor relations, clean energy events',
     });
 
-    // import { investorOverviewHeroImageBg  } from '~/models/heroBgModels';
-    import { 
-        adjustedEarnings,
-        cashFlow,
-        netDebt,
-        oilEquivalent,
-        returnOnCapital,
-        shareholdersDistributions
-    } from '~/stores/investoresVariables';
-
     const openInvestorsNav = ref<boolean>(false);
     function toggleInvestorNavLinks() {
         openInvestorsNav.value = !openInvestorsNav.value;
@@ -43,30 +33,23 @@
 
 
 <template>
-    <div class="w-full h-full bg-(--light-gray)/30">
+    <div class="w-full h-full bg-white">
 
         <!-- Section: Hero -->
         <section>   
-            <div class="relative w-screen h-dvh">
-
-                <NuxtImg
-                    src="https://images.pexels.com/photos/7648478/pexels-photo-7648478.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                    alt="Man Wearing Black Corporate Blazer"
-                    loading="lazy"
-                    class="h-4/5 sm:h-3/5 lg:h-dvh object-cover w-full"
-                />
+            <div class="relative w-screen min-h-150 h-full">
 
                 <!-- Investor Navbar -->
-                <div class="absolute left-0 top-16 sm:top-12 flex flex-col w-full h-fit px-(--section-px) lg:px-(--section-px-lg) bg-transparent">
-                    <div class="flex flex-col w-9/10 lg:w-4/5 max-w-7xl mx-auto h-fit shadow-2xl rounded-lg bg-(--white)">
+                <div class="relative left-0 top-16 sm:top-12 flex flex-col w-full h-fit px-(--section-px) lg:px-(--section-px-lg) bg-transparent z-10">
+                    <div class="flex flex-col w-9/10 lg:w-4/5 max-w-7xl mx-auto h-fit shadow-2xl rounded-lg bg-(--dark-blue)">
 
                         <!-- Mobile Screen Investors Nav -->
                         <div class="flex lg:hidden flex-col lg:flex-row justify-between px-4 w-full">
                         
-                            <div class="flex items-center justify-between w-full h-10">
+                            <div class="flex items-center justify-between w-full h-10 *:text-(--white)">
                                 <NuxtLink
                                     to="/investors/overview"
-                                    class="group flex *:flex items-center *:items-center justify-center px-2 lg:px-8 py-2 gap-2 lg:gap-4 w-fit text-(--black) duration-300 ease-in-out transition-all"
+                                    class="group flex *:flex items-center *:items-center justify-center px-2 lg:px-8 py-2 gap-2 lg:gap-4 w-fit text-(--white) duration-300 ease-in-out transition-all"
                                 >
                                     <span class="group-hover:underline-text font-bold text-xs lg:text-sm">Investors</span>
                                 </NuxtLink>
@@ -92,7 +75,7 @@
                                     >
                                         <NuxtLink
                                             to="/investors/events"
-                                            class="group flex *:flex items-center *:items-center justify-center px-2 lg:px-8 py-3 gap-2 lg:gap-4 text-(--black) border-b-1 border-(--light-gray) w-full duration-300 ease-in-out transition-all"
+                                            class="group flex *:flex items-center *:items-center justify-center px-2 lg:px-8 py-3 gap-2 lg:gap-4 text-(--white) border-b-1 border-(--light-gray) w-full duration-300 ease-in-out transition-all"
                                         >
                                             <div class="group relative flex items-center justify-center text-lg w-8 h-full overflow-hidden">
                                                 <div class="absolute flex items-center left-2 h-full w-12 transition-all duration-500 ease-in-out group-hover:translate-x-full">
@@ -108,7 +91,7 @@
 
                                         <NuxtLink
                                             to="/investors/corporate"
-                                            class="group flex *:flex items-center *:items-center justify-center px-2 lg:px-8 py-3 gap-2 lg:gap-4 text-(--black) border-b-1 border-(--light-gray) w-full duration-300 ease-in-out transition-all"
+                                            class="group flex *:flex items-center *:items-center justify-center px-2 lg:px-8 py-3 gap-2 lg:gap-4 text-(--white) border-b-1 border-(--light-gray) w-full duration-300 ease-in-out transition-all"
                                         >
                                             <div class="group relative flex items-center justify-center text-lg w-8 h-full overflow-hidden">
                                                 <div class="absolute flex items-center left-2 h-full w-12 transition-all duration-500 ease-in-out group-hover:translate-x-full">
@@ -124,7 +107,7 @@
 
                                         <NuxtLink
                                             to="/investors/esg"
-                                            class="group flex *:flex items-center *:items-center justify-center px-2 lg:px-8 py-3 gap-2 lg:gap-4 text-(--black) border-b-1 border-(--light-gray) w-full duration-300 ease-in-out transition-all"
+                                            class="group flex *:flex items-center *:items-center justify-center px-2 lg:px-8 py-3 gap-2 lg:gap-4 text-(--white) border-b-1 border-(--light-gray) w-full duration-300 ease-in-out transition-all"
                                         >
                                             <div class="group relative flex items-center justify-center text-lg w-8 h-full overflow-hidden">
                                                 <div class="absolute flex items-center left-2 h-full w-12 transition-all duration-500 ease-in-out group-hover:translate-x-full">
@@ -140,7 +123,7 @@
 
                                         <NuxtLink
                                             to="/investors/reports"
-                                            class="group flex *:flex items-center *:items-center justify-center px-2 lg:px-8 py-3 gap-2 lg:gap-4 text-(--black) border-b-1 border-(--light-gray) w-full duration-300 ease-in-out transition-all"
+                                            class="group flex *:flex items-center *:items-center justify-center px-2 lg:px-8 py-3 gap-2 lg:gap-4 text-(--white) border-b-1 border-(--light-gray) w-full duration-300 ease-in-out transition-all"
                                         >
                                             <div class="group relative flex items-center justify-center text-lg w-8 h-full overflow-hidden">
                                                 <div class="absolute flex items-center left-2 h-full w-12 transition-all duration-500 ease-in-out group-hover:translate-x-full">
@@ -156,7 +139,7 @@
 
                                         <NuxtLink
                                             to="/investors/stock"
-                                            class="group flex *:flex items-center *:items-center justify-center px-2 lg:px-8 py-3 gap-2 lg:gap-4 text-(--black) border-b-1 border-(--light-gray) w-full duration-300 ease-in-out transition-all"
+                                            class="group flex *:flex items-center *:items-center justify-center px-2 lg:px-8 py-3 gap-2 lg:gap-4 text-(--white) border-b-1 border-(--light-gray) w-full duration-300 ease-in-out transition-all"
                                         >
                                             <div class="group relative flex items-center justify-center text-lg w-8 h-full overflow-hidden">
                                                 <div class="absolute flex items-center left-2 h-full w-12 transition-all duration-500 ease-in-out group-hover:translate-x-full">
@@ -188,7 +171,7 @@
 
                             <NuxtLink
                                 to="/investors/events"
-                                class="group hidden lg:flex *:flex items-center *:items-center justify-center px-2 lg:px-8 py-3 gap-2 lg:gap-4 text-(--black) w-fit duration-300 ease-in-out transition-all"
+                                class="group hidden lg:flex *:flex items-center *:items-center justify-center px-2 lg:px-8 py-3 gap-2 lg:gap-4 text-(--white) w-fit duration-300 ease-in-out transition-all"
                             >
                                 <div class="group relative flex items-center justify-center text-lg w-8 h-full overflow-hidden">
                                     <div class="absolute flex items-center left-2 h-full w-12 transition-all duration-500 ease-in-out group-hover:translate-x-full">
@@ -204,7 +187,7 @@
 
                             <NuxtLink
                                 to="/investors/corporate"
-                                class="group hidden lg:flex *:flex items-center *:items-center justify-center px-2 lg:px-8 py-3 gap-2 lg:gap-4 text-(--black) w-fit duration-300 ease-in-out transition-all"
+                                class="group hidden lg:flex *:flex items-center *:items-center justify-center px-2 lg:px-8 py-3 gap-2 lg:gap-4 text-(--white) w-fit duration-300 ease-in-out transition-all"
                             >
                                 <div class="group relative flex items-center justify-center text-lg w-8 h-full overflow-hidden">
                                     <div class="absolute flex items-center left-2 h-full w-12 transition-all duration-500 ease-in-out group-hover:translate-x-full">
@@ -220,7 +203,7 @@
 
                             <NuxtLink
                                 to="/investors/esg"
-                                class="group hidden lg:flex *:flex items-center *:items-center justify-center px-2 lg:px-8 py-3 gap-2 lg:gap-4 text-(--black) w-fit duration-300 ease-in-out transition-all"
+                                class="group hidden lg:flex *:flex items-center *:items-center justify-center px-2 lg:px-8 py-3 gap-2 lg:gap-4 text-(--white) w-fit duration-300 ease-in-out transition-all"
                             >
                                 <div class="group relative flex items-center justify-center text-lg w-8 h-full overflow-hidden">
                                     <div class="absolute flex items-center left-2 h-full w-12 transition-all duration-500 ease-in-out group-hover:translate-x-full">
@@ -236,7 +219,7 @@
 
                             <NuxtLink
                                 to="/investors/reports"
-                                class="group hidden lg:flex *:flex items-center *:items-center justify-center px-2 lg:px-8 py-3 gap-2 lg:gap-4 text-(--black) w-fit duration-300 ease-in-out transition-all"
+                                class="group hidden lg:flex *:flex items-center *:items-center justify-center px-2 lg:px-8 py-3 gap-2 lg:gap-4 text-(--white) w-fit duration-300 ease-in-out transition-all"
                             >
                                 <div class="group relative flex items-center justify-center text-lg w-8 h-full overflow-hidden">
                                     <div class="absolute flex items-center left-2 h-full w-12 transition-all duration-500 ease-in-out group-hover:translate-x-full">
@@ -252,7 +235,7 @@
 
                             <NuxtLink
                                 to="/investors/stock"
-                                class="group hidden lg:flex *:flex items-center *:items-center justify-center px-2 lg:px-8 py-3 gap-2 lg:gap-4 text-(--black) w-fit duration-300 ease-in-out transition-all"
+                                class="group hidden lg:flex *:flex items-center *:items-center justify-center px-2 lg:px-8 py-3 gap-2 lg:gap-4 text-(--white) w-fit duration-300 ease-in-out transition-all"
                             >
                                 <div class="group relative flex items-center justify-center text-lg w-8 h-full overflow-hidden">
                                     <div class="absolute flex items-center left-2 h-full w-12 transition-all duration-500 ease-in-out group-hover:translate-x-full">
@@ -272,626 +255,43 @@
 
                 </div>
 
-                <!-- Title -->
-                <div class="absolute top-60 sm:top-42 lg:top-2/5 w-full h-fit">
-                    <div class="flex flex-col items-center justify-center text-center gap-4 w-full max-w-7xl mx-auto">                                
+                <div class="absolute top-30 pb-20 w-full h-fit">
+                    
+                    <div class="flex flex-col items-center justify-center gap-24 lg:gap-32 w-full h-full max-w-7xl mx-auto px-(--section-px) lg:px-(--section-px-lg) py-(--section-py) lg:py-(--section-py-lg)">
 
-                        <h1 class="text-5xl sm:text-6xl lg:text-8xl text-(--white) text-center font-extrabold">
-                            Investor <br> relations
-                        </h1>
-                        
-                    </div>
-                </div>
+                        <div class="flex flex-col items-center justify-center text-center gap-6 w-full max-w-7xl mx-auto">                                
 
-                <!-- Investors Landing Carousel -->
-                <div class="flex items-center justify-center mx-auto -mt-30 w-full">
-                
-                    <div class="relative left-6 flex items-center justify-center w-full h-full mx-auto">
-                        <InvestorsLandingCarousel />
-                    </div>
+                            <h1 class="text-5xl sm:text-6xl lg:text-8xl text-(--dark-blue) text-center font-extrabold">
+                                Events and <br> presentations
+                            </h1>
 
-                </div>
-
-            </div>
-        </section>
-
-        <!-- Section: 1Q 2025 earnings highlights -->
-        <section>
-            <div class="relative mt-40 sm:mt-0 md:-mt-10 lg:mt-60 px-(--section-px) lg:px-(--section-px-lg) py-(--section-py) lg:py-(--section-py-lg) w-full h-full overflow-hidden">
-                
-                <div class="flex flex-col gap-20 lg:gap-24 w-full max-w-7xl mx-auto">
-
-                    <div class="flex flex-col items-center justify-center gap-2 lg:gap-4">
-                        <h2 
-                            class="text-xl sm:text-2xl lg:text-4xl text-(--dark-blue) text-wrap text-center font-extrabold cursor-text w-full h-full overflow-hidden"
-                        >
-                            1Q 2025 earnings highlights
-                        </h2>
-
-                        <!-- Read all news and press releases -->
-                        <NuxtLink 
-                            to="/investors/events"
-                            class="group flex *:flex items-center justify-center p-2 gap-4 text-center w-fit mx-auto text-(--black) hover:text-(--white) bg-transparent hover:bg-(--medium-blue) shadow-lg rounded-lg border-1 border-(--medium-blue) duration-300 ease-in-out transition-all"
-                        >
-                            <div class="group relative flex items-center justify-center text-xl w-8 h-full overflow-hidden">
-                                <div class="absolute flex items-center left-2 h-full w-12 transition-all duration-500 ease-in-out group-hover:translate-x-full">
-                                    <Icon name="mdi:arrow-right"/>
-                                </div>
-                                
-                                <div class="absolute flex items-center left-2 h-full w-12 -translate-x-full transition-all duration-500 ease-in-out group-hover:translate-x-0">
-                                    <Icon name="mdi:arrow-right" />
-                                </div>
-                            </div>
-
-                            <span class="font-extrabold text-xs text-center">See our latest results</span>
-                        </NuxtLink>
-                        
-                    </div> 
-
-                    <div class="flex flex-col md:flex-row  gap-8 *:w-9/10 *:md:w-1/2 w-full h-full">
-                        
-                        <!-- Supporting materials -->
-                        <div class="flex flex-col h-full px-4">
-                            <h3 class="font-bold text-sm text-(--black)">Supporting materials</h3>
-
-                            <div class="flex flex-col w-full *:w-full">
-
-                                <NuxtLink 
-                                    to="/newsroom" title="2015 1Q Earnings Release"
-                                    class="group flex items-center justify-between gap-4 py-4 text-(--black) border-b-1 border-(--border-gray) duration-300 ease-in-out transition-all"
-                                >
-                                    <span class="text-base lg:text-lg">2015 1Q Earnings Release</span>
-
-                                    <div class="group relative flex items-center text-lg lg:text-xl w-12 h-full text-(--black) overflow-hidden">
-                                        <div class="absolute flex items-center left-2 h-full w-12 transition-all duration-500 ease-in-out group-hover:translate-x-full">
-                                            <Icon name="mdi:arrow-right"/>
-                                        </div>
-                                        
-                                        <div class="absolute flex items-center left-2 h-full w-12 -translate-x-full transition-all duration-500 ease-in-out group-hover:translate-x-0">
-                                            <Icon name="mdi:arrow-right" />
-                                        </div>
-                                    </div>
-
-                                </NuxtLink>
-
-                                <NuxtLink 
-                                    to="/newsroom" title="2025 1Q Data Supplements"
-                                    class="group flex items-center justify-between gap-4 py-4 text-(--black) border-b-1 border-(--border-gray) duration-300 ease-in-out transition-all"
-                                >
-                                    <span class="text-base lg:text-lg">2025 1Q Data Supplements</span>
-
-                                    <div class="group relative flex items-center text-lg lg:text-xl w-12 h-full text-(--black) overflow-hidden">
-                                        <div class="absolute flex items-center left-2 h-full w-12 transition-all duration-500 ease-in-out group-hover:translate-x-full">
-                                            <Icon name="mdi:arrow-right"/>
-                                        </div>
-                                        
-                                        <div class="absolute flex items-center left-2 h-full w-12 -translate-x-full transition-all duration-500 ease-in-out group-hover:translate-x-0">
-                                            <Icon name="mdi:arrow-right" />
-                                        </div>
-                                    </div>
-
-                                </NuxtLink>
-
-                                <NuxtLink 
-                                    to="/newsroom" title="2025 1Q Earnings ConferenceCall Presentation with Prepared Remarks"
-                                    class="group flex items-center justify-between gap-4 py-4 text-(--black) border-b-1 border-(--border-gray) duration-300 ease-in-out transition-all"
-                                >
-                                    <span class="text-base lg:text-lg">2025 1Q Earnings ConferenceCall Presentation with Prepared Remarks</span>
-
-                                    <div class="group relative flex items-center text-lg lg:text-xl w-12 h-full text-(--black) overflow-hidden">
-                                        <div class="absolute flex items-center left-2 h-full w-12 transition-all duration-500 ease-in-out group-hover:translate-x-full">
-                                            <Icon name="ri:arrow-right"/>
-                                        </div>
-                                        
-                                        <div class="absolute flex items-center left-2 h-full w-12 -translate-x-full transition-all duration-500 ease-in-out group-hover:translate-x-0">
-                                            <Icon name="mdi:arrow-right" />
-                                        </div>
-                                    </div>
-
-                                </NuxtLink>
-
-                                <NuxtLink 
-                                    to="/newsroom" title="2025 1Q Earnings Conference Call"
-                                    class="group flex items-center justify-between gap-4 py-4 text-(--black) border-b-1 border-(--border-gray) duration-300 ease-in-out transition-all"
-                                >
-                                    <span class="text-base lg:text-lg">2025 1Q Earnings Conference Call</span>
-
-                                    <div class="group relative flex items-center text-lg lg:text-xl w-12 h-full text-(--black) overflow-hidden">
-                                        <div class="absolute flex items-center left-2 h-full w-12 transition-all duration-500 ease-in-out group-hover:translate-x-full">
-                                            <Icon name="mdi:arrow-right"/>
-                                        </div>
-                                        
-                                        <div class="absolute flex items-center left-2 h-full w-12 -translate-x-full transition-all duration-500 ease-in-out group-hover:translate-x-0">
-                                            <Icon name="mdi:arrow-right" />
-                                        </div>
-                                    </div>
-
-                                </NuxtLink>
-
-                                <NuxtLink 
-                                    to="/newsroom" title="2025 1Q Earnings Conference Call (webcast)"
-                                    class="group flex items-center justify-between gap-4 py-4 text-(--black) border-b-1 border-(--border-gray) duration-300 ease-in-out transition-all"
-                                >
-                                    <span class="text-base lg:text-lg">2025 1Q Earnings Conference Call (webcast)</span>
-
-                                    <div class="group relative flex items-center text-lg lg:text-xl w-12 h-full text-(--black) overflow-hidden">
-                                        <div class="absolute flex items-center left-2 h-full w-12 transition-all duration-500 ease-in-out group-hover:translate-x-full">
-                                            <Icon name="mdi:arrow-right"/>
-                                        </div>
-                                        
-                                        <div class="absolute flex items-center left-2 h-full w-12 -translate-x-full transition-all duration-500 ease-in-out group-hover:translate-x-0">
-                                            <Icon name="mdi:arrow-right" />
-                                        </div>
-                                    </div>
-
-                                </NuxtLink>
-                            
-
-                            </div>
-                        </div>
-
-                        <div class="grid grid-cols-2 px-4 gap-6 text-(--white) py-12 w-full max-w-7xl mx-auto h-full">
-
-                            <!-- Q1 adjusted earnings -->
-                            <div class="flex flex-col items-center justify-center rounded-2xl  shadow-lg bg-(--medium-blue) w-full mx-auto h-fit">                            
-                                
-                                <div class="flex flex-col gap-2 items-center justify-center *:text-center p-2 sm:px-4 lg:p-6 w-full h-35 md:h-40">
-                                    <p class="text-sm">
-                                        Q1 adjusted earnings
-                                    </p>                            
-
-                                    <h3 class="text-3xl sm:text-4xl text-center font-extrabold">
-                                        ${{ adjustedEarnings }}B
-                                    </h3>
-                                </div>
-
-                            </div>
-
-                            <!-- Q1 shareholders distributions -->
-                            <div class="flex flex-col items-center justify-center rounded-2xl  shadow-lg bg-(--medium-blue) w-full mx-auto h-fit">                            
-                                
-                                <div class="flex flex-col gap-2 items-center justify-center *:text-center p-2 sm:px-4 lg:p-6 w-full h-35 md:h-40">
-                                    <p class="text-sm">
-                                        Q1 shareholders distributions
-                                    </p>                            
-
-                                    <h3 class="text-3xl sm:text-4xl text-center font-extrabold">
-                                        ${{ shareholdersDistributions }}B
-                                    </h3>
-                                </div>
-                                
-                            </div>
-
-                            <!-- Q1 cash flow from operations excl. working capital-->
-                            <div class="flex flex-col items-center justify-center rounded-2xl  shadow-lg bg-(--medium-blue) w-full mx-auto h-fit">                            
-                                
-                                <div class="flex flex-col gap-2 items-center justify-center *:text-center p-2 sm:px-4 lg:p-6 w-full h-35 md:h-40">
-                                    <p class="text-sm">
-                                        Q1 cash flow from operations excl. working capital
-                                    </p>                            
-
-                                    <h3 class="text-3xl sm:text-4xl text-center font-extrabold">
-                                        ${{ cashFlow }}B
-                                    </h3>
-                                </div>
-                                
-                            </div>
-
-                            <!-- Q4 net oil-equivalent production-->
-                            <div class="flex flex-col items-center justify-center rounded-2xl  shadow-lg bg-(--medium-blue) w-full mx-auto h-fit">                            
-                                
-                                <div class="flex flex-col gap-2 items-center justify-center *:text-center p-2 sm:px-4 lg:p-6 w-full h-35 md:h-40">
-                                    <p class="text-sm">
-                                        Q4 net oil-equivalent production
-                                    </p>                            
-
-                                    <h3 class="text-3xl sm:text-4xl text-center text-wrap font-extrabold">
-                                        {{ oilEquivalent }}<br>MBOED
-                                    </h3>
-                                </div>
-                                
-                            </div>
-
-                            <!-- Q1 return on capital employed-->
-                            <div class="flex flex-col items-center justify-center rounded-2xl  shadow-lg bg-(--medium-blue) w-full mx-auto h-fit">                            
-                                
-                                <div class="flex flex-col gap-2 items-center justify-center *:text-center p-2 sm:px-4 lg:p-6 w-full h-35 md:h-40">
-                                    <p class="text-sm">
-                                        Q1 return on capital employed
-                                    </p>                            
-
-                                    <h3 class="text-3xl sm:text-4xl text-center font-extrabold">
-                                        {{ returnOnCapital }}%
-                                    </h3>
-                                </div>
-                                
-                            </div>
-
-                            <!-- Net debt ration-->
-                            <div class="flex flex-col items-center justify-center rounded-2xl  shadow-lg bg-(--medium-blue) w-full mx-auto h-fit">                            
-                                
-                                <div class="flex flex-col gap-2 items-center justify-center *:text-center p-2 sm:px-4 lg:p-6 w-full h-35 md:h-40">
-                                    <p class="text-sm">
-                                        Net debt ration
-                                    </p>                            
-
-                                    <h3 class="text-3xl sm:text-4xl text-center font-extrabold">
-                                        {{ netDebt }}%
-                                    </h3>
-                                </div>
-                                
-                            </div>
-
+                            <p class="text-(--black) text-lg lg:text-xl text-center font-medium">
+                                Elevate your investment strategies by exploring content from our recent and historic events and presentations.
+                            </p>
                             
                         </div>
-                    </div>
 
+                        <p class="text-(--black) text-xl text-center font-medium">
+                            Disclaimer: This portion of our Web site contains archival information. 
+                            Archived presentations and supporting documents contained or referenced herein should not be considered current and may no longer be accurate
+                        </p>
+                    </div>
                 </div>
 
             </div>
-
-        </section>
-
-        <!-- Section: Latest News -->
-        <section>
-            <div class="relative px-(--section-px) lg:px-(--section-px-lg) py-(--section-py) lg:py-(--section-py-lg) bg-(--dark-purple) w-full h-full overflow-hidden">
-                
-                <div class="flex flex-col gap-20 lg:gap-24 w-full max-w-6xl mx-auto">
-
-                    <div class="flex flex-col items-center justify-center gap-8">
-                        <h2 
-                            class="text-5xl sm:text-5xl lg:text-8xl text-(--light-purple) text-wrap text-center font-extrabold cursor-text w-full h-full overflow-hidden"
-                        >
-                            Latest news
-                        </h2>
-
-                        <!-- Read all news and press releases -->
-                        <NuxtLink 
-                            to="/newsroom"
-                            class="group flex *:flex items-center *:items-center justify-center px-8 py-2 gap-4 w-fit mx-auto text-(--white) hover:text-(--black) bg-transparent hover:bg-(--light-purple) shadow-lg rounded-lg border-1 border-(--light-purple) duration-300 ease-in-out transition-all"
-                        >
-                            <div class="group relative flex items-center justify-center text-xl w-8 h-full overflow-hidden">
-                                <div class="absolute flex items-center left-2 h-full w-12 transition-all duration-500 ease-in-out group-hover:translate-x-full">
-                                    <Icon name="mdi:arrow-right"/>
-                                </div>
-                                
-                                <div class="absolute flex items-center left-2 h-full w-12 -translate-x-full transition-all duration-500 ease-in-out group-hover:translate-x-0">
-                                    <Icon name="mdi:arrow-right" />
-                                </div>
-                            </div>
-
-                            <span class="flex font-bold text-sm">Read all news</span>
-                        </NuxtLink>
-                        
-                    </div> 
-
-                    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 *:w-9/10 *:max-w-sm *:mx-auto *:h-fit">
-
-                        <!-- Delivering first oil while lowering development costs -->
-                        <div class="flex flex-col gap-4 lg:gap-8 bg-(--dark-blue) p-4 rounded-2xl shadow-lg">
-                            <NuxtImg
-                                src="/investors/penn-ceo-talks-growing-production-efficient-spending-hero.jpg"
-                                alt="Penn Ceo Talks Growing Production Efficient Spending"
-                                loading="lazy"
-                                class="w-full h-50 object-cover rounded-2xl"
-                            />
-
-                            <div class="flex flex-col gap-4">
-                                <p class="text-(--white) text-sm lg:text-base">
-                                    April 21, 2025
-                                </p>
-
-                                <h2 
-                                    class="text-lg lg:text-xl text-(--white)"
-                                >
-                                    Delivering first oil while lowering development costs
-                                </h2>
-
-                                <!-- Delivering first oil while lowering development costs -->
-                                <NuxtLink
-                                    to="/sustainability/social"
-                                    class="group flex *:flex items-center *:items-center justify-center px-2 lg:px-8 py-2 gap-2 lg:gap-4 w-fit text-(--white) hover:text-(--light-blue) duration-300 ease-in-out transition-all"
-                                >
-                                    <div class="group relative flex items-center justify-center text-xl w-8 h-full overflow-hidden">
-                                        <div class="absolute flex items-center left-2 h-full w-12 transition-all duration-500 ease-in-out group-hover:translate-x-full">
-                                            <Icon name="mdi:arrow-right"/>
-                                        </div>
-                                        
-                                        <div class="absolute flex items-center left-2 h-full w-12 -translate-x-full transition-all duration-500 ease-in-out group-hover:translate-x-0">
-                                            <Icon name="mdi:arrow-right" />
-                                        </div>
-                                    </div>
-                                    <span class="group-hover:underline-text font-semibold">Read article</span>
-                                </NuxtLink>
-                            </div> 
-
-
-                        </div>  
-
-                        <!-- Penn Petro Energy leaders share their vision for the future of CERAWeek 2025 -->
-                        <div class="flex flex-col gap-4 lg:gap-8 bg-(--dark-green) p-4 rounded-2xl shadow-lg">
-                            <NuxtImg
-                                src="/investors/cnbc-joins-penn-ceo-in-gulf-of-mexico-to-discuss-deepwater-achievements-hero.jpg"
-                                alt="CNBC joins Penn Ceo in Gulf of Mexico to Discuss Deep Water Achievements"
-                                loading="lazy"
-                                class="w-full h-60 object-cover rounded-2xl"
-                            />
-
-                            <div class="flex flex-col gap-4">
-                                <p class="text-(--white) text-sm lg:text-base">
-                                    March 10, 2025
-                                </p>
-
-                                <h2 
-                                    class="text-lg lg:text-xl text-(--white)"
-                                >
-                                    Penn Petro Energy leaders share their vision for the future of CERAWeek 2025
-                                </h2>
-
-                                <NuxtLink
-                                    to="/sustainability/social"
-                                    class="group flex *:flex items-center *:items-center justify-center px-2 lg:px-8 py-2 gap-2 lg:gap-4 w-fit text-(--white) hover:text-(--light-green) duration-300 ease-in-out transition-all"
-                                >
-                                    <div class="group relative flex items-center justify-center text-xl w-8 h-full overflow-hidden">
-                                        <div class="absolute flex items-center left-2 h-full w-12 transition-all duration-500 ease-in-out group-hover:translate-x-full">
-                                            <Icon name="mdi:arrow-right"/>
-                                        </div>
-                                        
-                                        <div class="absolute flex items-center left-2 h-full w-12 -translate-x-full transition-all duration-500 ease-in-out group-hover:translate-x-0">
-                                            <Icon name="mdi:arrow-right" />
-                                        </div>
-                                    </div>
-                                    <span class="group-hover:underline-text font-semibold">Read article</span>
-                                </NuxtLink>
-                            </div> 
-
-
-                        </div>
-
-                        <!-- Engine No. 1 Penn Petro Energy and GE Vernova to power U.S. data centers -->
-                        <div class="flex flex-col gap-4 lg:gap-8 bg-(--dark-orange) p-4 rounded-2xl shadow-lg">
-                            <NuxtImg
-                                src="/investors/penn-ceo-talks-growing-production-efficient-spending-hero.jpg"
-                                alt="Penn Ceo Talks Growing Production Efficient Spending"
-                                loading="lazy"
-                                class="w-full h-50 object-cover rounded-2xl"
-                            />
-
-                            <div class="flex flex-col gap-4">
-                                <p class="text-(--white) text-sm lg:text-base">
-                                    March 10, 2025
-                                </p>
-
-                                <h2 
-                                    class="text-lg lg:text-xl text-(--white)"
-                                >
-                                    Engine No. 1 Penn Petro Energy and GE Vernova to power U.S. data centers
-                                </h2>
-
-                                <NuxtLink
-                                    to="/sustainability/social"
-                                    class="group flex *:flex items-center *:items-center justify-center px-2 lg:px-8 py-2 gap-2 lg:gap-4 w-fit text-(--white) hover:text-(--light-orange) duration-300 ease-in-out transition-all"
-                                >
-                                    <div class="group relative flex items-center justify-center text-xl w-8 h-full overflow-hidden">
-                                        <div class="absolute flex items-center left-2 h-full w-12 transition-all duration-500 ease-in-out group-hover:translate-x-full">
-                                            <Icon name="mdi:arrow-right"/>
-                                        </div>
-                                        
-                                        <div class="absolute flex items-center left-2 h-full w-12 -translate-x-full transition-all duration-500 ease-in-out group-hover:translate-x-0">
-                                            <Icon name="mdi:arrow-right" />
-                                        </div>
-                                    </div>
-                                    <span class="group-hover:underline-text font-semibold">Read article</span>
-                                </NuxtLink>
-                            </div> 
-
-
-                        </div>
-
-                        <!-- Penn Petro Energy achieves first oil future growth project in Kazakhstan -->
-                        <div class="flex flex-col gap-4 lg:gap-8 bg-(--dark-red) p-4 rounded-2xl shadow-lg">
-                            <NuxtImg
-                                src="/investors/cnbc-joins-penn-ceo-in-gulf-of-mexico-to-discuss-deepwater-achievements-hero.jpg"
-                                alt="CNBC joins Penn Ceo in Gulf of Mexico to Discuss Deep Water Achievements"
-                                loading="lazy"
-                                class="w-full h-60 object-cover rounded-2xl"
-                            />
-
-                            <div class="flex flex-col gap-4">
-                                <p class="text-(--white) text-sm lg:text-base">
-                                    January 23, 2025
-                                </p>
-
-                                <h2 
-                                    class="text-lg lg:text-xl text-(--white)"
-                                >
-                                    Penn Petro Energy achieves first oil future growth project in Kazakhstan
-                                </h2>
-
-                                <NuxtLink
-                                    to="/sustainability/social"
-                                    class="group flex *:flex items-center *:items-center justify-center px-2 lg:px-8 py-2 gap-2 lg:gap-4 w-fit text-(--white) hover:text-(--light-red) duration-300 ease-in-out transition-all"
-                                >
-                                    <div class="group relative flex items-center justify-center text-xl w-8 h-full overflow-hidden">
-                                        <div class="absolute flex items-center left-2 h-full w-12 transition-all duration-500 ease-in-out group-hover:translate-x-full">
-                                            <Icon name="mdi:arrow-right"/>
-                                        </div>
-                                        
-                                        <div class="absolute flex items-center left-2 h-full w-12 -translate-x-full transition-all duration-500 ease-in-out group-hover:translate-x-0">
-                                            <Icon name="mdi:arrow-right" />
-                                        </div>
-                                    </div>
-                                    <span class="group-hover:underline-text font-semibold">Read article</span>
-                                </NuxtLink>
-                            </div> 
-
-
-                        </div>
-
-                        <!-- Penn Petro Energy-hess merger clears FTC antitrust review -->
-                        <div class="flex flex-col gap-4 lg:gap-8 bg-(--dark-teal) p-4 rounded-2xl shadow-lg">
-                            <NuxtImg
-                                src="/investors/penn-ceo-talks-growing-production-efficient-spending-hero.jpg"
-                                alt="Penn Ceo Talks Growing Production Efficient Spending"
-                                loading="lazy"
-                                class="w-full h-50 object-cover rounded-2xl"
-                            />
-
-                            <div class="flex flex-col gap-4">
-                                <p class="text-(--white) text-sm lg:text-base">
-                                    September 30, 2024
-                                </p>
-
-                                <h2 
-                                    class="text-lg lg:text-xl text-(--white)"
-                                >
-                                    Penn Petro Energy-hess merger clears FTC antitrust review
-                                </h2>
-
-                                <NuxtLink
-                                    to="/sustainability/social"
-                                    class="group flex *:flex items-center *:items-center justify-center px-2 lg:px-8 py-2 gap-2 lg:gap-4 w-fit text-(--white) hover:text-(--light-teal) duration-300 ease-in-out transition-all"
-                                >
-                                    <div class="group relative flex items-center justify-center text-xl w-8 h-full overflow-hidden">
-                                        <div class="absolute flex items-center left-2 h-full w-12 transition-all duration-500 ease-in-out group-hover:translate-x-full">
-                                            <Icon name="mdi:arrow-right"/>
-                                        </div>
-                                        
-                                        <div class="absolute flex items-center left-2 h-full w-12 -translate-x-full transition-all duration-500 ease-in-out group-hover:translate-x-0">
-                                            <Icon name="mdi:arrow-right" />
-                                        </div>
-                                    </div>
-                                    <span class="group-hover:underline-text font-semibold">Read article</span>
-                                </NuxtLink>
-                            </div> 
-
-
-                        </div>
-
-                        <!-- CNBC joins Penn Petro Energy CEO in gulf of america to discuss deepwater achievement -->
-                        <div class="flex flex-col gap-4 lg:gap-8 bg-(--dark-blue) p-4 rounded-2xl shadow-lg">
-                            <NuxtImg
-                                src="/investors/cnbc-joins-penn-ceo-in-gulf-of-mexico-to-discuss-deepwater-achievements-hero.jpg"
-                                alt="CNBC joins Penn Ceo in Gulf of Mexico to Discuss Deep Water Achievements"
-                                loading="lazy"
-                                class="w-full h-50 object-cover rounded-2xl"
-                            />
-
-                            <div class="flex flex-col gap-4 h-full">
-                                <p class="text-(--white) text-sm lg:text-base">
-                                    October 29, 2024
-                                </p>
-
-                                <h2 
-                                    class="text-lg lg:text-xl text-(--white)"
-                                >
-                                    CNBC joins Penn Petro Energy CEO in gulf of america to discuss deepwater achievement
-                                </h2>
-
-                                <!-- CNBC joins Penn Petro Energy CEO in gulf of america to discuss deepwater achievement -->
-                                <NuxtLink
-                                    to="/sustainability/social"
-                                    class="group flex *:flex items-center *:items-center justify-center px-2 lg:px-8 py-2 gap-2 lg:gap-4 w-fit text-(--white) hover:text-(--light-blue) duration-300 ease-in-out transition-all"
-                                >
-                                    <div class="group relative flex items-center justify-center text-xl w-8 h-full overflow-hidden">
-                                        <div class="absolute flex items-center left-2 h-full w-12 transition-all duration-500 ease-in-out group-hover:translate-x-full">
-                                            <Icon name="mdi:arrow-right"/>
-                                        </div>
-                                        
-                                        <div class="absolute flex items-center left-2 h-full w-12 -translate-x-full transition-all duration-500 ease-in-out group-hover:translate-x-0">
-                                            <Icon name="mdi:arrow-right" />
-                                        </div>
-                                    </div>
-                                    <span class="group-hover:underline-text font-semibold">Read article</span>
-                                </NuxtLink>
-                            </div> 
-
-
-                        </div> 
-
-                        <!-- Penn Petro Energy CEO talks growing production, efficient spending -->
-                        <div class="flex flex-col gap-4 lg:gap-8 bg-(--dark-green) p-4 rounded-2xl shadow-lg">
-                            <NuxtImg
-                                src="https://images.pexels.com/photos/8370328/pexels-photo-8370328.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                                alt="Female Vlogger doing a Video Recording"
-                                loading="lazy"
-                                class="w-full h-50 object-cover rounded-2xl"
-                            />
-
-                            <div class="flex flex-col gap-4 h-full">
-                                <p class="text-(--white) text-lg lg:text-base">
-                                    December 18, 2024
-                                </p>
-
-                                <h2 
-                                    class="text-lg lg:text-xl text-(--white)"
-                                >
-                                    Penn Petro Energy CEO talks growing production, efficient spending
-                                </h2>
-
-                                <NuxtLink
-                                    to="/sustainability/social"
-                                    class="group flex *:flex items-center *:items-center justify-center px-2 lg:px-8 py-2 gap-2 lg:gap-4 w-fit text-(--white) hover:text-(--light-green) duration-300 ease-in-out transition-all"
-                                >
-                                    <div class="group relative flex items-center justify-center text-xl w-8 h-full overflow-hidden">
-                                        <div class="absolute flex items-center left-2 h-full w-12 transition-all duration-500 ease-in-out group-hover:translate-x-full">
-                                            <Icon name="mdi:arrow-right"/>
-                                        </div>
-                                        
-                                        <div class="absolute flex items-center left-2 h-full w-12 -translate-x-full transition-all duration-500 ease-in-out group-hover:translate-x-0">
-                                            <Icon name="mdi:arrow-right" />
-                                        </div>
-                                    </div>
-                                    <span class="group-hover:underline-text font-semibold">Read article</span>
-                                </NuxtLink>
-                            </div> 
-
-
-                        </div> 
-
-                        
-                    </div>
-
-                </div>
-
-            </div>
-
         </section>
 
         <!-- Section: Events and presentations-->
         <section>
-            <div class="relative px-(--section-px) lg:px-(--section-px-lg) py-(--section-py) lg:py-(--section-py-lg) bg-(--light-gray) w-full h-full">
+            <div class="relative px-(--section-px) lg:px-(--section-px-lg) py-(--section-py) lg:py-(--section-py-lg) bg-(--dark-blue)/95 w-full h-full">
                 
-                <div class="grid gap-8 md:gap-12 w-full max-w-7xl mx-auto">
+                <div class="flex flex-col lg:flex-row gap-8 md:gap-12 py-20 w-full max-w-7xl mx-auto">
 
-                    <!--Events and presentations area -->
-                    <div class="flex flex-col">
-
-                        <h2 
-                            class="text-4xl md:text-6xl lg:text-8xl text-(--dark-blue) text-wrap text-center font-extrabold w-full h-full"
-                        >
-                            Events and presentations
-                        </h2>
-            
-                        <!-- Read all news and press releases -->
-                        <NuxtLink 
-                            to="/investors/events"
-                            class="group flex *:flex items-center *:items-center justify-center px-2 md:px-8 py-2 gap-4 w-fit h-16 mx-auto text-(--black) duration-300 ease-in-out transition-all"
-                        >
-                            <div class="group relative flex items-center justify-center text-xl w-8 h-full overflow-hidden">
-                                <div class="absolute flex items-center left-2 h-full w-12 transition-all duration-500 ease-in-out group-hover:translate-x-full">
-                                    <Icon name="mdi:arrow-right"/>
-                                </div>
-                                
-                                <div class="absolute flex items-center left-2 h-full w-12 -translate-x-full transition-all duration-500 ease-in-out group-hover:translate-x-0">
-                                    <Icon name="mdi:arrow-right" />
-                                </div>
-                            </div>
-
-                            <span class="font-bold text-sm">See all events and presentations</span>
-                        </NuxtLink>
-
-                    </div>
+                    <h2 
+                        class="text-4xl md:text-6xl lg:text-8xl text-(--white) text-wrap text-center font-extrabold"
+                    >
+                        Press releases
+                    </h2>
 
                     <!-- Investors Landing Carousel -->
                     <div class="flex items-center justify-center mx-auto w-full">
@@ -908,400 +308,292 @@
 
         </section>
 
-        <!-- Section: Higher Returns, lower carbon -->
-        <section>
-            <div class="relative px-(--section-px) lg:px-(--section-px-lg) py-(--section-py) lg:py-(--section-py-lg) bg-(--dark-blue) w-full h-full">
-                
-                <div class="grid py-16 gap-16 w-full max-w-7xl mx-auto">
-
-                    <!--Higher Returns, lower carbon area -->
-                    <div class="flex flex-col gap-8 text-(--white)">
-
-                        <div class="grid gap-4 max-w-xl mx-auto">
-                        
-                            <h2 
-                                class="text-4xl md:text-6xl lg:text-7xl text-center font-extrabold w-full h-full"
-                            >
-                                Higher Returns, lower carbon
-                            </h2>
-
-                            <p class="text-sm lg:text-base text-center">
-                                Our objective is to safely deliver higher returns, lower carbon and superior shareholder value in any business environment.
-                            </p>
-                        </div>
-            
-                        <!-- Read our reports and fillings -->
-                        <NuxtLink 
-                            to="/investors/reports"
-                            class="group flex *:flex items-center *:items-center justify-center p-2 gap-2 w-fit mx-auto hover:text-(--black) hover:bg-(--light-blue) border-1 border-(--light-blue) rounded-lg shadow-lg duration-300 ease-in-out transition-all"
-                        >
-                            <div class="group relative flex items-center justify-center text-base h-fit w-12 overflow-hidden">
-                                <div class="absolute flex items-center left-2 h-full w-12 transition-all duration-500 ease-in-out group-hover:translate-x-full">
-                                    <Icon name="mdi:arrow-right"/>
-                                </div>
-                                
-                                <div class="absolute flex items-center left-2 h-full w-12 -translate-x-full transition-all duration-500 ease-in-out group-hover:translate-x-0">
-                                    <Icon name="mdi:arrow-right" />
-                                </div>
-                            </div>
-
-                            <span class="font-bold text-xs">Read our reports and fillings</span>
-                        </NuxtLink>
-
-                    </div>
-
-                    <!-- Grids -->
-                    <div class="grid sm:grid-cols-2 md:grid-cols-3 place-content-center mx-auto w-full h-full">
-                    
-                        <!-- Growing the dividend -->
-                        <div class="flex flex-col items-center justify-center gap-4">
-                            <p class="text-sm md:text-base text-(--white) text-center">
-                                Growing the dividend
-                            </p>
-
-                            <NuxtImg
-                                src="/investors/Dividend.png"
-                                alt="Chart"
-                                loading="lazy"
-                                class="block h-auto w-16 md:w-24 rounded-full"
-                            />
-                        </div>
-
-                        <!-- Reinventing to grow future cash flows -->
-                        <div class="flex flex-col items-center justify-center gap-4">
-                            <p class="text-sm md:text-base text-(--white) text-center">
-                                Reinventing to grow future cash flows
-                            </p>
-
-                            <NuxtImg
-                                src="/investors/Cash.png"
-                                alt="Money"
-                                loading="lazy"
-                                class="block h-auto w-16 md:w-24 rounded-full"
-                            />
-                        </div>
-
-                        <!-- Strengthening the balance sheet -->
-                        <div class="flex flex-col items-center justify-center gap-4">
-                            <p class="text-sm md:text-base text-(--white) text-center">
-                                Strengthening the balance sheet
-                            </p>
-
-                            <NuxtImg
-                                src="/investors/Balance_sheet.png"
-                                alt="Balance sheet"
-                                loading="lazy"
-                                class="block h-auto w-16 md:w-24 rounded-full"
-                            />
-                        </div>
-
-                        <!-- Returning excess cash to stockholders -->
-                        <div class="flex flex-col items-center justify-center gap-4">
-                            <p class="text-sm md:text-base text-(--white) text-center">
-                                Returning excess cash to stockholders
-                            </p>
-
-                            <NuxtImg
-                                src="/investors/Excess_cash.png"
-                                alt="Cash on one hand"
-                                loading="lazy"
-                                class="block h-auto w-16 md:w-24 rounded-full"
-                            />
-                        </div>
-
-                        <!-- Lowering carbon intensity -->
-                        <div class="flex flex-col items-center justify-center gap-4">
-                            <p class="text-sm md:text-base text-(--white) text-center">
-                                Lowering carbon intensity
-                            </p>
-
-                            <NuxtImg
-                                src="/investors/Carbon_intensity.png"
-                                alt="Building icon"
-                                loading="lazy"
-                                class="block h-auto w-16 md:w-24 rounded-full"
-                            />
-                        </div>
-
-                        <!-- Growing lower carbon businesses -->
-                        <div class="flex flex-col items-center justify-center gap-4">
-                            <p class="text-sm md:text-base text-(--white) text-center">
-                                Growing lower carbon businesses
-                            </p>
-
-                            <NuxtImg
-                                src="/investors/Plant.png"
-                                alt="Plant environment"
-                                loading="lazy"
-                                class="block h-auto w-16 md:w-24 rounded-full"
-                            />
-                        </div>
-
-                    </div>                    
-                
-                </div>
-
-            </div>
-
-        </section>
-
-        <!-- Section: Environmental, social and governance -->
-        <section>
-            <div class="relative px-(--section-px) lg:px-(--section-px-lg) py-(--section-py) lg:py-(--section-py-lg) bg-(--dark-teal) w-full h-full">
-                
-                <div class="grid py-16 gap-16 w-full max-w-7xl mx-auto">
-
-                    <!-- Environmental, social and governance -->
-                    <div class="flex flex-col gap-8 text-(--white)">
-
-                        <div class="grid gap-4 max-w-xl mx-auto">
-                        
-                            <h2 
-                                class="text-4xl md:text-6xl lg:text-7xl text-center font-extrabold w-full h-full"
-                            >
-                                Environmental, social and governance
-                            </h2>
-
-                            <p class="text-sm lg:text-base text-center">
-                                Our approach to sustainability is integrated throughout our business. 
-                                We strive to protect the environment, empower people, and get results the right way—today and tomorrow.
-                            </p>
-                        </div>
-            
-                        <!-- Learn about esg -->
-                        <NuxtLink 
-                            to="/investors/esg"
-                            class="group flex *:flex items-center *:items-center justify-center p-2 gap-2 w-fit mx-auto hover:text-(--black) hover:bg-(--light-blue) border-1 border-(--light-blue) rounded-lg shadow-lg duration-300 ease-in-out transition-all"
-                        >
-                            <div class="group relative flex items-center justify-center text-base h-fit w-12 overflow-hidden">
-                                <div class="absolute flex items-center left-2 h-full w-12 transition-all duration-500 ease-in-out group-hover:translate-x-full">
-                                    <Icon name="mdi:arrow-right"/>
-                                </div>
-                                
-                                <div class="absolute flex items-center left-2 h-full w-12 -translate-x-full transition-all duration-500 ease-in-out group-hover:translate-x-0">
-                                    <Icon name="mdi:arrow-right" />
-                                </div>
-                            </div>
-
-                            <span class="font-bold text-xs">Learn about esg</span>
-                        </NuxtLink>
-
-                    </div>
-
-                    <!-- Grids -->
-                    <div class="flex flex-col w-full h-full">
-                    
-
-                        <NuxtImg
-                            src="https://images.pexels.com/photos/4606713/pexels-photo-4606713.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                            alt="High voltage substation located behind metal fence in daylight"
-                            loading="lazy"
-                            class="block h-auto w-9/10 rounded-2xl mx-auto"
-                        />
-
-                        <!-- Supporting materials -->
-                        <div class="flex flex-col h-full px-4">
-
-                            <div class="flex flex-col mx-auto max-w-lg w-full *:w-full">
-
-                                <NuxtLink 
-                                    to="/newsroom" title="Check the news"
-                                    class="group flex items-center justify-between gap-4 py-4 text-(--black) border-b-1 border-(--border-gray) duration-300 ease-in-out transition-all"
-                                >
-                                    <span class="text-base lg:text-lg text-(--white)">Check the news</span>
-
-                                    <div class="group relative flex items-center text-lg lg:text-xl w-12 h-full text-(--white) overflow-hidden">
-                                        <div class="absolute flex items-center left-2 h-full w-12 transition-all duration-500 ease-in-out group-hover:translate-x-full">
-                                            <Icon name="mdi:arrow-right"/>
-                                        </div>
-                                        
-                                        <div class="absolute flex items-center left-2 h-full w-12 -translate-x-full transition-all duration-500 ease-in-out group-hover:translate-x-0">
-                                            <Icon name="mdi:arrow-right" />
-                                        </div>
-                                    </div>
-
-                                </NuxtLink>
-
-                                <NuxtLink 
-                                    to="/sustainability/overview" title="Check the news"
-                                    class="group flex items-center justify-between gap-4 py-4 text-(--black) border-b-1 border-(--border-gray) duration-300 ease-in-out transition-all"
-                                >
-                                    <span class="text-base lg:text-lg text-(--white)">Check our sustainability page</span>
-
-                                    <div class="group relative flex items-center text-lg lg:text-xl w-12 h-full text-(--white) overflow-hidden">
-                                        <div class="absolute flex items-center left-2 h-full w-12 transition-all duration-500 ease-in-out group-hover:translate-x-full">
-                                            <Icon name="mdi:arrow-right"/>
-                                        </div>
-                                        
-                                        <div class="absolute flex items-center left-2 h-full w-12 -translate-x-full transition-all duration-500 ease-in-out group-hover:translate-x-0">
-                                            <Icon name="mdi:arrow-right" />
-                                        </div>
-                                    </div>
-
-                                </NuxtLink>
-
-                            </div>
-                        </div>
-
-                    </div>                    
-                
-                </div>
-
-            </div>
-
-        </section>
-
-        <!-- Section: Stock and dividend -->
+        <!-- Section: Events & Presentations-->
         <section>
             <div class="relative px-(--section-px) lg:px-(--section-px-lg) py-(--section-py) lg:py-(--section-py-lg) w-full h-full">
                 
-                <div class="grid py-16 gap-16 w-full max-w-7xl mx-auto">
+                <div class="grid gap-12 py-20 md:gap-12 w-9/10 lg:w-full max-w-7xl mx-auto h-full">
 
-                    <!-- Blue Stock and Dividend -->
-                    <div class="grid sm:grid-cols-2 gap-8 px-6 sm:px-12 py-12  text-(--white) bg-(--medium-blue) rounded-2xl h-fit md:h-60 w-9/10 max-w-5xl mx-auto">
+                    <h2 class="font-medium text-center text-2xl text-(--dark-blue)">
+                        Events &amp; Presentations
+                    </h2>
+
+                    <div class="grid gap-8 w-full h-full">
                         
-                        <div class="flex flex-col justify-center gap-2">
+                        <!-- Current Investor Presentation -->
+                        <div class="grid gap-4 w-full h-full" id="investorsPresentation">
+                            <h3 class="font-medium text-2xl text-(--dark-blue)">
+                                Current Investor Presentation
+                            </h3>
 
-                            <h2 
-                                class="text-2xl md:text-3xl font-extrabold"
-                            >
-                                Stock and dividend
-                            </h2>
+                            <div class="grid w-full h-full">
 
-                            <p class="text-xs lg:text-sm">
-                                CVX as of May 16, 2025 04:10 PM ET
-                            </p>                            
-                            
-                            <!-- View stock info -->
-                            <NuxtLink 
-                                to="/investors/stock"
-                                class="group hidden md:flex *:flex items-center *:items-center justify-center p-2 gap-2 w-full max-w-[170px] hover:text-(--black) hover:bg-(--light-blue) border-1 border-(--light-blue) rounded-lg shadow-lg duration-300 ease-in-out transition-all"
-                            >
-                                <div class="group relative flex items-center justify-center text-base h-fit w-12 overflow-hidden">
-                                    <div class="absolute flex items-center left-2 h-full w-12 transition-all duration-500 ease-in-out group-hover:translate-x-full">
-                                        <Icon name="mdi:arrow-right"/>
-                                    </div>
-                                    
-                                    <div class="absolute flex items-center left-2 h-full w-12 -translate-x-full transition-all duration-500 ease-in-out group-hover:translate-x-0">
-                                        <Icon name="mdi:arrow-right" />
-                                    </div>
-                                </div>
-
-                                <span class="font-extrabold text-xs">View stock info</span>
-                            </NuxtLink>
-                        </div>
-
-                        <div class="flex flex-col">
-                            <div class="flex items-center justify-between border-b-1 border-(--white) w-full py-2">
-                                <span class="flex text-sm md:text-base">NYSE</span>
-                                <span class="flex text-sm md:text-base">CVX</span>
-                            </div>
-
-                            <div class="flex items-center justify-between border-b-1 border-(--white) w-full py-2">
-                                <span class="flex text-sm md:text-base">Current</span>
-                                <span class="flex text-sm md:text-base">$142.10</span>
-                            </div>
-
-                            <div class="flex items-center justify-between border-b-1 border-(--white) w-full py-2">
-                                <span class="flex text-sm md:text-base">Change</span>
-                                <span class="flex text-sm md:text-base">-0.16 (-0.11%)</span>
-                            </div>
-
-                            
-                        </div>
-
-                        <NuxtLink 
-                            to="/investors/stock"
-                            class="group flex *:flex md:hidden items-center *:items-center justify-center p-2 gap-2 w-full max-w-[170px] hover:text-(--black) hover:bg-(--light-blue) border-1 border-(--light-blue) rounded-lg shadow-lg duration-300 ease-in-out transition-all"
-                        >
-                            <div class="group relative flex items-center justify-center text-base h-fit w-12 overflow-hidden">
-                                <div class="absolute flex items-center left-2 h-full w-12 transition-all duration-500 ease-in-out group-hover:translate-x-full">
-                                    <Icon name="mdi:arrow-right"/>
-                                </div>
-                                
-                                <div class="absolute flex items-center left-2 h-full w-12 -translate-x-full transition-all duration-500 ease-in-out group-hover:translate-x-0">
-                                    <Icon name="mdi:arrow-right" />
-                                </div>
-                            </div>
-
-                            <span class="font-extrabold text-xs">View stock info</span>
-                        </NuxtLink>
-
-                    </div>  
-                    
-                    <!-- Contact  -->
-                    <div class="flex flex-col gap-8 md:gap-12">
-                        <h3 class="text-(--dark-blue) text-center text-2xl md:text-3xl font-extrabold">Contacts</h3>
-
-                        <div class="grid md:grid-cols-2 gap-8 w-full h-full p-8">
-                            
-                            <!-- Transfer agent -->
-                            <div class="flex flex-col gap-2">
-                                <h4 class="text-(--dark-blue) text-base md:text-lg">Transfer agent</h4>
-
-                                <p class="text-xs md:text-sm text-(--black)">For stockholder correspondence:</p>
-
-                                <div class="text-xs md:text-sm text-(--black)">
-                                    <span>Computershare</span> <br>
-                                    <span>P.0. Box 43708</span> <br>
-                                    <span>Providence, RI 02940-3078</span>
-                                </div>
-
-                                <div class="text-xs md:text-sm text-(--black)">
-                                    <span>Toll free number: +1 800.368.8357</span> <br>
-                                    <span>Outside the U.S.: +1 201.680.6578</span>
-                                </div>
-
-                                <NuxtLink 
-                                    to="/contact"
-                                    class="group flex *:flex md:hidden items-center *:items-center gap-2 duration-300 ease-in-out transition-all"
+                                <NuxtLink
+                                    to="/pdfs/May_2025_Penn_Investor_Presentation.pdf" title="May 2025 Penn Petro Energy Investor Presentation"
+                                    target="_blank"
+                                    class="flex items-center *:flex gap-2 p-3 underline underline-offset-2 decoration-1 decoration-transparent hover:decoration-(--medium-blue) duration-300 ease-in-out transition-all"
                                 >
-                                    <div class="group relative flex items-center justify-center text-sm h-fit w-8 overflow-hidden">
-                                        <div class="absolute flex items-center left-2 h-full w-8 transition-all duration-500 ease-in-out group-hover:translate-x-full">
-                                            <Icon name="mdi:arrow-right"/>
-                                        </div>
-                                        
-                                        <div class="absolute flex items-center left-2 h-full w-8 -translate-x-full transition-all duration-500 ease-in-out group-hover:translate-x-0">
-                                            <Icon name="mdi:arrow-right" />
-                                        </div>
-                                    </div>
-
-                                    <span class="font-extrabold text-xs">Visit our contact page</span>
+                                    <span class="text-(--light-red) text-2xl">
+                                        <Icon name="mdi:file-pdf-outline" />
+                                    </span>
+                                    <span class="text-(--medium-blue) text-lg">
+                                        May 2025 Penn Petro Energy Investor Presentation
+                                    </span>
                                 </NuxtLink>
-                            </div>
 
-                            <!-- Investor relations -->
-                            <div class="flex flex-col gap-2">
-                                <h4 class="text-(--dark-blue) text-base md:text-lg">Investor relations</h4>
+                                <NuxtLink
+                                    to="/pdfs/March_2025_Penn_Sensitivities_and_Forward_Guidance.pdf" title="March 2025 Penn Petro Energy Sensitivities and Forward Guidance"
+                                    target="_blank"
+                                    class="flex items-center *:flex gap-2 p-3 underline underline-offset-2 decoration-1 decoration-transparent hover:decoration-(--medium-blue) bg-(--light-gray) duration-300 ease-in-out transition-all"
+                                >
+                                    <span class="text-(--light-red) text-2xl">
+                                        <Icon name="mdi:file-pdf-outline" />
+                                    </span>
+                                    <span class="text-(--medium-blue) text-lg">
+                                        March 2025 Penn Petro Energy Sensitivities and Forward Guidance
+                                    </span>
+                                </NuxtLink>
 
-                                
-                                <div class="flex flex-col gap-1 text-xs md:text-sm text-(--black)">
-                                    <span>Phone: +1 832.854.1000</span>
-                                    <NuxtLink 
-                                        to="/investors/overview"
-                                        class="group flex *:flex md:hidden items-center *:items-center gap-2 duration-300 ease-in-out transition-all"
-                                    >
-                                        <div class="group relative flex items-center justify-center text-sm h-fit w-8 overflow-hidden">
-                                            <div class="absolute flex items-center left-2 h-full w-8 transition-all duration-500 ease-in-out group-hover:translate-x-full">
-                                                <Icon name="mdi:arrow-right"/>
-                                            </div>
-                                            
-                                            <div class="absolute flex items-center left-2 h-full w-8 -translate-x-full transition-all duration-500 ease-in-out group-hover:translate-x-0">
-                                                <Icon name="mdi:arrow-right" />
-                                            </div>
-                                        </div>
-
-                                        <span class="font-extrabold text-xs">Visit investor relations page</span>
-                                    </NuxtLink>
-                                </div>
-
-                                <div class="text-xs md:text-sm text-(--black)">
-                                    <span>Jake Spiering, general manager</span> <br>
-                                    <span>Serena Fendley, manager</span>
-                                </div>
                             </div>
                         </div>
+
+                        <!-- Upcoming Events -->
+                        <div class="grid gap-4 w-full h-full">
+                            <h3 class="font-medium text-2xl text-(--dark-blue)">
+                                Upcoming Events
+                            </h3>
+
+                            <table class="w-full border-collapse text-left text-(--black) text-sm" role="table">
+                                
+                                <!-- Table Headers -->
+                                <thead>
+                                    <tr class="bg-(--dark-blue) text-white font-bold *:p-3">
+                                        <th scope="col" class="w-1/2 md:w-1/3">Date</th>
+                                        <th scope="col" class="w-1/2 md:1/2">Title</th>
+                                    </tr>
+                                </thead>
+
+                                <tbody class="font-medium w-full h-full">
+
+                                    <tr class="w-full *:p-3">
+                                        <td>
+                                            Wednesday, May 28, 2025<br />10:00 AM CDT
+                                        </td>
+                                        <td>
+                                            <a
+                                                to="#investorsPresentation"
+                                                title="2025 Annual Meeting of Stockholders"
+                                                class="flex items-center *:flex gap-2 underline underline-offset-2 decoration-1 decoration-transparent hover:decoration-(--dark-blue) cursor-pointer duration-300 ease-in-out transition-all"
+                                            >
+                                                <span class="text-(--dark-blue)">
+                                                    2025 Annual Meeting of Stockholders
+                                                </span>
+                                            </a>
+                                        </td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+
+                        </div>
+
+                        <!-- Past Events -->
+                        <div class="grid gap-4 w-full h-full">
+                            <h3 class="font-medium text-2xl text-(--dark-blue)">
+                                Past Events
+                            </h3>
+
+                            <table class="w-full border-collapse text-left text-(--black) text-sm" role="table">
+                                
+                                <!-- Table Headers -->
+                                <thead>
+                                    <tr class="bg-(--dark-blue) text-white font-bold *:p-3">
+                                        <th scope="col" class="w-1/2 md:w-1/3">Date</th>
+                                        <th scope="col" class="w-1/2 md:1/2">Title</th>
+                                    </tr>
+                                </thead>
+
+                                <tbody class="font-medium w-full h-full">
+
+                                    <tr class="w-full *:p-3">
+                                        <td>
+                                            Friday, May 02, 2025 <br> 11:00 AM EDT
+                                        </td>
+                                        <td>
+                                            <a
+                                                to="#investorsPresentation"
+                                                title="1Q 2025 Penn Petro Energy Earnings Conference Call"
+                                                class="flex items-center *:flex gap-2 underline underline-offset-2 decoration-1 decoration-transparent hover:decoration-(--dark-blue) cursor-pointer duration-300 ease-in-out transition-all"
+                                            >
+                                                <span class="text-(--dark-blue)">
+                                                    1Q 2025 Penn Petro Energy Earnings Conference Call
+                                                </span>
+                                            </a>
+                                        </td>
+                                    </tr>
+
+                                    <tr class="w-full *:p-3 bg-(--light-gray)">
+                                        <td>
+                                            Tuesday, March 18, 2025<br />8:00 AM PDT
+                                        </td>
+                                        <td>
+                                            <a
+                                                to="#investorsPresentation"
+                                                title="Piper Sandler 25th Annual Energy Conference"
+                                                class="flex items-center *:flex gap-2 underline underline-offset-2 decoration-1 decoration-transparent hover:decoration-(--dark-blue) cursor-pointer duration-300 ease-in-out transition-all"
+                                            >
+                                                <span class="text-(--dark-blue)">
+                                                    Piper Sandler 25th Annual Energy Conference
+                                                </span>
+                                            </a>
+                                        </td>
+                                    </tr>
+
+                                    <tr class="w-full *:p-3">
+                                        <td>
+                                            Friday, January 31, 2025<br />11:00 AM EST
+                                        </td>
+                                        <td>
+                                            <a
+                                                to="#investorsPresentation"
+                                                title="4Q Penn Petro Energy Chevron Earnings Conference Call"
+                                                class="flex items-center *:flex gap-2 underline underline-offset-2 decoration-1 decoration-transparent hover:decoration-(--dark-blue) cursor-pointer duration-300 ease-in-out transition-all"
+                                            >
+                                                <span class="text-(--dark-blue)">
+                                                    4Q Penn Petro Energy Chevron Earnings Conference Call
+                                                </span>
+                                            </a>
+                                        </td>
+                                    </tr>
+
+                                    <tr class="w-full *:p-3 bg-(--light-gray)">
+                                        <td>
+                                            Wednesday, January 08, 2025<br />8:00 AM PDT
+                                        </td>
+                                        <td>
+                                            <a
+                                                to="#investorsPresentation"
+                                                title="Goldman Sachs Energy, CleanTech &amp; Utilities Conference"
+                                                class="flex items-center *:flex gap-2 underline underline-offset-2 decoration-1 decoration-transparent hover:decoration-(--dark-blue) cursor-pointer duration-300 ease-in-out transition-all"
+                                            >
+                                                <span class="text-(--dark-blue)">
+                                                    Goldman Sachs Energy, CleanTech &amp; Utilities Conference
+                                                </span>
+                                            </a>
+                                        </td>
+                                    </tr>
+
+                                    <tr class="w-full *:p-3">
+                                        <td>
+                                            Friday, May 02, 2025 <br> 11:00 AM EDT
+                                        </td>
+                                        <td>
+                                            <a
+                                                to="#investorsPresentation"
+                                                title="1Q 2025 Penn Petro Energy Earnings Conference Call"
+                                                class="flex items-center *:flex gap-2 underline underline-offset-2 decoration-1 decoration-transparent hover:decoration-(--dark-blue) cursor-pointer duration-300 ease-in-out transition-all"
+                                            >
+                                                <span class="text-(--dark-blue)">
+                                                    1Q 2025 Penn Petro Energy Earnings Conference Call
+                                                </span>
+                                            </a>
+                                        </td>
+                                    </tr>
+
+                                    <tr class="w-full *:p-3 bg-(--light-gray)">
+                                        <td>
+                                            Tuesday, March 18, 2025<br />8:00 AM PDT
+                                        </td>
+                                        <td>
+                                            <a
+                                                to="#investorsPresentation"
+                                                title="Piper Sandler 25th Annual Energy Conference"
+                                                class="flex items-center *:flex gap-2 underline underline-offset-2 decoration-1 decoration-transparent hover:decoration-(--dark-blue) cursor-pointer duration-300 ease-in-out transition-all"
+                                            >
+                                                <span class="text-(--dark-blue)">
+                                                    Piper Sandler 25th Annual Energy Conference
+                                                </span>
+                                            </a>
+                                        </td>
+                                    </tr>
+
+                                    <tr class="w-full *:p-3">
+                                        <td>
+                                            Friday, January 31, 2025<br />11:00 AM EST
+                                        </td>
+                                        <td>
+                                            <a
+                                                to="#investorsPresentation"
+                                                title="4Q Penn Petro Energy Chevron Earnings Conference Call"
+                                                class="flex items-center *:flex gap-2 underline underline-offset-2 decoration-1 decoration-transparent hover:decoration-(--dark-blue) cursor-pointer duration-300 ease-in-out transition-all"
+                                            >
+                                                <span class="text-(--dark-blue)">
+                                                    4Q Penn Petro Energy Chevron Earnings Conference Call
+                                                </span>
+                                            </a>
+                                        </td>
+                                    </tr>
+
+                                    <tr class="w-full *:p-3 bg-(--light-gray)">
+                                        <td>
+                                            Wednesday, January 08, 2025<br />8:00 AM PDT
+                                        </td>
+                                        <td>
+                                            <a
+                                                to="#investorsPresentation"
+                                                title="Goldman Sachs Energy, CleanTech &amp; Utilities Conference"
+                                                class="flex items-center *:flex gap-2 underline underline-offset-2 decoration-1 decoration-transparent hover:decoration-(--dark-blue) cursor-pointer duration-300 ease-in-out transition-all"
+                                            >
+                                                <span class="text-(--dark-blue)">
+                                                    Goldman Sachs Energy, CleanTech &amp; Utilities Conference
+                                                </span>
+                                            </a>
+                                        </td>
+                                    </tr>
+
+                                    <tr class="w-full *:p-3">
+                                        <td>
+                                            Friday, May 02, 2025 <br> 11:00 AM EDT
+                                        </td>
+                                        <td>
+                                            <a
+                                                to="#investorsPresentation"
+                                                title="1Q 2025 Penn Petro Energy Earnings Conference Call"
+                                                class="flex items-center *:flex gap-2 underline underline-offset-2 decoration-1 decoration-transparent hover:decoration-(--dark-blue) cursor-pointer duration-300 ease-in-out transition-all"
+                                            >
+                                                <span class="text-(--dark-blue)">
+                                                    1Q 2025 Penn Petro Energy Earnings Conference Call
+                                                </span>
+                                            </a>
+                                        </td>
+                                    </tr>
+
+                                    <tr class="w-full *:p-3 bg-(--light-gray)">
+                                        <td>
+                                            Tuesday, March 18, 2025<br />8:00 AM PDT
+                                        </td>
+                                        <td>
+                                            <a
+                                                to="#investorsPresentation"
+                                                title="Piper Sandler 25th Annual Energy Conference"
+                                                class="flex items-center *:flex gap-2 underline underline-offset-2 decoration-1 decoration-transparent hover:decoration-(--dark-blue) cursor-pointer duration-300 ease-in-out transition-all"
+                                            >
+                                                <span class="text-(--dark-blue)">
+                                                    Piper Sandler 25th Annual Energy Conference
+                                                </span>
+                                            </a>
+                                        </td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+
+                        </div>
+
+
                     </div>
+
+                                  
                 
                 </div>
 
@@ -1309,7 +601,7 @@
 
         </section>
 
-
+         
 
     </div>
 </template>
@@ -1367,7 +659,6 @@
         max-height: 10rem;
         opacity: 1;
     }
-
 
 </style>
 
