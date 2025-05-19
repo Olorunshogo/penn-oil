@@ -1,22 +1,21 @@
 <script setup lang="ts">
+import { watch, nextTick } from "vue";
+import { homeHeroBgs } from "~/models/heroBgModels";
+import HomeHeroBgSlider from "~/components/HomeHeroBgslider.vue";
 
-  import { watch, nextTick } from "vue";
-  import { homeHeroBgs } from "~/models/heroBgModels";
+const { currentIndex, isPlaying, goToSlide, togglePlayPause, animateSlide } =
+  useHomeHeroSlider(homeHeroBgs.value.length);
 
-  const { currentIndex, isPlaying, goToSlide, togglePlayPause, animateSlide } =
-    useHomeHeroSlider(homeHeroBgs.value.length);
+watch(currentIndex, async (newIndex, oldIndex) => {
+  await nextTick();
+  const oldSlide = document.querySelector(`#slide-${oldIndex}`) as HTMLElement;
+  const newSlide = document.querySelector(`#slide-${newIndex}`) as HTMLElement;
 
-  watch(currentIndex, async (newIndex, oldIndex) => {
-    await nextTick();
-    const oldSlide = document.querySelector(`#slide-${oldIndex}`) as HTMLElement;
-    const newSlide = document.querySelector(`#slide-${newIndex}`) as HTMLElement;
-
-    if (oldSlide && newSlide) {
-      animateSlide(oldSlide, "out");
-      animateSlide(newSlide, "in");
-    }
-  });
-  
+  if (oldSlide && newSlide) {
+    animateSlide(oldSlide, "out");
+    animateSlide(newSlide, "in");
+  }
+});
 </script>
 
 <template>
@@ -41,9 +40,9 @@
             :key="item.id"
             :id="'slide-' + index"
           >
-            <Transition name="fade" mode="out-in">
-              <HomeHeroBgSlider v-if="currentIndex === index" v-bind="item" />
-            </Transition>
+            <!-- <Transition name="fade" mode="out-in"> -->
+            <HomeHeroBgSlider v-if="currentIndex === index" v-bind="item" />
+            <!-- </Transition> -->
           </div>
         </div>
 
@@ -76,13 +75,13 @@
 </template>
 
 <style lang="css" scoped>
-  .fade-enter-active,
-  .fade-leave-active {
-    transition: opacity 1s;
-  }
-  .fade-enter-from,
-  .fade-leave-to {
-    opacity: 0;
-  }
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 1s;
+}
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
 </style>
 

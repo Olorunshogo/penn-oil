@@ -37,13 +37,15 @@
 
         <!-- Section: Hero -->
         <section>   
-            <div class="relative w-screen min-h-150 h-full">
+            <div class="relative w-screen min-h-160 md:min-h-170 h-full">
 
                 <!-- Investor Navbar -->
                 <div class="relative left-0 top-16 sm:top-12 flex flex-col w-full h-fit px-(--section-px) lg:px-(--section-px-lg) bg-transparent z-10">
+                    
                     <div class="flex flex-col w-9/10 lg:w-4/5 max-w-7xl mx-auto h-fit shadow-2xl rounded-lg bg-(--dark-blue)">
 
                         <!-- Mobile Screen Investors Nav -->
+
                         <div class="flex lg:hidden flex-col lg:flex-row justify-between px-4 w-full">
                         
                             <div class="flex items-center justify-between w-full h-10 *:text-(--white)">
@@ -255,23 +257,23 @@
 
                 </div>
 
-                <div class="absolute top-30 pb-20 w-full h-fit">
+                <div class="absolute top-30 w-full h-fit">
                     
                     <div class="flex flex-col items-center justify-center gap-24 lg:gap-32 w-full h-full max-w-7xl mx-auto px-(--section-px) lg:px-(--section-px-lg) py-(--section-py) lg:py-(--section-py-lg)">
 
-                        <div class="flex flex-col items-center justify-center text-center gap-6 w-full max-w-7xl mx-auto">                                
+                        <div class="flex flex-col items-center justify-center text-center gap-8 w-full max-w-7xl mx-auto">                                
 
-                            <h1 class="text-5xl sm:text-6xl lg:text-8xl text-(--dark-blue) text-center font-extrabold">
+                            <h1 class="text-3xl sm:text-5xl md:text-6xl lg:text-8xl text-(--dark-blue) text-center font-extrabold">
                                 Events and <br> presentations
                             </h1>
 
-                            <p class="text-(--black) text-lg lg:text-xl text-center font-medium">
+                            <p class="text-(--black) text-base md:text-lg xl:text-xl text-center font-medium">
                                 Elevate your investment strategies by exploring content from our recent and historic events and presentations.
                             </p>
                             
                         </div>
 
-                        <p class="text-(--black) text-xl text-center font-medium">
+                        <p class="text-(--black) text-base md:text-lg xl:text-xl text-center font-medium">
                             Disclaimer: This portion of our Web site contains archival information. 
                             Archived presentations and supporting documents contained or referenced herein should not be considered current and may no longer be accurate
                         </p>
@@ -322,7 +324,7 @@
                         
                         <!-- Current Investor Presentation -->
                         <div class="grid gap-4 w-full h-full" id="investorsPresentation">
-                            <h3 class="font-medium text-2xl text-(--dark-blue)">
+                            <h3 class="font-medium text-xl md:text-2xl text-(--dark-blue)">
                                 Current Investor Presentation
                             </h3>
 
@@ -336,7 +338,7 @@
                                     <span class="text-(--light-red) text-2xl">
                                         <Icon name="mdi:file-pdf-outline" />
                                     </span>
-                                    <span class="text-(--medium-blue) text-lg">
+                                    <span class="text-(--medium-blue) text-base lg:text-lg">
                                         May 2025 Penn Petro Energy Investor Presentation
                                     </span>
                                 </NuxtLink>
@@ -349,7 +351,7 @@
                                     <span class="text-(--light-red) text-2xl">
                                         <Icon name="mdi:file-pdf-outline" />
                                     </span>
-                                    <span class="text-(--medium-blue) text-lg">
+                                    <span class="text-(--medium-blue) text-base lg:text-lg">
                                         March 2025 Penn Petro Energy Sensitivities and Forward Guidance
                                     </span>
                                 </NuxtLink>
@@ -359,7 +361,7 @@
 
                         <!-- Upcoming Events -->
                         <div class="grid gap-4 w-full h-full">
-                            <h3 class="font-medium text-2xl text-(--dark-blue)">
+                            <h3 class="font-medium text-xl md:text-2xl text-(--dark-blue)">
                                 Upcoming Events
                             </h3>
 
@@ -456,11 +458,11 @@
                                         <td>
                                             <a
                                                 to="#investorsPresentation"
-                                                title="4Q Penn Petro Energy Chevron Earnings Conference Call"
+                                                title="4Q Penn Petro Energy Earnings Conference Call"
                                                 class="flex items-center *:flex gap-2 underline underline-offset-2 decoration-1 decoration-transparent hover:decoration-(--dark-blue) cursor-pointer duration-300 ease-in-out transition-all"
                                             >
                                                 <span class="text-(--dark-blue)">
-                                                    4Q Penn Petro Energy Chevron Earnings Conference Call
+                                                    4Q Penn Petro Energy Earnings Conference Call
                                                 </span>
                                             </a>
                                         </td>
@@ -524,11 +526,11 @@
                                         <td>
                                             <a
                                                 to="#investorsPresentation"
-                                                title="4Q Penn Petro Energy Chevron Earnings Conference Call"
+                                                title="4Q Penn Petro Energy Earnings Conference Call"
                                                 class="flex items-center *:flex gap-2 underline underline-offset-2 decoration-1 decoration-transparent hover:decoration-(--dark-blue) cursor-pointer duration-300 ease-in-out transition-all"
                                             >
                                                 <span class="text-(--dark-blue)">
-                                                    4Q Penn Petro Energy Chevron Earnings Conference Call
+                                                    4Q Penn Petro Energy Earnings Conference Call
                                                 </span>
                                             </a>
                                         </td>
@@ -600,8 +602,6 @@
             </div>
 
         </section>
-
-         
 
     </div>
 </template>

@@ -22,7 +22,7 @@
         },
         description: {
             type: String,
-            required: true,
+            required: false,
             default: 'Default description'
         },
 
@@ -42,12 +42,12 @@
             <div class="flex flex-col items-center justify-center w-full h-full">
                 <NuxtLink
                     to="/"
-                    class="group relative flex items-center font-bold text-lg text-(--medium-blue) duration-500 ease-in transition-all"
+                    class="group relative flex items-center text-center font-bold text-lg text-(--medium-blue) duration-500 ease-in transition-all"
                 >
                     <span class="relative overflow-hidden">
                         <span class="group-hover:underline-text">{{ linkName }}</span>
                     </span>
-                    <div class="group relative flex items-center justify-center text-xl w-12 h-full overflow-hidden">
+                    <!-- <div class="group relative flex items-center justify-center text-xl w-12 h-full overflow-hidden">
                         <div class="absolute flex items-center left-4 h-full w-12 transition-all duration-500 ease-in-out group-hover:translate-x-full">
                             <Icon name="mdi:chevron-right"/>
                         </div>
@@ -55,7 +55,7 @@
                         <div class="absolute flex items-center left-4 h-full w-12 -translate-x-full transition-all duration-500 ease-in-out group-hover:translate-x-0">
                             <Icon name="mdi:chevron-right" />
                         </div>
-                    </div>
+                    </div> -->
                 </NuxtLink>
                 <p class="text-base md:text-lg text-(--black) text-center">{{ description }}</p>
             </div>
