@@ -67,7 +67,7 @@
                 </div>
 
                 <!-- Content Layer -->
-                <div class="absolute bottom-0 w-full h-1/2 max-h-120 bg-(--white) rounded-t-2xl shadow-lg flex items-center justify-center"
+                <div class="absolute bottom-0 w-full h-1/2 max-h-100 bg-(--white) rounded-t-2xl shadow-lg flex items-center justify-center"
                 >
                     <div class="flex flex-col items-center justify-center text-center gap-4 w-full max-w-7xl mx-auto">
                         

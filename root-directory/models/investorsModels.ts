@@ -1,6 +1,7 @@
 
 import { ref } from "vue";
 
+// Corporate Governance
 export const investorsHeroSlides = ref([
     
     // 1. 1Q 2025 Penn Petro Energy earnings conference call
@@ -393,3 +394,7 @@ export const publicPolicy = ref([
         description: ""
     },
 ]);
+
+
+
+

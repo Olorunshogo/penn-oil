@@ -25,6 +25,20 @@
         keywords: 'Penn Petro Energy ESG, sustainability index, environmental leadership, social responsibility, corporate governance, ESG transparency, sustainable energy practices, stakeholder trust, ESG reporting, ESG A-Z glossary'
     });
 
+    import {
+        esgCategories,
+    } from '~/models/investorsEsgModels';
+
+    const categories = esgCategories;
+
+    function toggleCategory(id: number) {
+        const category = esgCategories.value.find(c => c.id === id);
+
+        if (category) {
+            category.displayDetails = !category.displayDetails;
+        }
+    }
+
     
 </script>
 
@@ -34,85 +48,72 @@
 
         <!-- Section: Hero -->
         <section>   
-            <div class="-mt-32 relative w-full h-full bg-(--dark-blue) px-(--section-px) lg:px-(--section-px-lg) py-(--section-py) lg:py-(--section-py-lg)">
+            <div class="relative w-full h-full bg-(--dark-blue) px-(--section-px) lg:px-(--section-px-lg) py-(--section-py) lg:py-(--section-py-lg)">
 
-                <div class="py-8 w-full h-fit">
                     
-                    <div class="flex flex-col items-center justify-center gap-20 w-full h-full max-w-7xl mx-auto">
+                <div class="flex flex-col items-center justify-center py-16 w-full h-full max-w-7xl mx-auto">
 
-                        <div class="flex flex-col items-center justify-center text-center gap-3 w-full max-w-7xl mx-auto">                                
+                    <div class="flex flex-col items-center justify-center text-(--white) text-center gap-8 w-full max-w-7xl mx-auto">                                
 
-                            <h1 class="text-3xl lg:text-5xl text-(--dark-blue) pb-4 text-center font-bold">
-                                ESG
-                            </h1>
+                        <h1 class="text-3xl sm:text-4xl lg:text-5xl text-center font-extrabold">
+                            Environment, social, and governance index
+                        </h1>
 
-                            <p class="text-(--black) text-base lg:text-lg text-center">
-                                Explore our ESG topics using the index below. 
-                                <NuxtLink
-                                    to="/pdfs/Climate_change_resilience_report.pdf" 
-                                    target="_blank"
-                                    class="group flex *:flex items-center *:items-center justify-between w-full h-14 p-3 duration-300 ease-in-out transition-all"
-                                >
-                                    <span class="text-xs font-extrabold text-(--medium-blue) group-hover:underline-text">
-                                        2023 Climate Change Resilience Report
-                                    </span>
-                                    <span class="text-(--medium-blue) hover:text-(--light-blue)">
-                                        <Icon name="mdi:arrow-right" />
-                                    </span>
-                                </NuxtLink>
-                            </p>
-                            
-                        </div>
+                        <p class="flex items-center text-lg text-center font-medium">
+                            Explore our ESG topics using the index below. &ThinSpace; 
 
-                        <p class="text-(--black) text-base lg:text-lg">
-                            The Board of Directors of Penn Petro Energy directs the affairs of the Corporation and is committed to sound principles of corporate governance. 
-                            Documents included in this section provide ways for investors to understand the foundation of our corporate governance.
+                            <NuxtLink
+                                to="/pdfs/Penn_sustainability_highlights_2024.pdf" 
+                                target="_blank"
+                                class="group flex *:flex items-center *:items-center justify-between duration-300 ease-in-out transition-all"
+                            >
+                                <span class="group-hover:underline-text">
+                                        About this content
+                                </span>
+
+                            </NuxtLink>
                         </p>
-
-                        <NuxtLink
-                            to="/pdfs/Certificate_of_incorporation.pdf" 
-                            title="Certificate of incorporation"
-                            target="_blank"
-                            class="group flex items-center *:flex gap-2 font-bold duration-300 ease-in-out transition-all"
-                        >
-                            <span class="text-(--medium-blue) text-lg group-hover:underline-text">
-                                Certificate of incorporation
-                            </span>
-                        </NuxtLink>
-
-                        <NuxtLink
-                            to="/pdfs/Penn_PLC_by_laws.pdf" 
-                            title="By-laws"
-                            target="_blank"
-                            class="group flex items-center *:flex gap-2 font-bold duration-300 ease-in-out transition-all"
-                        >
-                            <span class="text-(--medium-blue) text-lg group-hover:underline-text">
-                                By-laws
-                            </span>
-                        </NuxtLink>
-
-                        <NuxtLink
-                            to="/pdfs/Penn_governance_guidelines.pdf" 
-                            title="Corporate governance guidelines"
-                            target="_blank"
-                            class="group flex items-center *:flex gap-2 font-bold duration-300 ease-in-out transition-all"
-                        >
-                            <span class="text-(--medium-blue) text-lg group-hover:underline-text">
-                                Corporate governance guidelines
-                            </span>
-                        </NuxtLink>
-
-                        <NuxtLink
-                            to="/pdfs/Penn_proxy_statement_2025.pdf" 
-                            title="Proxy statement"
-                            target="_blank"
-                            class="group flex items-center *:flex gap-2 font-bold duration-300 ease-in-out transition-all"
-                        >
-                            <span class="text-(--medium-blue) text-lg group-hover:underline-text">
-                                Proxy statement
-                            </span>
-                        </NuxtLink>
+                        
                     </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section>   
+            <div class="relative w-full h-full bg-(--light-gray)/60 lg:px-(--section-px-lg) py-(--section-py) lg:py-(--section-py-lg)">
+
+                    
+                <div class="flex flex-col items-center justify-center py-4 w-full h-full max-w-7xl mx-auto">
+                    
+                    <EsgCategories
+                        v-for="item in esgCategories" :key="item.id"
+                        :heading="item.heading"
+                        :displayDetails="item.displayDetails"
+
+                        :navLink1="item.navLink1"
+                        :linkName1="item.linkName1"
+                        :navLink2="item.navLink2"
+                        :linkName2="item.linkName2"
+                        :navLink3="item.navLink3"
+                        :linkName3="item.linkName3"
+                        :navLink4="item.navLink4"
+                        :linkName4="item.linkName4"
+                        :navLink5="item.navLink5"
+                        :linkName5="item.linkName5"
+
+                        :introduction="item.introduction"
+                        :updatedDate="item.updatedDate"
+                        :introP1="item.introP1"
+                        :introP2="item.introP2"
+                        :introLink="item.introLink"
+                        :introLinkName="item.introLinkName"
+
+                        class="w-full h-full"
+                        @toggle-details="toggleCategory(item.id)"
+                    />
+
+                    
                 </div>
 
             </div>
