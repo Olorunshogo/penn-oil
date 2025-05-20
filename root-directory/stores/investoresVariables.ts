@@ -1098,6 +1098,34 @@ export function togglePeriodicReview() {
 
 // Investor ESG
 export const esgBusinessConduct = ref<boolean>(false)
+export const esgClimate = ref<boolean>(false);
+export const esgEnvironment = ref<boolean>(false);
+export const esgGovernance = ref<boolean>(false);
+
 export function toggleEsgBusinessConduct() {
     esgBusinessConduct.value = !esgBusinessConduct.value;
+    esgClimate.value = false;
+    esgEnvironment.value = false;
+    esgGovernance.value = false;
+}
+
+export function toggleEsgClimate() {
+    esgBusinessConduct.value = false;
+    esgClimate.value = !esgClimate.value;
+    esgEnvironment.value = false;
+    esgGovernance.value = false;
+}
+
+export function toggleEsgEnvironment() {
+    esgBusinessConduct.value = false;
+    esgClimate.value = false;
+    esgEnvironment.value = !esgEnvironment.value;
+    esgGovernance.value = false;
+}
+
+export function toggleEsgGovernance() {
+    esgBusinessConduct.value = false;
+    esgClimate.value = false;
+    esgEnvironment.value = false;
+    esgGovernance.value = !esgGovernance.value;
 }
