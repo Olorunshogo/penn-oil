@@ -3,7 +3,7 @@
     import { useHead } from 'nuxt/app';
     useHead({
         title: 'Penn Petro Energy Investors: Delivering Strong Results',
-        titleTemplate: '%s | Penn Petro Energy PLC'
+        titleTemplate: '%s | Penn Petro Energy'
     });
 
     useSeoMeta({
