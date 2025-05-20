@@ -110,7 +110,7 @@
                     </div>
 
                     <!-- Penn Petro Energy Board of Directors -->
-                    <div class="grid md:grid-cols-3 xl:grid-cols-4 gap-8 place-content-center">
+                    <div id="boardOfDirectors" class="grid md:grid-cols-3 xl:grid-cols-4 gap-8 place-content-center">
                         <CustomLeadership
                             v-for="item in corporateOfficers"
                             :key="item.id"

@@ -101,9 +101,9 @@
                             View archive
                         </span>
                         <span class="flex items-center">
-                            <Icon name="mdi:chevron-up" 
+                            <Icon name="mdi:chevron-down" 
                                 class="text-lg font-semibold ease-in-out duration-500 transition-all"
-                                :class="{ '-rotate-180': isArchiveOpen }"
+                                :class="{ 'rotate-180': isArchiveOpen }"
                             />
                         </span>
                     </button>

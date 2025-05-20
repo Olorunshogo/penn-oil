@@ -145,23 +145,11 @@ export const whatEnergyHeroVideoBg = ref({
     linkName: "Read more about our environmental efforts"        
 });
 
-// What Technology
-// export const whatTechnologyHeroVideoBg = ref({    
-//     videoSrc: "https://videos.pexels.com/video-files/8467244/8467244-uhd_2560_1440_25fps.mp4",
-//     category: "what we do",
-//     title: "Energy solutions",
-//     titleBgVideoSrc: "/landing_videos/hero3.mp4",
-//     paragraph: "Affordable, reliable and ever-cleaner energy for today and tomorrow. That’s what we’re working towards, every day.",
-//     displayLink: false,
-//     link: "/newsroom",
-//     linkName: "Read more about our environmental efforts"        
-// });
-
 export const whatTechnologyHeroImageBg = ref({    
     imgSrc: "https://images.pexels.com/photos/2085831/pexels-photo-2085831.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     imgAlt: "Star Wars R2-d2",
     category: "Who we are",
-    title: "Technology and innovation",
+    title: "Tech & innovation",
     titleBgImageSrc: "https://images.pexels.com/photos/2085831/pexels-photo-2085831.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     paragraph: "Accelerating progress to power our world today and build the lower carbon energy system of the future.",
     displayLink: false,

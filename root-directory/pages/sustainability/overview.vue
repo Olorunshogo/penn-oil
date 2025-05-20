@@ -98,7 +98,7 @@
         <section>
             <div class="px-(--section-px) lg:px-(--section-px-lg) py-(--section-py) lg:py-(--section-py-lg) bg-(--white) w-full h-full overflow-hidden">
                 
-                <div class="flex flex-col gap-8 lg:gap-12 w-full max-w-7xl mx-auto">
+                <div id="sustainabilityHighlight" class="flex flex-col gap-8 lg:gap-12 w-full max-w-7xl mx-auto">
 
                     <div class="flex flex-col items-center justify-center gap-4">
                         <h2 

@@ -43,9 +43,9 @@ export function useHomeHeroSlider(slideCount: number) {
 
     function animateSlide(el: HTMLElement, dir: 'in' | 'out') {
         if (dir === 'in') {
-            gsap.fromTo(el, { x: '100%', opacity: 0 }, { x: '0%', opacity: 1, duration: 0 })
+            gsap.fromTo(el, { x: '100%', opacity: 0 }, { x: '0%', opacity: 1, duration: 0.5 })
         } else {
-            gsap.to(el, { x: '-100%', opacity: 0, duration: 0 })
+            gsap.to(el, { x: '-100%', opacity: 0, duration: 0.5 })
         }
     }
 
