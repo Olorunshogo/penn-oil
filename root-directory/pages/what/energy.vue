@@ -226,8 +226,6 @@
 
         </section>
 
-
-
     </div>
 </template>
 

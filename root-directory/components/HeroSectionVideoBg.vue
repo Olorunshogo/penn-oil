@@ -84,7 +84,7 @@
 
                         <NuxtLink
                             v-if="displayLink" :to="link"
-                            class="group flex *:flex items-center *:items-center justify-center px-2 lg:px-8 py-2 gap-2 lg:gap-4 w-fit text-(--black) hover:text-(--white) rounded-lg shadow-lg mt-8 border-2 border-(--medium-blue) hover:bg-(--medium-blue) duration-300 ease-in-out transition-all"
+                            class="group flex *:flex items-center *:items-center justify-center px-2 lg:px-8 py-2 gap-2 lg:gap-4 w-fit text-(--white) hover:text-(--black) mt-4 duration-300 ease-in-out transition-all"
                         >
                             <div class="group relative flex items-center justify-center text-xl w-8 h-full overflow-hidden">
                                 <div class="absolute flex items-center left-2 h-full w-12 transition-all duration-500 ease-in-out group-hover:translate-x-full">

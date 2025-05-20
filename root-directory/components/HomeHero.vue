@@ -1,24 +1,37 @@
 <script setup lang="ts">
 //import { watch, nextTick } from "vue";
-import { homeHeroBgs } from "~/models/heroBgModels";
+import { homeHeroBgs, homeHeroVideoBg } from "~/models/heroBgModels";
 
-const { currentIndex, isPlaying, goToSlide, togglePlayPause, animateSlide } =
-  useHomeHeroSlider(homeHeroBgs.value.length);
+// const { currentIndex, isPlaying, goToSlide, togglePlayPause, animateSlide } =
+//   useHomeHeroSlider(homeHeroBgs.value.length);
 
-watch(currentIndex, async (newIndex, oldIndex) => {
-  await nextTick();
-  const oldSlide = document.querySelector(`#slide-${oldIndex}`) as HTMLElement;
-  const newSlide = document.querySelector(`#slide-${newIndex}`) as HTMLElement;
+// watch(currentIndex, async (newIndex, oldIndex) => {
+//   await nextTick();
+//   const oldSlide = document.querySelector(`#slide-${oldIndex}`) as HTMLElement;
+//   const newSlide = document.querySelector(`#slide-${newIndex}`) as HTMLElement;
 
-  if (oldSlide && newSlide) {
-    animateSlide(oldSlide, "out");
-    animateSlide(newSlide, "in");
-  }
-});
+//   if (oldSlide && newSlide) {
+//     animateSlide(oldSlide, "out");
+//     animateSlide(newSlide, "in");
+//   }
+// });
 </script>
 
 <template>
   <div>
+
+    <!-- Section: Hero -->
+        <div>
+            <HeroSectionVideoBg
+              :videoSrc="homeHeroVideoBg.videoSrc"
+              :title="homeHeroVideoBg.title"
+              :titleBgVideoSrc="homeHeroVideoBg.titleBgVideoSrc"
+              :paragraph="homeHeroVideoBg.paragraph"
+              :displayLink="homeHeroVideoBg.displayLink"
+              :link="homeHeroVideoBg.link"
+              :linkName="homeHeroVideoBg.linkName"
+            />
+        </div>
     <!-- Section: Hero -->
     <!-- <div>
       <HomeHeroBgSlider
@@ -31,7 +44,7 @@ watch(currentIndex, async (newIndex, oldIndex) => {
       />
     </div> -->
 
-    <div class="relative">
+    <!-- <div class="relative">
       <div class="relative overflow-hidden h-dvh w-screen">
         <div class="absolute inset-0 w-full h-full">
           <div
@@ -43,7 +56,7 @@ watch(currentIndex, async (newIndex, oldIndex) => {
           </div>
         </div>
 
-        <!-- Controls -->
+        <!-- Controls --
         <div
           class="controls absolute bottom-8 left-1/2 transform -translate-x-1/2 z-50 flex items-center gap-4"
         >
@@ -56,7 +69,7 @@ watch(currentIndex, async (newIndex, oldIndex) => {
               @click="goToSlide(idx)"
             ></span>
           </div>
-          <!-- <button
+          <!-- <button --
             @click="togglePlayPause"
             class="ml-4 text-white bg-black/50 px-3 py-1 rounded-full"
           >
@@ -64,11 +77,11 @@ watch(currentIndex, async (newIndex, oldIndex) => {
               :name="isPlaying ? 'mdi:pause' : 'mdi:play'"
               class="text-(--white) font-extrabold text-3xl w-16 h-16 rounded-full"
             />
-          </button> -->
+          </button> --
         </div>
 
       </div>
-    </div>
+    </div> -->
   
   </div>
 </template>

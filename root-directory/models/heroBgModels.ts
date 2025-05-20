@@ -69,6 +69,18 @@ export const homeHeroBgs = ref([
     },
 ]);
 
+// What Energy
+export const homeHeroVideoBg = ref({    
+    videoSrc: "/landing_videos/hero1.mp4",
+    category: "what we do",
+    title: "More with less",
+    titleBgVideoSrc: "/landing_videos/hero3.mp4",
+    paragraph: "We've reached first oil at our Ballymore subsea tieback in the Gulf of America showcasing how we're leveraging technology and driving efficiencies to deliver affordable, reliable energy production.",
+    displayLink: true,
+    link: "/what/energy",
+    linkName: "Learn more"        
+});
+
 
 
 // Who Overview
