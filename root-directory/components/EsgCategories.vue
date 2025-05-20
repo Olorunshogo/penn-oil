@@ -65,9 +65,9 @@
                 >
                     
                     <!-- Blue Bg Navbar at the LHS -->
-                    <div class="flex w-60 rounded-lg bg-(--dark-blue)">
+                    <div class="flex w-60 rounded-lg bg-(--dark-blue) h-full max-h-70">
 
-                        <div class="flex flex-col p-4 gap-3 font-bold text-sm w-full h-full max-h-60 *:text-(--white) *:hover:opacity-70 *:duration-500 *:ease-in-out *:transition-all">
+                        <div class="flex flex-col p-4 gap-3 font-bold text-sm w-full h-full *:text-(--white) *:hover:opacity-70 *:duration-500 *:ease-in-out *:transition-all">
                             <a :href="navLink1">
                                 <span>{{ linkName1 }}</span>
                             </a>

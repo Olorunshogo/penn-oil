@@ -1095,3 +1095,9 @@ export function togglePeriodicReview() {
     periodicReview.value = !periodicReview.value;
 }
 
+
+// Investor ESG
+export const esgBusinessConduct = ref<boolean>(false)
+export function toggleEsgBusinessConduct() {
+    esgBusinessConduct.value = !esgBusinessConduct.value;
+}
