@@ -1129,3 +1129,112 @@ export function toggleEsgGovernance() {
     esgEnvironment.value = false;
     esgGovernance.value = !esgGovernance.value;
 }
+
+
+// Investors Stock
+
+// // Stock Navbar
+export const openInvestorsNav = ref<boolean>(false);
+export function toggleStockInvestorNavLinks() {
+    openInvestorsNav.value = !openInvestorsNav.value;
+}
+
+// // Stock FAQs
+export const stockPennTransfer = ref<boolean>(false);
+export const stockSymbol = ref<boolean>(false);
+export const stockPennStock = ref<boolean>(false);
+export const stockPennDividend = ref<boolean>(false)
+export const stockManageAccount = ref<boolean>(false);
+export const stockTransferStock = ref<boolean>(false);
+export const stockPennIssue = ref<boolean>(false);
+
+
+export function togglePennTransfer() {
+    stockPennTransfer.value = !stockPennTransfer.value;
+    stockSymbol.value = false;
+    stockPennStock.value = false;
+    stockPennDividend.value = false;
+    stockManageAccount.value = false;
+    stockTransferStock.value = false;
+    stockPennIssue.value = false;
+}
+export function toggleSymbol() {
+    stockPennTransfer.value = false;
+    stockSymbol.value = !stockSymbol.value;
+    stockPennStock.value = false;
+    stockPennDividend.value = false;
+    stockManageAccount.value = false;
+    stockTransferStock.value = false;
+    stockPennIssue.value = false;
+}
+export function togglePennStock() {
+    stockPennTransfer.value = false;
+    stockSymbol.value = false;
+    stockPennStock.value = !stockPennStock.value;
+    stockPennDividend.value = false;
+    stockManageAccount.value = false;
+    stockTransferStock.value = false;
+    stockPennIssue.value = false;
+}
+export function togglePennDividend() {
+    stockPennTransfer.value = false;
+    stockSymbol.value = false;
+    stockPennStock.value = false;
+    stockPennDividend.value = !stockPennDividend.value;
+    stockManageAccount.value = false;
+    stockTransferStock.value = false;
+    stockPennIssue.value = false;
+}
+export function toggleManageAccount() {
+    stockPennTransfer.value = false;
+    stockSymbol.value = false;
+    stockPennStock.value = false;
+    stockPennDividend.value = false;
+    stockManageAccount.value = !stockManageAccount.value;
+    stockTransferStock.value = false;
+    stockPennIssue.value = false;
+}
+export function toggleTransferStock() {
+    stockPennTransfer.value = false;
+    stockSymbol.value = false;
+    stockPennStock.value = false;
+    stockPennDividend.value = false;
+    stockManageAccount.value = false;
+    stockTransferStock.value = !stockTransferStock.value;
+    stockPennIssue.value = false;
+}
+export function togglePennIssue() {
+    stockPennTransfer.value = false;
+    stockSymbol.value = false;
+    stockPennStock.value = false;
+    stockPennDividend.value = false;
+    stockManageAccount.value = false;
+    stockTransferStock.value = false;
+    stockPennIssue.value = !stockPennIssue.value;
+}
+
+// // Stock Information about Penn
+export const stockProxyStatement = ref<boolean>(false);
+export const stockCopyMaterials = ref<boolean>(false);
+
+export function toggleProxyStatement() {
+    stockProxyStatement.value = !stockProxyStatement.value;
+    stockCopyMaterials.value = false;
+}
+export function toggleCopyMaterials() {
+    stockProxyStatement.value = false;
+    stockCopyMaterials.value = !stockCopyMaterials.value;
+}
+
+// // Stock Corporate governance
+export const stockBoardOfDirectors = ref<boolean>(false);
+export const stockCorporateOfficers = ref<boolean>(false);
+
+export function toggleBoardOfDirectors() {
+    stockBoardOfDirectors.value = !stockBoardOfDirectors.value;
+    stockCorporateOfficers.value= false;
+}
+export function toggleCorporateOfficers() {
+    stockBoardOfDirectors.value = false;
+    stockCorporateOfficers.value = !stockCorporateOfficers.value;
+}

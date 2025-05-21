@@ -73,25 +73,6 @@
                                     Quality and reliability drive customers to Penn Petro Energy. 
                                     Innovative and forward looking, our high quality fuel and customer experience mean Penn Petro Energy is trusted by our customers.
                                 </p>
-
-                                <!-- Find a Penn Petro Energy service station -->
-                                <NuxtLink 
-                                    to="/who/brands"
-                                    class="group flex *:flex items-center *:items-center py-1 gap-4 w-fit h-fit font-bold text-(--white) duration-300 ease-in-out transition-all"
-                                >
-                                    <div class="group relative flex items-center text-xl w-8 h-full overflow-hidden">
-                                        <div class="absolute flex items-center left-2 h-full w-12 transition-all duration-500 ease-in-out group-hover:translate-x-full">
-                                            <Icon name="mdi:arrow-right"/>
-                                        </div>
-                                        
-                                        <div class="absolute flex items-center left-2 h-full w-12 -translate-x-full transition-all duration-500 ease-in-out group-hover:translate-x-0">
-                                            <Icon name="mdi:arrow-right" />
-                                        </div>
-                                    </div>
-
-                                    <!-- <span> Find a Penn Petro Energy service station </span> -->
-                                    <span class="group-hover:underline-text text-lg">Find a service station </span>
-                                </NuxtLink>
                             </div>
                         </div>
                     </div>
@@ -118,25 +99,6 @@
                                     The Texaco star stands for more than a century of quality fuels and lubricants. 
                                     A global icon with a powerful presence in the United States and Europe, Texaco delivers the high performance and customer satisfaction drivers trust.
                                 </p>
-
-                                <!-- Find a texaco service station -->
-                                <NuxtLink 
-                                    to="/who/brands"
-                                    class="group flex *:flex items-center *:items-center py-3 gap-4 w-fit h-fit font-bold text-(--white) duration-300 ease-in-out transition-all"
-                                >
-                                    <div class="group relative flex items-center text-xl w-8 h-full overflow-hidden">
-                                        <div class="absolute flex items-center left-2 h-full w-12 transition-all duration-500 ease-in-out group-hover:translate-x-full">
-                                            <Icon name="mdi:arrow-right"/>
-                                        </div>
-                                        
-                                        <div class="absolute flex items-center left-2 h-full w-12 -translate-x-full transition-all duration-500 ease-in-out group-hover:translate-x-0">
-                                            <Icon name="mdi:arrow-right" />
-                                        </div>
-                                    </div>
-
-                                    <!-- <span> Find a Penn Petro Energy service station </span> -->
-                                    <span class="group-hover:underline-text text-lg">Find a texaco service station </span>
-                                </NuxtLink>
                             </div>
                         </div>
                     </div>
@@ -164,24 +126,6 @@
                                     Quality fuels and lubricants and a pedigree in technology set Caltex apart.
                                 </p>
 
-                                <!-- Find a caltex service station -->
-                                <NuxtLink 
-                                    to="/who/brands"
-                                    target="_blank"
-                                    class="group flex *:flex items-center *:items-center py-3 gap-4 w-fit h-fit font-bold text-(--white) duration-300 ease-in-out transition-all"
-                                >
-                                    <div class="group relative flex items-center text-xl w-8 h-full overflow-hidden">
-                                        <div class="absolute flex items-center left-2 h-full w-12 transition-all duration-500 ease-in-out group-hover:translate-x-full">
-                                            <Icon name="mdi:arrow-right"/>
-                                        </div>
-                                        
-                                        <div class="absolute flex items-center left-2 h-full w-12 -translate-x-full transition-all duration-500 ease-in-out group-hover:translate-x-0">
-                                            <Icon name="mdi:arrow-right" />
-                                        </div>
-                                    </div>
-
-                                    <span class="group-hover:underline-text text-lg">Find a caltex service station </span>
-                                </NuxtLink>
                             </div>
                         </div>
                     </div>
@@ -208,24 +152,6 @@
                                     Wherever you’re headed, it pays to have a Penn Petro Energy card. 
                                     Feel confident on your travels when you keep our gift cards and personal and business credit cards by your side.
                                 </p>
-
-                                <!-- Find a caltex service station -->
-                                <NuxtLink 
-                                    to="/who/brands"
-                                    class="group flex *:flex items-center *:items-center py-3 gap-4 w-fit h-fit font-bold text-(--black) duration-300 ease-in-out transition-all"
-                                >
-                                    <div class="group relative flex items-center text-xl w-8 h-full overflow-hidden">
-                                        <div class="absolute flex items-center left-2 h-full w-12 transition-all duration-500 ease-in-out group-hover:translate-x-full">
-                                            <Icon name="mdi:arrow-right"/>
-                                        </div>
-                                        
-                                        <div class="absolute flex items-center left-2 h-full w-12 -translate-x-full transition-all duration-500 ease-in-out group-hover:translate-x-0">
-                                            <Icon name="mdi:arrow-right" />
-                                        </div>
-                                    </div>
-
-                                    <span class="group-hover:underline-text text-lg">Find a caltex service station </span>
-                                </NuxtLink>
                             </div>
                         </div>
                     </div>

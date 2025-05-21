@@ -30,7 +30,7 @@
         oilEquivalent,
         returnOnCapital,
         shareholdersDistributions
-    } from '~/stores/investoresVariables';
+    } from '~/stores/investorsVariables';
 
     const openInvestorsNav = ref<boolean>(false);
     function toggleInvestorNavLinks() {
@@ -87,7 +87,7 @@
                                 <Transition name="slide-down">
                                     <div 
                                         v-if="openInvestorsNav"
-                                        class="flex flex-col items-center justify-between w-full h-full"
+                                        class="flex flex-col items-center justify-between w-full h-full z-99"
                                     >
                                         <NuxtLink
                                             to="/investors/events"
@@ -138,22 +138,6 @@
                                         </NuxtLink>
 
                                         <NuxtLink
-                                            to="/investors/reports"
-                                            class="group flex *:flex items-center *:items-center justify-center px-2 lg:px-8 py-3 gap-2 lg:gap-4 text-(--black) border-b-1 border-(--light-gray) w-full duration-300 ease-in-out transition-all"
-                                        >
-                                            <div class="group relative flex items-center justify-center text-lg w-8 h-full overflow-hidden">
-                                                <div class="absolute flex items-center left-2 h-full w-12 transition-all duration-500 ease-in-out group-hover:translate-x-full">
-                                                    <Icon name="mdi:arrow-right"/>
-                                                </div>
-                                                
-                                                <div class="absolute flex items-center left-2 h-full w-12 -translate-x-full transition-all duration-500 ease-in-out group-hover:translate-x-0">
-                                                    <Icon name="mdi:arrow-right" />
-                                                </div>
-                                            </div>
-                                            <span class="group-hover:underline-text font-semibold text-xs">Reports and fillings</span>
-                                        </NuxtLink>
-
-                                        <NuxtLink
                                             to="/investors/stock"
                                             class="group flex *:flex items-center *:items-center justify-center px-2 lg:px-8 py-3 gap-2 lg:gap-4 text-(--black) border-b-1 border-(--light-gray) w-full duration-300 ease-in-out transition-all"
                                         >
@@ -167,6 +151,22 @@
                                                 </div>
                                             </div>
                                             <span class="group-hover:underline-text font-semibold text-xs">Stock and dividend</span>
+                                        </NuxtLink>
+
+                                        <NuxtLink
+                                            to="/contact"
+                                            class="group flex *:flex items-center *:items-center justify-center px-2 lg:px-8 py-3 gap-2 lg:gap-4 text-(--black) border-b-1 border-(--light-gray) w-full duration-300 ease-in-out transition-all"
+                                        >
+                                            <div class="group relative flex items-center justify-center text-lg w-8 h-full overflow-hidden">
+                                                <div class="absolute flex items-center left-2 h-full w-12 transition-all duration-500 ease-in-out group-hover:translate-x-full">
+                                                    <Icon name="mdi:arrow-right"/>
+                                                </div>
+                                                
+                                                <div class="absolute flex items-center left-2 h-full w-12 -translate-x-full transition-all duration-500 ease-in-out group-hover:translate-x-0">
+                                                    <Icon name="mdi:arrow-right" />
+                                                </div>
+                                            </div>
+                                            <span class="group-hover:underline-text font-semibold text-xs">Contact Us</span>
                                         </NuxtLink>
                                     
                                     </div>

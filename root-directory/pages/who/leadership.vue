@@ -112,7 +112,7 @@
                     <!-- Penn Petro Energy Board of Directors -->
                     <div id="boardOfDirectors" class="grid md:grid-cols-3 xl:grid-cols-4 gap-8 place-content-center">
                         <CustomLeadership
-                            v-for="item in corporateOfficers"
+                            v-for="item in boardOfDir"
                             :key="item.id"
                             :imgSrc="item.imgSrc"
                             :imgAlt="item.imgAlt"
@@ -142,7 +142,7 @@
                     </NuxtLink>
 
                     <!-- Penn Petro Energy Corporate officers -->
-                    <div class="grid gap-2">
+                    <div id="corporateOfficers" class="grid gap-2">
                         <h2 class="text-center text-3xl md:text-4xl font-bold text-(--dark-blue)">Corporate officers</h2>
                         <p class="text-(--black) text-lg text-center">
                             *executive committee members
@@ -152,7 +152,7 @@
                     <!-- Penn Petro Energy Board of Directors -->
                     <div class="grid md:grid-cols-3 xl:grid-cols-4 gap-8 place-content-center">
                         <CustomLeadership
-                            v-for="item in boardOfDir"
+                            v-for="item in corporateOfficers"
                             :key="item.id"
                             :imgSrc="item.imgSrc"
                             :imgAlt="item.imgAlt"

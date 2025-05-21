@@ -59,7 +59,7 @@
         policyOnStockholdersRights, togglePolicyOnStockholdersRights,
         periodicReview, togglePeriodicReview,
 
-    } from '~/stores/investoresVariables';
+    } from '~/stores/investorsVariables';
 
     import {
         auditCommittee,

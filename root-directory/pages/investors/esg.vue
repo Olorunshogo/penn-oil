@@ -30,7 +30,7 @@
         esgClimate, toggleEsgClimate,
         esgEnvironment, toggleEsgEnvironment,
         esgGovernance, toggleEsgGovernance,
-    } from '~/stores/investoresVariables';
+    } from '~/stores/investorsVariables';
     import {
         esgBusinessConductNavLinks, esgClimateNavLinks,
         esgEnvironmentNavLinks, esgGovernanceNavLinks,
@@ -1005,12 +1005,11 @@
                                     We strive to protect the environment, empower people, and get results the right way – today and tomorrow.
                                 </p>
 
-                                <!-- See our portfolio -->
                                 <NuxtLink 
                                     to="/sustainability/overview"
-                                    class="group flex *:flex items-center *:items-center px-6 py-2 gap-4 w-fit font-bold text-(--white) hover:text-(--black) rounded-lg border-1 border-(--light-blue) hover:bg-(--light-blue) duration-300 ease-in-out transition-all"
+                                    class="group flex *:flex items-center *:items-center gap-2 text-sm w-fit font-bold text-(--white) hover:text-(--light-blue) duration-300 ease-in-out transition-all"
                                 >
-                                    <div class="group relative flex items-center text-xl w-8 h-full overflow-hidden">
+                                    <div class="group relative flex items-center text-xl w-12 h-full overflow-hidden">
                                         <div class="absolute flex items-center left-2 h-full w-12 transition-all duration-500 ease-in-out group-hover:translate-x-full">
                                             <Icon name="mdi:arrow-right"/>
                                         </div>
@@ -1020,7 +1019,7 @@
                                         </div>
                                     </div>
 
-                                    <span class="text-lg">See our portfolio</span>
+                                    <span class="text-base">Learn more</span>
                                 </NuxtLink>
                             </div>
                         </div>
@@ -1031,11 +1030,7 @@
 
                     
             </div>
-        </section>
-
-        
-
-
+        </section> 
         
     </div>
 </template>
