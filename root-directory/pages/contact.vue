@@ -1,6 +1,7 @@
 
 <script lang="ts" setup>
     import { useHead } from 'nuxt/app';
+    import { ref, computed } from 'vue'
 
     useHead({
         title: 'Contact Information',
@@ -59,6 +60,26 @@
             console.error(err)
             alert('Error submitting form.')
         }
+    }
+
+    import {
+        topics,
+    } from '~/models/contact';
+
+    const selectedTopic = ref('Geometry')
+    const selectedSubtopic = ref('')
+
+    const subtopics = computed(() => {
+    const topic = topics.find(t => t.name === selectedTopic.value)
+        return topic ? topic.subtopics : []
+    })
+
+    function onTopicChange() {
+        selectedSubtopic.value = '' // Reset subtopic when topic changes
+    }
+
+    function handleSubmitFOrm() {
+
     }
 
 </script>
@@ -922,12 +943,55 @@
                         </div>
                     </div> 
 
-                    <form @submit.prevent="submitForm">
-                        <input v-model="form.name" type="text" placeholder="Name" />
-                        <input v-model="form.email" type="email" placeholder="Email" />
-                        <textarea v-model="form.message" placeholder="Message"></textarea>
-                        <button type="submit">Send</button>
+                    <!-- Form -->
+                    <form @submit.prevent class="w-full h-full">
+                        <div class="flex flex-col gap-8 w-9/10 max-w-3xl mx-auto h-full">
+                            <!-- Topic Dropdown -->
+                            <div class="flex items-center w-full h-full">
+                                <label 
+                                    for="topic" 
+                                    class="flex *:flex items-center *:items-center w-40 text-sm font-medium text-(--dark-blue)"
+                                >
+                                    <span>Topic</span>
+                                    <span class="text-(--dark-red) font-bold">*</span>
+                                </label>
+                                <select
+                                    id="topic"
+                                    v-model="selectedTopic"
+                                    @change="onTopicChange"
+                                    class="p-2 text-(--medium-blue) font-medium flex-1 shadow-sm border-b-2 border-(--border-gray) focus:outline-none focus:border-2 focus:border-dotted focus:border-(--medium-blue)"
+                                    aria-required="true"
+                                >
+                                    <option value="" disabled>Select a topic</option>
+                                    <option v-for="topic in topics" :key="topic.name" :value="topic.name">
+                                        {{ topic.name }}
+                                    </option>
+                                </select>
+                            </div>
+
+                            <!-- Subtopic Dropdown -->
+                            <div class="flex gap-8">
+                                <label for="subtopic" class="w-40 mb-1 text-sm font-medium text-gray-700">Subtopic</label>
+                                <select
+                                    id="subtopic"
+                                    v-model="selectedSubtopic"
+                                    :disabled="!selectedTopic"
+                                    class="flex-1 px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 disabled:bg-gray-100 disabled:text-gray-400 disabled:cursor-not-allowed"
+                                    aria-required="true"
+                                >
+                                    <option value="" disabled>Select a subtopic</option>
+                                    <option
+                                        v-for="sub in subtopics"
+                                        :key="sub"
+                                        :value="sub"
+                                    >
+                                        {{ sub }}
+                                    </option>
+                                </select>
+                            </div>
+                        </div>
                     </form>
+
 
                     <!-- More ways to contact us -->
                     <div class="flex flex-col gap-20 items-center justify-center w-full mx-auto max-w-4xl h-full">
@@ -1176,6 +1240,12 @@
     .group-hover\:arrow-move {
         animation: moveArrow 3s infinite alternate ease-in-out;
     }  
+
+    select:disabled {
+        cursor: not-allowed;
+        background-color: #f0f0f0;
+        color: #888;
+    }
 
 </style>
 
