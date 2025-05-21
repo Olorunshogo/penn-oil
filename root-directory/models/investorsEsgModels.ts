@@ -46,14 +46,8 @@ export const esgClimateNavLinks = ref([
     {
         id: 3,
         navLink: '/investors/esg#lowerCarbon',
-        linkName: 'Whistleblower hotline',
+        linkName: 'Lower carbon',
     },
-    {
-        id: 4,
-        navLink: '/investors/esg#portfolioCarbon',
-        linkName: 'Portfolio carbon intensity',
-
-    }
 
 ]);
 

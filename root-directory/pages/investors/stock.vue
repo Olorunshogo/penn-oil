@@ -36,7 +36,10 @@
         stockCopyMaterials, toggleCopyMaterials,
 
         stockBoardOfDirectors, toggleBoardOfDirectors,
-        stockCorporateOfficers, toggleCorporateOfficers
+        stockCorporateOfficers, toggleCorporateOfficers,
+
+        stockCommonNoble, toggleCommonNoble,
+        stockNobleCertificates, toggleNobleCertificates
     } from '~/stores/investorsVariables'
 
     
@@ -284,69 +287,6 @@
                             
                         </div>
                     </div>
-                </div>
-
-            </div>
-        </section>
-
-         <!-- Section: Direct stock purchases & dividend reinvestment -->
-        <section>   
-            <div class="relative w-full h-full">
-
-                <div class="flex flex-col  px-(--section-px) lg:px-(--section-px-lg) bg-transparent w-full max-w-7xl mx-auto h-full">
-                    
-                    <div class="flex flex-col items-center justify-center gap-8 py-20">
-                        <h2 class="text-(--dark-blue) text-3xl lg:text-5xl font-extrabold">
-                            Direct stock purchases &amp; dividend reinvestment
-                        </h2>
-
-                        <p class="text-lg lg:text-xl text-(--black)">
-                            The Computershare Investment Plan for Penn Petro Energy stock allows interested investors to purchase shares of stock and participate in dividend reinvestment.
-                        </p>
-                    </div>
-
-                    <div class="flex flex-col gap-4 text-(--black) py-8">
-                        <h3 class="text-lg font-bold">
-                            Managing your shares
-                        </h3>
-
-                        <div class="grid gap-4 *:text-lg *:lg:text-xl">
-                            <p>
-                                Penn Petro Energy engages a transfer agent, Computershare, to assist the company in maintaining the accounts of individuals and entities that hold Penn Petro Energy stock in their own name on the records of the company, sometimes referred to as "stockholders of record" or "registered stockholders."
-                            </p>
-
-                            <p>
-                                When you access your account through Computershare's website, Investor Center, you can view your current balance, access your account history, obtain current and historical stock prices and purchase and sell Penn Petro Energy shares through the Computershare Investment Plan. 
-                                To access your existing account on the Investor Center website, you will need your user ID and password. For stockholders who do not have a Computershare Investor Center account, you may be able to create a unique user ID by answering a series of questions, completing a first-time user authentication process and creating a custom seal. The Computershare Investment Plan allows interested investors to purchase and sell shares of Chevron stock and enroll in dividend reinvestment.
-                            </p>
-
-                            <p>
-                                Purchases of shares of Penn Petro Energy stock through the Computershare Investment Plan can be made by electronic funds transfer or enclosing a check accompanied by a current coupon found at the bottom of your account statement. 
-                                Each check must have a coupon attached. 
-                                Computershare will wait up to three business days after receipt of the check or electronic funds transfer to ensure it receives good funds and will then seek to purchase shares from optional cash investments less applicable fees, in whole and fractional shares and on the open market promptly, typically daily but in no event later than five business days thereafter, assuming the relevant markets are open and sufficient market liquidity exists (and except where deferral is required under applicable federal or state laws or regulations). 
-                                Although Computershare will process the investment as promptly as practicable, there is no guarantee the investment will occur on the investor's specific investment day due to delays with mail, funding, invalid or illegible documentation, etc. 
-                                Please refer to the Computershare Investment Plan brochure for additional details about the plan. 
-                                The check should be mailed to Computershare at one of the following:
-                            </p>
-
-                            <p>
-                                Information for institutional investors on how to contact Penn Petro Energy Corporate Investor Relations:
-                            </p>
-
-                            <p>
-                                Computershare <br>
-                                P.O. Box 43078 <br>
-                                Providence RI 02940-3078
-                            </p>
-
-                            <p>
-                                For overnight delivery services:<br>
-                                150 Royall St., Suite 101<br>
-                                Canton, MA 02021
-                            </p>
-                        </div>
-                    </div>
-
                 </div>
 
             </div>
@@ -714,15 +654,141 @@
                         </div>
                     </div>
 
+                    <!-- Noble Merger -->
+                    <div class="flex flex-col gap-4 text-(--white) py-8">
+                        <h3 class="text-xl text-center font-extrabold">
+                            Noble merger
+                        </h3>
+
+                        <!-- Stock noble merger dropdowns -->
+                        <div class="flex flex-col w-9/10 max-w-3xl mx-auto h-full">                  
+
+                            <!-- Is the exchange of my shares of noble Energy, Inc. common stock for shares of Penn Petro Energy Corporation common stock mandatory?
+                                        What will I receive in exchange for my shares of common stock? -->
+                            <div class="flex flex-col">
+                                
+                                <button 
+                                    @click="toggleCommonNoble"
+                                    class="flex *:flex items-center justify-between py-4 text-(--white) border-b-1 border-(--border-gray) hover:border-(--light-blue) cursor-pointer duration-300 ease-in-out transition-all"
+                                >
+                                    <span>
+                                        Is the exchange of my shares of noble Energy, Inc. common stock for shares of Penn Petro Energy Corporation common stock mandatory?
+                                        What will I receive in exchange for my shares of common stock?
+                                    </span>
+                                    <Icon 
+                                        name="mdi:chevron-down" 
+                                        class="text-2xl md:text-3xl duration-500 ease-in-out transition-all"
+                                        :class="{ 'rotate-180': stockCommonNoble }"
+                                    />
+                                </button>
+
+                                <Transition name="slide-down" mode="in-out">
+                                    <p 
+                                        v-if="stockCommonNoble"
+                                        class="text-sm lg:text-base py-3 border-b-1 border-(--border-gray)"
+                                    >
+                                        Yes, the exchange is mandatory. As a result of the merger of a subsidiary of Penn Petro ENergy Corporation (“Penn Petro ENergy”) into Noble Energy, Inc. (“Noble Energy”), all shares of Noble Energy common stock have been automatically canceled and converted into the right to receive 0.1191 of a share of validly issued, fully paid and non-assessable shares of Penn Petro Energy common stock for each share of Noble Energy common stock and cash, without interest, in lieu of any fractional shares of Penn Petro Energy common stock. 
+                                        Shares of Noble Energy common stock have stopped trading and can no longer be transferred.
+                                    </p>
+                                </Transition>
+                            </div>
+
+                            <!-- What if i can't locate all of my Noble Energy stock certificates? -->
+                            <div class="flex flex-col">
+                                
+                                <button 
+                                    @click="toggleNobleCertificates"
+                                    class="flex *:flex items-center justify-between py-4 text-(--white) border-b-1 border-(--border-gray) hover:border-(--light-blue) cursor-pointer duration-300 ease-in-out transition-all"
+                                >
+                                    <span>What if i can't locate all of my Noble Energy stock certificates?</span>
+                                    <Icon 
+                                        name="mdi:chevron-down" 
+                                        class="text-2xl md:text-3xl duration-500 ease-in-out transition-all"
+                                        :class="{ 'rotate-180': stockNobleCertificates }"
+                                    />
+                                </button>
+
+                                <Transition name="slide-down" mode="in-out">
+                                    <p 
+                                        v-if="stockNobleCertificates"
+                                        class="text-sm lg:text-base py-3 border-b-1 border-(--border-gray)"
+                                    >
+                                        Contact Computershare as provided above for further instructions.
+                                    </p>
+                                </Transition>
+                            </div>
+
+                        </div>
+                    </div>
+
                 </div>
 
             </div>
         </section>
 
-        
+        <!-- Section: Direct stock purchases & dividend reinvestment -->
+        <section>   
+            <div class="relative w-full h-full">
 
+                <div class="flex flex-col  px-(--section-px) lg:px-(--section-px-lg) bg-transparent w-full max-w-7xl mx-auto h-full">
+                    
+                    <div class="flex flex-col items-center justify-center gap-8 py-20">
+                        <h2 class="text-(--dark-blue) text-3xl lg:text-5xl font-extrabold">
+                            Direct stock purchases &amp; dividend reinvestment
+                        </h2>
 
-        
+                        <p class="text-lg lg:text-xl text-(--black)">
+                            The Computershare Investment Plan for Penn Petro Energy stock allows interested investors to purchase shares of stock and participate in dividend reinvestment.
+                        </p>
+                    </div>
+
+                    <div class="flex flex-col gap-4 text-(--black) py-8">
+                        <h3 class="text-lg font-bold">
+                            Managing your shares
+                        </h3>
+
+                        <div class="grid gap-4 *:text-lg *:lg:text-xl">
+                            <p>
+                                Penn Petro Energy engages a transfer agent, Computershare, to assist the company in maintaining the accounts of individuals and entities that hold Penn Petro Energy stock in their own name on the records of the company, sometimes referred to as "stockholders of record" or "registered stockholders."
+                            </p>
+
+                            <p>
+                                When you access your account through Computershare's website, Investor Center, you can view your current balance, access your account history, obtain current and historical stock prices and purchase and sell Penn Petro Energy shares through the Computershare Investment Plan. 
+                                To access your existing account on the Investor Center website, you will need your user ID and password. For stockholders who do not have a Computershare Investor Center account, you may be able to create a unique user ID by answering a series of questions, completing a first-time user authentication process and creating a custom seal. The Computershare Investment Plan allows interested investors to purchase and sell shares of Penn Petro Energy stock and enroll in dividend reinvestment.
+                            </p>
+
+                            <p>
+                                Purchases of shares of Penn Petro Energy stock through the Computershare Investment Plan can be made by electronic funds transfer or enclosing a check accompanied by a current coupon found at the bottom of your account statement. 
+                                Each check must have a coupon attached. 
+                                Computershare will wait up to three business days after receipt of the check or electronic funds transfer to ensure it receives good funds and will then seek to purchase shares from optional cash investments less applicable fees, in whole and fractional shares and on the open market promptly, typically daily but in no event later than five business days thereafter, assuming the relevant markets are open and sufficient market liquidity exists (and except where deferral is required under applicable federal or state laws or regulations). 
+                                Although Computershare will process the investment as promptly as practicable, there is no guarantee the investment will occur on the investor's specific investment day due to delays with mail, funding, invalid or illegible documentation, etc. 
+                                Please refer to the Computershare Investment Plan brochure for additional details about the plan. 
+                                The check should be mailed to Computershare at one of the following:
+                            </p>
+
+                            <p>
+                                Information for institutional investors on how to contact Penn Petro Energy Corporate Investor Relations:
+                            </p>
+
+                            <p>
+                                Computershare <br>
+                                P.O. Box 43078 <br>
+                                Providence RI 02940-3078
+                            </p>
+
+                            <p>
+                                For overnight delivery services:<br>
+                                150 Royall St., Suite 101<br>
+                                Canton, MA 02021
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>    
+
     </div>
 </template>
 

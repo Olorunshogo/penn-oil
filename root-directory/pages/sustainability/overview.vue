@@ -72,7 +72,7 @@
 
                         <!-- Explore ESG topics from a-z -->
                         <NuxtLink
-                            to="/investors/overview"
+                            to="/investors/esg"
                             class="group flex *:flex items-center *:items-center justify-center px-2 lg:px-8 py-2 gap-2 lg:gap-4 w-fit mx-auto text-(--white) hover:text-(--black) duration-300 ease-in-out transition-all"
                         >
                             <div class="group relative flex items-center justify-center text-xl w-8 h-full overflow-hidden">
@@ -260,22 +260,21 @@
                                     We treat our employees and our partners with respect and dignity.
                                 </p>
 
-                                <!-- Explore ESG topics from a-z -->
-                                    <NuxtLink
-                                        to="/sustainability/social"
-                                        class="group flex *:flex items-center *:items-center justify-center px-2 lg:px-8 py-2 gap-2 lg:gap-4 w-fit text-(--white) hover:text-(--black) duration-300 ease-in-out transition-all"
-                                    >
-                                        <div class="group relative flex items-center justify-center text-xl w-8 h-full overflow-hidden">
-                                            <div class="absolute flex items-center left-2 h-full w-12 transition-all duration-500 ease-in-out group-hover:translate-x-full">
-                                                <Icon name="mdi:arrow-right"/>
-                                            </div>
-                                            
-                                            <div class="absolute flex items-center left-2 h-full w-12 -translate-x-full transition-all duration-500 ease-in-out group-hover:translate-x-0">
-                                                <Icon name="mdi:arrow-right" />
-                                            </div>
+                                <NuxtLink
+                                    to="/sustainability/social"
+                                    class="group flex *:flex items-center *:items-center justify-center px-2 lg:px-8 py-2 gap-2 lg:gap-4 w-fit text-(--white) hover:text-(--black) duration-300 ease-in-out transition-all"
+                                >
+                                    <div class="group relative flex items-center justify-center text-xl w-8 h-full overflow-hidden">
+                                        <div class="absolute flex items-center left-2 h-full w-12 transition-all duration-500 ease-in-out group-hover:translate-x-full">
+                                            <Icon name="mdi:arrow-right"/>
                                         </div>
-                                        <span class="group-hover:underline-text font-bold">Learn more</span>
-                                    </NuxtLink>
+                                        
+                                        <div class="absolute flex items-center left-2 h-full w-12 -translate-x-full transition-all duration-500 ease-in-out group-hover:translate-x-0">
+                                            <Icon name="mdi:arrow-right" />
+                                        </div>
+                                    </div>
+                                    <span class="group-hover:underline-text font-bold">Learn more</span>
+                                </NuxtLink>
                             </div> 
 
 

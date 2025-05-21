@@ -56,18 +56,7 @@
                         </h1>
 
                         <p class="flex items-center text-lg text-center font-medium">
-                            Explore our ESG topics using the index below. &ThinSpace; 
-
-                            <NuxtLink
-                                to="/pdfs/Penn_sustainability_highlights_2024.pdf" 
-                                target="_blank"
-                                class="group flex *:flex items-center *:items-center justify-between duration-300 ease-in-out transition-all"
-                            >
-                                <span class="group-hover:underline-text">
-                                        About this content
-                                </span>
-
-                            </NuxtLink>
+                            Explore our ESG topics using the dropdowns below.
                         </p>
                         
                     </div>
@@ -148,22 +137,6 @@
                                                 </p>
                                             </div>
 
-                                            <NuxtLink
-                                                to="/pdfs/Penn_business_conduct_ethics_code.pdf" target="_blank"
-                                                class="group flex *:flex items-center *:items-center gap-2 w-fit text-(--black) duration-300 ease-in-out transition-all"
-                                            >
-                                                <div class="group relative flex items-center justify-center text-xl w-12 h-full overflow-hidden">
-                                                    <div class="absolute flex items-center left-2 h-full w-12 transition-all duration-500 ease-in-out group-hover:translate-x-full">
-                                                        <Icon name="mdi:arrow-right"/>
-                                                    </div>
-                                                    
-                                                    <div class="absolute flex items-center left-2 h-full w-12 -translate-x-full transition-all duration-500 ease-in-out group-hover:translate-x-0">
-                                                        <Icon name="mdi:arrow-right" />
-                                                    </div>
-                                                </div>
-                                                <span class="group-hover:underline-text font-bold text-sm">Business Conduct and Ethics Code</span>
-                                            </NuxtLink>
-
                                         </div>
 
                                         <!--  Antibribery and corruption -->
@@ -200,22 +173,6 @@
                                                 </p>
                                             </div>
 
-                                            <NuxtLink
-                                                to="/pdfs/Penn_business_conduct_ethics_code.pdf" target="_blank"
-                                                class="group flex *:flex items-center *:items-center gap-2 w-fit text-(--black) duration-300 ease-in-out transition-all"
-                                            >
-                                                <div class="group relative flex items-center justify-center text-xl w-12 h-full overflow-hidden">
-                                                    <div class="absolute flex items-center left-2 h-full w-12 transition-all duration-500 ease-in-out group-hover:translate-x-full">
-                                                        <Icon name="mdi:arrow-right"/>
-                                                    </div>
-                                                    
-                                                    <div class="absolute flex items-center left-2 h-full w-12 -translate-x-full transition-all duration-500 ease-in-out group-hover:translate-x-0">
-                                                        <Icon name="mdi:arrow-right" />
-                                                    </div>
-                                                </div>
-                                                <span class="group-hover:underline-text font-bold text-sm">Business Conduct and Ethics Code</span>
-                                            </NuxtLink>
-
                                         </div>
 
                                         <!--  Whistleblower hotline -->
@@ -244,23 +201,6 @@
                                                     <span class="text-lg lg:text-xl">is available for reporting existing and potential violations of law or company policy</span>
                                                 </p>
                                             </div>
-
-                                            <NuxtLink
-                                                to="/pdfs/Penn_business_conduct_ethics_code.pdf" target="_blank"
-                                                class="group flex *:flex items-center *:items-center gap-2 w-fit text-(--black) duration-300 ease-in-out transition-all"
-                                            >
-                                                <div class="group relative flex items-center justify-center text-xl w-12 h-full overflow-hidden">
-                                                    <div class="absolute flex items-center left-2 h-full w-12 transition-all duration-500 ease-in-out group-hover:translate-x-full">
-                                                        <Icon name="mdi:arrow-right"/>
-                                                    </div>
-                                                    
-                                                    <div class="absolute flex items-center left-2 h-full w-12 -translate-x-full transition-all duration-500 ease-in-out group-hover:translate-x-0">
-                                                        <Icon name="mdi:arrow-right" />
-                                                    </div>
-                                                </div>
-                                                <span class="group-hover:underline-text font-bold text-sm">Business Conduct and Ethics Code</span>
-                                            </NuxtLink>
-
                                         </div>
 
                                         <!--  Tax -->
@@ -312,22 +252,6 @@
                                                 </div>
 
                                             </div>
-
-                                            <NuxtLink
-                                                to="/pdfs/Penn_business_conduct_ethics_code.pdf" target="_blank"
-                                                class="group flex *:flex items-center *:items-center gap-2 w-fit text-(--black) duration-300 ease-in-out transition-all"
-                                            >
-                                                <div class="group relative flex items-center justify-center text-xl w-12 h-full overflow-hidden">
-                                                    <div class="absolute flex items-center left-2 h-full w-12 transition-all duration-500 ease-in-out group-hover:translate-x-full">
-                                                        <Icon name="mdi:arrow-right"/>
-                                                    </div>
-                                                    
-                                                    <div class="absolute flex items-center left-2 h-full w-12 -translate-x-full transition-all duration-500 ease-in-out group-hover:translate-x-0">
-                                                        <Icon name="mdi:arrow-right" />
-                                                    </div>
-                                                </div>
-                                                <span class="group-hover:underline-text font-bold text-sm">Approach to Tax and Transparency</span>
-                                            </NuxtLink>
 
                                         </div>
 
@@ -457,39 +381,6 @@
                                                 </div>
 
                                             </div>
-
-                                            <NuxtLink
-                                                to="/pdfs/2023CCRR_ClimatePolicy.pdf" target="_blank"
-                                                class="group flex *:flex items-center *:items-center gap-2 w-fit text-(--black) duration-300 ease-in-out transition-all"
-                                            >
-                                                <div class="group relative flex items-center justify-center text-xl w-12 h-full overflow-hidden">
-                                                    <div class="absolute flex items-center left-2 h-full w-12 transition-all duration-500 ease-in-out group-hover:translate-x-full">
-                                                        <Icon name="mdi:arrow-right"/>
-                                                    </div>
-                                                    
-                                                    <div class="absolute flex items-center left-2 h-full w-12 -translate-x-full transition-all duration-500 ease-in-out group-hover:translate-x-0">
-                                                        <Icon name="mdi:arrow-right" />
-                                                    </div>
-                                                </div>
-                                                <span class="group-hover:underline-text font-bold text-sm">Well-designed Climate Policy</span>
-                                            </NuxtLink>
-
-                                            <NuxtLink
-                                                to="/pdfs/2023CCRR_Innovation.pdf" target="_blank"
-                                                class="group flex *:flex items-center *:items-center gap-2 w-fit text-(--black) duration-300 ease-in-out transition-all"
-                                            >
-                                                <div class="group relative flex items-center justify-center text-xl w-12 h-full overflow-hidden">
-                                                    <div class="absolute flex items-center left-2 h-full w-12 transition-all duration-500 ease-in-out group-hover:translate-x-full">
-                                                        <Icon name="mdi:arrow-right"/>
-                                                    </div>
-                                                    
-                                                    <div class="absolute flex items-center left-2 h-full w-12 -translate-x-full transition-all duration-500 ease-in-out group-hover:translate-x-0">
-                                                        <Icon name="mdi:arrow-right" />
-                                                    </div>
-                                                </div>
-                                                <span class="group-hover:underline-text font-bold text-sm">Advance innovation Policy</span>
-                                            </NuxtLink>
-
                                         </div>
 
                                         <!-- Lower Carbon Capture -->
@@ -746,7 +637,7 @@
                                                         Not included in our definition of air emissions are greenhouse gases (GHGs), including methane.
                                                     </p>
                                                     <p>
-                                                        In addition to balancing management of operational needs, regulatory requirements, and community or other stakeholder matters, Chevron aims to:
+                                                        In addition to balancing management of operational needs, regulatory requirements, and community or other stakeholder matters, Penn Petro Energy aims to:
                                                     </p>
                                                     <ul>
                                                         <li>

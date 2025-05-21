@@ -25,47 +25,35 @@ export const oneTrustModal = ref<boolean>(false);
 
 // Showing and hiding footer links
 export const get = ref<boolean>(false);
-export const rotateGet = ref<boolean>(false);
 export function toggleGet() {
   get.value = !get.value;
   latest.value = false;
   future.value = false;
   popular.value = false;
-
-  rotateGet.value = !rotateGet.value;
 }
 
 export const latest = ref<boolean>(false);
-export const rotateLatest = ref<boolean>(false);
 export function toggleLatest() {
   get.value = false;
   latest.value = !latest.value;
   future.value = false;
   popular.value = false;
-
-  rotateLatest.value = !rotateLatest.value
 }
 
 export const future = ref<boolean>(false);
-export const rotateFuture = ref<boolean>(false);
 export function toggleFuture() {
   get.value = false;
   latest.value = false;
   future.value = !future.value;
   popular.value = false;
-
-  rotateFuture.value = !rotateFuture.value;
 }
 
 export const popular = ref<boolean>(false);
-export const rotatePopular = ref<boolean>(false);
 export function togglePopular() {
   get.value = false;
   latest.value = false;
   future.value = false;
   popular.value = !popular.value;
-
-  rotatePopular.value = !rotatePopular.value;
 }
 
 // Transition hooks for fine-tuning

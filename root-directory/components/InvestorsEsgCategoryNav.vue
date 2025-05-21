@@ -3,7 +3,6 @@
     defineProps({
         navLink: {
             type: String,
-            default: '/pdfs/Penn_business_conduct_ethics_code.pdf'
         },
         linkName: {
             type: String,

@@ -166,8 +166,8 @@
 
                         <div class="flex flex-col gap-4 md:gap-8 w-full max-w-sm h-full">
                             <NuxtImg
-                                src="https://images.pexels.com/photos/874242/pexels-photo-874242.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                                alt="Man Wearing Brown Jacket and Using Grey Laptop"
+                                src="https://images.pexels.com/photos/4895428/pexels-photo-4895428.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                alt="Woman and Car"
                                 loading="lazy"
                                 class="relative h-60 rounded-2xl w-full shadow-lg object-cover"
                             /> 
@@ -327,8 +327,8 @@
     
                     <!-- Image Container -->
                     <NuxtImg
-                        src="https://images.pexels.com/photos/874242/pexels-photo-874242.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                        alt="Man Wearing Brown Jacket and Using Grey Laptop"
+                        src="https://images.pexels.com/photos/323933/pexels-photo-323933.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        alt="Close Up of Blue Paint"
                         loading="lazy"
                         class="relative h-100 lg:h-130 rounded-lg w-9/10 lg:w-full max-w-4xl mx-auto object-cover"
                     />                

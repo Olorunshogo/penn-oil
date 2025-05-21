@@ -5,22 +5,22 @@
         developmentYear, currentYear, displayYear,
         enter, beforeEnter, leave,
         oneTrustModal,
-        get, toggleGet, rotateGet,
-        latest, toggleLatest, rotateLatest,
-        future, toggleFuture, rotateFuture,
-        popular, togglePopular, rotatePopular
+        get, toggleGet,
+        latest, toggleLatest,
+        future, toggleFuture,
+        popular, togglePopular
     } from '../stores/footer';    
 
 </script>
 
 
 <template>
-  <!-- <div class="w-full hidden md:w-full md:flex md:flex-col font-base text-(--text-gray) border-t-1 border-t-(--border-gray)"> -->
-  <div class="w-full h-full px-4 md:px-6 py-(--section-py) lg:py-(--section-py-lg) text-white overflow-hidden bg-(--primary-bg)">
+  <div class="w-full h-full px-4 md:px-6 py-(--section-py) lg:py-(--section-py-lg) text-(--white) overflow-hidden bg-(--primary-bg)">
 
     <div class="max-w-7xl mx-auto">
 
       <div class="grid grid-cols-1 gap-8 md:gap-12 font-normal">
+        
         <!-- Footer 1 -->
         <div class="flex flex-col w-full h-full gap-6 sm:flex-row sm:*:w-1/2 lg:*:w-1/3 lg:*:items-baseline">
 
@@ -63,19 +63,22 @@
 
             <!-- md: Get to know us, latest at Penn Petro Energy, Future of energy, Popular links -->
             <div class="grid lg:hidden grid-cols-1 gap-4 w-full h-full">
+                
                 <!-- Get to know us -->
                 <div class="flex flex-col justify-center gap-3 md:gap-6 pb-4 border-y-1 border-(--white)">
 
-                    <h3 class="flex items-center justify-between my-auto py-4 *:flex *:items-center font-bold text-base">
+                    <button 
+                        @click="toggleGet"
+                        class="flex items-center justify-between my-auto py-4 cursor-pointer *:flex *:items-center font-bold text-base duration-300 ease-in-out"
+                    >
                         <span>Get to know us</span>
                         <span 
-                            @click="toggleGet"
-                            class="font-bold text-lg cursor-pointer duration-300 ease-in-out transition-all"
-                            :class="{'rotate-180': rotateGet}"
+                            class="font-bold text-2xl duration-300 ease-in-out transition-all"
+                            :class="{'rotate-180': get}"
                         >
                             <Icon name="mdi:chevron-down" />
                         </span>
-                    </h3>
+                    </button>
 
                     <Transition 
                         name="slide-down"
@@ -150,17 +153,18 @@
 
                 <!-- Latest at Penn Petro Energy -->
                 <div class="flex flex-col justify-center gap-3 md:gap-6 pb-4 border-b-1 border-(--white)">
-
-                    <h3 class="flex items-center justify-between my-auto py-4 *:flex *:items-center font-bold text-base">
+                    <button 
+                        @click="toggleLatest"
+                        class="flex items-center justify-between my-auto py-4 cursor-pointer *:flex *:items-center font-bold text-base duration-300 ease-in-out"
+                    >
                         <span>Latest at Penn Petro Energy</span>
                         <span 
-                            @click="toggleLatest"
-                            class="font-bold text-lg cursor-pointer duration-300 ease-in-out transition-all"
-                            :class="{'rotate-180': rotateLatest}"
+                            class="font-bold text-2xl duration-300 ease-in-out transition-all"
+                            :class="{'rotate-180': latest}"
                         >
-                            <Icon name="uiw:down" />
+                            <Icon name="mdi:chevron-down" />
                         </span>
-                    </h3>
+                    </button>
                     
                     <Transition 
                         name="slide-down"
@@ -216,16 +220,18 @@
                 <!-- Future of energy -->
                 <div class="flex flex-col justify-center gap-3 md:gap-6 pb-4 border-b-1 border-(--white)">
 
-                    <h3 class="flex items-center justify-between my-auto py-4 *:flex *:items-center font-bold text-base">
+                    <button 
+                        @click="toggleFuture"
+                        class="flex items-center justify-between my-auto py-4 cursor-pointer *:flex *:items-center font-bold text-base duration-300 ease-in-out"
+                    >
                         <span>Future of energy</span>
                         <span 
-                            @click="toggleFuture"
-                            class="font-bold text-lg cursor-pointer duration-300 ease-in-out transition-all"
-                            :class="{'rotate-180': rotateFuture}"
+                            class="font-bold text-2xl duration-300 ease-in-out transition-all"
+                            :class="{'rotate-180': future}"
                         >
-                            <Icon name="uiw:down" />
+                            <Icon name="mdi:chevron-down" />
                         </span>
-                    </h3>
+                    </button>
 
                     <Transition 
                         name="slide-down"
@@ -280,17 +286,18 @@
 
                 <!-- Popular links -->
                 <div class="flex flex-col justify-center gap-3 md:gap-6 pb-4 border-b-1 border-(--white)">
-
-                    <h3 class="flex items-center justify-between my-auto py-4 *:flex *:items-center font-bold text-base">
+                    <button 
+                        @click="togglePopular"
+                        class="flex items-center justify-between my-auto py-4 cursor-pointer *:flex *:items-center font-bold text-base duration-300 ease-in-out"
+                    >
                         <span>Popular links</span>
                         <span 
-                            @click="togglePopular"
-                            class="font-bold text-lg cursor-pointer duration-300 ease-in-out transition-all"
-                            :class="{'rotate-180': rotatePopular}"
+                            class="font-bold text-2xl duration-300 ease-in-out transition-all"
+                            :class="{'rotate-180': popular}"
                         >
-                            <Icon name="uiw:down" />
+                            <Icon name="mdi:chevron-down" />
                         </span>
-                    </h3>
+                    </button>
 
                     <Transition 
                         name="slide-down"
@@ -362,6 +369,13 @@
                             <span class="group-hover:underline-text">Who we are</span>
                         </NuxtLink>
 
+                         <NuxtLink
+                            to="/who/culture"
+                            class="group relative flex duration-500 ease-in transition-all"
+                        >
+                            <span class="group-hover:underline-text">Our culture</span>
+                        </NuxtLink>
+
                         <NuxtLink
                             to="/who/leadership"
                             class="group relative flex duration-500 ease-in transition-all"
@@ -403,61 +417,30 @@
                         >                            
                             <span class="group-hover:underline-text">Penn Petro Energy around the world</span>
                         </NuxtLink>
-
-                        <NuxtLink
-                            to="/investors/overview"
-                            class="group relative flex duration-500 ease-in transition-all"
-                        >                            
-                            <span class="group-hover:underline-text">Investor relations</span>
-                        </NuxtLink>
                           
                     </div>
 
                 </div>
 
-                <!-- Latest at Penn Petro Energy -->
+                <!-- Popular links -->
                 <div class="flex flex-col gap-3 md:gap-6">
 
-                    <h3 class="font-bold text-sm *:flex *:items-center">
-                        <span>Latest at Penn Petro Energy</span>
-                        <span><Icon name="mdi:chevron-down" /></span>
-                    </h3>
+                    <h3 class="font-bold text-sm">Popular links</h3>
 
                     <div class="grid gap-2 *:font-normal *:text-base">                       
-                            
+
                         <NuxtLink
-                            to="/newsroom"
-                            class="group relative flex duration-500 ease-in transition-all"
-                        >
-                            <span class="group-hover:underline-text">Newsroom</span>
+                            to="/careers"
+                            class="group relative flex text-base duration-500 ease-in transition-all"
+                        >                            
+                            <span class="group-hover:underline-text">Careers</span>
                         </NuxtLink>
 
                         <NuxtLink
-                            to="/investors/overview"
-                            class="group relative flex duration-500 ease-in transition-all"
+                            to="/contact"
+                            class="group relative flex text-base duration-500 ease-in transition-all"
                         >                            
-                            <span class="group-hover:underline-text">Investors events and presentations</span>
-                        </NuxtLink>
-
-                        <NuxtLink
-                            to="/investors/overview"
-                            class="group relative flex duration-500 ease-in transition-all"
-                        >                            
-                            <span class="group-hover:underline-text">Financial Information</span>
-                        </NuxtLink>
-
-                        <NuxtLink
-                            to="/investors/overview"
-                            class="group relative flex duration-500 ease-in transition-all"
-                        >                            
-                            <span class="group-hover:underline-text">Stock information</span>
-                        </NuxtLink>
-
-                        <NuxtLink
-                            to="/what/technology"
-                            class="group relative flex duration-500 ease-in transition-all"
-                        >                            
-                            <span class="group-hover:underline-text">Technology ventures</span>
+                            <span class="group-hover:underline-text">Contact us</span>
                         </NuxtLink>
                         
                     </div>
@@ -484,28 +467,21 @@
                         </NuxtLink>
 
                         <NuxtLink
-                            to="/sustainability/overview"
-                            class="group relative flex text-base duration-500 ease-in transition-all"
-                        >                            
-                            <span class="group-hover:underline-text">Energy in progress</span>
-                        </NuxtLink>
-
-                        <NuxtLink
-                            to="/what/energy"
+                            to="/what/penn"
                             class="group relative flex text-base duration-500 ease-in transition-all"
                         >                            
                             <span class="group-hover:underline-text">New energies</span>
                         </NuxtLink>
 
                         <NuxtLink
-                            to="/what/energy"
+                            to="/what/technology"
                             class="group relative flex text-base duration-500 ease-in transition-all"
                         >                            
                             <span class="group-hover:underline-text">Renewable fuels in transportation</span>
                         </NuxtLink>
 
                         <NuxtLink
-                            to="/what/energy"
+                            to="/sustainability/climate"
                             class="group relative flex text-base duration-500 ease-in transition-all"
                         >                            
                             <span class="group-hover:underline-text">Methane management</span>
@@ -515,46 +491,38 @@
 
                 </div>
 
-                <!-- Popular links -->
+                <!-- Latest at Penn Petro Energy -->
                 <div class="flex flex-col gap-3 md:gap-6">
-
-                    <h3 class="font-bold text-sm">Popular links</h3>
+                    <h3 class="font-bold text-sm">Latest at Penn Petro Energy</h3>
 
                     <div class="grid gap-2 *:font-normal *:text-base">                       
                             
                         <NuxtLink
-                            to="/"
-                            class="group relative flex text-base duration-500 ease-in transition-all"
+                            to="/newsroom"
+                            class="group relative flex duration-500 ease-in transition-all"
                         >
-                            <span class="group-hover:underline-text">Credit and gift cards</span>
+                            <span class="group-hover:underline-text">Newsroom</span>
                         </NuxtLink>
 
                         <NuxtLink
-                            to="/"
-                            class="group relative flex text-base duration-500 ease-in transition-all"
+                            to="/investors/overview"
+                            class="group relative flex duration-500 ease-in transition-all"
                         >                            
-                            <span class="group-hover:underline-text">Penn Petro Energy texaco rewards</span>
+                            <span class="group-hover:underline-text">Investors events and presentations</span>
                         </NuxtLink>
 
                         <NuxtLink
-                            to="/"
-                            class="group relative flex text-base duration-500 ease-in transition-all"
+                            to="/investors/stock"
+                            class="group relative flex duration-500 ease-in transition-all"
                         >                            
-                            <span class="group-hover:underline-text">Careers</span>
+                            <span class="group-hover:underline-text">Stock information</span>
                         </NuxtLink>
 
                         <NuxtLink
-                            to="/"
-                            class="group relative flex text-base duration-500 ease-in transition-all"
+                            to="/what/technology"
+                            class="group relative flex duration-500 ease-in transition-all"
                         >                            
-                            <span class="group-hover:underline-text">Contact us</span>
-                        </NuxtLink>
-
-                        <NuxtLink
-                            to="/"
-                            class="group relative flex text-base duration-500 ease-in transition-all"
-                        >                            
-                            <span class="group-hover:underline-text">Find a service station</span>
+                            <span class="group-hover:underline-text">Technology ventures</span>
                         </NuxtLink>
                         
                     </div>
@@ -568,7 +536,7 @@
         <!-- Footer 2 -->
         <div class="flex flex-col gap-8 lg:gap-12 *:font-semibold m-auto">
 
-            <div class="flex items-center justify-center *:text-base lg:*:text-lg *:font-normal lg:*:font-medium flex-wrap gap-4">               
+            <!-- <div class="flex items-center justify-center *:text-base lg:*:text-lg *:font-normal lg:*:font-medium flex-wrap gap-4">               
                                                   
                 <NuxtLink
                     to="/"
@@ -612,16 +580,16 @@
                     <span class="group-hover:underline-text">Cookie statement</span>
                 </NuxtLink>                           
                 
-                <!-- United States -->
+                <!-- United States --
                 <div class="flex items-center gap-2 *:flex *:items-center *:font-semibold">                
                     <span><Icon name="mdi:web" /></span>
                     <span>United States</span>
                 </div>
 
-                <!-- Social links -->
+                <!-- Social links --
                 <div class="flex items-center flex-wrap gap-4 *:flex *:items-center *:text-xl *:lg:text-3xl mx-auto *:ease-in-out *:duration-500 *:transition-all">
 
-                    <!-- Facebook -->
+                    <!-- Facebook --
                     <NuxtLink
                         to="/"
                         target="_blank"
@@ -639,7 +607,7 @@
                         </svg>
                     </NuxtLink>
 
-                    <!-- X -->
+                    <!-- X --
                     <NuxtLink
                         to="/"
                         target="_blank"
@@ -656,7 +624,7 @@
                         </svg>
                     </NuxtLink>
 
-                    <!-- Instagram -->
+                    <!-- Instagram --
                     <NuxtLink
                         to="/"
                         target="_blank"
@@ -677,7 +645,7 @@
                         </svg>
                     </NuxtLink>
 
-                    <!-- TikTok -->
+                    <!-- TikTok --
                     <NuxtLink
                         to="/"
                         target="_blank"
@@ -699,7 +667,7 @@
                         </svg>
                     </NuxtLink>
 
-                    <!-- YouTube -->
+                    <!-- YouTube --
                     <NuxtLink
                         to="/"
                         target="_blank"
@@ -716,7 +684,7 @@
                         </svg>
                     </NuxtLink>
 
-                    <!-- LinkedIn -->
+                    <!-- LinkedIn --
                     <NuxtLink
                         to="/"
                         target="_blank"
@@ -741,14 +709,14 @@
                     </NuxtLink>
 
 
-                        </div>            
+                </div>            
             
-            </div>
+            </div> -->
           
-            <div class="flex items-center justify-center flex-wrap *:text-sm lg:*:text-xl *:text-wrap *:font-normal lg:*:font-medium mx-auto gap-2">
+            <div class="flex items-center justify-center flex-wrap text-sm lg:text-base text-wrap mx-auto gap-2">
                 <span>&copy;</span>
                 <span>{{ developmentYear }}</span>
-                <span v-if="displayYear" class="">-{{ currentYear }}</span>
+                <span v-if="displayYear">-{{ currentYear }}</span>
                 <span>Penn Petro Energy Corporation. All rights reserved.</span>
             </div>          
 

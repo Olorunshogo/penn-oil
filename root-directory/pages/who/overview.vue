@@ -446,7 +446,7 @@
 
                             <!-- Careers -->
                             <NuxtLink 
-                                to="/who/brands"
+                                to="/careers"
                                 class="group flex *:flex items-center *:items-center py-3 gap-4 w-fit h-14 font-semibold text-(--white) duration-300 ease-in-out transition-all"
                             >
                                 <div class="group relative flex items-center text-xl w-8 h-full overflow-hidden">

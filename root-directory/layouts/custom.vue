@@ -91,7 +91,7 @@
         
       </button>
       
-    <HomeFooter/>
+    <FooTer/>
   </div>
 </template>
 

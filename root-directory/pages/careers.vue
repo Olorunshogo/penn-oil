@@ -30,7 +30,7 @@
 
 
 <template>
-    <div>
+    <div class="bg-(--light-gray)">
         <!-- Section: Hero -->
         <div>
             <HeroSectionImageBg
@@ -45,10 +45,9 @@
             />
         </div>
 
-
         <!-- Section: Careers at Penn Petro Energy -->
         <section>
-            <div class="bg-(--light-gray) py-12 w-full h-full overflow-hidden">
+            <div class="py-12 w-full h-full">
                 
                 <div class="flex flex-col md:flex-row w-9/10 md:w-full max-w-7xl mx-auto h-full px-(--section-px) py-(--section-py)">
                     <NuxtImg
@@ -99,7 +98,7 @@
 
         <!-- Section: Service Station Employment -->
         <section>
-            <div class="bg-(--light-gray) w-full h-full overflow-hidden">
+            <div class="w-full h-full">
                 
                 <div class="flex flex-col md:flex-row-reverse w-9/10 md:w-full max-w-7xl mx-auto h-full px-(--section-px) py-(--section-py)">
                     <NuxtImg
@@ -150,7 +149,7 @@
 
         <!-- Section: Students and Recent Grads -->
         <section>
-            <div class="bg-(--light-gray) w-full h-full overflow-hidden">
+            <div class="w-full h-full">
                 
                 <div class="flex flex-col md:flex-row w-9/10 md:w-full max-w-7xl mx-auto h-full px-(--section-px) py-(--section-py)">
 
@@ -203,7 +202,7 @@
 
         <!-- Section: Recruiting fraud -->
         <section>
-            <div class="bg-(--light-gray) mb-16 w-full h-full overflow-hidden">
+            <div class="w-full h-full">
                 
                 <div class="flex flex-col md:flex-row-reverse w-9/10 md:w-full max-w-7xl mx-auto h-full px-(--section-px) py-(--section-py)">
 

@@ -465,15 +465,6 @@
                 esg a-z index
               </NuxtLink>
 
-              <!-- Reports and fillings -->
-              <NuxtLink
-                to="/investors/reports"
-                @click="closeAllMenu"
-                class="flex *:flex items-center *:items-center justify-between hover:text-(--light-blue) duration-300 ease-in-out transition-all"
-              >
-                Reports and fillings
-              </NuxtLink>
-
               <!--  Stock and dividend -->
               <NuxtLink
                 to="/investors/stock"
@@ -739,14 +730,6 @@
                   class="flex *:flex items-center *:items-center justify-between hover:text-(--light-blue) duration-300 ease-in-out transition-all"
                 >
                   esg a-z index
-                </NuxtLink>
-
-                <!-- Reports and fillings -->
-                <NuxtLink
-                  to="/investors/reports"
-                  class="flex *:flex items-center *:items-center justify-between hover:text-(--light-blue) duration-300 ease-in-out transition-all"
-                >
-                  Reports and fillings
                 </NuxtLink>
 
                 <!--  Stock and dividend -->

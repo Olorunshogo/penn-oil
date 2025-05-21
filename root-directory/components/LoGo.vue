@@ -8,7 +8,7 @@
         >
             <NuxtImg
                 src="/Logo/Full_Penn_Petro_Energy_Logo.jpg"
-                alt="Full Full Penn Petro Energy Logo Logo"
+                alt="Full Penn Petro Energy Logo Logo"
                 class="object-cover w-full h-full"
             />
         </NuxtLink>

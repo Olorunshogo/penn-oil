@@ -71,7 +71,7 @@
                             </p>
 
                             <NuxtLink
-                                to="/investors/overview"
+                                to="/what/technology"
                                 class="group flex *:flex items-center *:items-center justify-end px-2 lg:px-8 py-2 gap-2 lg:gap-4 mx-auto w-fit text-(--white) hover:text-(--black) hover:bg-(--light-blue) border-1 border-(--light-blue) rounded-lg shadow-lg my-12 duration-300 ease-in-out transition-all"
                             >
                                 <div class="group relative flex items-center justify-center text-xl w-8 h-full overflow-hidden">
@@ -119,7 +119,7 @@
                             </p>
 
                             <NuxtLink
-                                to="/investors/overview"
+                                to="/sustainability/social"
                                 class="group flex *:flex items-center *:items-center justify-end px-2 lg:px-8 py-2 gap-2 lg:gap-4 mx-auto w-fit text-(--black) hover:text-(--white) hover:bg-(--light-blue) border-1 border-(--light-blue) rounded-lg shadow-lg my-12 duration-300 ease-in-out transition-all"
                             >
                                 <div class="group relative flex items-center justify-center text-xl w-8 h-full overflow-hidden">
@@ -164,7 +164,7 @@
                             </p>
 
                             <NuxtLink
-                                to="/investors/overview"
+                                to="/sustainability/social"
                                 class="group flex *:flex items-center *:items-center justify-end px-2 lg:px-8 py-2 gap-2 lg:gap-4 mx-auto w-fit text-(--white) hover:text-(--black) hover:bg-(--light-blue) border-1 border-(--light-blue) rounded-lg shadow-lg my-12 duration-300 ease-in-out transition-all"
                             >
                                 <div class="group relative flex items-center justify-center text-xl w-8 h-full overflow-hidden">
@@ -210,7 +210,7 @@
                             </p>
 
                             <NuxtLink
-                                to="/investors/overview"
+                                to="/what/energy"
                                 class="group flex *:flex items-center *:items-center justify-end px-2 lg:px-8 py-2 gap-2 lg:gap-4 mx-auto w-fit text-(--black) hover:text-(--white) hover:bg-(--light-blue) border-1 border-(--light-blue) rounded-lg shadow-lg my-12 duration-300 ease-in-out transition-all"
                             >
                                 <div class="group relative flex items-center justify-center text-xl w-8 h-full overflow-hidden">
@@ -261,7 +261,7 @@
                                         <h3 class="text-(--white) text-2xl lg:text-3xl font-extrabold">Climate</h3>
                                         <NuxtLink
                                             to="/sustainability/climate"
-                                            class="group flex *:flex items-center *:items-center justify-end ml-auto gap-2 w-fit text-(--black) hover:text-(--white) duration-300 ease-in-out transition-all"
+                                            class="group flex *:flex items-center *:items-center justify-end ml-auto gap-2 w-fit text-(--white) hover:text-(--black) duration-300 ease-in-out transition-all"
                                         >
                                             <div class="group relative flex items-center justify-center text-xl w-8 h-full overflow-hidden">
                                                 <div class="absolute flex items-center left-2 h-full w-12 transition-all duration-500 ease-in-out group-hover:translate-x-full">
@@ -289,7 +289,7 @@
                                         <h3 class="text-(--white) text-2xl lg:text-3xl font-extrabold">Social investment</h3>
                                         <NuxtLink
                                             to="/sustainability/social"
-                                            class="group flex *:flex items-center *:items-center justify-end ml-auto gap-2 w-fit text-(--black) hover:text-(--white) duration-300 ease-in-out transition-all"
+                                            class="group flex *:flex items-center *:items-center justify-end ml-auto gap-2 w-fit text-(--white) hover:text-(--black) duration-300 ease-in-out transition-all"
                                         >
                                             <div class="group relative flex items-center justify-center text-xl w-8 h-full overflow-hidden">
                                                 <div class="absolute flex items-center left-2 h-full w-12 transition-all duration-500 ease-in-out group-hover:translate-x-full">
@@ -317,7 +317,7 @@
                                         <h3 class="text-(--white) text-2xl lg:text-3xl font-extrabold">Diversity and inclusion</h3>
                                         <NuxtLink
                                             to="/sustainability/social"
-                                            class="group flex *:flex items-center *:items-center justify-end ml-auto gap-2 w-fit text-(--black) hover:text-(--white) duration-300 ease-in-out transition-all"
+                                            class="group flex *:flex items-center *:items-center justify-end ml-auto gap-2 w-fit text-(--white) hover:text-(--black) duration-300 ease-in-out transition-all"
                                         >
                                             <div class="group relative flex items-center justify-center text-xl w-8 h-full overflow-hidden">
                                                 <div class="absolute flex items-center left-2 h-full w-12 transition-all duration-500 ease-in-out group-hover:translate-x-full">

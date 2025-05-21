@@ -40,6 +40,27 @@
         supplierRelations, toggleSupplierRelation
     } from '~/stores/whoVariables';
 
+    const form = ref({ name: '', email: '', message: '' })
+
+    async function submitForm() {
+        try {
+            const res = await fetch('/api/submit-form', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(form.value)
+            });
+            const data = await res.json()
+            if (data.success) {
+                alert('Form submitted!')
+            } else {
+                alert('Submission failed.')
+            }
+        } catch (err) {
+            console.error(err)
+            alert('Error submitting form.')
+        }
+    }
+
 </script>
 
 
@@ -82,7 +103,7 @@
                                         />
                                     </button>
                                 </div> 
-                                <Transition name="slideDown">
+                                <Transition name="slide-down">
                                     <div 
                                         v-if="jobOpenings"
                                         class="grid gap-0 w-full h-full"
@@ -131,7 +152,7 @@
                                         />
                                     </button>
                                 </div> 
-                                <Transition name="slideDown">
+                                <Transition name="slide-down">
                                     <div 
                                         v-if="serviceStation"
                                         class="grid gap-0 w-full h-full"
@@ -196,7 +217,7 @@
                                     </button>
                                 </div> 
 
-                                <Transition name="slideDown">
+                                <Transition name="slide-own">
                                     <div 
                                         v-if="scams"
                                         class="grid gap-0 w-full h-full"
@@ -325,7 +346,7 @@
                                     </button>
                                 </div> 
 
-                                <Transition name="slideDown">
+                                <Transition name="slide-own">
                                     <div 
                                         v-if="pipelines"
                                         class="grid gap-0 w-full h-full"
@@ -388,7 +409,7 @@
                                     </button>
                                 </div> 
 
-                                <Transition name="slideDown">
+                                <Transition name="slide-down">
                                     <div 
                                         v-if="creditCard"
                                         class="grid gap-0 w-full h-full"
@@ -461,7 +482,7 @@
                                     </button>
                                 </div> 
 
-                                <Transition name="slideDown">
+                                <Transition name="slide-down">
                                     <div 
                                         v-if="requestDb"
                                         class="grid gap-0 w-full h-full"
@@ -512,7 +533,7 @@
                                     </button>
                                 </div> 
 
-                                <Transition name="slideDown">
+                                <Transition name="slide-down">
                                     <div 
                                         v-if="donationRequest"
                                         class="grid gap-0 w-full h-full"
@@ -582,7 +603,7 @@
                                     </button>
                                 </div> 
 
-                                <Transition name="slideDown">
+                                <Transition name="slide-down">
                                     <div 
                                         v-if="fuelsTechnical"
                                         class="grid gap-0 w-full h-full"
@@ -634,7 +655,7 @@
                                     </button>
                                 </div> 
 
-                                <Transition name="slideDown">
+                                <Transition name="slide-down">
                                     <div 
                                         v-if="financialPublication"
                                         class="grid gap-0 w-full h-full"
@@ -667,7 +688,7 @@
                                     </button>
                                 </div> 
 
-                                <Transition name="slideDown">
+                                <Transition name="slide-down">
                                     <div 
                                         v-if="lubricantsTechnical"
                                         class="grid gap-0 w-full h-full"
@@ -742,7 +763,7 @@
                                     </button>
                                 </div> 
 
-                                <Transition name="slideDown">
+                                <Transition name="slide-down">
                                     <div 
                                         v-if="lubricantsWhere"
                                         class="grid gap-0 w-full h-full"
@@ -807,14 +828,14 @@
                                         />
                                     </button>
                                 </div> 
-                                <Transition name="slideDown">
+                                <Transition name="slide-down">
                                     <div 
                                         v-if="mobileApp"
                                         class="grid gap-0 w-full h-full"
                                     >
                                         <div class="grid gap-4 w-full h-full">
                                             <div class="grid gap-4 text-(--black)">
-                                                <p>Open jobs at Chevron are available for review and application at our Chevron careers page.</p>
+                                                <p>Open jobs at Penn Petro Energy are available for review and application at our Penn Petro Energy careers page.</p>
                                                 <p>Resumes sent to the general mailbox will not be considered and requests for status updates to applications will not be provided.</p>
                                             </div>
 
@@ -876,7 +897,7 @@
                                         />
                                     </button>
                                 </div> 
-                                <Transition name="slideDown">
+                                <Transition name="slide-down">
                                     <div 
                                         v-if="supplierRelations"
                                         class="grid gap-0 w-full h-full"
@@ -885,51 +906,12 @@
                                             <div class="grid gap-4 text-(--black)">
                                                 <h4 class="font-bold">Assistance</h4>
                                                 <p>For assistance, email Supplier Relations. An email response can be expected within three business days.</p>
-                                                
-                                                <!-- Email supplier relations -->
-                                                <NuxtLink
-                                                    to="mailto:chvcips@chevron.com"
-                                                    target="_blank"
-                                                    class="group relative flex items-center text-sm font-extrabold text-(--black) duration-500 ease-in transition-all"
-                                                >
-                                                    <div class="group relative flex items-center justify-center text-xl w-12 h-full overflow-hidden">
-                                                        <div class="absolute flex items-center left-4 h-full w-12 transition-all duration-500 ease-in-out group-hover:translate-x-full">
-                                                            <Icon name="mdi:arrow-right"/>
-                                                        </div>
-                                                        
-                                                        <div class="absolute flex items-center left-4 h-full w-12 -translate-x-full transition-all duration-500 ease-in-out group-hover:translate-x-0">
-                                                            <Icon name="mdi:arrow-right" />
-                                                        </div>
-                                                    </div>
-                                                    <span class="relative overflow-hidden">
-                                                        <span class="group-hover:underline-text">Email supplier relations</span>
-                                                    </span>
-                                                </NuxtLink>
                                             </div>
 
                                                 <div class="grid gap-4 text-(--black)">
                                                 <h4 class="font-bold">Check status</h4>
                                                 <p>To check the status of invoices and payments online, visit the Penn Petro Energy Invoice and Payment Status (CIPS) system.</p>
-                                                
-                                                <!-- Visit the CIPS site -->
-                                                <NuxtLink
-                                                    to="https://cips.chevron.com/"
-                                                    target="_blank"
-                                                    class="group relative flex items-center text-sm font-extrabold text-(--black) duration-500 ease-in transition-all"
-                                                >
-                                                    <div class="group relative flex items-center justify-center text-xl w-12 h-full overflow-hidden">
-                                                        <div class="absolute flex items-center left-4 h-full w-12 transition-all duration-500 ease-in-out group-hover:translate-x-full">
-                                                            <Icon name="mdi:arrow-right"/>
-                                                        </div>
-                                                        
-                                                        <div class="absolute flex items-center left-4 h-full w-12 -translate-x-full transition-all duration-500 ease-in-out group-hover:translate-x-0">
-                                                            <Icon name="mdi:arrow-right" />
-                                                        </div>
-                                                    </div>
-                                                    <span class="relative overflow-hidden">
-                                                        <span class="group-hover:underline-text">Visit the CIPS site</span>
-                                                    </span>
-                                                </NuxtLink>
+                                        
                                             </div>
 
                                         </div>
@@ -939,6 +921,13 @@
 
                         </div>
                     </div> 
+
+                    <form @submit.prevent="submitForm">
+                        <input v-model="form.name" type="text" placeholder="Name" />
+                        <input v-model="form.email" type="email" placeholder="Email" />
+                        <textarea v-model="form.message" placeholder="Message"></textarea>
+                        <button type="submit">Send</button>
+                    </form>
 
                     <!-- More ways to contact us -->
                     <div class="flex flex-col gap-20 items-center justify-center w-full mx-auto max-w-4xl h-full">
@@ -993,8 +982,9 @@
                         </div>
                     </div>
 
+                    <!--
                     <div class="grid gap-8 w-full h-full bg-(--light-gray)/30 py-8">
-                        <!-- Email Us -->
+                        <!-- Email Us --
                         <NuxtLink
                             to="mailto:pennpetroenergy@gmail.com"
                             class="group relative flex items-center text-lg w-fit px-6 py-2 font-bold text-(--black) hover:text-(--white) hover:bg-(--light-blue) border-1 border-(--light-blue) mx-auto shadow-lg rounded-lg duration-500 ease-in transition-all"
@@ -1012,11 +1002,12 @@
                                 Email Us
                             </span>
                         </NuxtLink>
+                        -->
 
-                        <!-- Social links -->
-                        <div class="flex items-center flex-wrap gap-4 *:flex *:items-center *:text-xl *:lg:text-3xl mx-auto *:ease-in-out *:duration-500 *:transition-all">
+                        <!-- Social Media links --
+                        <!-- <div class="flex items-center flex-wrap gap-4 *:flex *:items-center *:text-xl *:lg:text-3xl mx-auto *:ease-in-out *:duration-500 *:transition-all">
 
-                            <!-- Facebook -->
+                            <!-- Facebook --
                             <NuxtLink
                                 to="/"
                                 target="_blank"
@@ -1034,7 +1025,7 @@
                                 </svg>
                             </NuxtLink>
 
-                            <!-- X -->
+                            <!-- X --
                             <NuxtLink
                                 to="/"
                                 target="_blank"
@@ -1051,7 +1042,7 @@
                                 </svg>
                             </NuxtLink>
 
-                            <!-- Instagram -->
+                            <!-- Instagram --
                             <NuxtLink
                                 to="/"
                                 target="_blank"
@@ -1072,7 +1063,7 @@
                                 </svg>
                             </NuxtLink>
 
-                            <!-- TikTok -->
+                            <!-- TikTok --
                             <NuxtLink
                                 to="/"
                                 target="_blank"
@@ -1094,7 +1085,7 @@
                                 </svg>
                             </NuxtLink>
 
-                            <!-- YouTube -->
+                            <!-- YouTube --
                             <NuxtLink
                                 to="/"
                                 target="_blank"
@@ -1111,7 +1102,7 @@
                                 </svg>
                             </NuxtLink>
 
-                            <!-- LinkedIn -->
+                            <!-- LinkedIn --
                             <NuxtLink
                                 to="/"
                                 target="_blank"
@@ -1136,8 +1127,9 @@
                             </NuxtLink>
 
 
-                        </div>   
-                    </div>             
+                        </div>
+                    </div> 
+                    -->            
                     
                 </div>               
 

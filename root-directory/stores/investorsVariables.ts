@@ -1238,3 +1238,16 @@ export function toggleCorporateOfficers() {
     stockBoardOfDirectors.value = false;
     stockCorporateOfficers.value = !stockCorporateOfficers.value;
 }
+
+// // Noble merger
+ export const stockCommonNoble = ref<boolean>(false);
+export const stockNobleCertificates= ref<boolean>(false);
+
+export function toggleCommonNoble() {
+    stockCommonNoble.value = !stockCommonNoble.value;
+    stockNobleCertificates.value = false;
+}
+export function toggleNobleCertificates() {
+    stockCommonNoble.value = false;
+    stockNobleCertificates.value = !stockNobleCertificates.value;
+}

@@ -69,7 +69,7 @@
 
                             <!-- See our portfolio -->
                             <NuxtLink 
-                                to="/what/energy"
+                                to="/what/technology"
                                 class="group flex *:flex items-center *:items-center px-6 py-2 gap-4 w-fit font-bold text-(--white) hover:text-(--black) rounded-lg border-1 border-(--light-blue) hover:bg-(--light-blue) duration-300 ease-in-out transition-all"
                             >
                                 <div class="group relative flex items-center text-xl w-8 h-full overflow-hidden">
@@ -110,7 +110,7 @@
 
                             <!-- Learn about fuels -->
                             <NuxtLink 
-                                to="/what/energy"
+                                to="/what/penn"
                                 class="group flex *:flex items-center *:items-center px-6 py-2 gap-4 w-fit font-bold text-(--white) hover:text-(--black) rounded-lg border-1 border-(--light-teal) hover:bg-(--light-teal) duration-300 ease-in-out transition-all"
                             >
                                 <div class="group relative flex items-center text-xl w-8 h-full overflow-hidden">
@@ -150,7 +150,7 @@
 
                             <!-- Explore lubricants -->
                             <NuxtLink 
-                                to="/what/energy"
+                                to="/what/penn"
                                 class="group flex *:flex items-center *:items-center px-6 py-2 gap-4 w-fit font-bold text-(--white) hover:text-(--black) rounded-lg border-1 border-(--light-red) hover:bg-(--light-red) duration-300 ease-in-out transition-all"
                             >
                                 <div class="group relative flex items-center text-xl w-8 h-full overflow-hidden">
@@ -190,7 +190,7 @@
 
                             <!-- See chemicals and additives -->
                             <NuxtLink 
-                                to="/what/energy"
+                                to="/what/technology"
                                 class="group flex *:flex items-center *:items-center px-6 py-2 gap-4 w-fit font-bold text-(--white) hover:text-(--black) rounded-lg border-1 border-(--light-purple) hover:bg-(--light-purple) duration-300 ease-in-out transition-all"
                             >
                                 <div class="group relative flex items-center text-xl w-8 h-full overflow-hidden">

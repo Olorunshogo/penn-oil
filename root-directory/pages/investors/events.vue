@@ -283,7 +283,7 @@
             </div>
         </section>
 
-        <!-- Section: Events and presentations-->
+        <!-- Section: Press releases -->
         <section>
             <div class="relative px-(--section-px) lg:px-(--section-px-lg) py-(--section-py) lg:py-(--section-py-lg) bg-(--dark-blue)/95 w-full h-full">
                 
@@ -310,7 +310,7 @@
 
         </section>
 
-        <!-- Section: Events & Presentations-->
+        <!-- Section: Events & Presentations--
         <section>
             <div class="relative px-(--section-px) lg:px-(--section-px-lg) py-(--section-py) lg:py-(--section-py-lg) w-full h-full">
                 
@@ -321,53 +321,16 @@
                     </h2>
 
                     <div class="grid gap-8 w-full h-full">
-                        
-                        <!-- Current Investor Presentation -->
-                        <div class="grid gap-4 w-full h-full" id="investorsPresentation">
-                            <h3 class="font-medium text-xl md:text-2xl text-(--dark-blue)">
-                                Current Investor Presentation
-                            </h3>
-
-                            <div class="grid w-full h-full">
-
-                                <NuxtLink
-                                    to="/pdfs/May_2025_Penn_Investor_Presentation.pdf" title="May 2025 Penn Petro Energy Investor Presentation"
-                                    target="_blank"
-                                    class="flex items-center *:flex gap-2 p-3 underline underline-offset-2 decoration-1 decoration-transparent hover:decoration-(--medium-blue) duration-300 ease-in-out transition-all"
-                                >
-                                    <span class="text-(--light-red) text-2xl">
-                                        <Icon name="mdi:file-pdf-outline" />
-                                    </span>
-                                    <span class="text-(--medium-blue) text-base lg:text-lg">
-                                        May 2025 Penn Petro Energy Investor Presentation
-                                    </span>
-                                </NuxtLink>
-
-                                <NuxtLink
-                                    to="/pdfs/March_2025_Penn_Sensitivities_and_Forward_Guidance.pdf" title="March 2025 Penn Petro Energy Sensitivities and Forward Guidance"
-                                    target="_blank"
-                                    class="flex items-center *:flex gap-2 p-3 underline underline-offset-2 decoration-1 decoration-transparent hover:decoration-(--medium-blue) bg-(--light-gray) duration-300 ease-in-out transition-all"
-                                >
-                                    <span class="text-(--light-red) text-2xl">
-                                        <Icon name="mdi:file-pdf-outline" />
-                                    </span>
-                                    <span class="text-(--medium-blue) text-base lg:text-lg">
-                                        March 2025 Penn Petro Energy Sensitivities and Forward Guidance
-                                    </span>
-                                </NuxtLink>
-
-                            </div>
-                        </div>
 
                         <!-- Upcoming Events -->
-                        <div class="grid gap-4 w-full h-full">
+                        <!-- <div class="grid gap-4 w-full h-full">
                             <h3 class="font-medium text-xl md:text-2xl text-(--dark-blue)">
                                 Upcoming Events
                             </h3>
 
                             <table class="w-full border-collapse text-left text-(--black) text-sm" role="table">
                                 
-                                <!-- Table Headers -->
+                                <!-- Table Headers --
                                 <thead>
                                     <tr class="bg-(--dark-blue) text-white font-bold *:p-3">
                                         <th scope="col" class="w-1/2 md:w-1/3">Date</th>
@@ -397,9 +360,9 @@
                                 </tbody>
                             </table>
 
-                        </div>
+                        </div> -->
 
-                        <!-- Past Events -->
+                        <!-- Past Events --
                         <div class="grid gap-4 w-full h-full">
                             <h3 class="font-medium text-2xl text-(--dark-blue)">
                                 Past Events
@@ -407,7 +370,7 @@
 
                             <table class="w-full border-collapse text-left text-(--black) text-sm" role="table">
                                 
-                                <!-- Table Headers -->
+                                <!-- Table Headers --
                                 <thead>
                                     <tr class="bg-(--dark-blue) text-white font-bold *:p-3">
                                         <th scope="col" class="w-1/2 md:w-1/3">Date</th>
@@ -602,6 +565,7 @@
             </div>
 
         </section>
+        -->
 
     </div>
 </template>

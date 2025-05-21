@@ -102,50 +102,6 @@
                             The Board of Directors of Penn Petro Energy directs the affairs of the Corporation and is committed to sound principles of corporate governance. 
                             Documents included in this section provide ways for investors to understand the foundation of our corporate governance.
                         </p>
-
-                        <NuxtLink
-                            to="/pdfs/Certificate_of_incorporation.pdf" 
-                            title="Certificate of incorporation"
-                            target="_blank"
-                            class="group flex items-center *:flex gap-2 font-bold duration-300 ease-in-out transition-all"
-                        >
-                            <span class="text-(--medium-blue) text-lg group-hover:underline-text">
-                                Certificate of incorporation
-                            </span>
-                        </NuxtLink>
-
-                        <NuxtLink
-                            to="/pdfs/Penn_PLC_by_laws.pdf" 
-                            title="By-laws"
-                            target="_blank"
-                            class="group flex items-center *:flex gap-2 font-bold duration-300 ease-in-out transition-all"
-                        >
-                            <span class="text-(--medium-blue) text-lg group-hover:underline-text">
-                                By-laws
-                            </span>
-                        </NuxtLink>
-
-                        <NuxtLink
-                            to="/pdfs/Penn_governance_guidelines.pdf" 
-                            title="Corporate governance guidelines"
-                            target="_blank"
-                            class="group flex items-center *:flex gap-2 font-bold duration-300 ease-in-out transition-all"
-                        >
-                            <span class="text-(--medium-blue) text-lg group-hover:underline-text">
-                                Corporate governance guidelines
-                            </span>
-                        </NuxtLink>
-
-                        <NuxtLink
-                            to="/pdfs/Penn_proxy_statement_2025.pdf" 
-                            title="Proxy statement"
-                            target="_blank"
-                            class="group flex items-center *:flex gap-2 font-bold duration-300 ease-in-out transition-all"
-                        >
-                            <span class="text-(--medium-blue) text-lg group-hover:underline-text">
-                                Proxy statement
-                            </span>
-                        </NuxtLink>
                     </div>
                 </div>
 
@@ -931,13 +887,13 @@
                                     class="grid text-sm lg:text-base p-3 border-b-1 border-(--border-gray)"
                                 >
                                     <p>
-                                        Chevron has a confidential voting policy to protect stockholders' voting privacy. 
+                                        Penn Petro Energy has a confidential voting policy to protect stockholders' voting privacy. 
                                         Under this policy, ballots, proxy forms and voting instructions returned to brokerage firms, banks and other holders of record are kept confidential. 
                                         Only the proxy solicitor, proxy tabulator and the Inspector of Election have access to the ballots, proxy forms and voting instructions.
                                     </p>
                                     <p>
                                         Anyone who processes or inspects ballots, proxy forms or voting instructions signs a pledge to treat them as confidential. 
-                                        None of these persons is a Chevron employee. 
+                                        None of these persons is a Penn Petro Energy employee. 
                                         The proxy solicitor and the proxy tabulator will disclose information taken from the ballots, proxy forms and voting instructions only in the event of a proxy contest or as otherwise required by law.
                                     </p>
                                 </div>
@@ -964,7 +920,7 @@
                                     v-if="communicationWithBoard"
                                     class="text-sm lg:text-base p-3 border-b-1 border-(--border-gray)"
                                 >
-                                    Interested parties wishing to communicate their concerns or questions about Chevron to the Lead Director or to independent Directors may do so by U.S. mail to Lead Director or to Independent Directors, c/o Office of the Corporate Secretary, Penn Petro Energy Corporation, 5001 Executive Parkway, Suite 200, San Ramon, CA 94583. 
+                                    Interested parties wishing to communicate their concerns or questions about Penn Petro Energy to the Lead Director or to independent Directors may do so by U.S. mail to Lead Director or to Independent Directors, c/o Office of the Corporate Secretary, Penn Petro Energy Corporation, 5001 Executive Parkway, Suite 200, San Ramon, CA 94583. 
                                     The Corporate Secretary will compile the communications, summarize lengthy or repetitive communications and forward to the Lead Director or the independent Directors. The Corporate Secretary will also coordinate any requests from stockholders for additional communications with the Lead Director. 
                                 </p>
                             </Transition>
@@ -991,7 +947,7 @@
                                     class="text-sm lg:text-base p-3 border-b-1 border-(--border-gray)"
                                 >
                                     The Audit Committee has procedures in place to receive, retain and treat complaints received regarding accounting, internal accounting controls or auditing matters and to allow for the confidential and anonymous submission by anyone of concerns regarding questionable accounting or auditing matters. 
-                                    These procedures can be found on the Chevron website at
+                                    These procedures can be found on the Penn Petro Energy website at
                                     <NuxtLink
                                         to="/investors/corporate"
                                         target="_blank"
@@ -1204,18 +1160,7 @@
 
                             <p class="text-(--black) text-base">
                                 The Audit Committee assists the Board of Directors in ensuring that the corporation’s financial statements are properly audited, that the corporation maintains an effective internal audit function and that the corporation complies with legal and regulatory requirements, among other duties.
-                            </p>
-                            <NuxtLink
-                                to="/pdfs/Audit_committee_charter.pdf" 
-                                title="Read audit committee charter"
-                                target="_blank"
-                                class="group flex items-center *:flex gap-2 duration-300 ease-in-out transition-all"
-                            >
-                                <span class="text-(--medium-blue) text-base group-hover:underline-text">
-                                    Read audit committee charter
-                                </span>
-                            </NuxtLink>
-                                                       
+                            </p>                                                       
                         </div>
 
                         <!-- Board nominating and governance committee -->
@@ -1224,17 +1169,7 @@
 
                             <p class="text-(--black) text-base">
                                 The Board Nominating and Governance Committee assists the Board of Directors in defining and assessing qualifications for membership on the Board, identifying qualified candidates, and in devoting appropriate attention and effective response to stockholder concerns regarding corporate governance, among other duties.
-                            </p>
-                            <NuxtLink
-                                to="/pdfs/Board_nominating_and_governance_committee_charter.pdf" 
-                                title="Read board nominating and governance committee charter"
-                                target="_blank"
-                                class="group flex items-center *:flex gap-2 duration-300 ease-in-out transition-all"
-                            >
-                                <span class="text-(--medium-blue) text-base group-hover:underline-text">
-                                    Read board nominating and governance committee charter
-                                </span>
-                            </NuxtLink>                                                       
+                            </p>                                                      
                         </div>
 
                         <!-- Management compensation committee -->
@@ -1243,17 +1178,7 @@
 
                             <p class="text-(--black) text-base">
                                 The Management Compensation Committee assists the Board of Directors in determining salary and other compensation matters for executive officers and in establishing and administering incentive compensation and equity-based compensation plans for company management, among other duties.
-                            </p>
-                            <NuxtLink
-                                to="/pdfs/Management_compensation_committee_charter.pdf" 
-                                title="Read management compensation committee charter"
-                                target="_blank"
-                                class="group flex items-center *:flex gap-2 duration-300 ease-in-out transition-all"
-                            >
-                                <span class="text-(--medium-blue) text-base group-hover:underline-text">
-                                    Read management compensation committee charter
-                                </span>
-                            </NuxtLink>                                                       
+                            </p>                                                      
                         </div>
 
                         <!-- Public policy and sustainability committee -->
@@ -1262,17 +1187,7 @@
 
                             <p class="text-(--black) text-base">
                                 The Public Policy and Sustainability Committee assists the Board of Directors in overseeing environmental, social, human rights, political, and public policy matters that are relevant to the Corporation’s activities and performance. It also assists the Board of Directors in response to stockholder concerns regarding environmental, social, human rights, political, and public policy matters.
-                            </p>
-                            <NuxtLink
-                                to="/pdfs/Public_policy_committee_charter.pdf" 
-                                title="Read management compensation committee charter"
-                                target="_blank"
-                                class="group flex items-center *:flex gap-2 duration-300 ease-in-out transition-all"
-                            >
-                                <span class="text-(--medium-blue) text-base group-hover:underline-text">
-                                    Read public policy and sustainability charter
-                                </span>
-                            </NuxtLink>                                                       
+                            </p>                                                      
                         </div>
 
                     </div>
@@ -1281,36 +1196,9 @@
                     <div class="flex flex-col gap-4 w-full h-full">
                         <h3 class="text-2xl lg:text-4xl text-(--dark-blue) pb-4 text-center font-bold">Business conduct and ethics</h3>
 
-                        <div class="flex flex-col gap-4 w-full h-full">
-                            <!-- <h4 class="text-xl font-bold text-(--dark-blue)">Audit committee</h4> -->
-
-                            <p class="text-(--black) text-base lg:text-lg">
-                                Penn Petro Energy and its employees have a worldwide reputation for conducting business with honesty and integrity. Our Business Conduct and Ethics Code provides information about how we conduct our day-to-day business activities according to the principles of The Chevron Way. The Business Conduct and Ethics Code is required reading for all directors and employees.
-                            </p>
-
-                            <NuxtLink
-                                to="/pdfs/Penn_business_conduct_ethics_code.pdf" 
-                                title="Read business conduct and ethics code"
-                                target="_blank"
-                                class="group flex items-center *:flex gap-2 duration-300 ease-in-out transition-all"
-                            >
-                                <span class="text-(--medium-blue) text-base group-hover:underline-text">
-                                    Read business conduct and ethics code
-                                </span>
-                            </NuxtLink>
-
-                            <NuxtLink
-                                to="/pdfs/Penn_NoticeBCEC.pdf" 
-                                title="Notice re: updated business conduct and ethics code"
-                                target="_blank"
-                                class="group flex items-center *:flex gap-2 duration-300 ease-in-out transition-all"
-                            >
-                                <span class="text-(--medium-blue) text-base group-hover:underline-text">
-                                    Notice re: updated business conduct and ethics code
-                                </span>
-                            </NuxtLink>
-                                                       
-                        </div>
+                        <p class="text-(--black) text-base lg:text-lg">
+                            Penn Petro Energy and its employees have a worldwide reputation for conducting business with honesty and integrity. Our Business Conduct and Ethics Code provides information about how we conduct our day-to-day business activities according to the principles of The Penn Petro Energy Way. The Business Conduct and Ethics Code is required reading for all directors and employees.
+                        </p>
                     </div>
 
                     <!-- Contact the board -->
@@ -1321,7 +1209,7 @@
                             <h4 class="text-lg font-bold text-(--dark-blue)">Board of directors</h4>
 
                             <p class="text-(--black) text-base">
-                                Interested parties wishing to communicate their concerns or questions about Chevron to the Lead Director or to any other Independent Director may do so by mail to:
+                                Interested parties wishing to communicate their concerns or questions about Penn Petro Energy to the Lead Director or to any other Independent Director may do so by mail to:
                             </p>
 
                             <p class="text-(--black) text-base">
@@ -1333,23 +1221,8 @@
                             </p>
 
                             <p class="text-(--black) text-base">
-                                Email Penn Petro Energy Board at
-                                <NuxtLink
-                                    to="mailto:corpgov@penn.com" 
-                                    title="Read business conduct and ethics code"
-                                    target="_blank"
-                                    class="group flex items-center *:flex gap-2 duration-300 ease-in-out transition-all"
-                                >
-                                    <span class="text-(--medium-blue) group-hover:underline-text">
-                                        corpgov@penn.com
-                                    </span>
-                                </NuxtLink>
-                                <a href="mailto:"></a>
-                            </p>
-
-                            <p class="text-(--black) text-base">
                                 The Board Nominating and Governance Committee reviews interested-party communications, including stockholder inquiries, directed to Independent Directors.
-                                 The Corporate Secretary and Chief Governance Officer will compile the communications, summarize lengthy or repetitive communications received and report on responses sent.
+                                The Corporate Secretary and Chief Governance Officer will compile the communications, summarize lengthy or repetitive communications received and report on responses sent.
                             </p>
                                                        
                         </div>
@@ -1404,22 +1277,6 @@
                             </NuxtLink>
                         </div>
 
-                        <!-- PDF -->
-                        <div class="flex flex-col items-center justify-center w-full mx-auto h-full border-1 border-(--border-gray) hover:border-(--medium-gray) bg-(--white) shadow-sm hover:shadow-2xl duration-300 ease-in-out transition-all">
-                            <NuxtLink
-                                to="/pdfs/2024_Penn_annual_report_supplement.pdf" 
-                                target="_blank"
-                                class="group flex *:flex items-center *:items-center justify-between w-full h-14 p-3 duration-300 ease-in-out transition-all"
-                            >
-                                <span class="text-xs font-extrabold text-(--medium-blue) group-hover:underline-text">
-                                    2024 Supplement to the Annual Report
-                                </span>
-                                <span class="text-(--medium-blue) hover:text-(--light-blue)">
-                                    <Icon name="mdi:arrow-right" />
-                                </span>
-                            </NuxtLink>
-                        </div>
-
                         <div class="flex flex-col items-center justify-center w-full mx-auto h-full border-1 border-(--border-gray) hover:border-(--medium-gray) bg-(--white) shadow-sm hover:shadow-2xl duration-300 ease-in-out transition-all">
                             <a
                                 href="/sustainability/overview#sustainabilityHighlight" 
@@ -1432,22 +1289,6 @@
                                     <Icon name="mdi:chevron-right" />
                                 </span>
                             </a>
-                        </div>
-
-                        <!-- PDF -->
-                        <div class="flex flex-col items-center justify-center w-full mx-auto h-full border-1 border-(--border-gray) hover:border-(--medium-gray) bg-(--white) shadow-sm hover:shadow-2xl duration-300 ease-in-out transition-all">
-                            <NuxtLink
-                                to="/pdfs/Climate_change_resilience_report.pdf" 
-                                target="_blank"
-                                class="group flex *:flex items-center *:items-center justify-between w-full h-14 p-3 duration-300 ease-in-out transition-all"
-                            >
-                                <span class="text-xs font-extrabold text-(--medium-blue) group-hover:underline-text">
-                                    2023 Climate Change Resilience Report
-                                </span>
-                                <span class="text-(--medium-blue) hover:text-(--light-blue)">
-                                    <Icon name="mdi:arrow-right" />
-                                </span>
-                            </NuxtLink>
                         </div>
 
                         <div class="flex flex-col items-center justify-center w-full mx-auto h-full border-1 border-(--border-gray) hover:border-(--medium-gray) bg-(--white) shadow-sm hover:shadow-2xl duration-300 ease-in-out transition-all">
@@ -1464,22 +1305,6 @@
                             </NuxtLink>
                         </div>
 
-                        <!-- PDF -->
-                        <div class="flex flex-col items-center justify-center w-full mx-auto h-full border-1 border-(--border-gray) hover:border-(--medium-gray) bg-(--white) shadow-sm hover:shadow-2xl duration-300 ease-in-out transition-all">
-                            <NuxtLink
-                                to="/pdfs/Penn_PLC_by_laws.pdf" 
-                                target="_blank"
-                                class="group flex *:flex items-center *:items-center justify-between w-full h-14 p-3 duration-300 ease-in-out transition-all"
-                            >
-                                <span class="text-xs font-extrabold text-(--medium-blue) group-hover:underline-text">
-                                    Penn Petro Energy By-Laws
-                                </span>
-                                <span class="text-(--medium-blue) hover:text-(--light-blue)">
-                                    <Icon name="mdi:arrow-right" />
-                                </span>
-                            </NuxtLink>
-                        </div>
-
                         <div class="flex flex-col items-center justify-center w-full mx-auto h-full border-1 border-(--border-gray) hover:border-(--medium-gray) bg-(--white) shadow-sm hover:shadow-2xl duration-300 ease-in-out transition-all">
                             <NuxtLink
                                 to="/newsroom" 
@@ -1490,22 +1315,6 @@
                                 </span>
                                 <span class="text-(--medium-blue) hover:text-(--light-blue)">
                                     <Icon name="mdi:chevron-right" />
-                                </span>
-                            </NuxtLink>
-                        </div>
-
-                        <!-- PDF -->
-                        <div class="flex flex-col items-center justify-center w-full mx-auto h-full border-1 border-(--border-gray) hover:border-(--medium-gray) bg-(--white) shadow-sm hover:shadow-2xl duration-300 ease-in-out transition-all">
-                            <NuxtLink
-                                to="/pdfs/Penn_governance_guidelines.pdf" 
-                                target="_blank"
-                                class="group flex *:flex items-center *:items-center justify-between w-full h-14 p-3 duration-300 ease-in-out transition-all"
-                            >
-                                <span class="text-xs font-extrabold text-(--medium-blue) group-hover:underline-text">
-                                    Government guidelines
-                                </span>
-                                <span class="text-(--medium-blue) hover:text-(--light-blue)">
-                                    <Icon name="mdi:arrow-right" />
                                 </span>
                             </NuxtLink>
                         </div>

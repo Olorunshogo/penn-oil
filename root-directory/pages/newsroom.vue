@@ -44,7 +44,7 @@
 
                     <div class="flex flex-col items-center justify-center gap-2">
                         <NuxtLink
-                            to="/newsroom"
+                            to="/what/technology"
                             class="group relative text-(--white) font-semibold text-2xl lg:text-4xl duration-500 ease-in transition-all"
                         >                            
                             <span class="group-hover:underline-text text-center">
@@ -69,7 +69,7 @@
 
         <!-- Section: Latest news from Penn Petro Energy -->
         <section>        
-            <div class="relative flex flex-col gap-12 w-full h-full overflow-hidden bg-(--white) py-(--section-py) lg:py-(--section-py-lg)">
+            <div class="relative flex flex-col gap-12 w-full max-w-7xl mx-auto h-full overflow-hidden bg-(--white) py-(--section-py) lg:py-(--section-py-lg)">
                 
                 <h3 class="text-2xl text-(--dark-blue) font-bold text-center">
                     Latest news from Penn Petro Energy
@@ -94,7 +94,7 @@
                 <div class="grid gap-8 w-full h-full">
                     <button 
                         @click="isArchiveOpen = !isArchiveOpen"
-                        class="flex items-center justify-center gap-4 text-lg font-semibold text-(--black) hover:text-(--white) border-3 border-(--dark-blue) hover:bg-(--medium-blue) w-fit px-6 py-2 cursor-pointer rounded-lg shadow-lg mx-auto ease-in-out duration-300 transition-all"
+                        class="flex items-center justify-center gap-4 text-lg font-semibold text-(--black) hover:text-(--white) border-1 border-(--light-blue) hover:bg-(--light-blue) w-fit px-6 py-2 cursor-pointer rounded-lg shadow-lg mx-auto ease-in-out duration-300 transition-all"
                     >
                         
                         <span class="flex">
@@ -113,7 +113,7 @@
                     <Transition name="slide-down">
                         <div 
                             v-if="isArchiveOpen"
-                            class="grid grid-cols-1 lg:grid-cols-2 gap-4 w-full h-full py-12 bg-(--white)"
+                            class="grid grid-cols-1 lg:grid-cols-2 gap-4 w-full h-full px-8 py-12 bg-(--white)"
                         >
                             <CustomLatestNews
                                 v-for="item in archivedNews"
@@ -128,10 +128,6 @@
                         </div>
           
                     </Transition>
-                    
-                        
-
-                    
 
                 </div>
 
@@ -157,7 +153,7 @@
 
                             <div class="grid gap-1">
                                 <NuxtLink
-                                    to="/newsroom"
+                                    to="/what/energy"
                                     class="group relative text-(--dark-blue) font-bold text-lg hover:underline decoration-(--medium-blue) decoration-2 underline-offset-2 flex duration-500 ease-in-out transition-all"
                                 >                            
                                     <span class="group-hover:underline-text">Biofuels can help marltime industry lower carbon intensity</span>
@@ -181,7 +177,7 @@
 
                             <div class="grid gap-1">
                                 <NuxtLink
-                                    to="/newsroom"
+                                    to="/sustainability/climate"
                                     class="group relative text-(--dark-blue) font-bold text-lg hover:underline decoration-(--medium-blue) decoration-2 underline-offset-2 flex duration-500 ease-in-out transition-all"
                                 >                            
                                     <span class="group-hover:underline-text">Hydrogen project tour highlights expertise, role in energy market</span>
@@ -205,7 +201,7 @@
 
                             <div class="grid gap-1">
                                 <NuxtLink
-                                    to="/newsroom"
+                                    to="/what/energy"
                                     class="group relative text-(--dark-blue) font-bold text-lg hover:underline decoration-(--medium-blue) decoration-2 underline-offset-2 flex duration-500 ease-in-out transition-all"
                                 >                            
                                     <span class="group-hover:underline-text">Sunrise on solar energy operation</span>
@@ -229,7 +225,7 @@
 
                             <div class="grid gap-1">
                                 <NuxtLink
-                                    to="/newsroom"
+                                    to="/what/energy"
                                     class="group relative text-(--dark-blue) font-bold text-lg hover:underline decoration-(--medium-blue) decoration-2 underline-offset-2 flex duration-500 ease-in-out transition-all"
                                 >                            
                                     <span class="group-hover:underline-text">Three companies, one circular economies for biodiesel</span>
@@ -253,7 +249,7 @@
 
                             <div class="grid gap-1">
                                 <NuxtLink
-                                    to="/newsroom"
+                                    to="/what/pemm"
                                     class="group relative text-(--dark-blue) font-bold text-lg hover:underline decoration-(--medium-blue) decoration-2 underline-offset-2 flex duration-500 ease-in-out transition-all"
                                 >                            
                                     <span class="group-hover:underline-text">A global brand</span>
@@ -277,7 +273,7 @@
 
                             <div class="grid gap-1">
                                 <NuxtLink
-                                    to="/newsroom"
+                                    to="/what/penn"
                                     class="group relative text-(--dark-blue) font-bold text-lg hover:underline decoration-(--medium-blue) decoration-2 underline-offset-2 flex duration-500 ease-in-out transition-all"
                                 >                            
                                     <span class="group-hover:underline-text">Accessible infrastructures al over the world</span>

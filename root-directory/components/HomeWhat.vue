@@ -1,6 +1,6 @@
 
 <script setup lang='ts'>
-    import { lowerCarbonH2, isFixed } from '~/stores/homeWhat';
+    
 </script>
 
 <template>
@@ -125,34 +125,38 @@
                     </div>
                 </div>
 
+                <!-- Building a Cleaner Tomorrow -->
                 <div class="relative grid gap-16">
-                    <HomeWhatLower class="z-10" />
+                    <h2 class="font-extrabold text-center text-(--dark-teal) text-5xl sm:text-6xl lg:text-8xl py-10">
+                        Building a Cleaner Tomorrow
+                    </h2>
 
-                    <div class="flex flex-col lg:flex-row-reverse gap-8 w-full py-16 md:py-24 px-4 md:px-8 bg-(--dark-green) rounded-lg shadow-lg z-0"> 
+                    <div class="flex flex-col lg:flex-row gap-8 w-full py-12 px-6 md:px-12 bg-(--dark-teal) rounded-3xl shadow-xl">
                         
-                        <div class="lg:w-1/2">
-                            <NuxtImg
-                                src="https://images.pexels.com/photos/2569842/pexels-photo-2569842.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                                alt="caprock seal"
+                        <!-- Image Section -->
+                        <div class="lg:w-1/2 flex justify-center items-center">
+                            <NuxtImg 
+                                src="https://images.pexels.com/photos/2569842/pexels-photo-2569842.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" 
+                                alt="Sustainable geological layers for carbon storage" 
+                                class="rounded-2xl w-full h-auto max-w-lg shadow-lg"
                                 loading="lazy"
-                                class="flex items-center justify-center w-full h-full mx-auto sm:hidden lg:flex lg:justify-start lg:w-4/5 lg:mx-0 lg:mr-auto rounded-2xl"
                             />
                         </div>
-                        
-                        <div class="flex flex-col lg:w-1/2 gap-8 pt-16 ">
 
-                            <h3 class="text-5xl sm:text-6xl lg:text-7xl text-wrap text-(--medium-green) font-extrabold">
-                                Carbon capture and storage
+                        <!-- Content Section -->
+                        <div class="flex flex-col lg:w-1/2 justify-center gap-8">
+                            <h3 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-(--light-teal) leading-tight">
+                                Clean Energy, Captured Future
                             </h3>
 
-                            <p class="text-(--white) text-lg lg:text-xl text-wrap font-normal lg:font-medium">
-                                Penn Petro Energy is working to develop and deploy CCUS technologies in locations across the globe.
+                            <p class="text-(--white) text-lg lg:text-xl font-light leading-relaxed">
+                                Penn Petro Energy is leading the way in sustainability with advanced carbon capture and storage (CCS) technology—turning emissions into a thing of the past.
                             </p>
 
-                            <!-- Learn about CCS -->
+                            <!-- CTA Button -->
                             <NuxtLink 
                                 to="/what/energy"
-                                class="group flex *:flex items-center *:items-center px-4 lg:px-8 py-2 gap-4 w-fit text-(--white) hover:text-(--black) bg-transparent hover:bg-(--medium-green) shadow-lg rounded-lg border-1 border-(--light-green) duration-300 ease-in-out transition-all"
+                                class="group flex *:flex items-center *:items-center px-4 lg:px-8 py-2 gap-4 w-fit text-(--white) hover:text-(--black) bg-transparent hover:bg-(--light-blue) shadow-lg rounded-lg border-1 border-(--light-blue) duration-300 ease-in-out transition-all"
                             >
                                 <div class="group relative flex items-center text-xl w-8 h-full overflow-hidden">
                                     <div class="absolute flex items-center left-2 h-full w-12 transition-all duration-500 ease-in-out group-hover:translate-x-full">
@@ -168,12 +172,11 @@
                             </NuxtLink>
                         </div>
 
-                    </div> 
+                    </div>
                 </div>
             
             </div>            
         </div>
-
     </section>
 </template>
 
