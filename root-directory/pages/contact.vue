@@ -1,7 +1,8 @@
 
-<script lang="ts" setup>
+<script setup>
     import { useHead } from 'nuxt/app';
-    import { ref, computed } from 'vue'
+    import { ref, computed, onMounted } from 'vue';
+    import emailjs from '@emailjs/browser';
 
     useHead({
         title: 'Contact Information',
@@ -43,7 +44,8 @@
         topics,
         selectInputFields,
         textInputFields,
-        formData,
+        textFieldValues,
+        handleFormSubmit,
     } from '~/models/contact';
 
     const selectedTopic = ref('Media Relations');
@@ -61,7 +63,48 @@
     // Watch for topic changes to reset subtopic
     watch(selectedTopic, () => {
         selectedSubtopic.value = '';
-    });     
+    });
+
+    // Initialize the DSK
+    emailjs.init({
+        publicKey: 'kUpu8kiGCsdD-UqvK'
+    })
+    // emailjs.sendForm('contact_service', 'contact_form', this);
+
+    const success = ref(false);
+    const error = ref('');
+
+    export const handleFormSubmit = async () => {    
+        try {
+            const result = await emailjs.send(
+                'penn_petro-energy',
+                'template_2b9efbt',
+                {
+                    selectedTopic: selectedTopic.value,
+                    selectedSubtopic: selectedSubtopic.value,
+                    firstName: textFieldValues.firstName,
+                    lastName: textFieldValues.lastName,
+                    email: textFieldValues.email,
+                    newsletter: textFieldValues.newsletter,
+                    comments: textFieldValues.comments,
+                },
+                'kUpu8kiGCsdD-UqvK'
+            );
+
+            alert('Email sent', result.status);
+            success.value = true;
+            error.value= '';
+        } catch (err) {
+            alert('Failed to send email:', err);
+            error.value = 'Failed to send email. Please try again.';
+        }
+    }
+    
+    onMounted(() => {
+        emailjs.init('kUpu8kiGCsdD-UqvK');
+    })
+    
+    
 
 </script>
 
@@ -927,7 +970,10 @@
                     </div> 
 
                     <!-- Form -->
-                    <form @submit.prevent class="w-full h-full">
+                    <form 
+                        id="contact-form"
+                        @submit.prevent="handleFormSubmit" class="w-full h-full"
+                    >
 
                         <div class="flex flex-col gap-4 w-9/10 max-w-3xl mx-auto h-fit">
 
@@ -970,25 +1016,55 @@
                                 :displayError="input.displayError"
                                 :error="input.error"
                                 :aria-describedby="input.ariaDescribedby"
-                                v-model="formData[input.valueKey].value"
+                                v-model="textFieldValues[input.valueKey]"
                             />
+                            <div class="flex items-center gap-2">
+                                <!-- Input Field -->
+                                <input
+                                    type="checkbox"
+                                    id="newsletter"
+                                    name="newsletter"
+                                    aria-describedby="newsletter"
+                                    v-model="textFieldValues.newsletter"
+                                    class="text-(--dark-blue) border-2 border-(--light-blue) outline-none hover:cursor-pointer focus:border-(--light-blue) duration-300 ease-in-out transition-all"
+                                />
+
+                                <!-- Label -->
+                                <label for="newsletter" class="text-sm font-medium text-(--dark-blue)">
+                                    Newsletter opt-in
+                                </label>
+                            </div>
+
 
                             <CustomInputTextarea
                                 label="Comments"
                                 :maxWordCount="1000"
-                                v-model="formData.comments"
+                                v-model="textFieldValues.comments"
                                 placeholder="Enter your comments here"
                             />
                                 
                             <div class="mt-6 p-4 border rounded bg-gray-50">
                                 <p><strong>Selected Topic:</strong> {{ selectedTopic }}</p>
                                 <p><strong>Selected Subtopic:</strong> {{ selectedSubtopic }}</p>
-                                <h2>First name: {{ formData.firstName }}</h2>
-                                <h2>Last name: {{ formData.lastName }}</h2>
-                                <h2>Email: {{ formData.email }}</h2>
-                                <h2>Comments: {{ formData.comments }}</h2>
+                                <h2>First name: {{ textFieldValues.firstName }}</h2>
+                                <h2>Last name: {{ textFieldValues.lastName }}</h2>
+                                <h2>Email: {{ textFieldValues.email }}</h2>
+                                <h2>Newsletter: {{ textFieldValues.newsletter }}</h2>
+                                <h2>Comments: {{ textFieldValues.comments }}</h2>
                             </div>
 
+                            <!-- Submit Button -->
+                            <button 
+                                type="submit"
+                                class="px-8 py-3 w-50 mx-auto text-(--white) font-bold bg-(--medium-blue) shadow-sm hover:opacity-85 hover:shadow-lg cursor-pointer duration-300 ease-in-out transition-all"
+                            >
+                                Submit
+                            </button>
+
+                            <p v-if="success">
+                                Email send successfully
+                            </p>
+                            <p v-if="error" class="text-red-600">{{ error }}</p>
                         </div>
                     </form>
 

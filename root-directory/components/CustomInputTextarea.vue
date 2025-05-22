@@ -53,31 +53,35 @@
 
 <template>
   <div class="flex flex-col space-y-2">
-    <!-- Label -->
-    <label
-      for="topic"
-      class="flex items-center w-40 text-sm font-medium text-(--dark-blue)"
-    >
-      <span>{{ label }}</span>
-      <span class="text-(--dark-red) font-bold">*</span>
-    </label>
+    <div class="flex flex-col gap-2">
+      <!-- Label -->
+      <label
+        for="topic"
+        class="flex *:flex items-center *:items-center gap-4 text-sm font-medium text-(--dark-blue)"
+      >
+        <span>
+          {{ label }}
+          <span class="text-(--dark-red) font-bold">*</span>
+        </span>
+       
+        <!-- Word Count Display -->
+        <span class="text-xs text-gray-500 font-normal">
+          {{ currentWordCount }}/{{ maxWordCount }} word(s)
+        </span>
+      </label>
 
-    <!-- Textarea Input -->
-    <textarea
-      id="topic"
-      v-model="commentValue"
-      :maxLength="maxWordCount"
-      @input="onInput"
-      rows="4"
-      class="w-full p-2 border-1 border-(--border-gray) rounded-lg outline-none hover:border-(--light-blue) hover:cursor-pointer focus:cursor-text duration-300 ease-in-out transition-all"
-      :placeholder="placeholder"
-      :aria-labelledby="'comments-label'"
-    ></textarea>
-
-    <!-- Word Count Display -->
-    <p class="text-xs text-gray-500">
-      {{ currentWordCount }} / {{ maxWordCount }} words
-    </p>
+      <!-- Textarea Input -->
+      <textarea
+        id="topic"
+        v-model="commentValue"
+        :maxLength="maxWordCount"
+        @input="onInput"
+        rows="4"
+        class="w-full p-2 text-sm text-(--dark-blue) shadow-sm border-1 border-(--border-gray) rounded-lg outline-none hover:shadow-lg hover:border-(--light-blue) hover:cursor-pointer focus:shadow-lg focus:border-(--light-blue) focus:cursor-text duration-300 ease-in-out transition-all"
+        :placeholder="placeholder"
+        :aria-labelledby="'comments-label'"
+      ></textarea>
+    </div>
 
     <!-- Word Count Exceed Warning -->
     <p 

@@ -25,7 +25,8 @@
 </script>
 
 <template>
-  <div class="flex flex-col space-y-2">
+  <div>
+  
     <div class="flex items-center">
       <!-- Label -->
       <label
@@ -49,18 +50,10 @@
         :aria-describedby="ariaDescribedby"
         :value="modelValue"
         @input="onInput"
-        class="w-full p-2 border-1 border-(--border-gray) rounded-lg outline-none hover:border-(--light-blue) hover:cursor-pointer focus:cursor-text duration-300 ease-in-out transition-all"
+        class="w-full p-2 text-sm text-(--dark-blue) shadow-sm border-1 border-(--border-gray) rounded-lg outline-none hover:shadow-lg hover:border-(--light-blue) hover:cursor-pointer focus:shadow-lg focus:border-(--light-blue) focus:cursor-text duration-300 ease-in-out transition-all"
       />
     </div>
 
-    <!-- Error Message -->
-    <p
-      v-if="displayError"
-      id="input-error"
-      class="text-sm text-(--light-red)"
-    >
-      {{ props.error }}
-    </p>
   </div>
 </template>
 

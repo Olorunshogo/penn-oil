@@ -376,6 +376,7 @@ export const textInputFields = ref([
         name: 'firstname',
         disabled: false,
         required: true,
+        displayAsterik: true,
         displayError: false,
         error: 'Please input your full name',
         ariaDescribedby: 'first name',
@@ -390,7 +391,8 @@ export const textInputFields = ref([
         id: 'lastName',
         name: 'lastName',
         disabled: false,
-        required: true,
+        required: false,
+        displayAsterik: false,
         displayError: false,
         error: 'Please input your last name',
         ariaDescribedby: 'last name',
@@ -406,6 +408,7 @@ export const textInputFields = ref([
         name: 'email',
         disabled: false,
         required: true,
+        displayAsterik: true,
         displayError: false,
         error: 'Please enter a valid email address',
         ariaDescribedby: 'email',
@@ -417,39 +420,34 @@ export const textInputFields = ref([
 
 
 // FORM
-type FormData = {
-    firstName: Ref<string>;
-    lastName: Ref<string>;
-    email: Ref<string>;
-    comments: Ref<string>;
-};
-
-export const formData: FormData = {
-    firstName: ref<string>(''),
-    lastName: ref<string>(''),
-    email: ref<string>(''),
-    comments: ref<string>(''),
-}
+export const textFieldValues = reactive({
+    firstName: '',
+    lastName: '',
+    email: '',
+    newsletter: false,
+    comments: ''
+})
 
 
 
-const form = ref({ name: '', email: '', message: '' })
 
-async function submitForm() {
-    try {
-        const res = await fetch('/api/submit-form', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify(form.value)
-        });
-        const data = await res.json()
-        if (data.success) {
-            alert('Form submitted!')
-        } else {
-            alert('Submission failed.')
-        }
-    } catch (err) {
-        console.error(err)
-        alert('Error submitting form.')
-    }
-}
+// const form = ref({ name: '', email: '', message: '' })
+
+// async function submitForm() {
+//     try {
+//         const res = await fetch('/api/submit-form', {
+//             method: 'POST',
+//             headers: { 'Content-Type': 'application/json' },
+//             body: JSON.stringify(form.value)
+//         });
+//         const data = await res.json()
+//         if (data.success) {
+//             alert('Form submitted!')
+//         } else {
+//             alert('Submission failed.')
+//         }
+//     } catch (err) {
+//         console.error(err)
+//         alert('Error submitting form.')
+//     }
+// }
