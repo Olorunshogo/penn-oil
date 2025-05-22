@@ -156,11 +156,11 @@
                                     to="/what/energy"
                                     class="group relative text-(--dark-blue) font-bold text-lg hover:underline decoration-(--medium-blue) decoration-2 underline-offset-2 flex duration-500 ease-in-out transition-all"
                                 >                            
-                                    <span class="group-hover:underline-text">Biofuels can help marltime industry lower carbon intensity</span>
+                                    <span class="group-hover:underline-text">Biofuels can help maritime industry lower carbon intensity</span>
                                 </NuxtLink>
 
                                 <div class="flex items-center text-sm text-(--dark-gray) gap-1">
-                                    november 08, 2024
+                                    November 08, 2024
                                 </div>
                                 
                             </div>
@@ -184,7 +184,7 @@
                                 </NuxtLink>
 
                                 <div class="flex items-center text-sm text-(--dark-gray) gap-1">
-                                    november 04, 2024
+                                    November 04, 2024
                                 </div>
                                 
                             </div>
@@ -276,7 +276,7 @@
                                     to="/what/penn"
                                     class="group relative text-(--dark-blue) font-bold text-lg hover:underline decoration-(--medium-blue) decoration-2 underline-offset-2 flex duration-500 ease-in-out transition-all"
                                 >                            
-                                    <span class="group-hover:underline-text">Accessible infrastructures al over the world</span>
+                                    <span class="group-hover:underline-text">Accessible infrastructures all over the world</span>
                                 </NuxtLink>
 
                                 <div class="flex items-center text-sm text-(--dark-gray) gap-1">
