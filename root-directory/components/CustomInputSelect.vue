@@ -19,6 +19,10 @@
             type: Boolean,
             default: false,
         },
+        displayAsterik: {
+            type: Boolean,
+            default: false,
+        },
         displayError: {
             type: Boolean,
             default: false,
@@ -43,7 +47,12 @@
                 :aria-required="props.required ? 'true' : 'false'"
             >
                 {{ label }}
-                <span class="text-(--dark-red) font-bold">*</span>
+                <span 
+                    v-if="required"
+                    class="text-(--dark-red) font-bold"
+                >
+                    *
+                </span>
             </label>
 
             <!-- Select Dropdown -->
@@ -53,7 +62,7 @@
                 :disabled="disabled"
                 :required="required"
                 :aria-describedby="ariaDescribedby"
-                class="w-full p-2 border-1 border-(--border-gray) rounded-lg outline-none hover:border-(--light-blue) hover:cursor-pointer focus:cursor-text duration-300 ease-in-out transition-all"
+                class="w-full px-2 py-1 text-sm text-(--dark-blue) font-medium border-b-1 border-(--border-gray) outline-none hover:border-(--light-blue) hover:cursor-pointer focus:border-1 focus:border-dotted focus:cursor-text duration-300 ease-in-out transition-all"
                 :value="inputValue"
                 @change="(e) => emit('update:inputValue', (e.target as HTMLSelectElement).value)"
             >
@@ -62,6 +71,7 @@
                     v-for="option in options"
                     :key="option.value"
                     :value="option.value"
+                    class="font-medium"
                 >
                     {{ option.label }}
                 </option>

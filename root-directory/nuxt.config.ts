@@ -1,5 +1,4 @@
 import tailwindcss from "@tailwindcss/vite";
-import { gsap } from 'gsap';
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
@@ -44,6 +43,12 @@ export default defineNuxtConfig({
   plugins: [
     './plugins/aos.client.js'
   ],
+
+  runtimeConfig: {
+    public: {
+      emailjsPublicKey: process.env.EMAILJS_PUBLIC_KEY
+    }
+  },
 
   vite: {
     plugins: [
