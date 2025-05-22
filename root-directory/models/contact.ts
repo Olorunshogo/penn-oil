@@ -427,3 +427,30 @@ export const textFieldValues = reactive({
     newsletter: false,
     comments: ''
 })
+<<<<<<< HEAD
+=======
+
+
+
+
+// const form = ref({ name: '', email: '', message: '' })
+
+// async function submitForm() {
+//     try {
+//         const res = await fetch('/api/submit-form', {
+//             method: 'POST',
+//             headers: { 'Content-Type': 'application/json' },
+//             body: JSON.stringify(form.value)
+//         });
+//         const data = await res.json()
+//         if (data.success) {
+//             alert('Form submitted!')
+//         } else {
+//             alert('Submission failed.')
+//         }
+//     } catch (err) {
+//         console.error(err)
+//         alert('Error submitting form.')
+//     }
+// }
+>>>>>>> 2b9387f7857f67d96bf76691c0d208fbe075f284

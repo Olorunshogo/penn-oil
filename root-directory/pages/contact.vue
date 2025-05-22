@@ -1,12 +1,8 @@
 
 <script setup>
-    import { useHead, useSeoMeta, useRuntimeConfig } from 'nuxt/app';
-    import { ref, computed, onMounted, watch } from 'vue';
+    import { useHead } from 'nuxt/app';
+    import { ref, computed, onMounted } from 'vue';
     import emailjs from '@emailjs/browser';
-
-    // Initialize the DSK
-    const config = useRuntimeConfig();
-    emailjs.init(config.public.emailjsPublicKey)
 
     useHead({
         title: 'Contact Information',
@@ -67,58 +63,8 @@
     watch(selectedTopic, (newVal) => {
         alert('Selected topic changed:', newVal);
         selectedSubtopic.value = '';
-    });
+    });     
 
-    const success = ref(false);
-    const error = ref('');
-    
-    onMounted(() => {
-        // if (config?.public?.emailjsPublicKey) {
-        //     emailjs.init({
-        //         publicKey: emailjsPublicKey,
-        //     })
-        // } else {
-        //     alert('EMAILJS_PUBLIC_KEY not defined in runtime config');
-        //     console.warn('EMAILJS_PUBLIC_KEY not defined in runtime config');
-        // }
-        // emailjs.init(config.public.emailjsPublicKey);
-    })
-
-    // const handleFormSubmit = async () => {    
-    //     try {
-    //         const result = await emailjs.send(
-    //             'penn_petro_energy',
-    //             'template_2b9efbt',
-    //             {
-    //                 selectedTopic: selectedTopic.value,
-    //                 selectedSubtopic: selectedSubtopic.value,
-    //                 firstName: textFieldValues.firstName,
-    //                 lastName: textFieldValues.lastName,
-    //                 email: textFieldValues.email,
-    //                 newsletter: textFieldValues.newsletter,
-    //                 comments: textFieldValues.comments,
-    //             },
-    //             // config.public.emailjsPublicKey
-    //         );
-
-    //         alert('Email sent successfully!', result.status);
-    //         success.value = true;
-    //         error.value= '';
-
-    //         selectedTopic.value = '',
-    //         selectedSubtopic.value = '',
-    //         textFieldValues.firstName.value = '',
-    //         textFieldValues.lastName = '',
-    //         textFieldValues.email = '',
-    //         textFieldValues.newsletter = '',
-    //         textFieldValues.comments = ''
-    //     } catch (err) {
-    //         // alert('EMAILJS error:', err);
-    //         alert('Failed to send email:', err);
-    //         error.value = 'Failed to send email. Please try again.';
-    //     }
-    // }
-    
 </script>
 
 
