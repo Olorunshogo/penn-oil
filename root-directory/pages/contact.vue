@@ -77,7 +77,7 @@
                 <div class="flex flex-col gap-12 items-center justify-center max-w-7xl mx-auto">
 
                     <div class="flex flex-col gap-4 items-center justify-center py-12 w-full mx-auto">
-                        <h2 class="text-(--dark-blue) text-center font-extrabold text-4xl lg:text-7xl">
+                        <h2 class="text-(--dark-blue) text-center font-extrabold text-3xl sm:text-4xl lg:text-7xl">
                             Contact Penn Petro Energy
                         </h2>
                         <p class="text-(--black) text-lg text-center">
@@ -87,28 +87,27 @@
 
                     <!-- Important Information -->
                     <div class="flex flex-col gap-20 items-center justify-center w-full mx-auto max-w-4xl">
-                        <h2 class="text-(--dark-blue) text-center font-extrabold text-3xl lg:text-4xl">
+                        <h2 class="text-(--dark-blue) text-center font-extrabold text-2xl sm:text-3xl lg:text-4xl">
                             Important Information
                         </h2>
 
                         <div class="flex flex-col gap-0 *:px-4 w-9/10 mx-auto h-full bg-(--light-gray)/40">
 
                             <!-- Job Openings -->
-                            <div class="flex flex-col gap-6 text-(--black) py-4 lg:py-6 border-2 border-transparent border-b-(--border-gray)">                                                                 
-                                <div class="flex items-center justify-between text-(--black) w-full">                                
+                            <div class="flex flex-col gap-6 text-(--black) py-4 lg:py-6 border-2 border-transparent border-b-(--border-gray)">                                                                                               
                                     
-                                    <button 
-                                        @click="toggleJobOpenings"
-                                        class="flex items-center justify-between cursor-pointer ease-in-out duration-300 transition-all"
-                                    >
-                                        <span class="flex text-base lg:text-lg">Job Openings</span>
-                                        <Icon 
-                                            name="mdi:chevron-down"
-                                            class="flex text-lg text-(--dark-blue) font-bold ease-in-out duration-300 transition-all"
-                                            :class="{ 'rotate-180' : jobOpenings }"
-                                        />
-                                    </button>
-                                </div> 
+                                <button 
+                                    @click="toggleJobOpenings"
+                                    class="flex items-center justify-between cursor-pointer ease-in-out duration-300 transition-all"
+                                >
+                                    <span class="flex text-base">Job Openings</span>
+                                    <Icon 
+                                        name="mdi:chevron-down"
+                                        class="flex text-lg text-(--dark-blue) font-bold ease-in-out duration-300 transition-all"
+                                        :class="{ 'rotate-180' : jobOpenings }"
+                                    />
+                                </button>
+                          
                                 <Transition name="slide-down">
                                     <div 
                                         v-if="jobOpenings"
@@ -145,19 +144,17 @@
 
                             <!-- Service Station Inquiries -->
                             <div class="flex flex-col gap-6 text-(--black) py-4 lg:py-6 border-2 border-transparent border-b-(--border-gray)">                                                                 
-                                <div class="flex items-center justify-between text-(--black)">                                
-                                    <span class="flex text-xl">Service Station inquiries</span>
-                                    <button 
-                                        @click="toggleServiceStation"
-                                        class="flex items-center cursor-pointer ease-in-out duration-300 transition-all"
-                                    >
-                                        <Icon 
-                                            name="mdi:chevron-down"
-                                            class="flex text-xl font-bold ease-in-out duration-300 transition-all"
-                                            :class="{ 'rotate-180' : serviceStation }"
-                                        />
-                                    </button>
-                                </div> 
+                                <button 
+                                    @click="toggleServiceStation"
+                                    class="flex items-center justify-between cursor-pointer ease-in-out duration-300 transition-all"
+                                >
+                                    <span class="flex">Service Station inquiries</span>
+                                    <Icon 
+                                        name="mdi:chevron-down"
+                                        class="flex text-lg text-(--dark-blue) font-bold ease-in-out duration-300 transition-all"
+                                        :class="{ 'rotate-180' : serviceStation }"
+                                    />
+                                </button>
                                 <Transition name="slide-down">
                                     <div 
                                         v-if="serviceStation"
@@ -209,19 +206,18 @@
                             <!-- Scams -->
                             <div class="flex flex-col gap-6 text-(--black) py-4 lg:py-6 border-2 border-transparent border-b-(--border-gray)">      
 
-                                <div class="flex items-center justify-between text-(--black)">                                
-                                    <span class="flex text-xl">Scams</span>
-                                    <button 
-                                        @click="toggleScams"
-                                        class="flex items-center cursor-pointer ease-in-out duration-300 transition-all"
-                                    >
-                                        <Icon 
-                                            name="mdi:chevron-down"
-                                            class="flex text-xl font-bold ease-in-out duration-300 transition-all"
-                                            :class="{ 'rotate-180' : scams }"
-                                        />
-                                    </button>
-                                </div> 
+                                <button 
+                                    @click="toggleServiceStation"
+                                    class="flex items-center justify-between cursor-pointer ease-in-out duration-300 transition-all"
+                                >
+                                    <span class="flex">Scams</span>
+                                    <Icon 
+                                        name="mdi:chevron-down"
+                                        class="flex font-bold ease-in-out duration-300 transition-all"
+                                        :class="{ 'rotate-180' : scams }"
+                                    />
+                                </button>
+                              
 
                                 <Transition name="slide-own">
                                     <div 
@@ -337,20 +333,17 @@
 
                             <!-- Pipelines -->
                             <div class="flex flex-col gap-6 text-(--black) py-4 lg:py-6 border-2 border-transparent border-b-(--border-gray)">      
-
-                                <div class="flex items-center justify-between text-(--black)">                                
-                                    <span class="flex text-xl">Pipelines</span>
-                                    <button 
-                                        @click="togglePipelines"
-                                        class="flex items-center cursor-pointer ease-in-out duration-300 transition-all"
-                                    >
-                                        <Icon 
-                                            name="mdi:chevron-down"
-                                            class="flex text-xl font-bold ease-in-out duration-300 transition-all"
-                                            :class="{ 'rotate-180' : pipelines }"
-                                        />
-                                    </button>
-                                </div> 
+                                <button 
+                                    @click="togglePipelines"
+                                    class="flex items-center justify-between cursor-pointer ease-in-out duration-300 transition-all"
+                                >
+                                    <span class="flex">Pipelines</span>
+                                    <Icon 
+                                        name="mdi:chevron-down"
+                                        class="flex font-bold ease-in-out duration-300 transition-all"
+                                        :class="{ 'rotate-180' : pipelines }"
+                                    />
+                                </button> 
 
                                 <Transition name="slide-own">
                                     <div 
@@ -401,19 +394,17 @@
                             <!-- Credit card inquiries -->
                             <div class="flex flex-col gap-6 text-(--black) py-4 lg:py-6 border-2 border-transparent border-b-(--border-gray)">      
 
-                                <div class="flex items-center justify-between text-(--black)">                                
-                                    <span class="flex text-base lg:text-lg">Credit card inquiries</span>
-                                    <button 
-                                        @click="toggleCreditCard"
-                                        class="flex items-center cursor-pointer ease-in-out duration-300 transition-all"
-                                    >
-                                        <Icon 
-                                            name="mdi:chevron-down"
-                                            class="flex text-base lg:text-lg font-bold ease-in-out duration-300 transition-all"
-                                            :class="{ 'rotate-180' : creditCard }"
-                                        />
-                                    </button>
-                                </div> 
+                                <button 
+                                    @click="toggleCreditCard"
+                                    class="flex items-center justify-between cursor-pointer ease-in-out duration-300 transition-all"
+                                >
+                                    <span class="flex">Credit card inquiries</span>
+                                    <Icon 
+                                        name="mdi:chevron-down"
+                                        class="flex font-bold ease-in-out duration-300 transition-all"
+                                        :class="{ 'rotate-180' : creditCard }"
+                                    />
+                                </button>  
 
                                 <Transition name="slide-down">
                                     <div 
@@ -474,19 +465,17 @@
                             <!-- Request a datasheet -->
                             <div class="flex flex-col gap-6 text-(--black) py-4 lg:py-6 border-2 border-transparent border-b-(--border-gray)">      
 
-                                <div class="flex items-center justify-between text-(--black)">                                
-                                    <span class="flex text-xl">Request a datasheet</span>
-                                    <button 
-                                        @click="toggleRequestDb"
-                                        class="flex items-center cursor-pointer ease-in-out duration-300 transition-all"
-                                    >
-                                        <Icon 
-                                            name="mdi:chevron-down"
-                                            class="flex text-xl font-bold ease-in-out duration-300 transition-all"
-                                            :class="{ 'rotate-180' : requestDb }"
-                                        />
-                                    </button>
-                                </div> 
+                                <button 
+                                    @click="toggleRequestDb"
+                                    class="flex items-center justify-between cursor-pointer ease-in-out duration-300 transition-all"
+                                >
+                                    <span class="flex">Request a datasheet</span>
+                                    <Icon 
+                                        name="mdi:chevron-down"
+                                        class="flex font-bold ease-in-out duration-300 transition-all"
+                                        :class="{ 'rotate-180' : requestDb }"
+                                    />
+                                </button>  
 
                                 <Transition name="slide-down">
                                     <div 
@@ -524,20 +513,17 @@
 
                             <!-- Donation requests -->
                             <div class="flex flex-col gap-6 text-(--black) py-4 lg:py-6 border-2 border-transparent border-b-(--border-gray)">      
-
-                                <div class="flex items-center justify-between text-(--black)">                                
-                                    <span class="flex text-xl">Donation requests</span>
-                                    <button 
-                                        @click="toggleDonationRequest"
-                                        class="flex items-center cursor-pointer ease-in-out duration-300 transition-all"
-                                    >
-                                        <Icon 
-                                            name="mdi:chevron-down"
-                                            class="flex text-xl font-bold ease-in-out duration-300 transition-all"
-                                            :class="{ 'rotate-180' : donationRequest }"
-                                        />
-                                    </button>
-                                </div> 
+                                <button 
+                                    @click="toggleDonationRequest"
+                                    class="flex items-center cursor-pointer ease-in-out duration-300 transition-all"
+                                >
+                                     <span class="flex">Donation requests</span>
+                                    <Icon 
+                                        name="mdi:chevron-down"
+                                        class="flex font-bold ease-in-out duration-300 transition-all"
+                                        :class="{ 'rotate-180' : donationRequest }"
+                                    />
+                                </button> 
 
                                 <Transition name="slide-down">
                                     <div 
@@ -594,21 +580,17 @@
 
                             <!-- Fuels-technical question -->
                             <div class="flex flex-col gap-6 text-(--black) py-4 lg:py-6 border-2 border-transparent border-b-(--border-gray)">      
-
-                                <div class="flex items-center justify-between text-(--black)">                                
-                                    <span class="flex text-xl">Fuels-technical question</span>
-                                    <button 
-                                        @click="toggleFuelsTechnical"
-                                        class="flex items-center cursor-pointer ease-in-out duration-300 transition-all"
-                                    >
-                                        <Icon 
-                                            name="mdi:chevron-down"
-                                            class="flex text-xl font-bold ease-in-out duration-300 transition-all"
-                                            :class="{ 'rotate-180' : fuelsTechnical }"
-                                        />
-                                    </button>
-                                </div> 
-
+                                <button 
+                                    @click="toggleFuelsTechnical"
+                                    class="flex items-center cursor-pointer ease-in-out duration-300 transition-all"
+                                >
+                                    <span class="flex">Fuels-technical question</span>
+                                    <Icon 
+                                        name="mdi:chevron-down"
+                                        class="flex font-bold ease-in-out duration-300 transition-all"
+                                        :class="{ 'rotate-180' : fuelsTechnical }"
+                                    />
+                                </button>  
                                 <Transition name="slide-down">
                                     <div 
                                         v-if="fuelsTechnical"
@@ -647,19 +629,17 @@
                             <!-- Financial Publication request -->
                             <div class="flex flex-col gap-6 text-(--black) py-4 lg:py-6 border-2 border-transparent border-b-(--border-gray)">      
 
-                                <div class="flex items-center justify-between text-(--black)">                                
-                                    <span class="flex text-xl">Financial Publication request</span>
-                                    <button 
-                                        @click="toggleFinancialPublication"
-                                        class="flex items-center cursor-pointer ease-in-out duration-300 transition-all"
-                                    >
-                                        <Icon 
-                                            name="mdi:chevron-down"
-                                            class="flex text-xl font-bold ease-in-out duration-300 transition-all"
-                                            :class="{ 'rotate-180' : financialPublication }"
-                                        />
-                                    </button>
-                                </div> 
+                                <button 
+                                    @click="toggleFinancialPublication"
+                                    class="flex items-center cursor-pointer ease-in-out duration-300 transition-all"
+                                >
+                                    <span class="flex">Financial Publication request</span>
+                                    <Icon 
+                                        name="mdi:chevron-down"
+                                        class="flex font-bold ease-in-out duration-300 transition-all"
+                                        :class="{ 'rotate-180' : financialPublication }"
+                                    />
+                                </button>  
 
                                 <Transition name="slide-down">
                                     <div 
@@ -680,19 +660,17 @@
                             <!-- Lubricants-technical information -->
                             <div class="flex flex-col gap-6 text-(--black) py-4 lg:py-6 border-2 border-transparent border-b-(--border-gray)">      
 
-                                <div class="flex items-center justify-between text-(--black)">                                
-                                    <span class="flex text-xl">Lubricants-technical information</span>
-                                    <button 
-                                        @click="toggleLubricantsTechnical"
-                                        class="flex items-center cursor-pointer ease-in-out duration-300 transition-all"
-                                    >
-                                        <Icon 
-                                            name="mdi:chevron-down"
-                                            class="flex text-xl font-bold ease-in-out duration-300 transition-all"
-                                            :class="{ 'rotate-180' : lubricantsTechnical }"
-                                        />
-                                    </button>
-                                </div> 
+                                <button 
+                                    @click="toggleFinancialPublication"
+                                    class="flex items-center cursor-pointer ease-in-out duration-300 transition-all"
+                                >
+                                    <span class="flex">Lubricants-technical information</span>
+                                    <Icon 
+                                        name="mdi:chevron-down"
+                                        class="flex font-bold ease-in-out duration-300 transition-all"
+                                        :class="{ 'rotate-180' : lubricantsTechnical }"
+                                    />
+                                </button>
 
                                 <Transition name="slide-down">
                                     <div 
@@ -753,21 +731,18 @@
                             </div>
 
                             <!-- Lubricants-where to buy -->
-                            <div class="flex flex-col gap-6 text-(--black) py-4 lg:py-6 border-2 border-transparent border-b-(--border-gray)">      
-
-                                <div class="flex items-center justify-between text-(--black)">                                
-                                    <span class="flex text-xl">Lubricants-where to buy</span>
-                                    <button 
-                                        @click="toggleLubricantsWhere"
-                                        class="flex items-center cursor-pointer ease-in-out duration-300 transition-all"
-                                    >
-                                        <Icon 
-                                            name="mdi:chevron-down"
-                                            class="flex text-xl font-bold ease-in-out duration-300 transition-all"
-                                            :class="{ 'rotate-180' : lubricantsWhere }"
-                                        />
-                                    </button>
-                                </div> 
+                            <div class="flex flex-col gap-6 text-(--black) py-4 lg:py-6 border-2 border-transparent border-b-(--border-gray)">       
+                                <button 
+                                    @click="toggleLubricantsWhere"
+                                    class="flex items-center cursor-pointer ease-in-out duration-300 transition-all"
+                                >
+                                    <span class="flex">Lubricants-where to buy</span>
+                                    <Icon 
+                                        name="mdi:chevron-down"
+                                        class="flex font-bold ease-in-out duration-300 transition-all"
+                                        :class="{ 'rotate-180' : lubricantsWhere }"
+                                    />
+                                </button>
 
                                 <Transition name="slide-down">
                                     <div 
@@ -821,19 +796,18 @@
 
                             <!-- Mobile app inquiries -->
                             <div class="flex flex-col gap-6 text-(--black) py-4 lg:py-6 border-2 border-transparent border-b-(--border-gray)">                                                                 
-                                <div class="flex items-center justify-between text-(--black)">                                
-                                    <span class="flex text-xl">Mobile app inquiries</span>
-                                    <button 
-                                        @click="toggleMobileApp"
-                                        class="flex items-center cursor-pointer ease-in-out duration-300 transition-all"
-                                    >
-                                        <Icon 
-                                            name="mdi:chevron-down"
-                                            class="flex text-xl font-bold ease-in-out duration-300 transition-all"
-                                            :class="{ 'rotate-180' : mobileApp }"
-                                        />
-                                    </button>
-                                </div> 
+   
+                                <button 
+                                    @click="toggleMobileApp"
+                                    class="flex items-center cursor-pointer ease-in-out duration-300 transition-all"
+                                >
+                                    <span class="flex">Mobile app inquiries</span>
+                                    <Icon 
+                                        name="mdi:chevron-down"
+                                        class="flex font-bold ease-in-out duration-300 transition-all"
+                                        :class="{ 'rotate-180' : mobileApp }"
+                                    />
+                                </button>
                                 <Transition name="slide-down">
                                     <div 
                                         v-if="mobileApp"
@@ -890,19 +864,17 @@
 
                             <!-- Supplier relations -->
                             <div class="flex flex-col gap-6 text-(--black) py-4 lg:py-6 border-2 border-transparent border-b-(--border-gray)">                                                                 
-                                <div class="flex items-center justify-between text-(--black)">                                
-                                    <span class="flex text-xl">Supplier relations</span>
-                                    <button 
-                                        @click="toggleSupplierRelation"
-                                        class="flex items-center cursor-pointer ease-in-out duration-300 transition-all"
-                                    >
-                                        <Icon 
-                                            name="mdi:chevron-down"
-                                            class="flex text-xl font-bold ease-in-out duration-300 transition-all"
-                                            :class="{ 'rotate-180' : supplierRelations }"
-                                        />
-                                    </button>
-                                </div> 
+                                <button 
+                                    @click="toggleSupplierRelation"
+                                    class="flex items-center cursor-pointer ease-in-out duration-300 transition-all"
+                                >
+                                    <span class="flex">Supplier relations</span>
+                                    <Icon 
+                                        name="mdi:chevron-down"
+                                        class="flex font-bold ease-in-out duration-300 transition-all"
+                                        :class="{ 'rotate-180' : supplierRelations }"
+                                    />
+                                </button>
                                 <Transition name="slide-down">
                                     <div 
                                         v-if="supplierRelations"
@@ -1030,7 +1002,7 @@
 
                     <!-- More ways to contact us -->
                     <div class="flex flex-col gap-20 items-center justify-center w-full mx-auto max-w-4xl h-full">
-                        <h2 class="text-(--dark-blue) text-center font-extrabold text-3xl lg:text-4xl">
+                        <h2 class="text-(--dark-blue) text-center font-extrabold text-2xl sm:text-3xl lg:text-4xl">
                             More ways to contact us
                         </h2>
                         <div class="grid md:grid-cols-2 gap-8">
