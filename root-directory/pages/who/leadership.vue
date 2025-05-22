@@ -26,7 +26,6 @@
 
     import { 
         boardOfDir, 
-        corporateOfficers 
     } from '~/stores/whoVariables';
 
     import { whoLeadershipHeroImageBg } from '~/models/heroBgModels';  
@@ -57,10 +56,10 @@
 
                 <div class="grid gap-8 w-full h-full max-w-7xl mx-auto *:text-center">
                     
-                    <!-- Penn Petro Energy leadership -->
+                    <!-- Pennpetro Energy leadership -->
                     <div class="grid gap-6">
                         <h2 class="text-3xl md:text-4xl font-bold text-(--dark-blue)">Penn Petro Energy leadership</h2>
-                        <p class="text-lg text-(--black)">
+                        <p class="text-(--black)">
                             Our culture is built upon the principles of responsibility, trust and integrity. 
                             Our leadership is a profound source of pride, as we lead in the future of energy.
                         </p>
@@ -68,26 +67,15 @@
 
                     <!-- Penn Petro Energy leadership -->
                     <div class="grid gap-6">
-                        <h3 class="text-lg text-(--black)">
-                            <span class="text-lg font-bold">
-                                <NuxtLink
-                                    to="/who/leadership#boardOfDirectors"
-                                    class="text-(--medium-blue) font-bold underline-transparent hover:underline underline-offset-2 decoration-1"
-                                >
-                                    Board of directors
-                                </NuxtLink>
-                            </span>
-                            |
-                            <span class="text-(--medium-blue) text-xl font-bold">
-                                <NuxtLink
-                                    to="/who/leadership#boardOfDirectors"
-                                    class="text-(--medium-blue) font-bold underline-transparent hover:underline underline-offset-2 decoration-1"
-                                >
-                                    Corporate officers
-                                </NuxtLink>
-                            </span>
+                        <h3 class="text-(--black) font-bold">
+                            <NuxtLink
+                                to="/who/leadership#boardOfDirectors"
+                                class="text-(--medium-blue) font-bold underline-transparent hover:underline underline-offset-2 decoration-1"
+                            >
+                                Board of directors
+                            </NuxtLink>
                         </h3>
-                        <p class="text-(--black) text-lg">
+                        <p class="text-(--black)">
                             Guided by our vision and values, The Penn Petro Energy Way, our Board of Directors and Corporate Officers are committed to demonstrating the highest standard of ethics.
                         </p>
                     </div>
@@ -103,64 +91,27 @@
                     <!-- Penn Petro Energy leadership -->
                     <div class="grid gap-2">
                         <h2 class="text-center text-3xl md:text-4xl font-bold text-(--dark-blue)">Board of directors</h2>
-                        <p class="text-(--black) text-lg text-center">
+                        <p class="text-(--black) text-center">
                             The Board of Directors of Penn Petro Energy directs the affairs of the corporation and is committed to sound principles of corporate governance.
                             They bring a proven track record of success across a broad range of experiences at the policymaking level in business; expertise in science, technology, engineering, research or academia; extensive knowledge of governmental, regulatory, legal or public policy issues; expertise in finance, financial disclosure or financial accounting; experience in global business or international affairs; environmental experience; experience leading business transformation; and service on public company boards.
                         </p>
                     </div>
 
                     <!-- Penn Petro Energy Board of Directors -->
-                    <div id="boardOfDirectors" class="grid md:grid-cols-3 xl:grid-cols-4 gap-8 place-content-center">
+                    <div 
+                        id="boardOfDirectors" 
+                        class="grid lg:grid-cols-3 gap-4 lg:gap-8 place-content-center"
+                    >
                         <CustomLeadership
                             v-for="item in boardOfDir"
                             :key="item.id"
                             :imgSrc="item.imgSrc"
                             :imgAlt="item.imgAlt"
-                            :linkName="item.linkName"
-                            :link="item.link"
+                            :title="item.title"
                             :description="item.description"
                         />
                     </div>
 
-                    <!-- Learn more about committee membership -->
-                    <NuxtLink
-                        to="/investors/overview"
-                        class="group relative flex items-center font-bold mx-auto text-lg text-(--medium-blue) duration-500 ease-in transition-all"
-                    >
-                        <span class="relative overflow-hidden">
-                            <span class="group-hover:underline-text">Learn more about committee membership</span>
-                        </span>
-                        <div class="group relative flex items-center justify-center text-xl w-12 h-full overflow-hidden">
-                            <div class="absolute flex items-center left-4 h-full w-12 transition-all duration-500 ease-in-out group-hover:translate-x-full">
-                                <Icon name="mdi:chevron-right"/>
-                            </div>
-                            
-                            <div class="absolute flex items-center left-4 h-full w-12 -translate-x-full transition-all duration-500 ease-in-out group-hover:translate-x-0">
-                                <Icon name="mdi:chevron-right" />
-                            </div>
-                        </div>
-                    </NuxtLink>
-
-                    <!-- Penn Petro Energy Corporate officers -->
-                    <div id="corporateOfficers" class="grid gap-2">
-                        <h2 class="text-center text-3xl md:text-4xl font-bold text-(--dark-blue)">Corporate officers</h2>
-                        <p class="text-(--black) text-lg text-center">
-                            *executive committee members
-                        </p>
-                    </div>
-
-                    <!-- Penn Petro Energy Board of Directors -->
-                    <div class="grid md:grid-cols-3 xl:grid-cols-4 gap-8 place-content-center">
-                        <CustomLeadership
-                            v-for="item in corporateOfficers"
-                            :key="item.id"
-                            :imgSrc="item.imgSrc"
-                            :imgAlt="item.imgAlt"
-                            :linkName="item.linkName"
-                            :link="item.link"
-                            :description="item.description"
-                        />
-                    </div>
                 </div>    
             </div>
         </section>             

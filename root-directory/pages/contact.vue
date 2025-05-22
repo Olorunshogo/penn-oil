@@ -38,49 +38,30 @@
         lubricantsTechnical, toggleLubricantsTechnical,
         lubricantsWhere, toggleLubricantsWhere,
         mobileApp, toggleMobileApp,
-        supplierRelations, toggleSupplierRelation
-    } from '~/stores/whoVariables';
+        supplierRelations, toggleSupplierRelation,
 
-    const form = ref({ name: '', email: '', message: '' })
-
-    async function submitForm() {
-        try {
-            const res = await fetch('/api/submit-form', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify(form.value)
-            });
-            const data = await res.json()
-            if (data.success) {
-                alert('Form submitted!')
-            } else {
-                alert('Submission failed.')
-            }
-        } catch (err) {
-            console.error(err)
-            alert('Error submitting form.')
-        }
-    }
-
-    import {
         topics,
+        selectInputFields,
+        textInputFields,
+        formData,
     } from '~/models/contact';
 
-    const selectedTopic = ref('Geometry')
-    const selectedSubtopic = ref('')
+    const selectedTopic = ref('Media Relations');
+    const selectedSubtopic = ref('Select a subtopic');
 
-    const subtopics = computed(() => {
-    const topic = topics.find(t => t.name === selectedTopic.value)
-        return topic ? topic.subtopics : []
-    })
+    // Based on the value selectedTopic, compute selectedOptions
+    const subtopicOptions = computed(() => {
+        const topic = topics.find(t => t.name === selectedTopic.value);
+        if (!topic || !topic.subtopics || topic.subtopics.length === 0) {
+            return [{ label: 'No subtopics available', value: '' }];
+        }
+        return topic.subtopics.map(name => ({ label: name, value: name }));
+    });
 
-    function onTopicChange() {
-        selectedSubtopic.value = '' // Reset subtopic when topic changes
-    }
-
-    function handleSubmitFOrm() {
-
-    }
+    // Watch for topic changes to reset subtopic
+    watch(selectedTopic, () => {
+        selectedSubtopic.value = '';
+    });     
 
 </script>
 
@@ -102,24 +83,26 @@
                         </p>                
                     </div> 
 
+                    <!-- Important Information -->
                     <div class="flex flex-col gap-20 items-center justify-center w-full mx-auto max-w-4xl">
                         <h2 class="text-(--dark-blue) text-center font-extrabold text-3xl lg:text-4xl">
                             Important Information
                         </h2>
 
-                        <div class="flex flex-col gap-0 *:px-4 w-full h-full bg-(--light-gray)/40">
+                        <div class="flex flex-col gap-0 *:px-4 w-9/10 mx-auto h-full bg-(--light-gray)/40">
 
                             <!-- Job Openings -->
-                            <div class="flex flex-col gap-6 text-(--black) py-6 border-2 border-transparent border-b-(--border-gray)">                                                                 
-                                <div class="flex items-center justify-between text-(--black)">                                
-                                    <span class="flex text-xl">Job Openings</span>
+                            <div class="flex flex-col gap-6 text-(--black) py-4 lg:py-6 border-2 border-transparent border-b-(--border-gray)">                                                                 
+                                <div class="flex items-center justify-between text-(--black) w-full">                                
+                                    
                                     <button 
                                         @click="toggleJobOpenings"
-                                        class="flex items-center cursor-pointer ease-in-out duration-300 transition-all"
+                                        class="flex items-center justify-between cursor-pointer ease-in-out duration-300 transition-all"
                                     >
+                                        <span class="flex text-base lg:text-lg">Job Openings</span>
                                         <Icon 
                                             name="mdi:chevron-down"
-                                            class="flex text-xl font-bold ease-in-out duration-300 transition-all"
+                                            class="flex text-lg text-(--dark-blue) font-bold ease-in-out duration-300 transition-all"
                                             :class="{ 'rotate-180' : jobOpenings }"
                                         />
                                     </button>
@@ -159,7 +142,7 @@
                             </div>
 
                             <!-- Service Station Inquiries -->
-                            <div class="flex flex-col gap-6 text-(--black) py-6 border-2 border-transparent border-b-(--border-gray)">                                                                 
+                            <div class="flex flex-col gap-6 text-(--black) py-4 lg:py-6 border-2 border-transparent border-b-(--border-gray)">                                                                 
                                 <div class="flex items-center justify-between text-(--black)">                                
                                     <span class="flex text-xl">Service Station inquiries</span>
                                     <button 
@@ -222,7 +205,7 @@
                             </div>
 
                             <!-- Scams -->
-                            <div class="flex flex-col gap-6 text-(--black) py-6 border-2 border-transparent border-b-(--border-gray)">      
+                            <div class="flex flex-col gap-6 text-(--black) py-4 lg:py-6 border-2 border-transparent border-b-(--border-gray)">      
 
                                 <div class="flex items-center justify-between text-(--black)">                                
                                     <span class="flex text-xl">Scams</span>
@@ -351,7 +334,7 @@
                             </div>
 
                             <!-- Pipelines -->
-                            <div class="flex flex-col gap-6 text-(--black) py-6 border-2 border-transparent border-b-(--border-gray)">      
+                            <div class="flex flex-col gap-6 text-(--black) py-4 lg:py-6 border-2 border-transparent border-b-(--border-gray)">      
 
                                 <div class="flex items-center justify-between text-(--black)">                                
                                     <span class="flex text-xl">Pipelines</span>
@@ -414,17 +397,17 @@
                             </div>
 
                             <!-- Credit card inquiries -->
-                            <div class="flex flex-col gap-6 text-(--black) py-6 border-2 border-transparent border-b-(--border-gray)">      
+                            <div class="flex flex-col gap-6 text-(--black) py-4 lg:py-6 border-2 border-transparent border-b-(--border-gray)">      
 
                                 <div class="flex items-center justify-between text-(--black)">                                
-                                    <span class="flex text-xl">Credit card inquiries</span>
+                                    <span class="flex text-base lg:text-lg">Credit card inquiries</span>
                                     <button 
                                         @click="toggleCreditCard"
                                         class="flex items-center cursor-pointer ease-in-out duration-300 transition-all"
                                     >
                                         <Icon 
                                             name="mdi:chevron-down"
-                                            class="flex text-xl font-bold ease-in-out duration-300 transition-all"
+                                            class="flex text-base lg:text-lg font-bold ease-in-out duration-300 transition-all"
                                             :class="{ 'rotate-180' : creditCard }"
                                         />
                                     </button>
@@ -487,7 +470,7 @@
                             </div>
 
                             <!-- Request a datasheet -->
-                            <div class="flex flex-col gap-6 text-(--black) py-6 border-2 border-transparent border-b-(--border-gray)">      
+                            <div class="flex flex-col gap-6 text-(--black) py-4 lg:py-6 border-2 border-transparent border-b-(--border-gray)">      
 
                                 <div class="flex items-center justify-between text-(--black)">                                
                                     <span class="flex text-xl">Request a datasheet</span>
@@ -538,7 +521,7 @@
                             </div>
 
                             <!-- Donation requests -->
-                            <div class="flex flex-col gap-6 text-(--black) py-6 border-2 border-transparent border-b-(--border-gray)">      
+                            <div class="flex flex-col gap-6 text-(--black) py-4 lg:py-6 border-2 border-transparent border-b-(--border-gray)">      
 
                                 <div class="flex items-center justify-between text-(--black)">                                
                                     <span class="flex text-xl">Donation requests</span>
@@ -608,7 +591,7 @@
                             </div>
 
                             <!-- Fuels-technical question -->
-                            <div class="flex flex-col gap-6 text-(--black) py-6 border-2 border-transparent border-b-(--border-gray)">      
+                            <div class="flex flex-col gap-6 text-(--black) py-4 lg:py-6 border-2 border-transparent border-b-(--border-gray)">      
 
                                 <div class="flex items-center justify-between text-(--black)">                                
                                     <span class="flex text-xl">Fuels-technical question</span>
@@ -660,7 +643,7 @@
                             </div>
 
                             <!-- Financial Publication request -->
-                            <div class="flex flex-col gap-6 text-(--black) py-6 border-2 border-transparent border-b-(--border-gray)">      
+                            <div class="flex flex-col gap-6 text-(--black) py-4 lg:py-6 border-2 border-transparent border-b-(--border-gray)">      
 
                                 <div class="flex items-center justify-between text-(--black)">                                
                                     <span class="flex text-xl">Financial Publication request</span>
@@ -693,7 +676,7 @@
                             </div>
 
                             <!-- Lubricants-technical information -->
-                            <div class="flex flex-col gap-6 text-(--black) py-6 border-2 border-transparent border-b-(--border-gray)">      
+                            <div class="flex flex-col gap-6 text-(--black) py-4 lg:py-6 border-2 border-transparent border-b-(--border-gray)">      
 
                                 <div class="flex items-center justify-between text-(--black)">                                
                                     <span class="flex text-xl">Lubricants-technical information</span>
@@ -768,7 +751,7 @@
                             </div>
 
                             <!-- Lubricants-where to buy -->
-                            <div class="flex flex-col gap-6 text-(--black) py-6 border-2 border-transparent border-b-(--border-gray)">      
+                            <div class="flex flex-col gap-6 text-(--black) py-4 lg:py-6 border-2 border-transparent border-b-(--border-gray)">      
 
                                 <div class="flex items-center justify-between text-(--black)">                                
                                     <span class="flex text-xl">Lubricants-where to buy</span>
@@ -835,7 +818,7 @@
                             </div>
 
                             <!-- Mobile app inquiries -->
-                            <div class="flex flex-col gap-6 text-(--black) py-6 border-2 border-transparent border-b-(--border-gray)">                                                                 
+                            <div class="flex flex-col gap-6 text-(--black) py-4 lg:py-6 border-2 border-transparent border-b-(--border-gray)">                                                                 
                                 <div class="flex items-center justify-between text-(--black)">                                
                                     <span class="flex text-xl">Mobile app inquiries</span>
                                     <button 
@@ -904,7 +887,7 @@
                             </div>
 
                             <!-- Supplier relations -->
-                            <div class="flex flex-col gap-6 text-(--black) py-6 border-2 border-transparent border-b-(--border-gray)">                                                                 
+                            <div class="flex flex-col gap-6 text-(--black) py-4 lg:py-6 border-2 border-transparent border-b-(--border-gray)">                                                                 
                                 <div class="flex items-center justify-between text-(--black)">                                
                                     <span class="flex text-xl">Supplier relations</span>
                                     <button 
@@ -945,50 +928,67 @@
 
                     <!-- Form -->
                     <form @submit.prevent class="w-full h-full">
-                        <div class="flex flex-col gap-8 w-9/10 max-w-3xl mx-auto h-full">
-                            <!-- Topic Dropdown -->
-                            <div class="flex items-center w-full h-full">
-                                <label 
-                                    for="topic" 
-                                    class="flex *:flex items-center *:items-center w-40 text-sm font-medium text-(--dark-blue)"
-                                >
-                                    <span>Topic</span>
-                                    <span class="text-(--dark-red) font-bold">*</span>
-                                </label>
-                                <select
-                                    id="topic"
-                                    v-model="selectedTopic"
-                                    @change="onTopicChange"
-                                    class="p-2 text-(--medium-blue) font-medium flex-1 shadow-sm border-b-2 border-(--border-gray) focus:outline-none focus:border-2 focus:border-dotted focus:border-(--medium-blue)"
-                                    aria-required="true"
-                                >
-                                    <option value="" disabled>Select a topic</option>
-                                    <option v-for="topic in topics" :key="topic.name" :value="topic.name">
-                                        {{ topic.name }}
-                                    </option>
-                                </select>
+
+                        <div class="flex flex-col gap-4 w-9/10 max-w-3xl mx-auto h-fit">
+
+                            <!-- Topics -->
+                            <CustomInputSelect
+                                :label="selectInputFields[0].label"
+                                :id="selectInputFields[0].id"
+                                :name="selectInputFields[0].name"
+                                :inputValue="selectedTopic"
+                                @update:inputValue="selectedTopic = $event"
+                                :options="topics.map(t => ({ label: t.name, value: t.name }))"
+                                :error="selectInputFields[0].error"
+                                :required="selectInputFields[0].required"
+                                :ariaDescribedby="selectInputFields[0].ariaDescribedby"
+                            />
+
+                            <!-- Sub topics -->
+                            <CustomInputSelect
+                                :label="selectInputFields[1].label"
+                                :id="selectInputFields[1].id"
+                                :name="selectInputFields[1].name"
+                                :inputValue="selectedSubtopic"
+                                @update:inputValue="selectedSubtopic = $event"
+                                :options="subtopicOptions"
+                                :error="selectInputFields[1].error"
+                                :required="selectInputFields[1].required"
+                                :ariaDescribedby="selectInputFields[1].ariaDescribedby"
+                            />                           
+                            
+                            <!-- First name, Last name and Email -->
+                            <CustomInputText
+                                v-for="input in textInputFields"
+                                :key="input.id"
+                                :label="input.label"
+                                :type="input.type"
+                                :id="input.id"
+                                :name="input.name"
+                                :disabled="input.disabled"
+                                :required="input.required"
+                                :displayError="input.displayError"
+                                :error="input.error"
+                                :aria-describedby="input.ariaDescribedby"
+                                v-model="formData[input.valueKey].value"
+                            />
+
+                            <CustomInputTextarea
+                                label="Comments"
+                                :maxWordCount="1000"
+                                v-model="formData.comments"
+                                placeholder="Enter your comments here"
+                            />
+                                
+                            <div class="mt-6 p-4 border rounded bg-gray-50">
+                                <p><strong>Selected Topic:</strong> {{ selectedTopic }}</p>
+                                <p><strong>Selected Subtopic:</strong> {{ selectedSubtopic }}</p>
+                                <h2>First name: {{ formData.firstName }}</h2>
+                                <h2>Last name: {{ formData.lastName }}</h2>
+                                <h2>Email: {{ formData.email }}</h2>
+                                <h2>Comments: {{ formData.comments }}</h2>
                             </div>
 
-                            <!-- Subtopic Dropdown -->
-                            <div class="flex gap-8">
-                                <label for="subtopic" class="w-40 mb-1 text-sm font-medium text-gray-700">Subtopic</label>
-                                <select
-                                    id="subtopic"
-                                    v-model="selectedSubtopic"
-                                    :disabled="!selectedTopic"
-                                    class="flex-1 px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 disabled:bg-gray-100 disabled:text-gray-400 disabled:cursor-not-allowed"
-                                    aria-required="true"
-                                >
-                                    <option value="" disabled>Select a subtopic</option>
-                                    <option
-                                        v-for="sub in subtopics"
-                                        :key="sub"
-                                        :value="sub"
-                                    >
-                                        {{ sub }}
-                                    </option>
-                                </select>
-                            </div>
                         </div>
                     </form>
 

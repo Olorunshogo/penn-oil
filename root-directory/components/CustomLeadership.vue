@@ -10,15 +10,10 @@
             required: true,
             default: 'Default Alt Text Portrait Photo of Smiling Man with His Arms Crossed Standing In Front of a Wall'
         },
-        linkName: {
+        title: {
             type: String,
             required: true,
-            default: 'Default linkName'
-        },
-        link: {
-            type: String,
-            required: true,
-            default: '/'
+            default: 'Default title'
         },
         description: {
             type: String,
@@ -36,28 +31,12 @@
                 :src="imgSrc"
                 :alt="imgAlt"
                 loading="lazy"
-                class="w-32 sm:w-28 lg:w-24 object-cover border-3 border-(--light-gray)"
+                class="w-1/2 max-w-[200px] h-full max-h-70 lg:w-50 object-cover border-3 border-(--light-gray) shadow-lg rounded-tl-4xl rounded-br-4xl"
             />
 
             <div class="flex flex-col items-center justify-center w-full h-full">
-                <NuxtLink
-                    to="/"
-                    class="group relative flex items-center text-center font-bold text-lg text-(--medium-blue) duration-500 ease-in transition-all"
-                >
-                    <span class="relative overflow-hidden">
-                        <span class="group-hover:underline-text">{{ linkName }}</span>
-                    </span>
-                    <!-- <div class="group relative flex items-center justify-center text-xl w-12 h-full overflow-hidden">
-                        <div class="absolute flex items-center left-4 h-full w-12 transition-all duration-500 ease-in-out group-hover:translate-x-full">
-                            <Icon name="mdi:chevron-right"/>
-                        </div>
-                        
-                        <div class="absolute flex items-center left-4 h-full w-12 -translate-x-full transition-all duration-500 ease-in-out group-hover:translate-x-0">
-                            <Icon name="mdi:chevron-right" />
-                        </div>
-                    </div> -->
-                </NuxtLink>
-                <p class="text-base md:text-lg text-(--black) text-center">{{ description }}</p>
+                <p class="text-(--dark-blue) font-medium text-center">{{ title }}</p>
+                <p class="text-(--black) text-center">{{ description }}</p>
             </div>
         </div>
     </div>
