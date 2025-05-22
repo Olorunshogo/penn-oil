@@ -999,7 +999,6 @@
                         </div>
                     </form>
 
-
                     <!-- More ways to contact us -->
                     <div class="flex flex-col gap-20 items-center justify-center w-full mx-auto max-w-4xl h-full">
                         <h2 class="text-(--dark-blue) text-center font-extrabold text-2xl sm:text-3xl lg:text-4xl">
