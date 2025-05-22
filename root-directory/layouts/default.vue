@@ -69,9 +69,9 @@
     <NavBar class="sticky z-[99] inset-0 bottom-[unset] cursor-default bg-transparent" />
       
       <!--SearchBar  -->
-      <div>
+      <!-- <div>
         <SearchBar />
-      </div>
+      </div> -->
 
       <div>
         <slot></slot>

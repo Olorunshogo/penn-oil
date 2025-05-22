@@ -1,8 +1,7 @@
 
 <script setup>
     import { useHead } from 'nuxt/app';
-    import { ref, computed, onMounted } from 'vue';
-    // import emailjs from '@emailjs/browser';
+    import { ref, computed } from 'vue';
 
     useHead({
         title: 'Contact Information',
@@ -60,10 +59,53 @@
     });
 
     // Watch for topic changes to reset subtopic
-    watch(selectedTopic, (newVal) => {
-        alert('Selected topic changed:', newVal);
+    // watch(selectedTopic, (newVal) => {
+    //     alert('Selected topic changed:', newVal);
+    //     selectedSubtopic.value = '';
+    // }); 
+
+    watch(selectedTopic, () => {
         selectedSubtopic.value = '';
-    });     
+    })
+
+    const success = ref(false);
+    const error = ref('');
+    
+    // const handleFormSubmit = async () => {
+    //     try {
+    //         const result = await emailjs.send(
+    //             'penn_petro_energy',
+    //             'template_2b9efbt',
+    //             {
+    //                 selectedTopic: selectedTopic.value,
+    //                 selectedSubtopic: selectedSubtopic.value,
+    //                 firstName: textFieldValues.firstName,
+    //                 lastName: textFieldValues.lastName,
+    //                 email: textFieldValues.email,
+    //                 newsletter: textFieldValues.newsletter,
+    //                 comments: textFieldValues.comments,
+    //             },
+    //             config.public.emailjsPublicKey
+    //         );
+
+    //         success.value = true;
+
+    //         selectedTopic.value = '',
+    //         selectedSubtopic.value = '',
+    //         textFieldValues.firstName = '',
+    //         textFieldValues.lastName = '',
+    //         textFieldValues.email = '',
+    //         textFieldValues.newsletter = false,
+    //         textFieldValues.comments = ''
+
+    //     } catch (err) {
+    //         // success.value = false;
+    //         console.error('EMAILJS error:', err);
+    //         alert('Failed to send email. Please try again.', err);
+    //         error.value = 'Failed to send email. Please try again.';
+    //     }
+    // }
+
 
 </script>
 
@@ -901,10 +943,13 @@
                     </div> 
 
                     <!-- Form -->
+                    <!-- @submit.prevent="handleFormSubmit"  -->
                     <form 
                         id="contact-form"
-                        @submit.prevent="handleFormSubmit" class="w-full h-full"
+                        @submit.prevent="submitForm" 
+                        class="w-full h-full"
                     >
+                        
 
                         <div class="flex flex-col gap-4 w-9/10 max-w-3xl mx-auto h-fit">
 
@@ -974,7 +1019,7 @@
                                 placeholder="Enter your comments here"
                             />
                                 
-                            <div class="mt-6 p-4 border rounded bg-gray-50">
+                            <!-- <div class="mt-6 p-4 border rounded bg-gray-50">
                                 <p><strong>Selected Topic:</strong> {{ selectedTopic }}</p>
                                 <p><strong>Selected Subtopic:</strong> {{ selectedSubtopic }}</p>
                                 <h2>First name: {{ textFieldValues.firstName }}</h2>
@@ -982,7 +1027,7 @@
                                 <h2>Email: {{ textFieldValues.email }}</h2>
                                 <h2>Newsletter: {{ textFieldValues.newsletter }}</h2>
                                 <h2>Comments: {{ textFieldValues.comments }}</h2>
-                            </div>
+                            </div> -->
 
                             <!-- Submit Button -->
                             <button 
@@ -992,9 +1037,14 @@
                                 Submit
                             </button>
 
-                            <p v-if="success">
-                                Email send successfully
-                            </p>
+                            <div class="flex items-center justify-center">
+                                <p
+                                    v-if="success"
+                                    class="px-4 py-3 border border-green-300 bg-green-100 text-green-800 rounded-lg text-sm font-medium"
+                                >
+                                    Form has been submitted successfully!
+                                </p>
+                            </div>
                             <p v-if="error" class="text-red-600">{{ error }}</p>
                         </div>
                     </form>

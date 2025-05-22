@@ -75,12 +75,14 @@
               </div>
             </NuxtLink>
 
-            <button
+            <!-- <button
               @click="toggleSearchBar"
               class="flex items-center justify-center cursor-pointer duration-300 ease-in-out transition-all bg-transparent text-(--black) text-2xl"
             >
               <Icon name="mdi:search" />
-            </button>
+            </button> -->
+
+            <button></button>
           </div>
 
           <!-- Mobile Slide-in Menu Panel: Left -->
@@ -556,12 +558,14 @@
                 <span class="group-hover:underline-text">Careers</span>
               </NuxtLink>
 
-              <button
+              <!-- <button
                 @click="toggleSearchBar"
                 class="flex items-center justify-center cursor-pointer duration-300 ease-in-out transition-all bg-transparent text-(--white) text-xl"
               >
                 <Icon name="mdi:search" />
-              </button>
+              </button> -->
+
+              <button></button>
             </div>
           </div>
 

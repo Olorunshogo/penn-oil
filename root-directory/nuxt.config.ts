@@ -44,12 +44,6 @@ export default defineNuxtConfig({
     './plugins/aos.client.js'
   ],
 
-  runtimeConfig: {
-    public: {
-      emailjsPublicKey: process.env.EMAILJS_PUBLIC_KEY
-    }
-  },
-
   vite: {
     plugins: [
       tailwindcss(),
