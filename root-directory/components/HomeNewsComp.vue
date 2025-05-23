@@ -34,10 +34,8 @@
 
 <template>
     <div class="relative w-full h-fit max-w-md mx-auto">
-        <a 
-            :href="link"
-            class="block cursor-pointer w-full h-full"
-        >
+
+        <div class="block cursor-pointer w-full h-full">
 
             <NuxtImg
                 :src="imgSrc"
@@ -46,12 +44,12 @@
             />
 
             <div class="flex flex-col gap-4 h-60 text-(--white) bg-(--medium-blue) p-4 rounded-b-2xl">
-                <p class="text-sm lg:text-base">{{ date }}</p>
-                <p class="text-lg lg:text-xl">{{ description }}</p>
+                <span class="text-sm lg:text-base">{{ date }}</span>
+                <span class="text-lg lg:text-xl">{{ description }}</span>
             
 
                 <NuxtLink
-                    to="/"
+                    :to="link"
                     class="group relative flex items-center gap-2 font-bold text-base duration-500 ease-in transition-all"
                 >
                     <div class="group relative flex items-center justify-center text-xl w-12 h-full overflow-hidden">
@@ -71,7 +69,7 @@
 
             </div>
         
-        </a>
+        </div>
 
         
     </div>

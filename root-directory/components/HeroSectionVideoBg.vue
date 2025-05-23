@@ -8,7 +8,7 @@
         bgColor: {
             type: String,
             default: 'transparent',
-            required: true
+            required: false,
         },
         displayLink: {
             type: Boolean,

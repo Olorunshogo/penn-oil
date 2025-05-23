@@ -142,10 +142,11 @@
                 throw new Error(fetchError.value.message)
             }
 
-            console.log('Success:', data.value)
-            alert('Success:', data.value)
+            console.log('The form submitted successfully', data.value)
+            // alert('The form submitted successfully', data.value)
+            //alert('Form submitted successfully!\n\Server Response:\n' + JSON.stringify(data.value, null, 2))
 
-            success.value = false
+            success.value = true
 
             selectedTopic.value = ''
             selectedSubtopic.value = ''
@@ -157,20 +158,15 @@
                 newsletter: false
             })
 
-            setTimeout(() => {
-                success.value = false
-            }, 5000)
+            
+            // success.value = true
         } catch (error) {
-            console.error('Submission failed:', error)
-            alert('Submission failed:', error)
+            console.error('Form Submission failed:', error.message)
+            alert('Form submission failed. Please try again:', error.message)
             error.value = 'Failed to submit form. Please try again later.'
-
-            setTimeout(() => {
-                success.value = ''
-            }, 5000)
+            success.value = ''
         }
     }
-
 
 </script>
 
@@ -314,7 +310,7 @@
                             <div class="flex flex-col gap-6 text-(--black) py-4 lg:py-6 border-2 border-transparent border-b-(--border-gray)">      
 
                                 <button 
-                                    @click="toggleServiceStation"
+                                    @click="toggleScams"
                                     class="flex items-center justify-between cursor-pointer ease-in-out duration-300 transition-all"
                                 >
                                     <span class="flex">Scams</span>
@@ -622,7 +618,7 @@
                             <div class="flex flex-col gap-6 text-(--black) py-4 lg:py-6 border-2 border-transparent border-b-(--border-gray)">      
                                 <button 
                                     @click="toggleDonationRequest"
-                                    class="flex items-center cursor-pointer ease-in-out duration-300 transition-all"
+                                    class="flex items-center justify-between cursor-pointer ease-in-out duration-300 transition-all"
                                 >
                                      <span class="flex">Donation requests</span>
                                     <Icon 
@@ -689,7 +685,7 @@
                             <div class="flex flex-col gap-6 text-(--black) py-4 lg:py-6 border-2 border-transparent border-b-(--border-gray)">      
                                 <button 
                                     @click="toggleFuelsTechnical"
-                                    class="flex items-center cursor-pointer ease-in-out duration-300 transition-all"
+                                    class="flex items-center justify-between cursor-pointer ease-in-out duration-300 transition-all"
                                 >
                                     <span class="flex">Fuels-technical question</span>
                                     <Icon 
@@ -738,7 +734,7 @@
 
                                 <button 
                                     @click="toggleFinancialPublication"
-                                    class="flex items-center cursor-pointer ease-in-out duration-300 transition-all"
+                                    class="flex items-center justify-between cursor-pointer ease-in-out duration-300 transition-all"
                                 >
                                     <span class="flex">Financial Publication request</span>
                                     <Icon 
@@ -769,7 +765,7 @@
 
                                 <button 
                                     @click="toggleLubricantsTechnical"
-                                    class="flex items-center cursor-pointer ease-in-out duration-300 transition-all"
+                                    class="flex items-center justify-between cursor-pointer ease-in-out duration-300 transition-all"
                                 >
                                     <span class="flex">Lubricants-technical information</span>
                                     <Icon 
@@ -841,7 +837,7 @@
                             <div class="flex flex-col gap-6 text-(--black) py-4 lg:py-6 border-2 border-transparent border-b-(--border-gray)">       
                                 <button 
                                     @click="toggleLubricantsWhere"
-                                    class="flex items-center cursor-pointer ease-in-out duration-300 transition-all"
+                                    class="flex items-center justify-between cursor-pointer ease-in-out duration-300 transition-all"
                                 >
                                     <span class="flex">Lubricants-where to buy</span>
                                     <Icon 
@@ -906,7 +902,7 @@
    
                                 <button 
                                     @click="toggleMobileApp"
-                                    class="flex items-center cursor-pointer ease-in-out duration-300 transition-all"
+                                    class="flex items-center justify-between cursor-pointer ease-in-out duration-300 transition-all"
                                 >
                                     <span class="flex">Mobile app inquiries</span>
                                     <Icon 
@@ -973,7 +969,7 @@
                             <div class="flex flex-col gap-6 text-(--black) py-4 lg:py-6 border-2 border-transparent border-b-(--border-gray)">                                                                 
                                 <button 
                                     @click="toggleSupplierRelation"
-                                    class="flex items-center cursor-pointer ease-in-out duration-300 transition-all"
+                                    class="flex items-center justify-between cursor-pointer ease-in-out duration-300 transition-all"
                                 >
                                     <span class="flex">Supplier relations</span>
                                     <Icon 

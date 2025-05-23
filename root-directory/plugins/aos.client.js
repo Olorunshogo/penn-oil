@@ -3,7 +3,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 export default defineNuxtPlugin(() => {
-    onMounted(() => {
+    // onMounted(() => {
         AOS.init({
             offset: 100,
             duration:800,
@@ -13,5 +13,5 @@ export default defineNuxtPlugin(() => {
             mirror: false,
             anchorPlacement: 'top-center'
         })
-    })
+    // })
 })

@@ -1,6 +1,6 @@
 
 <script setup lang='ts'>
-    import { onMounted } from 'vue';
+
     import { 
         criticalThinkers, collaborators, innovators, 
         handleScroll
@@ -15,20 +15,8 @@
         }
     ]);
 
-    import AOS from 'aos';
-    import 'aos/dist/aos.css';
 
     onMounted(() => {
-        AOS.init({
-            offset: 100,
-            duration:800,
-            delay: 100,
-            easing: 'ease-in-out',
-            once: true,
-            mirror: false,
-            anchorPlacement: 'top-center'
-        })
-
         // Add scroll event listener when component is mounted
         window.addEventListener('scroll', handleScroll);
     });
@@ -41,73 +29,78 @@
             
             <div class="flex flex-col gap-30 lg:gap-50 w-full max-w-6xl mx-auto">
 
-                    
-                <p 
-                    data-aos="fade-up"
-                    class="text-(--white) text-center font-bold text-2xl cursor-text"
-                >
-                    who we are
-                </p>
-
-                
-                <h2 
-                    data-aos="fade-up"
-                    class="flex flex-col space-y-6 font-extrabold text-3xl sm:text-4xl md:text-5xl lg:text-7xl whitespace-nowrap cursor-text w-full h-full overflow-hidden"
-                >
-                    <span 
-                        ref="criticalThinkers" 
-                        class="inline-block text-(--light-blue) duration-500 ease-out transition-transform"
+                <ClientOnly>  
+                    <p 
+                        data-aos="fade-up"
+                        class="text-(--white) text-center font-bold text-2xl cursor-text"
                     >
-                        Critical Thinkers
-                    </span>
+                        who we are
+                    </p>
+                </ClientOnly>
 
-                    <span 
-                        ref="collaborators" 
-                        class="slide-text ml-auto text-(--medium-blue) duration-500 ease-out transition-transform"
+                <ClientOnly>
+                    <h2 
+                        data-aos="fade-up"
+                        class="flex flex-col space-y-6 font-extrabold text-3xl sm:text-4xl md:text-5xl lg:text-7xl whitespace-nowrap cursor-text w-full h-full overflow-hidden"
                     >
-                        Collaborators
-                    </span>
+                        <span 
+                            ref="criticalThinkers" 
+                            class="inline-block text-(--light-blue) duration-500 ease-out transition-transform"
+                        >
+                            Critical Thinkers
+                        </span>
 
-                    <span 
-                        ref="innovators" 
-                        class="slide-text text-(--dark-blue) duration-500 ease-out transition-transform"
-                    >
-                        Innovators
-                    </span>
+                        <span 
+                            ref="collaborators" 
+                            class="slide-text ml-auto text-(--medium-blue) duration-500 ease-out transition-transform"
+                        >
+                            Collaborators
+                        </span>
 
-                </h2>
+                        <span 
+                            ref="innovators" 
+                            class="slide-text text-(--dark-blue) duration-500 ease-out transition-transform"
+                        >
+                            Innovators
+                        </span>
+
+                    </h2>
+                </ClientOnly>
 
                 <!-- Images -->
-                <div 
-                    data-aos="fade-left" data-aos-delay="200"
-                    class="flex *:flex flex-col items-center gap-12 *:items-center justify-center *:justify-center w-full h-full"
-                >
-                
-                    <NuxtImg
-                        data-aos="zoom-in" data-aos-delay="1000"
-                        src="https://images.pexels.com/photos/13963338/pexels-photo-13963338.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                        alt="Construction Workers on a Scaffolding"
-                        loading="lazy"
-                        class="h-full max-h-60 lg:max-h-80 w-9/10 sm:w-7/10 ml-auto object-cover rounded-lg"
-                    />                        
-                        
-
-                    <div class="flex flex-col items-center justify-center gap-4 w-full h-full">
+                <ClientOnly>
+                    <div 
+                        data-aos="fade-left" data-aos-delay="200"
+                        class="flex *:flex flex-col items-center gap-12 *:items-center justify-center *:justify-center w-full h-full"
+                    >
+                    
                         <NuxtImg
-                            src="https://images.pexels.com/photos/8961131/pexels-photo-8961131.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                            alt="A Man in Blue Shirt Using a Walkie Talkie while Standing Beside the Woman Near the Wooden Fence"
+                            data-aos="zoom-in" data-aos-delay="1000"
+                            src="https://images.pexels.com/photos/13963338/pexels-photo-13963338.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                            alt="Construction Workers on a Scaffolding"
                             loading="lazy"
-                            class="w-4/5 sm:w-2/5 lg:w-4/10 h-full max-h-40 lg:max-h-60 mr-auto object-cover rounded-lg"
-                        /> 
+                            class="h-full max-h-60 lg:max-h-80 w-9/10 sm:w-7/10 ml-auto object-cover rounded-lg"
+                        />                        
+                            
 
-                        <NuxtImg
-                            src="https://images.pexels.com/photos/8487337/pexels-photo-8487337.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                            alt="Handywoman Pointing up"
-                            loading="lazy"
-                            class="w-4/5 sm:w-2/5 lg:w-4/10 h-full max-h-40 lg:max-h-60 ml-auto object-cover rounded-lg"
-                        />
-                    </div>      
-                </div>                   
+                        <div class="flex flex-col items-center justify-center gap-4 w-full h-full">
+                            <NuxtImg
+                                src="https://images.pexels.com/photos/8961131/pexels-photo-8961131.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                alt="A Man in Blue Shirt Using a Walkie Talkie while Standing Beside the Woman Near the Wooden Fence"
+                                loading="lazy"
+                                class="w-4/5 sm:w-2/5 lg:w-4/10 h-full max-h-40 lg:max-h-60 mr-auto object-cover rounded-lg"
+                            /> 
+
+                            <NuxtImg
+                                src="https://images.pexels.com/photos/8487337/pexels-photo-8487337.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                alt="Handywoman Pointing up"
+                                loading="lazy"
+                                class="w-4/5 sm:w-2/5 lg:w-4/10 h-full max-h-40 lg:max-h-60 ml-auto object-cover rounded-lg"
+                            />
+                        </div>      
+                    </div> 
+                </ClientOnly>
+                                  
             
                 <!-- Typing Texts -->
                 <div 

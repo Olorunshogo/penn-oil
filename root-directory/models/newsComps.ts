@@ -68,7 +68,7 @@ export const newsComps: Ref<NewsItem[]> = ref([
     // 6. Penn Petro Energy leaders share their vision for the future at CERAWeek 2025
     {
         id: 6,
-        link: "/leadership",
+        link: "/who/leadership",
         imgSrc: "https://images.pexels.com/photos/11264965/pexels-photo-11264965.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
         imgAlt: "Man in Blue Suit Holding a Globe",
         date: "March 24, 2025",
