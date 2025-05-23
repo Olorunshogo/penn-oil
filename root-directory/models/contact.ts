@@ -415,15 +415,3 @@ export const textInputFields = ref([
         valueKey: 'email'
     }
 ])
-
-
-
-
-// FORM
-export const textFieldValues = reactive({
-    firstName: '',
-    lastName: '',
-    email: '',
-    newsletter: false,
-    comments: ''
-})

@@ -43,11 +43,11 @@
         topics,
         selectInputFields,
         textInputFields,
-        textFieldValues,
     } from '~/models/contact';
 
+    // FORM
     const selectedTopic = ref('Fraud');
-    const selectedSubtopic = ref('Employment Fraud');
+    const selectedSubtopic = ref('Employment Fraud'); 
 
     // Based on the value selectedTopic, compute selectedOptions
     const subtopicOptions = computed(() => {
@@ -66,6 +66,14 @@
 
     watch(selectedTopic, () => {
         selectedSubtopic.value = '';
+    })
+
+    const textFieldValues = reactive({
+        firstName: '',
+        lastName: '',
+        email: '',
+        newsletter: false,
+        comments: ''
     })
 
     const success = ref(false);
@@ -105,6 +113,63 @@
     //         error.value = 'Failed to send email. Please try again.';
     //     }
     // }
+
+    async function submitForm() {
+        success.value = false
+        error.value = ''
+
+        const payload = {
+            topic: selectedTopic.value,
+            subtopic: selectedSubtopic.value,
+            firstName: textFieldValues.firstName,
+            lastName: textFieldValues.lastName,
+            email: textFieldValues.email,
+            newsletter: textFieldValues.newsletter ? 'Yes' : 'No',
+            comments: textFieldValues.comments
+        }
+
+        try {
+            const { data, error: fetchError } = await useFetch('https://formsubmit.co/ajax/shownzy001@gmail.com', {
+                method: 'POSt',
+                headers: {
+                    'Content-Type': 'application/json',
+                    Accept: 'application/json'
+                },
+                body: JSON.stringify(payload)
+            })
+
+            if (fetchError.value) {
+                throw new Error(fetchError.value.message)
+            }
+
+            console.log('Success:', data.value)
+            alert('Success:', data.value)
+
+            success.value = false
+
+            selectedTopic.value = ''
+            selectedSubtopic.value = ''
+            Object.assign(textFieldValues, {
+                firstName: '',
+                lastName: '',
+                email: '',
+                comments: '',
+                newsletter: false
+            })
+
+            setTimeout(() => {
+                success.value = false
+            }, 5000)
+        } catch (error) {
+            console.error('Submission failed:', error)
+            alert('Submission failed:', error)
+            error.value = 'Failed to submit form. Please try again later.'
+
+            setTimeout(() => {
+                success.value = ''
+            }, 5000)
+        }
+    }
 
 
 </script>
@@ -703,7 +768,7 @@
                             <div class="flex flex-col gap-6 text-(--black) py-4 lg:py-6 border-2 border-transparent border-b-(--border-gray)">      
 
                                 <button 
-                                    @click="toggleFinancialPublication"
+                                    @click="toggleLubricantsTechnical"
                                     class="flex items-center cursor-pointer ease-in-out duration-300 transition-all"
                                 >
                                     <span class="flex">Lubricants-technical information</span>
@@ -948,8 +1013,8 @@
                         id="contact-form"
                         @submit.prevent="submitForm" 
                         class="w-full h-full"
-                    >
-                        
+                        autocomplete="on"
+                    >                      
 
                         <div class="flex flex-col gap-4 w-9/10 max-w-3xl mx-auto h-fit">
 
