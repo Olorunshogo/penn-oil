@@ -1,40 +1,18 @@
 
 <script setup lang="ts">
 
-    defineProps({
-        imgSrc: {
-            type: String,
-            required: true
-        },
-        imgAlt: {
-            type: String,
-            required: true
-        },
-        displayLink: {
-            type: Boolean,
-            required: true
-        },
-        category: {
-            type: String,
-            required: false
-        },
-        title: {
-            type: String,
-            required: true
-        },
-        paragraph: {
-            type: String,
-            required: true
-        },
-        link: {
-            type: String,
-            required: true
-        },
-        linkName: {
-            type: String,
-            required: true
-        },
-    });
+    interface Props {
+        imgSrc: string;
+        imgAlt: string;
+        displayLink: boolean;
+        category?: string;
+        title: string;
+        paragraph: string;
+        link: string;
+        linkName: string;
+    }
+
+    const props = defineProps<Props>();
 
 
 </script>

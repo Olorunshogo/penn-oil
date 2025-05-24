@@ -244,7 +244,7 @@ export const investorOverviewHeroImageBg = ref({
 
 
 // Careers Page
-export const careersHeroImageBg = ref({    
+export const careersHeroImageBg = {  
     imgSrc: "https://images.pexels.com/photos/1181438/pexels-photo-1181438.jpeg",
     imgAlt: "Group of Women Standing Near Desk",
     title: "Careers",
@@ -252,4 +252,4 @@ export const careersHeroImageBg = ref({
     displayLink: false,
     link: "/sustainability",
     linkName: "Read more about our environmental efforts"        
-});
+}
