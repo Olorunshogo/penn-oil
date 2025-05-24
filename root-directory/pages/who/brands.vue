@@ -23,30 +23,47 @@
 
         keywords: 'Pennpetro Energy PLC brands, energy portfolio, energy subsidiaries, oil and gas brands, clean energy brands, Penn Petro divisions, global energy companies, energy innovation network',
     });
-
-    import { whoBrandsHeroImageBg } from '~/models/heroBgModels'
    
 </script>
 
 
 <template>
     <div>
-
+    
         <!-- Section: Hero -->
-        <div>
-            <HeroSectionImageBg
-                :imgSrc="whoBrandsHeroImageBg.imgSrc"
-                :imgAlt="whoBrandsHeroImageBg.imgAlt"
-                :category="whoBrandsHeroImageBg.category"
-                :title="whoBrandsHeroImageBg.title"
-                :displayLink="whoBrandsHeroImageBg.displayLink"
-                :paragraph="whoBrandsHeroImageBg.paragraph"
-                :link="whoBrandsHeroImageBg.link"
-                :linkName="whoBrandsHeroImageBg.linkName"
-            />
-        </div>
+        <section>      
+            
+            <div class="relative w-screen h-dvh overflow-hidden">
 
-                   
+                <div class="bg-container">
+
+                    <NuxtImg
+                        src="https://images.pexels.com/photos/28318846/pexels-photo-28318846/free-photo-of-train-on-rail.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        alt="Train on rail"
+                        loading="lazy"
+                        class="bg"
+                    />
+                </div>
+
+                <!-- Content Layer -->
+                <div class="absolute bottom-0 w-full h-1/2 max-h-120 backdrop-blur-md rounded-t-2xl shadow-lg flex items-center justify-center">
+                    <div class="flex flex-col items-center justify-center text-center gap-4 w-full max-w-7xl mx-auto">
+
+
+                        <h1 class="text-5xl sm:text-6xl text-center font-extrabold text-(--dark-red)">
+                            Our brands
+                        </h1>
+                        
+                        <p class="text-base md:text-lg text-center font-medium text-(--white)">
+                            Pennpetro Energy PLC is taking steps to help protect the environment where we operate. 
+                            We do this by stewarding our water usage, integrating biodiversity into our decision making, reducing waste and managing air emissions from our operations.
+                        </p>
+ 
+                    </div>
+                </div>
+
+            </div>
+        </section>                   
 
 
         <!-- Section: Pennpetro Energy PLC, Texaco, Caltex -->

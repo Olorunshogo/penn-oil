@@ -107,30 +107,30 @@ export const whoCultureHeroVideoBg = ref({
 });
 
 // Who Brands
-export const whoBrandsHeroImageBg = ref({    
-    imgSrc: "https://images.pexels.com/photos/8960944/pexels-photo-8960944.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    imgAlt: "Woman in White Hat Holding Silver Touchscreen Device",
-    category: "Who we are",
-    bgColor: "var-(--dark-blue)",
-    title: "Our brands",
-    paragraph: "Pennpetro Energy PLC is taking steps to help protect the environment where we operate. We do this by stewarding our water usage, integrating biodiversity into our decision making, reducing waste and managing air emissions from our operations.",
-    displayLink: false,
-    link: "/newsroom",
-    linkName: "Read more about our environmental efforts"        
-});
+// export const whoBrandsHeroImageBg = ref({    
+//     imgSrc: "https://images.pexels.com/photos/8960944/pexels-photo-8960944.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+//     imgAlt: "Woman in White Hat Holding Silver Touchscreen Device",
+//     category: "Who we are",
+//     bgColor: "var-(--dark-blue)",
+//     title: "Our brands",
+//     paragraph: "Pennpetro Energy PLC is taking steps to help protect the environment where we operate. We do this by stewarding our water usage, integrating biodiversity into our decision making, reducing waste and managing air emissions from our operations.",
+//     displayLink: false,
+//     link: "/newsroom",
+//     linkName: "Read more about our environmental efforts"        
+// });
 
 // Who Leadership
-export const whoLeadershipHeroImageBg = ref({    
-    imgSrc: "https://images.pexels.com/photos/8428092/pexels-photo-8428092.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    imgAlt: "A Man in White Long Sleeves Having a Deal with the Man in Black Suit",
-    category: "Who we are",
-    bgColor: "var-(--dark-blue)",
-    title: "Penn Leadership",
-    paragraph: "Our culture is built upon the principles of responsibility, trust and integrity. Our leadership is a profound source of pride, as we lead in the future of energy.",
-    displayLink: false,
-    link: "/newsroom",
-    linkName: "Read more about our environmental efforts"        
-});
+// export const whoLeadershipHeroImageBg = ref({    
+//     imgSrc: "https://images.pexels.com/photos/8428092/pexels-photo-8428092.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+//     imgAlt: "A Man in White Long Sleeves Having a Deal with the Man in Black Suit",
+//     category: "Who we are",
+//     bgColor: "var-(--dark-blue)",
+//     title: "Penn Leadership",
+//     paragraph: "Our culture is built upon the principles of responsibility, trust and integrity. Our leadership is a profound source of pride, as we lead in the future of energy.",
+//     displayLink: false,
+//     link: "/newsroom",
+//     linkName: "Read more about our environmental efforts"        
+// });
 
 
 
@@ -244,7 +244,7 @@ export const investorOverviewHeroImageBg = ref({
 
 
 // Careers Page
-export const careersHeroImageBg = {  
+export const careersHeroImageBg = ref({    
     imgSrc: "https://images.pexels.com/photos/1181438/pexels-photo-1181438.jpeg",
     imgAlt: "Group of Women Standing Near Desk",
     title: "Careers",
@@ -252,4 +252,4 @@ export const careersHeroImageBg = {
     displayLink: false,
     link: "/sustainability",
     linkName: "Read more about our environmental efforts"        
-}
+});

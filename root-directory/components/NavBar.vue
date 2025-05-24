@@ -45,7 +45,7 @@
 <template>
   <div>
     <header>
-      <nav aria-label="Main navigation" class="w-full h-full bg-(--dark-blue) relative z-99 bg-opacity-50">
+      <nav aria-label="Main navigation" class="w-full h-full bg-gradient-to-r from-(--dark-blue) to-(--dark-red) relative z-99 bg-opacity-50">
         <!-- Navigation -->
         <div class="max-w-7xl mx-auto h-(--navabr-h)">
           <!-- Mobile Nav  -->
@@ -489,7 +489,7 @@
 
           <!-- Desktop Nav -->
           <div
-            class="relative hidden lg:flex items-center z-90 justify-between text-sm text-(--white) font-normal px-(--section-px-lg) h-(--navbar-h)"
+            class="relative hidden lg:flex items-center z-90 justify-between text-sm text-(--white) font-medium px-(--section-px-lg) h-(--navbar-h)"
           >
             <div class="flex items-center gap-8 *:hover:text-(--white) *:duration-300 *:ease-in-out *:transition-all">
               <NuxtLink
@@ -558,6 +558,13 @@
                 <span class="group-hover:underline-text">Careers</span>
               </NuxtLink>
 
+              <NuxtLink
+                to="/contact"
+                class="group"
+              >
+                <span class="group-hover:underline-text">Contact Us</span>
+              </NuxtLink>
+
               <!-- <button
                 @click="toggleSearchBar"
                 class="flex items-center justify-center cursor-pointer duration-300 ease-in-out transition-all bg-transparent text-(--white) text-xl"
@@ -565,7 +572,6 @@
                 <Icon name="mdi:search" />
               </button> -->
 
-              <button></button>
             </div>
           </div>
 

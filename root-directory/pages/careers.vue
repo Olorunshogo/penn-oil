@@ -24,7 +24,7 @@
         keywords: 'Pennpetro Energy PLC careers, energy jobs, oil and gas careers, sustainability jobs, engineering jobs, energy innovation, clean energy careers, global energy company, Penn Petro hiring',
     });
 
-    import { careersHeroImageBg } from '~/models/heroBgModels';
+    // import { careersHeroImageBg } from '~/models/heroBgModels';
 
 </script>
 
@@ -33,7 +33,56 @@
     <div class="bg-(--light-gray)">
         <!-- Section: Hero -->
         <div>
-            <HeroSectionImageBg
+
+        <HeroSectionImageBg
+            imgSrc="https://images.pexels.com/photos/28318846/pexels-photo-28318846/free-photo-of-train-on-rail.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            imgAlt="careersHeroImageBg.imgAlt"
+            title="careersHeroImageBg.title"
+            paragraph="careersHeroImageBg.paragraph"
+            link="careersHeroImageBg.link"
+            linkName="careersHeroImageBg.linkName"
+        />
+
+        <!-- 
+            <!-- Section: Hero --
+        <section>      
+            
+            <div class="relative w-screen h-dvh overflow-hidden">
+
+                <div class="bg-container">
+
+                    <NuxtImg
+                        src="https://images.pexels.com/photos/28318846/pexels-photo-28318846/free-photo-of-train-on-rail.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        alt="Group of Women Standing Near Desk"
+                        loading="lazy"
+                        class="bg"
+                    />
+                </div>
+
+                <!-- Content Layer --
+                <div class="absolute bottom-0 w-full h-1/2 max-h-120 backdrop-blur-md rounded-t-2xl shadow-lg flex items-center justify-center">
+                    <div class="flex flex-col items-center justify-center text-center gap-4 w-full max-w-7xl mx-auto">
+
+
+                        <h1 class="text-5xl sm:text-6xl text-center font-extrabold text-(--dark-red)">
+                            Careers
+                        </h1>
+                        
+                        <p class="text-base md:text-lg text-center font-medium text-(--white)">
+                            We believe our business succeeds when our people and communities succeed. Our social investments seek to respond to needs in the communities where we operate around the world. We seek to work with communities and partners to promote job growth and economic development.
+                        </p>
+
+ 
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        -->
+
+            
+
+            <!-- <HeroSectionImageBg
                 :imgSrc="careersHeroImageBg.imgSrc"
                 :imgAlt="careersHeroImageBg.imgAlt"
                 :title="careersHeroImageBg.title"
@@ -41,7 +90,7 @@
                 :paragraph="careersHeroImageBg.paragraph"
                 :link="careersHeroImageBg.link"
                 :linkName="careersHeroImageBg.linkName"
-            />
+            /> -->
         </div>
 
         <!-- Section: Careers at Pennpetro Energy PLC -->

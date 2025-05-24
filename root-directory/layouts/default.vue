@@ -73,7 +73,7 @@
         <SearchBar />
       </div> -->
 
-      <div>
+      <div class="-mt-(--navbar-h)">
         <slot></slot>
       </div>
 
