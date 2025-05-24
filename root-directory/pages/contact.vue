@@ -1005,7 +1005,7 @@
 
                     <!-- Form -->
                     <!-- @submit.prevent="handleFormSubmit"  -->
-                    <form 
+                    <!-- <form 
                         id="contact-form"
                         @submit.prevent="submitForm" 
                         class="w-full h-full"
@@ -1014,7 +1014,7 @@
 
                         <div class="flex flex-col gap-4 w-9/10 max-w-3xl mx-auto h-fit">
 
-                            <!-- Topics -->
+                            <!-- Topics --
                             <CustomInputSelect
                                 :label="selectInputFields[0].label"
                                 :id="selectInputFields[0].id"
@@ -1027,7 +1027,7 @@
                                 :ariaDescribedby="selectInputFields[0].ariaDescribedby"
                             />
 
-                            <!-- Sub topics -->
+                            <!-- Sub topics --
                             <CustomInputSelect
                                 :label="selectInputFields[1].label"
                                 :id="selectInputFields[1].id"
@@ -1040,7 +1040,7 @@
                                 :ariaDescribedby="selectInputFields[1].ariaDescribedby"
                             />                           
                             
-                            <!-- First name, Last name and Email -->
+                            <!-- First name, Last name and Email --
                             <CustomInputText
                                 v-for="input in textInputFields"
                                 :key="input.id"
@@ -1055,8 +1055,8 @@
                                 :aria-describedby="input.ariaDescribedby"
                                 v-model="textFieldValues[input.valueKey]"
                             />
-                            <div class="flex items-center gap-2">
-                                <!-- Input Field -->
+                            <div class="flex items-center gap-2"
+                                <!-- Input Field --
                                 <input
                                     type="checkbox"
                                     id="newsletter"
@@ -1066,7 +1066,7 @@
                                     class="text-(--dark-blue) border-2 border-(--light-blue) outline-none hover:cursor-pointer focus:border-(--light-blue) duration-300 ease-in-out transition-all"
                                 />
 
-                                <!-- Label -->
+                                <!-- Label --
                                 <label for="newsletter" class="text-sm font-medium text-(--dark-blue)">
                                     Newsletter opt-in
                                 </label>
@@ -1090,7 +1090,7 @@
                                 <h2>Comments: {{ textFieldValues.comments }}</h2>
                             </div> -->
 
-                            <!-- Submit Button -->
+                            <!-- Submit Button --
                             <button 
                                 type="submit"
                                 class="px-8 py-3 w-50 mx-auto text-(--white) font-bold bg-(--medium-blue) shadow-sm hover:opacity-85 hover:shadow-lg cursor-pointer duration-300 ease-in-out transition-all"
@@ -1108,60 +1108,29 @@
                             </div>
                             <p v-if="error" class="text-red-600">{{ error }}</p>
                         </div>
-                    </form>
+                    </form> -->
 
                     <!-- More ways to contact us -->
-                    <div class="flex flex-col gap-20 items-center justify-center w-full mx-auto max-w-4xl h-full">
-                        <h2 class="text-(--dark-blue) text-center font-extrabold text-2xl sm:text-3xl lg:text-4xl">
-                            More ways to contact us
-                        </h2>
-                        <div class="grid md:grid-cols-2 gap-8">
-                            <div class="flex flex-col gap-4 items-center justify-center w-full mx-auto">
-                                <h3 class="text-(--dark-blue) text-centern text-wrap font-bold text-xl">
-                                    Penn Petro Energy headquarters
-                                </h3>
+                        
+                    <div class="flex flex-col gap-4 items-center justify-center w-full mx-auto">
+                        <h3 class="text-(--dark-blue) text-centern text-wrap font-bold text-xl">
+                            Pennpetro Energy headquarters
+                        </h3>
 
-                                <p class="text-(--black) text-lg text-center">
-                                    1400 Smith Street <br>
-                                    Houston, TX 77002, USA <br>
-                                    Telephone: 
-                                        <NuxtLink
-                                            to="tel:+18328541000" target="_blank"
-                                            class="hover:text-(--medium-blue) underline decoration-1 underline-offset-2 decoration-(--light-gray) hover:decoration-(--medium-blue) hover:cursor-pointer ease-in-out duration-300 transition-all"
-                                        >
-                                            +1 832.854.1000
-                                        </NuxtLink>
-                                </p> 
-                            </div>
-                            <div class="flex flex-col gap-4 items-center justify-center w-full mx-auto">
-                                <h3 class="text-(--dark-blue) text-centern text-wrap font-bold text-xl">
-                                    Global contacts
-                                </h3>
-                                <p>
-                                    Find contact information for the countries where we operate.
-                                </p>
-
-                                <!-- Visit Penn worldwide -->
+                        <p class="text-(--black) text-lg">
+                            <span class="font-bold">Head office: </span>6 Heddon Street London,<br>
+                            W1B 4BT,<br>
+                            United Kingdom <br>
+                            Telephone: 
                                 <NuxtLink
-                                    to="/"
-                                    class="group relative flex items-center text-sm font-extrabold text-(--black) duration-500 ease-in transition-all"
+                                    to="tel:+18328541000" target="_blank"
+                                    class="hover:text-(--medium-blue) underline decoration-1 underline-offset-2 decoration-(--light-gray) hover:decoration-(--medium-blue) hover:cursor-pointer ease-in-out duration-300 transition-all"
                                 >
-                                    <div class="group relative flex items-center justify-center text-xl w-12 h-full overflow-hidden">
-                                        <div class="absolute flex items-center left-4 h-full w-12 transition-all duration-500 ease-in-out group-hover:translate-x-full">
-                                            <Icon name="mdi:arrow-right"/>
-                                        </div>
-                                        
-                                        <div class="absolute flex items-center left-4 h-full w-12 -translate-x-full transition-all duration-500 ease-in-out group-hover:translate-x-0">
-                                            <Icon name="mdi:arrow-right" />
-                                        </div>
-                                    </div>
-                                    <span class="relative overflow-hidden">
-                                        <span class="group-hover:underline-text">Visit Penn worldwide</span>
-                                    </span>
+                                    +1 832.854.1000
                                 </NuxtLink>
-                            </div>
-                        </div>
+                        </p> 
                     </div>
+                            
 
                 </div>               
 
