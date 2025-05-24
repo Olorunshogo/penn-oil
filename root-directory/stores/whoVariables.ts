@@ -84,33 +84,3 @@ export const whoNewsroom: Ref<NewsItem[]> = ref([
 
 ]);
 
-export const boardOfDir = ref([
-
-    // Stephen Gary Lunn – Chairman',
-    {
-        id: 1,
-        imgSrc: 'https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-        imgAlt: 'Michael K. (Mike) Wirth wearing White Dress Shirt and Black Blazer',
-         title: 'Stephen Gary Lunn – Chairman',
-        description: "Stephen Lunn was appointed Chairman of Penn Petro Energy PLC in September 2024. With an extensive background in corporate governance and senior leadership roles across the energy sector, he brings strategic oversight and board-level expertise to the company. His guidance supports Penn Petro’s long-term growth and shareholder value creation."
-    },
-
-    // 2. Robert Martin Menzel – Chief Executive Officer & Executive Director
-    {
-        id: 2,
-        imgSrc: 'https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-        imgAlt: 'Robert Martin Menzel – Chief Executive Officer & Executive Director in Collared Shirt',
-        title: 'Robert Martin Menzel – Chief Executive Officer & Executive Director',
-        description: "Robert Menzel was appointed CEO and Executive Director in January 2025. He has over two decades of leadership experience in global energy operations and infrastructure development. Known for his operational excellence and strategic foresight, Robert leads the company’s executive management and global expansion initiatives."
-    },
-
-    // 3. Olof Nils Anders Rapp – Non-Executive Director
-    {
-        id: 3,
-        imgSrc: 'https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-        imgAlt: 'Olof Nils Anders Rapp – Non-Executive Director wearing White Dress Shirt and Black Blazer',
-        title: 'Olof Nils Anders Rapp – Non-Executive Director',
-        description: "Olof Rapp has served as a Non-Executive Director since 2016. With a background in international business and energy sector advisory, Olof provides independent insight and governance to the board. He supports the company’s compliance, risk management, and international partnerships."
-    },
-]);
-

@@ -24,10 +24,6 @@
         keywords: 'Penn Petro Energy leadership, executive team, energy industry leaders, company executives, energy innovation leadership, oil and gas leadership, Penn Petro executives',
     });
 
-    import { 
-        boardOfDir, 
-    } from '~/stores/whoVariables';
-
     import { whoLeadershipHeroImageBg } from '~/models/heroBgModels';  
 
 </script>
@@ -50,71 +46,13 @@
             />
         </div>
 
-        <!-- Section: Leadership -->
-        <section>
-            <div class="relative w-full h-full px-(--section-px) lg:px-(--section-px-lg) py-(--section-py) lg:py-(--section-py-lg)">
 
-                <div class="grid gap-8 w-full h-full max-w-7xl mx-auto *:text-center">
-                    
-                    <!-- Pennpetro Energy leadership -->
-                    <div class="grid gap-6">
-                        <h2 class="text-3xl md:text-4xl font-bold text-(--dark-blue)">Penn Petro Energy leadership</h2>
-                        <p class="text-(--black)">
-                            Our culture is built upon the principles of responsibility, trust and integrity. 
-                            Our leadership is a profound source of pride, as we lead in the future of energy.
-                        </p>
-                    </div>
-
-                    <!-- Penn Petro Energy leadership -->
-                    <div class="grid gap-6">
-                        <h3 class="text-(--black) font-bold">
-                            <NuxtLink
-                                to="/who/leadership#boardOfDirectors"
-                                class="text-(--medium-blue) font-bold underline-transparent hover:underline underline-offset-2 decoration-1"
-                            >
-                                Board of directors
-                            </NuxtLink>
-                        </h3>
-                        <p class="text-(--black)">
-                            Guided by our vision and values, The Penn Petro Energy Way, our Board of Directors and Corporate Officers are committed to demonstrating the highest standard of ethics.
-                        </p>
-                    </div>
-                </div>    
-            </div>
-        </section> 
 
         <!-- Section: Board of Directors -->
-        <section>
-            <div class="relative w-full h-full px-(--section-px) lg:px-(--section-px-lg) py-(--section-py) lg:py-(--section-py-lg)">
 
-                <div class="grid gap-16 w-full h-full max-w-7xl mx-auto">
-                    <!-- Penn Petro Energy leadership -->
-                    <div class="grid gap-2">
-                        <h2 class="text-center text-3xl md:text-4xl font-bold text-(--dark-blue)">Board of directors</h2>
-                        <p class="text-(--black) text-center">
-                            The Board of Directors of Penn Petro Energy directs the affairs of the corporation and is committed to sound principles of corporate governance.
-                            They bring a proven track record of success across a broad range of experiences at the policymaking level in business; expertise in science, technology, engineering, research or academia; extensive knowledge of governmental, regulatory, legal or public policy issues; expertise in finance, financial disclosure or financial accounting; experience in global business or international affairs; environmental experience; experience leading business transformation; and service on public company boards.
-                        </p>
-                    </div>
+        <HomeWhoLeadership />
 
-                    <!-- Penn Petro Energy Board of Directors -->
-                    <div 
-                        id="boardOfDirectors" 
-                        class="grid lg:grid-cols-3 gap-4 lg:gap-8 place-content-center"
-                    >
-                        <CustomLeadership
-                            v-for="item in boardOfDir"
-                            :key="item.id"
-                            :imgSrc="item.imgSrc"
-                            :imgAlt="item.imgAlt"
-                            :title="item.title"
-                            :description="item.description"
-                        />
-                    </div>
-
-                </div>    
-            </div>
-        </section>             
+                   
 
     </div>
 </template>

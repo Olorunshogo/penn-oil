@@ -1005,7 +1005,7 @@
 
                     <!-- Form -->
                     <!-- @submit.prevent="handleFormSubmit"  -->
-                    <!-- <form 
+                    <form 
                         id="contact-form"
                         @submit.prevent="submitForm" 
                         class="w-full h-full"
@@ -1014,7 +1014,7 @@
 
                         <div class="flex flex-col gap-4 w-9/10 max-w-3xl mx-auto h-fit">
 
-                            <!-- Topics --
+                            <!-- Topics -->
                             <CustomInputSelect
                                 :label="selectInputFields[0].label"
                                 :id="selectInputFields[0].id"
@@ -1027,7 +1027,7 @@
                                 :ariaDescribedby="selectInputFields[0].ariaDescribedby"
                             />
 
-                            <!-- Sub topics --
+                            <!-- Sub topics -->
                             <CustomInputSelect
                                 :label="selectInputFields[1].label"
                                 :id="selectInputFields[1].id"
@@ -1040,7 +1040,7 @@
                                 :ariaDescribedby="selectInputFields[1].ariaDescribedby"
                             />                           
                             
-                            <!-- First name, Last name and Email --
+                            <!-- First name, Last name and Email -->
                             <CustomInputText
                                 v-for="input in textInputFields"
                                 :key="input.id"
@@ -1055,8 +1055,9 @@
                                 :aria-describedby="input.ariaDescribedby"
                                 v-model="textFieldValues[input.valueKey]"
                             />
-                            <div class="flex items-center gap-2"
-                                <!-- Input Field --
+                            <div class="flex items-center gap-2">
+                                
+                                <!-- Input Field -->
                                 <input
                                     type="checkbox"
                                     id="newsletter"
@@ -1066,7 +1067,7 @@
                                     class="text-(--dark-blue) border-2 border-(--light-blue) outline-none hover:cursor-pointer focus:border-(--light-blue) duration-300 ease-in-out transition-all"
                                 />
 
-                                <!-- Label --
+                                <!-- Label -->
                                 <label for="newsletter" class="text-sm font-medium text-(--dark-blue)">
                                     Newsletter opt-in
                                 </label>
@@ -1090,7 +1091,7 @@
                                 <h2>Comments: {{ textFieldValues.comments }}</h2>
                             </div> -->
 
-                            <!-- Submit Button --
+                            <!-- Submit Button -->
                             <button 
                                 type="submit"
                                 class="px-8 py-3 w-50 mx-auto text-(--white) font-bold bg-(--medium-blue) shadow-sm hover:opacity-85 hover:shadow-lg cursor-pointer duration-300 ease-in-out transition-all"
@@ -1108,7 +1109,7 @@
                             </div>
                             <p v-if="error" class="text-red-600">{{ error }}</p>
                         </div>
-                    </form> -->
+                    </form>
 
                     <!-- More ways to contact us -->
                         
