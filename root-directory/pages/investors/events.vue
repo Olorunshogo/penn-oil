@@ -2,25 +2,25 @@
 <script lang="ts" setup>
     import { useHead } from 'nuxt/app';
     useHead({
-        title: 'Investor Events and Presentatios: Penn Petro Energy PLC',
-        titleTemplate: '%s | Penn Petro Energy PLC'
+        title: 'Investor Events and Presentatios: Pennpetro Energy PLC',
+        titleTemplate: '%s | Pennpetro Energy PLC'
     });
 
     useSeoMeta({
-        title: 'Penn Petro Energy Investor Events | Stay Updated on Our Progress',
-        ogTitle: 'Investor Events - Penn Petro Energy | Join Us at Key Investor Gatherings',
-        description: 'Stay informed about upcoming investor events at Penn Petro Energy. Participate in webinars, conferences, and earnings calls to learn more about our company’s performance and future strategies.',
-        ogDescription: 'Join Penn Petro Energy at upcoming investor events, where we discuss our growth, sustainability initiatives, and market outlook. Stay engaged with our latest developments and strategies for the future of energy.',
+        title: 'Pennpetro Energy PLC Investor Events | Stay Updated on Our Progress',
+        ogTitle: 'Investor Events - Pennpetro Energy PLC | Join Us at Key Investor Gatherings',
+        description: 'Stay informed about upcoming investor events at Pennpetro Energy PLC. Participate in webinars, conferences, and earnings calls to learn more about our company’s performance and future strategies.',
+        ogDescription: 'Join Pennpetro Energy PLC at upcoming investor events, where we discuss our growth, sustainability initiatives, and market outlook. Stay engaged with our latest developments and strategies for the future of energy.',
         ogImage: '/Logo/Full_Penn_Petro_Energy_Logo.jpg',
-        ogImageAlt: 'An investor event hosted by Penn Petro Energy with key executives speaking to an audience.',
+        ogImageAlt: 'An investor event hosted by Pennpetro Energy PLC with key executives speaking to an audience.',
         ogUrl: 'https://vercel.com/bom-projects/pen-oil/investors/events',
 
         twitterCard: 'summary_large_image',
-        twitterTitle: 'Join Penn Petro Energy Investor Events | Stay Engaged with Our Growth',
-        twitterDescription: 'Get the latest updates and insights at Penn Petro Energy’s investor events. Join us for discussions on our sustainability efforts, energy innovations, and financial outlook.',
+        twitterTitle: 'Join Pennpetro Energy PLC Investor Events | Stay Engaged with Our Growth',
+        twitterDescription: 'Get the latest updates and insights at Pennpetro Energy PLC’s investor events. Join us for discussions on our sustainability efforts, energy innovations, and financial outlook.',
         twitterImage: '/Logo/Full_Penn_Petro_Energy_Logo.jpg',
 
-        keywords: 'Penn Petro Energy investor events, investor webinars, energy investor conferences, Penn Petro earnings calls, energy company updates, sustainable energy events, investor relations, clean energy events',
+        keywords: 'Pennpetro Energy PLC investor events, investor webinars, energy investor conferences, Penn Petro earnings calls, energy company updates, sustainable energy events, investor relations, clean energy events',
     });
 
     const openInvestorsNav = ref<boolean>(false);
@@ -259,7 +259,7 @@
 
                 <div class="absolute top-30 w-full h-fit">
                     
-                    <div class="flex flex-col items-center justify-center gap-24 lg:gap-32 w-full h-full max-w-7xl mx-auto px-(--section-px) lg:px-(--section-px-lg) py-(--section-py) lg:py-(--section-py-lg)">
+                    <div class="flex flex-col items-center justify-center gap-16 w-full h-full max-w-7xl mx-auto px-(--section-px) lg:px-(--section-px-lg) py-(--section-py) lg:py-(--section-py-lg)">
 
                         <div class="flex flex-col items-center justify-center text-center gap-8 w-full max-w-7xl mx-auto">                                
 
@@ -267,13 +267,13 @@
                                 Events and <br> presentations
                             </h1>
 
-                            <p class="text-(--black) text-base md:text-lg xl:text-xl text-center font-medium">
+                            <p class="text-(--black) text-center font-medium">
                                 Elevate your investment strategies by exploring content from our recent and historic events and presentations.
                             </p>
                             
                         </div>
 
-                        <p class="text-(--black) text-base md:text-lg xl:text-xl text-center font-medium">
+                        <p class="text-(--black) text-center font-medium">
                             Disclaimer: This portion of our Web site contains archival information. 
                             Archived presentations and supporting documents contained or referenced herein should not be considered current and may no longer be accurate
                         </p>
@@ -287,10 +287,10 @@
         <section>
             <div class="relative px-(--section-px) lg:px-(--section-px-lg) py-(--section-py) lg:py-(--section-py-lg) bg-(--dark-blue)/95 w-full h-full">
                 
-                <div class="flex flex-col lg:flex-row gap-8 md:gap-12 py-20 w-full max-w-7xl mx-auto">
+                <div class="flex flex-col xl:flex-row gap-8 md:gap-12 py-20 w-full max-w-7xl mx-auto">
 
                     <h2 
-                        class="text-4xl md:text-6xl lg:text-8xl text-(--white) text-wrap text-center font-extrabold"
+                        class="text-4xl md:text-5xl xl:text-6xl text-(--white) text-wrap text-center font-extrabold"
                     >
                         Press releases
                     </h2>
@@ -387,11 +387,11 @@
                                         <td>
                                             <a
                                                 to="#investorsPresentation"
-                                                title="1Q 2025 Penn Petro Energy Earnings Conference Call"
+                                                title="1Q 2025 Pennpetro Energy PLC Earnings Conference Call"
                                                 class="flex items-center *:flex gap-2 underline underline-offset-2 decoration-1 decoration-transparent hover:decoration-(--dark-blue) cursor-pointer duration-300 ease-in-out transition-all"
                                             >
                                                 <span class="text-(--dark-blue)">
-                                                    1Q 2025 Penn Petro Energy Earnings Conference Call
+                                                    1Q 2025 Pennpetro Energy PLC Earnings Conference Call
                                                 </span>
                                             </a>
                                         </td>
@@ -421,11 +421,11 @@
                                         <td>
                                             <a
                                                 to="#investorsPresentation"
-                                                title="4Q Penn Petro Energy Earnings Conference Call"
+                                                title="4Q Pennpetro Energy PLC Earnings Conference Call"
                                                 class="flex items-center *:flex gap-2 underline underline-offset-2 decoration-1 decoration-transparent hover:decoration-(--dark-blue) cursor-pointer duration-300 ease-in-out transition-all"
                                             >
                                                 <span class="text-(--dark-blue)">
-                                                    4Q Penn Petro Energy Earnings Conference Call
+                                                    4Q Pennpetro Energy PLC Earnings Conference Call
                                                 </span>
                                             </a>
                                         </td>
@@ -455,11 +455,11 @@
                                         <td>
                                             <a
                                                 to="#investorsPresentation"
-                                                title="1Q 2025 Penn Petro Energy Earnings Conference Call"
+                                                title="1Q 2025 Pennpetro Energy PLC Earnings Conference Call"
                                                 class="flex items-center *:flex gap-2 underline underline-offset-2 decoration-1 decoration-transparent hover:decoration-(--dark-blue) cursor-pointer duration-300 ease-in-out transition-all"
                                             >
                                                 <span class="text-(--dark-blue)">
-                                                    1Q 2025 Penn Petro Energy Earnings Conference Call
+                                                    1Q 2025 Pennpetro Energy PLC Earnings Conference Call
                                                 </span>
                                             </a>
                                         </td>
@@ -489,11 +489,11 @@
                                         <td>
                                             <a
                                                 to="#investorsPresentation"
-                                                title="4Q Penn Petro Energy Earnings Conference Call"
+                                                title="4Q Pennpetro Energy PLC Earnings Conference Call"
                                                 class="flex items-center *:flex gap-2 underline underline-offset-2 decoration-1 decoration-transparent hover:decoration-(--dark-blue) cursor-pointer duration-300 ease-in-out transition-all"
                                             >
                                                 <span class="text-(--dark-blue)">
-                                                    4Q Penn Petro Energy Earnings Conference Call
+                                                    4Q Pennpetro Energy PLC Earnings Conference Call
                                                 </span>
                                             </a>
                                         </td>
@@ -523,11 +523,11 @@
                                         <td>
                                             <a
                                                 to="#investorsPresentation"
-                                                title="1Q 2025 Penn Petro Energy Earnings Conference Call"
+                                                title="1Q 2025 Pennpetro Energy PLC Earnings Conference Call"
                                                 class="flex items-center *:flex gap-2 underline underline-offset-2 decoration-1 decoration-transparent hover:decoration-(--dark-blue) cursor-pointer duration-300 ease-in-out transition-all"
                                             >
                                                 <span class="text-(--dark-blue)">
-                                                    1Q 2025 Penn Petro Energy Earnings Conference Call
+                                                    1Q 2025 Pennpetro Energy PLC Earnings Conference Call
                                                 </span>
                                             </a>
                                         </td>

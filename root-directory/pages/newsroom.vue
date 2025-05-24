@@ -3,24 +3,24 @@
     import { useHead } from 'nuxt/app';
     useHead({
         title: 'Newsroom',
-        titleTemplate: '%s | Penn Petro Energy PLC'
+        titleTemplate: '%s | Pennpetro Energy PLC'
     });
 
     useSeoMeta({
-        title: 'Penn Petro Energy Newsroom | Latest News & Media Releases',
-        ogTitle: 'Stay Updated with Penn Petro Energy News',
-        description: 'Read the latest news, press releases, and media updates from Penn Petro Energy. Stay informed about our projects, innovations, and sustainability efforts.',
-        ogDescription: 'Explore news and media from Penn Petro Energy. Get insights into our latest developments, leadership announcements, and energy industry updates.',
+        title: 'Pennpetro Energy PLC Newsroom | Latest News & Media Releases',
+        ogTitle: 'Stay Updated with Pennpetro Energy PLC News',
+        description: 'Read the latest news, press releases, and media updates from Pennpetro Energy PLC. Stay informed about our projects, innovations, and sustainability efforts.',
+        ogDescription: 'Explore news and media from Pennpetro Energy PLC. Get insights into our latest developments, leadership announcements, and energy industry updates.',
         ogImage: '/Logo/Full_Penn_Petro_Energy_Logo.jpg',
-        ogImageAlt: 'Penn Petro Energy press event and energy site showcasing innovation.',
+        ogImageAlt: 'Pennpetro Energy PLC press event and energy site showcasing innovation.',
         ogUrl: 'https://vercel.com/bom-projects/pen-oil/newsroom',
 
         twitterCard: 'summary_large_image',
-        twitterTitle: 'Penn Petro Energy Newsroom | Press Releases & Updates',
-        twitterDescription: 'Catch up on the latest announcements from Penn Petro Energy. Discover how we’re shaping the future of energy through innovation and impact.',
+        twitterTitle: 'Pennpetro Energy PLC Newsroom | Press Releases & Updates',
+        twitterDescription: 'Catch up on the latest announcements from Pennpetro Energy PLC. Discover how we’re shaping the future of energy through innovation and impact.',
         twitterImage: '/Logo/Full_Penn_Petro_Energy_Logo.jpg',
 
-        keywords: 'Penn Petro Energy news, energy industry updates, oil and gas news, sustainability news, press releases, Penn Petro media, corporate news, energy innovation announcements',
+        keywords: 'Pennpetro Energy PLC news, energy industry updates, oil and gas news, sustainability news, press releases, Penn Petro media, corporate news, energy innovation announcements',
     });
 
     import { 
@@ -48,7 +48,7 @@
                             class="group relative text-(--white) font-semibold text-2xl lg:text-4xl duration-500 ease-in transition-all"
                         >                            
                             <span class="group-hover:underline-text text-center">
-                                Penn Petro Energy uses AI to bring reliable energy to data centers
+                                Pennpetro Energy PLC uses AI to bring reliable energy to data centers
                             </span>
                         </NuxtLink>
 
@@ -67,12 +67,12 @@
             </div>
         </section>
 
-        <!-- Section: Latest news from Penn Petro Energy -->
+        <!-- Section: Latest news from Pennpetro Energy PLC -->
         <section>        
             <div class="relative flex flex-col gap-12 w-full max-w-7xl mx-auto h-full overflow-hidden bg-(--white) py-(--section-py) lg:py-(--section-py-lg)">
                 
                 <h3 class="text-2xl text-(--dark-blue) font-bold text-center">
-                    Latest news from Penn Petro Energy
+                    Latest news from Pennpetro Energy PLC
                 </h3>
 
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 w-full h-full px-8 py-12 bg-(--white)">

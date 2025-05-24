@@ -4,24 +4,24 @@
 
     useHead({
         title: 'Who We Are',
-        titleTemplate: '%s | Penn Petro Energy PLC'
+        titleTemplate: '%s | Pennpetro Energy PLC'
     });
 
     useSeoMeta({
-        title: 'Who We Are | Penn Petro Energy Company Overview',
-        ogTitle: 'Penn Petro Energy | Our Mission, Values & Vision',
-        description: 'Learn about Penn Petro Energy’s mission, leadership, and commitment to powering a sustainable future. Discover what drives our global energy solutions.',
-        ogDescription: 'Explore Penn Petro Energy’s story, values, and vision. See how we’re leading the way in responsible energy innovation and global impact.',
+        title: 'Who We Are | Pennpetro Energy PLC Company Overview',
+        ogTitle: 'Pennpetro Energy PLC | Our Mission, Values & Vision',
+        description: 'Learn about Pennpetro Energy PLC’s mission, leadership, and commitment to powering a sustainable future. Discover what drives our global energy solutions.',
+        ogDescription: 'Explore Pennpetro Energy PLC’s story, values, and vision. See how we’re leading the way in responsible energy innovation and global impact.',
         ogImage: '/Logo/Full_Penn_Petro_Energy_Logo.jpg',
-        ogImageAlt: 'Penn Petro Energy team collaborating at a global energy site.',
+        ogImageAlt: 'Pennpetro Energy PLC team collaborating at a global energy site.',
         ogUrl: 'https://vercel.com/bom-projects/pen-oil/who/overview',
 
         twitterCard: 'summary_large_image',
-        twitterTitle: 'Who We Are | Discover Penn Petro Energy',
-        twitterDescription: 'Get to know Penn Petro Energy – our purpose, leadership, and dedication to innovation and sustainability in the global energy sector.',
+        twitterTitle: 'Who We Are | Discover Pennpetro Energy PLC',
+        twitterDescription: 'Get to know Pennpetro Energy PLC – our purpose, leadership, and dedication to innovation and sustainability in the global energy sector.',
         twitterImage: '/Logo/Full_Penn_Petro_Energy_Logo.jpg',
 
-        keywords: 'About Penn Petro Energy, energy company overview, Penn Petro mission, energy leadership, global energy company, sustainability values, responsible energy innovation',
+        keywords: 'About Pennpetro Energy PLC, energy company overview, Penn Petro mission, energy leadership, global energy company, sustainability values, responsible energy innovation',
     });
 
     import { whoOverviewHeroVideoBg } from '~/models/heroBgModels';
@@ -59,7 +59,7 @@
                         </h2>
 
                         <p class="text-(--white) text-center text-lg lg:text-xl cursor-text">
-                            Our north star is the Penn Petro Energy Way. 
+                            Our north star is the Pennpetro Energy PLC Way. 
                             A set of values that inspires our culture. 
                             And guides us to get results the right way.
                         </p>
@@ -132,7 +132,7 @@
                             </h2>
 
                             <p class="text-(--white) text-lg lg:text-xl cursor-text">
-                                Penn Petro Energy’s purpose is to provide affordable, reliable, ever-cleaner energy. 
+                                Pennpetro Energy PLC’s purpose is to provide affordable, reliable, ever-cleaner energy. 
                                 To enable human progress. 
                                 That is at the heart of who we are.
                             </p>
@@ -352,7 +352,7 @@
 
                             <p class="text-(--white) text-lg lg:text-xl">
                                 We strive for excellence and maintaining high standards.
-                                With a rich history dating back over a century, Penn Petro Energy's family of brands has built trust and recognition worldwide.
+                                With a rich history dating back over a century, Pennpetro Energy PLC's family of brands has built trust and recognition worldwide.
                             </p>
 
                             <!-- Learn about our history -->
@@ -405,7 +405,7 @@
                             <p class="text-(--white) text-lg lg:text-xl">
                                 Our culture is built upon the principles of responsibility, trust and integrity.
                                 Our leadership is a profound source of pride as we aim to lead in the future of energy.
-                                With a rich history dating back over a century, Penn Petro Energy's family of brands has built trust and recognition worldwide.
+                                With a rich history dating back over a century, Pennpetro Energy PLC's family of brands has built trust and recognition worldwide.
                             </p>
 
                             <!-- Learn about our history -->
@@ -441,7 +441,7 @@
                             </h3>
 
                             <p class="text-(--white) text-lg lgl:text-xl cursor-text">
-                                Penn Petro Energy is a place where people come to be part of innovative solutions that help address the world's energy challenges.
+                                Pennpetro Energy PLC is a place where people come to be part of innovative solutions that help address the world's energy challenges.
                             </p>
 
                             <!-- Careers -->
@@ -483,7 +483,7 @@
 
                 <HomeNewsroom
                     category="newsroom"
-                    title="Latest in Penn Petro Energy" 
+                    title="Latest in Pennpetro Energy PLC" 
                 />
 
 

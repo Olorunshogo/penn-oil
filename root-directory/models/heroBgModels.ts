@@ -2,12 +2,12 @@
 // Homepage Video SLider
 export const homeHeroBgs = ref([  
 
-    // 1. Penn Petro Energy reports first-quarter 2025 results
+    // 1. Pennpetro Energy PLC reports first-quarter 2025 results
     {
         id: 1,  
         videoSrc: "/landing_videos/hero1.mp4",
         bgColor: "var(--medium-blue)",
-        heading: "Penn Petro Energy reports first-quarter 2025 results",
+        heading: "Pennpetro Energy PLC reports first-quarter 2025 results",
         paragraph: "Our latest quarterly insights are now available.",
         link: "/investors/overview",
         linkName: "Visit our investors page to learn more"  
@@ -41,7 +41,7 @@ export const homeHeroBgs = ref([
         videoSrc: "/landing_videos/hero1.mp4",
         bgColor: "var(--medium-blue)",
         heading: "Powering the future",
-        paragraph: "Penn Petro Energy's 2024 annual report highlights our continued commitment to building a resilient energy system that powers human progress.",
+        paragraph: "Pennpetro Energy PLC's 2024 annual report highlights our continued commitment to building a resilient energy system that powers human progress.",
         link: "/investors/overview",
         linkName: "Download the report"  
     },
@@ -52,7 +52,7 @@ export const homeHeroBgs = ref([
         videoSrc: "/landing_videos/hero2.mp4",
         bgColor: "var(--medium-blue)",
         heading: "Powering AI with natural gas",
-        paragraph: "Penn Petro Energy, Engine No. 1 and GE Vernova join forces to develop scalable, reliable power solutions for U.S. data centers.",
+        paragraph: "Pennpetro Energy PLC, Engine No. 1 and GE Vernova join forces to develop scalable, reliable power solutions for U.S. data centers.",
         link: "/newsroom",
         linkName: "Learn more"  
     },
@@ -113,7 +113,7 @@ export const whoBrandsHeroImageBg = ref({
     category: "Who we are",
     title: "Our brands",
     titleBgImageSrc: "https://images.pexels.com/photos/8960944/pexels-photo-8960944.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    paragraph: "Penn Petro Energy is taking steps to help protect the environment where we operate. We do this by stewarding our water usage, integrating biodiversity into our decision making, reducing waste and managing air emissions from our operations.",
+    paragraph: "Pennpetro Energy PLC is taking steps to help protect the environment where we operate. We do this by stewarding our water usage, integrating biodiversity into our decision making, reducing waste and managing air emissions from our operations.",
     displayLink: false,
     link: "/newsroom",
     linkName: "Read more about our environmental efforts"        
@@ -151,19 +151,21 @@ export const whatEnergyHeroVideoBg = ref({
     category: "what we do",
     title: "Energy solutions",
     titleBgVideoSrc: "/landing_videos/hero3.mp4",
-    paragraph: "Affordable, reliable and ever-cleaner energy for today and tomorrow. That’s what we’re working towards, every day.",
+    paragraph: "Pennpetro Energy PLC is an independent oil and gas company focused on the exploration, development, and production of onshore/offshore energy resources. Our operations are strategically centered in Gonzales County, Texas, within the prolific Austin Chalk and Eagle Ford Shale formations, Kazakhstan, and other part of the world. Through our U.S. subsidiaries within and out of the united states, we have established a robust presence globally, leveraging advanced drilling techniques to optimize resource extraction.",
     displayLink: false,
     link: "/newsroom",
     linkName: "Read more about our environmental efforts"        
 });
 
+// What Technology
 export const whatTechnologyHeroImageBg = ref({    
-    imgSrc: "https://images.pexels.com/photos/2085831/pexels-photo-2085831.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    imgSrc: "https://images.pexels.com/photos/60130/pexels-photo-60130.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     imgAlt: "Star Wars R2-d2",
     category: "Who we are",
-    title: "Tech & innovation",
+    // title: "Tech & innovation",
+    title: "Technology Harnessing Innovation to Power Energy Development",
     titleBgImageSrc: "https://images.pexels.com/photos/2085831/pexels-photo-2085831.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    paragraph: "Accelerating progress to power our world today and build the lower carbon energy system of the future.",
+    paragraph: "Harnessing Innovation to Power Energy Development. At Pennpetro Energy PLC, technology is at the heart of our operations. From precision well targeting to advanced resource evaluation, we leverage innovative tools and techniques to maximize efficiency, reduce costs, and minimize environmental impact. Our commitment to technological advancement underpins our ability to safely and effectively extract energy resources from some of the most technically challenging onshore formations in the United States.",
     displayLink: false,
     link: "/newsroom",
     linkName: "Read more about our environmental efforts"        
@@ -189,7 +191,7 @@ export const sustainabilityClimateHeroImageBg = ref({
     category: "Sustainability",
     title: "Climate",
     titleBgImageSrc: "https://images.pexels.com/photos/32077337/pexels-photo-32077337/free-photo-of-idyllic-rural-landscape-with-wind-turbines.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    paragraph: "We all have a stake in a reliable, affordable energy system. Our belief that the future is lower carbon drives Penn Petro Energy's lower carbon ambitions and the actions we take to advance them.",
+    paragraph: "We all have a stake in a reliable, affordable energy system. Our belief that the future is lower carbon drives Pennpetro Energy PLC's lower carbon ambitions and the actions we take to advance them.",
     displayLink: false,
     link: "/newsroom",
     linkName: "View our social initiatives around the world"        
@@ -202,7 +204,7 @@ export const sustainabilityEnvironmentHeroImageBg = ref({
     category: "Sustainability",
     title: "Environment",
     titleBgImageSrc: "/sustainability/sustainability-environment-hero-image.jpeg",
-    paragraph: "Penn Petro Energy is taking steps to help protect the environment where we operate. We do this by stewarding our water usage, integrating biodiversity into our decision making, reducing waste and managing air emissions from our operations.",
+    paragraph: "Pennpetro Energy PLC is taking steps to help protect the environment where we operate. We do this by stewarding our water usage, integrating biodiversity into our decision making, reducing waste and managing air emissions from our operations.",
     displayLink: false,
     link: "/newsroom",
     linkName: "Read more about our environmental efforts"        

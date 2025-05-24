@@ -3,24 +3,24 @@
     import { useHead } from 'nuxt/app';
     useHead({
         title: 'What We Do',
-        titleTemplate: '%s | Penn Petro Energy'
+        titleTemplate: '%s | Pennpetro Energy PLC'
     });
 
     useSeoMeta({
-        title: 'Technology and Innovation | Penn Petro Energy',
-        ogTitle: 'Penn Petro Energy | Leading Energy Innovation and Technology',
-        description: 'Explore how Penn Petro Energy integrates cutting-edge technologies and innovative solutions to drive efficiency, sustainability, and advancement in the energy sector.',
-        ogDescription: 'At Penn Petro Energy, we harness advanced technologies to transform the energy industry. Learn about our innovations in oil, gas, and clean energy solutions.',
+        title: 'Technology and Innovation | Pennpetro Energy PLC',
+        ogTitle: 'Pennpetro Energy PLC | Leading Energy Innovation and Technology',
+        description: 'Explore how Pennpetro Energy PLC integrates cutting-edge technologies and innovative solutions to drive efficiency, sustainability, and advancement in the energy sector.',
+        ogDescription: 'At Pennpetro Energy PLC, we harness advanced technologies to transform the energy industry. Learn about our innovations in oil, gas, and clean energy solutions.',
         ogImage: '/Logo/Full_Penn_Petro_Energy_Logo.jpg',
-        ogImageAlt: 'Innovative energy technologies and engineers working on advanced systems at Penn Petro Energy.',
+        ogImageAlt: 'Innovative energy technologies and engineers working on advanced systems at Pennpetro Energy PLC.',
         ogUrl: 'https://vercel.com/bom-projects/pen-oil/what/technology',
 
         twitterCard: 'summary_large_image',
         twitterTitle: 'Technology and Innovation | Shaping the Future of Energy',
-        twitterDescription: 'Discover how Penn Petro Energy leads the energy sector with groundbreaking technologies and sustainable innovations that are transforming the future of energy.',
+        twitterDescription: 'Discover how Pennpetro Energy PLC leads the energy sector with groundbreaking technologies and sustainable innovations that are transforming the future of energy.',
         twitterImage: '/Logo/Full_Penn_Petro_Energy_Logo.jpg',
 
-        keywords: 'Penn Petro Energy technology, energy innovation, clean energy technology, sustainable energy solutions, advanced energy systems, oil and gas technology, energy sector innovation, energy tech advancements',
+        keywords: 'Pennpetro Energy PLC technology, energy innovation, clean energy technology, sustainable energy solutions, advanced energy systems, oil and gas technology, energy sector innovation, energy tech advancements',
     });
 
     import { whatTechnologyHeroImageBg } from '~/models/heroBgModels';
@@ -37,7 +37,6 @@
             <HeroSectionImageBg
                 :imgSrc="whatTechnologyHeroImageBg.imgSrc"
                 :imgAlt="whatTechnologyHeroImageBg.imgAlt"
-                :displayInvestorsNavbar="whatTechnologyHeroImageBg.displayInvestorsNavbar"
                 :category="whatTechnologyHeroImageBg.category"
                 :title="whatTechnologyHeroImageBg.title"
                 :titleBgImageSrc="whatTechnologyHeroImageBg.titleBgImageSrc"
@@ -293,7 +292,7 @@
                                     </h3>
 
                                     <p class="text-lg">
-                                        We're sourcing more electricity from renewables like wind and solar to power some of our Penn Petro Energy operations.
+                                        We're sourcing more electricity from renewables like wind and solar to power some of our Pennpetro Energy PLC operations.
                                     </p>
 
                                     <!-- See how we use renewable energy -->
@@ -376,7 +375,7 @@
                         </h2>
 
                         <p class="text-(--black) text-center text-lg">
-                            Penn Petro Energy has been innovating to help solve energy challenges for decades. 
+                            Pennpetro Energy PLC has been innovating to help solve energy challenges for decades. 
                             And we believe in the power of human ingenuity to accelerate progress.
                         </p>
 

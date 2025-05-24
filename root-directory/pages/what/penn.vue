@@ -3,25 +3,25 @@
     import { useHead } from 'nuxt/app';
 
     useHead({
-        title: 'Penn Petro Energy Worldwide',
-        titleTemplate: '%s | Penn Petro Energy'
+        title: 'Pennpetro Energy PLC Worldwide',
+        titleTemplate: '%s | Pennpetro Energy PLC'
     });
 
     useSeoMeta({
-        title: 'Penn Petro Energy Around the World | Global Energy Impact',
-        ogTitle: 'Penn Petro Energy | Global Presence and Energy Impact',
-        description: 'Explore Penn Petro Energy’s global operations and how we provide energy solutions across continents, shaping the future of energy in diverse markets worldwide.',
-        ogDescription: 'Discover Penn Petro Energy’s international footprint. From North America to Asia and beyond, we are powering economies, driving innovation, and building a sustainable energy future.',
+        title: 'Pennpetro Energy PLC Around the World | Global Energy Impact',
+        ogTitle: 'Pennpetro Energy PLC | Global Presence and Energy Impact',
+        description: 'Explore Pennpetro Energy PLC’s global operations and how we provide energy solutions across continents, shaping the future of energy in diverse markets worldwide.',
+        ogDescription: 'Discover Pennpetro Energy PLC’s international footprint. From North America to Asia and beyond, we are powering economies, driving innovation, and building a sustainable energy future.',
         ogImage: '/Logo/Full_Penn_Petro_Energy_Logo.jpg',
-        ogImageAlt: 'Map showing Penn Petro Energy’s global operations and energy projects around the world.',
+        ogImageAlt: 'Map showing Pennpetro Energy PLC’s global operations and energy projects around the world.',
         ogUrl: 'https://vercel.com/bom-projects/pen-oil/what/penn',
 
         twitterCard: 'summary_large_image',
-        twitterTitle: 'Penn Petro Energy Around the World | Global Energy Leadership',
-        twitterDescription: 'With a global presence, Penn Petro Energy is at the forefront of powering regions around the world with innovative and sustainable energy solutions.',
+        twitterTitle: 'Pennpetro Energy PLC Around the World | Global Energy Leadership',
+        twitterDescription: 'With a global presence, Pennpetro Energy PLC is at the forefront of powering regions around the world with innovative and sustainable energy solutions.',
         twitterImage: '/Logo/Full_Penn_Petro_Energy_Logo.jpg',
 
-        keywords: 'Penn Petro Energy global operations, international energy company, energy projects worldwide, global energy solutions, Penn Petro presence, international oil and gas, sustainable global energy',
+        keywords: 'Pennpetro Energy PLC global operations, international energy company, energy projects worldwide, global energy solutions, Penn Petro presence, international oil and gas, sustainable global energy',
     });
 
     import { 
@@ -38,10 +38,11 @@
             
             <div class="flex flex-col items-center justify-center md:px-4 py-8 md:py-16 gap-12 text-(--white) w-full max-w-7xl mx-auto">
                 <h1 class="text-center text-4xl md:text-5xl xl:text-8xl font-extrabold">
-                    Penn Petro Energy Worldwide
+                    Pennpetro Energy PLC Worldwide
                 </h1>
                 <p class="text-lg text-center">
-                    Penn Petro Energy conducts business all around the globe. The links below will provide you with detailed information for the countries where Penn Petro Energy’s work is most extensive.
+                    Penn Petro Energy conducts business all around the globe. 
+                    The countries below will provide you with detailed information for the countries where Pennpetro Energy PLC have conducted its operations for both export of oil and gas products and its not limited to the list of countries below
                 </p>
             </div>
             

@@ -3,25 +3,25 @@
     import { useHead } from 'nuxt/app';
 
     useHead({
-        title: 'Environment Penn Petro Energy',
-        titleTemplate: '%s | Penn Petro Energy'
+        title: 'Environment Pennpetro Energy PLC',
+        titleTemplate: '%s | Pennpetro Energy PLC'
     });
 
     useSeoMeta({
-        title: 'Penn Petro Energy Environmental Commitment | Protecting Natural Resources',
-        ogTitle: 'Penn Petro Energy | Environmental Responsibility in Energy Operations',
-        description: 'Learn how Penn Petro Energy integrates environmental protection into its operations, prioritizing biodiversity, water conservation, and responsible resource management.',
-        ogDescription: 'Explore Penn Petro Energy’s environmental initiatives, including reducing ecological impact, conserving resources, and supporting environmental resilience across all projects.',
+        title: 'Pennpetro Energy PLC Environmental Commitment | Protecting Natural Resources',
+        ogTitle: 'Pennpetro Energy PLC | Environmental Responsibility in Energy Operations',
+        description: 'Learn how Pennpetro Energy PLC integrates environmental protection into its operations, prioritizing biodiversity, water conservation, and responsible resource management.',
+        ogDescription: 'Explore Pennpetro Energy PLC’s environmental initiatives, including reducing ecological impact, conserving resources, and supporting environmental resilience across all projects.',
         ogImage: '/Logo/Full_Penn_Petro_Energy_Logo.jpg',
-        ogImageAlt: 'Image showing Penn Petro Energy’s environmental efforts—natural landscapes, clean water, and protected ecosystems.',
+        ogImageAlt: 'Image showing Pennpetro Energy PLC’s environmental efforts—natural landscapes, clean water, and protected ecosystems.',
         ogUrl: 'https://vercel.com/bom-projects/pen-oil/sustainability/environment',
 
         twitterCard: 'summary_large_image',
-        twitterTitle: 'Penn Petro Energy | Our Commitment to the Environment',
-        twitterDescription: 'From reducing environmental impact to conserving biodiversity, Penn Petro Energy is committed to protecting the planet through responsible energy practices.',
+        twitterTitle: 'Pennpetro Energy PLC | Our Commitment to the Environment',
+        twitterDescription: 'From reducing environmental impact to conserving biodiversity, Pennpetro Energy PLC is committed to protecting the planet through responsible energy practices.',
         twitterImage: '/Logo/Full_Penn_Petro_Energy_Logo.jpg',
 
-        keywords: 'Penn Petro Energy environmental responsibility, environmental stewardship, biodiversity protection, water conservation, sustainable resource management, eco-friendly energy practices, environmental sustainability in oil and gas',
+        keywords: 'Pennpetro Energy PLC environmental responsibility, environmental stewardship, biodiversity protection, water conservation, sustainable resource management, eco-friendly energy practices, environmental sustainability in oil and gas',
     });
 
 
@@ -58,7 +58,7 @@
                             src="/sustainability/social_tree.png"
                             alt="Image similar to an icon of a tree"
                             loading="lazy"
-                            class="w-3/5 mx-auto lg:w-90 h-auto rounded-full"
+                            class="w-3/5 max-w-sm mx-auto rounded-full"
                         />
 
                         <div class="grid gap-4 text-center">
@@ -107,13 +107,13 @@
                             src="/sustainability/social_tree.png"
                             alt="Image similar to an icon of a tree"
                             loading="lazy"
-                            class="w-3/5 mx-auto lg:w-90 h-auto rounded-full"
+                            class="w-3/5 max-w-sm mx-auto rounded-full"
                         />
 
                         <div class="grid gap-4 text-center">
                             <h2 class="font-extrabold text-(--dark-blue) text-3xl lg:text-5xl">Building up biodiversity</h2>
                             <p class="text-base lg:text-lg  text-(--black)">
-                                Penn Petro Energy recognizes the importance of biodiversity. 
+                                Pennpetro Energy PLC recognizes the importance of biodiversity. 
                                 We work with communities, regulatory agencies, industry groups and conservation organizations to support efforts to protect ecosystems where we operate. 
                                 Our aim is to develop an understanding of potential risks and use mitigation to avoid, reduce, restore or offset potential impacts on biodiversity.
                             </p>
@@ -154,7 +154,7 @@
                             src="/sustainability/social_tree.png"
                             alt="Image similar to an icon of a tree"
                             loading="lazy"
-                            class="w-4/5 mx-auto lg:w-90 h-auto rounded-full"
+                            class="w-3/5 max-w-sm mx-auto rounded-full"
                         />
 
                         <div class="grid gap-4 text-center">
@@ -198,7 +198,7 @@
                             src="/sustainability/social_tree.png"
                             alt="Image similar to an icon of a tree"
                             loading="lazy"
-                            class="w-4/5 mx-auto lg:w-90 h-auto rounded-full"
+                            class="w-3/5 max-w-sm mx-auto rounded-full"
                         />
 
                         <div class="grid gap-4 text-center">
@@ -280,7 +280,8 @@
                                 <!-- Social Investment -->
                                 <div class="flex flex-col items-center justify-center w-full max-w-9/10 md:max-w-full mx-auto h-full">
                                     <NuxtImg
-                                        src="/sustainability/Sustainability_SocialInvestmentThumbnail.jpg"
+                                        src="https://images.pexels.com/photos/6288088/pexels-photo-6288088.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                        alt="A Woman and Girl Playing Together"
                                         loading="lazy"
                                         class="block w-full h-full rounded-t-2xl object-center"
                                     />

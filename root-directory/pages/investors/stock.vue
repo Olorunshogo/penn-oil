@@ -3,22 +3,22 @@
     import { useHead } from 'nuxt/app';
     useHead({
         title: 'Reports and fillings',
-        titleTemplate: '%s | Penn Petro Energy'
+        titleTemplate: '%s | Pennpetro Energy PLC'
     });
 
     useSeoMeta({
-        title: 'Stock Information | Penn Petro Energy - Shareholder Value & Market Performance',
-        ogTitle: 'Penn Petro Energy Stock Overview | Real-Time Market Data & Shareholder Insights',
-        description: 'Get real-time stock information and historical performance data for Penn Petro Energy. Stay informed on our market trends and shareholder value.',
-        ogDescription: 'Explore Penn Petro Energy’s stock data, including current price, trends, and performance metrics. Supporting investor confidence through transparency.',
+        title: 'Stock Information | Pennpetro Energy PLC - Shareholder Value & Market Performance',
+        ogTitle: 'Pennpetro Energy PLC Stock Overview | Real-Time Market Data & Shareholder Insights',
+        description: 'Get real-time stock information and historical performance data for Pennpetro Energy PLC. Stay informed on our market trends and shareholder value.',
+        ogDescription: 'Explore Pennpetro Energy PLC’s stock data, including current price, trends, and performance metrics. Supporting investor confidence through transparency.',
         ogImage: '/Logo/Full_Penn_Petro_Energy_Logo.jpg',
-        ogImageAlt: 'Penn Petro Energy stock performance chart and market data dashboard.',
+        ogImageAlt: 'Pennpetro Energy PLC stock performance chart and market data dashboard.',
         ogUrl: 'https://vercel.com/bom-projects/pen-oil/investors/stock',
         twitterCard: 'summary_large_image',
-        twitterTitle: 'Penn Petro Energy Stock Information | Real-Time Data & Market Performance',
-        twitterDescription: 'Track Penn Petro Energy’s stock price, trends, and historical performance to support your investment decisions.',
+        twitterTitle: 'Pennpetro Energy PLC Stock Information | Real-Time Data & Market Performance',
+        twitterDescription: 'Track Pennpetro Energy PLC’s stock price, trends, and historical performance to support your investment decisions.',
         twitterImage: '/Logo/Full_Penn_Petro_Energy_Logo.jpg',
-        keywords: 'Penn Petro Energy stock, share price, stock performance, energy company stock, investor stock info, market trends, shareholder value, stock data, NYSE energy stocks, financial markets'
+        keywords: 'Pennpetro Energy PLC stock, share price, stock performance, energy company stock, investor stock info, market trends, shareholder value, stock data, NYSE energy stocks, financial markets'
     });
 
     import {
@@ -36,7 +36,6 @@
         stockCopyMaterials, toggleCopyMaterials,
 
         stockBoardOfDirectors, toggleBoardOfDirectors,
-        stockCorporateOfficers, toggleCorporateOfficers,
 
         stockCommonNoble, toggleCommonNoble,
         stockNobleCertificates, toggleNobleCertificates
@@ -302,14 +301,14 @@
                         Investor questions and answers
                     </h2>
 
-                    <!-- Investing in Penn Petro Energy and its FAQs dropdowns -->
+                    <!-- Investing in Pennpetro Energy PLC and its FAQs dropdowns -->
                     <div class="flex flex-col gap-4 text-(--white) py-8">
                         <h3 class="text-xl text-center font-extrabold">
-                            Investing in Penn Petro Energy
+                            Investing in Pennpetro Energy PLC
                         </h3>
 
 
-                        <!-- Stock FAQs about information in Penn Petro Energy dropdowns -->
+                        <!-- Stock FAQs about information in Pennpetro Energy PLC dropdowns -->
                         <div class="flex flex-col w-9/10 max-w-3xl mx-auto h-full">
                             
                             <!-- Who's Penn's transfer agent for registered stockholders? -->
@@ -333,7 +332,7 @@
                                         class="flex flex-col text-sm lg:text-base gap-2 py-3 border-b-1 border-(--border-gray)"
                                     >
                                         <p>
-                                            Penn Petro Energy’s transfer agent is Computershare. 
+                                            Pennpetro Energy PLC’s transfer agent is Computershare. 
                                             Registered stockholders, also referred to as "stockholders of record," are individuals and entities that hold stock in their own name on the records of the company. 
                                             Registered stockholders may contact Computershare by any of the above methods.
                                             
@@ -365,7 +364,7 @@
                                         v-if="stockSymbol"
                                         class="text-sm lg:text-base py-3 border-b-1 border-(--border-gray)"
                                     >
-                                        The Penn Petro Energy stock symbol is CVX and the CUSIP number is 166764 10 0. 
+                                        The Pennpetro Energy PLC stock symbol is CVX and the CUSIP number is 166764 10 0. 
                                         CUSIP stands for Committee on Uniform Security Identiﬁcation Procedures and is used to uniquely identify the company’s securities trading in the United States.
                                     </p>
                                 </Transition>
@@ -391,7 +390,7 @@
                                         v-if="stockPennStock"
                                         class="text-sm lg:text-base py-3 border-b-1 border-(--border-gray)"
                                     >
-                                        Penn Petro Energy common stock is listed on the New York Stock Exchange (NYSE).
+                                        Pennpetro Energy PLC common stock is listed on the New York Stock Exchange (NYSE).
                                     </p>
                                 </Transition>
                             </div>
@@ -416,7 +415,7 @@
                                         v-if="stockPennDividend"
                                         class="text-sm lg:text-base py-3 border-b-1 border-(--border-gray)"
                                     >
-                                        For registered stockholders, Penn Petro Energy has a dividend reinvestment program administered by Computershare. 
+                                        For registered stockholders, Pennpetro Energy PLC has a dividend reinvestment program administered by Computershare. 
                                         Street holders should contact their stockbroker directly for information on their accounts.
                                     </p>
                                 </Transition>
@@ -492,7 +491,7 @@
                                         v-if="stockPennIssue"
                                         class="text-sm lg:text-base py-3 border-b-1 border-(--border-gray)"
                                     >
-                                        Penn Petro Energy no longer issues physical stock certificates. 
+                                        Pennpetro Energy PLC no longer issues physical stock certificates. 
                                         Stock is issued in book-entry form.
                                     </p>
                                 </Transition>
@@ -501,13 +500,13 @@
                         </div>
                     </div>
 
-                    <!-- Information about Penn Petro Energy and its FAQs dropdowns -->
+                    <!-- Information about Pennpetro Energy PLC and its FAQs dropdowns -->
                     <div class="flex flex-col gap-4 text-(--white) py-8">
                         <h3 class="text-xl text-center font-extrabold">
-                            Information about Penn Petro Energy
+                            Information about Pennpetro Energy PLC
                         </h3>
 
-                        <!-- Stock FAQs about information in Penn Petro Energy dropdowns -->
+                        <!-- Stock FAQs about information in Pennpetro Energy PLC dropdowns -->
                         <div class="flex flex-col w-9/10 max-w-3xl mx-auto h-full">                        
 
                             <!-- Where can I get a copy of the proxy statement? -->
@@ -562,7 +561,7 @@
                                         v-if="stockCopyMaterials"
                                         class="text-sm lg:text-base py-3 border-b-1 border-(--border-gray)"
                                     >
-                                        Penn Petro Energy's SEC filings are made available on site. 
+                                        Pennpetro Energy PLC's SEC filings are made available on site. 
                                         If you require a printed copy, you can contact us through our 
                                         <NuxtLink
                                             to="/contact"
@@ -587,14 +586,14 @@
                         <!-- Stock corporate governance dropdowns -->
                         <div class="flex flex-col w-9/10 max-w-3xl mx-auto h-full">                        
 
-                            <!-- Who is on Penn Petro Energy's Board of Directors? -->
+                            <!-- Who is on Pennpetro Energy PLC's Board of Directors? -->
                             <div class="flex flex-col">
                                 
                                 <button 
                                     @click="toggleBoardOfDirectors"
                                     class="flex *:flex items-center justify-between py-4 text-(--white) border-b-1 border-(--border-gray) hover:border-(--light-blue) cursor-pointer duration-300 ease-in-out transition-all"
                                 >
-                                    <span>Who is on Penn Petro Energy's Board of Directors?</span>
+                                    <span>Who is on Pennpetro Energy PLC's Board of Directors?</span>
                                     <Icon 
                                         name="mdi:chevron-down" 
                                         class="text-2xl md:text-3xl duration-500 ease-in-out transition-all"
@@ -607,7 +606,7 @@
                                         v-if="stockBoardOfDirectors"
                                         class="text-sm lg:text-base py-3 border-b-1 border-(--border-gray)"
                                     >
-                                        Information about Penn Petro Energy's directors and related information can be found on the
+                                        Information about Pennpetro Energy PLC's directors and related information can be found on the
                                         <a
                                             to="/who/leadership#boardOfDirectors"
                                             class="underline underline-offset-2 decoration-1 hover:decoration-(--light-blue) hover:cursor-pointer duration-300 ease-in-out transition-all"
@@ -619,37 +618,6 @@
                                 </Transition>
                             </div>
 
-                            <!-- Who are the corporate officers of Penn Petro Energy? -->
-                            <div class="flex flex-col">
-                                
-                                <button 
-                                    @click="toggleCopyMaterials"
-                                    class="flex *:flex items-center justify-between py-4 text-(--white) border-b-1 border-(--border-gray) hover:border-(--light-blue) cursor-pointer duration-300 ease-in-out transition-all"
-                                >
-                                    <span>Who are the corporate officers of Penn Petro Energy?</span>
-                                    <Icon 
-                                        name="mdi:chevron-down" 
-                                        class="text-2xl md:text-3xl duration-500 ease-in-out transition-all"
-                                        :class="{ 'rotate-180': stockCopyMaterials }"
-                                    />
-                                </button>
-
-                                <Transition name="slide-down" mode="in-out">
-                                    <p 
-                                        v-if="stockCopyMaterials"
-                                        class="text-sm lg:text-base py-3 border-b-1 border-(--border-gray)"
-                                    >
-                                        Information about the corporate officers in penn Petro Energy and other related information can be found on the
-                                        <a
-                                            href="/who/leadership#corporateOfficers"
-                                            class="underline underline-offset-2 decoration-1 hover:decoration-(--light-blue) hover:cursor-pointer duration-300 ease-in-out transition-all"
-                                        >
-                                            leadership
-                                        </a>
-                                        page
-                                    </p>
-                                </Transition>
-                            </div>
 
                         </div>
                     </div>
@@ -663,7 +631,7 @@
                         <!-- Stock noble merger dropdowns -->
                         <div class="flex flex-col w-9/10 max-w-3xl mx-auto h-full">                  
 
-                            <!-- Is the exchange of my shares of noble Energy, Inc. common stock for shares of Penn Petro Energy Corporation common stock mandatory?
+                            <!-- Is the exchange of my shares of noble Energy, Inc. common stock for shares of Pennpetro Energy PLC Corporation common stock mandatory?
                                         What will I receive in exchange for my shares of common stock? -->
                             <div class="flex flex-col">
                                 
@@ -672,7 +640,7 @@
                                     class="flex *:flex items-center justify-between py-4 text-(--white) border-b-1 border-(--border-gray) hover:border-(--light-blue) cursor-pointer duration-300 ease-in-out transition-all"
                                 >
                                     <span>
-                                        Is the exchange of my shares of noble Energy, Inc. common stock for shares of Penn Petro Energy Corporation common stock mandatory?
+                                        Is the exchange of my shares of noble Energy, Inc. common stock for shares of Pennpetro Energy PLC Corporation common stock mandatory?
                                         What will I receive in exchange for my shares of common stock?
                                     </span>
                                     <Icon 
@@ -687,7 +655,7 @@
                                         v-if="stockCommonNoble"
                                         class="text-sm lg:text-base py-3 border-b-1 border-(--border-gray)"
                                     >
-                                        Yes, the exchange is mandatory. As a result of the merger of a subsidiary of Penn Petro ENergy Corporation (“Penn Petro ENergy”) into Noble Energy, Inc. (“Noble Energy”), all shares of Noble Energy common stock have been automatically canceled and converted into the right to receive 0.1191 of a share of validly issued, fully paid and non-assessable shares of Penn Petro Energy common stock for each share of Noble Energy common stock and cash, without interest, in lieu of any fractional shares of Penn Petro Energy common stock. 
+                                        Yes, the exchange is mandatory. As a result of the merger of a subsidiary of Pennpetro Energy PLC Corporation (“Pennpetro Energy PLC”) into Noble Energy, Inc. (“Noble Energy”), all shares of Noble Energy common stock have been automatically canceled and converted into the right to receive 0.1191 of a share of validly issued, fully paid and non-assessable shares of Pennpetro Energy PLC common stock for each share of Noble Energy common stock and cash, without interest, in lieu of any fractional shares of Pennpetro Energy PLC common stock. 
                                         Shares of Noble Energy common stock have stopped trading and can no longer be transferred.
                                     </p>
                                 </Transition>
@@ -738,7 +706,7 @@
                         </h2>
 
                         <p class="text-lg lg:text-xl text-(--black)">
-                            The Computershare Investment Plan for Penn Petro Energy stock allows interested investors to purchase shares of stock and participate in dividend reinvestment.
+                            The Computershare Investment Plan for Pennpetro Energy PLC stock allows interested investors to purchase shares of stock and participate in dividend reinvestment.
                         </p>
                     </div>
 
@@ -749,16 +717,16 @@
 
                         <div class="grid gap-4 *:text-lg *:lg:text-xl">
                             <p>
-                                Penn Petro Energy engages a transfer agent, Computershare, to assist the company in maintaining the accounts of individuals and entities that hold Penn Petro Energy stock in their own name on the records of the company, sometimes referred to as "stockholders of record" or "registered stockholders."
+                                Pennpetro Energy PLC engages a transfer agent, Computershare, to assist the company in maintaining the accounts of individuals and entities that hold Pennpetro Energy PLC stock in their own name on the records of the company, sometimes referred to as "stockholders of record" or "registered stockholders."
                             </p>
 
                             <p>
-                                When you access your account through Computershare's website, Investor Center, you can view your current balance, access your account history, obtain current and historical stock prices and purchase and sell Penn Petro Energy shares through the Computershare Investment Plan. 
-                                To access your existing account on the Investor Center website, you will need your user ID and password. For stockholders who do not have a Computershare Investor Center account, you may be able to create a unique user ID by answering a series of questions, completing a first-time user authentication process and creating a custom seal. The Computershare Investment Plan allows interested investors to purchase and sell shares of Penn Petro Energy stock and enroll in dividend reinvestment.
+                                When you access your account through Computershare's website, Investor Center, you can view your current balance, access your account history, obtain current and historical stock prices and purchase and sell Pennpetro Energy PLC shares through the Computershare Investment Plan. 
+                                To access your existing account on the Investor Center website, you will need your user ID and password. For stockholders who do not have a Computershare Investor Center account, you may be able to create a unique user ID by answering a series of questions, completing a first-time user authentication process and creating a custom seal. The Computershare Investment Plan allows interested investors to purchase and sell shares of Pennpetro Energy PLC stock and enroll in dividend reinvestment.
                             </p>
 
                             <p>
-                                Purchases of shares of Penn Petro Energy stock through the Computershare Investment Plan can be made by electronic funds transfer or enclosing a check accompanied by a current coupon found at the bottom of your account statement. 
+                                Purchases of shares of Pennpetro Energy PLC stock through the Computershare Investment Plan can be made by electronic funds transfer or enclosing a check accompanied by a current coupon found at the bottom of your account statement. 
                                 Each check must have a coupon attached. 
                                 Computershare will wait up to three business days after receipt of the check or electronic funds transfer to ensure it receives good funds and will then seek to purchase shares from optional cash investments less applicable fees, in whole and fractional shares and on the open market promptly, typically daily but in no event later than five business days thereafter, assuming the relevant markets are open and sufficient market liquidity exists (and except where deferral is required under applicable federal or state laws or regulations). 
                                 Although Computershare will process the investment as promptly as practicable, there is no guarantee the investment will occur on the investor's specific investment day due to delays with mail, funding, invalid or illegible documentation, etc. 
@@ -767,20 +735,31 @@
                             </p>
 
                             <p>
-                                Information for institutional investors on how to contact Penn Petro Energy Corporate Investor Relations:
+                                Information for institutional investors on how to contact Pennpetro Energy PLC:
                             </p>
 
-                            <p>
-                                Computershare <br>
-                                P.O. Box 43078 <br>
-                                Providence RI 02940-3078
-                            </p>
+                            <!-- More ways to contact us -->
+                        
+                            <div class="flex flex-col gap-4 items-center justify-center w-full mx-auto">
+                                <h3 class="text-(--dark-blue) text-centern text-wrap font-bold text-xl">
+                                    Pennpetro Energy headquarters
+                                </h3>
 
-                            <p>
-                                For overnight delivery services:<br>
-                                150 Royall St., Suite 101<br>
-                                Canton, MA 02021
-                            </p>
+                                <p class="text-(--black) text-lg">
+                                    <span class="font-bold">Head office: </span>6 Heddon Street London,<br>
+                                    W1B 4BT,<br>
+                                    United Kingdom <br>
+                                    Telephone: 
+                                        <NuxtLink
+                                            to="tel:+18328541000" target="_blank"
+                                            class="hover:text-(--medium-blue) underline decoration-1 underline-offset-2 decoration-(--light-gray) hover:decoration-(--medium-blue) hover:cursor-pointer ease-in-out duration-300 transition-all"
+                                        >
+                                            +1 832.854.1000
+                                        </NuxtLink>
+                                </p> 
+                            </div>
+
+
                         </div>
                     </div>
 

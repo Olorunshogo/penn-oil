@@ -7,20 +7,20 @@
     });
 
     useSeoMeta({
-        title: 'Penn Petro Energy Social Impact | Empowering People and Communities',
-        ogTitle: 'Penn Petro Energy | Social Responsibility and Community Engagement',
-        description: 'Discover how Penn Petro Energy supports communities through education, workforce development, and inclusive practices, creating shared value across the regions where we operate.',
-        ogDescription: 'Penn Petro Energy is committed to making a positive social impact through community support, employee wellbeing, and inclusive opportunities that uplift people and society.',
+        title: 'Pennpetro Energy PLC Social Impact | Empowering People and Communities',
+        ogTitle: 'Pennpetro Energy PLC | Social Responsibility and Community Engagement',
+        description: 'Discover how Pennpetro Energy PLC supports communities through education, workforce development, and inclusive practices, creating shared value across the regions where we operate.',
+        ogDescription: 'Pennpetro Energy PLC is committed to making a positive social impact through community support, employee wellbeing, and inclusive opportunities that uplift people and society.',
         ogImage: '/Logo/Full_Penn_Petro_Energy_Logo.jpg',
-        ogImageAlt: 'Penn Petro Energy social initiatives—community programs, employee engagement, and local partnerships.',
+        ogImageAlt: 'Pennpetro Energy PLC social initiatives—community programs, employee engagement, and local partnerships.',
         ogUrl: 'https://vercel.com/bom-projects/pen-oil/sustainability/social',
 
         twitterCard: 'summary_large_image',
-        twitterTitle: 'Penn Petro Energy | Social Responsibility and Community Empowerment',
-        twitterDescription: 'From local partnerships to workforce empowerment, Penn Petro Energy is driving positive change in communities through its strong social responsibility initiatives.',
+        twitterTitle: 'Pennpetro Energy PLC | Social Responsibility and Community Empowerment',
+        twitterDescription: 'From local partnerships to workforce empowerment, Pennpetro Energy PLC is driving positive change in communities through its strong social responsibility initiatives.',
         twitterImage: '/Logo/Full_Penn_Petro_Energy_Logo.jpg',
 
-        keywords: 'Penn Petro Energy social responsibility, community engagement, workforce development, diversity and inclusion, employee wellbeing, social impact in energy sector, supporting local communities',
+        keywords: 'Pennpetro Energy PLC social responsibility, community engagement, workforce development, diversity and inclusion, employee wellbeing, social impact in energy sector, supporting local communities',
     });
 
     import { 
@@ -41,7 +41,6 @@
             <HeroSectionImageBg
                 :imgSrc="sustainabilitySocialHeroImageBg.imgSrc"
                 :imgAlt="sustainabilitySocialHeroImageBg.imgAlt"
-                :displayInvestorsNavbar="sustainabilitySocialHeroImageBg.displayInvestorsNavbar"
                 :category="sustainabilitySocialHeroImageBg.category"
                 :title="sustainabilitySocialHeroImageBg.title"
                 :titleBgImageSrc="sustainabilitySocialHeroImageBg.titleBgImageSrc"
@@ -94,7 +93,7 @@
                         </div>
 
                         <!-- Prosperity -->
-                        <div class="flex sm:flex-col items-center gap-4 w-full h-full">
+                        <div class="flex md:flex-col items-center gap-4 w-full h-full">
                             <NuxtImg
                                 src="sustainability/social_prosperity.png"
                                 alt="Image similar to an icon of 3 a tree"
@@ -116,18 +115,7 @@
             </div>
         </section>
 
-        <!-- Section: Video -->
-        <section>
-            <div class="w-full h-80 md:h-90 xl:h-120 bg-(--dark-blue)">
-                <video 
-                    autoplay 
-                    loop muted playsinline
-                    class="w-9/10 md:w-4/5 h-full mx-auto"
-                >
-                    <source src="/sustainability/Climate_higher_standard_video.mp4" type="video/mp4" >
-                </video>
-            </div>
-        </section>
+
 
         <!-- 2023 volunteer highlights -->
         <section>                  
@@ -145,7 +133,7 @@
                         </h2>
                         
                         <p class="text-lg text-center">
-                            The Penn Petro Energy Humankind is a program in the United States that aligns personal purpose with company purpose to support Penn Petro Energy’s People Strategy, enrich the employee experience and encourage community involvement.
+                            The Pennpetro Energy PLC Humankind is a program in the United States that aligns personal purpose with company purpose to support Pennpetro Energy PLC’s People Strategy, enrich the employee experience and encourage community involvement.
                         </p>
                     </div>
 
@@ -212,25 +200,9 @@
                         </h2>
                         
                         <p class="text-lg text-center">
-                            Penn Petro Energy Australia and TSH (Teach Speak Hear) have collaborated to deliver ear health care in the northwest region of Western Australia. Working together to prevent middle ear disease and improving child health outcomes.
+                            Pennpetro Energy PLC Australia and TSH (Teach Speak Hear) have collaborated to deliver ear health care in the northwest region of Western Australia. Working together to prevent middle ear disease and improving child health outcomes.
                         </p>
                     </div>
-
-
-                    <div class="flex flex-col px-4 gap-6 text-(--white) py-12 w-full max-w-7xl mx-auto h-full">
-
-                        <div class="flex items-center justify-center w-full mx-auto h-full">
-                            <iframe
-                                width="800" height="400"
-                                src="https://youtube.com/embed/Pqjd2QE6xyg"
-                                frameborder="0"
-                                allowfullscreen
-                                class="rounded-2xl"
-                            ></iframe>
-                        </div>
-                        
-                    </div>
-
                 </div>
 
             </div>

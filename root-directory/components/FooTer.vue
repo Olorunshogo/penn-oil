@@ -33,7 +33,7 @@
 
                 <div class="grid gap-4 md:gap-8">
                     <p class="font-normal text-base lg:text-lg">
-                        Penn Petro Energy has always put people at the center of the energy conversation. 
+                        Pennpetro Energy PLC has always put people at the center of the energy conversation. 
                         Because we understand that the well-being of people everywhere depends on energy. 
                         Energy that is affordable, reliable and ever-cleaner.
                     </p>
@@ -61,7 +61,7 @@
 
             </div>
 
-            <!-- md: Get to know us, latest at Penn Petro Energy, Future of energy, Popular links -->
+            <!-- md: Get to know us, latest at Pennpetro Energy PLC, Future of energy, Popular links -->
             <div class="grid lg:hidden grid-cols-1 gap-4 w-full h-full">
                 
                 <!-- Get to know us -->
@@ -137,7 +137,7 @@
                                 to="/what/penn"
                                 class="group relative flex duration-500 ease-in transition-all"
                             >                            
-                                <span class="group-hover:underline-text">Penn Petro Energy around the world</span>
+                                <span class="group-hover:underline-text">Pennpetro Energy PLC around the world</span>
                             </NuxtLink>
 
                             <NuxtLink
@@ -151,13 +151,13 @@
                     </Transition>
                 </div>
 
-                <!-- Latest at Penn Petro Energy -->
+                <!-- Latest at Pennpetro Energy PLC -->
                 <div class="flex flex-col justify-center gap-3 md:gap-6 pb-4 border-b-1 border-(--white)">
                     <button 
                         @click="toggleLatest"
                         class="flex items-center justify-between my-auto py-4 cursor-pointer *:flex *:items-center font-bold text-base duration-300 ease-in-out"
                     >
-                        <span>Latest at Penn Petro Energy</span>
+                        <span>Latest at Pennpetro Energy PLC</span>
                         <span 
                             class="font-bold text-2xl duration-300 ease-in-out transition-all"
                             :class="{'rotate-180': latest}"
@@ -321,7 +321,7 @@
                                 to="/newsroom"
                                 class="group relative flex text-base duration-500 ease-in transition-all"
                             >                            
-                                <span class="group-hover:underline-text">Penn Petro Energy texaco rewards</span>
+                                <span class="group-hover:underline-text">Pennpetro Energy PLC texaco rewards</span>
                             </NuxtLink>
 
                             <NuxtLink
@@ -352,7 +352,7 @@
                 
             </div>
 
-            <!-- lg: Get to know us & Latest at Penn Petro Energy -->
+            <!-- lg: Get to know us & Latest at Pennpetro Energy PLC -->
             <div class="hidden lg:grid gap-8 md:gap-6">
                 
                 <!-- Get to know us -->
@@ -415,7 +415,7 @@
                             to="/what/penn"
                             class="group relative flex duration-500 ease-in transition-all"
                         >                            
-                            <span class="group-hover:underline-text">Penn Petro Energy around the world</span>
+                            <span class="group-hover:underline-text">Pennpetro Energy PLC around the world</span>
                         </NuxtLink>
                           
                     </div>
@@ -491,9 +491,9 @@
 
                 </div>
 
-                <!-- Latest at Penn Petro Energy -->
+                <!-- Latest at Pennpetro Energy PLC -->
                 <div class="flex flex-col gap-3 md:gap-6">
-                    <h3 class="font-bold text-sm">Latest at Penn Petro Energy</h3>
+                    <h3 class="font-bold text-sm">Latest at Pennpetro Energy PLC</h3>
 
                     <div class="grid gap-2 *:font-normal *:text-base">                       
                             
@@ -717,7 +717,7 @@
                 <span>&copy;</span>
                 <span>{{ developmentYear }}</span>
                 <span v-if="displayYear">-{{ currentYear }}</span>
-                <span>Penn Petro Energy Corporation. All rights reserved.</span>
+                <span>Pennpetro Energy PLC Corporation. All rights reserved.</span>
             </div>          
 
         </div>

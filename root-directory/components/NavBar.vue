@@ -67,11 +67,11 @@
             <NuxtLink to="/" class="relative flex flex-col items-center justify-center">
               <NuxtImg
                 src="/Logo/Logo_transparent_bg.png"
-                alt="Penn Petro Energy Logo"
+                alt="Pennpetro Energy PLC Logo"
                 class="object-cover w-12 h-10"
               />
               <div class="hidden sm:flex items-center justify-center font-bold text-xs bg-clip-text text-transparent bg-gradient-to-r from-(--light-blue) to-red-500">
-                Penn Petro Energy
+                Pennpetro Energy PLC
               </div>
             </NuxtLink>
 
@@ -316,13 +316,13 @@
                 Technology and innovation
               </NuxtLink>
 
-              <!-- Penn Petro Energy around the world -->
+              <!-- Pennpetro Energy PLC around the world -->
               <NuxtLink
                 to="/what/penn"
                 @click="closeAllMenu"
                 class="flex *:flex items-center *:items-center justify-between hover:text-(--light-blue) duration-300 ease-in-out transition-all"
               >
-              Penn Petro Energy around the world
+              Pennpetro Energy PLC around the world
               </NuxtLink>
             </aside>
 
@@ -533,11 +533,11 @@
             <NuxtLink to="/" class="relative flex flex-col items-center justify-center">
               <NuxtImg
                 src="/Logo/Logo_transparent_bg.png"
-                alt="Penn Petro Energy Logo"
+                alt="Pennpetro Energy PLC Logo"
                 class="object-cover w-12 h-10"
               />
               <div class="hidden sm:flex items-center justify-center font-bold text-xs bg-clip-text text-transparent bg-gradient-to-r from-(--light-blue) to-red-600">
-                Penn Petro Energy
+                Pennpetro Energy PLC
               </div>
             </NuxtLink>
 
@@ -653,12 +653,12 @@
                   Technology and innovation
                 </NuxtLink>
 
-                <!-- Penn Petro Energy around the world -->
+                <!-- Pennpetro Energy PLC around the world -->
                 <NuxtLink
                   to="/what/penn"
                   class="flex *:flex items-center *:items-center justify-between hover:text-(--light-blue) duration-300 ease-in-out transition-all"
                 >
-                  Penn Petro Energy around the world
+                  Pennpetro Energy PLC around the world
                 </NuxtLink>
               </div>
             </aside>

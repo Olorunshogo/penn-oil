@@ -25,14 +25,14 @@ export const newsComps: Ref<NewsItem[]> = ref([
         description: "Delivering first oil while lowering development costs"
     },
 
-    // 2. Empowering young athletes: Penn Petro Energy drives girls' golf forward
+    // 2. Empowering young athletes: Pennpetro Energy PLC drives girls' golf forward
     {
         id: 2,
         link: "/sustainability/social",
         imgSrc: "https://images.pexels.com/photos/9207378/pexels-photo-9207378.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
         imgAlt: "Woman in White T-shirt and Blue Denim Shorts Holding Golf Club",
         date: "April 17, 2025",
-        description: "Empowering young athletes: Penn Petro Energy drives girls' golf forward"
+        description: "Empowering young athletes: Pennpetro Energy PLC drives girls' golf forward"
     },
 
     // 3. Fueling colorado while striving to protect what makes it home
@@ -45,14 +45,14 @@ export const newsComps: Ref<NewsItem[]> = ref([
         description: "Fueling colorado while striving to protect what makes it home"
     },
 
-    // 4. Penn Petro Energy and new orleans score big at the big game
+    // 4. Pennpetro Energy PLC and new orleans score big at the big game
     {
         id: 4,
         link: "/sustainability/social",
         imgSrc: "https://images.pexels.com/photos/3684122/pexels-photo-3684122.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
         imgAlt: "Man Wearing Blue Shirt Looking on Ball",
         date: "March 24, 2025",
-        description: "Penn Petro Energy and new orleans score big at the big game"
+        description: "Pennpetro Energy PLC and new orleans score big at the big game"
     },
 
     // 5. Decommissioned platform transforms into reef
@@ -65,14 +65,14 @@ export const newsComps: Ref<NewsItem[]> = ref([
         description: "Decommissioned platform transforms into reef"
     },
 
-    // 6. Penn Petro Energy leaders share their vision for the future at CERAWeek 2025
+    // 6. Pennpetro Energy PLC leaders share their vision for the future at CERAWeek 2025
     {
         id: 6,
         link: "/who/leadership",
         imgSrc: "https://images.pexels.com/photos/11264965/pexels-photo-11264965.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
         imgAlt: "Man in Blue Suit Holding a Globe",
         date: "March 24, 2025",
-        description: "Penn Petro Energy leaders share their vision for the future at CERAWeek 2025"
+        description: "Pennpetro Energy PLC leaders share their vision for the future at CERAWeek 2025"
     }
 
 ]);
@@ -88,10 +88,10 @@ interface InvestorsEventItem {
 }
 
 export const investorsEvent: Ref<InvestorsEventItem[]> = ref([
-    // 1. 1Q 2025 Penn Petro Energy earnings conference call
+    // 1. 1Q 2025 Pennpetro Energy PLC earnings conference call
     {
         id: 1,
-        heading: '1Q 2025 Penn Petro Energy earnings conference call',
+        heading: '1Q 2025 Pennpetro Energy PLC earnings conference call',
         date: 'May 02, 2025',
         link: '/investors/events',
         linkName: 'View event details'
@@ -115,10 +115,10 @@ export const investorsEvent: Ref<InvestorsEventItem[]> = ref([
         linkName: 'View presentation'
     },
 
-    // 4. 4Q 2024 Penn Petro Energy earnings conference call
+    // 4. 4Q 2024 Pennpetro Energy PLC earnings conference call
     {
         id: 4,
-        heading: '4Q 2024 Penn Petro Energy earnings conference call',
+        heading: '4Q 2024 Pennpetro Energy PLC earnings conference call',
         date: 'January 31, 2025',
         link: '/investors/events',
         linkName: 'View details'
@@ -133,64 +133,64 @@ export const investorsEvent: Ref<InvestorsEventItem[]> = ref([
         linkName: 'View details'
     },
 
-    // 6. 3Q 2024 Penn Petro Energy earnings conference call
+    // 6. 3Q 2024 Pennpetro Energy PLC earnings conference call
     {
         id: 6,
-        heading: '3Q 2024 Penn Petro Energy earnings conference call',
+        heading: '3Q 2024 Pennpetro Energy PLC earnings conference call',
         date: 'November 01, 2024',
         link: '/investors/events',
         linkName: 'View event details'
     },
 
-    // 2. 3Q 2024 Penn Petro Energy earnings conference call
+    // 2. 3Q 2024 Pennpetro Energy PLC earnings conference call
     {
         id: 7,
-        heading: '2Q 2024 Penn Petro Energy earnings conference call',
+        heading: '2Q 2024 Pennpetro Energy PLC earnings conference call',
         date: 'August 02, 2024',
         link: '/investors/events',
         linkName: 'View event details'
     },
 
-    // 8. 1Q 2024 Penn Petro Energy earnings conference call
+    // 8. 1Q 2024 Pennpetro Energy PLC earnings conference call
     {
         id: 8,
-        heading: '1Q 2024 Penn Petro Energy earnings conference call',
+        heading: '1Q 2024 Pennpetro Energy PLC earnings conference call',
         date: 'April 26, 2024',
         link: '/investors/events',
         linkName: 'View event details'
     },
 
-    // 9. 4Q 2023 Penn Petro Energy earnings conference call
+    // 9. 4Q 2023 Pennpetro Energy PLC earnings conference call
     {
         id: 9,
-        heading: '4Q 2023 Penn Petro Energy earnings conference call',
+        heading: '4Q 2023 Pennpetro Energy PLC earnings conference call',
         date: 'February 02, 2024',
         link: '/investors/events',
         linkName: 'View event details'
     },
 
-    // 10. 3Q 2023 Penn Petro Energy earnings conference call
+    // 10. 3Q 2023 Pennpetro Energy PLC earnings conference call
     {
         id: 10,
-        heading: '3Q 2023 Penn Petro Energy earnings conference call',
+        heading: '3Q 2023 Pennpetro Energy PLC earnings conference call',
         date: 'October 27, 2023',
         link: '/investors/events',
         linkName: 'View event details'
     },
 
-    // 11. Penn Petro Energy announces agreement to acquire hess
+    // 11. Pennpetro Energy PLC announces agreement to acquire hess
     {
         id: 11,
-        heading: 'Penn Petro Energy announces agreement to acquire hess',
+        heading: 'Pennpetro Energy PLC announces agreement to acquire hess',
         date: 'October 23, 2023',
         link: '/investors/events',
         linkName: 'View event details'
     },
 
-    // 12. 3Q 2024 Penn Petro Energy earnings conference call
+    // 12. 3Q 2024 Pennpetro Energy PLC earnings conference call
     {
         id: 12,
-        heading: '2Q 2023 Penn Petro Energy earnings conference call',
+        heading: '2Q 2023 Pennpetro Energy PLC earnings conference call',
         date: 'September 01, 2023',
         link: '/investors/events',
         linkName: 'View event details'

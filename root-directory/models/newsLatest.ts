@@ -27,34 +27,34 @@ export const latestNews: Ref<LatestNewsItem[]> = ref([
         date: 'May 05, 2025'
     },
 
-    // 2. Penn Petro Energy reports first quarter 2025 results
+    // 2. Pennpetro Energy PLC reports first quarter 2025 results
     {
         id: 2,
         imgSrc: 'https://images.pexels.com/photos/6767963/pexels-photo-6767963.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
         imgAlt: 'Image 2',
-        heading: 'Penn Petro Energy reports first quarter 2025 results',
+        heading: 'Pennpetro Energy PLC reports first quarter 2025 results',
         link: '/who/culture',
         operation: '',
         date: 'May 02, 2025'
     },
 
-    // 3. The Penn Petro Energy championship
+    // 3. The Pennpetro Energy PLC championship
     {
         id: 3,
         imgSrc: '/Logo/Logo_transparent_bg.png',
-        imgAlt: "Penn Petro Energy's Logo with a transparent background",
-        heading: 'The Penn Petro Energy championship',
+        imgAlt: "Pennpetro Energy PLC's Logo with a transparent background",
+        heading: 'The Pennpetro Energy PLC championship',
         link: '/sustainability/social',
         operation: '',
         date: 'April 24, 2025'
     },
 
-    // 4. Penn Petro Energy starts oil production from ballymore project in gulf of america
+    // 4. Pennpetro Energy PLC starts oil production from ballymore project in gulf of america
     {
         id: 4,
         imgSrc: '/Logo/Logo_transparent_bg.png',
-        imgAlt: "Penn Petro Energy's Logo with a transparent background",
-        heading: 'Penn Petro Energy starts oil production from ballymore project in gulf of america',
+        imgAlt: "Pennpetro Energy PLC's Logo with a transparent background",
+        heading: 'Pennpetro Energy PLC starts oil production from ballymore project in gulf of america',
         link: '/what/energy',
         operation: '',
         date: 'April 21, 2025'
@@ -77,34 +77,34 @@ export const archivedNews: Ref<LatestNewsItem[]> = ref([
         date: 'April 19, 2025'
     },
 
-    // 2. Penn Petro Energy reports first quarter 2025 results
+    // 2. Pennpetro Energy PLC reports first quarter 2025 results
     {
         id: 2,
         imgSrc: '/Logo/Logo_transparent_bg.png',
-        imgAlt: "Penn Petro Energy's Logo with a transparent background",
-        heading: 'Penn Petro Energy reports first quarter 2025 results',
+        imgAlt: "Pennpetro Energy PLC's Logo with a transparent background",
+        heading: 'Pennpetro Energy PLC reports first quarter 2025 results',
         link: '/who/culture',
         operation: '',
         date: 'April 12, 2025'
     },
 
-    // 3. The Penn Petro Energy championship
+    // 3. The Pennpetro Energy PLC championship
     {
         id: 3,
         imgSrc: 'https://images.pexels.com/photos/6767963/pexels-photo-6767963.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-        imgAlt: "Penn Petro Energy's Logo with a transparent background",
-        heading: 'The Penn Petro Energy championship',
+        imgAlt: "Pennpetro Energy PLC's Logo with a transparent background",
+        heading: 'The Pennpetro Energy PLC championship',
         link: '/sustainability/social',
         operation: '',
         date: 'April 09, 2025'
     },
 
-    // 4. Penn Petro Energy starts oil production from ballymore project in gulf of america
+    // 4. Pennpetro Energy PLC starts oil production from ballymore project in gulf of america
     {
         id: 4,
         imgSrc: '/Logo/Logo_transparent_bg.png',
-        imgAlt: "Penn Petro Energy's Logo with a transparent background",
-        heading: 'Penn Petro Energy starts oil production from ballymore project in gulf of america',
+        imgAlt: "Pennpetro Energy PLC's Logo with a transparent background",
+        heading: 'Pennpetro Energy PLC starts oil production from ballymore project in gulf of america',
         link: '/what/energy',
         operation: '',
         date: 'April 05, 2025'

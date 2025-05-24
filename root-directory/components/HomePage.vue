@@ -4,8 +4,8 @@
   import { useHead } from 'nuxt/app';
 
   useHead({
-    title: 'Penn Petro Energy Corporation - Human Energy',
-    titleTemplate: '%s | Penn Petro Energy'
+    title: 'Pennpetro Energy PLC Corporation - Human Energy',
+    titleTemplate: '%s | Pennpetro Energy PLC'
   });
 
 </script>
@@ -33,7 +33,7 @@
     <div>
       <HomeNewsroom 
         category="newsroom"
-        title="Latest at Penn Petro Energy"
+        title="Latest at Pennpetro Energy PLC"
       />
     </div>
 

@@ -3,24 +3,24 @@
     import { useHead } from 'nuxt/app';
     useHead({
         title: 'What We Do',
-        titleTemplate: '%s | Penn Petro Energy'
+        titleTemplate: '%s | Pennpetro Energy PLC'
     });
 
     useSeoMeta({
-        title: 'Energy Solutions | What We Do at Penn Petro Energy',
-        ogTitle: 'Penn Petro Energy | Powering the World Responsibly',
-        description: 'Discover how Penn Petro Energy delivers reliable and responsible energy solutions through oil, gas, and advanced technologies worldwide.',
-        ogDescription: 'Explore Penn Petro Energy’s core energy operations — driving progress through innovation, efficiency, and a commitment to global energy needs.',
+        title: 'Energy Solutions | What We Do at Pennpetro Energy PLC',
+        ogTitle: 'Pennpetro Energy PLC | Powering the World Responsibly',
+        description: 'Discover how Pennpetro Energy PLC delivers reliable and responsible energy solutions through oil, gas, and advanced technologies worldwide.',
+        ogDescription: 'Explore Pennpetro Energy PLC’s core energy operations — driving progress through innovation, efficiency, and a commitment to global energy needs.',
         ogImage: '/Logo/Full_Penn_Petro_Energy_Logo.jpg',
-        ogImageAlt: 'Penn Petro Energy infrastructure including oil rigs, pipelines, and control rooms.',
+        ogImageAlt: 'Pennpetro Energy PLC infrastructure including oil rigs, pipelines, and control rooms.',
         ogUrl: 'https://vercel.com/bom-projects/pen-oil/what/energy',
 
         twitterCard: 'summary_large_image',
-        twitterTitle: 'What We Do | Energy at Penn Petro Energy',
-        twitterDescription: 'Penn Petro Energy provides integrated energy solutions with a focus on reliability, sustainability, and innovation across global markets.',
+        twitterTitle: 'What We Do | Energy at Pennpetro Energy PLC',
+        twitterDescription: 'Pennpetro Energy PLC provides integrated energy solutions with a focus on reliability, sustainability, and innovation across global markets.',
         twitterImage: '/Logo/Full_Penn_Petro_Energy_Logo.jpg',
 
-        keywords: 'Penn Petro Energy operations, oil and gas solutions, global energy production, energy infrastructure, upstream and downstream energy, energy innovation, responsible energy company',
+        keywords: 'Pennpetro Energy PLC operations, oil and gas solutions, global energy production, energy infrastructure, upstream and downstream energy, energy innovation, responsible energy company',
     });
 
     import { whatEnergyHeroVideoBg } from '~/models/heroBgModels';
@@ -185,7 +185,7 @@
                             </h3>
 
                             <p class="text-(--white) text-center text-lg">
-                                Together with our partners, Penn Petro Energy is a leading manufacturer of petrochemicals and additives that are essential to creating everyday consumer and industrial products, as well as maximizing the reliability, efficiency and life of engines.
+                                Together with our partners, Pennpetro Energy PLC is a leading manufacturer of petrochemicals and additives that are essential to creating everyday consumer and industrial products, as well as maximizing the reliability, efficiency and life of engines.
                             </p>
 
                             <!-- See chemicals and additives -->

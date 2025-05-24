@@ -3,25 +3,25 @@
     import { useHead } from 'nuxt/app';
 
     useHead({
-        title: 'Sustainability Penn Petro Energy',
-        titleTemplate: '%s | Penn Petro Energy'
+        title: 'Sustainability Pennpetro Energy PLC',
+        titleTemplate: '%s | Pennpetro Energy PLC'
     });
 
     useSeoMeta({
-        title: 'Penn Petro Energy Sustainability | Environmental & Social Commitment',
-        ogTitle: 'Penn Petro Energy | Our Sustainability Vision and Impact',
-        description: 'Learn how Penn Petro Energy is leading sustainability efforts in the energy sector through responsible practices, innovation, and a commitment to environmental and social stewardship.',
-        ogDescription: 'Explore Penn Petro Energy’s commitment to a sustainable future. From reducing emissions to supporting communities, see how we integrate sustainability into every aspect of our operations.',
+        title: 'Pennpetro Energy PLC Sustainability | Environmental & Social Commitment',
+        ogTitle: 'Pennpetro Energy PLC | Our Sustainability Vision and Impact',
+        description: 'Learn how Pennpetro Energy PLC is leading sustainability efforts in the energy sector through responsible practices, innovation, and a commitment to environmental and social stewardship.',
+        ogDescription: 'Explore Pennpetro Energy PLC’s commitment to a sustainable future. From reducing emissions to supporting communities, see how we integrate sustainability into every aspect of our operations.',
         ogImage: '/images/sustainability/sustainability-hero.jpg',
-        ogImageAlt: 'Penn Petro Energy sustainability initiatives showing renewable energy and community support efforts.',
+        ogImageAlt: 'Pennpetro Energy PLC sustainability initiatives showing renewable energy and community support efforts.',
         ogUrl: 'https://vercel.com/bom-projects/pen-oil/sustainability/overview',
 
         twitterCard: 'summary_large_image',
-        twitterTitle: 'Penn Petro Energy | Our Path to a Sustainable Energy Future',
-        twitterDescription: 'Discover how Penn Petro Energy is transforming the global energy landscape with sustainability at its core.',
+        twitterTitle: 'Pennpetro Energy PLC | Our Path to a Sustainable Energy Future',
+        twitterDescription: 'Discover how Pennpetro Energy PLC is transforming the global energy landscape with sustainability at its core.',
         twitterImage: '/images/Logo/Full_Penn_Petro_Energy_Logo.jpg',
 
-        keywords: 'Penn Petro Energy sustainability, sustainable energy solutions, environmental responsibility, corporate social responsibility, clean energy initiatives, energy transition, sustainable oil and gas practices',
+        keywords: 'Pennpetro Energy PLC sustainability, sustainable energy solutions, environmental responsibility, corporate social responsibility, clean energy initiatives, energy transition, sustainable oil and gas practices',
     });
 
     import { sustainabilityOverviewHeroVideoBg } from '~/models/heroBgModels';
@@ -200,8 +200,8 @@
                         <!-- Social Investment -->
                         <div class="grid p-4 md:p-6 gap-4 md:gap-8 rounded-2xl bg-(--medium-teal) shadow-lg">
                             <NuxtImg
-                                src="/sustainability/Sustainability_SocialinvestmentThumbnail.jpg"
-                                alt="Children playing with their toys"
+                                src="https://images.pexels.com/photos/6288088/pexels-photo-6288088.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                alt="A Woman and Girl Playing Together"
                                 loading="lazy"
                                 class="w-full h-50 sm:h-60 object-cover rounded-2xl"
                             />
@@ -256,7 +256,7 @@
                                 </h2>
 
                                 <p class="text-(--white) text-base md:text-lg">
-                                    Our success is driven by a dedicated, diverse and highly skilled global workforce united by The Penn Petro Energy Way. 
+                                    Our success is driven by a dedicated, diverse and highly skilled global workforce united by The Pennpetro Energy PLC Way. 
                                     We treat our employees and our partners with respect and dignity.
                                 </p>
 
@@ -295,7 +295,7 @@
             <div class="w-full h-full">           
                 <HomeNewsroom
                     category="newsroom" 
-                    title="Latest at Penn Petro Energy"
+                    title="Latest at Pennpetro Energy PLC"
                 />
             </div>
 

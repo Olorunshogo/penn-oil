@@ -3,25 +3,25 @@
     import { useHead } from 'nuxt/app';
 
     useHead({
-        title: 'Penn Petro Energy Culture',
-        titleTemplate: '%s | Penn Petro Energy'
+        title: 'Pennpetro Energy PLC Culture',
+        titleTemplate: '%s | Pennpetro Energy PLC'
     });
 
     useSeoMeta({
-        title: 'Our Culture | Life at Penn Petro Energy',
-        ogTitle: 'Inside Penn Petro Energy | Culture & People',
-        description: 'Discover the values, collaboration, and purpose that shape Penn Petro Energy’s culture. Learn how we foster innovation, inclusion, and growth every day.',
-        ogDescription: 'Explore the culture at Penn Petro Energy — where diverse talent, shared values, and a commitment to impact drive our success in the global energy sector.',
+        title: 'Our Culture | Life at Pennpetro Energy PLC',
+        ogTitle: 'Inside Pennpetro Energy PLC | Culture & People',
+        description: 'Discover the values, collaboration, and purpose that shape Pennpetro Energy PLC’s culture. Learn how we foster innovation, inclusion, and growth every day.',
+        ogDescription: 'Explore the culture at Pennpetro Energy PLC — where diverse talent, shared values, and a commitment to impact drive our success in the global energy sector.',
         ogImage: '/Logo/Full_Penn_Petro_Energy_Logo.jpg',
-        ogImageAlt: 'Penn Petro Energy employees collaborating in diverse work settings.',
+        ogImageAlt: 'Pennpetro Energy PLC employees collaborating in diverse work settings.',
         ogUrl: 'https://vercel.com/bom-projects/pen-oil/who/culture',
 
         twitterCard: 'summary_large_image',
-        twitterTitle: 'Our Culture | People-First at Penn Petro Energy',
-        twitterDescription: 'At Penn Petro Energy, our culture is built on respect, innovation, and impact. See how our people make energy work for a better tomorrow.',
+        twitterTitle: 'Our Culture | People-First at Pennpetro Energy PLC',
+        twitterDescription: 'At Pennpetro Energy PLC, our culture is built on respect, innovation, and impact. See how our people make energy work for a better tomorrow.',
         twitterImage: '/Logo/Full_Penn_Petro_Energy_Logo.jpg',
 
-        keywords: 'Penn Petro Energy culture, company values, employee experience, energy careers, workplace diversity, innovation culture, inclusive energy company, Penn Petro people',
+        keywords: 'Pennpetro Energy PLC culture, company values, employee experience, energy careers, workplace diversity, innovation culture, inclusive energy company, Penn Petro people',
     });
 
     import { 
@@ -49,11 +49,11 @@
             />
         </div>
 
-        <!-- Section: Our way is the Penn Petro Energy way, We strive for excellence in everything we do and Diversity and inclusion make us stronger  -->
+        <!-- Section: Our way is the Pennpetro Energy PLC way, We strive for excellence in everything we do and Diversity and inclusion make us stronger  -->
         <section>
             <div class="grid bg-(--white) gap-16 lg:gap-28 w-full max-w-7xl mx-auto h-full overflow-hidden px-(--section-px) lg:px-(--section-py-lx) py-(--section-py) lg:py-(--section-py-lg)">
                 
-                <!-- Our way is the Penn Petro Energy way -->
+                <!-- Our way is the Pennpetro Energy PLC way -->
                 <div class="flex flex-col lg:flex-row *:w-full *:lg:w-1/2 w-full max-w-xl lg:max-w-7xl mx-auto shadow-lg h-full">
                     <NuxtImg
                         src="https://images.pexels.com/photos/7414108/pexels-photo-7414108.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
@@ -65,8 +65,8 @@
                     <div class="flex flex-col justify-center items-center bg-(--dark-blue) h-full lg: w-full rounded-b-2xl lg:rounded-r-2xl">                        
                         <div class="flex flex-col items-center justify-center p-4 lg:p-8 gap-4 lg:gap-8 max-w-2xl h-full lg:h-fit">
                             <h3 class="text-4xl text-center text-(--light-blue) font-extrabold w-full h-full">
-                                <!-- Our way is the Penn Petro Energy way -->
-                                The Penn Petro Energy way
+                                <!-- Our way is the Pennpetro Energy PLC way -->
+                                The Pennpetro Energy PLC way
                             </h3>
 
                             <p class="text-(--white) text-center text-lg">
@@ -114,7 +114,7 @@
                             </h3>
 
                             <p class="text-(--white) text-center text-lg">
-                                Operational Excellence (OE) aims to put into action our Penn Petro Energy's Way, a set of values that helps protect people and the environment and helps us achieve Penn Petro Energy’s vision to be the global energy company most admired for its people, partnership and performance.
+                                Operational Excellence (OE) aims to put into action our Pennpetro Energy PLC's Way, a set of values that helps protect people and the environment and helps us achieve Pennpetro Energy PLC’s vision to be the global energy company most admired for its people, partnership and performance.
                             </p>
 
                             <!-- Learn about our history -->
@@ -194,11 +194,11 @@
                             id="humanKind"
                             class="text-4xl sm:text-5xl lg:text-7xl text-(--light-blue) text-wrap text-center font-extrabold cursor-text w-full h-full overflow-hidden"
                         >
-                            Penn Petro Energy humankind
+                            Pennpetro Energy PLC humankind
                         </h2>
 
                         <p class="text-(--white) text-center text-lg">
-                            Our Penn Petro Energy humankind initiative is a program in the United States that offers support from our employees to their communities.
+                            Our Pennpetro Energy PLC humankind initiative is a program in the United States that offers support from our employees to their communities.
                         </p>
                     </div>
 
@@ -206,7 +206,7 @@
                         <h2 
                             class="text-4xl sm:text-5xl text-(--white) text-wrap text-center font-extrabold"
                         >
-                            2023 Penn Petro Energy humankind at a glance
+                            2023 Pennpetro Energy PLC humankind at a glance
                         </h2>
 
                         <div class="grid md:grid-cols-2 gap-6 w-full h-full text-(--white) *:md:h-80">
@@ -221,10 +221,10 @@
                                 </span>
                             </div>
 
-                            <!-- Number of employees and retirees who volunteered through Penn Petro Energy Humankind -->
+                            <!-- Number of employees and retirees who volunteered through Pennpetro Energy PLC Humankind -->
                             <div class="flex flex-col items-center justify-center gap-4 p-8 rounded-2xl bg-(--medium-blue) w-full mx-auto h-full">
                                 <p class="text-lg text-center">
-                                    Number of employees and retirees who volunteered through Penn Petro Energy Humankind
+                                    Number of employees and retirees who volunteered through Pennpetro Energy PLC Humankind
                                 </p>
                                 <span class="text-5xl sm:text-6xl md:text-7xl xl:text-8xl font-extrabold">
                                     {{ employeeTotal }}
@@ -241,10 +241,10 @@
                                 </span>
                             </div>
 
-                            <!-- Number of charitable organizations in the U.S. who benefited from volunteer time as part of U.S. Penn Petro Energy Humankind -->
+                            <!-- Number of charitable organizations in the U.S. who benefited from volunteer time as part of U.S. Pennpetro Energy PLC Humankind -->
                             <div class="flex flex-col items-center justify-center gap-4 p-8 rounded-2xl bg-(--medium-blue) w-full mx-auto h-full">
                                 <p class="text-lg text-center">
-                                    Number of charitable organizations in the U.S. who benefited from volunteer time as part of U.S. Penn Petro Energy Humankind
+                                    Number of charitable organizations in the U.S. who benefited from volunteer time as part of U.S. Pennpetro Energy PLC Humankind
                                 </p>
                                 <span class="text-5xl sm:text-6xl md:text-7xl xl:text-8xl font-extrabold">
                                     {{ volunteerTotalHours }}

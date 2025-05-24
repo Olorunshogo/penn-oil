@@ -3,25 +3,25 @@
     import { useHead } from 'nuxt/app';
 
     useHead({
-        title: 'Climate Penn Petro Energy',
-        titleTemplate: '%s | Penn Petro Energy'
+        title: 'Climate Pennpetro Energy PLC',
+        titleTemplate: '%s | Pennpetro Energy PLC'
     });
 
     useSeoMeta({
-        title: 'Penn Petro Energy Climate Strategy | Tackling Climate Change Responsibly',
-        ogTitle: 'Penn Petro Energy | Climate Action and Carbon Reduction Goals',
-        description: 'Discover Penn Petro Energy’s approach to addressing climate change through carbon reduction, innovation in energy technologies, and alignment with global climate goals.',
-        ogDescription: 'See how Penn Petro Energy is working to reduce emissions, invest in clean technologies, and support a low-carbon future through its climate strategy.',
+        title: 'Pennpetro Energy PLC Climate Strategy | Tackling Climate Change Responsibly',
+        ogTitle: 'Pennpetro Energy PLC | Climate Action and Carbon Reduction Goals',
+        description: 'Discover Pennpetro Energy PLC’s approach to addressing climate change through carbon reduction, innovation in energy technologies, and alignment with global climate goals.',
+        ogDescription: 'See how Pennpetro Energy PLC is working to reduce emissions, invest in clean technologies, and support a low-carbon future through its climate strategy.',
         ogImage: '/Logo/Full_Penn_Petro_Energy_Logo.jpg',
-        ogImageAlt: 'Visual representing Penn Petro Energy’s carbon reduction goals and climate initiatives.',
+        ogImageAlt: 'Visual representing Pennpetro Energy PLC’s carbon reduction goals and climate initiatives.',
         ogUrl: 'https://vercel.com/bom-projects/pen-oil/sustainability/climate',
 
         twitterCard: 'summary_large_image',
-        twitterTitle: 'Penn Petro Energy | Our Climate Strategy and Low-Carbon Future',
-        twitterDescription: 'Penn Petro Energy is committed to climate action through innovation, reduced emissions, and long-term sustainability leadership.',
+        twitterTitle: 'Pennpetro Energy PLC | Our Climate Strategy and Low-Carbon Future',
+        twitterDescription: 'Pennpetro Energy PLC is committed to climate action through innovation, reduced emissions, and long-term sustainability leadership.',
         twitterImage: '/Logo/Full_Penn_Petro_Energy_Logo.jpg',
 
-        keywords: 'Penn Petro Energy climate strategy, carbon reduction goals, low-carbon energy, tackling climate change, sustainable energy transition, emissions reduction, clean energy innovation',
+        keywords: 'Pennpetro Energy PLC climate strategy, carbon reduction goals, low-carbon energy, tackling climate change, sustainable energy transition, emissions reduction, clean energy innovation',
     });
 
     import { 
@@ -88,12 +88,12 @@
                     </div>
 
                     <!-- Video: Climate Page Global Population Final -->
-                    <div class="flex flex-col items-center justify-center gap-8 *:text-center text-(--white) w-full h-full">
+                    <!-- <div class="flex flex-col items-center justify-center gap-8 *:text-center text-(--white) w-full h-full">
                         
                         <video width="640" height="360" controls autoplay loop>
                             <source src="/sustainability/Climate_Page_global_population_final.mp4" type="video/mp4" >
                         </video>
-                    </div>
+                    </div> -->
 
                     <!-- A mix that includes oil and gas can help satisfy those demands -->
                     <div class="flex flex-col items-center justify-center gap-8 *:text-center text-(--white) w-full h-full">
@@ -105,13 +105,13 @@
                     </div>
 
                     <!-- Video: Climate Higher Standard -->
-                    <div class="flex flex-col items-center justify-center gap-8 *:text-center text-(--white) w-full h-full">
+                    <!-- <div class="flex flex-col items-center justify-center gap-8 *:text-center text-(--white) w-full h-full">
                         
                         <video width="640" height="360" controls autoplay loop>
                             <source src="/sustainability/Climate_higher_standard_video.mp4" type="video/mp4" >
                         </video>
                         
-                    </div>
+                    </div> -->
 
                     <div class="flex flex-col gap-4 px-4 max-w-7xl mx-auto w-full h-full">
                         <p class="text-sm md:text-base text-(--white) ">
@@ -305,8 +305,8 @@
                 </div>
 
                 <p class="text-base text-(--white) pb-60 px-4 max-w-7xl mx-auto">
-                    *Penn Petro Energy’s ability to achieve any ambition, including with respect to climate-related initiatives and any new businesses, is subject to numerous risks and contingencies, many of which are outside of Penn Petro Energy’s control. 
-                    Penn Petro Energy regularly evaluates its ambitions and expects to change some of these aspirations, targets, and other ambitions for various reasons, including market conditions, its strategy or portfolio, and financial, operational, policy, reputational, legal and other factors. 
+                    *Pennpetro Energy PLC’s ability to achieve any ambition, including with respect to climate-related initiatives and any new businesses, is subject to numerous risks and contingencies, many of which are outside of Pennpetro Energy PLC’s control. 
+                    Pennpetro Energy PLC regularly evaluates its ambitions and expects to change some of these aspirations, targets, and other ambitions for various reasons, including market conditions, its strategy or portfolio, and financial, operational, policy, reputational, legal and other factors. 
                     Our focus on helping meet the world’s energy needs while lowering the carbon intensity of our operations remains unchanged.
                     For Forward-Looking Statements and Other Disclaimers, visit 
                     <NuxtLink
@@ -319,38 +319,6 @@
             </div>
         </section>
 
-        <!-- Many solutions will be needed to build the lower carbon energy system of the future -->
-        <section>                  
-            <div class="relative bg-(--white) px-(--section-px) lg:px-(--section-px-lg) py-(--section-py) lg:py-(--section-py-lg) -mt-[11rem] w-full h-full">
-
-                <div class="flex flex-col gap-24 py-16 w-full max-w-7xl mx-auto h-full">
-    
-                    <!-- Image Container -->
-                    <NuxtImg
-                        src="https://images.pexels.com/photos/323933/pexels-photo-323933.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                        alt="Close Up of Blue Paint"
-                        loading="lazy"
-                        class="relative h-100 lg:h-130 rounded-lg w-9/10 lg:w-full max-w-4xl mx-auto object-cover"
-                    />                
-
-                    <div class="flex flex-col items-center justify-center gap-12 w-full h-full">
-                        <h2 class="text-3xl sm:text-4xl lg:text-8xl font-extrabold text-(--medium-blue) text-center">
-                            "Many solutions will be needed to build the lower carbon energy system of the future.”
-                        </h2>
-
-                        <div class="flex flex-col items-center justify-center *:text-center text-(--black) gap-4 w-full h-full">
-                            <h2 class="text-xl md:text-2xl font-bold">
-                                Mike Wirth
-                            </h2>
-                            <p class="text-lg">
-                                Chairman of the board and chief executive officer
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </section>
 
         <!-- Section: Home Newsroom -->
         <section>
@@ -358,7 +326,7 @@
             <div class="w-full h-full">           
                 <HomeNewsroom
                     category="newsroom" 
-                    title="Latest at Penn Petro Energy"
+                    title="Latest at Pennpetro Energy PLC"
                 />
             </div>
 

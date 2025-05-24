@@ -2,25 +2,25 @@
 <script lang="ts" setup>
     import { useHead } from 'nuxt/app';
     useHead({
-        title: 'Penn Petro Energy Investors: Delivering Strong Results',
-        titleTemplate: '%s | Penn Petro Energy'
+        title: 'Pennpetro Energy PLC Investors: Delivering Strong Results',
+        titleTemplate: '%s | Pennpetro Energy PLC'
     });
 
     useSeoMeta({
-        title: 'Invest in Penn Petro Energy | Powering the Future of Global Energy',
-        ogTitle: 'Join Penn Petro Energy as an Investor - Shaping the Future of Energy',
-        description: 'Discover investment opportunities with Penn Petro Energy, a global leader in energy innovation and sustainability. Explore our vision, performance, and commitment to a cleaner energy future.',
-        ogDescription: 'Invest in Penn Petro Energy and be part of a company that’s revolutionizing the energy sector with innovative solutions and sustainable practices. A great investment opportunity for a cleaner tomorrow.',
+        title: 'Invest in Pennpetro Energy PLC | Powering the Future of Global Energy',
+        ogTitle: 'Join Pennpetro Energy PLC as an Investor - Shaping the Future of Energy',
+        description: 'Discover investment opportunities with Pennpetro Energy PLC, a global leader in energy innovation and sustainability. Explore our vision, performance, and commitment to a cleaner energy future.',
+        ogDescription: 'Invest in Pennpetro Energy PLC and be part of a company that’s revolutionizing the energy sector with innovative solutions and sustainable practices. A great investment opportunity for a cleaner tomorrow.',
         ogImage: '/Logo/Full_Penn_Petro_Energy_Logo.jpg',
-        ogImageAlt: 'Overview of Penn Petro Energy’s global operations and leadership team.',
+        ogImageAlt: 'Overview of Pennpetro Energy PLC’s global operations and leadership team.',
         ogUrl: 'https://vercel.com/bom-projects/pen-oil/investor-overview',
 
         twitterCard: 'summary_large_image',
-        twitterTitle: 'Invest in Penn Petro Energy | Leading the Future of Energy',
-        twitterDescription: 'Explore investment opportunities with Penn Petro Energy, a company committed to advancing sustainable energy solutions. Join us in shaping the future of global energy.',
+        twitterTitle: 'Invest in Pennpetro Energy PLC | Leading the Future of Energy',
+        twitterDescription: 'Explore investment opportunities with Pennpetro Energy PLC, a company committed to advancing sustainable energy solutions. Join us in shaping the future of global energy.',
         twitterImage: '/Logo/Full_Penn_Petro_Energy_Logo.jpg',
 
-        keywords: 'Penn Petro Energy investment, energy sector investment, clean energy stocks, sustainable energy investment, global energy companies, green energy investment, energy innovation, sustainable energy solutions',
+        keywords: 'Pennpetro Energy PLC investment, energy sector investment, clean energy stocks, sustainable energy investment, global energy companies, green energy investment, energy innovation, sustainable energy solutions',
     });
 
     import { 
@@ -607,7 +607,7 @@
 
                         </div>  
 
-                        <!-- Penn Petro Energy leaders share their vision for the future of CERAWeek 2025 -->
+                        <!-- Pennpetro Energy PLC leaders share their vision for the future of CERAWeek 2025 -->
                         <div class="flex flex-col gap-4 lg:gap-8 bg-(--dark-green) p-4 rounded-2xl shadow-lg">
                             <NuxtImg
                                 src="/investors/cnbc-joins-penn-ceo-in-gulf-of-mexico-to-discuss-deepwater-achievements-hero.jpg"
@@ -624,7 +624,7 @@
                                 <h2 
                                     class="text-lg lg:text-xl text-(--white)"
                                 >
-                                    Penn Petro Energy leaders share their vision for the future of CERAWeek 2025
+                                    Pennpetro Energy PLC leaders share their vision for the future of CERAWeek 2025
                                 </h2>
 
                                 <NuxtLink
@@ -647,7 +647,7 @@
 
                         </div>
 
-                        <!-- Engine No. 1 Penn Petro Energy and GE Vernova to power U.S. data centers -->
+                        <!-- Engine No. 1 Pennpetro Energy PLC and GE Vernova to power U.S. data centers -->
                         <div class="flex flex-col gap-4 lg:gap-8 bg-(--dark-orange) p-4 rounded-2xl shadow-lg">
                             <NuxtImg
                                 src="/investors/penn-ceo-talks-growing-production-efficient-spending-hero.jpg"
@@ -664,7 +664,7 @@
                                 <h2 
                                     class="text-lg lg:text-xl text-(--white)"
                                 >
-                                    Engine No. 1 Penn Petro Energy and GE Vernova to power U.S. data centers
+                                    Engine No. 1 Pennpetro Energy PLC and GE Vernova to power U.S. data centers
                                 </h2>
 
                                 <NuxtLink
@@ -687,7 +687,7 @@
 
                         </div>
 
-                        <!-- Penn Petro Energy achieves first oil future growth project in Kazakhstan -->
+                        <!-- Pennpetro Energy PLC achieves first oil future growth project in Kazakhstan -->
                         <div class="flex flex-col gap-4 lg:gap-8 bg-(--dark-red) p-4 rounded-2xl shadow-lg">
                             <NuxtImg
                                 src="/investors/cnbc-joins-penn-ceo-in-gulf-of-mexico-to-discuss-deepwater-achievements-hero.jpg"
@@ -704,7 +704,7 @@
                                 <h2 
                                     class="text-lg lg:text-xl text-(--white)"
                                 >
-                                    Penn Petro Energy achieves first oil future growth project in Kazakhstan
+                                    Pennpetro Energy PLC achieves first oil future growth project in Kazakhstan
                                 </h2>
 
                                 <NuxtLink
@@ -727,7 +727,7 @@
 
                         </div>
 
-                        <!-- Penn Petro Energy-hess merger clears FTC antitrust review -->
+                        <!-- Pennpetro Energy PLC-hess merger clears FTC antitrust review -->
                         <div class="flex flex-col gap-4 lg:gap-8 bg-(--dark-teal) p-4 rounded-2xl shadow-lg">
                             <NuxtImg
                                 src="/investors/penn-ceo-talks-growing-production-efficient-spending-hero.jpg"
@@ -744,7 +744,7 @@
                                 <h2 
                                     class="text-lg lg:text-xl text-(--white)"
                                 >
-                                    Penn Petro Energy-hess merger clears FTC antitrust review
+                                    Pennpetro Energy PLC-hess merger clears FTC antitrust review
                                 </h2>
 
                                 <NuxtLink
@@ -767,7 +767,7 @@
 
                         </div>
 
-                        <!-- CNBC joins Penn Petro Energy CEO in gulf of america to discuss deepwater achievement -->
+                        <!-- CNBC joins Pennpetro Energy PLC CEO in gulf of america to discuss deepwater achievement -->
                         <div class="flex flex-col gap-4 lg:gap-8 bg-(--dark-blue) p-4 rounded-2xl shadow-lg">
                             <NuxtImg
                                 src="/investors/cnbc-joins-penn-ceo-in-gulf-of-mexico-to-discuss-deepwater-achievements-hero.jpg"
@@ -784,10 +784,10 @@
                                 <h2 
                                     class="text-lg lg:text-xl text-(--white)"
                                 >
-                                    CNBC joins Penn Petro Energy CEO in gulf of america to discuss deepwater achievement
+                                    CNBC joins Pennpetro Energy PLC CEO in gulf of america to discuss deepwater achievement
                                 </h2>
 
-                                <!-- CNBC joins Penn Petro Energy CEO in gulf of america to discuss deepwater achievement -->
+                                <!-- CNBC joins Pennpetro Energy PLC CEO in gulf of america to discuss deepwater achievement -->
                                 <NuxtLink
                                     to="/sustainability/social"
                                     class="group flex *:flex items-center *:items-center justify-center px-2 lg:px-8 py-2 gap-2 lg:gap-4 w-fit text-(--white) hover:text-(--light-blue) duration-300 ease-in-out transition-all"
@@ -808,7 +808,7 @@
 
                         </div> 
 
-                        <!-- Penn Petro Energy CEO talks growing production, efficient spending -->
+                        <!-- Pennpetro Energy PLC CEO talks growing production, efficient spending -->
                         <div class="flex flex-col gap-4 lg:gap-8 bg-(--dark-green) p-4 rounded-2xl shadow-lg">
                             <NuxtImg
                                 src="https://images.pexels.com/photos/8370328/pexels-photo-8370328.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
@@ -825,7 +825,7 @@
                                 <h2 
                                     class="text-lg lg:text-xl text-(--white)"
                                 >
-                                    Penn Petro Energy CEO talks growing production, efficient spending
+                                    Pennpetro Energy PLC CEO talks growing production, efficient spending
                                 </h2>
 
                                 <NuxtLink

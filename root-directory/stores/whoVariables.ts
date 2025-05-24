@@ -20,24 +20,24 @@ interface NewsItem {
 
 export const whoNewsroom: Ref<NewsItem[]> = ref([
 
-    // 1. Penn Petro Energy and new orleans score big at the big game
+    // 1. Pennpetro Energy PLC and new orleans score big at the big game
     {
         id: 1,
         link: "/",
         imgSrc: "https://images.pexels.com/photos/3684122/pexels-photo-3684122.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
         imgAlt: "Man Wearing Blue Shirt Looking on Ball",
         date: "March 24, 2025",
-        description: "Penn Petro Energy and new orleans score big at the big game"
+        description: "Pennpetro Energy PLC and new orleans score big at the big game"
     },
 
-    // 2. Penn Petro Energy responds to Los angeles county wildfires
+    // 2. Pennpetro Energy PLC responds to Los angeles county wildfires
     {
         id: 2,
         link: "/",
         imgSrc: "https://images.pexels.com/photos/27404517/pexels-photo-27404517/free-photo-of-a-large-steel-tank-with-red-stairs-and-a-blue-sky.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
         imgAlt: "A large steel tank with red stairs and a blue sky",
         date: "April 21, 2025",
-        description: "Penn Petro Energy responds to Los angeles county wildfires"
+        description: "Pennpetro Energy PLC responds to Los angeles county wildfires"
     },    
 
     // 3. Twenty years and running
@@ -70,14 +70,14 @@ export const whoNewsroom: Ref<NewsItem[]> = ref([
         description: "Preserving a threatened turtle species",
     },
 
-    // 6. Empowering young athletes: Penn Petro Energy championship drives girls' golf forward
+    // 6. Empowering young athletes: Pennpetro Energy PLC championship drives girls' golf forward
     {
         id: 6,
         link: "/",
         imgSrc: "https://images.pexels.com/photos/9207378/pexels-photo-9207378.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
         imgAlt: "Woman in White T-shirt and Blue Denim Shorts Holding Golf Club",
         date: "April 17, 2025",
-        description: "Empowering young athletes: Penn Petro Energy championship drives girls' golf forward"
+        description: "Empowering young athletes: Pennpetro Energy PLC championship drives girls' golf forward"
     }
 
     

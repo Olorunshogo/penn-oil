@@ -3,25 +3,25 @@
     import { useHead } from 'nuxt/app';
 
     useHead({
-        title: 'Penn Petro Energy Leadership',
-        titleTemplate: '%s | Penn Petro Energy'
+        title: 'Pennpetro Energy PLC Leadership',
+        titleTemplate: '%s | Pennpetro Energy PLC'
     });
 
     useSeoMeta({
-        title: 'Leadership Team | Penn Petro Energy',
-        ogTitle: 'Meet the Leaders of Penn Petro Energy',
-        description: 'Get to know the executive leadership behind Penn Petro Energy. Our leaders drive innovation, sustainability, and growth across the global energy sector.',
-        ogDescription: 'Discover the people guiding Penn Petro Energy. Our experienced leadership team is committed to shaping a sustainable and forward-thinking energy future.',
+        title: 'Leadership Team | Pennpetro Energy PLC',
+        ogTitle: 'Meet the Leaders of Pennpetro Energy PLC',
+        description: 'Get to know the executive leadership behind Pennpetro Energy PLC. Our leaders drive innovation, sustainability, and growth across the global energy sector.',
+        ogDescription: 'Discover the people guiding Pennpetro Energy PLC. Our experienced leadership team is committed to shaping a sustainable and forward-thinking energy future.',
         ogImage: '/Logo/Full_Penn_Petro_Energy_Logo.jpg',
-        ogImageAlt: 'Penn Petro Energy executive team in discussion and at energy sites.',
+        ogImageAlt: 'Pennpetro Energy PLC executive team in discussion and at energy sites.',
         ogUrl: 'https://vercel.com/bom-projects/pen-oil/who/leadership',
 
         twitterCard: 'summary_large_image',
-        twitterTitle: 'Penn Petro Energy Leadership | Visionary Energy Experts',
-        twitterDescription: 'Meet the visionary leaders driving Penn Petro Energy’s global strategy, innovation, and commitment to responsible energy solutions.',
+        twitterTitle: 'Pennpetro Energy PLC Leadership | Visionary Energy Experts',
+        twitterDescription: 'Meet the visionary leaders driving Pennpetro Energy PLC’s global strategy, innovation, and commitment to responsible energy solutions.',
         twitterImage: '/Logo/Full_Penn_Petro_Energy_Logo.jpg',
 
-        keywords: 'Penn Petro Energy leadership, executive team, energy industry leaders, company executives, energy innovation leadership, oil and gas leadership, Penn Petro executives',
+        keywords: 'Pennpetro Energy PLC leadership, executive team, energy industry leaders, company executives, energy innovation leadership, oil and gas leadership, Penn Petro executives',
     });
 
     import { whoLeadershipHeroImageBg } from '~/models/heroBgModels';  

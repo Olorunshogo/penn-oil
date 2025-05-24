@@ -9,7 +9,7 @@ export default defineNuxtConfig({
 
   app: {
     head: {
-      title: 'Penn Petro Energy Corporation - Human Energy | https://vercel.com/bom-projects/pen-oil',
+      title: 'Pennpetro Energy PLC Corporation - Human Energy | https://vercel.com/bom-projects/pen-oil',
       charset: 'utf-16',
       viewport: 'width=device-width, initial-scale=1, maximum-scale=5, user-scalable=yes',
       htmlAttrs: {

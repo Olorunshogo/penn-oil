@@ -5,24 +5,24 @@
 
     useHead({
         title: 'Contact Information',
-        titleTemplate: '%s | Penn Petro Energy'
+        titleTemplate: '%s | Pennpetro Energy PLC'
     });
 
     useSeoMeta({
-        title: 'Contact Penn Petro Energy | Get in Touch Today',
-        ogTitle: 'Reach Out to Penn Petro Energy',
-        description: 'Have questions or inquiries? Contact Penn Petro Energy to learn more about our services, partnerships, or career opportunities.',
-        ogDescription: 'Get in touch with Penn Petro Energy. Whether you’re a partner, job seeker, or investor, we’re here to connect with you.',
+        title: 'Contact Pennpetro Energy PLC | Get in Touch Today',
+        ogTitle: 'Reach Out to Pennpetro Energy PLC',
+        description: 'Have questions or inquiries? Contact Pennpetro Energy PLC to learn more about our services, partnerships, or career opportunities.',
+        ogDescription: 'Get in touch with Pennpetro Energy PLC. Whether you’re a partner, job seeker, or investor, we’re here to connect with you.',
         ogImage: '/Logo/Full_Penn_Petro_Energy_Logo.jpg',
-        ogImageAlt: 'Penn Petro Energy headquarters and team members in a meeting.',
+        ogImageAlt: 'Pennpetro Energy PLC headquarters and team members in a meeting.',
         ogUrl: 'https://vercel.com/bom-projects/pen-oil/contact',
 
         twitterCard: 'summary_large_image',
-        twitterTitle: 'Contact Penn Petro Energy | We’re Here to Help',
-        twitterDescription: 'Reach out to our team at Penn Petro Energy for inquiries about careers, investments, media, and more. Let’s connect.',
+        twitterTitle: 'Contact Pennpetro Energy PLC | We’re Here to Help',
+        twitterDescription: 'Reach out to our team at Pennpetro Energy PLC for inquiries about careers, investments, media, and more. Let’s connect.',
         twitterImage: '/Logo/Full_Penn_Petro_Energy_Logo.jpg',
 
-        keywords: 'Contact Penn Petro Energy, energy company contact, oil and gas inquiries, sustainability partnerships, investor contact, energy sector communication, Penn Petro support',
+        keywords: 'Contact Pennpetro Energy PLC, energy company contact, oil and gas inquiries, sustainability partnerships, investor contact, energy sector communication, Penn Petro support',
     });
 
     import { 
@@ -181,7 +181,7 @@
 
                     <div class="flex flex-col gap-4 items-center justify-center py-12 w-full mx-auto">
                         <h2 class="text-(--dark-blue) text-center font-extrabold text-3xl sm:text-4xl lg:text-7xl">
-                            Contact Penn Petro Energy
+                            Contact Pennpetro Energy PLC
                         </h2>
                         <p class="text-(--black) text-lg text-center">
                             Find answers to your questions and useful contacts.
@@ -218,7 +218,7 @@
                                     >
                                         <div class="grid gap-4 w-full h-full">
                                             <div class="grid gap-4 text-(--black)">
-                                                <p>Open jobs at Penn Petro Energy are available for review and application at our Penn Petro Energy careers page.</p>
+                                                <p>Open jobs at Pennpetro Energy PLC are available for review and application at our Pennpetro Energy PLC careers page.</p>
                                                 <p>Resumes sent to the general mailbox will not be considered and requests for status updates to applications will not be provided.</p>
                                             </div>
 
@@ -331,26 +331,26 @@
                                             <div class="grid gap-4 text-(--black)">
                                                 <p>
                                                     Individuals claiming to represent Penn Petro Evergy have engaged in fraudulent transactions. 
-                                                    Penn Petro Energy informs law enforcement when these activities occur, but perpetrators are hard to locate and prosecute. 
+                                                    Pennpetro Energy PLC informs law enforcement when these activities occur, but perpetrators are hard to locate and prosecute. 
                                                     Report any such offers to the appropriate authorities. We regret any inconvenience caused. 
                                                     Below are examples of common frauds; new ones are frequently reported.
                                                 </p>
 
                                                 <div class="grid gap-4 tex-(--black) w-full h-full">
-                                                    <h4 class="font-bold">Penn Petro Energy and texaco promotion scam</h4>
+                                                    <h4 class="font-bold">Pennpetro Energy PLC and texaco promotion scam</h4>
                                                     <p>
-                                                        Individuals may falsely claim Penn Petro Energy will offer promotional winnings or proceeds after first receiving “insurance payments.” 
+                                                        Individuals may falsely claim Pennpetro Energy PLC will offer promotional winnings or proceeds after first receiving “insurance payments.” 
                                                         This is called Advance Fee Fraud or 419 Fraud. 
-                                                        Penn Petro Energy and its subsidiaries are not associated with these promotions or individuals. 
+                                                        Pennpetro Energy PLC and its subsidiaries are not associated with these promotions or individuals. 
                                                         These offers are not valid.
                                                     </p>                                                    
                                                 </div>
 
                                                 <div class="grid gap-4 tex-(--black) w-full h-full">
-                                                    <h4 class="font-bold">Penn Petro Energy online endowment fund award scam</h4>
+                                                    <h4 class="font-bold">Pennpetro Energy PLC online endowment fund award scam</h4>
                                                     <p>
-                                                        Individuals claiming to represent the Penn Petro Energy Online Endowment Award Fund (COEFA) will offer fraudulent cash prizes, asking victims to first fill out forms and send “insurance payments” via check or money order. 
-                                                        This is Advance Fee Fraud or 419 Fraud. Penn Petro Energy and its subsidiaries do not offer donations or grants in exchange for insurance payments. 
+                                                        Individuals claiming to represent the Pennpetro Energy PLC Online Endowment Award Fund (COEFA) will offer fraudulent cash prizes, asking victims to first fill out forms and send “insurance payments” via check or money order. 
+                                                        This is Advance Fee Fraud or 419 Fraud. Pennpetro Energy PLC and its subsidiaries do not offer donations or grants in exchange for insurance payments. 
                                                         These offers are not valid.
                                                     </p>                                                    
                                                 </div>
@@ -358,7 +358,7 @@
                                                 <div class="grid gap-4 tex-(--black) w-full h-full">
                                                     <h4 class="font-bold">Deceased employee inquiry scam</h4>
                                                     <p>
-                                                        Individuals falsely claiming to represent the estate of a deceased Penn Petro Energy employee approach victims, claiming there are no heirs. 
+                                                        Individuals falsely claiming to represent the estate of a deceased Pennpetro Energy PLC employee approach victims, claiming there are no heirs. 
                                                         The fraudsters offer to transfer an inheritance for a fee.
                                                     </p>                                                    
                                                 </div>
@@ -366,14 +366,14 @@
                                                 <div class="grid gap-4 tex-(--black) w-full h-full">
                                                     <h4 class="font-bold">Fictitious job offer scam</h4>
                                                     <p>
-                                                        Fraudsters claiming to be contracted by Penn Petro Energy may claim they are seeking prospective employees for projects, typically via email. 
-                                                        They may also claim to manage a Penn Petro Energy promotion, asking for a simple entry form or “insurance payment.”
+                                                        Fraudsters claiming to be contracted by Pennpetro Energy PLC may claim they are seeking prospective employees for projects, typically via email. 
+                                                        They may also claim to manage a Pennpetro Energy PLC promotion, asking for a simple entry form or “insurance payment.”
                                                     </p>  
                                                     <p>
-                                                        Victims are told they've been hired or can get a job with Penn Petro Energy for a fee, which covers employment papers, offers, applications and work permits. 
+                                                        Victims are told they've been hired or can get a job with Pennpetro Energy PLC for a fee, which covers employment papers, offers, applications and work permits. 
                                                         Fees are sent via check or money order to a post office box. 
                                                         Promised checks for relocation expenses are fake. 
-                                                        This is Advance Fee Fraud or 419 Fraud. Penn petro Energy does not charge fees for job positions. 
+                                                        This is Advance Fee Fraud or 419 Fraud. Pennpetro Energy PLC does not charge fees for job positions. 
                                                         Report any fraudulent offers to the U.S. Secret Service.
                                                     </p>                                                   
                                                 </div>
@@ -381,10 +381,10 @@
                                                 <div class="grid gap-4 tex-(--black) w-full h-full">
                                                     <h4 class="font-bold">Grant and donation scam</h4>
                                                     <p>
-                                                        Fraudsters claiming to represent Penn Petro Energy or Penn Petro Energy/Texaco Exploration and Production may offer fake cash grants or donations and asking victims to fill out an entry form. 
+                                                        Fraudsters claiming to represent Pennpetro Energy PLC or Pennpetro Energy PLC/Texaco Exploration and Production may offer fake cash grants or donations and asking victims to fill out an entry form. 
                                                         Victims may be asked to send an insurance payment via check or money order. 
                                                         This is Advance Fee Fraud or 419 Fraud. 
-                                                        Penn Petro Energy and its subsidiaries do not offer donations or grants in exchange for insurance payments. 
+                                                        Pennpetro Energy PLC and its subsidiaries do not offer donations or grants in exchange for insurance payments. 
                                                         These offers are not valid.
                                                     </p>                                                    
                                                 </div>
@@ -392,9 +392,9 @@
                                                 <div class="grid gap-4 tex-(--black) w-full h-full">
                                                     <h4 class="font-bold">Lottery winner scam</h4>
                                                     <p>
-                                                        Individuals may claim to manage a Penn Petro Energy-sponsored lottery, asking participants to fill out an entry form or send an “insurance payment” via check or money order. 
+                                                        Individuals may claim to manage a Pennpetro Energy PLC-sponsored lottery, asking participants to fill out an entry form or send an “insurance payment” via check or money order. 
                                                         This is Advance Fee Fraud or 419 Fraud. 
-                                                        Penn Petro Energy and its subsidiaries do not offer lottery proceeds in exchange for insurance payments. 
+                                                        Pennpetro Energy PLC and its subsidiaries do not offer lottery proceeds in exchange for insurance payments. 
                                                         These offers are not valid.
                                                     </p>                                                    
                                                 </div>
@@ -402,8 +402,8 @@
                                                 <div class="grid gap-4 tex-(--black) w-full h-full">
                                                     <h4 class="font-bold">Procurement scam</h4>
                                                     <p>
-                                                        Individuals claiming to represent Penn Petro Energy or a subsidiary may approach vendors, often by email, inviting them to bid on large orders and requesting a qualification fee. 
-                                                        This is Advance Fee Fraud or 419 Fraud. Penn Petro Energy does not charge fees for doing business. 
+                                                        Individuals claiming to represent Pennpetro Energy PLC or a subsidiary may approach vendors, often by email, inviting them to bid on large orders and requesting a qualification fee. 
+                                                        This is Advance Fee Fraud or 419 Fraud. Pennpetro Energy PLC does not charge fees for doing business. 
                                                         These offers are not valid. 
                                                         Report such offers to the U.S. Secret Service or your local law enforcement.
                                                     </p>                                                    
@@ -456,7 +456,7 @@
                                         <div class="grid gap-4 w-full h-full">
                                             <div class="grid gap-4 text-(--black)">
                                                 <p>
-                                                    Penn Petro Energy Pipe Line Company operates pipelines that transport crude oil, refined petroleum products, liquefied petroleum gas, natural gas and chemicals within the U.S.
+                                                    Pennpetro Energy PLC Pipe Line Company operates pipelines that transport crude oil, refined petroleum products, liquefied petroleum gas, natural gas and chemicals within the U.S.
                                                 </p>
 
                                                 <div class="grid gap-4 tex-(--black) w-full h-full">
@@ -479,7 +479,7 @@
                                                 </span>
                                             </NuxtLink> 
 
-                                            <!-- Visit the Penn Petro Energy pipe line company website -->
+                                            <!-- Visit the Pennpetro Energy PLC pipe line company website -->
                                             <NuxtLink
                                                 to="/"
                                                 class="group relative flex items-center text-sm font-extrabold text-(--black) duration-500 ease-in transition-all"
@@ -523,10 +523,10 @@
                                             </div>
 
                                             <div class="grid gap-4 tex-(--black) w-full h-full">
-                                                <h4 class="font-bold">Penn Petro Energy and Texaco credit services</h4>
+                                                <h4 class="font-bold">Pennpetro Energy PLC and Texaco credit services</h4>
                                                 <p>
                                                     Toll-free: +1 800-243-8766 <br>
-                                                    Option 1 for Penn Petro Energy and Texaco consumer account
+                                                    Option 1 for Pennpetro Energy PLC and Texaco consumer account
                                                 </p>   
                                                 <p>
                                                     Customer service hours
@@ -538,7 +538,7 @@
                                             </div>
 
                                             <div class="grid gap-4 tex-(--black) w-full h-full">
-                                                <h4 class="font-bold">Penn Petro Energy and Texaco credit services</h4>
+                                                <h4 class="font-bold">Pennpetro Energy PLC and Texaco credit services</h4>
                                                 <p>
                                                     Toll-free: +1 866-448-4367
                                                 </p>   
@@ -635,7 +635,7 @@
                                     >
                                         <div class="grid gap-4 text-(--black) w-full h-full">
                                             <p>
-                                                Penn Petro Energy supports communities through strategic social investments and partnerships with governments, nongovernmental organizations (NGOs), and international organizations.
+                                                Pennpetro Energy PLC supports communities through strategic social investments and partnerships with governments, nongovernmental organizations (NGOs), and international organizations.
                                                 See our 
                                                     <NuxtLink
                                                     to="/sustainability/social"
@@ -703,7 +703,7 @@
                                             <div class="grid gap-4 tex-(--black) w-full h-full">
                                                 <h4 class="font-bold">Gasoline</h4>
                                                 <p>
-                                                    Penn Petro Energy, Texaco and Caltex gasolines with Techron are designed to deliver lower emissions, higher performance and a cleaner engine.
+                                                    Pennpetro Energy PLC, Texaco and Caltex gasolines with Techron are designed to deliver lower emissions, higher performance and a cleaner engine.
                                                 </p>                                                    
                                             </div>
 
@@ -752,7 +752,7 @@
                                         <div class="grid gap-4 tex-(--black) w-full h-full">
                                             <h4 class="font-bold">Gasoline</h4>
                                             <p>
-                                                For address changes, inquiries about Penn Petro Energy stock and dividend reinvestment programs, please contact our Stock Transfer Agent.
+                                                For address changes, inquiries about Pennpetro Energy PLC stock and dividend reinvestment programs, please contact our Stock Transfer Agent.
                                             </p>                                                    
                                         </div>
                                                 
@@ -786,7 +786,7 @@
                                                 <div class="grid gap-4 tex-(--black) w-full h-full">
                                                     <h4 class="font-bold">Technical information</h4>
                                                     <p>
-                                                        Penn Petro Energy Global Lubricants provides advanced products for industrial, commercial and consumer applications.
+                                                        Pennpetro Energy PLC Global Lubricants provides advanced products for industrial, commercial and consumer applications.
                                                     </p>                                                    
                                                 </div>
 
@@ -859,11 +859,11 @@
                                                     Locate a source for our products in your area.
                                                 </p>
                                                 <p>
-                                                    If you are interested in providing quality Penn Petro Energy products in your local community, please contact us.
+                                                    If you are interested in providing quality Pennpetro Energy PLC products in your local community, please contact us.
                                                 </p>                                                    
                                             </div>
 
-                                            <!-- Penn Petro Energy Lubricants locator -->
+                                            <!-- Pennpetro Energy PLC Lubricants locator -->
                                             <NuxtLink
                                                 to="/careers"
                                                 class="group relative flex items-center text-sm font-extrabold text-(--black) duration-500 ease-in transition-all"
@@ -882,7 +882,7 @@
                                                 </span>
                                             </NuxtLink> 
 
-                                            <!-- Visit the Penn Petro Energy pipe line company website -->
+                                            <!-- Visit the Pennpetro Energy PLC pipe line company website -->
                                             <NuxtLink
                                                 to="/"
                                                 class="group relative flex items-center text-sm font-extrabold text-(--black) duration-500 ease-in transition-all"
@@ -918,7 +918,7 @@
                                     >
                                         <div class="grid gap-4 w-full h-full">
                                             <div class="grid gap-4 text-(--black)">
-                                                <p>Open jobs at Penn Petro Energy are available for review and application at our Penn Petro Energy careers page.</p>
+                                                <p>Open jobs at Pennpetro Energy PLC are available for review and application at our Pennpetro Energy PLC careers page.</p>
                                                 <p>Resumes sent to the general mailbox will not be considered and requests for status updates to applications will not be provided.</p>
                                             </div>
 
@@ -991,7 +991,7 @@
 
                                                 <div class="grid gap-4 text-(--black)">
                                                 <h4 class="font-bold">Check status</h4>
-                                                <p>To check the status of invoices and payments online, visit the Penn Petro Energy Invoice and Payment Status (CIPS) system.</p>
+                                                <p>To check the status of invoices and payments online, visit the Pennpetro Energy PLC Invoice and Payment Status (CIPS) system.</p>
                                         
                                             </div>
 
@@ -1111,8 +1111,7 @@
                         </div>
                     </form>
 
-                    <!-- More ways to contact us -->
-                        
+                    <!-- More ways to contact us -->                        
                     <div class="flex flex-col gap-4 items-center justify-center w-full mx-auto">
                         <h3 class="text-(--dark-blue) text-centern text-wrap font-bold text-xl">
                             Pennpetro Energy headquarters

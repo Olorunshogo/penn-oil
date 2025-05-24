@@ -4,24 +4,24 @@
 
     useHead({
         title: 'Our Brands',
-        titleTemplate: '%s | Penn Petro Energy PLC'
+        titleTemplate: '%s | Pennpetro Energy PLC'
     });
 
     useSeoMeta({
-        title: 'Our Brands | Penn Petro Energy Portfolio',
-        ogTitle: 'Penn Petro Energy Brands | Global Energy Solutions',
-        description: 'Explore the diverse portfolio of brands under Penn Petro Energy. From traditional energy to renewables, our brands lead with innovation and impact.',
-        ogDescription: 'Learn about the Penn Petro Energy family of brands, each delivering specialized energy solutions across oil, gas, clean tech, and sustainable innovation.',
+        title: 'Our Brands | Pennpetro Energy PLC Portfolio',
+        ogTitle: 'Pennpetro Energy PLC Brands | Global Energy Solutions',
+        description: 'Explore the diverse portfolio of brands under Pennpetro Energy PLC. From traditional energy to renewables, our brands lead with innovation and impact.',
+        ogDescription: 'Learn about the Pennpetro Energy PLC family of brands, each delivering specialized energy solutions across oil, gas, clean tech, and sustainable innovation.',
         ogImage: '/Logo/Full_Penn_Petro_Energy_Logo.jpg',
-        ogImageAlt: 'Logos and imagery representing Penn Petro Energy’s portfolio of brands.',
+        ogImageAlt: 'Logos and imagery representing Pennpetro Energy PLC’s portfolio of brands.',
         ogUrl: 'https://vercel.com/bom-projects/pen-oil/who/brands',
 
         twitterCard: 'summary_large_image',
-        twitterTitle: 'Our Brands | Penn Petro Energy’s Global Reach',
-        twitterDescription: 'Discover the trusted brands that power Penn Petro Energy’s impact across the globe — advancing energy innovation and sustainability.',
+        twitterTitle: 'Our Brands | Pennpetro Energy PLC’s Global Reach',
+        twitterDescription: 'Discover the trusted brands that power Pennpetro Energy PLC’s impact across the globe — advancing energy innovation and sustainability.',
         twitterImage: '/Logo/Full_Penn_Petro_Energy_Logo.jpg',
 
-        keywords: 'Penn Petro Energy brands, energy portfolio, energy subsidiaries, oil and gas brands, clean energy brands, Penn Petro divisions, global energy companies, energy innovation network',
+        keywords: 'Pennpetro Energy PLC brands, energy portfolio, energy subsidiaries, oil and gas brands, clean energy brands, Penn Petro divisions, global energy companies, energy innovation network',
     });
 
     import { whoBrandsHeroImageBg } from '~/models/heroBgModels';    
@@ -48,11 +48,11 @@
         </div>             
 
 
-        <!-- Section: Penn Petro Energy, Texaco, Caltex -->
+        <!-- Section: Pennpetro Energy PLC, Texaco, Caltex -->
         <section>
             <div class="grid w-full h-full overflow-hidden py-(--section-py) lg:py-(--section-py-lg)">
                 
-                <!-- Penn Petro Energy -->
+                <!-- Pennpetro Energy PLC -->
                 <div class="grid bg-(--dark-blue) w-full h-full py-24">
                     <div class="flex flex-col lg:flex-row-reverse *:w-full p-4 lg:p-8 *:lg:w-1/2 gap-4 lg:gap-8 w-full max-w-xl lg:max-w-7xl mx-auto h-full">
                         <NuxtImg
@@ -66,12 +66,12 @@
                             
                             <div class="flex flex-col justify-center lg:px-8 lg:p-8 gap-2 max-w-2xl h-full lg:h-fit">
                                 <h3 class="text-2xl text-left text-(--white)">
-                                    Penn Petro Energy
+                                    Pennpetro Energy PLC
                                 </h3>
 
                                 <p class="text-(--white) text-lg">
-                                    Quality and reliability drive customers to Penn Petro Energy. 
-                                    Innovative and forward looking, our high quality fuel and customer experience mean Penn Petro Energy is trusted by our customers.
+                                    Quality and reliability drive customers to Pennpetro Energy PLC. 
+                                    Innovative and forward looking, our high quality fuel and customer experience mean Pennpetro Energy PLC is trusted by our customers.
                                 </p>
                             </div>
                         </div>
@@ -149,7 +149,7 @@
                                 </h3>
 
                                 <p class="text-(--black) text-lg">
-                                    Wherever you’re headed, it pays to have a Penn Petro Energy card. 
+                                    Wherever you’re headed, it pays to have a Pennpetro Energy PLC card. 
                                     Feel confident on your travels when you keep our gift cards and personal and business credit cards by your side.
                                 </p>
                             </div>

@@ -3,7 +3,7 @@
     import { useHead } from 'nuxt/app';
     useHead({
         title: 'Environmental, Social and Governance Index',
-        titleTemplate: '%s | Penn Petro Energy'
+        titleTemplate: '%s | Pennpetro Energy PLC'
     });
 
     definePageMeta({
@@ -11,18 +11,18 @@
     })
 
     useSeoMeta({
-        title: 'ESG A–Z Index | Penn Petro Energy - Environmental, Social & Governance Insights',
-        ogTitle: 'Penn Petro Energy ESG A–Z Index | Sustainability & Responsible Practices',
-        description: 'Browse the ESG A–Z Index to explore Penn Petro Energy’s approach to environmental, social, and governance practices. Gain insight into our sustainability efforts and ethical leadership.',
-        ogDescription: 'Penn Petro Energy’s ESG A–Z Index offers a comprehensive view of our environmental, social, and governance commitments, supporting transparency and stakeholder engagement.',
+        title: 'ESG A–Z Index | Pennpetro Energy PLC - Environmental, Social & Governance Insights',
+        ogTitle: 'Pennpetro Energy PLC ESG A–Z Index | Sustainability & Responsible Practices',
+        description: 'Browse the ESG A–Z Index to explore Pennpetro Energy PLC’s approach to environmental, social, and governance practices. Gain insight into our sustainability efforts and ethical leadership.',
+        ogDescription: 'Pennpetro Energy PLC’s ESG A–Z Index offers a comprehensive view of our environmental, social, and governance commitments, supporting transparency and stakeholder engagement.',
         ogImage: '/Logo/Full_Penn_Petro_Energy_Logo.jpg',
-        ogImageAlt: 'Sustainable operations at Penn Petro Energy reflecting ESG responsibility.',
+        ogImageAlt: 'Sustainable operations at Pennpetro Energy PLC reflecting ESG responsibility.',
         ogUrl: 'https://vercel.com/bom-projects/pen-oil/investors/esg',
         twitterCard: 'summary_large_image',
-        twitterTitle: 'ESG A–Z Index | Penn Petro Energy’s Commitment to Sustainability',
-        twitterDescription: 'Explore Penn Petro Energy’s ESG practices through our A–Z Index – a transparent guide to our environmental, social, and governance efforts.',
+        twitterTitle: 'ESG A–Z Index | Pennpetro Energy PLC’s Commitment to Sustainability',
+        twitterDescription: 'Explore Pennpetro Energy PLC’s ESG practices through our A–Z Index – a transparent guide to our environmental, social, and governance efforts.',
         twitterImage: '/Logo/Full_Penn_Petro_Energy_Logo.jpg',
-        keywords: 'Penn Petro Energy ESG, sustainability index, environmental leadership, social responsibility, corporate governance, ESG transparency, sustainable energy practices, stakeholder trust, ESG reporting, ESG A-Z glossary'
+        keywords: 'Pennpetro Energy PLC ESG, sustainability index, environmental leadership, social responsibility, corporate governance, ESG transparency, sustainable energy practices, stakeholder trust, ESG reporting, ESG A-Z glossary'
     });
 
     import {
@@ -55,7 +55,7 @@
                             Environment, social, and governance index
                         </h1>
 
-                        <p class="flex items-center text-lg text-center font-medium">
+                        <p class="text-center font-medium">
                             Explore our ESG topics using the dropdowns below.
                         </p>
                         
@@ -119,21 +119,21 @@
                                                 class="flex flex-col gap-2 bg-(--white) p-4 text-sm rounded-lg"
                                             >
                                                 <p class="text-(--black)">
-                                                    <span class="font-bold">Our business:</span> Through its subsidiaries and affiliates, Penn Petro Energy produces crude oil and natural gas, manufactures transportation fuels, lubricants, petrochemicals and additives, and develops technologies that enhance our business and the industry. 
+                                                    <span class="font-bold">Our business:</span> Through its subsidiaries and affiliates, Pennpetro Energy PLC produces crude oil and natural gas, manufactures transportation fuels, lubricants, petrochemicals and additives, and develops technologies that enhance our business and the industry. 
                                                     We aim to grow our oil and gas business, lower the carbon intensity of our operations and grow new businesses. 
                                                     We plan to make prudent investments without losing focus on delivering stockholder value.
                                                 </p>
                                                 <p class="text-(--medium-gray)">Updated: May 2025</p>
                                             </div>
 
-                                            <div class="flex flex-col gap-2 text-(--black) text-base rounded-lg">
+                                            <div class="flex flex-col gap-2 text-(--black) rounded-lg">
                                                 <p>
-                                                    Developed from The Penn Petro Energy Way principles, our Business Conduct and Ethics Code communicates expectations for ethical business conduct. 
-                                                    The Code reinforces our compliance commitment and the responsibility of each employee to help Penn Petro Energy’s activities adhere to legal and policy requirements everywhere we operate.
+                                                    Developed from The Pennpetro Energy PLC Way principles, our Business Conduct and Ethics Code communicates expectations for ethical business conduct. 
+                                                    The Code reinforces our compliance commitment and the responsibility of each employee to help Pennpetro Energy PLC’s activities adhere to legal and policy requirements everywhere we operate.
                                                 </p>
                                                 <p>
-                                                    Penn Petro Energy maintains internal accounting, administrative and operational controls to manage these standards of conduct and compliance. 
-                                                    Penn Petro Energy employees and contractors receive training on Penn Petro Energy’s Business Conduct and Ethics Code every three years.
+                                                    Pennpetro Energy PLC maintains internal accounting, administrative and operational controls to manage these standards of conduct and compliance. 
+                                                    Pennpetro Energy PLC employees and contractors receive training on Pennpetro Energy PLC’s Business Conduct and Ethics Code every three years.
                                                 </p>
                                             </div>
 
@@ -149,15 +149,15 @@
                                                 Antibribery and corruption
                                             </h2>
 
-                                            <div class="flex flex-col gap-2 text-(--black) text-base rounded-lg">
+                                            <div class="flex flex-col gap-2 text-(--black) rounded-lg">
                                                 <p>
-                                                    Wherever Penn Petro Energy operates, we must respect and conform to each country’s unique customs and business practices. 
+                                                    Wherever Pennpetro Energy PLC operates, we must respect and conform to each country’s unique customs and business practices. 
                                                     Above all, we must follow its laws and regulations. 
                                                     When business transactions involve more than one country, we must find the best way to comply with all applicable laws. 
                                                     Whenever a possible conflict of laws situation arises, we should always seek guidance from our organization’s legal counsel.
                                                 </p>
                                                 <p>
-                                                    Bribery of any government official in any country is strictly against Penn Petro Energy policy, even if the refusal to make such a payment would result in the company losing a business opportunity. 
+                                                    Bribery of any government official in any country is strictly against Pennpetro Energy PLC policy, even if the refusal to make such a payment would result in the company losing a business opportunity. 
                                                     Almost every country prohibits the bribery of its own officials, and many countries also prohibit commercial bribery involving private companies. 
                                                     In addition, many countries have antibribery/anticorruption laws that make it illegal to bribe officials of other countries. 
                                                     In the United States, that law is the Foreign Corrupt Practices Act (FCPA). 
@@ -166,8 +166,8 @@
                                                 <p>
                                                     Management approval is required before any gift or payment can be made to a government or public official. 
                                                     In some cases, the gift or payment must also be approved by your compliance representative or Corporate Compliance. 
-                                                    Penn Petro Energy employees and contractors are prohibited from making payments or providing anything of value directly or indirectly to government officials with the intent to improperly influence the performance of their official duties or gain any other improper advantage. 
-                                                    Penn Petro Energy requires that internal controls be in place and functioning and that accurate and complete transaction records be kept within the company. 
+                                                    Pennpetro Energy PLC employees and contractors are prohibited from making payments or providing anything of value directly or indirectly to government officials with the intent to improperly influence the performance of their official duties or gain any other improper advantage. 
+                                                    Pennpetro Energy PLC requires that internal controls be in place and functioning and that accurate and complete transaction records be kept within the company. 
                                                     Our standard language for procurement contracts includes a requirement for our suppliers and contractors to comply with all applicable laws and keep accurate books and records. 
                                                     Where appropriate, our procurement contracts contain specific antibribery commitments.
                                                 </p>
@@ -185,19 +185,19 @@
                                                 Whistleblower hotline
                                             </h2>
 
-                                            <div class="flex flex-col gap-2 text-(--black) text-base rounded-lg">
+                                            <div class="flex flex-col gap-2 text-(--black) rounded-lg">
                                                 <p>
-                                                    Penn Petro Energy is committed to appropriate conduct by its employees, suppliers and contractors and requires questionable conduct to be reported. 
-                                                    This may include, for example, violations of the Penn Petro Energy Business Conduct and Ethics Code, company policies, and applicable laws or regulations. 
-                                                    The Penn Petro Energy Hotline provides a direct, effective and risk-free way for anyone to report such suspected violations.
+                                                    Pennpetro Energy PLC is committed to appropriate conduct by its employees, suppliers and contractors and requires questionable conduct to be reported. 
+                                                    This may include, for example, violations of the Pennpetro Energy PLC Business Conduct and Ethics Code, company policies, and applicable laws or regulations. 
+                                                    The Pennpetro Energy PLC Hotline provides a direct, effective and risk-free way for anyone to report such suspected violations.
                                                 </p>
                                                 <p>
-                                                    Penn Petro Energy does not tolerate any form of retaliation for reports made in good faith. 
+                                                    Pennpetro Energy PLC does not tolerate any form of retaliation for reports made in good faith. 
                                                     Retaliation includes blatant actions, such as firing, transferring, demoting or publicly undermining someone, as well as more subtle actions, such as avoiding someone or excluding them from professional or social activities. 
                                                     It includes actions taken by managers and employees alike.
                                                 </p>
                                                 <p class="flex flex-col items-center justify-center my-2 h-fit *:text-center font-bold text-(--dark-blue)">
-                                                    <span class="text-xl lg:text-2xl">24/7 Penn Petro Energy hotline</span>
+                                                    <span class="text-xl lg:text-2xl">24/7 Pennpetro Energy PLC hotline</span>
                                                     <span class="text-lg lg:text-xl">is available for reporting existing and potential violations of law or company policy</span>
                                                 </p>
                                             </div>
@@ -228,9 +228,9 @@
                                                 <div class="grid w-full h-full gap-4">
                                                     <h3 class="text-(--medium-blue) text-xl lg:text-2xl">Government framework</h3>
                                                     <p class="text-(--black)">
-                                                        Strong governance is a foundation of what we do. We have strong oversight in place by Penn Petro Energy’s Board of Directors and its standing committees. 
-                                                        Consistent with Penn Petro Energy’s risk management policies and practices, we provide governance and oversight of tax matters through performing review and approval procedures by appropriate members of Penn Petro Energy’s tax leadership team. 
-                                                        Governed by Penn Petro Energy’s business conduct and ethics code, our tax professionals around the world are guided by high standards of ethics and are well versed in relevant tax laws and regulations.
+                                                        Strong governance is a foundation of what we do. We have strong oversight in place by Pennpetro Energy PLC’s Board of Directors and its standing committees. 
+                                                        Consistent with Pennpetro Energy PLC’s risk management policies and practices, we provide governance and oversight of tax matters through performing review and approval procedures by appropriate members of Pennpetro Energy PLC’s tax leadership team. 
+                                                        Governed by Pennpetro Energy PLC’s business conduct and ethics code, our tax professionals around the world are guided by high standards of ethics and are well versed in relevant tax laws and regulations.
                                                     </p>
                                                 </div>
 
@@ -239,7 +239,7 @@
                                                     <p class="text-(--black)">
                                                         Our relationship with tax authorities is built on mutual trust and respect. Our approach has always been to work jointly with tax authorities to foster efficient and timely reviews of our income tax returns. 
                                                         We engage in ongoing discussions with tax authorities regarding our income tax returns and our tax positions are subject to audits by tax jurisdictions worldwide. 
-                                                        In the U.S., for example, Penn Petro Energy is subject to continuous audit by the Internal Revenue Service.
+                                                        In the U.S., for example, Pennpetro Energy PLC is subject to continuous audit by the Internal Revenue Service.
                                                     </p>
                                                 </div>
 
@@ -310,7 +310,7 @@
                                                 class="flex flex-col gap-2 bg-(--white) p-4 text-sm rounded-lg"
                                             >
                                                 <p class="text-(--black)">
-                                                    <span class="font-bold">Our business:</span> Through its subsidiaries and affiliates, Penn Petro Energy produces crude oil and natural gas, manufactures transportation fuels, lubricants, petrochemicals and additives, and develops technologies that enhance our business and the industry. 
+                                                    <span class="font-bold">Our business:</span> Through its subsidiaries and affiliates, Pennpetro Energy PLC produces crude oil and natural gas, manufactures transportation fuels, lubricants, petrochemicals and additives, and develops technologies that enhance our business and the industry. 
                                                     We aim to grow our oil and gas business, lower the carbon intensity of our operations and grow new businesses. 
                                                     We plan to make prudent investments without losing focus on delivering stockholder value.
                                                 </p>
@@ -319,12 +319,12 @@
 
                                             <div class="flex flex-col gap-2 text-(--black) text-base rounded-lg">
                                                 <p>
-                                                    Developed from The Penn Petro Energy Way principles, our Business Conduct and Ethics Code communicates expectations for ethical business conduct. 
-                                                    The Code reinforces our compliance commitment and the responsibility of each employee to help Penn Petro Energy’s activities adhere to legal and policy requirements everywhere we operate.
+                                                    Developed from The Pennpetro Energy PLC Way principles, our Business Conduct and Ethics Code communicates expectations for ethical business conduct. 
+                                                    The Code reinforces our compliance commitment and the responsibility of each employee to help Pennpetro Energy PLC’s activities adhere to legal and policy requirements everywhere we operate.
                                                 </p>
                                                 <p>
-                                                    Penn Petro Energy maintains internal accounting, administrative and operational controls to manage these standards of conduct and compliance. 
-                                                    Penn Petro Energy employees and contractors receive training on Penn Petro Energy’s Business Conduct and Ethics Code every three years.
+                                                    Pennpetro Energy PLC maintains internal accounting, administrative and operational controls to manage these standards of conduct and compliance. 
+                                                    Pennpetro Energy PLC employees and contractors receive training on Pennpetro Energy PLC’s Business Conduct and Ethics Code every three years.
                                                 </p>
                                             </div>
 
@@ -345,24 +345,24 @@
                                                 <div class="grid w-full h-full gap-4">
                                                     <h3 class="text-(--medium-blue) text-xl lg:text-2xl">Our approach</h3>
                                                     <p class="text-(--black)">
-                                                        Penn Petro Energy believes a balanced approach to policy focused on affordability, reliability and environmental protection is needed to meet growing energy demand. We strive to provide a positive, pragmatic voice on climate policy through involvement with trade associations and engagements with policymakers across the globe.
+                                                        Pennpetro Energy PLC believes a balanced approach to policy focused on affordability, reliability and environmental protection is needed to meet growing energy demand. We strive to provide a positive, pragmatic voice on climate policy through involvement with trade associations and engagements with policymakers across the globe.
                                                     </p>
                                                 </div>
 
                                                 <div class="grid w-full h-full gap-4">
                                                     <h3 class="text-(--medium-blue) text-xl lg:text-2xl">Oversight</h3>
                                                     <p class="text-(--black)">
-                                                        Penn Petro Energy has both executive management and Board oversight of policy, lobbying and trade association activities. 
-                                                        The Public Policy and Sustainability Committee (PPSC) has primary responsibility for assisting Penn Petro Energy’s Board of Directors in overseeing lobbying policy and reporting, as well as Penn Petro Energyn’s response to stockholder concerns regarding such activities. 
-                                                        The PPSC annually reviews the policies, procedures and expenditures related to the company’s lobbying to assess the value of these activities and alignment with Penn Petro Energy’s positions and interests, including those related to sustainability.
+                                                        Pennpetro Energy PLC has both executive management and Board oversight of policy, lobbying and trade association activities. 
+                                                        The Public Policy and Sustainability Committee (PPSC) has primary responsibility for assisting Pennpetro Energy PLC’s Board of Directors in overseeing lobbying policy and reporting, as well as Pennpetro Energy PLCn’s response to stockholder concerns regarding such activities. 
+                                                        The PPSC annually reviews the policies, procedures and expenditures related to the company’s lobbying to assess the value of these activities and alignment with Pennpetro Energy PLC’s positions and interests, including those related to sustainability.
                                                     </p>
                                                 </div>
 
                                                 <div class="grid w-full h-full gap-4">
                                                     <h3 class="text-(--medium-blue) text-xl lg:text-2xl">Climate policy</h3>
                                                     <p class="text-(--black)">
-                                                        Penn Petro Energy believes climate policy should be designed in a manner that enables the realization of a lower carbon future at the least cost to society. 
-                                                        Penn Petro Energy supports the Paris Agreement’s global approach to governments addressing climate change. 
+                                                        Pennpetro Energy PLC believes climate policy should be designed in a manner that enables the realization of a lower carbon future at the least cost to society. 
+                                                        Pennpetro Energy PLC supports the Paris Agreement’s global approach to governments addressing climate change. 
                                                         We continue to take actions to help lower the carbon intensity of our operations while continuing to meet the demand for energy. 
                                                         We believe policy should drive the most efficient and cost-effective abatement economywide, along with natural and technological emissions removals. 
                                                         Policies should enable lower carbon solutions and products by allowing all solutions to compete without penalizing one sector to build another.
@@ -372,7 +372,7 @@
                                                 <div class="grid w-full h-full gap-4">
                                                     <h3 class="text-(--medium-blue) text-xl lg:text-2xl">Oversight</h3>
                                                     <p class="text-(--black)">
-                                                        Penn Petro Energy is working to help develop global standards and guidance to advance carbon accounting. 
+                                                        Pennpetro Energy PLC is working to help develop global standards and guidance to advance carbon accounting. 
                                                         A lifecycle approach to carbon accounting is also known as “product carbon footprinting.” 
                                                         We believe a lifecycle approach facilitates informed decision making throughout the value chain of any particular product or service. 
                                                         Carbon data across sectors, products and firms of all sizes can be used to understand the carbon performance associated with a product or service. 
@@ -403,7 +403,7 @@
                                                 </p>
                                                 <p>
                                                     We aim to help customers meet their lower carbon ambitions and reduce the carbon intensity of our own operations while delivering value for our stockholders. 
-                                                    Since launching Penn Petro ENergy New Energies in 2021, we have set lower carbon business targets for renewable fuels production capacity, offsets business and CCUS, and hydrogen equity production capacity. Penn Petro Energy regularly evaluates its lower carbon business targets and expects them to change in light of evolving market and policy conditions and pace of technological advancement. 
+                                                    Since launching Pennpetro Energy PLC New Energies in 2021, we have set lower carbon business targets for renewable fuels production capacity, offsets business and CCUS, and hydrogen equity production capacity. Pennpetro Energy PLC regularly evaluates its lower carbon business targets and expects them to change in light of evolving market and policy conditions and pace of technological advancement. 
                                                     We believe that additional advances in technology, supportive policy and customer demand are needed in order to develop scalable, new businesses that deliver value for our stockholders. Generally, the pace of market, policy and technology developments has lagged global ambition. 
                                                     Despite the challenges, we continue to see long-term potential to build new businesses that leverage our strengths. 
                                                     We plan to make prudent investments to advance new business opportunities without losing focus on delivering stockholder value.
@@ -467,7 +467,7 @@
                                             class="flex flex-col gap-2 bg-(--white) p-4 text-sm rounded-lg"
                                         >
                                             <p class="text-(--black)">
-                                                <span class="font-bold">Our business:</span> Through its subsidiaries and affiliates, Penn Petro Energy produces crude oil and natural gas, manufactures transportation fuels, lubricants, petrochemicals and additives, and develops technologies that enhance our business and the industry. We aim to grow our oil and gas business, lower the carbon intensity of our operations and grow new businesses. 
+                                                <span class="font-bold">Our business:</span> Through its subsidiaries and affiliates, Pennpetro Energy PLC produces crude oil and natural gas, manufactures transportation fuels, lubricants, petrochemicals and additives, and develops technologies that enhance our business and the industry. We aim to grow our oil and gas business, lower the carbon intensity of our operations and grow new businesses. 
                                                 We plan to make prudent investments without losing focus on delivering stockholder value.
                                             </p>
                                             <p class="text-(--medium-gray)">Updated: May 2025</p>
@@ -488,7 +488,7 @@
                                                 <div class="grid w-full h-full gap-4">
                                                     <h3 class="text-(--medium-blue) text-xl lg:text-2xl">Our approach</h3>
                                                     <p class="text-(--black)">
-                                                        Penn Petro Energy, we strive to protect the environment through responsible design, development, operations and retirement of assets. 
+                                                        Pennpetro Energy PLC, we strive to protect the environment through responsible design, development, operations and retirement of assets. 
                                                         By considering potential environmental risks, we aim to enhance our environmental performance around the world. 
                                                         We identify and manage safeguards designed to prevent or mitigate potential environmental impacts. 
                                                         The Operational Excellence Management System (OEMS) environment focus area promotes systematic consideration of business risks and environmental performance alongside stakeholder expectations.
@@ -505,8 +505,8 @@
                                                 <div class="grid w-full h-full gap-4">
                                                     <h3 class="text-(--medium-blue) text-xl lg:text-2xl">Climate policy</h3>
                                                     <p class="text-(--black)">
-                                                        Penn Petro Energy believes climate policy should be designed in a manner that enables the realization of a lower carbon future at the least cost to society. 
-                                                        Penn Petro Energy supports the Paris Agreement’s global approach to governments addressing climate change. 
+                                                        Pennpetro Energy PLC believes climate policy should be designed in a manner that enables the realization of a lower carbon future at the least cost to society. 
+                                                        Pennpetro Energy PLC supports the Paris Agreement’s global approach to governments addressing climate change. 
                                                         We continue to take actions to help lower the carbon intensity of our operations while continuing to meet the demand for energy. 
                                                         We believe policy should drive the most efficient and cost-effective abatement economywide, along with natural and technological emissions removals. 
                                                         Policies should enable lower carbon solutions and products by allowing all solutions to compete without penalizing one sector to build another.
@@ -540,7 +540,7 @@
                                                 <div class="grid w-full h-full gap-4">
                                                     <h3 class="text-(--medium-blue) text-xl lg:text-2xl">Our approach</h3>
                                                     <p class="text-(--black)">
-                                                        Penn Petro Energy works with communities, regulatory agencies, industry groups, academia and conservation organizations to take action to help protect and enhance biodiversity.
+                                                        Pennpetro Energy PLC works with communities, regulatory agencies, industry groups, academia and conservation organizations to take action to help protect and enhance biodiversity.
                                                     </p>
                                                 </div>
 
@@ -568,7 +568,7 @@
                                                 <div class="grid w-full h-full gap-4">
                                                     <h3 class="text-(--medium-blue) text-xl lg:text-2xl">Mitigation hierachy</h3>
                                                     <p class="text-(--black)">
-                                                        Penn Petro Energy uses the mitigation hierarchy to manage potential risks to the environment and enable informed decision-making. 
+                                                        Pennpetro Energy PLC uses the mitigation hierarchy to manage potential risks to the environment and enable informed decision-making. 
                                                         The Environment Risk Management Process includes the mitigation hierarchy, which is used when evaluating projects or ongoing operations.
                                                     </p>
                                                 </div>
@@ -593,7 +593,7 @@
                                                     <h3 class="text-(--medium-blue) text-xl lg:text-2xl">Our approach</h3>
                                                     <p class="text-(--black)">
                                                         Water is vital to our operations. We aim to drive efficient and responsible water use, reuse, recycling and conservation. 
-                                                        Penn Petro Energy recognizes that collaboration with the communities where we operate is important to strengthening water stewardship.
+                                                        Pennpetro Energy PLC recognizes that collaboration with the communities where we operate is important to strengthening water stewardship.
                                                     </p>
                                                 </div>
 
@@ -633,11 +633,11 @@
                                                 <div class="grid w-full h-full gap-4">
                                                     <h3 class="text-(--medium-blue) text-xl lg:text-2xl">Our approach</h3>
                                                     <p class="text-(--black)">
-                                                        Penn Petro Energy seeks to identify management practices and implement technologies to reduce emissions of sulfur oxides (SOx), nitrogen oxides (NOx) and volatile organic compounds (VOCs). 
+                                                        Pennpetro Energy PLC seeks to identify management practices and implement technologies to reduce emissions of sulfur oxides (SOx), nitrogen oxides (NOx) and volatile organic compounds (VOCs). 
                                                         Not included in our definition of air emissions are greenhouse gases (GHGs), including methane.
                                                     </p>
                                                     <p>
-                                                        In addition to balancing management of operational needs, regulatory requirements, and community or other stakeholder matters, Penn Petro Energy aims to:
+                                                        In addition to balancing management of operational needs, regulatory requirements, and community or other stakeholder matters, Pennpetro Energy PLC aims to:
                                                     </p>
                                                     <ul>
                                                         <li>
@@ -662,8 +662,8 @@
                                                 <div class="grid w-full h-full gap-4">
                                                     <h3 class="text-(--medium-blue) text-xl lg:text-2xl">Climate policy</h3>
                                                     <p class="text-(--black)">
-                                                        Penn Petro Energy believes climate policy should be designed in a manner that enables the realization of a lower carbon future at the least cost to society. 
-                                                        Penn Petro Energy supports the Paris Agreement’s global approach to governments addressing climate change. 
+                                                        Pennpetro Energy PLC believes climate policy should be designed in a manner that enables the realization of a lower carbon future at the least cost to society. 
+                                                        Pennpetro Energy PLC supports the Paris Agreement’s global approach to governments addressing climate change. 
                                                         We continue to take actions to help lower the carbon intensity of our operations while continuing to meet the demand for energy. 
                                                         We believe policy should drive the most efficient and cost-effective abatement economywide, along with natural and technological emissions removals. 
                                                         Policies should enable lower carbon solutions and products by allowing all solutions to compete without penalizing one sector to build another.
@@ -682,7 +682,7 @@
                                                     <h3 class="text-(--medium-blue) text-xl lg:text-2xl">Improving air emissions inventories</h3>
                                                     <p class="text-(--black)">
                                                         In 2023, we updated our air emissions reporting protocol to further improve our company air emissions inventories. 
-                                                        Penn Petro ENergy uses data to inform environmental performance ambitions, opportunities and risks at the enterprise and business unit levels. 
+                                                        Pennpetro Energy PLC uses data to inform environmental performance ambitions, opportunities and risks at the enterprise and business unit levels. 
                                                         Data are used to balance management of operational needs and regulatory, community or other key stakeholder issues.
                                                     </p>
                                                 </div>
@@ -690,7 +690,7 @@
                                                 <div class="grid w-full h-full gap-4">
                                                     <h3 class="text-(--medium-blue) text-xl lg:text-2xl">Benchmarking air emissions</h3>
                                                     <p class="text-(--black)">
-                                                        We undertake benchmarking internally and externally to better understand the relative performance of Penn Petro ENergy's air emissions. 
+                                                        We undertake benchmarking internally and externally to better understand the relative performance of Pennpetro Energy PLC's air emissions. 
                                                         Internal benchmarking is completed on an annual basis across the company, which helps inform opportunities for air emissions reduction.
                                                         We benchmark our performance to peers through our analysis of external SOx, NOx, and VOC emissions intensities data across upstream assets and refining assets.
                                                     </p>
@@ -754,7 +754,7 @@
                                             class="flex flex-col gap-2 bg-(--white) p-4 text-sm rounded-lg"
                                         >
                                             <p class="text-(--black)">
-                                                <span class="font-bold">Our business:</span> Through its subsidiaries and affiliates, Penn Petro Energy produces crude oil and natural gas, manufactures transportation fuels, lubricants, petrochemicals and additives, and develops technologies that enhance our business and the industry. 
+                                                <span class="font-bold">Our business:</span> Through its subsidiaries and affiliates, Pennpetro Energy PLC produces crude oil and natural gas, manufactures transportation fuels, lubricants, petrochemicals and additives, and develops technologies that enhance our business and the industry. 
                                                 We aim to grow our oil and gas business, lower the carbon intensity of our operations and grow new businesses. 
                                                 We plan to make prudent investments without losing focus on delivering stockholder value.
                                             </p>
@@ -773,11 +773,11 @@
 
                                             <div class="flex flex-col gap-4 text-(--black) text-base">
                                                 <p>
-                                                    Our Board of Directors oversees and provides guidance on Penn Petro Energy’s business and affairs. 
+                                                    Our Board of Directors oversees and provides guidance on Pennpetro Energy PLC’s business and affairs. 
                                                     As part of its role, the Board oversees risk management policies, processes and practices that are applied throughout the company. 
                                                     Board members regularly consider critical risk topics as part of their oversight responsibility. 
-                                                    Annually, through Penn Petro Energy’s Enterprise Risk Management process, they review financial, operational, market, political and other risks inherent in our business and oversee the safeguards and mitigations that are put in place. 
-                                                    The Board also oversees Penn Petro Energy’s strategic and business planning process and related climate and sustainability matters. 
+                                                    Annually, through Pennpetro Energy PLC’s Enterprise Risk Management process, they review financial, operational, market, political and other risks inherent in our business and oversee the safeguards and mitigations that are put in place. 
+                                                    The Board also oversees Pennpetro Energy PLC’s strategic and business planning process and related climate and sustainability matters. 
                                                     Given the nature of climate change and its relevance to our business, the entire Board addresses climate change-related issues, with the Board’s committees assisting the Board by focusing on climate issues related to their respective functions.
                                                 </p>
                                                 <p>
@@ -814,7 +814,7 @@
 
                                             
                                             <p class="flex flex-col gap-4 text-(--black) text-base">
-                                                For a Director to be considered independent, the Board must determine that the Director does not have any material relationship with Penn Petro Energy, other than as a Director. 
+                                                For a Director to be considered independent, the Board must determine that the Director does not have any material relationship with Pennpetro Energy PLC, other than as a Director. 
                                                 In making its determinations, the Board adheres to the specific tests for independence included in the listing standards of the NYSE.
                                                 The Board makes an affirmative determination regarding the independence of each Director annually, based upon the recommendation of the Board Nominating and Governance Committee.
                                             </p>
@@ -833,7 +833,7 @@
                                             <div class="flex flex-col gap-2 text-(--black) text-base rounded-lg">
                                                 <p>
                                                     Our culture is built upon the principles of responsibility, trust and integrity. 
-                                                    Guided by our vision and values, The Penn Petro Energy Way, our Board of Directors and Corporate Officers are committed to demonstrating the highest standard of ethics.
+                                                    Guided by our vision and values, The Pennpetro Energy PLC Way, our Board of Directors and Corporate Officers are committed to demonstrating the highest standard of ethics.
                                                 </p>
 
                                                 <div class="grid w-full h-full gap-4">
@@ -861,7 +861,7 @@
 
                                             <p class="flex flex-col gap-4 text-(--black) text-base">
                                                 The overall objective of our executive compensation program is to attract and retain management who will deliver long-term stockholder value in any business environment. 
-                                                Detailed information on Penn Petro ENergy’s executive compensation can be found in the company’s annual Proxy Statement - Compensation Discussion and Analysis. 
+                                                Detailed information on Pennpetro Energy PLC’s executive compensation can be found in the company’s annual Proxy Statement - Compensation Discussion and Analysis. 
                                             </p>
 
                                         </div>
@@ -888,10 +888,10 @@
                         <div class="flex flex-col justify-center items-center bg-(--dark-blue) h-full lg: w-full rounded-b-lg lg:rounded-r-lg">                        
                             <div class="flex flex-col items-center justify-center px-4 lg:px-8 gap-8 max-w-2xl h-80 lg:h-120">
                                 <span class="text-3xl md:text-4xl text-center text-(--light-blue) font-extrabold">
-                                    sustainability
+                                    Sustainability
                                 </span>
 
-                                <p class="text-(--white) text-center text-lg">
+                                <p class="text-(--white) text-center">
                                     Our approach to sustainability is integrated throughout our business.
                                     We strive to protect the environment, empower people, and get results the right way – today and tomorrow.
                                 </p>

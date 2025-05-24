@@ -2,25 +2,25 @@
 <script lang="ts" setup>
     import { useHead } from 'nuxt/app';
     useHead({
-        title: 'Penn Petro Energy Corporate Governance',
-        titleTemplate: '%s | Penn Petro Energy PLC'
+        title: 'Pennpetro Energy PLC Corporate Governance',
+        titleTemplate: '%s | Pennpetro Energy PLC'
     });
 
     useSeoMeta({
-        title: 'Corporate Governance | Penn Petro Energy - Leadership with Integrity',
-        ogTitle: 'Corporate Governance - Penn Petro Energy | Ethical Leadership & Accountability',
-        description: 'Explore Penn Petro Energy’s corporate governance practices. Learn how our leadership ensures ethical operations, accountability, and long-term shareholder value.',
-        ogDescription: 'Penn Petro Energy’s commitment to strong corporate governance ensures transparency, integrity, and responsible leadership in all business practices.',
+        title: 'Corporate Governance | Pennpetro Energy PLC - Leadership with Integrity',
+        ogTitle: 'Corporate Governance - Pennpetro Energy PLC | Ethical Leadership & Accountability',
+        description: 'Explore Pennpetro Energy PLC’s corporate governance practices. Learn how our leadership ensures ethical operations, accountability, and long-term shareholder value.',
+        ogDescription: 'Pennpetro Energy PLC’s commitment to strong corporate governance ensures transparency, integrity, and responsible leadership in all business practices.',
         ogImage: '/Logo/Full_Penn_Petro_Energy_Logo.jpg',
-        ogImageAlt: 'Board meeting at Penn Petro Energy reflecting ethical corporate governance.',
+        ogImageAlt: 'Board meeting at Pennpetro Energy PLC reflecting ethical corporate governance.',
         ogUrl: 'https://vercel.com/bom-projects/pen-oil/investors/corporate',
 
         twitterCard: 'summary_large_image',
-        twitterTitle: 'Corporate Governance at Penn Petro Energy | Transparency & Leadership',
-        twitterDescription: 'Discover how Penn Petro Energy upholds high standards of corporate governance to build trust and deliver long-term value.',
+        twitterTitle: 'Corporate Governance at Pennpetro Energy PLC | Transparency & Leadership',
+        twitterDescription: 'Discover how Pennpetro Energy PLC upholds high standards of corporate governance to build trust and deliver long-term value.',
         twitterImage: '/Logo/Full_Penn_Petro_Energy_Logo.jpg',
 
-        keywords: 'Penn Petro Energy corporate governance, board of directors, ethical leadership, investor trust, energy company governance, shareholder transparency, ESG leadership, governance policies, board oversight',
+        keywords: 'Pennpetro Energy PLC corporate governance, board of directors, ethical leadership, investor trust, energy company governance, shareholder transparency, ESG leadership, governance policies, board oversight',
     });
 
     import {
@@ -78,9 +78,9 @@
         <section>   
             <div class="relative w-full h-full px-(--section-px) lg:px-(--section-px-lg) py-(--section-py) lg:py-(--section-py-lg)">
 
-                <div class="py-8 w-full h-fit">
+                <div class="grid gap-12 lg:gap-16 py-8 w-full h-fit">
                     
-                    <div class="flex flex-col items-center justify-center gap-20 w-full h-full max-w-7xl mx-auto">
+                    <div class="flex flex-col items-center justify-center gap-8 w-full h-full max-w-7xl mx-auto">
 
                         <div class="flex flex-col items-center justify-center text-center gap-3 w-full max-w-7xl mx-auto">                                
 
@@ -92,16 +92,55 @@
                                 Corporate governance
                             </h1>
 
-                            <p class="text-(--black) text-base lg:text-lg text-center">
+                            <p class="text-(--black) text-center font-medium">
                                 Promoting strong corporate governance practices
                             </p>
                             
                         </div>
 
-                        <p class="text-(--black) text-base lg:text-lg">
-                            The Board of Directors of Penn Petro Energy directs the affairs of the Corporation and is committed to sound principles of corporate governance. 
+                        <p class="text-(--black)">
+                            The Board of Directors of Pennpetro Energy PLC directs the affairs of the Corporation and is committed to sound principles of corporate governance. 
                             Documents included in this section provide ways for investors to understand the foundation of our corporate governance.
                         </p>
+                    </div>
+
+                    <!-- Board of Directors -->
+                    <div class="flex flex-col items-center justify-center gap-8 w-full">                                
+
+                        <h2 class="text-2xl lg:text-3xl text-(--dark-blue) pb-4 text-center font-extrabold">
+                            Board of Directors
+                        </h2>
+
+
+                        <!-- Pennpetro Energy PLC Board of Directors -->
+                        <div class="grid lg:grid-cols-3 gap-4 lg:gap-8 place-content-center">
+
+                            <div class="flex flex-col items-center justify-center w-full h-full">
+                                <p class="text-(--dark-blue) font-medium text-center">Stephen Gary Lunn – Chairman</p>
+                                <p class="text-(--black) text-center">
+                                    Stephen Lunn was appointed Chairman of Pennpetro Energy PLC in September 2024. 
+                                    With an extensive background in corporate governance and senior leadership roles across the energy sector, he brings strategic oversight and board-level expertise to the company. 
+                                    His guidance supports Pennpetro’s long-term growth and shareholder value creation.
+                                </p>
+                            </div>
+
+                            <div class="flex flex-col items-center justify-center w-full h-full">
+                                <p class="text-(--dark-blue) font-medium text-center">Robert Martin Menzel – Chief Executive Officer &amp; Executive Director</p>
+                                <p class="text-(--black) text-center">
+                                    Robert Menzel was appointed CEO and Executive Director in January 2025. He has over two decades of leadership experience in global energy operations and infrastructure development. 
+                                    Known for his operational excellence and strategic foresight, Robert leads the company’s executive management and global expansion initiatives.
+                                </p>
+                            </div>
+
+                                <div class="flex flex-col items-center justify-center w-full h-full">
+                                <p class="text-(--dark-blue) font-medium text-center">Olof Nils Anders Rapp – Non-Executive Director</p>
+                                <p class="text-(--black) text-center">
+                                    Olof Rapp has served as a Non-Executive Director since 2016. With a background in international business and energy sector advisory, Olof provides independent insight and governance to the board. He supports the company’s compliance, risk management, and international partnerships.
+                                </p>
+                            </div>
+
+                        </div>
+                        
                     </div>
                 </div>
 
@@ -113,20 +152,6 @@
             <div class="relative px-(--section-px) lg:px-(--section-px-lg) py-(--section-py) lg:py-(--section-py-lg) w-full h-full">
                 
                 <div class="flex flex-col w-full max-w-7xl mx-auto h-full gap-20">
-
-                    <!-- Governance guidelines -->
-                    <div class="flex flex-col items-center justify-center gap-3 w-full">                                
-
-                        <h2 class="text-2xl lg:text-3xl text-(--dark-blue) pb-4 text-center font-bold">
-                            Corporate governance
-                        </h2>
-
-                        <p class="text-(--black) text-base lg:text-lg">
-                            These guidelines have been adopted by the Penn Petro Energy Board of Directors. 
-                            The guidelines, in conjunction with the Restated Certificate of Incorporation, By-Laws and Board Committee charters, form the framework for governance of the Corporation.
-                        </p>
-                        
-                    </div>
 
                     <!-- Governance guidelines dropdowns/category -->
                     <div class="flex flex-col w-9/10 max-w-3xl mx-auto h-full">
@@ -181,7 +206,7 @@
                                     class="text-sm lg:text-base p-3 border-b-1 border-(--border-gray)"
                                 >
                                     The Board Nominating and Governance Committee engages in succession planning for the Board and key leadership roles on the Board and its Committees.
-                                    Directors should have the highest professional and personal ethics and values, consistent with The Penn Petro Energy Way and the Business Conduct and Ethics Code, and a commitment to building stockholder value. 
+                                    Directors should have the highest professional and personal ethics and values, consistent with The Pennpetro Energy PLC Way and the Business Conduct and Ethics Code, and a commitment to building stockholder value. 
                                     They should have business acumen and broad experience and expertise at the policy-making level in one or more of the areas of particular consideration below and should be able to provide insights and practical wisdom based on their experience or expertise. 
                                     They should have sufficient time to effectively carry out their duties.
                                     The Board Nominating and Governance Committee annually reviews the composition of the Board as a whole to assess the skills and characteristics that are currently represented on the Board, and in individual Directors, as well as the skills and characteristics that the Board may find valuable in the future, in light of the current and anticipated strategic plans and operating requirements of the Corporation and the long-term interests of stockholders.
@@ -215,21 +240,21 @@
                                         A majority of the Board consists of independent Directors, as defined by the New York Stock Exchange. 
                                         To be considered “independent,” a Director must be determined by the Board, after recommendation by the Board Nominating and Governance Committee and after due deliberation, to have no material relationship with the Company other than as a Director. 
                                         In making its determination concerning the absence of a material relationship, the Board adheres to all of the specific tests for independence included in the New York Stock Exchange listing standards. 
-                                        In addition, the Board has determined that the following relationships of Penn Petro Energy Directors occurring within the last fiscal year are categorically immaterial if the relevant transactions are conducted in the ordinary course of business:
+                                        In addition, the Board has determined that the following relationships of Pennpetro Energy PLC Directors occurring within the last fiscal year are categorically immaterial if the relevant transactions are conducted in the ordinary course of business:
                                         
                                     </p>
                                     <ul class="pl-4 grid gap-2">
                                         <li>
-                                            <span class="font-bold">Director of another entity</span> if business transactions in the most recent fiscal year between Penn Petro Energy and that entity do not exceed $5 million or five percent of the receiving entity's consolidated gross revenues for that year, whichever is greater;
+                                            <span class="font-bold">Director of another entity</span> if business transactions in the most recent fiscal year between Pennpetro Energy PLC and that entity do not exceed $5 million or five percent of the receiving entity's consolidated gross revenues for that year, whichever is greater;
                                         </li>
                                         <li>
-                                            <span class="font-bold">Employee of another entity</span>  if business transactions in the most recent fiscal year between Penn Petro Energy and that entity do not exceed $250,000 or 0.5 percent of the receiving entity’s consolidated gross revenues for that year, whichever is greater;
+                                            <span class="font-bold">Employee of another entity</span>  if business transactions in the most recent fiscal year between Pennpetro Energy PLC and that entity do not exceed $250,000 or 0.5 percent of the receiving entity’s consolidated gross revenues for that year, whichever is greater;
                                         </li>
                                         <li>
-                                            <span class="font-bold">Director of another entity</span> if Penn Petro Energy's discretionary charitable contributions in the most recent fiscal year to that entity do not exceed $1 million or two percent of that entity’s gross revenues for that year, whichever is greater, and if the charitable contributions are consistent with Penn Petro Energy’s philanthropic practices; and
+                                            <span class="font-bold">Director of another entity</span> if Pennpetro Energy PLC's discretionary charitable contributions in the most recent fiscal year to that entity do not exceed $1 million or two percent of that entity’s gross revenues for that year, whichever is greater, and if the charitable contributions are consistent with Pennpetro Energy PLC’s philanthropic practices; and
                                         </li>
                                         <li>
-                                            <p>A relationship arising solely from a Director's ownership of an equity or limited partnership interest in a party that engages in a transaction with Penn Petro Energy, so long as the Director's ownership interest does not exceed two percent of the total equity or partnership interest in that other party.</p>
+                                            <p>A relationship arising solely from a Director's ownership of an equity or limited partnership interest in a party that engages in a transaction with Pennpetro Energy PLC, so long as the Director's ownership interest does not exceed two percent of the total equity or partnership interest in that other party.</p>
                                         </li>
                                     </ul>
                                     <p>
@@ -312,7 +337,7 @@
                                     class="grid text-sm lg:text-base p-3 border-b-1 border-(--border-gray)"
                                 >
                                     <p>
-                                        As provided in Penn Petro Energy’s By-Laws, candidates for Directors are elected annually by a majority vote in an uncontested election and by a plurality vote in a contested election. 
+                                        As provided in Pennpetro Energy PLC’s By-Laws, candidates for Directors are elected annually by a majority vote in an uncontested election and by a plurality vote in a contested election. 
                                         Any Director nominated for re-election who does not receive more votes cast “for” such nominee's election than votes cast “against” such nominee’s election, excluding abstentions, is expected to submit his or her offer of resignation for consideration by the Board Nominating and Governance Committee. 
                                         The Board Nominating and Governance Committee shall consider all of the relevant facts and circumstances, including the Director’s qualifications, the Director’s past and expected future contributions to the Corporation, the overall composition of the Board and whether accepting the tendered resignation would cause the Corporation to fail to meet any applicable rule or regulation (including New York Stock Exchange listing requirements and federal securities laws) and recommend to the Board the action to be taken with respect to such offer of resignation. 
                                         The Board intends to nominate for re-election only nominees who agree to offer the resignation contemplated by this Guideline.
@@ -516,7 +541,7 @@
                                     v-if="businessConduct"
                                     class="text-sm lg:text-base p-3 border-b-1 border-(--border-gray)"
                                 >
-                                    The Board expects all Directors, as well as officers and employees, to display the highest standard of ethics, consistent with The Penn Petro Energy Way. 
+                                    The Board expects all Directors, as well as officers and employees, to display the highest standard of ethics, consistent with The Pennpetro Energy PLC Way. 
                                     The Board also expects Directors, officers and employees to acknowledge their adherence to the Corporation's Business Conduct and Ethics Code.
                                     The Corporation has and will continue to maintain the Business Conduct and Ethics Code. 
                                     The Board's Audit Committee periodically reviews compliance with this Code. 
@@ -887,13 +912,13 @@
                                     class="grid text-sm lg:text-base p-3 border-b-1 border-(--border-gray)"
                                 >
                                     <p>
-                                        Penn Petro Energy has a confidential voting policy to protect stockholders' voting privacy. 
+                                        Pennpetro Energy PLC has a confidential voting policy to protect stockholders' voting privacy. 
                                         Under this policy, ballots, proxy forms and voting instructions returned to brokerage firms, banks and other holders of record are kept confidential. 
                                         Only the proxy solicitor, proxy tabulator and the Inspector of Election have access to the ballots, proxy forms and voting instructions.
                                     </p>
                                     <p>
                                         Anyone who processes or inspects ballots, proxy forms or voting instructions signs a pledge to treat them as confidential. 
-                                        None of these persons is a Penn Petro Energy employee. 
+                                        None of these persons is a Pennpetro Energy PLC employee. 
                                         The proxy solicitor and the proxy tabulator will disclose information taken from the ballots, proxy forms and voting instructions only in the event of a proxy contest or as otherwise required by law.
                                     </p>
                                 </div>
@@ -920,7 +945,7 @@
                                     v-if="communicationWithBoard"
                                     class="text-sm lg:text-base p-3 border-b-1 border-(--border-gray)"
                                 >
-                                    Interested parties wishing to communicate their concerns or questions about Penn Petro Energy to the Lead Director or to independent Directors may do so by U.S. mail to Lead Director or to Independent Directors, c/o Office of the Corporate Secretary, Penn Petro Energy Corporation, 5001 Executive Parkway, Suite 200, San Ramon, CA 94583. 
+                                    Interested parties wishing to communicate their concerns or questions about Pennpetro Energy PLC to the Lead Director or to independent Directors may do so by U.S. mail to Lead Director or to Independent Directors, c/o Office of the Corporate Secretary, Pennpetro Energy PLC Corporation, 5001 Executive Parkway, Suite 200, San Ramon, CA 94583. 
                                     The Corporate Secretary will compile the communications, summarize lengthy or repetitive communications and forward to the Lead Director or the independent Directors. The Corporate Secretary will also coordinate any requests from stockholders for additional communications with the Lead Director. 
                                 </p>
                             </Transition>
@@ -947,7 +972,7 @@
                                     class="text-sm lg:text-base p-3 border-b-1 border-(--border-gray)"
                                 >
                                     The Audit Committee has procedures in place to receive, retain and treat complaints received regarding accounting, internal accounting controls or auditing matters and to allow for the confidential and anonymous submission by anyone of concerns regarding questionable accounting or auditing matters. 
-                                    These procedures can be found on the Penn Petro Energy website at
+                                    These procedures can be found on the Pennpetro Energy PLC website at
                                     <NuxtLink
                                         to="/investors/corporate"
                                         target="_blank"
@@ -966,7 +991,7 @@
                                 @click="togglePolicyOnStockholdersRights"
                                 class="flex *:flex items-center justify-between py-3 text-(--medium-blue) font-bold border-b-1 border-(--border-gray) hover:border-(--medium-blue) cursor-pointer duration-300 ease-in-out transition-all"
                             >
-                                <span>RPolicy on stockholder rights plans</span>
+                                <span>Policy on stockholder rights plans</span>
                                 <Icon 
                                     name="mdi:chevron-down" 
                                     class="text-2xl md:text-3xl duration-500 ease-in-out transition-all"
@@ -988,14 +1013,14 @@
                             </Transition>
                         </div>
 
-                        <!-- Policy on stockholder rights plans -->
+                        <!-- Periodic Review -->
                         <div class="flex flex-col">
                             
                             <button 
                                 @click="togglePeriodicReview"
                                 class="flex *:flex items-center justify-between py-3 text-(--medium-blue) font-bold border-b-1 border-(--border-gray) hover:border-(--medium-blue) cursor-pointer duration-300 ease-in-out transition-all"
                             >
-                                <span>RPolicy on stockholder rights plans</span>
+                                <span>Periodic Review</span>
                                 <Icon 
                                     name="mdi:chevron-down" 
                                     class="text-2xl md:text-3xl duration-500 ease-in-out transition-all"
@@ -1015,134 +1040,17 @@
 
                     </div>
 
-                    <!-- Committtee membership -->
-                    <div class="flex flex-col items-center justify-center gap-3 w-full">                                
+                    <p class="text-(--black)">
+                        These guidelines have been adopted by the Pennpetro Energy PLC Board of Directors. 
+                        The guidelines, in conjunction with the Restated Certificate of Incorporation, By-Laws and Board Committee charters, form the framework for governance of the Corporation.
+                    </p>
 
-                        <h2 class="text-2xl lg:text-3xl text-(--dark-blue) pb-4 text-center font-bold">
-                            Committtee membership
-                        </h2>
-
-                        <p class="text-(--black) text-base lg:text-lg">
-                            Penn Petro Energy's Board committee membership is shown below. 
-                            All four standing Board committees are composed entirely of independent directors.
-                        </p>
-                        
-                    </div>
                 </div>
 
             </div>
 
         </section>
 
-        <!-- Section: Corporate governance, Audit committee, Board nominating and governance committee, Management compensation committee, Public policy and sustainability committee -->
-        <section>
-            <div class="relative px-(--section-px) lg:px-(--section-px-lg) py-(--section-py) lg:py-(--section-py-lg) w-full h-full">
-                
-                <div class="flex flex-col w-full max-w-7xl mx-auto h-full gap-20">
-
-                    <!-- Corporate governance -->
-                    <div class="flex flex-col items-center justify-center gap-3 w-full">                                
-
-                        <h2 class="text-2xl lg:text-3xl text-(--dark-blue) pb-4 text-center font-bold">
-                            Corporate governance
-                        </h2>
-
-                        <p class="text-(--black) text-base lg:text-lg">
-                            These guidelines have been adopted by the Penn Petro Energy Board of Directors. 
-                            The guidelines, in conjunction with the Restated Certificate of Incorporation, By-Laws and Board Committee charters, form the framework for governance of the Corporation.
-                        </p>
-                        
-                    </div>
-
-                    <!-- Audit committee -->
-                    <div class="flex flex-col items-center justify-center gap-8 w-full">                                
-
-                        <h2 class="text-2xl lg:text-3xl text-(--dark-blue) pb-4 text-center font-extrabold">
-                            Audit committee
-                        </h2>
-
-                        <div class="grid sm:grid-cols-2  md:grid-cols-3 xl:grid-cols-4 gap-8 place-content-center">
-                            <CustomLeadership
-                                v-for="item in auditCommittee"
-                                :key="item.id"
-                                :imgSrc="item.imgSrc"
-                                :imgAlt="item.imgAlt"
-                                :linkName="item.linkName"
-                                :link="item.link"
-                                :description="item.description"
-                            />
-                        </div>
-                        
-                    </div>
-
-                    <!-- Board nominating and governance committee -->
-                    <div class="flex flex-col items-center justify-center gap-8 w-full">                                
-
-                        <h2 class="text-2xl lg:text-3xl text-(--dark-blue) pb-4 text-center font-extrabold">
-                            Board nominating and governance committee
-                        </h2>
-
-                        <div class="grid sm:grid-cols-2  md:grid-cols-3 xl:grid-cols-4 gap-8 place-content-center">
-                            <CustomLeadership
-                                v-for="item in boardNominatingCommittee"
-                                :key="item.id"
-                                :imgSrc="item.imgSrc"
-                                :imgAlt="item.imgAlt"
-                                :linkName="item.linkName"
-                                :link="item.link"
-                                :description="item.description"
-                            />
-                        </div>
-                        
-                    </div>
-
-                    <!-- Management compensation committee -->
-                    <div class="flex flex-col items-center justify-center gap-8 w-full">                                
-
-                        <h2 class="text-2xl lg:text-3xl text-(--dark-blue) pb-4 text-center font-extrabold">
-                            Management compensation committee
-                        </h2>
-
-                        <div class="grid sm:grid-cols-2  md:grid-cols-3 xl:grid-cols-4 gap-8 place-content-center">
-                            <CustomLeadership
-                                v-for="item in mgtCompensationCommittee"
-                                :key="item.id"
-                                :imgSrc="item.imgSrc"
-                                :imgAlt="item.imgAlt"
-                                :linkName="item.linkName"
-                                :link="item.link"
-                                :description="item.description"
-                            />
-                        </div>
-                        
-                    </div>
-
-                    <!-- Public policy and sustainability committee -->
-                    <div class="flex flex-col items-center justify-center gap-8 w-full">                                
-
-                        <h2 class="text-2xl lg:text-3xl text-(--dark-blue) pb-4 text-center font-extrabold">
-                            Public policy and sustainability committee
-                        </h2>
-
-                        <div class="grid sm:grid-cols-2  md:grid-cols-3 xl:grid-cols-4 gap-8 place-content-center">
-                            <CustomLeadership
-                                v-for="item in publicPolicy"
-                                :key="item.id"
-                                :imgSrc="item.imgSrc"
-                                :imgAlt="item.imgAlt"
-                                :linkName="item.linkName"
-                                :link="item.link"
-                                :description="item.description"
-                            />
-                        </div>
-                        
-                    </div>
-                    
-                </div>
-
-            </div>
-
-        </section>
 
         <!-- Section: Charters, Business conduct and ethics, Contact the board -->
         <section>
@@ -1158,7 +1066,7 @@
                         <div class="flex flex-col gap-4 w-full h-full">
                             <h4 class="text-lg font-bold text-(--dark-blue)">Audit committee</h4>
 
-                            <p class="text-(--black) text-base">
+                            <p class="text-(--black)">
                                 The Audit Committee assists the Board of Directors in ensuring that the corporation’s financial statements are properly audited, that the corporation maintains an effective internal audit function and that the corporation complies with legal and regulatory requirements, among other duties.
                             </p>                                                       
                         </div>
@@ -1167,7 +1075,7 @@
                         <div class="flex flex-col gap-4 w-full h-full">
                             <h4 class="text-lg font-bold text-(--dark-blue)">Board nominating and governance committee</h4>
 
-                            <p class="text-(--black) text-base">
+                            <p class="text-(--black)">
                                 The Board Nominating and Governance Committee assists the Board of Directors in defining and assessing qualifications for membership on the Board, identifying qualified candidates, and in devoting appropriate attention and effective response to stockholder concerns regarding corporate governance, among other duties.
                             </p>                                                      
                         </div>
@@ -1176,7 +1084,7 @@
                         <div class="flex flex-col gap-4 w-full h-full">
                             <h4 class="text-lg font-bold text-(--dark-blue)">Management compensation committee</h4>
 
-                            <p class="text-(--black) text-base">
+                            <p class="text-(--black)">
                                 The Management Compensation Committee assists the Board of Directors in determining salary and other compensation matters for executive officers and in establishing and administering incentive compensation and equity-based compensation plans for company management, among other duties.
                             </p>                                                      
                         </div>
@@ -1185,7 +1093,7 @@
                         <div class="flex flex-col gap-4 w-full h-full">
                             <h4 class="text-lg font-bold text-(--dark-blue)">Public policy and sustainability committee</h4>
 
-                            <p class="text-(--black) text-base">
+                            <p class="text-(--black)">
                                 The Public Policy and Sustainability Committee assists the Board of Directors in overseeing environmental, social, human rights, political, and public policy matters that are relevant to the Corporation’s activities and performance. It also assists the Board of Directors in response to stockholder concerns regarding environmental, social, human rights, political, and public policy matters.
                             </p>                                                      
                         </div>
@@ -1196,8 +1104,8 @@
                     <div class="flex flex-col gap-4 w-full h-full">
                         <h3 class="text-2xl lg:text-4xl text-(--dark-blue) pb-4 text-center font-bold">Business conduct and ethics</h3>
 
-                        <p class="text-(--black) text-base lg:text-lg">
-                            Penn Petro Energy and its employees have a worldwide reputation for conducting business with honesty and integrity. Our Business Conduct and Ethics Code provides information about how we conduct our day-to-day business activities according to the principles of The Penn Petro Energy Way. The Business Conduct and Ethics Code is required reading for all directors and employees.
+                        <p class="text-(--black)">
+                            Pennpetro Energy PLC and its employees have a worldwide reputation for conducting business with honesty and integrity. Our Business Conduct and Ethics Code provides information about how we conduct our day-to-day business activities according to the principles of The Pennpetro Energy PLC Way. The Business Conduct and Ethics Code is required reading for all directors and employees.
                         </p>
                     </div>
 
@@ -1208,44 +1116,35 @@
                         <div class="flex flex-col gap-4 w-full h-full">
                             <h4 class="text-lg font-bold text-(--dark-blue)">Board of directors</h4>
 
-                            <p class="text-(--black) text-base">
-                                Interested parties wishing to communicate their concerns or questions about Penn Petro Energy to the Lead Director or to any other Independent Director may do so by mail to:
+                            <p class="text-(--black)">
+                                Interested parties wishing to communicate their concerns or questions about Pennpetro Energy PLC may do so by mail to:
                             </p>
 
-                            <p class="text-(--black) text-base">
-                                Lead Director or Independent Directors <br>
-                                c/o Office of the Corporate Secretary <br>
-                                Penn Petro Energy PLC <br>
-                                5001 Executive Parkway, Suite 200 <br>
-                                San Ramon, CA 94583, USA
-                            </p>
+                            <p class="text-(--black)">
+                                <span class="font-bold">Head office: </span>6 Heddon Street London,<br>
+                                W1B 4BT,<br>
+                                United Kingdom <br>
+                                Telephone: 
+                                <NuxtLink
+                                    to="tel:+18328541000" target="_blank"
+                                    class="hover:text-(--medium-blue) underline decoration-1 underline-offset-2 decoration-(--dark-gray) hover:decoration-(--medium-blue) hover:cursor-pointer ease-in-out duration-300 transition-all"
+                                >
+                                    +1 832.854.1000
+                                </NuxtLink>
+                            </p> 
 
-                            <p class="text-(--black) text-base">
-                                The Board Nominating and Governance Committee reviews interested-party communications, including stockholder inquiries, directed to Independent Directors.
-                                The Corporate Secretary and Chief Governance Officer will compile the communications, summarize lengthy or repetitive communications received and report on responses sent.
-                            </p>
-                                                       
-                        </div>
-
-                        <div class="flex flex-col gap-4 w-full h-full">
-                            <h4 class="text-lg font-bold text-(--dark-blue)">Accounting or auditing complaints</h4>
-
-                            <p class="text-(--black) text-base">
-                                Anyone with a concern or complaint about Penn Petro Energy’s accounting, internal accounting controls or auditing matters may communicate it to the Audit Committee by sending the Committee a letter in care of the Secretary of the Audit Committee:
-                            </p>
-
-                            <p class="text-(--black) text-base">
-                                Penn Petro Energy Corporation <br>
-                                Attn: Secretary, Board Audit Committee <br>
-                                P.O. Box 6006 <br>
-                                San Ramon, California 94583-0806
-                            </p>
-
-                            <p class="text-(--black) text-base">
-                                Any such communication may be made on a confidential or anonymous basis, but all communications should contain sufficiently specific information to permit the Audit Committee to pursue the matter.
+                            <p class="text-(--black)">
+                                Check the
+                                <NuxtLink
+                                    to="tel:+18328541000"
+                                    class="hover:text-(--medium-blue) underline decoration-1 underline-offset-3 decoration-(--dark-gray) hover:decoration-(--medium-blue) hover:cursor-pointer ease-in-out duration-300 transition-all"
+                                >contact</NuxtLink>
+                                page for more information on how to contact us at Pennpetro Energy PLC.
                             </p>
                                                        
                         </div>
+
+
                     </div>  
                 </div>
 

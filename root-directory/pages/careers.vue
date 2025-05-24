@@ -4,24 +4,24 @@
     
     useHead({
         title: 'Careers',
-        titleTemplate: '%s | Penn Petro Energy PLC'
+        titleTemplate: '%s | Pennpetro Energy PLC'
     });
 
     useSeoMeta({
-        title: 'Careers at Penn Petro Energy | Build a Future in Energy',
-        ogTitle: 'Join Penn Petro Energy - Careers that Power the Future',
-        description: 'Explore career opportunities at Penn Petro Energy and help shape the future of global energy. We offer roles in engineering, sustainability, technology, and more.',
-        ogDescription: 'Penn Petro Energy is hiring! Join a dynamic team driving innovation and sustainability in the energy sector. Discover careers with purpose and global impact.',
+        title: 'Careers at Pennpetro Energy PLC | Build a Future in Energy',
+        ogTitle: 'Join Pennpetro Energy PLC - Careers that Power the Future',
+        description: 'Explore career opportunities at Pennpetro Energy PLC and help shape the future of global energy. We offer roles in engineering, sustainability, technology, and more.',
+        ogDescription: 'Pennpetro Energy PLC is hiring! Join a dynamic team driving innovation and sustainability in the energy sector. Discover careers with purpose and global impact.',
         ogImage: '/Logo/Full_Penn_Petro_Energy_Logo.jpg',
-        ogImageAlt: 'Penn Petro Energy employees working at an energy site and in office environments.',
+        ogImageAlt: 'Pennpetro Energy PLC employees working at an energy site and in office environments.',
         ogUrl: 'https://vercel.com/bom-projects/pen-oil/careers',
 
         twitterCard: 'summary_large_image',
-        twitterTitle: 'Careers at Penn Petro Energy | Make an Impact in Energy',
-        twitterDescription: 'We’re building the future of energy. Find your role in our team at Penn Petro Energy and grow your career in a company committed to innovation and sustainability.',
+        twitterTitle: 'Careers at Pennpetro Energy PLC | Make an Impact in Energy',
+        twitterDescription: 'We’re building the future of energy. Find your role in our team at Pennpetro Energy PLC and grow your career in a company committed to innovation and sustainability.',
         twitterImage: '/Logo/Full_Penn_Petro_Energy_Logo.jpg',
 
-        keywords: 'Penn Petro Energy careers, energy jobs, oil and gas careers, sustainability jobs, engineering jobs, energy innovation, clean energy careers, global energy company, Penn Petro hiring',
+        keywords: 'Pennpetro Energy PLC careers, energy jobs, oil and gas careers, sustainability jobs, engineering jobs, energy innovation, clean energy careers, global energy company, Penn Petro hiring',
     });
 
     import { careersHeroImageBg } from '~/models/heroBgModels';
@@ -45,7 +45,7 @@
             />
         </div>
 
-        <!-- Section: Careers at Penn Petro Energy -->
+        <!-- Section: Careers at Pennpetro Energy PLC -->
         <section>
             <div class="py-12 w-full h-full">
                 
@@ -63,12 +63,12 @@
                             <h2 
                                 class="text-4xl md:text-5xl text-(--light-blue) text-wrap font-extrabold w-full h-full"
                             >
-                                Careers at Penn Petro Energy
+                                Careers at Pennpetro Energy PLC
                             </h2>
 
                             <p class="text-(--white) text-base md:text-lg">
-                                Penn Petro Energy only accepts job applications through our Careers website. 
-                                The site features information about careers at Penn Petro Energy and current job openings.
+                                Pennpetro Energy PLC only accepts job applications through our Careers website. 
+                                The site features information about careers at Pennpetro Energy PLC and current job openings.
                             </p>
                         </div>
 
@@ -118,7 +118,7 @@
                             </h2>
 
                             <p class="text-(--white) text-base md:text-lg">
-                                Penn Petro Energy Service Stations, Inc. is looking for Customer Service Representatives who are 18 years or older..
+                                Pennpetro Energy PLC Service Stations, Inc. is looking for Customer Service Representatives who are 18 years or older..
                             </p>
                         </div>
 
@@ -223,7 +223,7 @@
                             </h2>
 
                             <p class="text-(--white) text-base md:text-lg">
-                                Penn Petro Energy never seeks fees from job applicants under any circumstances.
+                                Pennpetro Energy PLC never seeks fees from job applicants under any circumstances.
                                 If you receive a job offer that you believe is fraudulent, contact your local law enforcement agency.
                             </p>
                         </div>

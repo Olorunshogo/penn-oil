@@ -3,24 +3,24 @@
     import { useHead } from 'nuxt/app';
     useHead({
         title: 'What We Do',
-        titleTemplate: '%s | Penn Petro Energy'
+        titleTemplate: '%s | Pennpetro Energy PLC'
     });
 
     useSeoMeta({
-        title: 'Overview of Penn Petro Energy’s Services | What We Do',
-        ogTitle: 'Penn Petro Energy | Comprehensive Energy Solutions Worldwide',
-        description: 'Learn about Penn Petro Energy’s full range of services, including energy production, innovation, sustainability, and technology solutions across the global energy landscape.',
-        ogDescription: 'Explore the wide array of services Penn Petro Energy provides to meet global energy demands. From traditional oil and gas to clean energy technologies, we power progress.',
+        title: 'Overview of Pennpetro Energy PLC’s Services | What We Do',
+        ogTitle: 'Pennpetro Energy PLC | Comprehensive Energy Solutions Worldwide',
+        description: 'Learn about Pennpetro Energy PLC’s full range of services, including energy production, innovation, sustainability, and technology solutions across the global energy landscape.',
+        ogDescription: 'Explore the wide array of services Pennpetro Energy PLC provides to meet global energy demands. From traditional oil and gas to clean energy technologies, we power progress.',
         ogImage: '/Logo/Full_Penn_Petro_Energy_Logo.jpg',
-        ogImageAlt: 'Penn Petro Energy infrastructure, including energy plants, technology, and sustainable energy solutions.',
+        ogImageAlt: 'Pennpetro Energy PLC infrastructure, including energy plants, technology, and sustainable energy solutions.',
         ogUrl: 'https://vercel.com/bom-projects/pen-oil/what/overview',
 
         twitterCard: 'summary_large_image',
-        twitterTitle: 'What We Do | Penn Petro Energy Services Overview',
-        twitterDescription: 'At Penn Petro Energy, we provide comprehensive energy solutions designed to meet the world’s growing demand for sustainable and reliable energy.',
+        twitterTitle: 'What We Do | Pennpetro Energy PLC Services Overview',
+        twitterDescription: 'At Pennpetro Energy PLC, we provide comprehensive energy solutions designed to meet the world’s growing demand for sustainable and reliable energy.',
         twitterImage: '/Logo/Full_Penn_Petro_Energy_Logo.jpg',
 
-        keywords: 'Penn Petro Energy services, energy solutions, global energy company, oil and gas services, clean energy technologies, energy production, energy innovation, sustainability in energy',
+        keywords: 'Pennpetro Energy PLC services, energy solutions, global energy company, oil and gas services, clean energy technologies, energy production, energy innovation, sustainability in energy',
     });
 
     import { whatOverviewHeroVideoBg } from '~/models/heroBgModels'; 
@@ -221,7 +221,7 @@
             <div class="w-full h-full">           
                 <HomeNewsroom 
                     category="newsroom"
-                    title="Latest at Penn Petro Energy" 
+                    title="Latest at Pennpetro Energy PLC" 
             />
             </div>
 

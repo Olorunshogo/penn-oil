@@ -150,7 +150,7 @@
                             </h3>
 
                             <p class="text-(--white) text-lg lg:text-xl font-light leading-relaxed">
-                                Penn Petro Energy is leading the way in sustainability with advanced carbon capture and storage (CCS) technology—turning emissions into a thing of the past.
+                                Pennpetro Energy PLC is leading the way in sustainability with advanced carbon capture and storage (CCS) technology—turning emissions into a thing of the past.
                             </p>
 
                             <!-- CTA Button -->
