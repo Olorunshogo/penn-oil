@@ -113,7 +113,6 @@ export const whoBrandsHeroImageBg = ref({
     category: "Who we are",
     bgColor: "var-(--dark-blue)",
     title: "Our brands",
-    titleBgImageSrc: "https://images.pexels.com/photos/8960944/pexels-photo-8960944.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     paragraph: "Pennpetro Energy PLC is taking steps to help protect the environment where we operate. We do this by stewarding our water usage, integrating biodiversity into our decision making, reducing waste and managing air emissions from our operations.",
     displayLink: false,
     link: "/newsroom",
@@ -127,7 +126,6 @@ export const whoLeadershipHeroImageBg = ref({
     category: "Who we are",
     bgColor: "var-(--dark-blue)",
     title: "Penn Leadership",
-    titleBgImageSrc: "https://images.pexels.com/photos/8428092/pexels-photo-8428092.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     paragraph: "Our culture is built upon the principles of responsibility, trust and integrity. Our leadership is a profound source of pride, as we lead in the future of energy.",
     displayLink: false,
     link: "/newsroom",
@@ -166,13 +164,11 @@ export const whatTechnologyHeroImageBg = ref({
     category: "Who we are",
     // title: "Tech & innovation",
     title: "Technology Harnessing Innovation to Power Energy Development",
-    titleBgImageSrc: "https://images.pexels.com/photos/2085831/pexels-photo-2085831.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     paragraph: "Harnessing Innovation to Power Energy Development. At Pennpetro Energy PLC, technology is at the heart of our operations. From precision well targeting to advanced resource evaluation, we leverage innovative tools and techniques to maximize efficiency, reduce costs, and minimize environmental impact. Our commitment to technological advancement underpins our ability to safely and effectively extract energy resources from some of the most technically challenging onshore formations in the United States.",
     displayLink: false,
     link: "/newsroom",
     linkName: "Read more about our environmental efforts"        
 });
-
 
 
 // Sustainability Overview
@@ -205,7 +201,6 @@ export const sustainabilityEnvironmentHeroImageBg = ref({
     imgAlt: "Wind Turbines Near Brown Mountains and Railway",
     category: "Sustainability",
     title: "Environment",
-    titleBgImageSrc: "/sustainability/sustainability-environment-hero-image.jpeg",
     paragraph: "Pennpetro Energy PLC is taking steps to help protect the environment where we operate. We do this by stewarding our water usage, integrating biodiversity into our decision making, reducing waste and managing air emissions from our operations.",
     displayLink: false,
     link: "/newsroom",
@@ -218,7 +213,6 @@ export const sustainabilitySocialHeroImageBg = ref({
     imgAlt: "Two ladies and a man sharing aids",
     category: "sustainability",
     title: "Social investment",
-    titleBgImageSrc: "https://images.pexels.com/photos/6646778/pexels-photo-6646778.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     // paragraph: "We believe our business succeeds when our people and communities succeed. Our social investments seek to respond to needs in the communities where we operate around the world. We seek to work with communities and partners to promote job growth and economic development.",
     paragraph: "We believe our business succeeds when our people and communities succeed. We seek to work with communities and partners to promote job growth and economic development.",
     displayLink: false,
@@ -254,7 +248,6 @@ export const careersHeroImageBg = ref({
     imgSrc: "https://images.pexels.com/photos/1181438/pexels-photo-1181438.jpeg",
     imgAlt: "Group of Women Standing Near Desk",
     title: "Careers",
-    titleBgImageSrc: "https://images.pexels.com/photos/1181438/pexels-photo-1181438.jpeg",
     paragraph: "We believe our business succeeds when our people and communities succeed. Our social investments seek to respond to needs in the communities where we operate around the world. We seek to work with communities and partners to promote job growth and economic development.",
     displayLink: false,
     link: "/sustainability",
