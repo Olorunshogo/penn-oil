@@ -38,6 +38,7 @@
                 :imgSrc="whoBrandsHeroImageBg.imgSrc"
                 :imgAlt="whoBrandsHeroImageBg.imgAlt"
                 :category="whoBrandsHeroImageBg.category"
+                :bgColor="whoBrandsHeroImageBg.bgColor",
                 :title="whoBrandsHeroImageBg.title"
                 :titleBgImageSrc="whoBrandsHeroImageBg.titleBgImageSrc"
                 :displayLink="whoBrandsHeroImageBg.displayLink"
