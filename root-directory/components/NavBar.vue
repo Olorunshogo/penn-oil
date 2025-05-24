@@ -155,13 +155,13 @@
             </NuxtLink>
 
             <!-- Careers -->
-            <NuxtLink
+            <!-- <NuxtLink
               to="/careers"
               @click="closeAllMenu"
               class="flex *:flex items-center *:items-center justify-between hover:text-(--light-blue) duration-300 ease-in-out transition-all"
             >
               Careers
-            </NuxtLink>
+            </NuxtLink> -->
           </aside>
 
           <!-- Mobile Panels -->
@@ -169,7 +169,7 @@
             <!-- Who we are panel -->
             <aside
               id="mobile-menu"
-              class="fixed top-0 left-0 w-full h-full z-20 flex flex-col gap-8 font-normal text-2xl bg-(--primary-bg) p-8 text-(--white) transition-transform duration-300 ease-in-out *:ease-in-out *:duration-300 *:transition-all"
+              class="fixed lg:hidden top-0 left-0 w-full h-full z-20 flex flex-col gap-8 font-normal text-2xl bg-(--primary-bg) p-8 text-(--white) transition-transform duration-300 ease-in-out *:ease-in-out *:duration-300 *:transition-all"
               :class="isWhoOpen ? 'translate-x-0' : '-translate-x-full'"
               role="dialog"
               aria-modal="true"
@@ -236,15 +236,6 @@
                 Our leadership
               </NuxtLink>
 
-              <!-- Our history -->
-              <!-- <NuxtLink
-                to="/who/history"
-                @click="closeAllMenu"
-                class="flex *:flex items-center *:items-center justify-between hover:text-(--light-blue) duration-300 ease-in-out transition-all"
-              >
-                Our history
-              </NuxtLink> -->
-
               <!-- Contact us -->
               <NuxtLink
                 to="/contact"
@@ -258,7 +249,7 @@
             <!-- What we do panel -->
             <aside
               id="mobile-menu"
-              class="fixed top-0 left-0 w-full h-full z-20 flex flex-col gap-8 font-normal text-2xl bg-(--primary-bg) p-8 text-(--white) transition-transform duration-300 ease-in-out *:ease-in-out *:duration-300 *:transition-all"
+              class="fixed lg:hidden top-0 left-0 w-full h-full z-20 flex flex-col gap-8 font-normal text-2xl bg-(--primary-bg) p-8 text-(--white) transition-transform duration-300 ease-in-out *:ease-in-out *:duration-300 *:transition-all"
               :class="isWhatOpen ? 'translate-x-0' : '-translate-x-full'"
               role="dialog"
               aria-modal="true"
@@ -329,7 +320,7 @@
             <!-- Sustainability panel -->
             <aside
               id="mobile-menu"
-              class="fixed top-0 left-0 w-full h-full z-20 flex flex-col gap-8 font-normal text-2xl bg-(--primary-bg) p-8 text-(--white) transition-transform duration-300 ease-in-out *:ease-in-out *:duration-300 *:transition-all"
+              class="fixed lg:hidden top-0 left-0 w-full h-full z-20 flex flex-col gap-8 font-normal text-2xl bg-(--primary-bg) p-8 text-(--white) transition-transform duration-300 ease-in-out *:ease-in-out *:duration-300 *:transition-all"
               :class="isSustainabilityOpen ? 'translate-x-0' : '-translate-x-full'"
               role="dialog"
               aria-modal="true"
@@ -400,7 +391,7 @@
             <!-- Investors panel -->
             <aside
               id="mobile-menu"
-              class="fixed top-0 left-0 w-full h-full z-20 flex flex-col gap-8 font-normal text-2xl bg-(--primary-bg) p-8 text-(--white) transition-transform duration-300 ease-in-out *:ease-in-out *:duration-300 *:transition-all"
+              class="fixed lg:hidden top-0 left-0 w-full h-full z-20 flex flex-col gap-8 font-normal text-2xl bg-(--primary-bg) p-8 text-(--white) transition-transform duration-300 ease-in-out *:ease-in-out *:duration-300 *:transition-all"
               :class="isInvestorsOpen ? 'translate-x-0' : '-translate-x-full'"
               role="dialog"
               aria-modal="true"

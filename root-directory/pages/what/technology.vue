@@ -23,8 +23,6 @@
         keywords: 'Pennpetro Energy PLC technology, energy innovation, clean energy technology, sustainable energy solutions, advanced energy systems, oil and gas technology, energy sector innovation, energy tech advancements',
     });
 
-    import { whatTechnologyHeroImageBg } from '~/models/heroBgModels';
-
 </script>
 
 
@@ -33,18 +31,40 @@
     <div>
 
         <!-- Section: Hero -->
-        <div>
-            <HeroSectionImageBg
-                :imgSrc="whatTechnologyHeroImageBg.imgSrc"
-                :imgAlt="whatTechnologyHeroImageBg.imgAlt"
-                :category="whatTechnologyHeroImageBg.category"
-                :title="whatTechnologyHeroImageBg.title"
-                :displayLink="whatTechnologyHeroImageBg.displayLink"
-                :paragraph="whatTechnologyHeroImageBg.paragraph"
-                :link="whatTechnologyHeroImageBg.link"
-                :linkName="whatTechnologyHeroImageBg.linkName"
-            />
-        </div>
+        <section>      
+            
+            <div class="relative w-screen h-dvh overflow-hidden">
+
+                <div class="bg-container">
+
+                    <NuxtImg
+                        src="https://images.pexels.com/photos/60130/pexels-photo-60130.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        alt="Star Wars R2-d2"
+                        loading="lazy"
+                        class="bg"
+                    />
+                </div>
+
+                <!-- Content Layer -->
+                <div class="absolute bottom-0 w-full h-1/2 max-h-120 backdrop-blur-md rounded-t-2xl shadow-lg flex items-center justify-center">
+                    <div class="flex flex-col items-center justify-center text-center gap-4 w-full max-w-7xl mx-auto">
+
+                        <h1 class="text-5xl sm:text-6xl text-center font-extrabold text-(--dark-red)">
+                            Technology Harnessing Innovation to Power Energy Development
+                        </h1>
+                        
+                        <p class="text-base md:text-lg text-center font-medium text-(--white)">
+                            Harnessing Innovation to Power Energy Development. 
+                            At Pennpetro Energy PLC, technology is at the heart of our operations. 
+                            From precision well targeting to advanced resource evaluation, we leverage innovative tools and techniques to maximize efficiency, reduce costs, and minimize environmental impact. 
+                            Our commitment to technological advancement underpins our ability to safely and effectively extract energy resources from some of the most technically challenging onshore formations in the United States.
+                        </p>
+ 
+                    </div>
+                </div>
+
+            </div>
+        </section> 
 
         <!-- Images  -->
         <section>

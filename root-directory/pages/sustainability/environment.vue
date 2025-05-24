@@ -24,27 +24,44 @@
         keywords: 'Pennpetro Energy PLC environmental responsibility, environmental stewardship, biodiversity protection, water conservation, sustainable resource management, eco-friendly energy practices, environmental sustainability in oil and gas',
     });
 
-
-    import { sustainabilityEnvironmentHeroImageBg } from '~/models/heroBgModels';
-
 </script>
 
 
 <template>
     <div>
         <!-- Section: Hero -->
-        <div>
-            <HeroSectionImageBg
-                :imgSrc="sustainabilityEnvironmentHeroImageBg.imgSrc"
-                :imgAlt="sustainabilityEnvironmentHeroImageBg.imgAlt"
-                :category="sustainabilityEnvironmentHeroImageBg.category"
-                :title="sustainabilityEnvironmentHeroImageBg.title"
-                :displayLink="sustainabilityEnvironmentHeroImageBg.displayLink"
-                :paragraph="sustainabilityEnvironmentHeroImageBg.paragraph"
-                :link="sustainabilityEnvironmentHeroImageBg.link"
-                :linkName="sustainabilityEnvironmentHeroImageBg.linkName"
-            />
-        </div>
+        <section>      
+            
+            <div class="relative w-screen h-dvh overflow-hidden">
+
+                <div class="bg-container">
+
+                    <NuxtImg
+                        src="/sustainability/sustainability-environment-hero-image.jpeg"
+                        alt="Wind Turbines Near Brown Mountains and Railway"
+                        loading="lazy"
+                        class="bg"
+                    />
+                </div>
+
+                <!-- Content Layer -->
+                <div class="absolute bottom-0 w-full h-1/2 max-h-120 backdrop-blur-md rounded-t-2xl shadow-lg flex items-center justify-center">
+                    <div class="flex flex-col items-center justify-center text-center gap-4 w-full max-w-7xl mx-auto">
+
+                        <h1 class="text-5xl sm:text-6xl text-center font-extrabold text-(--dark-red)">
+                            Environment
+                        </h1>
+                        
+                        <p class="text-base md:text-lg text-center font-medium text-(--white)">
+                            Pennpetro Energy PLC is taking steps to help protect the environment where we operate. 
+                            We do this by stewarding our water usage, integrating biodiversity into our decision making, reducing waste and managing air emissions from our operations.
+                        </p>
+ 
+                    </div>
+                </div>
+
+            </div>
+        </section> 
 
         <!-- Section: Stewarding water management -->
         <section>

@@ -37,8 +37,8 @@
                 <div class="bg-container">
 
                     <NuxtImg
-                        src="https://images.pexels.com/photos/8428092/pexels-photo-8428092.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                        alt="A Man in White Long Sleeves Having a Deal with the Man in Black Suit"
+                        src="https://images.pexels.com/photos/7849087/pexels-photo-7849087.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        alt="White King Chess Piece on Black Surface"
                         loading="lazy"
                         class="bg"
                     />

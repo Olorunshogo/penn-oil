@@ -158,17 +158,17 @@ export const whatEnergyHeroVideoBg = ref({
 });
 
 // What Technology
-export const whatTechnologyHeroImageBg = ref({    
-    imgSrc: "https://images.pexels.com/photos/60130/pexels-photo-60130.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    imgAlt: "Star Wars R2-d2",
-    category: "Who we are",
-    // title: "Tech & innovation",
-    title: "Technology Harnessing Innovation to Power Energy Development",
-    paragraph: "Harnessing Innovation to Power Energy Development. At Pennpetro Energy PLC, technology is at the heart of our operations. From precision well targeting to advanced resource evaluation, we leverage innovative tools and techniques to maximize efficiency, reduce costs, and minimize environmental impact. Our commitment to technological advancement underpins our ability to safely and effectively extract energy resources from some of the most technically challenging onshore formations in the United States.",
-    displayLink: false,
-    link: "/newsroom",
-    linkName: "Read more about our environmental efforts"        
-});
+// export const whatTechnologyHeroImageBg = ref({    
+//     imgSrc: "https://images.pexels.com/photos/60130/pexels-photo-60130.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+//     imgAlt: "Star Wars R2-d2",
+//     category: "Who we are",
+//     // title: "Tech & innovation",
+//     title: "Technology Harnessing Innovation to Power Energy Development",
+//     paragraph: "Harnessing Innovation to Power Energy Development. At Pennpetro Energy PLC, technology is at the heart of our operations. From precision well targeting to advanced resource evaluation, we leverage innovative tools and techniques to maximize efficiency, reduce costs, and minimize environmental impact. Our commitment to technological advancement underpins our ability to safely and effectively extract energy resources from some of the most technically challenging onshore formations in the United States.",
+//     displayLink: false,
+//     link: "/newsroom",
+//     linkName: "Read more about our environmental efforts"        
+// });
 
 
 // Sustainability Overview
@@ -196,29 +196,28 @@ export const sustainabilityClimateHeroImageBg = ref({
 });
 
 // Sustainability Environment
-export const sustainabilityEnvironmentHeroImageBg = ref({    
-    imgSrc: "/sustainability/sustainability-environment-hero-image.jpeg",
-    imgAlt: "Wind Turbines Near Brown Mountains and Railway",
-    category: "Sustainability",
-    title: "Environment",
-    paragraph: "Pennpetro Energy PLC is taking steps to help protect the environment where we operate. We do this by stewarding our water usage, integrating biodiversity into our decision making, reducing waste and managing air emissions from our operations.",
-    displayLink: false,
-    link: "/newsroom",
-    linkName: "Read more about our environmental efforts"        
-});
+// export const sustainabilityEnvironmentHeroImageBg = ref({    
+//     imgSrc: "/sustainability/sustainability-environment-hero-image.jpeg",
+//     imgAlt: "Wind Turbines Near Brown Mountains and Railway",
+//     category: "Sustainability",
+//     title: "Environment",
+//     paragraph: "Pennpetro Energy PLC is taking steps to help protect the environment where we operate. We do this by stewarding our water usage, integrating biodiversity into our decision making, reducing waste and managing air emissions from our operations.",
+//     displayLink: false,
+//     link: "/newsroom",
+//     linkName: "Read more about our environmental efforts"        
+// });
 
 // Sustainability Social
-export const sustainabilitySocialHeroImageBg = ref({    
-    imgSrc: "https://images.pexels.com/photos/6646778/pexels-photo-6646778.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    imgAlt: "Two ladies and a man sharing aids",
-    category: "sustainability",
-    title: "Social investment",
-    // paragraph: "We believe our business succeeds when our people and communities succeed. Our social investments seek to respond to needs in the communities where we operate around the world. We seek to work with communities and partners to promote job growth and economic development.",
-    paragraph: "We believe our business succeeds when our people and communities succeed. We seek to work with communities and partners to promote job growth and economic development.",
-    displayLink: false,
-    link: "/sustainability",
-    linkName: "Read more about our environmental efforts"        
-});
+// export const sustainabilitySocialHeroImageBg = ref({    
+//     imgSrc: "https://images.pexels.com/photos/6646778/pexels-photo-6646778.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+//     imgAlt: "Two ladies and a man sharing aids",
+//     category: "sustainability",
+//     title: "Social investment",
+//     paragraph: "We believe our business succeeds when our people and communities succeed. We seek to work with communities and partners to promote job growth and economic development.",
+//     displayLink: false,
+//     link: "/sustainability",
+//     linkName: "Read more about our environmental efforts"        
+// });
 
 
 // Investors Overview

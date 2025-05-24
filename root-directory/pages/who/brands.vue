@@ -68,7 +68,7 @@
 
         <!-- Section: Pennpetro Energy PLC, Texaco, Caltex -->
         <section>
-            <div class="grid w-full h-full overflow-hidden py-(--section-py) lg:py-(--section-py-lg)">
+            <div class="grid w-full h-full">
                 
                 <!-- Pennpetro Energy PLC -->
                 <div class="grid bg-(--dark-blue) w-full h-full py-24">

@@ -27,9 +27,7 @@
         contributedUs,
         volunteerHours,
         charitableOrganization
-    } from '~/stores/sustainabilityVariables';
-
-    import { sustainabilitySocialHeroImageBg } from '~/models/heroBgModels';    
+    } from '~/stores/sustainabilityVariables';    
 
 </script>
 
@@ -37,18 +35,38 @@
 <template>
     <div>
         <!-- Section: Hero -->
-        <div>
-            <HeroSectionImageBg
-                :imgSrc="sustainabilitySocialHeroImageBg.imgSrc"
-                :imgAlt="sustainabilitySocialHeroImageBg.imgAlt"
-                :category="sustainabilitySocialHeroImageBg.category"
-                :title="sustainabilitySocialHeroImageBg.title"
-                :displayLink="sustainabilitySocialHeroImageBg.displayLink"
-                :paragraph="sustainabilitySocialHeroImageBg.paragraph"
-                :link="sustainabilitySocialHeroImageBg.link"
-                :linkName="sustainabilitySocialHeroImageBg.linkName"
-            />
-        </div>
+        <section>      
+            
+            <div class="relative w-screen h-dvh overflow-hidden">
+
+                <div class="bg-container">
+
+                    <NuxtImg
+                        src="https://images.pexels.com/photos/6646778/pexels-photo-6646778.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        alt="Two ladies and a man sharing aids"
+                        loading="lazy"
+                        class="bg"
+                    />
+                </div>
+
+                <!-- Content Layer -->
+                <div class="absolute bottom-0 w-full h-1/2 max-h-120 backdrop-blur-md rounded-t-2xl shadow-lg flex items-center justify-center">
+                    <div class="flex flex-col items-center justify-center text-center gap-4 w-full max-w-7xl mx-auto">
+
+                        <h1 class="text-5xl sm:text-6xl text-center font-extrabold text-(--dark-red)">
+                            Social investment
+                        </h1>
+                        
+                        <p class="text-base md:text-lg text-center font-medium text-(--white)">
+                            "We believe our business succeeds when our people and communities succeed. 
+                            We seek to work with communities and partners to promote job growth and economic development.
+                        </p>
+ 
+                    </div>
+                </div>
+
+            </div>
+        </section> 
 
         <!-- Section: Our approach -->
         <section>
