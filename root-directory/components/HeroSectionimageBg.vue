@@ -1,49 +1,68 @@
 
 <script setup lang="ts">
-    defineProps({
-        bgColor: {
-            type: String,
-            default: 'transparent',
-            required: true
-        },
-        imgSrc: {
-            type: String,
-            required: true
-        },
-        imgAlt: {
-            type: String,
-            required: true
-        },
-        displayLink: {
-            type: Boolean,
-            default: false,
-            required: true
-        },
-        category: {
-            type: String,
-            required: false
-        },
-        title: {
-            type: String,
-            required: true
-        },
-        titleBgImageSrc: {
-            type: String,
-            required: true
-        },
-        paragraph: {
-            type: String,
-            required: true
-        },
-        link: {
-            type: String,
-            required: true
-        },
-        linkName: {
-            type: String,
-            required: true
-        },
-    });
+
+    interface HeroImageBgProps {
+        bgColor?: string;
+        imgSrc: string;
+        imgAlt: string;
+        displayLink?: boolean;
+        category?: string;
+        title: string;
+        titleBgImageSrc: string;
+        paragraph: string;
+        link: string;
+        linkName: string;
+            }
+
+    // const props = withDefaults(defineProps(), {
+    //     bgColor: {
+    //         type: String,
+    //         default: 'transparent',
+    //         required: true
+    //     },
+    //     imgSrc: {
+    //         type: String,
+    //         required: true
+    //     },
+    //     imgAlt: {
+    //         type: String,
+    //         required: true
+    //     },
+    //     displayLink: {
+    //         type: Boolean,
+    //         default: false,
+    //         required: true
+    //     },
+    //     category: {
+    //         type: String,
+    //         required: false
+    //     },
+    //     title: {
+    //         type: String,
+    //         required: true
+    //     },
+    //     titleBgImageSrc: {
+    //         type: String,
+    //         required: true
+    //     },
+    //     paragraph: {
+    //         type: String,
+    //         required: true
+    //     },
+    //     link: {
+    //         type: String,
+    //         required: true
+    //     },
+    //     linkName: {
+    //         type: String,
+    //         required: true
+    //     },
+    // });
+
+    const props = withDefaults(defineProps<HeroImageBgProps>(), {
+        bgColor: 'transparent',
+        displayLink: false,
+    })
 </script>
 
 
