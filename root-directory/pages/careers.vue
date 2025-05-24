@@ -37,7 +37,6 @@
                 :imgSrc="careersHeroImageBg.imgSrc"
                 :imgAlt="careersHeroImageBg.imgAlt"
                 :title="careersHeroImageBg.title"
-                :titleBgImageSrc="careersHeroImageBg.titleBgImageSrc"
                 :displayLink="careersHeroImageBg.displayLink"
                 :paragraph="careersHeroImageBg.paragraph"
                 :link="careersHeroImageBg.link"

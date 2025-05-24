@@ -38,15 +38,12 @@
                 :imgAlt="whoLeadershipHeroImageBg.imgAlt"
                 :category="whoLeadershipHeroImageBg.category"
                 :title="whoLeadershipHeroImageBg.title"
-                :titleBgImageSrc="whoLeadershipHeroImageBg.titleBgImageSrc"
                 :displayLink="whoLeadershipHeroImageBg.displayLink"
                 :paragraph="whoLeadershipHeroImageBg.paragraph"
                 :link="whoLeadershipHeroImageBg.link"
                 :linkName="whoLeadershipHeroImageBg.linkName"
             />
         </div>
-
-
 
         <!-- Section: Board of Directors -->
 

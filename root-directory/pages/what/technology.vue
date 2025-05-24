@@ -39,7 +39,6 @@
                 :imgAlt="whatTechnologyHeroImageBg.imgAlt"
                 :category="whatTechnologyHeroImageBg.category"
                 :title="whatTechnologyHeroImageBg.title"
-                :titleBgImageSrc="whatTechnologyHeroImageBg.titleBgImageSrc"
                 :displayLink="whatTechnologyHeroImageBg.displayLink"
                 :paragraph="whatTechnologyHeroImageBg.paragraph"
                 :link="whatTechnologyHeroImageBg.link"

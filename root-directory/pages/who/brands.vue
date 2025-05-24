@@ -24,66 +24,27 @@
         keywords: 'Pennpetro Energy PLC brands, energy portfolio, energy subsidiaries, oil and gas brands, clean energy brands, Penn Petro divisions, global energy companies, energy innovation network',
     });
 
-    //import { whoBrandsHeroImageBg } from '~/models/heroBgModels';    
-    
-
+    import { whoBrandsHeroImageBg } from '~/models/heroBgModels'
+   
 </script>
 
 
 <template>
     <div>
+
         <!-- Section: Hero -->
-        <!-- <div>
+        <div>
             <HeroSectionImageBg
                 :imgSrc="whoBrandsHeroImageBg.imgSrc"
                 :imgAlt="whoBrandsHeroImageBg.imgAlt"
                 :category="whoBrandsHeroImageBg.category"
-                :bgColor="whoBrandsHeroImageBg.bgColor",
                 :title="whoBrandsHeroImageBg.title"
-                :titleBgImageSrc="whoBrandsHeroImageBg.titleBgImageSrc"
                 :displayLink="whoBrandsHeroImageBg.displayLink"
                 :paragraph="whoBrandsHeroImageBg.paragraph"
                 :link="whoBrandsHeroImageBg.link"
                 :linkName="whoBrandsHeroImageBg.linkName"
             />
-        </div>  -->
-
-        <!-- Section: Hero -->
-        <section>      
-        
-            <div class="relative w-screen h-dvh overflow-hidden">
-
-                <div class="bg-container" style="{ backgroundColor: var-(--dark-blue)">
-
-                    <NuxtImg
-                        src="https://images.pexels.com/photos/8960944/pexels-photo-8960944.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                        alt="Woman in White Hat Holding Silver Touchscreen Device"
-                        loading="lazy"
-                        class="bg"
-                    />
-                </div>
-
-                <!-- Content Layer -->
-                <div class="absolute bottom-0 w-full h-1/2 max-h-120 backdrop-blur-md rounded-t-2xl shadow-lg flex items-center justify-center">
-                    <div class="flex flex-col items-center justify-center text-center gap-4 w-full max-w-7xl mx-auto">
-                        
-                        <span class="text-lg lg:text-xl text-center font-bold text-(--black)">
-                            Who we are
-                        </span>
-
-                        <h1 class="text-5xl sm:text-6xl text-center font-extrabold text-(--dark-red)">
-                            Our brands
-                        </h1>
-                        
-                        <p class="text-base md:text-lg text-center font-medium text-(--white)">
-                            Pennpetro Energy PLC is taking steps to help protect the environment where we operate. We do this by stewarding our water usage, integrating biodiversity into our decision making, reducing waste and managing air emissions from our operations.
-                        </p>
-
-                    </div>
-                </div>
-
-            </div>
-        </section>
+        </div>
 
                    
 

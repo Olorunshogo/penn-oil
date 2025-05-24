@@ -39,7 +39,6 @@
                 :imgAlt="sustainabilityEnvironmentHeroImageBg.imgAlt"
                 :category="sustainabilityEnvironmentHeroImageBg.category"
                 :title="sustainabilityEnvironmentHeroImageBg.title"
-                :titleBgImageSrc="sustainabilityEnvironmentHeroImageBg.titleBgImageSrc"
                 :displayLink="sustainabilityEnvironmentHeroImageBg.displayLink"
                 :paragraph="sustainabilityEnvironmentHeroImageBg.paragraph"
                 :link="sustainabilityEnvironmentHeroImageBg.link"

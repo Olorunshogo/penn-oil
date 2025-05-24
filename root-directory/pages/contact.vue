@@ -58,11 +58,6 @@
         return topic.subtopics.map(name => ({ label: name, value: name }));
     });
 
-    // Watch for topic changes to reset subtopic
-    // watch(selectedTopic, (newVal) => {
-    //     alert('Selected topic changed:', newVal);
-    //     selectedSubtopic.value = '';
-    // }); 
 
     watch(selectedTopic, () => {
         selectedSubtopic.value = '';

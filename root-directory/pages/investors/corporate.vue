@@ -61,12 +61,6 @@
 
     } from '~/stores/investorsVariables';
 
-    import {
-        auditCommittee,
-        boardNominatingCommittee,
-        mgtCompensationCommittee,
-        publicPolicy,
-    } from '~/models/investorsModels'
 
 </script>
 

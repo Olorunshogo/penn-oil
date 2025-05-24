@@ -6,10 +6,6 @@
         titleTemplate: '%s | Pennpetro Energy PLC'
     });
 
-    definePageMeta({
-        layout: 'custom'
-    })
-
     useSeoMeta({
         title: 'ESG A–Z Index | Pennpetro Energy PLC - Environmental, Social & Governance Insights',
         ogTitle: 'Pennpetro Energy PLC ESG A–Z Index | Sustainability & Responsible Practices',

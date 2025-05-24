@@ -88,14 +88,14 @@
           <!-- Mobile Slide-in Menu Panel: Left -->
           <aside
             id="mobile-menu"
-            class="fixed top-0 left-0 w-full h-full z-90 flex flex-col gap-12 font-normal text-2xl bg-(--primary-bg) p-8 text-(--white) transition-transform duration-300 ease-in-out *:duration-300 *:ease-in-out *:transition-all"
+            class="lg:hidden fixed top-0 left-0 w-full h-full z-90 flex flex-col gap-12 font-normal text-2xl bg-(--primary-bg) p-8 text-(--white) transition-transform duration-300 ease-in-out *:duration-300 *:ease-in-out *:transition-all"
             :class="isMenuOpen ? 'translate-x-0' : '-translate-x-full'"
             role="dialog"
             aria-modal="true"
           >
             <button
               class="flex items-center ml-auto w-12 h-12 cursor-pointer hover:text-(--light-blue)"
-              @click="isMenuOpen = false"
+              @click="closeAllMenu"
               aria-label="Close menu"
             >
               <Icon name="mdi:close" />
