@@ -50,12 +50,11 @@
 
         <!-- Section: Hero -->
         <section>   
-            <div class="relative w-screen min-h-100 h-full">
+            <div class="relative w-screen h-full">
 
-                <!-- Investor Navbar -->
-                <div class="relative left-0 top-16 sm:top-12 flex flex-col w-full h-fit px-(--section-px) lg:px-(--section-px-lg) bg-transparent z-10">
+                <div class="relative left-0 top-24 flex flex-col w-full h-full px-(--section-px) lg:px-(--section-px-lg) bg-transparent z-10">
                     
-                    <div class="flex flex-col w-9/10 lg:w-4/5 max-w-7xl mx-auto h-fit shadow-2xl rounded-lg bg-(--dark-blue)">
+                    <div class="flex flex-col w-9/10 lg:w-4/5 max-w-7xl mx-auto h-full shadow-2xl rounded-lg bg-(--dark-blue)">
 
                         <!-- Mobile Screen Investors Nav -->
 
@@ -270,14 +269,14 @@
 
                 </div>
 
-                <div class="absolute top-30 w-full h-fit">
+                <div class="relative mt-12 w-full h-full">
                     
                     <div class="flex flex-col items-center justify-center w-full h-full max-w-7xl mx-auto px-(--section-px) lg:px-(--section-px-lg) py-(--section-py) lg:py-(--section-py-lg)">
 
                         <div class="flex flex-col items-center justify-center py-16 lg:py-20 text-center gap-8 w-full max-w-7xl mx-auto">                                
 
                             <h1 class="text-3xl sm:text-5xl md:text-6xl lg:text-8xl text-(--dark-blue) text-center font-extrabold">
-                                Stock and dividend
+                                Stock and Dividend
                             </h1>
 
                             <p class="text-(--black) text-base md:text-lg xl:text-xl text-center font-medium">
@@ -701,11 +700,11 @@
                 <div class="flex flex-col  px-(--section-px) lg:px-(--section-px-lg) bg-transparent w-full max-w-7xl mx-auto h-full">
                     
                     <div class="flex flex-col items-center justify-center gap-8 py-20">
-                        <h2 class="text-(--dark-blue) text-3xl lg:text-5xl font-extrabold">
+                        <h2 class="text-(--dark-blue) text-3xl lg:text-5xl text-center font-extrabold">
                             Direct stock purchases &amp; dividend reinvestment
                         </h2>
 
-                        <p class="text-lg lg:text-xl text-(--black)">
+                        <p class="text-lg text-(--black)">
                             The Computershare Investment Plan for Pennpetro Energy PLC stock allows interested investors to purchase shares of stock and participate in dividend reinvestment.
                         </p>
                     </div>
@@ -715,7 +714,7 @@
                             Managing your shares
                         </h3>
 
-                        <div class="grid gap-4 *:text-lg *:lg:text-xl">
+                        <div class="grid gap-4 *:text-base *:lg:text-lg">
                             <p>
                                 Pennpetro Energy PLC engages a transfer agent, Computershare, to assist the company in maintaining the accounts of individuals and entities that hold Pennpetro Energy PLC stock in their own name on the records of the company, sometimes referred to as "stockholders of record" or "registered stockholders."
                             </p>

@@ -54,12 +54,12 @@
                     <div class="flex flex-col items-center justify-center text-center gap-4 w-full max-w-7xl mx-auto">
 
                         <h1 class="text-5xl sm:text-6xl text-center font-extrabold text-(--dark-red)">
-                            Social investment
+                            Social Empowering People. Building Communities
                         </h1>
                         
-                        <p class="text-base md:text-lg text-center font-medium text-(--white)">
-                            "We believe our business succeeds when our people and communities succeed. 
-                            We seek to work with communities and partners to promote job growth and economic development.
+                        <p class="text-base md:text-lg text-center font-medium text-(--black)">
+                            At Pennpetro Energy PLC, our social responsibility begins with people—our employees, partners, and the communities where we operate. 
+                            We believe sustainable energy development can only be achieved through a deep, lasting commitment to social equity, safety, and economic inclusion.
                         </p>
  
                     </div>
@@ -131,8 +131,6 @@
                 </div>
             </div>
         </section>
-
-
 
         <!-- 2023 volunteer highlights -->
         <section>                  
@@ -210,15 +208,109 @@
                 <div class="flex flex-col gap-16 py-20 w-full max-w-7xl mx-auto h-full">
 
                     <!-- Building on a sound legacy -->
-                    <div class="flex flex-col items-center justify-center gap-8 *:text-center text-(--white) w-full h-full">
+                    <div class="flex flex-col items-center justify-center gap-8 text-(--white) w-full h-full">
 
                         <h2 class="text-3xl sm:text-4xl lg:text-7xl text-center font-extrabold">
                             Building on a sound legacy
                         </h2>
                         
-                        <p class="text-lg text-center">
-                            Pennpetro Energy PLC Australia and TSH (Teach Speak Hear) have collaborated to deliver ear health care in the northwest region of Western Australia. Working together to prevent middle ear disease and improving child health outcomes.
+                        <p class="lg:text-lg">
+                            From the oilfields of Texas to our offices in London, we are focused on creating a safe, inclusive, and empowering environment that delivers long-term value to all our stakeholders.
                         </p>
+
+                        <!-- Prioritizing Health, Safety & Wellbeing -->
+                        <div class="flex flex-col gap-2 lg:text-lg">
+                            
+                            <h3 class="font-semibold text-lg">Prioritizing Health, Safety &amp; Wellbeing</h3>
+                            <p>
+                                The health and safety of our workforce is our top priority. 
+                                We uphold a zero-harm philosophy and adhere to international safety standards across all operational sites. 
+                                Through regular training, audits, and incident prevention programs, we ensure a culture where:
+                            </p>
+
+                            <ul>
+                                <li>
+                                    Every worker is empowered to speak up about safety
+                                </li>
+                                <li>
+                                    Risk is assessed and managed proactively
+                                </li>
+                                <li>
+                                    Wellbeing is supported both on and off the job
+                                </li>
+                            </ul>
+
+                            <p>
+                                We are committed to continuous improvement and invest in the tools, technologies, and leadership practices necessary to keep our people safe.
+                            </p>
+
+                        </div>
+
+                        <!-- Investing in Local Communities -->
+                        <div class="flex flex-col gap-2 lg:text-lg">
+                            
+                            <h3 class="font-semibold text-lg">Investing in Local Communities</h3>
+                            <p>
+                                Our operations bring us into contact with diverse communities—and we are committed to being a responsible neighbor. 
+                                We invest in community development initiatives that support:
+                            </p>
+
+                            <ul>
+                                <li>
+                                    Local employment and workforce development
+                                </li>
+                                <li>
+                                    STEM education and training opportunities
+                                </li>
+                                <li>
+                                    Small business inclusion in our supply chain
+                                </li>
+                                <li>
+                                    Infrastructure and environmental stewardship programs
+                                </li>
+                            </ul>
+
+                            <p>
+                                By working closely with local stakeholders, we aim to ensure that the benefits of energy development are shared broadly and equitably.
+                            </p>
+
+                        </div>
+
+                        <!-- Diversity, Equity & Inclusion -->
+                        <div class="flex flex-col gap-2 lg:text-lg">
+                            
+                            <h3 class="font-semibold text-lg">Diversity, Equity &amp; Inclusion</h3>
+                            <p>
+                                Pennpetro is building a culture where diversity is celebrated, equity is ensured, and inclusion is practiced every day. 
+                                We believe that diverse teams drive better outcomes—both in the field and in the boardroom.
+                            </p>
+
+                            <p>
+                                Our initiatives include:
+                            </p>
+
+                            <ul>
+                                <li>
+                                    Inclusive hiring and leadership development
+                                </li>
+                                <li>
+                                    Equal opportunity and anti-discrimination policies
+                                </li>
+                                <li>
+                                    Mentorship programs for underrepresented groups in energy
+                                </li>
+                                <li>
+                                    Safe, respectful workplace training for all employees
+                                </li>
+                            </ul>
+
+
+                            <p>
+                                We are committed to creating pathways for all people to thrive in the energy industry.
+                            </p>
+
+                        </div>
+
                     </div>
                 </div>
 
@@ -246,36 +338,44 @@
 <style lang="css" scoped>
 
     .group-hover\:underline-text {
-    position: relative;
-    display: inline-block;
+        position: relative;
+        display: inline-block;
     }
 
     .group-hover\:underline-text::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 0%;
-    height: 1px;
-    background-color: white;
-    transition: width 0.5s ease-in-out;
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0%;
+        height: 1px;
+        background-color: white;
+        transition: width 0.5s ease-in-out;
     }
 
     .group:hover .group-hover\:underline-text::after {
-    width: 100%;
+        width: 100%;
     }
 
     .arrow-icon {
-    transition: transform 1s ease-in-out;
+        transition: transform 1s ease-in-out;
     }
 
     .group:hover .arrow-icon {
-    transform: translateX(12px);
+        transform: translateX(12px);
     }
 
-    .group-hover\:arrow-move {
-    animation: moveArrow 3s infinite alternate ease-in-out;
+    .group-hover\:arrow-move {  
+        animation: moveArrow 3s infinite alternate ease-in-out;
     }  
+
+    ul {
+        margin-left: 2rem;
+    }
+
+    ul li {
+        list-style-type: disc;
+    }
 
 </style>
 

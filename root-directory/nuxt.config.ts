@@ -40,6 +40,10 @@ export default defineNuxtConfig({
     transpile: ['gsap'],
   },
 
+  image: {
+    domains: ['images.pexels.com']
+  },
+
   plugins: [
     './plugins/aos.client.js'
   ],

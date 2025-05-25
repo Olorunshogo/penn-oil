@@ -50,8 +50,8 @@
                     <div class="flex flex-col items-center justify-center text-center gap-4 w-full max-w-7xl mx-auto">
 
 
-                        <h1 class="text-5xl sm:text-6xl text-center font-extrabold text-(--dark-red)">
-                            Our brands
+                        <h1 class="text-5xl sm:text-6xl lg:text-8xl xl:text-9xl text-center font-extrabold text-(--dark-red)">
+                            Our Brands
                         </h1>
                         
                         <p class="text-base md:text-lg text-center font-medium text-(--white)">
@@ -63,8 +63,7 @@
                 </div>
 
             </div>
-        </section>                   
-
+        </section>                  
 
         <!-- Section: Pennpetro Energy PLC, Texaco, Caltex -->
         <section>

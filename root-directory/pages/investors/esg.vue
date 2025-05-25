@@ -43,7 +43,7 @@
             <div class="relative w-full h-full bg-(--dark-blue) px-(--section-px) lg:px-(--section-px-lg) py-(--section-py) lg:py-(--section-py-lg)">
 
                     
-                <div class="flex flex-col items-center justify-center py-16 w-full h-full max-w-7xl mx-auto">
+                <div class="flex flex-col items-center justify-center py-24 w-full h-full max-w-7xl mx-auto">
 
                     <div class="flex flex-col items-center justify-center text-(--white) text-center gap-8 w-full max-w-7xl mx-auto">                                
 

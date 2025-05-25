@@ -42,7 +42,7 @@
                     </span>
 
 
-                    <h1 class="text-5xl sm:text-6xl text-center font-extrabold text-(--dark-red)">
+                    <h1 class="text-5xl sm:text-6xl lg:text-8xl xl:text-9xl text-center font-extrabold text-(--dark-red)">
                         {{ title }}
                     </h1>
                     

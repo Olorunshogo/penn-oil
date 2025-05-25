@@ -56,7 +56,7 @@
                 />
 
                 <!-- Investor Navbar -->
-                <div class="absolute left-0 top-16 sm:top-12 flex flex-col w-full h-fit px-(--section-px) lg:px-(--section-px-lg) bg-transparent z-10">
+                <div class="absolute left-0 top-24 flex flex-col w-full h-fit px-(--section-px) lg:px-(--section-px-lg) bg-transparent z-10">
                     <div class="flex flex-col w-9/10 lg:w-4/5 max-w-7xl mx-auto h-fit shadow-2xl rounded-lg bg-(--white)">
 
                         <!-- Mobile Screen Investors Nav -->

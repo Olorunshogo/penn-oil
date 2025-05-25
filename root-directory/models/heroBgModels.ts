@@ -69,11 +69,11 @@ export const homeHeroBgs = ref([
     },
 ]);
 
-// What Energy
+// Homepage
 export const homeHeroVideoBg = ref({    
     videoSrc: "/landing_videos/hero1.mp4",
     category: "what we do",
-    title: "More with less",
+    title: "More With Less",
     titleBgVideoSrc: "/landing_videos/hero3.mp4",
     paragraph: "We've reached first oil at our Ballymore subsea tieback in the Gulf of America showcasing how we're leveraging technology and driving efficiencies to deliver affordable, reliable energy production.",
     displayLink: true,
@@ -86,7 +86,7 @@ export const homeHeroVideoBg = ref({
 // Who Overview
 export const whoOverviewHeroVideoBg = ref({    
     videoSrc: "/landing_videos/hero2.mp4",
-    title: "Who we are",
+    title: "Who We Are",
     titleBgVideoSrc: "/videos/who/who-we-are-overview-hero-video.mp4",
     paragraph: "Energy drives human progress and creates positive change for modern society. We work hard to deliver energy that can improve the lives of millions of people around the world.",
     displayLink: false,
@@ -98,7 +98,7 @@ export const whoOverviewHeroVideoBg = ref({
 export const whoCultureHeroVideoBg = ref({    
     videoSrc: "/landing_videos/hero2.mp4",
     category: "who we are",
-    title: "Our culture",
+    title: "Our Culture",
     titleBgVideoSrc: "/videos/who/who-we-are-hero-video-compressed.mp4",
     paragraph: "We work hard to provide energy that helps improve the lives of people around the world. The Operational Excellence Management System is a core part of how we do it. We promote a culture that values a diversity of perspectives, productive dialogue and teaming that help us deliver the future of energy.",
     displayLink: false,
@@ -112,7 +112,7 @@ export const whoCultureHeroVideoBg = ref({
 //     imgAlt: "Woman in White Hat Holding Silver Touchscreen Device",
 //     category: "Who we are",
 //     bgColor: "var-(--dark-blue)",
-//     title: "Our brands",
+//     title: "Our Brands",
 //     paragraph: "Pennpetro Energy PLC is taking steps to help protect the environment where we operate. We do this by stewarding our water usage, integrating biodiversity into our decision making, reducing waste and managing air emissions from our operations.",
 //     displayLink: false,
 //     link: "/newsroom",
@@ -137,7 +137,7 @@ export const whoCultureHeroVideoBg = ref({
 // What Overview
 export const whatOverviewHeroVideoBg = ref({    
     videoSrc: "/landing_videos/hero3.mp4",
-    title: "What we do",
+    title: "What We Do",
     titleBgVideoSrc: "/landing_videos/hero1.mp4",
     paragraph: "The world’s energy demands are greater than ever before. We’re working to deliver the lower carbon energy needed today while building the energy system of tomorrow.",
     displayLink: false,
@@ -149,7 +149,7 @@ export const whatOverviewHeroVideoBg = ref({
 export const whatEnergyHeroVideoBg = ref({    
     videoSrc: "/landing_videos/hero1.mp4",
     category: "what we do",
-    title: "Energy solutions",
+    title: "Energy Solutions",
     titleBgVideoSrc: "/landing_videos/hero3.mp4",
     paragraph: "Pennpetro Energy PLC is an independent oil and gas company focused on the exploration, development, and production of onshore/offshore energy resources. Our operations are strategically centered in Gonzales County, Texas, within the prolific Austin Chalk and Eagle Ford Shale formations, Kazakhstan, and other part of the world. Through our U.S. subsidiaries within and out of the united states, we have established a robust presence globally, leveraging advanced drilling techniques to optimize resource extraction.",
     displayLink: false,

@@ -48,7 +48,7 @@
                             class="group relative text-(--white) font-semibold text-2xl lg:text-4xl duration-500 ease-in transition-all"
                         >                            
                             <span class="group-hover:underline-text text-center">
-                                Pennpetro Energy PLC uses AI to bring reliable energy to data centers
+                                Pennpetro Energy PLC uses AI to Bring Reliable Energy to Data Centers
                             </span>
                         </NuxtLink>
 

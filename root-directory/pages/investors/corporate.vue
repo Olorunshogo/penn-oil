@@ -82,8 +82,8 @@
                                 Investor relations
                             </span>
 
-                            <h1 class="text-3xl lg:text-5xl text-(--dark-blue) pb-4 text-center font-bold">
-                                Corporate governance
+                            <h1 class="text-3xl lg:text-6xl text-(--dark-blue) pb-4 text-center font-bold">
+                                Corporate Governance
                             </h1>
 
                             <p class="text-(--black) text-center font-medium">

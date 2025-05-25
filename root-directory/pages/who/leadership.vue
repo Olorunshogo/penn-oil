@@ -48,7 +48,7 @@
                 <div class="absolute bottom-0 w-full h-1/2 max-h-120 backdrop-blur-md rounded-t-2xl shadow-lg flex items-center justify-center">
                     <div class="flex flex-col items-center justify-center text-center gap-4 w-full max-w-7xl mx-auto">
 
-                        <h1 class="text-5xl sm:text-6xl text-center font-extrabold text-(--dark-red)">
+                        <h1 class="text-5xl sm:text-6xl lg:text-8xl xl:text-9xl text-center font-extrabold text-(--dark-red)">
                             Penn Leadership
                         </h1>
                         
