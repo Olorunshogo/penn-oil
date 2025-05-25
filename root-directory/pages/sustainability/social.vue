@@ -136,7 +136,7 @@
             </div>
         </section>
 
-        <!-- Video: Climate Page Global Population Final -->
+        <!-- Video -->
         <section 
             aria-labelledby="climate-video-title" 
             class="flex flex-col items-center justify-center gap-8 text-white w-full h-full bg-black px-4 py-8"
@@ -149,7 +149,7 @@
             <div class="flex flex-col items-center justify-center gap-8 *:text-center text-(--white) w-9/10 mx-auto h-full">
                 
                 <video width="900" height="auto" controls autoplay loop muted aria-describedby="video-description">
-                    <source src="https://www.pexels.com/video/drone-footage-of-windmills-6966990/" type="video/mp4" alt="Drone Footage of Windmills">
+                    <source src="/sustainability/social_video.mp4" type="video/mp4" alt="Drone Footage of Windmills">
                     <!-- <track src="captions.vtt" kind="captions" srclang="en" label="English" default> -->
                     Your browser does not support the video tag. This video discusses how climate change affects global population trends.
                 </video>
