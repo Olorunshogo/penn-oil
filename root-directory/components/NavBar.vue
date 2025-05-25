@@ -106,7 +106,7 @@
               @click="openMobileWho"
               class="flex *:flex items-center *:items-center justify-between cursor-pointer hover:text-(--light-blue) transition-transform duration-300 ease-in-out"
             >
-              <span>Who we are</span>
+              <span>Who We Are</span>
               <span>
                 <Icon name="mdi:chevron-right" />
               </span>
@@ -117,7 +117,7 @@
               @click="openMobileWhat"
               class="flex *:flex items-center *:items-center justify-between cursor-pointer hover:text-(--light-blue) transition-transform duration-300 ease-in-out"
             >
-              <span>What we do</span>
+              <span>What We Do</span>
               <span>
                 <Icon name="mdi:chevron-right" />
               </span>
@@ -152,6 +152,14 @@
               class="flex *:flex items-center *:items-center justify-between hover:text-(--light-blue) duration-300 ease-in-out transition-all"
             >
               Newsroom
+            </NuxtLink>
+
+            <NuxtLink
+              to="/contact"
+              @click="closeAllMenu"
+              class="flex *:flex items-center *:items-center justify-between hover:text-(--light-blue) duration-300 ease-in-out transition-all"
+            >
+              Contact Us
             </NuxtLink>
 
             <!-- Careers -->
@@ -189,7 +197,7 @@
                   @click="closeAllMenu"
                   class="flex *:flex items-center *:items-center justify-between hover:text-(--light-blue) duration-300 ease-in-out transition-all"
                 >
-                  Who we are
+                  Who We are
                 </NuxtLink>
                 <button
                   class="flex items-center justify-end hover:text-(--light-blue)"
@@ -215,7 +223,7 @@
                 @click="closeAllMenu"
                 class="flex *:flex items-center *:items-center justify-between hover:text-(--light-blue) duration-300 ease-in-out transition-all"
               >
-                Our culture
+                Our Culture
               </NuxtLink>
 
               <!-- Our brands -->
@@ -224,7 +232,7 @@
                 @click="closeAllMenu"
                 class="flex *:flex items-center *:items-center justify-between hover:text-(--light-blue) duration-300 ease-in-out transition-all"
               >
-                Our brands
+                Our Brands
               </NuxtLink>
 
               <!-- Our leadership -->
@@ -233,7 +241,7 @@
                 @click="closeAllMenu"
                 class="flex *:flex items-center *:items-center justify-between hover:text-(--light-blue) duration-300 ease-in-out transition-all"
               >
-                Our leadership
+                Our Leadership
               </NuxtLink>
 
               <!-- Contact us -->
@@ -242,7 +250,7 @@
                 @click="closeAllMenu"
                 class="flex *:flex items-center *:items-center justify-between hover:text-(--light-blue) duration-300 ease-in-out transition-all"
               >
-                Contact us
+                Contact Us
               </NuxtLink>
             </aside>
 
@@ -269,7 +277,7 @@
                   @click="closeAllMenu"
                   class="flex *:flex items-center *:items-center justify-between hover:text-(--light-blue) duration-300 ease-in-out transition-all"
                 >
-                  What we do
+                  What We Do
                 </NuxtLink>
                 <button
                   class="flex items-center justify-end hover:text-(--light-blue) cursor-pointer"
@@ -304,7 +312,7 @@
                 @click="closeAllMenu"
                 class="flex *:flex items-center *:items-center justify-between hover:text-(--light-blue) duration-300 ease-in-out transition-all"
               >
-                Technology and innovation
+                Technology and Innovation
               </NuxtLink>
 
               <!-- Pennpetro Energy PLC around the world -->
@@ -313,7 +321,7 @@
                 @click="closeAllMenu"
                 class="flex *:flex items-center *:items-center justify-between hover:text-(--light-blue) duration-300 ease-in-out transition-all"
               >
-              Pennpetro Energy PLC around the world
+              Pennpetro Energy PLC Around the World
               </NuxtLink>
             </aside>
 
@@ -384,7 +392,7 @@
                 @click="closeAllMenu"
                 class="flex *:flex items-center *:items-center justify-between hover:text-(--light-blue) duration-300 ease-in-out transition-all"
               >
-                Social investment
+                Social Investment
               </NuxtLink>
             </aside>
 
@@ -437,7 +445,7 @@
                 @click="closeAllMenu"
                 class="flex *:flex items-center *:items-center justify-between hover:text-(--light-blue) duration-300 ease-in-out transition-all"
               >
-                Events and presentations
+                Events and Presentations
               </NuxtLink>
 
               <!--  Corporate governance -->
@@ -446,7 +454,7 @@
                 @click="closeAllMenu"
                 class="flex *:flex items-center *:items-center justify-between hover:text-(--light-blue) duration-300 ease-in-out transition-all"
               >
-                Corporate governance
+                Corporate Governance
               </NuxtLink>
 
               <!-- esg a-z index -->
@@ -455,7 +463,7 @@
                 @click="closeAllMenu"
                 class="flex *:flex items-center *:items-center justify-between hover:text-(--light-blue) duration-300 ease-in-out transition-all"
               >
-                esg a-z index
+                Esg a-z Index
               </NuxtLink>
 
               <!--  Stock and dividend -->
@@ -464,7 +472,7 @@
                 @click="closeAllMenu"
                 class="flex *:flex items-center *:items-center justify-between hover:text-(--light-blue) duration-300 ease-in-out transition-all"
               >
-                Stock and dividend
+                Stock and Dividend
               </NuxtLink>
 
               <!-- Contact us -->
@@ -473,7 +481,7 @@
                 @click="closeAllMenu"
                 class="flex *:flex items-center *:items-center justify-between hover:text-(--light-blue) duration-300 ease-in-out transition-all"
               >
-                Contact us
+                Contact Us
               </NuxtLink>
             </aside>
           </div>
