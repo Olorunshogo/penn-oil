@@ -72,13 +72,13 @@
                             {{ category }}
                         </span>
 
-                        <h1 class="text-5xl sm:text-6xl lg:text-8xl xl:text-9xl text-center font-extrabold text-(--white)"
+                        <h1 class="text-5xl sm:text-6xl lg:text-8xl xl:text-9xl text-center font-extrabold text-(--dark-red)"
                             :style="{ backgroundColor: titleBgVideoSrc }"
                         >
                             {{ title }}
                         </h1>
                         
-                        <p class="text-base md:text-xl text-center text-(--white)">
+                        <p class="text-base md:text-xl text-center text-(--white) font-medium">
                             {{ paragraph }}
                         </p>
 

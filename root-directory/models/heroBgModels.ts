@@ -151,7 +151,8 @@ export const whatEnergyHeroVideoBg = ref({
     category: "what we do",
     title: "Energy Solutions",
     titleBgVideoSrc: "/landing_videos/hero3.mp4",
-    paragraph: "Pennpetro Energy PLC is an independent oil and gas company focused on the exploration, development, and production of onshore/offshore energy resources. Our operations are strategically centered in Gonzales County, Texas, within the prolific Austin Chalk and Eagle Ford Shale formations, Kazakhstan, and other part of the world. Through our U.S. subsidiaries within and out of the united states, we have established a robust presence globally, leveraging advanced drilling techniques to optimize resource extraction.",
+    // paragraph: "Pennpetro Energy PLC is an independent oil and gas company focused on the exploration, development, and production of onshore/offshore energy resources. Our operations are strategically centered in Gonzales County, Texas, within the prolific Austin Chalk and Eagle Ford Shale formations, Kazakhstan, and other part of the world. Through our U.S. subsidiaries within and out of the united states, we have established a robust presence globally, leveraging advanced drilling techniques to optimize resource extraction.",
+    paragraph: "Pennpetro Energy PLC is an independent oil and gas company focused on the exploration, development, and production of onshore/offshore energy resources. Our operations are strategically centered in Gonzales County, Texas, within the prolific Austin Chalk and Eagle Ford Shale formations, Kazakhstan, and other part of the world.",
     displayLink: false,
     link: "/newsroom",
     linkName: "Read more about our environmental efforts"        

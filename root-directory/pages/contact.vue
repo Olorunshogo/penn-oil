@@ -73,41 +73,6 @@
 
     const success = ref(false);
     const error = ref('');
-    
-    // const handleFormSubmit = async () => {
-    //     try {
-    //         const result = await emailjs.send(
-    //             'penn_petro_energy',
-    //             'template_2b9efbt',
-    //             {
-    //                 selectedTopic: selectedTopic.value,
-    //                 selectedSubtopic: selectedSubtopic.value,
-    //                 firstName: textFieldValues.firstName,
-    //                 lastName: textFieldValues.lastName,
-    //                 email: textFieldValues.email,
-    //                 newsletter: textFieldValues.newsletter,
-    //                 comments: textFieldValues.comments,
-    //             },
-    //             config.public.emailjsPublicKey
-    //         );
-
-    //         success.value = true;
-
-    //         selectedTopic.value = '',
-    //         selectedSubtopic.value = '',
-    //         textFieldValues.firstName = '',
-    //         textFieldValues.lastName = '',
-    //         textFieldValues.email = '',
-    //         textFieldValues.newsletter = false,
-    //         textFieldValues.comments = ''
-
-    //     } catch (err) {
-    //         // success.value = false;
-    //         console.error('EMAILJS error:', err);
-    //         alert('Failed to send email. Please try again.', err);
-    //         error.value = 'Failed to send email. Please try again.';
-    //     }
-    // }
 
     async function submitForm() {
         success.value = false
@@ -168,7 +133,7 @@
 
 <template>
     <div>
-        <!-- Section: PageContact -->
+        <!-- Section: Contact Page -->
         <section>
             <div class="grid bg-(--white) gap-12 w-full h-full overflow-hidden py-(--section-py) lg:py-(--section-py-lg)">
                 
@@ -178,7 +143,7 @@
                         <h2 class="text-(--dark-blue) text-center font-extrabold text-3xl sm:text-4xl lg:text-7xl">
                             Contact Pennpetro Energy PLC
                         </h2>
-                        <p class="text-(--black) text-lg text-center">
+                        <p class="text-(--black) text-lg font-medium text-center">
                             Find answers to your questions and useful contacts.
                         </p>                
                     </div> 

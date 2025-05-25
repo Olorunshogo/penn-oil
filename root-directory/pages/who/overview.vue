@@ -47,11 +47,11 @@
 
         <!-- Section: What we believe drives how we work -->
         <section>
-            <div class="px-(--section-px) lg:px-(--section-px-lg) py-(--section-py) lg:py-(--section-py-lg) bg-(--dark-blue)/90 w-full h-full overflow-hidden">
+            <div class="px-(--section-px) lg:px-(--section-px-lg) bg-(--dark-blue) w-full h-full overflow-hidden">
                 
                 <div class="flex flex-col gap-20 py-20 w-full max-w-7xl mx-auto">
 
-                    <div class="flex flex-col items-center justify-center gap-4 lg:gap-12">
+                    <div class="flex flex-col items-center justify-center gap-4 lg:gap-8">
                         <h2 
                             class="text-4xl sm:text-5xl lg:text-8xl text-(--white) text-wrap text-center font-extrabold cursor-text w-full h-full overflow-hidden"
                         >
@@ -84,9 +84,7 @@
                     </div>
 
                     <!-- Images -->
-                    <div 
-                        class="flex flex-col items-center gap-8 lg:grid lg:grid-cols-3 w-full h-full"
-                    >
+                    <div class="flex flex-col items-center gap-8 lg:grid lg:grid-cols-3 w-full h-full">
                     
                         <NuxtImg
                             src="https://images.pexels.com/photos/257700/pexels-photo-257700.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
@@ -123,10 +121,10 @@
                 
                 <div class="grid grid-cols-1 lg:grid-cols-2 w-full max-w-7xl mx-auto h-full py-(--section-py) lg:py-(--section-py-lg)">
 
-                    <div class="flex flex-col justify-center bg-(--dark-purple) h-full w-full lg:h-190 lg:rounded-l-2xl">                        
-                        <div class="flex flex-col p-4 sm:p-8 py-32 gap-8 max-w-2xl">
+                    <div class="flex flex-col justify-center bg-(--dark-purple) h-full w-full lg:h-150 lg:rounded-l-2xl">                        
+                        <div class="flex flex-col p-4 sm:p-8 py-20 gap-8 max-w-2xl">
                             <h2 
-                                class="text-4xl md:text-7xl xl:text-8xl text-(--white) text-wrap font-extrabold cursor-text w-full h-full overflow-hidden"
+                                class="text-4xl md:text-7xl text-(--white) text-wrap font-extrabold cursor-text w-full h-full overflow-hidden"
                             >
                                 Our purpose
                             </h2>
@@ -139,16 +137,16 @@
                         </div>
                     </div>
 
-                    <div class="grid md:grid-cols-2 lg:grid-cols-1 lg:grid-rows-2 p-4 sm:p-8 gap-4 lg:gap-8 bg-(--medium-purple) h-full lg:h-190 lg:rounded-r-2xl">
+                    <div class="grid md:grid-cols-2 lg:grid-cols-1 lg:grid-rows-2 p-4 sm:p-8 gap-4 lg:gap-8 bg-(--medium-purple) h-full lg:h-150 lg:rounded-r-2xl">
                         <NuxtImg
                             src="https://images.pexels.com/photos/19797275/pexels-photo-19797275/free-photo-of-2024.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                             alt="2024"
                             loading="lazy"
-                            class="w-full h-70 sm:h-90 object-cover rounded-lg ml-auto lg:ml-0"
+                            class="w-full h-70 sm:h-full object-cover rounded-lg ml-auto lg:ml-0"
                         /> 
                         
 
-                        <div class="flex flex-col gap-12 py-8 justify-between rounded-lg hover:bg-(--dark-purple) w-full h-full duration-300 ease-in-out transition-all">
+                        <div class="flex flex-col gap-4 lg:gap-8 py-8 w-full h-full duration-300 ease-in-out transition-all">
                             <p class="text-(--white) text-xl lg:text-xl">
                                 We're working to increase production to meet global energy demand.
                             </p>
@@ -182,16 +180,16 @@
                 
                 <div class="grid grid-cols-1 lg:grid-cols-2 w-full max-w-7xl mx-auto h-full py-(--section-py) lg:py-(--section-py-lg)">
 
-                    <div class="grid md:grid-cols-2 lg:grid-cols-1 lg:grid-rows-2 p-4 sm:p-8 gap-4 lg:gap-8 bg-(--medium-teal) h-full lg:h-190 lg:rounded-l-2xl">
+                    <div class="grid md:grid-cols-2 lg:grid-cols-1 lg:grid-rows-2 p-4 sm:p-8 gap-4 lg:gap-8 bg-(--medium-teal) h-full lg:h-150 lg:rounded-l-2xl">
                         <NuxtImg
                             src="https://images.pexels.com/photos/13963338/pexels-photo-13963338.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                             alt="Diverse Engineers"
                             loading="lazy"
-                            class="w-full h-70 sm:h-90 object-cover rounded-lg ml-auto lg:ml-0"
+                            class="w-full h-70 sm:h-full object-cover rounded-lg ml-auto lg:ml-0"
                         /> 
                         
 
-                        <div class="flex flex-col gap-12 py-8 justify-between rounded-lg hover:bg-(--dark-teal) w-full h-full duration-300 ease-in-out transition-all">
+                        <div class="flex flex-col gap-4 lg:gap-8 py-8 w-full h-full duration-300 ease-in-out transition-all">
                             <p class="text-(--white) text-xl lg:text-2xl">
                                 Supporting diversity and inclusion is embedded in how we work.
                                 We welcome different points of view to help us drive innovation and grow our business.
@@ -214,10 +212,10 @@
                         </div>
                     </div>
 
-                    <div class="flex flex-col justify-center bg-(--dark-teal) h-full w-full lg:h-190 lg:rounded-r-2xl">                        
-                        <div class="flex flex-col p-4 sm:p-8 py-32 gap-8 max-w-2xl">
+                    <div class="flex flex-col justify-center bg-(--dark-teal) h-full w-full lg:h-150 lg:rounded-r-2xl">                        
+                        <div class="flex flex-col p-4 sm:p-8 py-20 gap-8 max-w-2xl">
                             <h2 
-                                class="text-4xl md:text-7xl xl:text-8xl text-(--white) text-wrap font-extrabold cursor-text w-full h-full overflow-hidden"
+                                class="text-4xl md:text-7xl text-(--white) text-wrap font-extrabold cursor-text w-full h-full overflow-hidden"
                             >
                                 Our culture
                             </h2>
@@ -242,10 +240,10 @@
                 
                 <div class="grid grid-cols-1 lg:grid-cols-2 w-full max-w-7xl mx-auto h-full py-(--section-py) lg:py-(--section-py-lg)">
 
-                    <div class="flex flex-col justify-center bg-(--dark-blue) h-full w-full lg:h-190 lg:rounded-l-2xl">                        
-                        <div class="flex flex-col p-4 sm:p-8 py-32 gap-8 max-w-2xl">
+                    <div class="flex flex-col justify-center bg-(--dark-blue) h-full w-full lg:h-150 lg:rounded-l-2xl">                        
+                        <div class="flex flex-col p-4 sm:p-8 py-20 gap-8 max-w-2xl">
                             <h2 
-                                class="text-4xl md:text-7xl xl:text-8xl text-(--white) text-wrap font-extrabold cursor-text w-full h-full overflow-hidden"
+                                class="text-4xl md:text-7xl text-(--white) text-wrap font-extrabold cursor-text w-full h-full overflow-hidden"
                             >
                                 Industry innovation through technology
                             </h2>
@@ -256,16 +254,16 @@
                         </div>
                     </div>
 
-                    <div class="grid md:grid-cols-2 lg:grid-cols-1 lg:grid-rows-2 p-4 sm:p-8 gap-4 lg:gap-8 bg-(--medium-blue) h-full lg:h-190 lg:rounded-r-2xl">
+                    <div class="grid md:grid-cols-2 lg:grid-cols-1 lg:grid-rows-2 p-4 sm:p-8 gap-4 lg:gap-8 bg-(--medium-blue) h-full lg:h-150 lg:rounded-r-2xl">
                         <NuxtImg
                             src="https://images.pexels.com/photos/31945005/pexels-photo-31945005/free-photo-of-close-up-of-disassembled-electronic-circuit-boards.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                             alt="Close-up of Disassembled Electronic Circuit Boards"
                             loading="lazy"
-                            class="w-full h-70 sm:h-90 object-cover rounded-lg ml-auto lg:ml-0"
+                            class="w-full h-70 sm:h-full object-cover rounded-lg ml-auto lg:ml-0"
                         /> 
                         
 
-                        <div class="flex flex-col gap-12 py-8 justify-between rounded-lg hover:bg-(--dark-blue) w-full h-full duration-300 ease-in-out transition-all">
+                        <div class="flex flex-col gap-4 lg:gap-8 py-8 w-full h-full duration-300 ease-in-out transition-all">
                             <p class="text-(--white) text-xl lg:text-xl">
                                 Digital technologies are helping us integrate data, reduce costs and enhance safety.
                             </p>

@@ -29,7 +29,6 @@
 
 <template>
     <div>
-
         <!-- Section: Hero -->
         <section>      
             
@@ -49,11 +48,16 @@
                 <div class="absolute bottom-0 w-full h-1/2 max-h-120 backdrop-blur-md rounded-t-2xl shadow-lg flex items-center justify-center">
                     <div class="flex flex-col items-center justify-center text-center gap-4 w-full max-w-7xl mx-auto">
 
-                        <h1 class="text-5xl sm:text-6xl text-center font-extrabold text-(--dark-red)">
+                        <h1 class="text-4xl sm:text-5xl md:text-6xl text-center font-extrabold text-(--dark-red)">
                             Technology Harnessing Innovation to Power Energy Development
                         </h1>
                         
-                        <p class="text-base md:text-lg text-center font-medium text-(--white)">
+                        <p class="sm:hidden text-base md:text-lg text-center font-medium text-(--white)">
+                            Harnessing Innovation to Power Energy Development. 
+                            At Pennpetro Energy PLC, technology is at the heart of our operations. 
+                        </p>
+
+                        <p class="hidden sm:flex text-base md:text-lg text-center font-medium text-(--white)">
                             Harnessing Innovation to Power Energy Development. 
                             At Pennpetro Energy PLC, technology is at the heart of our operations. 
                             From precision well targeting to advanced resource evaluation, we leverage innovative tools and techniques to maximize efficiency, reduce costs, and minimize environmental impact. 
@@ -115,7 +119,7 @@
         <section>
             <div class="px-(--section-px) lg:px-(--section-px-lg) py-(--section-py) lg:py-(--section-py-lg) bg-(--dark-teal) w-full h-full">
                 
-                <div class="flex flex-col gap-8 py-16 max-w-7xl mx-auto">
+                <div class="flex flex-col gap-8 py-12 max-w-7xl mx-auto">
                     <h2 class="text-4xl sm:text-5xl lg:text-8xl font-extrabold text-center text-(--light-teal)">
                         Energy for our growing world relies on technology
                     </h2>
@@ -134,7 +138,7 @@
         <section>
             <div class="px-(--section-px) lg:px-(--section-px-lg) py-(--section-py) lg:py-(--section-py-lg) bg-(--dark-red) w-full h-full">
                 
-                <div class="grid grid-cols-1 gap-20 max-w-7xl mx-auto">
+                <div class="grid grid-cols-1 gap-12 py-12 max-w-7xl mx-auto">
 
                     <div class="flex flex-col items-center justify-center gap-6 lg:gap-12">
                         <span class="text-(--white) text-center font-bold">Designing the facilities and operations of tomorrow</span>
@@ -185,7 +189,7 @@
         <section>
             <div class="px-(--section-px) lg:px-(--section-px-lg) py-(--section-py) lg:py-(--section-py-lg) bg-(--dark-blue) w-full h-full">
                 
-                <div class="grid grid-cols-1 gap-20 max-w-7xl mx-auto">
+                <div class="grid grid-cols-1 gap-12 py-12 max-w-7xl mx-auto">
 
                     <div class="flex flex-col items-center justify-center gap-6 lg:gap-12">
                         <span class="text-(--white) text-center font-bold">Scouting at the edge of innovation</span>
@@ -234,9 +238,9 @@
 
         <!-- Section: Delivering more affordable, reliable, ever-cleaner energy -->
         <section>
-            <div class="grid gap-16 bg-(--dark-purple) px-(--section-px) lg:px-(--section-px-lg) py-(--section-py) lg:py-(--section-py-lg) w-full h-full">
+            <div class="grid bg-(--dark-purple) px-(--section-px) lg:px-(--section-px-lg) py-(--section-py) lg:py-(--section-py-lg) w-full h-full">
                 
-                <div class="flex flex-col gap-16 py-20 w-full max-w-7xl mx-auto h-full">
+                <div class="flex flex-col gap-12 py-12 w-full max-w-7xl mx-auto h-full">
                     <div class="flex flex-col items-center justify-center gap-8 text-(--white)">
                         <span class="text-center font-bold">Building a resilient energy system</span>
                     
@@ -385,7 +389,7 @@
         <section>
             <div class="lg:px-(--section-px-lg) py-(--section-py) lg:py-(--section-py-lg) bg-(--white) w-full max-w-7xl mx-auto h-full">
                 
-                <div class="grid gap-16 py-16 w-full mx-auto">
+                <div class="grid gap-12 py-12 w-full mx-auto">
 
                     <div class="px-(--section-px)  flex flex-col gap-8">
             

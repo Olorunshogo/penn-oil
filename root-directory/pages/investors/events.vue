@@ -40,7 +40,7 @@
             <div class="relative w-screen h-full">
 
                 <!-- Investor Navbar -->
-                <div class="relative left-0 top-24 flex flex-col w-full h-full px-(--section-px) lg:px-(--section-px-lg) bg-transparent z-10">
+                <div class="relative left-0 top-12 flex flex-col w-full h-full px-(--section-px) lg:px-(--section-px-lg) bg-transparent z-10">
                     
                     <div class="flex flex-col w-9/10 lg:w-4/5 max-w-7xl mx-auto h-full shadow-2xl rounded-lg bg-(--dark-blue)">
 
@@ -257,7 +257,7 @@
 
                 </div>
 
-                <div class="relative mt-20 w-full h-full">
+                <div class="relative mt-12 w-full h-full">
                     
                     <div class="flex flex-col items-center justify-center gap-8 lg:gap-12 w-full h-full max-w-7xl mx-auto px-(--section-px) lg:px-(--section-px-lg) py-(--section-py) lg:py-(--section-py-lg)">
 

@@ -56,7 +56,7 @@
                 />
 
                 <!-- Investor Navbar -->
-                <div class="absolute left-0 top-24 flex flex-col w-full h-fit px-(--section-px) lg:px-(--section-px-lg) bg-transparent z-10">
+                <div class="absolute left-0 top-12 flex flex-col w-full h-fit px-(--section-px) lg:px-(--section-px-lg) bg-transparent z-10">
                     <div class="flex flex-col w-9/10 lg:w-4/5 max-w-7xl mx-auto h-fit shadow-2xl rounded-lg bg-(--white)">
 
                         <!-- Mobile Screen Investors Nav -->
@@ -177,13 +177,7 @@
 
                         <!-- Large Screen Investors Nav -->
                         <div class="hidden lg:flex flex-col lg:flex-row items-center justify-between px-1 w-full h-10">
-                        
-                            <!-- <NuxtLink
-                                to="/investors/overview"
-                                class="group flex *:flex items-center *:items-center justify-center px-2 lg:px-8 py-2 gap-2 lg:gap-4 w-fit text-(--black) duration-300 ease-in-out transition-all"
-                            >
-                                <span class="group-hover:underline-text font-bold text-xs lg:text-sm">Investors</span>
-                            </NuxtLink> -->
+                    
 
                             <NuxtLink
                                 to="/investors/events"
@@ -272,7 +266,7 @@
                 </div>
 
                 <!-- Title -->
-                <div class="absolute top-60 sm:top-42 lg:top-2/5 w-full h-fit">
+                <div class="absolute top-40 lg:top-2/5 w-full h-fit">
                     <div class="flex flex-col items-center justify-center text-center gap-4 w-full max-w-7xl mx-auto">                                
 
                         <h1 class="text-5xl sm:text-6xl lg:text-8xl text-(--white) text-center font-extrabold">
@@ -429,7 +423,7 @@
                             </div>
                         </div>
 
-                        <div class="grid grid-cols-2 px-4 gap-6 text-(--white) py-12 w-full max-w-7xl mx-auto h-full">
+                        <div class="grid sm:grid-cols-2 px-4 gap-6 text-(--white) py-12 w-full max-w-7xl mx-auto h-full">
 
                             <!-- Q1 adjusted earnings -->
                             <div class="flex flex-col items-center justify-center rounded-2xl  shadow-lg bg-(--medium-blue) w-full mx-auto h-fit">                            

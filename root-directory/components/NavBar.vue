@@ -45,7 +45,7 @@
 <template>
   <div>
     <header>
-      <nav aria-label="Main navigation" class="w-full h-full bg-gradient-to-r from-(--dark-blue) to-(--dark-red) relative z-99 bg-opacity-50">
+      <nav aria-label="Main navigation" class="w-full h-full bg-(--dark-blue) relative z-99 bg-opacity-50">
         <!-- Navigation -->
         <div class="max-w-7xl mx-auto h-(--navabr-h)">
           <!-- Mobile Nav  -->

@@ -274,7 +274,7 @@
                             Latest on our culture
                         </h2>
 
-                        <p class="text-(--black) text-center text-lg">
+                        <p class="text-(--black) text-center text-lg font-semibold">
                             Read how our employees are making an impact around the world.
                         </p>
 
@@ -299,33 +299,6 @@
 </template>
 
 <style lang="css" scoped>
-
-    .image-slider {
-        position: relative;
-        width: 100%;
-        background-size: cover;
-        background-position: center;
-        background-image: url('https://images.pexels.com/photos/7414049/pexels-photo-7414049.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
-        background-repeat: no-repeat;
-        animation: slideAnimation 12s infinite;
-    }
-
-    /* Define the keyframes for the animation */
-    /* @keyframes slideAnimation {
-        0% {
-            background-image: url('https://images.pexels.com/photos/7414274/pexels-photo-7414274.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
-        }
-        33% {
-            background-image: url('https://images.pexels.com/photos/7414049/pexels-photo-7414049.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
-        }
-        66% {
-            background-image: url('https://images.pexels.com/photos/7414273/pexels-photo-7414273.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
-        }
-        100% {
-            background-image: url('https://images.pexels.com/photos/7414274/pexels-photo-7414274.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
-        }
-    } */
-
     .group-hover\:underline-text {
         position: relative;
         display: inline-block;
@@ -357,48 +330,6 @@
     .group-hover\:arrow-move {
         animation: moveArrow 3s infinite alternate ease-in-out;
     } 
-
-    .whoNewroom {
-        transition: transform 0.5s ease, opacity 0.5s ease;
-    }
-    .whoNewroom.active {
-        transform-origin: center;
-    }
-
-    .nav-btn {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 3rem;
-        height: 3rem;
-        border: 2px solid var(--black);
-        border-radius: 50%;
-        color: var(--black);
-        background-color: transparent;
-        transition: all 0.5s ease-in-out;
-    }
-
-    .nav-btn:hover {
-        color: var(--white);
-        background-color: var(--black);
-        opacity: 0.8;
-        cursor: pointer;
-    }
-
-    .pagination-dot {
-        width: 0.75rem;
-        height: 0.75rem;
-        border-radius: 50%;
-        background-color: gray;
-        transition: all 0.5s ease-in-out;
-    }
-    .pagination-dot:hover {
-        cursor: pointer;
-        opacity: 0.8;
-    }
-    .pagination-dot.active-dot {
-        background-color: blue;
-    }
 
 </style>
 

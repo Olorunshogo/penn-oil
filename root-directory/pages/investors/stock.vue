@@ -52,7 +52,7 @@
         <section>   
             <div class="relative w-screen h-full">
 
-                <div class="relative left-0 top-24 flex flex-col w-full h-full px-(--section-px) lg:px-(--section-px-lg) bg-transparent z-10">
+                <div class="relative left-0 top-12 flex flex-col w-full h-full px-(--section-px) lg:px-(--section-px-lg) bg-transparent z-10">
                     
                     <div class="flex flex-col w-9/10 lg:w-4/5 max-w-7xl mx-auto h-full shadow-2xl rounded-lg bg-(--dark-blue)">
 
@@ -269,7 +269,7 @@
 
                 </div>
 
-                <div class="relative mt-12 w-full h-full">
+                <div class="relative w-full h-full">
                     
                     <div class="flex flex-col items-center justify-center w-full h-full max-w-7xl mx-auto px-(--section-px) lg:px-(--section-px-lg) py-(--section-py) lg:py-(--section-py-lg)">
 
@@ -296,7 +296,7 @@
 
                 <div class="flex flex-col gap-16 lg:gap-20 px-(--section-px) lg:px-(--section-px-lg) bg-transparent w-full max-w-7xl mx-auto h-full">
                     
-                    <h2 class="text-(--white) text-3xl lg:text-5xl font-extrabold">
+                    <h2 class="text-(--white) text-3xl lg:text-5xl font-extrabold text-center">
                         Investor questions and answers
                     </h2>
 
@@ -714,7 +714,7 @@
                             Managing your shares
                         </h3>
 
-                        <div class="grid gap-4 *:text-base *:lg:text-lg">
+                        <div class="grid gap-6 *:lg:text-lg">
                             <p>
                                 Pennpetro Energy PLC engages a transfer agent, Computershare, to assist the company in maintaining the accounts of individuals and entities that hold Pennpetro Energy PLC stock in their own name on the records of the company, sometimes referred to as "stockholders of record" or "registered stockholders."
                             </p>
@@ -739,7 +739,7 @@
 
                             <!-- More ways to contact us -->
                         
-                            <div class="flex flex-col gap-4 items-center justify-center w-full mx-auto">
+                            <div class="flex flex-col gap-4">
                                 <h3 class="text-(--dark-blue) text-centern text-wrap font-bold text-xl">
                                     Pennpetro Energy headquarters
                                 </h3>

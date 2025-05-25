@@ -53,11 +53,15 @@
                 <div class="absolute bottom-0 w-full h-1/2 max-h-120 backdrop-blur-md rounded-t-2xl shadow-lg flex items-center justify-center">
                     <div class="flex flex-col items-center justify-center text-center gap-4 w-full max-w-7xl mx-auto">
 
-                        <h1 class="text-5xl sm:text-6xl text-center font-extrabold text-(--dark-red)">
+                        <h1 class="text-4xl sm:text-5xl md:text-6xl text-center font-extrabold text-(--dark-red)">
                             Social Empowering People. Building Communities
                         </h1>
                         
-                        <p class="text-base md:text-lg text-center font-medium text-(--black)">
+                        <p class="sm:hidden text-base md:text-lg text-center font-medium text-(--black)">
+                            At Pennpetro Energy PLC, our social responsibility begins with people—our employees, partners, and the communities where we operate. 
+                        </p>
+
+                        <p class="hidden sm:flex text-base md:text-lg text-center font-medium text-(--black)">
                             At Pennpetro Energy PLC, our social responsibility begins with people—our employees, partners, and the communities where we operate. 
                             We believe sustainable energy development can only be achieved through a deep, lasting commitment to social equity, safety, and economic inclusion.
                         </p>
@@ -66,7 +70,7 @@
                 </div>
 
             </div>
-        </section> 
+        </section>
 
         <!-- Section: Our approach -->
         <section>
@@ -132,11 +136,47 @@
             </div>
         </section>
 
+        <!-- Video: Climate Page Global Population Final -->
+        <section 
+            aria-labelledby="climate-video-title" 
+            class="flex flex-col items-center justify-center gap-8 text-white w-full h-full bg-black px-4 py-8"
+        >
+
+            <!-- Visually hidden heading for screen readers -->
+            <h2 id="climate-video-title" class="sr-only">Social Empowering People. Building Communities Video</h2>
+
+        
+            <div class="flex flex-col items-center justify-center gap-8 *:text-center text-(--white) w-9/10 mx-auto h-full">
+                
+                <video width="900" height="auto" controls autoplay loop muted aria-describedby="video-description">
+                    <source src="https://www.pexels.com/video/drone-footage-of-windmills-6966990/" type="video/mp4" alt="Drone Footage of Windmills">
+                    <!-- <track src="captions.vtt" kind="captions" srclang="en" label="English" default> -->
+                    Your browser does not support the video tag. This video discusses how climate change affects global population trends.
+                </video>
+            </div> 
+
+             <!-- Short description for screen readers -->
+            <div id="video-description" class="sr-only">
+                This video explains how climate change is influencing global population distribution and migration.
+            </div>
+
+            <!-- Transcript for accessibility -->
+            <!-- <div class="max-w-3xl text-left text-white bg-gray-800 p-4 rounded-lg">
+                <h3 class="text-lg font-semibold mb-2">Video Transcript</h3>
+                <p>
+                    In this video, we explore the dynamic relationship between global population growth and the escalating impacts of climate change. Through animations and expert interviews, viewers learn how rising temperatures, sea-level changes, and resource scarcity are affecting migration patterns and urban development...
+                </p>
+                <!-- Add full transcript here --
+            </div> -->
+
+
+        </section>
+
         <!-- 2023 volunteer highlights -->
         <section>                  
             <div class="relative bg-(--dark-purple) px-(--section-px) lg:px-(--section-px-lg) py-(--section-py) lg:py-(--section-py-lg) w-full h-full">
 
-                <div class="flex flex-col gap-16 py-20 w-full max-w-7xl mx-auto h-full">
+                <div class="flex flex-col gap-8 lg:gap-12 py-16 w-full max-w-7xl mx-auto h-full">
 
                     <!-- Fueling a lower carbon future -->
                     <div class="flex flex-col items-center justify-center gap-8 *:text-center text-(--white) w-full h-full">
@@ -147,7 +187,7 @@
                             2023 volunteer highlights
                         </h2>
                         
-                        <p class="text-lg text-center">
+                        <p class="lg:text-lg text-center">
                             The Pennpetro Energy PLC Humankind is a program in the United States that aligns personal purpose with company purpose to support Pennpetro Energy PLC’s People Strategy, enrich the employee experience and encourage community involvement.
                         </p>
                     </div>
@@ -188,7 +228,7 @@
                                     Charitable organizations
                                 </p>                            
 
-                                <h3 class="text-3xxl sm:text-5xl lg:text-7xl text-center font-extrabold text-(--white)">
+                                <h3 class="text-4xl sm:text-5xl lg:text-7xl text-center font-extrabold text-(--white)">
                                     {{ charitableOrganization }}
                                 </h3>
                             </div>
@@ -219,9 +259,9 @@
                         </p>
 
                         <!-- Prioritizing Health, Safety & Wellbeing -->
-                        <div class="flex flex-col gap-2 lg:text-lg">
+                        <div class="flex flex-col gap-2 *:lg:text-lg">
                             
-                            <h3 class="font-semibold text-lg">Prioritizing Health, Safety &amp; Wellbeing</h3>
+                            <h3 class="font-semibold text-xl">Prioritizing Health, Safety &amp; Wellbeing</h3>
                             <p>
                                 The health and safety of our workforce is our top priority. 
                                 We uphold a zero-harm philosophy and adhere to international safety standards across all operational sites. 
@@ -249,7 +289,7 @@
                         <!-- Investing in Local Communities -->
                         <div class="flex flex-col gap-2 lg:text-lg">
                             
-                            <h3 class="font-semibold text-lg">Investing in Local Communities</h3>
+                            <h3 class="font-semibold text-xl">Investing in Local Communities</h3>
                             <p>
                                 Our operations bring us into contact with diverse communities—and we are committed to being a responsible neighbor. 
                                 We invest in community development initiatives that support:
@@ -279,7 +319,7 @@
                         <!-- Diversity, Equity & Inclusion -->
                         <div class="flex flex-col gap-2 lg:text-lg">
                             
-                            <h3 class="font-semibold text-lg">Diversity, Equity &amp; Inclusion</h3>
+                            <h3 class="font-semibold text-xl">Diversity, Equity &amp; Inclusion</h3>
                             <p>
                                 Pennpetro is building a culture where diversity is celebrated, equity is ensured, and inclusion is practiced every day. 
                                 We believe that diverse teams drive better outcomes—both in the field and in the boardroom.
@@ -337,6 +377,11 @@
 
 <style lang="css" scoped>
 
+    ul {
+        list-style-type: disc;
+        margin-left: var(--list-ul-margin-left);
+    }
+
     .group-hover\:underline-text {
         position: relative;
         display: inline-block;
@@ -368,14 +413,6 @@
     .group-hover\:arrow-move {  
         animation: moveArrow 3s infinite alternate ease-in-out;
     }  
-
-    ul {
-        margin-left: 2rem;
-    }
-
-    ul li {
-        list-style-type: disc;
-    }
 
 </style>
 

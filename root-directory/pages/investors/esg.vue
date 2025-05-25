@@ -48,7 +48,7 @@
                     <div class="flex flex-col items-center justify-center text-(--white) text-center gap-8 w-full max-w-7xl mx-auto">                                
 
                         <h1 class="text-3xl sm:text-4xl lg:text-5xl text-center font-extrabold">
-                            Environment, social, and governance index
+                            Environment, Social, and Governance Index
                         </h1>
 
                         <p class="text-center font-medium">
@@ -61,12 +61,13 @@
             </div>
         </section>
 
-        <!-- Dropdowns -->
+        <!-- Dropdowns and Sustainability Video -->
         <section>   
             <div class="relative w-full h-full bg-(--light-gray)/60 lg:px-(--section-px-lg) py-(--section-py) lg:py-(--section-py-lg)">
                 
                  <div class="flex flex-col gap-16 lg:gap-20 w-full h-full">
 
+                    <!-- Dropdowns -->
                     <div class="flex flex-col w-full h-full">
                         <!-- Business Conduct and ethics -->
                         <div class="flex flex-col w-full h-full">
@@ -870,8 +871,8 @@
                         </div> 
                     </div>  
 
-                    <!-- Sustainability -->
-                    <div class="flex flex-col lg:flex-row *:w-full *:lg:w-1/2 w-full max-w-xl lg:max-w-7xl mx-auto shadow-lg h-fit">
+                    <!-- Sustainability Video -->
+                    <div class="flex flex-col lg:flex-row w-9/10 sm:w-full  max-w-xl lg:max-w-7xl mx-auto shadow-lg h-fit *:w-full *:lg:w-1/2">
 
                         <video 
                             autoplay 

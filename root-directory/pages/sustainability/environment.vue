@@ -80,9 +80,10 @@
                         <div class="grid gap-4">
                             <h2 class="font-extrabold text-(--light-blue) text-3xl lg:text-5xl text-center">Powering Progress Responsibly</h2>
 
-                            <div class="flex flex-col text-(--white) lg:text-lg gap-4">
+                            <div class="flex flex-col text-(--white) *:lg:text-lg gap-4">
                                 
-                                <p>At <strong>Pennpetro Energy PLC</strong>, sustainability is more than a corporate initiative—it is a guiding principle that shapes our strategy, operations, and long-term vision. 
+                                <p>
+                                    At <span class="font-bold">Pennpetro Energy PLC</span>, sustainability is more than a corporate initiative—it is a guiding principle that shapes our strategy, operations, and long-term vision. 
                                     As an independent energy company with core operations in Texas, USA, we recognize our responsibility to minimize environmental impact while maximizing energy efficiency and economic value.
                                 </p>
 
@@ -120,7 +121,7 @@
         <section>
             <div class="px-(--section-px) lg:px-(--section-px-lg) py-(--section-py) lg:py-(--section-py-lg) bg-(--white) w-full h-full">
                 
-                <div class="flex flex-col gap-20 py-20 w-full max-w-6xl mx-auto">
+                <div class="flex flex-col gap-20 py-20 w-full max-w-7xl mx-auto">
 
                     <div class="flex flex-col items-center justify-center gap-16 w-full h-full">
                         <NuxtImg
@@ -132,9 +133,9 @@
 
                         <div class="grid gap-4">
                             <h2 class="font-extrabold text-(--dark-blue) text-3xl lg:text-5xl text-center">Environmental Stewardship</h2>
-                            <div class="flex flex-col text-base lg:text-lg text-(--black) gap-3">
+                            <div class="flex flex-col text-base *:lg:text-lg text-(--black) gap-4">
                                 <p>Our exploration and production activities are underpinned by a deep respect for the environment. 
-                                    Across our operations in the <strong>Austin Chalk and Eagle Ford Shale</strong>, we implement stringent environmental controls, including:
+                                    Across our operations in the <span class="font-bold">Austin Chalk and Eagle Ford Shale</span>, we implement stringent environmental controls, including:
                                 </p>
 
                                 <ul>
@@ -186,7 +187,7 @@
         <section>
             <div class="px-(--section-px) lg:px-(--section-px-lg) py-(--section-py) lg:py-(--section-py-lg) bg-(--dark-blue) w-full h-full">
                 
-                <div class="flex flex-col gap-20 py-20 w-full max-w-6xl mx-auto">
+                <div class="flex flex-col gap-20 py-20 w-full max-w-7xl mx-auto">
 
                     <div class="flex flex-col items-center justify-center gap-16 w-full h-full">
                         <NuxtImg
@@ -196,10 +197,13 @@
                             class="w-3/5 max-w-sm mx-auto rounded-full"
                         />
 
-                        <div class="grid gap-4 text-center">
-                            <h2 class="font-extrabold text-(--light-blue) text-3xl lg:text-5xl">Reducing waste material</h2>
-                            <div class="text-base lg:text-lg text-(--white)">
-                                <p>Our focus on sustainability includes responsible land and resource use. We are committed to:</p>
+                        <div class="grid gap-4">
+                            <h2 class="font-extrabold text-(--light-blue) text-3xl lg:text-5xl text-center">Responsible Resource Development</h2>
+                            <div class="flex flex-col lg:text-lg text-(--white) gap-4">
+                                <p>
+                                    Our focus on sustainability includes responsible land and resource use. 
+                                    We are committed to:
+                                </p>
 
                                 <ul>
                                     <li>
@@ -256,9 +260,9 @@
                             class="w-3/5 max-w-sm mx-auto rounded-full"
                         />
 
-                        <div class="grid gap-4 text-center">
-                            <h2 class="font-extrabold text-(--dark-blue) text-3xl lg:text-5xl">Energy Transition &amp; Clean Tech Integration</h2>
-                            <div class="text-base lg:text-lg text-(--black)">
+                        <div class="grid gap-4">
+                            <h2 class="font-extrabold text-(--dark-blue) text-3xl lg:text-5xl text-center">Energy Transition &amp; Clean Tech Integration</h2>
+                            <div class="flex flex-col lg:text-lg text-(--black) gap-4">
                                 <p>
                                     Pennpetro is taking tangible steps toward the energy transition. 
                                     In collaboration with <span class="font-bold">Globalvision International U. LDA</span>, we are expanding our efforts into <span class="font-bold">natural gas</span> and exploring <span class="font-bold">lithium extraction </span> from produced water—initiatives that support the global move toward cleaner energy sources.
@@ -375,6 +379,73 @@
 
         </section>
 
+        <!-- Section: Our Commitment -->
+        <section>
+            <div class="px-(--section-px) lg:px-(--section-px-lg) py-(--section-py) lg:py-(--section-py-lg) bg-(--white) w-full h-full">
+                
+                <div class="flex flex-col gap-20 py-20 w-full max-w-6xl mx-auto">
+
+                    <div class="flex flex-col items-center justify-center gap-16 w-full h-full">
+                        <NuxtImg
+                            src="/sustainability/social_tree.png"
+                            alt="Image similar to an icon of a tree"
+                            loading="lazy"
+                            class="w-3/5 max-w-sm mx-auto rounded-full"
+                        />
+
+                        <div class="grid gap-4">
+                            <h2 class="font-extrabold text-(--dark-blue) text-3xl lg:text-5xl text-center">Our Commitment</h2>
+                            <div class="flex flex-col lg:text-lg text-(--black) gap-4">
+                                <p>
+                                    At Pennpetro Energy, we believe that energy development and environmental responsibility can—and must—go hand in hand. 
+                                    Through continuous improvement, stakeholder collaboration, and the integration of clean technologies, we are building a sustainable foundation for future generations.
+                                </p>
+
+                                <ul>
+                                    <li>
+                                        <span class="font-bold">Low-impact drilling practices</span> that reduce surface disturbance
+                                    </li>
+                                    <li>
+                                        <span class="font-bold">Closed-loop fluid systems</span> to minimize waste and prevent contamination
+                                    </li>
+                                    <li>
+                                        <span class="font-bold">Advanced emissions monitoring</span> to track and reduce greenhouse gases
+                                    </li>
+                                    <li>
+                                        <span class="font-bold">Rigorous water management</span> strategies, including recycling and reuse where feasible
+                                    </li>
+                                </ul>
+
+                                <p>
+                                   Together, we are powering progress responsibly.
+                                </p>
+                            </div>
+
+                            <NuxtLink
+                                to="/sustainability/social"
+                                class="group flex *:flex items-center *:items-center justify-end px-2 lg:px-8 py-2 gap-2 lg:gap-4 mx-auto w-fit text-(--black) hover:text-(--white) hover:bg-(--light-blue) border-1 border-(--light-blue) rounded-lg shadow-lg my-12 duration-300 ease-in-out transition-all"
+                            >
+                                <div class="group relative flex items-center justify-center text-xl w-8 h-full overflow-hidden">
+                                    <div class="absolute flex items-center left-2 h-full w-12 transition-all duration-500 ease-in-out group-hover:translate-x-full">
+                                        <Icon name="mdi:arrow-right"/>
+                                    </div>
+                                    
+                                    <div class="absolute flex items-center left-2 h-full w-12 -translate-x-full transition-all duration-500 ease-in-out group-hover:translate-x-0">
+                                        <Icon name="mdi:arrow-right" />
+                                    </div>
+                                </div>
+                                <span class="font-semibold text-lg">Learn more about our approach</span>
+                            </NuxtLink>
+                        </div>
+                    </div>                   
+
+
+                </div>
+
+            </div>
+
+        </section>
+
         <!-- Climate, Social Investment and Diversity and Inclusion -->
         <section>
             <div class="px-(--section-px) lg:px-(--section-px-lg) py-(--section-py) lg:py-(--section-py-lg) bg-(--light-gray) w-full h-full">
@@ -428,7 +499,7 @@
                                     />
 
                                     <div class="flex flex-col justify-between p-8 gap-12 w-full h-full bg-(--dark-teal) rounded-b-2xl">
-                                        <h3 class="text-(--white) text-2xl lg:text-3xl font-extrabold">Social investment</h3>
+                                        <h3 class="text-(--white) text-2xl lg:text-3xl font-extrabold">Social Investment</h3>
                                         <NuxtLink
                                             to="/sustainability/social"
                                             class="group flex *:flex items-center *:items-center justify-end ml-auto gap-2 w-fit text-(--white) hover:text-(--black) duration-300 ease-in-out transition-all"
@@ -456,7 +527,7 @@
                                     />
 
                                     <div class="flex flex-col justify-between p-8 gap-12 w-full h-full bg-(--dark-orange) rounded-b-2xl">
-                                        <h3 class="text-(--white) text-2xl lg:text-3xl font-extrabold">Diversity and inclusion</h3>
+                                        <h3 class="text-(--white) text-2xl lg:text-3xl font-extrabold">Diversity and Inclusion</h3>
                                         <NuxtLink
                                             to="/sustainability/social"
                                             class="group flex *:flex items-center *:items-center justify-end ml-auto gap-2 w-fit text-(--white) hover:text-(--black) duration-300 ease-in-out transition-all"
@@ -488,72 +559,7 @@
 
         </section>
 
-        <!-- Section: Our Commitment -->
-        <section>
-            <div class="px-(--section-px) lg:px-(--section-px-lg) py-(--section-py) lg:py-(--section-py-lg) bg-(--white) w-full h-full">
-                
-                <div class="flex flex-col gap-20 py-20 w-full max-w-6xl mx-auto">
-
-                    <div class="flex flex-col items-center justify-center gap-16 w-full h-full">
-                        <NuxtImg
-                            src="/sustainability/social_tree.png"
-                            alt="Image similar to an icon of a tree"
-                            loading="lazy"
-                            class="w-3/5 max-w-sm mx-auto rounded-full"
-                        />
-
-                        <div class="grid gap-4">
-                            <h2 class="font-extrabold text-(--dark-blue) text-3xl lg:text-5xl text-center">Our Commitment</h2>
-                            <div class="flex flex-col text-base lg:text-lg text-(--black) gap-3">
-                                <p>
-                                    At Pennpetro Energy, we believe that energy development and environmental responsibility can—and must—go hand in hand. 
-                                    Through continuous improvement, stakeholder collaboration, and the integration of clean technologies, we are building a sustainable foundation for future generations.
-                                </p>
-
-                                <ul>
-                                    <li>
-                                        <span class="font-bold">Low-impact drilling practices</span> that reduce surface disturbance
-                                    </li>
-                                    <li>
-                                        <span class="font-bold">Closed-loop fluid systems</span> to minimize waste and prevent contamination
-                                    </li>
-                                    <li>
-                                        <span class="font-bold">Advanced emissions monitoring</span> to track and reduce greenhouse gases
-                                    </li>
-                                    <li>
-                                        <span class="font-bold">Rigorous water management</span> strategies, including recycling and reuse where feasible
-                                    </li>
-                                </ul>
-
-                                <p>
-                                   Together, we are powering progress responsibly.
-                                </p>
-                            </div>
-
-                            <NuxtLink
-                                to="/sustainability/social"
-                                class="group flex *:flex items-center *:items-center justify-end px-2 lg:px-8 py-2 gap-2 lg:gap-4 mx-auto w-fit text-(--black) hover:text-(--white) hover:bg-(--light-blue) border-1 border-(--light-blue) rounded-lg shadow-lg my-12 duration-300 ease-in-out transition-all"
-                            >
-                                <div class="group relative flex items-center justify-center text-xl w-8 h-full overflow-hidden">
-                                    <div class="absolute flex items-center left-2 h-full w-12 transition-all duration-500 ease-in-out group-hover:translate-x-full">
-                                        <Icon name="mdi:arrow-right"/>
-                                    </div>
-                                    
-                                    <div class="absolute flex items-center left-2 h-full w-12 -translate-x-full transition-all duration-500 ease-in-out group-hover:translate-x-0">
-                                        <Icon name="mdi:arrow-right" />
-                                    </div>
-                                </div>
-                                <span class="font-semibold text-lg">Learn more about our approach</span>
-                            </NuxtLink>
-                        </div>
-                    </div>                   
-
-
-                </div>
-
-            </div>
-
-        </section>
+        
 
 
     </div>
@@ -561,36 +567,41 @@
 
 <style lang="css" scoped>
 
+    ul {
+        margin-left: var(--list-ul-margin-left);
+        list-style-type: disc;
+    }
+
     .group-hover\:underline-text {
-    position: relative;
-    display: inline-block;
+        position: relative;
+        display: inline-block;
     }
 
     .group-hover\:underline-text::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 0%;
-    height: 1px;
-    background-color: white;
-    transition: width 0.5s ease-in-out;
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0%;
+        height: 1px;
+        background-color: white;
+        transition: width 0.5s ease-in-out;
     }
 
     .group:hover .group-hover\:underline-text::after {
-    width: 100%;
+        width: 100%;
     }
 
     .arrow-icon {
-    transition: transform 1s ease-in-out;
+        transition: transform 1s ease-in-out;
     }
 
     .group:hover .arrow-icon {
-    transform: translateX(12px);
+        transform: translateX(12px);
     }
 
     .group-hover\:arrow-move {
-    animation: moveArrow 3s infinite alternate ease-in-out;
+        animation: moveArrow 3s infinite alternate ease-in-out;
     }  
 
 </style>

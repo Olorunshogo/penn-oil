@@ -66,14 +66,14 @@
 
 <template>
   <div class="default-layout scroll-smooth">
-    <NavBar class="sticky z-[99] inset-0 bottom-[unset] cursor-default bg-transparent" />
+    <NavBar class="relative z-[99] inset-0 bottom-[unset] cursor-default bg-transparent" />
       
       <!--SearchBar  -->
       <!-- <div>
         <SearchBar />
       </div> -->
 
-      <div class="-mt-(--navbar-h)">
+      <div>
         <slot></slot>
       </div>
 

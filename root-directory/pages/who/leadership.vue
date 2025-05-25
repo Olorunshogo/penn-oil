@@ -64,8 +64,27 @@
         </section> 
 
         <!-- Section: Board of Directors -->
+        <section>
+        <div class="relative w-full h-full px-(--section-px) lg:px-(--section-px-lg) py-(--section-py) lg:py-(--section-py-lg)">
 
-        <HomeWhoLeadership />
+            <div class="grid gap-16 py-16 lg:py-20 w-full h-full max-w-7xl mx-auto">
+
+                <!-- Pennpetro Energy PLC leadership -->
+                <div class="grid gap-2">
+                    <h2 class="text-center text-3xl md:text-4xl font-bold text-(--dark-blue)">Board of directors</h2>
+                    <p class="text-(--black) text-center font-medium">
+                        The Board of Directors at Pennpetro Energy PLC oversees the company’s operations and is dedicated to maintaining strong corporate governance practices. 
+                        Its members have a demonstrated history of success and bring diverse high-level expertise, including leadership in business policy, science, technology, engineering, research, and academia. 
+                        They also offer deep knowledge in areas such as government, regulation, law, public policy, finance, financial reporting, global business, international relations, environmental matters, business transformation, and public company board service.
+                    </p>
+                </div>
+
+                <!-- Board of Directors -->
+                <BoardOfDirectors />
+
+            </div>    
+        </div>
+    </section> 
 
                    
 

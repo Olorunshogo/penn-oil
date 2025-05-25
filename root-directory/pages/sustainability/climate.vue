@@ -37,7 +37,6 @@
 
 <template>
     <div>
-
         <!-- Section: Hero -->
         <div>
             <HeroSectionImageBg
@@ -87,13 +86,7 @@
                         </p>
                     </div>
 
-                    <!-- Video: Climate Page Global Population Final -->
-                    <!-- <div class="flex flex-col items-center justify-center gap-8 *:text-center text-(--white) w-full h-full">
-                        
-                        <video width="640" height="360" controls autoplay loop>
-                            <source src="/sustainability/Climate_Page_global_population_final.mp4" type="video/mp4" >
-                        </video>
-                    </div> -->
+                    
 
                     <!-- A mix that includes oil and gas can help satisfy those demands -->
                     <div class="flex flex-col items-center justify-center gap-8 *:text-center text-(--white) w-full h-full">
@@ -102,27 +95,6 @@
                             A mix that includes oil and gas can help satisfy those demands
                         </h2>
                         
-                    </div>
-
-                    <!-- Video: Climate Higher Standard -->
-                    <!-- <div class="flex flex-col items-center justify-center gap-8 *:text-center text-(--white) w-full h-full">
-                        
-                        <video width="640" height="360" controls autoplay loop>
-                            <source src="/sustainability/Climate_higher_standard_video.mp4" type="video/mp4" >
-                        </video>
-                        
-                    </div> -->
-
-                    <div class="flex flex-col gap-4 px-4 max-w-7xl mx-auto w-full h-full">
-                        <p class="text-sm md:text-base text-(--white) ">
-                            Sources: IEA, World Energy Outlook 2022, iea.org/reports/world-energy-outlook-2022, License: CC BY 4.0 (report), CC BY NC SA 4.0 (Annex A); 
-                            BNEF Scenarios: Energy Transition Scenario 2022, Net Zero Scenario 2022; Wood Mackenzie Scenarios (2022): 
-                            Energy Transition Outlook, Accelerated Energy Transition 2° C; S&P Global Commodity Insights Scenarios (2022): Inflections (IHSM), Green Rules (IHSM), Discord (IHSM), Accelerated CCS (IHSM), Multitechnology Mitigation (IHSM), December Most Likely Case (Platts), 2° C Case (Platts).
-                        </p>
-
-                        <p class="text-sm md:text-base text-(--white)">
-                            *Other low-carbon energy (nuclear, hydrogen and biomass)
-                        </p>
                     </div>
 
                 </div>
@@ -303,18 +275,6 @@
                         
                     </div>
                 </div>
-
-                <p class="text-base text-(--white) pb-60 px-4 max-w-7xl mx-auto">
-                    *Pennpetro Energy PLC’s ability to achieve any ambition, including with respect to climate-related initiatives and any new businesses, is subject to numerous risks and contingencies, many of which are outside of Pennpetro Energy PLC’s control. 
-                    Pennpetro Energy PLC regularly evaluates its ambitions and expects to change some of these aspirations, targets, and other ambitions for various reasons, including market conditions, its strategy or portfolio, and financial, operational, policy, reputational, legal and other factors. 
-                    Our focus on helping meet the world’s energy needs while lowering the carbon intensity of our operations remains unchanged.
-                    For Forward-Looking Statements and Other Disclaimers, visit 
-                    <NuxtLink
-                        to="/contact"
-                    >
-                        /contact
-                    </NuxtLink>
-                </p>
 
             </div>
         </section>

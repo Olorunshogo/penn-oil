@@ -13,10 +13,6 @@
 
 :root {
     --font-gotham-book: "GothamBook", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    --font-gotham-bold: "GothamBold", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    --font-gotham-black: "GothamBlack", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    --font-gotham-narrow-book: "GothamNarrowBook", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    --font-gotham-narrow-bold: "GothamNarrowBold", "Helvetica Neue", Helvetica, Arial, sans-serif;
 
     --black: #000000;
     --white: #FFFFFF;
@@ -64,8 +60,21 @@
 
     --section-py: 2rem;
     --section-py-lg: 4rem;
+    --list-ul-margin-left: 2rem;
 
     
+}
+
+@theme {
+    --font-gotham: var(--font-gotham-book);
+}
+
+div,
+h1, h2, h3,
+h4, h5, h6,
+p,
+span {
+    font-family: var(--font-gotham);
 }
 
 .bg-container {
@@ -113,6 +122,3 @@
     max-height: 10rem;
     opacity: 1;
 }
-
-
-
