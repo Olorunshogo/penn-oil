@@ -23,6 +23,8 @@
         twitterImage: '/Logo/Full_Penn_Petro_Energy_Logo.jpg',
 
         keywords: 'Contact Pennpetro Energy PLC, energy company contact, oil and gas inquiries, sustainability partnerships, investor contact, energy sector communication, Penn Petro support',
+
+        author: "Olorunshogo (Moses) BAMTEFA"
     });
 
     import { 
