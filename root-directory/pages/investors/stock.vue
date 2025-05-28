@@ -14,11 +14,15 @@
         ogImage: '/Logo/Full_Penn_Petro_Energy_Logo.jpg',
         ogImageAlt: 'Pennpetro Energy PLC stock performance chart and market data dashboard.',
         ogUrl: 'https://vercel.com/bom-projects/pen-oil/investors/stock',
+        
         twitterCard: 'summary_large_image',
         twitterTitle: 'Pennpetro Energy PLC Stock Information | Real-Time Data & Market Performance',
         twitterDescription: 'Track Pennpetro Energy PLC’s stock price, trends, and historical performance to support your investment decisions.',
         twitterImage: '/Logo/Full_Penn_Petro_Energy_Logo.jpg',
-        keywords: 'Pennpetro Energy PLC stock, share price, stock performance, energy company stock, investor stock info, market trends, shareholder value, stock data, NYSE energy stocks, financial markets'
+
+        keywords: 'Pennpetro Energy PLC stock, share price, stock performance, energy company stock, investor stock info, market trends, shareholder value, stock data, NYSE energy stocks, financial markets',
+
+        author: "Olorunshogo (Moses) BAMTEFA"
     });
 
     import {

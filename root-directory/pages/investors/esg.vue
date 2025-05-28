@@ -18,7 +18,9 @@
         twitterTitle: 'ESG A–Z Index | Pennpetro Energy PLC’s Commitment to Sustainability',
         twitterDescription: 'Explore Pennpetro Energy PLC’s ESG practices through our A–Z Index – a transparent guide to our environmental, social, and governance efforts.',
         twitterImage: '/Logo/Full_Penn_Petro_Energy_Logo.jpg',
-        keywords: 'Pennpetro Energy PLC ESG, sustainability index, environmental leadership, social responsibility, corporate governance, ESG transparency, sustainable energy practices, stakeholder trust, ESG reporting, ESG A-Z glossary'
+        keywords: 'Pennpetro Energy PLC ESG, sustainability index, environmental leadership, social responsibility, corporate governance, ESG transparency, sustainable energy practices, stakeholder trust, ESG reporting, ESG A-Z glossary',
+
+        author: "Olorunshogo (Moses) BAMTEFA"
     });
 
     import {

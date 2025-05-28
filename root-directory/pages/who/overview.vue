@@ -22,6 +22,8 @@
         twitterImage: '/Logo/Full_Penn_Petro_Energy_Logo.jpg',
 
         keywords: 'About Pennpetro Energy PLC, energy company overview, Penn Petro mission, energy leadership, global energy company, sustainability values, responsible energy innovation',
+
+        author: "Olorunshogo (Moses) BAMTEFA"
     });
 
     import { whoOverviewHeroVideoBg } from '~/models/heroBgModels';

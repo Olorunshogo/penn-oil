@@ -22,6 +22,8 @@
         twitterImage: '/Logo/Full_Penn_Petro_Energy_Logo.jpg',
 
         keywords: 'Pennpetro Energy PLC history, company origins, energy company timeline, legacy of innovation, oil and gas company history, energy industry evolution, Penn Petro milestones',
+
+        author: "Olorunshogo (Moses) BAMTEFA"
     });
 
 </script>

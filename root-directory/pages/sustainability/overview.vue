@@ -22,6 +22,8 @@
         twitterImage: '/images/Logo/Full_Penn_Petro_Energy_Logo.jpg',
 
         keywords: 'Pennpetro Energy PLC sustainability, sustainable energy solutions, environmental responsibility, corporate social responsibility, clean energy initiatives, energy transition, sustainable oil and gas practices',
+
+        author: "Olorunshogo (Moses) BAMTEFA"
     });
 
     import { sustainabilityOverviewHeroVideoBg } from '~/models/heroBgModels';

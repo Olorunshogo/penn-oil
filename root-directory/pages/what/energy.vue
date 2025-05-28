@@ -21,6 +21,8 @@
         twitterImage: '/Logo/Full_Penn_Petro_Energy_Logo.jpg',
 
         keywords: 'Pennpetro Energy PLC operations, oil and gas solutions, global energy production, energy infrastructure, upstream and downstream energy, energy innovation, responsible energy company',
+
+        author: "Olorunshogo (Moses) BAMTEFA"
     });
 
     import { whatEnergyHeroVideoBg } from '~/models/heroBgModels';

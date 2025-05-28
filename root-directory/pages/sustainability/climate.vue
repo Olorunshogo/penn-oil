@@ -22,6 +22,8 @@
         twitterImage: '/Logo/Full_Penn_Petro_Energy_Logo.jpg',
 
         keywords: 'Pennpetro Energy PLC climate strategy, carbon reduction goals, low-carbon energy, tackling climate change, sustainable energy transition, emissions reduction, clean energy innovation',
+
+        author: "Olorunshogo (Moses) BAMTEFA"
     });
 
     import { 

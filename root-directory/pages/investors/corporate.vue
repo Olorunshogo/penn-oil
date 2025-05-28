@@ -21,6 +21,8 @@
         twitterImage: '/Logo/Full_Penn_Petro_Energy_Logo.jpg',
 
         keywords: 'Pennpetro Energy PLC corporate governance, board of directors, ethical leadership, investor trust, energy company governance, shareholder transparency, ESG leadership, governance policies, board oversight',
+
+        author: "Olorunshogo (Moses) BAMTEFA"
     });
 
     import {

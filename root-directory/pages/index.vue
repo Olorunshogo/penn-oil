@@ -21,6 +21,8 @@
         twitterImage: '/Logo/Full_Penn_Petro_Energy_Logo.jpg',
 
         keywords: 'Pennpetro Energy PLC, global energy company, oil and gas innovation, sustainable energy, clean energy solutions, energy technology, energy leadership, Penn Petro services',
+
+        author: "Olorunshogo (Moses) BAMTEFA"
     });
 
 </script>

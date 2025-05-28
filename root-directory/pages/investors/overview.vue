@@ -21,6 +21,8 @@
         twitterImage: '/Logo/Full_Penn_Petro_Energy_Logo.jpg',
 
         keywords: 'Pennpetro Energy PLC investment, energy sector investment, clean energy stocks, sustainable energy investment, global energy companies, green energy investment, energy innovation, sustainable energy solutions',
+
+        author: "Olorunshogo (Moses) BAMTEFA"
     });
 
     import { 

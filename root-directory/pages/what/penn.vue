@@ -22,6 +22,8 @@
         twitterImage: '/Logo/Full_Penn_Petro_Energy_Logo.jpg',
 
         keywords: 'Pennpetro Energy PLC global operations, international energy company, energy projects worldwide, global energy solutions, Penn Petro presence, international oil and gas, sustainable global energy',
+
+        author: "Olorunshogo (Moses) BAMTEFA"
     });
 
     import { 

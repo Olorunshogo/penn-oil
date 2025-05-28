@@ -22,6 +22,8 @@
         twitterImage: '/Logo/Full_Penn_Petro_Energy_Logo.jpg',
 
         keywords: 'Pennpetro Energy PLC leadership, executive team, energy industry leaders, company executives, energy innovation leadership, oil and gas leadership, Penn Petro executives',
+
+        author: "Olorunshogo (Moses) BAMTEFA"
     });
 
 </script>

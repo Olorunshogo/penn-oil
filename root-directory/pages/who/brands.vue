@@ -22,6 +22,8 @@
         twitterImage: '/Logo/Full_Penn_Petro_Energy_Logo.jpg',
 
         keywords: 'Pennpetro Energy PLC brands, energy portfolio, energy subsidiaries, oil and gas brands, clean energy brands, Penn Petro divisions, global energy companies, energy innovation network',
+
+        author: "Olorunshogo (Moses) BAMTEFA"
     });
    
 </script>

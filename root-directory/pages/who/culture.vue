@@ -22,6 +22,8 @@
         twitterImage: '/Logo/Full_Penn_Petro_Energy_Logo.jpg',
 
         keywords: 'Pennpetro Energy PLC culture, company values, employee experience, energy careers, workplace diversity, innovation culture, inclusive energy company, Penn Petro people',
+
+        author: "Olorunshogo (Moses) BAMTEFA"
     });
 
     import { 

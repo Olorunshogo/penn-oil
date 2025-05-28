@@ -21,6 +21,8 @@
         twitterImage: '/Logo/Full_Penn_Petro_Energy_Logo.jpg',
 
         keywords: 'Pennpetro Energy PLC social responsibility, community engagement, workforce development, diversity and inclusion, employee wellbeing, social impact in energy sector, supporting local communities',
+
+        author: "Olorunshogo (Moses) BAMTEFA"
     });
 
     import { 

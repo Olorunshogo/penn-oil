@@ -31,7 +31,8 @@
     twitterImage: '/Logo/Full_Penn_Petro_Energy_Logo.jpg',
     
     keywords: 'Pennpetro Energy PLC, energy company, oil and gas, renewable energy, sustainability, clean energy, global energy solutions, carbon reduction, innovation, energy technology',
-  
+
+    author: "Olorunshogo (Moses) BAMTEFA" 
   }); 
 
   const topButton = ref<boolean>(false);

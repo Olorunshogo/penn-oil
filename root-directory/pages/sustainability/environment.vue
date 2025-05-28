@@ -22,6 +22,8 @@
         twitterImage: '/Logo/Full_Penn_Petro_Energy_Logo.jpg',
 
         keywords: 'Pennpetro Energy PLC environmental responsibility, environmental stewardship, biodiversity protection, water conservation, sustainable resource management, eco-friendly energy practices, environmental sustainability in oil and gas',
+
+        author: "Olorunshogo (Moses) BAMTEFA"
     });
 
 </script>

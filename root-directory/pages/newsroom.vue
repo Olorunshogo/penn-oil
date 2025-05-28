@@ -21,6 +21,8 @@
         twitterImage: '/Logo/Full_Penn_Petro_Energy_Logo.jpg',
 
         keywords: 'Pennpetro Energy PLC news, energy industry updates, oil and gas news, sustainability news, press releases, Penn Petro media, corporate news, energy innovation announcements',
+
+        author: "Olorunshogo (Moses) BAMTEFA"
     });
 
     import { 

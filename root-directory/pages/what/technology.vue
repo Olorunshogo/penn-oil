@@ -21,6 +21,8 @@
         twitterImage: '/Logo/Full_Penn_Petro_Energy_Logo.jpg',
 
         keywords: 'Pennpetro Energy PLC technology, energy innovation, clean energy technology, sustainable energy solutions, advanced energy systems, oil and gas technology, energy sector innovation, energy tech advancements',
+
+        author: "Olorunshogo (Moses) BAMTEFA"
     });
 
 </script>

@@ -21,6 +21,8 @@
         twitterImage: '/Logo/Full_Penn_Petro_Energy_Logo.jpg',
 
         keywords: 'Pennpetro Energy PLC investor events, investor webinars, energy investor conferences, Penn Petro earnings calls, energy company updates, sustainable energy events, investor relations, clean energy events',
+
+        author: "Olorunshogo (Moses) BAMTEFA"
     });
 
     const openInvestorsNav = ref<boolean>(false);
