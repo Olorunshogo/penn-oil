@@ -374,7 +374,7 @@
 
                                             <!-- Contact us information about Scams-->
                                             <NuxtLink
-                                                to="mailto:pennpetrolenergy@gmail.com"
+                                                to="mailto:info@pennpetroenergy.com"
                                                 class="group relative flex items-center text-sm font-extrabold text-(--black) duration-500 ease-in transition-all"
                                             >
                                                 <div class="group relative flex items-center justify-center text-xl w-12 h-full overflow-hidden">
@@ -1077,18 +1077,36 @@
                             Pennpetro Energy headquarters
                         </h3>
 
-                        <p class="text-(--black) text-lg">
-                            <span class="font-bold">Head office: </span>6 Heddon Street London,<br>
-                            W1B 4BT,<br>
-                            United Kingdom <br>
-                            Telephone: 
+                        <div class="text-(--black) text-base">
+
+                            <!-- Address -->
+                            <div>
+                                <span class="font-bold">Head office: </span>6 Heddon Street London,<br>
+                                W1B 4BT,<br>
+                                United Kingdom <br>                            
+                            </div> 
+
+                            <div class="flex items-center">
+                                Telephone: &NonBreakingSpace;
                                 <NuxtLink
                                     to="tel:+447700105171" target="_blank"
                                     class="hover:text-(--medium-blue) underline decoration-1 underline-offset-2 decoration-(--light-gray) hover:decoration-(--medium-blue) hover:cursor-pointer ease-in-out duration-300 transition-all"
                                 >
                                     +44 7700 105171
                                 </NuxtLink>
-                        </p> 
+                            </div>
+
+                            <div class="flex items-center">
+                                E-mail: &NonBreakingSpace;
+                                <NuxtLink
+                                    to="mailto:info@pennpetroenergy.com" target="_blank"
+                                    class="hover:text-(--medium-blue) underline decoration-1 underline-offset-2 decoration-(--light-gray) hover:decoration-(--medium-blue) hover:cursor-pointer ease-in-out duration-300 transition-all"
+                                >
+                                    info@pennpetroenergy.com
+                                </NuxtLink>
+                            </div>
+                        </div> 
+
                     </div>
                             
 
