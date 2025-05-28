@@ -89,7 +89,7 @@
         }
 
         try {
-            const { data, error: fetchError } = await useFetch('https://formsubmit.co/ajax/shownzy001@gmail.com', {
+            const { data, error: fetchError } = await useFetch('https://formsubmit.co/ajax/info@pennpetroenergy.com', {
                 method: 'POSt',
                 headers: {
                     'Content-Type': 'application/json',
@@ -226,19 +226,20 @@
                                         <div class="grid gap-4 w-full h-full">
                                             <div class="grid gap-4 text-(--black)">
                                                 <p>We welcome your feedback and inquiries about any of our service stations. Customer service representatives are available between the hours of 7 a.m. to 7 p.m. CT, Monday through Friday.</p>
-                                                <address>
-                                                    Consumer connection center <br>
-                                                    9401 Williamsburg Plaza, Suite 201 <br>
-                                                    Louisville, KY 40222
-                                                </address>
+                                                
+                                                <div>
+                                                    <span class="font-bold">Head office: </span>6 Heddon Street London,<br>
+                                                    W1B 4BT,<br>
+                                                    United Kingdom
+                                                </div>
                                                 <span class="flex items-center gap-2">
                                                     <span class="flex">Toll-free:</span>
                                                     <NuxtLink
-                                                        to="tel:+18552859595"
+                                                        to="tel:+447700105171"
                                                         target="_blank"
                                                         class="decoration-1 underline-offset-2 underline decoration-(--light-gray) hover:decoration-(--dark-gray) duration-300 ease-in-out transition-all"
                                                     >
-                                                        +1 855-285-9595
+                                                        +44 7700 105171
                                                     </NuxtLink>
                                                 </span>
                                             </div>
@@ -485,8 +486,7 @@
                                             <div class="grid gap-4 tex-(--black) w-full h-full">
                                                 <h4 class="font-bold">Pennpetro Energy PLC and Texaco credit services</h4>
                                                 <p>
-                                                    Toll-free: +1 800-243-8766 <br>
-                                                    Option 1 for Pennpetro Energy PLC and Texaco consumer account
+                                                    Toll-free: +44 7700 105171<br>
                                                 </p>   
                                                 <p>
                                                     Customer service hours
@@ -500,7 +500,7 @@
                                             <div class="grid gap-4 tex-(--black) w-full h-full">
                                                 <h4 class="font-bold">Pennpetro Energy PLC and Texaco credit services</h4>
                                                 <p>
-                                                    Toll-free: +1 866-448-4367
+                                                    Toll-free: +44 7700 105171
                                                 </p>   
                                                 <p>
                                                     Customer service hours: 24/7
@@ -510,7 +510,7 @@
                                             <div class="grid gap-4 tex-(--black) w-full h-full">
                                                 <h4 class="font-bold">Business card services services</h4>
                                                 <p>
-                                                    Toll-free: +1 888-531-3698
+                                                    Toll-free: +44 7700 105171
                                                 </p>   
                                                 <p>
                                                     WEX customer service advisors: 24/7/365
@@ -672,12 +672,12 @@
                                                 <p>
                                                     Telephone: 
                                                     <NuxtLink
-                                                        to="tel:+15102425357"
+                                                        to="tel:+447700105171"
                                                         target="_blank"
                                                         class="group relative flex items-center text-sm font-extrabold text-(--black) duration-500 ease-in transition-all"
                                                     >
                                                         <span class="relative overflow-hidden">
-                                                            <span class="group-hover:underline-text">+1 510-242-5357</span>
+                                                            <span class="group-hover:underline-text">+44 7700 105171</span>
                                                         </span>
                                                     </NuxtLink> 
                                                 </p>                                                    
@@ -752,15 +752,15 @@
 
                                                 <div class="grid gap-4 tex-(--black) w-full h-full">
                                                     <h4 class="font-bold">For information about a specific product</h4>
-                                                    <!-- Toll-free: +1 800-582-3835 -->
+                                                    <!-- Toll-free: +44 7700 105171 -->
                                                     <NuxtLink
-                                                        to="tel:+18005823835"
+                                                        to="tel:+447700105171"
                                                         target="_blank"
                                                         class="group relative flex items-center text-sm text-(--black) duration-500 ease-in transition-all"
                                                     >
                                                         Toll-free:
                                                         <span class="relative overflow-hidden">
-                                                            <span class="group-hover:underline-text">+1 800-582-3835</span>
+                                                            <span class="group-hover:underline-text">+44 7700 105171</span>
                                                         </span>
                                                     </NuxtLink>                                                     
                                                 </div>
@@ -1083,10 +1083,10 @@
                             United Kingdom <br>
                             Telephone: 
                                 <NuxtLink
-                                    to="tel:+18328541000" target="_blank"
+                                    to="tel:+447700105171" target="_blank"
                                     class="hover:text-(--medium-blue) underline decoration-1 underline-offset-2 decoration-(--light-gray) hover:decoration-(--medium-blue) hover:cursor-pointer ease-in-out duration-300 transition-all"
                                 >
-                                    +1 832.854.1000
+                                    +44 7700 105171
                                 </NuxtLink>
                         </p> 
                     </div>

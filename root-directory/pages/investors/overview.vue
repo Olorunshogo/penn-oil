@@ -1241,8 +1241,7 @@
                                 </div>
 
                                 <div class="text-sm text-(--black)">
-                                    <span>Toll free number: +1 800.368.8357</span> <br>
-                                    <span>Outside the U.S.: +1 201.680.6578</span>
+                                    Toll free number: +44 7700 105171
                                 </div>
 
                                 <NuxtLink 
@@ -1269,7 +1268,7 @@
 
                                 
                                 <div class="flex flex-col gap-1 text-sm text-(--black)">
-                                    <span>Phone: +1 832.854.1000</span>
+                                    <span>Phone: +44 7700 105171</span>
                                     <NuxtLink 
                                         to="/investors/overview"
                                         class="group flex *:flex md:hidden items-center *:items-center gap-2 duration-300 ease-in-out transition-all"

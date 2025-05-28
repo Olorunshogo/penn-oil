@@ -1094,17 +1094,17 @@
                                 United Kingdom <br>
                                 Telephone: 
                                 <NuxtLink
-                                    to="tel:+18328541000" target="_blank"
+                                    to="tel:+447700105171" target="_blank"
                                     class="hover:text-(--medium-blue) underline decoration-1 underline-offset-2 decoration-(--dark-gray) hover:decoration-(--medium-blue) hover:cursor-pointer ease-in-out duration-300 transition-all"
                                 >
-                                    +1 832.854.1000
+                                    +44 7700 105171
                                 </NuxtLink>
                             </p> 
 
                             <p class="text-(--black)">
                                 Check the
                                 <NuxtLink
-                                    to="tel:+18328541000"
+                                    to="/contact"
                                     class="hover:text-(--medium-blue) underline decoration-1 underline-offset-3 decoration-(--dark-gray) hover:decoration-(--medium-blue) hover:cursor-pointer ease-in-out duration-300 transition-all"
                                 >contact</NuxtLink>
                                 page for more information on how to contact us at Pennpetro Energy PLC.
