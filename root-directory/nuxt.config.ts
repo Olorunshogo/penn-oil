@@ -40,10 +40,6 @@ export default defineNuxtConfig({
     transpile: ['gsap'],
   },
 
-  image: {
-    domains: ['images.pexels.com']
-  },
-
   nitro: {
     preset: 'node-server',
 
