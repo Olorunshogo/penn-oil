@@ -251,7 +251,7 @@
 
                             <div class="grid gap-1">
                                 <NuxtLink
-                                    to="/what/pemm"
+                                    to="/what/penn"
                                     class="group relative text-(--dark-blue) font-bold text-lg hover:underline decoration-(--medium-blue) decoration-2 underline-offset-2 flex duration-500 ease-in-out transition-all"
                                 >                            
                                     <span class="group-hover:underline-text">A global brand</span>

@@ -246,7 +246,7 @@
                             </NuxtLink>
 
                             <NuxtLink
-                                to="/investors/contact"
+                                to="/contact"
                                 class="group hidden lg:flex *:flex items-center *:items-center justify-center px-2 lg:px-8 py-3 gap-2 lg:gap-4 text-(--black) w-fit duration-300 ease-in-out transition-all"
                             >
                                 <div class="group relative flex items-center justify-center text-lg w-8 h-full overflow-hidden">
@@ -924,24 +924,7 @@
                                 Our objective is to safely deliver higher returns, lower carbon and superior shareholder value in any business environment.
                             </p>
                         </div>
-            
-                        <!-- Read our reports and fillings -->
-                        <NuxtLink 
-                            to="/investors/reports"
-                            class="group flex *:flex items-center *:items-center justify-center p-2 gap-2 w-fit mx-auto hover:text-(--black) hover:bg-(--light-blue) border-1 border-(--light-blue) rounded-lg shadow-lg duration-300 ease-in-out transition-all"
-                        >
-                            <div class="group relative flex items-center justify-center text-base h-fit w-12 overflow-hidden">
-                                <div class="absolute flex items-center left-2 h-full w-12 transition-all duration-500 ease-in-out group-hover:translate-x-full">
-                                    <Icon name="mdi:arrow-right"/>
-                                </div>
-                                
-                                <div class="absolute flex items-center left-2 h-full w-12 -translate-x-full transition-all duration-500 ease-in-out group-hover:translate-x-0">
-                                    <Icon name="mdi:arrow-right" />
-                                </div>
-                            </div>
-
-                            <span class="font-bold text-xs">Read our reports and fillings</span>
-                        </NuxtLink>
+        
 
                     </div>
 

@@ -199,7 +199,7 @@
 
                             <!-- See our solutions link -->
                             <NuxtLink 
-                                to="/who/energy"
+                                to="/what/energy"
                                 class="group flex *:flex items-center *:items-center justify-center px-8 py-2 gap-4 w-fit mx-auto text-(--white) hover:text-(--black) bg-transparent hover:bg-(--medium-purple) shadow-lg rounded-lg border-1 border-(--light-purple) duration-300 ease-in-out transition-all"
                             >
                                 <div class="group relative flex items-center justify-center text-xl w-8 h-full overflow-hidden">
