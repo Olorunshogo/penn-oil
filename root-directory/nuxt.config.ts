@@ -44,6 +44,16 @@ export default defineNuxtConfig({
     domains: ['images.pexels.com']
   },
 
+  nitro: {
+    preset: 'node-server',
+
+    prerender: {
+      routes: [
+        "/", "/careers", "/contact", "/newsroom", "/who/overview", "/what/overview", "/sustainability/overview", "/investors/overview"
+      ]
+    }
+  },
+
   plugins: [
     './plugins/aos.client.js'
   ],
